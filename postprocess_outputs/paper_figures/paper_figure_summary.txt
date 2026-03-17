@@ -1,0 +1,10 @@
+Total galaxies: 175
+Improved: 128 (73.1%)
+Worsened: 39 (22.3%)
+Similar: 8 (4.6%)
+
+Mean chi2 (abar): 2815.33
+Mean chi2 (formula): 1952.56
+Median chi2 (abar): 575.96
+Median chi2 (formula): 288.14
+Mean delta chi2: 862.77

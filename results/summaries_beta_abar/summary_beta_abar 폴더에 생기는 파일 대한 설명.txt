@@ -1,0 +1,6 @@
+rotation_batch_summary_beta_abar.csv
+
+SPARC 은하 회전곡선 배치 계산 결과 요약 파일.
+β(구조계수)를 median(a_bar) 기반으로 설정한 버전의 결과를 저장한 CSV.
+각 은하별로 chi2, reduced_chi2, rmse_kmps, mae_kmps, beta_value, rs_kpc, status, source_file 등이 기록.
+바리온 가속도 기반 β 추정식을 사용했을 때의 은하 회전곡선 적합 성능을 정리한 파일.
