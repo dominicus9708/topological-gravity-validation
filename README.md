@@ -1,24 +1,27 @@
-# topological-gravity-validation
-Numerical validation of topological gravity model using astronomical observations
 # Topological Gravity Validation
 
-This repository contains numerical tests of the topological gravity framework.
+## Overview
+This repository contains the numerical validation framework for the fourth paper
+on topological gravity using observational datasets.
 
-The theoretical basis is described in the following papers:
-
-1. Axiomatization of Observer-Dependent Describability via Topological Degrees of Freedom
-2. The Axiom of Topological Degrees of Freedom: Formalization and Proof
-3. Topological Reorganization Dynamics and the Emergence of Information Propagation Constraints
-
-The present repository focuses on empirical validation using astronomical data.
+## Theoretical Background
+This project is based on:
+1. the axiomatic introduction of topological degrees of freedom,
+2. its mathematical formalization,
+3. the dynamical framework of topological reorganization.
 
 ## Datasets
+- SPARC galaxy rotation curve data
+- gravitational wave related datasets
+- cosmic microwave background related datasets
+- light echo related datasets
 
-- SPARC galaxy rotation curves
-- gravitational wave observations
-- cosmic microwave background
-- light echo observations
+## Repository Structure
+...
 
-## Goal
+## Reproducibility Policy
+Raw data are preserved separately from processed data.
+All major transformations should be traceable through code.
 
-Test whether the topological gravity framework can reproduce observed galaxy rotation curves without dark matter.
+## Notes
+This repository is intended as a research validation framework, not as a finished software product.
