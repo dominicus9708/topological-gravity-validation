@@ -1,3 +1,0 @@
-관측량 계산 파일.
-compute_newtonian_acceleration, compute_rotation_velocity 등을 불러오는 구조로 언급되었다.
-즉, σ(구조편차)계산 결과를 실제 관측 가능한 은하 회전속도나 뉴턴 가속도와 연결하는 변환 계층이다.
