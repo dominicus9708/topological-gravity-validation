@@ -2027,6 +2027,184 @@ C:.
 |           top_worsened.csv
 |           
 +---results
+|   +---plots
+|   |   \---individual
+|   |           CamB_rotation_curve.png
+|   |           D512-2_rotation_curve.png
+|   |           D564-8_rotation_curve.png
+|   |           D631-7_rotation_curve.png
+|   |           DDO064_rotation_curve.png
+|   |           DDO154_rotation_curve.png
+|   |           DDO161_rotation_curve.png
+|   |           DDO168_rotation_curve.png
+|   |           DDO170_rotation_curve.png
+|   |           ESO079-G014_rotation_curve.png
+|   |           ESO116-G012_rotation_curve.png
+|   |           ESO444-G084_rotation_curve.png
+|   |           ESO563-G021_rotation_curve.png
+|   |           F561-1_rotation_curve.png
+|   |           F563-1_rotation_curve.png
+|   |           F563-V1_rotation_curve.png
+|   |           F563-V2_rotation_curve.png
+|   |           F565-V2_rotation_curve.png
+|   |           F567-2_rotation_curve.png
+|   |           F568-1_rotation_curve.png
+|   |           F568-3_rotation_curve.png
+|   |           F568-V1_rotation_curve.png
+|   |           F571-8_rotation_curve.png
+|   |           F571-V1_rotation_curve.png
+|   |           F574-1_rotation_curve.png
+|   |           F574-2_rotation_curve.png
+|   |           F579-V1_rotation_curve.png
+|   |           F583-1_rotation_curve.png
+|   |           F583-4_rotation_curve.png
+|   |           IC2574_rotation_curve.png
+|   |           IC4202_rotation_curve.png
+|   |           KK98-251_rotation_curve.png
+|   |           NGC0024_rotation_curve.png
+|   |           NGC0055_rotation_curve.png
+|   |           NGC0100_rotation_curve.png
+|   |           NGC0247_rotation_curve.png
+|   |           NGC0289_rotation_curve.png
+|   |           NGC0300_rotation_curve.png
+|   |           NGC0801_rotation_curve.png
+|   |           NGC0891_rotation_curve.png
+|   |           NGC1003_rotation_curve.png
+|   |           NGC1090_rotation_curve.png
+|   |           NGC1705_rotation_curve.png
+|   |           NGC2366_rotation_curve.png
+|   |           NGC2403_rotation_curve.png
+|   |           NGC2683_rotation_curve.png
+|   |           NGC2841_rotation_curve.png
+|   |           NGC2903_rotation_curve.png
+|   |           NGC2915_rotation_curve.png
+|   |           NGC2955_rotation_curve.png
+|   |           NGC2976_rotation_curve.png
+|   |           NGC2998_rotation_curve.png
+|   |           NGC3109_rotation_curve.png
+|   |           NGC3198_rotation_curve.png
+|   |           NGC3521_rotation_curve.png
+|   |           NGC3726_rotation_curve.png
+|   |           NGC3741_rotation_curve.png
+|   |           NGC3769_rotation_curve.png
+|   |           NGC3877_rotation_curve.png
+|   |           NGC3893_rotation_curve.png
+|   |           NGC3917_rotation_curve.png
+|   |           NGC3949_rotation_curve.png
+|   |           NGC3953_rotation_curve.png
+|   |           NGC3972_rotation_curve.png
+|   |           NGC3992_rotation_curve.png
+|   |           NGC4010_rotation_curve.png
+|   |           NGC4013_rotation_curve.png
+|   |           NGC4051_rotation_curve.png
+|   |           NGC4068_rotation_curve.png
+|   |           NGC4085_rotation_curve.png
+|   |           NGC4088_rotation_curve.png
+|   |           NGC4100_rotation_curve.png
+|   |           NGC4138_rotation_curve.png
+|   |           NGC4157_rotation_curve.png
+|   |           NGC4183_rotation_curve.png
+|   |           NGC4214_rotation_curve.png
+|   |           NGC4217_rotation_curve.png
+|   |           NGC4389_rotation_curve.png
+|   |           NGC4559_rotation_curve.png
+|   |           NGC5005_rotation_curve.png
+|   |           NGC5033_rotation_curve.png
+|   |           NGC5055_rotation_curve.png
+|   |           NGC5371_rotation_curve.png
+|   |           NGC5585_rotation_curve.png
+|   |           NGC5907_rotation_curve.png
+|   |           NGC5985_rotation_curve.png
+|   |           NGC6015_rotation_curve.png
+|   |           NGC6195_rotation_curve.png
+|   |           NGC6503_rotation_curve.png
+|   |           NGC6674_rotation_curve.png
+|   |           NGC6789_rotation_curve.png
+|   |           NGC6946_rotation_curve.png
+|   |           NGC7331_rotation_curve.png
+|   |           NGC7793_rotation_curve.png
+|   |           NGC7814_rotation_curve.png
+|   |           PGC51017_rotation_curve.png
+|   |           UGC00128_rotation_curve.png
+|   |           UGC00191_rotation_curve.png
+|   |           UGC00634_rotation_curve.png
+|   |           UGC00731_rotation_curve.png
+|   |           UGC00891_rotation_curve.png
+|   |           UGC01230_rotation_curve.png
+|   |           UGC01281_rotation_curve.png
+|   |           UGC02023_rotation_curve.png
+|   |           UGC02259_rotation_curve.png
+|   |           UGC02455_rotation_curve.png
+|   |           UGC02487_rotation_curve.png
+|   |           UGC02885_rotation_curve.png
+|   |           UGC02916_rotation_curve.png
+|   |           UGC02953_rotation_curve.png
+|   |           UGC03205_rotation_curve.png
+|   |           UGC03546_rotation_curve.png
+|   |           UGC03580_rotation_curve.png
+|   |           UGC04278_rotation_curve.png
+|   |           UGC04305_rotation_curve.png
+|   |           UGC04325_rotation_curve.png
+|   |           UGC04483_rotation_curve.png
+|   |           UGC04499_rotation_curve.png
+|   |           UGC05005_rotation_curve.png
+|   |           UGC05253_rotation_curve.png
+|   |           UGC05414_rotation_curve.png
+|   |           UGC05716_rotation_curve.png
+|   |           UGC05721_rotation_curve.png
+|   |           UGC05750_rotation_curve.png
+|   |           UGC05764_rotation_curve.png
+|   |           UGC05829_rotation_curve.png
+|   |           UGC05918_rotation_curve.png
+|   |           UGC05986_rotation_curve.png
+|   |           UGC05999_rotation_curve.png
+|   |           UGC06399_rotation_curve.png
+|   |           UGC06446_rotation_curve.png
+|   |           UGC06614_rotation_curve.png
+|   |           UGC06628_rotation_curve.png
+|   |           UGC06667_rotation_curve.png
+|   |           UGC06786_rotation_curve.png
+|   |           UGC06787_rotation_curve.png
+|   |           UGC06818_rotation_curve.png
+|   |           UGC06917_rotation_curve.png
+|   |           UGC06923_rotation_curve.png
+|   |           UGC06930_rotation_curve.png
+|   |           UGC06973_rotation_curve.png
+|   |           UGC06983_rotation_curve.png
+|   |           UGC07089_rotation_curve.png
+|   |           UGC07125_rotation_curve.png
+|   |           UGC07151_rotation_curve.png
+|   |           UGC07232_rotation_curve.png
+|   |           UGC07261_rotation_curve.png
+|   |           UGC07323_rotation_curve.png
+|   |           UGC07399_rotation_curve.png
+|   |           UGC07524_rotation_curve.png
+|   |           UGC07559_rotation_curve.png
+|   |           UGC07577_rotation_curve.png
+|   |           UGC07603_rotation_curve.png
+|   |           UGC07608_rotation_curve.png
+|   |           UGC07690_rotation_curve.png
+|   |           UGC07866_rotation_curve.png
+|   |           UGC08286_rotation_curve.png
+|   |           UGC08490_rotation_curve.png
+|   |           UGC08550_rotation_curve.png
+|   |           UGC08699_rotation_curve.png
+|   |           UGC08837_rotation_curve.png
+|   |           UGC09037_rotation_curve.png
+|   |           UGC09133_rotation_curve.png
+|   |           UGC09992_rotation_curve.png
+|   |           UGC10310_rotation_curve.png
+|   |           UGC11455_rotation_curve.png
+|   |           UGC11557_rotation_curve.png
+|   |           UGC11820_rotation_curve.png
+|   |           UGC11914_rotation_curve.png
+|   |           UGC12506_rotation_curve.png
+|   |           UGC12632_rotation_curve.png
+|   |           UGC12732_rotation_curve.png
+|   |           UGCA281_rotation_curve.png
+|   |           UGCA442_rotation_curve.png
+|   |           UGCA444_rotation_curve.png
+|   |           
 |   +---rs_sweep
 |   |       rotation_batch_summary_rs_1p0.csv
 |   |       rotation_batch_summary_rs_1p5.csv
@@ -2037,6 +2215,7 @@ C:.
 |   |       
 |   +---summaries
 |   |       rotation_batch_summary.csv
+|   |       sparc_csv_quality_check.csv
 |   |       
 |   +---summaries_beta_abar
 |   |       rotation_batch_summary_beta_abar.csv
@@ -2143,6 +2322,7 @@ C:.
 |   |       NGC7793_residuals.csv
 |   |       NGC7814_residuals.csv
 |   |       PGC51017_residuals.csv
+|   |       rotation_pipeline_summary.csv
 |   |       UGC00128_residuals.csv
 |   |       UGC00191_residuals.csv
 |   |       UGC00634_residuals.csv
@@ -2580,32 +2760,50 @@ C:.
 \---src
     +---galaxy_rotation
     |   +---legacy
-    |   |       galaxy_rotation_legacy_check_sparc_csv_quality.py
-    |   |       galaxy_rotation_legacy_contstants.py
-    |   |       galaxy_rotation_legacy_convert_sparc_rotmod_to_csv.py
-    |   |       galaxy_rotation_legacy_data_loader.py
-    |   |       galaxy_rotation_legacy_normalize_sparc.py
-    |   |       galaxy_rotation_legacy_observables.py
-    |   |       galaxy_rotation_legacy_plot_rotation_curve.py
-    |   |       galaxy_rotation_legacy_residuals.py
-    |   |       galaxy_rotation_legacy_run_rotation_batch.py
-    |   |       galaxy_rotation_legacy_run_rotation_batch_beta_abar.py
-    |   |       galaxy_rotation_legacy_run_rotation_batch_beta_formula.py
-    |   |       galaxy_rotation_legacy_run_rs_sweep.py
-    |   |       galaxy_rotation_legacy_sigma_model.py
-    |   |       galaxy_rotation_legacy_topological_gravity.py
-    |   |       galaxy_rotation_legacy_units.py
-    |   |       
+    |   |   |   galaxy_rotation_legacy_check_sparc_csv_quality.py
+    |   |   |   galaxy_rotation_legacy_constants.py
+    |   |   |   galaxy_rotation_legacy_convert_sparc_rotmod_to_csv.py
+    |   |   |   galaxy_rotation_legacy_data_loader.py
+    |   |   |   galaxy_rotation_legacy_normalize_sparc.py
+    |   |   |   galaxy_rotation_legacy_observables.py
+    |   |   |   galaxy_rotation_legacy_plot_rotation_curve.py
+    |   |   |   galaxy_rotation_legacy_residuals.py
+    |   |   |   galaxy_rotation_legacy_run_rotation_batch.py
+    |   |   |   galaxy_rotation_legacy_run_rotation_batch_beta_abar.py
+    |   |   |   galaxy_rotation_legacy_run_rotation_batch_beta_formula.py
+    |   |   |   galaxy_rotation_legacy_run_rs_sweep.py
+    |   |   |   galaxy_rotation_legacy_sigma_model.py
+    |   |   |   galaxy_rotation_legacy_topological_gravity.py
+    |   |   |   galaxy_rotation_legacy_units.py
+    |   |   |   
+    |   |   \---__pycache__
+    |   |           galaxy_rotation_legacy_constants.cpython-312.pyc
+    |   |           galaxy_rotation_legacy_data_loader.cpython-312.pyc
+    |   |           galaxy_rotation_legacy_normalize_sparc.cpython-312.pyc
+    |   |           galaxy_rotation_legacy_plot_rotation_curve.cpython-312.pyc
+    |   |           galaxy_rotation_legacy_residuals.cpython-312.pyc
+    |   |           galaxy_rotation_legacy_sigma_model.cpython-312.pyc
+    |   |           galaxy_rotation_legacy_units.cpython-312.pyc
+    |   |           
     |   \---pipeline
-    |           acceleration_model.py
-    |           beta_model.py
-    |           metrics.py
-    |           pipeline_rotation.py
-    |           plotting.py
-    |           preprocessing.py
-    |           rotation_curve_model.py
-    |           sigma_model.py
-    |           
+    |       |   galaxy_rotation_pipeline_acceleration_model.py
+    |       |   galaxy_rotation_pipeline_beta_model.py
+    |       |   galaxy_rotation_pipeline_metrics.py
+    |       |   galaxy_rotation_pipeline_pipeline_rotation.py
+    |       |   galaxy_rotation_pipeline_plotting.py
+    |       |   galaxy_rotation_pipeline_preprocessing.py
+    |       |   galaxy_rotation_pipeline_rotation_curve_model.py
+    |       |   galaxy_rotation_pipeline_sigma_model.py
+    |       |   
+    |       \---__pycache__
+    |               galaxy_rotation_pipeline_acceleration_model.cpython-312.pyc
+    |               galaxy_rotation_pipeline_beta_model.cpython-312.pyc
+    |               galaxy_rotation_pipeline_metrics.cpython-312.pyc
+    |               galaxy_rotation_pipeline_plotting.cpython-312.pyc
+    |               galaxy_rotation_pipeline_preprocessing.cpython-312.pyc
+    |               galaxy_rotation_pipeline_rotation_curve_model.cpython-312.pyc
+    |               galaxy_rotation_pipeline_sigma_model.cpython-312.pyc
+    |               
     \---__pycache__
             constants.cpython-312.pyc
             data_loader.cpython-312.pyc
