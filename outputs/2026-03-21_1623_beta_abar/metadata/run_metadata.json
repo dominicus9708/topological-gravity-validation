@@ -1,0 +1,18 @@
+{
+  "mode_label": "beta_abar",
+  "beta_mode_argument": "structural",
+  "input_data_dir": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\data\\processed\\sparc_normalized_beta_abar",
+  "output_root": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs",
+  "run_root": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\2026-03-21_1623_beta_abar",
+  "summary_dir": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\2026-03-21_1623_beta_abar\\summaries",
+  "table_dir": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\2026-03-21_1623_beta_abar\\tables",
+  "figure_dir": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\2026-03-21_1623_beta_abar\\figures",
+  "log_dir": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\2026-03-21_1623_beta_abar\\logs",
+  "metadata_dir": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\2026-03-21_1623_beta_abar\\metadata",
+  "summary_file": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\2026-03-21_1623_beta_abar\\summaries\\rotation_pipeline_summary_beta_abar.csv",
+  "beta_definition": "median absolute baryonic acceleration based beta",
+  "total_input_files": 175,
+  "success_count": 0,
+  "failed_count": 175,
+  "generated_at": "2026-03-21T16:23:19"
+}

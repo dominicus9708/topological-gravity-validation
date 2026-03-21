@@ -1,0 +1,34 @@
+{
+  "mode": "structural",
+  "timestamp_root": "2026-03-21_181816_structural",
+  "data_dir": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\data\\processed\\sparc_normalized_beta_abar",
+  "output_root": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\galaxy_rotation\\pipeline_beta_formula\\2026-03-21_181816_structural",
+  "n_files_found": 175,
+  "n_ok": 175,
+  "n_failed": 0,
+  "parameters": {
+    "beta_value": 200.0,
+    "structural_mode": "sigma_over_r",
+    "sigma_proxy_mode": "log_ratio",
+    "sigma_damping_mode": "bar_over_obs",
+    "sigma_positive_only": true,
+    "D_bg": 0.0,
+    "upsilon_disk": 1.0,
+    "upsilon_bul": 1.0,
+    "beta_min": 0.0,
+    "beta_max": 2000.0,
+    "beta_ridge": 1e-12,
+    "use_nonnegative_target": false
+  },
+  "summary_csv": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\galaxy_rotation\\pipeline_beta_formula\\2026-03-21_181816_structural\\summaries\\rotation_pipeline_summary_structural.csv",
+  "aggregate_metrics": {
+    "mean_beta": 1770.4644725382946,
+    "median_beta": 2000.0,
+    "mean_rmse_kmps": 26.32237206220661,
+    "median_rmse_kmps": 22.36831241385578,
+    "mean_chi_square": 3995.879123180627,
+    "median_chi_square": 341.4698876643243,
+    "mean_reduced_chi_square": 132.7017844782833,
+    "median_reduced_chi_square": 22.08201381826424
+  }
+}
