@@ -8,8 +8,6 @@ C:.
 |   README.md
 |   repo_tree.txt
 |   requirements.txt
-|   src폴더에 대한 설명.txt
-|   파이프라인.txt
 |   
 +---data
 |   +---processed
@@ -2582,24 +2580,22 @@ C:.
 \---src
     +---galaxy_rotation
     |   +---legacy
-    |   |       check_sparc_csv_quality.py
-    |   |       constants.py에 대한 설명.txt
-    |   |       contstants.py
-    |   |       convert_sparc_rotmod_to_csv.py
-    |   |       data_loader.py
-    |   |       normalize_sparc.py
-    |   |       observables.py
-    |   |       observables.py에 대한 설명.txt
-    |   |       plot_rotation_curve.py
-    |   |       residuals.py
-    |   |       run_rotation_batch.py
-    |   |       run_rotation_batch_beta_abar.py
-    |   |       run_rotation_batch_beta_formula.py
-    |   |       run_rs_sweep.py
-    |   |       sigma_model.py
-    |   |       sigma_model.py에 대한 설명.txt
-    |   |       topological_gravity.py
-    |   |       units.py
+    |   |       galaxy_rotation_legacy_check_sparc_csv_quality.py
+    |   |       galaxy_rotation_legacy_contstants.py
+    |   |       galaxy_rotation_legacy_convert_sparc_rotmod_to_csv.py
+    |   |       galaxy_rotation_legacy_data_loader.py
+    |   |       galaxy_rotation_legacy_normalize_sparc.py
+    |   |       galaxy_rotation_legacy_observables.py
+    |   |       galaxy_rotation_legacy_plot_rotation_curve.py
+    |   |       galaxy_rotation_legacy_residuals.py
+    |   |       galaxy_rotation_legacy_run_rotation_batch.py
+    |   |       galaxy_rotation_legacy_run_rotation_batch_beta_abar.py
+    |   |       galaxy_rotation_legacy_run_rotation_batch_beta_formula.py
+    |   |       galaxy_rotation_legacy_run_rs_sweep.py
+    |   |       galaxy_rotation_legacy_sigma_model.py
+    |   |       galaxy_rotation_legacy_topological_gravity.py
+    |   |       galaxy_rotation_legacy_units.py
+    |   |       galaxy_rtation_legacy_contstants.py
     |   |       
     |   \---pipeline
     |           acceleration_model.py
