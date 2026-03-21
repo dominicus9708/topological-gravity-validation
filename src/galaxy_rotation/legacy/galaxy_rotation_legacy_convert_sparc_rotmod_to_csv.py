@@ -1,29 +1,28 @@
-import os
+from pathlib import Path
 import pandas as pd
 
-INPUT_DIR = "data/raw/sparc"
-OUTPUT_DIR = "data/raw/sparc_csv"
+FILE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = FILE_DIR.parents[2]
 
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+INPUT_DIR = PROJECT_ROOT / "data" / "raw" / "sparc"
+OUTPUT_DIR = PROJECT_ROOT / "data" / "raw" / "sparc_csv"
+
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def convert_file(path):
-
+def convert_file(path: Path) -> pd.DataFrame:
     rows = []
 
-    with open(path, "r") as f:
+    with path.open("r") as f:
         for line in f:
-
             line = line.strip()
 
             if not line:
                 continue
-
             if line.startswith("#"):
                 continue
 
             parts = line.split()
-
             if len(parts) < 6:
                 continue
 
@@ -45,24 +44,13 @@ def convert_file(path):
 
 
 def main():
+    for file_path in sorted(INPUT_DIR.glob("*.dat")):
+        df = convert_file(file_path)
 
-    for fname in os.listdir(INPUT_DIR):
-
-        if not fname.endswith(".dat"):
-            continue
-
-        path = os.path.join(INPUT_DIR, fname)
-
-        df = convert_file(path)
-
-        out = os.path.join(
-            OUTPUT_DIR,
-            fname.replace("_rotmod.dat", ".csv")
-        )
-
+        out = OUTPUT_DIR / file_path.name.replace("_rotmod.dat", ".csv")
         df.to_csv(out, index=False)
 
-        print("converted:", fname)
+        print("converted:", file_path.name)
 
 
 if __name__ == "__main__":

@@ -6,9 +6,11 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
+FILE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = FILE_DIR.parents[2]
 
-INPUT_DIR = Path("data/raw/sparc_csv")
-SUMMARY_PATH = Path("results/summaries/sparc_csv_quality_check.csv")
+INPUT_DIR = PROJECT_ROOT / "data" / "raw" / "sparc_csv"
+SUMMARY_PATH = PROJECT_ROOT / "results" / "summaries" / "sparc_csv_quality_check.csv"
 
 REQUIRED_COLUMNS = [
     "r",

@@ -1,25 +1,40 @@
-"""
-Topological gravity equations
-"""
+from __future__ import annotations
 
-from constants import c_info, xi
+import numpy as np
 
-
-def compute_phi_topo(sigma):
-    """
-    Φ_topo = ξ c_info^2 σ
-    """
-
-    phi_topo = xi * (c_info ** 2) * sigma
-
-    return phi_topo
+from galaxy_rotation_legacy_constants import C_INFO_NORM
 
 
-def compute_g_eff(g_N, sigma_gradient):
-    """
-    g_eff = g_N − ξ c_info^2 ∇σ
-    """
+# ----- compatibility aliases -----
 
-    g_eff = g_N - xi * (c_info ** 2) * sigma_gradient
+c_info = C_INFO_NORM
+xi = 1.0
 
-    return g_eff
+
+# ----- core topological-gravity relations -----
+
+def compute_information_velocity_scale(r_kpc):
+    r_kpc = np.asarray(r_kpc, dtype=float)
+
+    if np.any(r_kpc <= 0):
+        raise ValueError("All radius values must be positive.")
+
+    return c_info / (1.0 + xi * r_kpc)
+
+
+def compute_topological_potential(r_kpc):
+    r_kpc = np.asarray(r_kpc, dtype=float)
+
+    if np.any(r_kpc <= 0):
+        raise ValueError("All radius values must be positive.")
+
+    return c_info * np.log(1.0 + xi * r_kpc)
+
+
+def compute_topological_acceleration(r_kpc):
+    r_kpc = np.asarray(r_kpc, dtype=float)
+
+    if np.any(r_kpc <= 0):
+        raise ValueError("All radius values must be positive.")
+
+    return c_info * xi / (1.0 + xi * r_kpc)

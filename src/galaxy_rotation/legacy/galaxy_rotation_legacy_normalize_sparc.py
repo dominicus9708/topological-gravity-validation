@@ -1,10 +1,12 @@
-# src/normalize_sparc.py
-
 from __future__ import annotations
 
 import pandas as pd
 
-from units import to_kpc, to_kmps, velocity_squared_over_radius
+from galaxy_rotation_legacy_units import (
+    to_kpc,
+    to_kmps,
+    velocity_squared_over_radius,
+)
 
 
 # ----- default SPARC unit map -----
@@ -78,6 +80,8 @@ def normalize_sparc_dataframe(
     ]
 
     return out
+
+
 def validate_normalized_sparc(df_norm: pd.DataFrame) -> None:
     required = [
         "galaxy",

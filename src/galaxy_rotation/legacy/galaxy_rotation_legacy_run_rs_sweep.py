@@ -1,23 +1,32 @@
-# src/run_rs_sweep.py
-
 from __future__ import annotations
 
 from pathlib import Path
 import traceback
 import pandas as pd
 
-from data_loader import load_rotation_curve_file
-from normalize_sparc import (
+from galaxy_rotation_legacy_data_loader import load_rotation_curve_file
+from galaxy_rotation_legacy_normalize_sparc import (
     normalize_sparc_dataframe,
     validate_normalized_sparc,
     sort_by_radius,
 )
-from sigma_model import compute_model_velocity_curve
-from residuals import build_residual_dataframe, summarize_fit_metrics
+from galaxy_rotation_legacy_sigma_model import compute_model_velocity_curve
+from galaxy_rotation_legacy_residuals import (
+    build_residual_dataframe,
+    summarize_fit_metrics,
+)
 
 
-RAW_DIR = Path("data/raw/sparc_csv")
-SWEEP_DIR = Path("results/rs_sweep")
+# ----- project paths -----
+
+FILE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = FILE_DIR.parents[2]
+
+RAW_DIR = PROJECT_ROOT / "data" / "raw" / "sparc_csv"
+SWEEP_DIR = PROJECT_ROOT / "results" / "rs_sweep"
+
+
+# ----- sweep configuration -----
 
 SIGMA_BETA = 200.0
 USE_POSITIVE_SIGMA_ONLY = True
@@ -25,6 +34,8 @@ N_PARAMS = 1
 
 RS_VALUES = [1.0, 1.5, 2.0, 3.0, 5.0]
 
+
+# ----- helpers -----
 
 def ensure_directories() -> None:
     SWEEP_DIR.mkdir(parents=True, exist_ok=True)
@@ -48,6 +59,7 @@ def run_single_galaxy_for_rs(file_path: Path, rs_kpc: float, n_params: int = N_P
     df_resid = build_residual_dataframe(df_norm, v_model_kmps)
     summary = summarize_fit_metrics(df_resid, n_params=n_params)
 
+    summary["galaxy"] = galaxy_name
     summary["status"] = "success"
     summary["source_file"] = str(file_path)
     summary["rs_kpc"] = rs_kpc
@@ -112,7 +124,7 @@ def summarize_rs_result(df_summary: pd.DataFrame) -> dict:
     }
 
 
-def run_rs_sweep():
+def run_rs_sweep() -> pd.DataFrame:
     ensure_directories()
 
     rows = []

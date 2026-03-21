@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from constants import G_ASTRO
+from galaxy_rotation_legacy_constants import G_ASTRO
 
 
 def compute_newtonian_acceleration(m_r_msun, r_kpc):

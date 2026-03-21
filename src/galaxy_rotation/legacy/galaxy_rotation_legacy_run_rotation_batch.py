@@ -1,143 +1,144 @@
-# src/run_rotation_batch.py
-
 from __future__ import annotations
 
 from pathlib import Path
-import traceback
 import pandas as pd
 
-from data_loader import load_rotation_curve_file
-from normalize_sparc import (
+from galaxy_rotation_legacy_data_loader import load_rotation_curve_file
+from galaxy_rotation_legacy_normalize_sparc import (
     normalize_sparc_dataframe,
     validate_normalized_sparc,
     sort_by_radius,
 )
-from sigma_model import compute_model_velocity_curve
-from residuals import build_residual_dataframe, summarize_fit_metrics
-from plot_rotation_curve import plot_rotation_curve, plot_residuals
+from galaxy_rotation_legacy_sigma_model import compute_model_velocity_curve
+from galaxy_rotation_legacy_residuals import (
+    build_residual_dataframe,
+    summarize_fit_metrics,
+)
+from galaxy_rotation_legacy_plot_rotation_curve import (
+    plot_rotation_curve,
+    plot_residuals,
+)
 
 
-# ----- paths -----
+# ----- project paths -----
 
-RAW_DIR = Path("data/raw/sparc_csv")
-PROCESSED_DIR = Path("data/processed/sparc_normalized")
-RESULTS_TABLE_DIR = Path("results/tables")
-RESULTS_SUMMARY_DIR = Path("results/summaries")
-FIGURE_DIR = Path("figures/rotation_curves")
+FILE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = FILE_DIR.parents[2]
+
+RAW_DIR = PROJECT_ROOT / "data" / "raw" / "sparc_csv"
+PROCESSED_DIR = PROJECT_ROOT / "data" / "processed" / "sparc_normalized"
+RESULTS_TABLE_DIR = PROJECT_ROOT / "results" / "tables"
+RESULTS_SUMMARY_DIR = PROJECT_ROOT / "results" / "summaries"
+FIGURE_DIR = PROJECT_ROOT / "figures" / "rotation_curves"
 
 
-# ----- model configuration -----
+# ----- batch configuration -----
 
-SIGMA_BETA = 200.0
-USE_POSITIVE_SIGMA_ONLY = True
-SIGMA_RS_KPC = 2.0
-N_PARAMS = 1
+UNIT_MAP = {
+    "r": "kpc",
+    "v_obs": "km/s",
+    "v_err": "km/s",
+    "v_gas": "km/s",
+    "v_disk": "km/s",
+    "v_bul": "km/s",
+}
 
+
+# ----- helpers -----
 
 def ensure_directories() -> None:
-    for path in [
-        PROCESSED_DIR,
-        RESULTS_TABLE_DIR,
-        RESULTS_SUMMARY_DIR,
-        FIGURE_DIR,
-    ]:
-        path.mkdir(parents=True, exist_ok=True)
+    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    RESULTS_TABLE_DIR.mkdir(parents=True, exist_ok=True)
+    RESULTS_SUMMARY_DIR.mkdir(parents=True, exist_ok=True)
+    FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def run_single_galaxy(file_path: Path, n_params: int = N_PARAMS) -> dict:
+def run_one_galaxy(file_path: Path) -> dict:
     galaxy_name = file_path.stem
 
-    # 1. raw load
+    print(f"\n[RUN] {galaxy_name}")
+
     df_raw = load_rotation_curve_file(file_path)
 
-    # 2. normalize
-    df_norm = normalize_sparc_dataframe(df_raw, galaxy_name=galaxy_name)
+    df_norm = normalize_sparc_dataframe(
+        df_raw,
+        unit_map=UNIT_MAP,
+        galaxy_name=galaxy_name,
+    )
     validate_normalized_sparc(df_norm)
     df_norm = sort_by_radius(df_norm)
 
-    # 3. save normalized table
-    norm_path = PROCESSED_DIR / f"{galaxy_name}_normalized.csv"
-    df_norm.to_csv(norm_path, index=False)
+    normalized_out = PROCESSED_DIR / f"{galaxy_name}_normalized.csv"
+    df_norm.to_csv(normalized_out, index=False)
 
-    # 4. model prediction
-    v_model_kmps = compute_model_velocity_curve(
-        df_norm,
-        beta=SIGMA_BETA,
-        use_positive_only=USE_POSITIVE_SIGMA_ONLY,
-        rs_kpc=SIGMA_RS_KPC,
-    )
+    v_model = compute_model_velocity_curve(df_norm)
 
-    if len(v_model_kmps) != len(df_norm):
-        raise ValueError(
-            f"Model length mismatch for {galaxy_name}: "
-            f"{len(v_model_kmps)} != {len(df_norm)}"
-        )
+    df_resid = build_residual_dataframe(df_norm, v_model)
 
-    # 5. residual table
-    df_resid = build_residual_dataframe(df_norm, v_model_kmps)
-    resid_path = RESULTS_TABLE_DIR / f"{galaxy_name}_residuals.csv"
-    df_resid.to_csv(resid_path, index=False)
+    residual_out = RESULTS_TABLE_DIR / f"{galaxy_name}_residuals.csv"
+    df_resid.to_csv(residual_out, index=False)
 
-    # 6. summary metrics
-    summary = summarize_fit_metrics(df_resid, n_params=n_params)
+    summary = summarize_fit_metrics(df_resid)
+    summary["galaxy"] = galaxy_name
+    summary["n_points"] = int(len(df_resid))
+    summary["source_file"] = str(file_path)
 
-    # 7. plots
+    rotation_curve_out = FIGURE_DIR / f"{galaxy_name}_rotation_curve.png"
+    residual_plot_out = FIGURE_DIR / f"{galaxy_name}_residuals.png"
+
     plot_rotation_curve(
         df_resid,
-        output_path=str(FIGURE_DIR / f"{galaxy_name}_rotation.png"),
+        output_path=rotation_curve_out,
         show=False,
     )
     plot_residuals(
         df_resid,
-        output_path=str(FIGURE_DIR / f"{galaxy_name}_residuals.png"),
+        output_path=residual_plot_out,
         show=False,
     )
 
-    summary["status"] = "success"
-    summary["source_file"] = str(file_path)
+    print(f"[DONE] {galaxy_name}")
     return summary
 
 
-def run_all_galaxies(n_params: int = N_PARAMS) -> pd.DataFrame:
+def run_batch() -> pd.DataFrame:
     ensure_directories()
 
     if not RAW_DIR.exists():
-        raise FileNotFoundError(f"Raw data directory not found: {RAW_DIR}")
+        raise FileNotFoundError(f"Raw input directory not found: {RAW_DIR}")
 
-    all_files = sorted(RAW_DIR.glob("*.csv"))
-    if not all_files:
-        raise FileNotFoundError(f"No CSV files found in {RAW_DIR}")
+    csv_files = sorted(RAW_DIR.glob("*.csv"))
+    if not csv_files:
+        raise FileNotFoundError(f"No CSV files found in: {RAW_DIR}")
 
-    results = []
+    summaries = []
 
-    for file_path in all_files:
-        galaxy_name = file_path.stem
+    for file_path in csv_files:
         try:
-            summary = run_single_galaxy(file_path, n_params=n_params)
-            results.append(summary)
-            print(f"[OK] {galaxy_name}")
+            result = run_one_galaxy(file_path)
+            result["status"] = "ok"
         except Exception as exc:
-            results.append(
-                {
-                    "galaxy": galaxy_name,
-                    "status": "failed",
-                    "error": str(exc),
-                    "traceback": traceback.format_exc(),
-                    "source_file": str(file_path),
-                }
-            )
-            print(f"[FAIL] {galaxy_name}: {exc}")
+            print(f"[FAILED] {file_path.name} -> {exc}")
+            result = {
+                "galaxy": file_path.stem,
+                "source_file": str(file_path),
+                "status": "failed",
+                "error": str(exc),
+            }
 
-    df_summary = pd.DataFrame(results)
-    df_summary.to_csv(
-        RESULTS_SUMMARY_DIR / "rotation_batch_summary.csv",
-        index=False,
-    )
+        summaries.append(result)
+
+    df_summary = pd.DataFrame(summaries)
+
+    summary_out = RESULTS_SUMMARY_DIR / "rotation_batch_summary.csv"
+    df_summary.to_csv(summary_out, index=False)
+
+    print("\nBatch complete.")
+    print(f"Processed files: {len(df_summary)}")
+    print(f"Summary written to: {summary_out}")
 
     return df_summary
 
 
 if __name__ == "__main__":
-    summary_df = run_all_galaxies(n_params=N_PARAMS)
-    print(summary_df.head())
-    print(f"\nTotal galaxies processed: {len(summary_df)}")
+    run_batch()

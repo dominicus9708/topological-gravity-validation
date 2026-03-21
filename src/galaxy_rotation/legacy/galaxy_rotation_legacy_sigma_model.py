@@ -10,11 +10,11 @@ import pandas as pd
 # constants.py 안에 D_bg 또는 D_BG가 있으면 사용하고,
 # 없으면 0.0으로 둡니다.
 try:
-    from constants import D_bg as _D_BG_FROM_CONSTANTS
+    from galaxy_rotation_legacy_constants import D_bg as _D_BG_FROM_CONSTANTS
     DEFAULT_D_BG = float(_D_BG_FROM_CONSTANTS)
 except Exception:
     try:
-        from constants import D_BG as _D_BG_FROM_CONSTANTS
+        from galaxy_rotation_legacy_constants import D_BG as _D_BG_FROM_CONSTANTS
         DEFAULT_D_BG = float(_D_BG_FROM_CONSTANTS)
     except Exception:
         DEFAULT_D_BG = 0.0

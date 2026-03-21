@@ -2595,7 +2595,6 @@ C:.
     |   |       galaxy_rotation_legacy_sigma_model.py
     |   |       galaxy_rotation_legacy_topological_gravity.py
     |   |       galaxy_rotation_legacy_units.py
-    |   |       galaxy_rtation_legacy_contstants.py
     |   |       
     |   \---pipeline
     |           acceleration_model.py
