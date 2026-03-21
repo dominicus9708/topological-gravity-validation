@@ -1,5 +1,0 @@
-네 번째 논문
-(Topological Gravity Structural Derivation of an Effective Gravitational field/위상 중력을 이용한 유효 중력장의 구조적 유도)
-
-검증용 파이썬 소스 폴더.
-상수, 시그마 계산, 관측량 계산, 배치 실행 코드 등을 분리해 관리하는 기본 작업 폴더로 사용.
