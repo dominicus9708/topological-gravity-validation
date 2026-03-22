@@ -1,0 +1,16 @@
+run_root: C:\Users\mincu\Desktop\topological_gravity_project\outputs\galaxy_rotation\pipeline_beta_formula\2026-03-22_145803_formula
+data_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\processed\sparc_normalized_beta_abar
+beta_mode: formula
+shared_g0: 561.0610296982485
+shared_sigma0: 0.5272732878135848
+formula_p: 1.0737936939240849
+formula_q: 1.0737936939240849
+formula_lambda_beta: 3.1772138142832826
+sigma_weight_mode: formula
+sigma_weight_u: 0.5368968469620424
+sigma_weight_v: 0.5368968469620424
+sigma_weight_lambda: 1.782474071139124
+use_estimated_params: True
+estimated_params_json: outputs\galaxy_rotation\pipeline_beta_formula\estimated_formula_params.json
+summary_csv: C:\Users\mincu\Desktop\topological_gravity_project\outputs\galaxy_rotation\pipeline_beta_formula\2026-03-22_145803_formula\summaries\rotation_pipeline_summary_formula.csv
+metadata_json: C:\Users\mincu\Desktop\topological_gravity_project\outputs\galaxy_rotation\pipeline_beta_formula\2026-03-22_145803_formula\metadata\run_metadata.json

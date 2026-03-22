@@ -1,0 +1,31 @@
+{
+  "mode": "formula",
+  "timestamp_root": "2026-03-22_124004_formula",
+  "data_dir": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\data\\processed\\sparc_normalized_beta_abar",
+  "output_root": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\galaxy_rotation\\pipeline_beta_formula\\2026-03-22_124004_formula",
+  "n_files_found": 175,
+  "n_ok": 175,
+  "n_failed": 0,
+  "parameters": {
+    "beta_value": 200.0,
+    "structural_mode": "sigma_over_r",
+    "sigma_proxy_mode": "log_ratio",
+    "sigma_damping_mode": "bar_over_obs",
+    "sigma_positive_only": true,
+    "D_bg": 0.0,
+    "upsilon_disk": 1.0,
+    "upsilon_bul": 1.0,
+    "beta_min": 0.0,
+    "beta_max": 2000.0,
+    "beta_ridge": 1e-12,
+    "use_nonnegative_target": false,
+    "formula_p": 1.0,
+    "formula_q": 1.0,
+    "formula_lambda_beta": 1.0,
+    "formula_g_choice": "gbar_char_logmean",
+    "formula_sigma_choice": "sigma_char_rms",
+    "formula_g0": 608.3984930448789,
+    "formula_sigma0": 0.5272732878135848
+  },
+  "summary_csv": "C:\\Users\\mincu\\Desktop\\topological_gravity_project\\outputs\\galaxy_rotation\\pipeline_beta_formula\\2026-03-22_124004_formula\\summaries\\rotation_pipeline_summary_formula.csv"
+}
