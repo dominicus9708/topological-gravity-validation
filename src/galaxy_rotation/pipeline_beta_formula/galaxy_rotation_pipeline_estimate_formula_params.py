@@ -94,10 +94,9 @@ def _load_structural_summary(path: str | Path) -> pd.DataFrame:
 # ---------------------------------------------------------
 def _derive_beta_params_from_structural_summary(
     df: pd.DataFrame,
-    beta_max: float = 2000.0,
 ) -> dict[str, float]:
     """
-    log(beta_raw / beta_max)
+    log(beta_raw)
     ~= log(lambda_beta) + p log(g/g0) + q log(sigma/sigma0)
     """
     g = _safe_positive(df["gbar_char_logmean"].to_numpy(dtype=float))
@@ -110,8 +109,7 @@ def _derive_beta_params_from_structural_summary(
     x1 = np.log(g / g0)
     x2 = np.log(s / sigma0)
 
-    z_target = beta_raw / float(beta_max)
-    y = np.log(_safe_positive(z_target))
+    y = np.log(_safe_positive(beta_raw))
 
     X = np.column_stack([
         np.ones_like(x1),
@@ -204,7 +202,6 @@ def _derive_sigma_weight_params_from_beta_params(
 def estimate_formula_params(
     structural_summary_path: str | Path | None = None,
     output_json_path: str | Path | None = DEFAULT_OUTPUT_JSON,
-    beta_max: float = 2000.0,
 ) -> dict[str, float]:
     if structural_summary_path is None:
         structural_summary_path = _find_latest_structural_summary(DEFAULT_OUTPUT_ROOT)
@@ -213,10 +210,7 @@ def estimate_formula_params(
 
     df = _load_structural_summary(structural_summary_path)
 
-    beta_params = _derive_beta_params_from_structural_summary(
-        df=df,
-        beta_max=beta_max,
-    )
+    beta_params = _derive_beta_params_from_structural_summary(df=df)
     cap_params = _derive_dynamic_cap_params_from_beta_params(
         p=beta_params["p"],
         q=beta_params["q"],
@@ -249,10 +243,9 @@ def estimate_formula_params(
         "n_used_galaxies": int(beta_params["n_used_galaxies"]),
         "derivation_note": (
             "The beta driver is estimated from the structural summary through "
-            "log(beta_raw/beta_max) ~= log(lambda_beta) + p log(g/g0) + q log(sigma/sigma0). "
-            "The dynamic cap is softened to avoid over-suppressing the structural term: "
-            "it uses a mixed coherence ratio (g_hat + alpha*s_hat)/(g_hat + s_hat) "
-            "instead of the stronger g_hat/(g_hat + s_hat), with a non-negligible floor."
+            "log(beta_raw) ~= log(lambda_beta) + p log(g/g0) + q log(sigma/sigma0). "
+            "No arbitrary fixed beta ceiling is built into the estimator. "
+            "The runtime ceiling is instead supplied by the Cinfo-based theoretical bound."
         ),
     }
 
@@ -272,6 +265,5 @@ if __name__ == "__main__":
     estimated = estimate_formula_params(
         structural_summary_path=None,
         output_json_path=DEFAULT_OUTPUT_JSON,
-        beta_max=2000.0,
     )
     print(json.dumps(estimated, indent=2, ensure_ascii=False))

@@ -316,6 +316,9 @@ def get_formula_beta_details(
     dim_transition: float = 0.50,
     dim_response_min: float = 0.70,
     dim_response_max: float = 1.40,
+    dim_balance_scale: float = 1.0,
+    g_suppression_lambda: float = 0.0,
+    g_suppression_power: float = 1.0,
 ) -> dict[str, float | bool]:
     obs = compute_beta_observables(
         galaxy_data=galaxy_data,
@@ -353,6 +356,10 @@ def get_formula_beta_details(
     d_eff_response = 1.0
     beta_effective = beta_base
 
+    # NOTE:
+    # 현재 단계에서는 원인 분리를 위해 D_eff 응답을 "계산만" 하고,
+    # beta 자체에는 다시 곱하지 않습니다.
+    # 즉, D_eff는 해석/진단 지표로 유지하되 별도 차원 응답의 중복 적용은 제거합니다.
     if use_dimension_proxy:
         dim_info = compute_dimension_proxy_from_observables(
             g_char=g_char,
@@ -366,10 +373,7 @@ def get_formula_beta_details(
             d_min=d_min,
             d_max=d_max,
         )
-        response_info = apply_dimension_response_to_beta(
-            beta_base=beta_base,
-            beta_min=beta_min,
-            beta_max=beta_max,
+        response_info = compute_dimension_response_factor(
             d_eff_proxy=float(dim_info["d_eff_proxy"]),
             d_ref=d_ref,
             dim_response_lambda=dim_response_lambda,
@@ -385,7 +389,7 @@ def get_formula_beta_details(
         d_eff_balance_log = float(dim_info["d_eff_balance_log"])
         d_eff_signed_delta = float(response_info["d_eff_signed_delta"])
         d_eff_response = float(response_info["d_eff_response"])
-        beta_effective = float(response_info["beta_dimensional"])
+        beta_effective = float(beta_base)
 
     out = {
         "beta_raw": np.nan,
@@ -401,6 +405,7 @@ def get_formula_beta_details(
         "beta_g_choice": g_choice,
         "beta_sigma_choice": sigma_choice,
         "use_dimension_proxy": bool(use_dimension_proxy),
+        "dimension_response_applied": False,
         "d_eff_proxy": float(d_eff_proxy) if np.isfinite(d_eff_proxy) else np.nan,
         "d_eff_ratio": float(d_eff_ratio) if np.isfinite(d_eff_ratio) else np.nan,
         "d_eff_g_hat": float(d_eff_g_hat) if np.isfinite(d_eff_g_hat) else np.nan,
@@ -408,6 +413,9 @@ def get_formula_beta_details(
         "d_eff_balance_log": float(d_eff_balance_log) if np.isfinite(d_eff_balance_log) else np.nan,
         "d_eff_signed_delta": float(d_eff_signed_delta),
         "d_eff_response": float(d_eff_response),
+        "dim_balance_scale": float(dim_balance_scale),
+        "g_suppression_lambda": float(g_suppression_lambda),
+        "g_suppression_power": float(g_suppression_power),
     }
     out.update(obs)
     return out
@@ -494,6 +502,7 @@ def get_structural_beta_details(
         "beta_g_choice": None,
         "beta_sigma_choice": None,
         "use_dimension_proxy": False,
+        "dimension_response_applied": False,
         "d_eff_proxy": np.nan,
         "d_eff_ratio": np.nan,
         "d_eff_g_hat": np.nan,

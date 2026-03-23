@@ -129,6 +129,16 @@ def load_estimated_formula_params(json_path: str | Path) -> dict:
     data.setdefault("formula_dim_transition", 0.35)
     data.setdefault("formula_dim_response_min", 0.55)
     data.setdefault("formula_dim_response_max", 1.85)
+    data.setdefault("formula_dim_balance_scale", 1.0)
+    data.setdefault("formula_g_suppression_lambda", 0.75)
+    data.setdefault("formula_g_suppression_power", 1.0)
+    data.setdefault("sigma_soft_power", 1.0)
+    data.setdefault("sigma_floor_fraction", 0.15)
+    data.setdefault("sigma_normalize", True)
+    data.setdefault("sigma_norm_mode", "tanh")
+    data.setdefault("sigma_norm_strength", 1.0)
+    data.setdefault("sigma_norm_floor_fraction", 0.25)
+    data.setdefault("sigma_norm_choice", "sigma_char_rms")
 
     return data
 
@@ -150,6 +160,13 @@ def _estimate_shared_normalizations(
     sigma_weight_lambda: float,
     sigma_weight_g_choice: str,
     sigma_weight_sigma_choice: str,
+    sigma_soft_power: float,
+    sigma_floor_fraction: float,
+    sigma_normalize: bool,
+    sigma_norm_mode: str,
+    sigma_norm_strength: float,
+    sigma_norm_floor_fraction: float,
+    sigma_norm_choice: str,
 ) -> dict[str, float]:
     g_values: list[float] = []
     sigma_values: list[float] = []
@@ -175,6 +192,13 @@ def _estimate_shared_normalizations(
                 sigma_weight_lambda=sigma_weight_lambda,
                 sigma_weight_g_choice=sigma_weight_g_choice,
                 sigma_weight_sigma_choice=sigma_weight_sigma_choice,
+                sigma_soft_power=sigma_soft_power,
+                sigma_floor_fraction=sigma_floor_fraction,
+                sigma_normalize=sigma_normalize,
+                sigma_norm_mode=sigma_norm_mode,
+                sigma_norm_strength=sigma_norm_strength,
+                sigma_norm_floor_fraction=sigma_norm_floor_fraction,
+                sigma_norm_choice=sigma_norm_choice,
             )
 
             obs = compute_sigma_observables(
@@ -204,8 +228,8 @@ def run_rotation_pipeline(
     beta_value: float = 200.0,
     structural_mode: str = "sigma_over_r",
     sigma_proxy_mode: str = "log_ratio",
-    sigma_damping_mode: str = "bar_over_obs",
-    sigma_positive_only: bool = True,
+    sigma_damping_mode: str = "bar_soft",
+    sigma_positive_only: bool = False,
     D_bg: float = 0.0,
     upsilon_disk: float = 1.0,
     upsilon_bul: float = 1.0,
@@ -220,6 +244,8 @@ def run_rotation_pipeline(
     formula_lambda_beta: float = 1.0,
     formula_g_choice: str = "gbar_char_logmean",
     formula_sigma_choice: str = "sigma_char_rms",
+    formula_g_suppression_lambda: float = 0.75,
+    formula_g_suppression_power: float = 1.0,
 
     # dimension proxy params
     use_dimension_proxy: bool | None = True,
@@ -233,6 +259,7 @@ def run_rotation_pipeline(
     formula_dim_transition: float = 0.35,
     formula_dim_response_min: float = 0.55,
     formula_dim_response_max: float = 1.85,
+    formula_dim_balance_scale: float = 1.0,
 
     # sigma weight params
     sigma_weight_mode: str = "formula",
@@ -242,6 +269,13 @@ def run_rotation_pipeline(
     sigma_weight_lambda: float = 1.0,
     sigma_weight_g_choice: str = "gbar_char_logmean",
     sigma_weight_sigma_choice: str = "sigma_char_rms",
+    sigma_soft_power: float = 1.0,
+    sigma_floor_fraction: float = 0.15,
+    sigma_normalize: bool = True,
+    sigma_norm_mode: str = "tanh",
+    sigma_norm_strength: float = 1.0,
+    sigma_norm_floor_fraction: float = 0.25,
+    sigma_norm_choice: str = "sigma_char_rms",
 
     # estimated params
     estimated_params_json: str | Path | None = None,
@@ -289,6 +323,16 @@ def run_rotation_pipeline(
         formula_dim_transition = float(estimated_params["formula_dim_transition"])
         formula_dim_response_min = float(estimated_params["formula_dim_response_min"])
         formula_dim_response_max = float(estimated_params["formula_dim_response_max"])
+        formula_dim_balance_scale = float(estimated_params["formula_dim_balance_scale"])
+        formula_g_suppression_lambda = float(estimated_params["formula_g_suppression_lambda"])
+        formula_g_suppression_power = float(estimated_params["formula_g_suppression_power"])
+        sigma_soft_power = float(estimated_params["sigma_soft_power"])
+        sigma_floor_fraction = float(estimated_params["sigma_floor_fraction"])
+        sigma_normalize = bool(estimated_params["sigma_normalize"])
+        sigma_norm_mode = str(estimated_params["sigma_norm_mode"])
+        sigma_norm_strength = float(estimated_params["sigma_norm_strength"])
+        sigma_norm_floor_fraction = float(estimated_params["sigma_norm_floor_fraction"])
+        sigma_norm_choice = str(estimated_params["sigma_norm_choice"])
 
     if use_dimension_proxy is None:
         use_dimension_proxy = True
@@ -328,6 +372,13 @@ def run_rotation_pipeline(
             sigma_weight_lambda=sigma_weight_lambda,
             sigma_weight_g_choice=sigma_weight_g_choice,
             sigma_weight_sigma_choice=sigma_weight_sigma_choice,
+            sigma_soft_power=sigma_soft_power,
+            sigma_floor_fraction=sigma_floor_fraction,
+            sigma_normalize=sigma_normalize,
+            sigma_norm_mode=sigma_norm_mode,
+            sigma_norm_strength=sigma_norm_strength,
+            sigma_norm_floor_fraction=sigma_norm_floor_fraction,
+            sigma_norm_choice=sigma_norm_choice,
         )
 
     print("[INFO] shared g0 =", shared_norm["g0"])
@@ -361,6 +412,13 @@ def run_rotation_pipeline(
                 sigma_weight_lambda=sigma_weight_lambda,
                 sigma_weight_g_choice=sigma_weight_g_choice,
                 sigma_weight_sigma_choice=sigma_weight_sigma_choice,
+                sigma_soft_power=sigma_soft_power,
+                sigma_floor_fraction=sigma_floor_fraction,
+                sigma_normalize=sigma_normalize,
+                sigma_norm_mode=sigma_norm_mode,
+                sigma_norm_strength=sigma_norm_strength,
+                sigma_norm_floor_fraction=sigma_norm_floor_fraction,
+                sigma_norm_choice=sigma_norm_choice,
             )
 
             if beta_mode == "constant":
@@ -430,6 +488,9 @@ def run_rotation_pipeline(
                     dim_transition=formula_dim_transition,
                     dim_response_min=formula_dim_response_min,
                     dim_response_max=formula_dim_response_max,
+                    dim_balance_scale=formula_dim_balance_scale,
+                    g_suppression_lambda=formula_g_suppression_lambda,
+                    g_suppression_power=formula_g_suppression_power,
                 )
 
             else:
@@ -552,6 +613,9 @@ def run_rotation_pipeline(
                     "formula_dim_transition": float(formula_dim_transition) if beta_mode == "formula" else np.nan,
                     "formula_dim_response_min": float(formula_dim_response_min) if beta_mode == "formula" else np.nan,
                     "formula_dim_response_max": float(formula_dim_response_max) if beta_mode == "formula" else np.nan,
+                    "formula_dim_balance_scale": float(formula_dim_balance_scale) if beta_mode == "formula" else np.nan,
+                    "formula_g_suppression_lambda": float(formula_g_suppression_lambda) if beta_mode == "formula" else np.nan,
+                    "formula_g_suppression_power": float(formula_g_suppression_power) if beta_mode == "formula" else np.nan,
                     "sigma_weight_mode": sigma_weight_mode,
                     "sigma_weight_value": float(sigma_weight_value) if sigma_weight_mode == "fixed" else np.nan,
                     "sigma_weight_u": float(sigma_weight_u) if sigma_weight_mode == "formula" else np.nan,
@@ -617,6 +681,13 @@ def run_rotation_pipeline(
             "sigma_proxy_mode": sigma_proxy_mode,
             "sigma_damping_mode": sigma_damping_mode,
             "sigma_positive_only": bool(sigma_positive_only),
+            "sigma_soft_power": float(sigma_soft_power),
+            "sigma_floor_fraction": float(sigma_floor_fraction),
+            "sigma_normalize": bool(sigma_normalize),
+            "sigma_norm_mode": sigma_norm_mode,
+            "sigma_norm_strength": float(sigma_norm_strength),
+            "sigma_norm_floor_fraction": float(sigma_norm_floor_fraction),
+            "sigma_norm_choice": sigma_norm_choice,
             "D_bg": float(D_bg),
             "upsilon_disk": float(upsilon_disk),
             "upsilon_bul": float(upsilon_bul),
@@ -640,6 +711,9 @@ def run_rotation_pipeline(
             "formula_dim_transition": float(formula_dim_transition),
             "formula_dim_response_min": float(formula_dim_response_min),
             "formula_dim_response_max": float(formula_dim_response_max),
+            "formula_dim_balance_scale": float(formula_dim_balance_scale),
+            "formula_g_suppression_lambda": float(formula_g_suppression_lambda),
+            "formula_g_suppression_power": float(formula_g_suppression_power),
             "shared_g0": float(shared_norm["g0"]),
             "shared_sigma0": float(shared_norm["sigma0"]),
             "sigma_weight_mode": sigma_weight_mode,
@@ -679,6 +753,9 @@ def run_rotation_pipeline(
         f"formula_dim_transition: {formula_dim_transition}",
         f"formula_dim_response_min: {formula_dim_response_min}",
         f"formula_dim_response_max: {formula_dim_response_max}",
+        f"formula_dim_balance_scale: {formula_dim_balance_scale}",
+        f"formula_g_suppression_lambda: {formula_g_suppression_lambda}",
+        f"formula_g_suppression_power: {formula_g_suppression_power}",
         f"summary_csv: {summary_path}",
         f"metadata_json: {metadata_path}",
     ]
@@ -721,8 +798,8 @@ if __name__ == "__main__":
         beta_value=200.0,
         structural_mode="sigma_over_r",
         sigma_proxy_mode="log_ratio",
-        sigma_damping_mode="bar_over_obs",
-        sigma_positive_only=True,
+        sigma_damping_mode="bar_soft",
+        sigma_positive_only=False,
         D_bg=0.0,
         upsilon_disk=1.0,
         upsilon_bul=1.0,
@@ -736,6 +813,8 @@ if __name__ == "__main__":
         formula_lambda_beta=1.0,
         formula_g_choice="gbar_char_logmean",
         formula_sigma_choice="sigma_char_rms",
+        formula_g_suppression_lambda=0.75,
+        formula_g_suppression_power=1.0,
 
         use_dimension_proxy=True,
         formula_d_ref=3.0,
@@ -748,6 +827,7 @@ if __name__ == "__main__":
         formula_dim_transition=0.35,
         formula_dim_response_min=0.55,
         formula_dim_response_max=1.85,
+        formula_dim_balance_scale=1.0,
 
         sigma_weight_mode="formula",
         sigma_weight_value=0.5,
@@ -756,6 +836,13 @@ if __name__ == "__main__":
         sigma_weight_lambda=1.0,
         sigma_weight_g_choice="gbar_char_logmean",
         sigma_weight_sigma_choice="sigma_char_rms",
+        sigma_soft_power=1.0,
+        sigma_floor_fraction=0.15,
+        sigma_normalize=True,
+        sigma_norm_mode="tanh",
+        sigma_norm_strength=1.0,
+        sigma_norm_floor_fraction=0.25,
+        sigma_norm_choice="sigma_char_rms",
 
         estimated_params_json=estimated_json,
         use_estimated_params=True,

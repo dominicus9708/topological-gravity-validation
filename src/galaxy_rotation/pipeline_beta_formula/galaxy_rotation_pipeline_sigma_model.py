@@ -37,7 +37,6 @@ def _compute_baryonic_acceleration(
         + float(upsilon_bul) * (v_bul ** 2)
     )
     v_bar2 = np.clip(v_bar2, 0.0, None)
-
     return v_bar2 / r
 
 
@@ -46,16 +45,7 @@ def compute_sigma_observables(
     sigma_raw: np.ndarray,
     floor: float = 1.0e-12,
 ) -> dict[str, float]:
-    """
-    sigma damping 및 후속 beta formula용 은하 대표량 계산.
-    """
-    required = [
-        "r_kpc",
-        "v_obs_kmps",
-        "v_gas_kmps",
-        "v_disk_kmps",
-        "v_bul_kmps",
-    ]
+    required = ["r_kpc", "v_obs_kmps", "v_gas_kmps", "v_disk_kmps", "v_bul_kmps"]
     missing = [c for c in required if c not in galaxy_data.columns]
     if missing:
         raise ValueError(f"Missing required columns for sigma observables: {missing}")
@@ -71,17 +61,18 @@ def compute_sigma_observables(
 
     sigma_raw = np.asarray(sigma_raw, dtype=float)
     sigma_raw = np.where(np.isfinite(sigma_raw), sigma_raw, 0.0)
+    sigma_abs = np.abs(sigma_raw)
     sigma_pos = np.clip(sigma_raw, 0.0, None)
 
     gbar_char_median = float(np.median(a_bar)) if a_bar.size else np.nan
-    gbar_char_logmean = (
-        float(np.exp(np.mean(np.log(np.maximum(a_bar, floor)))))
-        if a_bar.size else np.nan
-    )
+    gbar_char_logmean = float(np.exp(np.mean(np.log(np.maximum(a_bar, floor))))) if a_bar.size else np.nan
 
-    sigma_char_mean = float(np.mean(sigma_pos)) if sigma_pos.size else np.nan
-    sigma_char_median = float(np.median(sigma_pos)) if sigma_pos.size else np.nan
-    sigma_char_rms = float(np.sqrt(np.mean(sigma_pos ** 2))) if sigma_pos.size else np.nan
+    sigma_char_mean = float(np.mean(sigma_abs)) if sigma_abs.size else np.nan
+    sigma_char_median = float(np.median(sigma_abs)) if sigma_abs.size else np.nan
+    sigma_char_rms = float(np.sqrt(np.mean(sigma_abs ** 2))) if sigma_abs.size else np.nan
+    sigma_char_signed_mean = float(np.mean(sigma_raw)) if sigma_raw.size else np.nan
+    n_sigma_positive = int(np.sum(sigma_pos > 0.0))
+    n_sigma_negative = int(np.sum(sigma_raw < 0.0))
 
     return {
         "a_obs": a_obs,
@@ -91,6 +82,12 @@ def compute_sigma_observables(
         "sigma_char_mean": sigma_char_mean,
         "sigma_char_median": sigma_char_median,
         "sigma_char_rms": sigma_char_rms,
+        "sigma_char_signed_mean": sigma_char_signed_mean,
+        "sigma_char_abs_mean": sigma_char_mean,
+        "sigma_char_abs_median": sigma_char_median,
+        "sigma_char_rms_abs": sigma_char_rms,
+        "n_sigma_positive": n_sigma_positive,
+        "n_sigma_negative": n_sigma_negative,
     }
 
 
@@ -104,12 +101,6 @@ def compute_sigma_weight(
     lambda_w: float = 1.0,
     floor: float = 1.0e-12,
 ) -> dict[str, float]:
-    """
-    고정 0.5를 대체하는 은하별 weight 계산.
-
-    w = W / (1 + W)
-    W = lambda_w * (g_char/g0)^u * (sigma_char/sigma0)^v
-    """
     g_char = max(float(g_char), floor)
     sigma_char = max(float(sigma_char), floor)
     g0 = max(float(g0), floor)
@@ -117,25 +108,26 @@ def compute_sigma_weight(
 
     W = float(lambda_w) * (g_char / g0) ** float(u) * (sigma_char / sigma0) ** float(v)
     W = max(W, 0.0)
-
     w = W / (1.0 + W)
+    return {"sigma_weight": float(w), "sigma_weight_z": float(W)}
 
-    return {
-        "sigma_weight": float(w),
-        "sigma_weight_z": float(W),
-    }
+
+def _compute_sigma_char_value(obs: dict[str, float], choice: str, floor: float) -> float:
+    if choice not in obs:
+        raise ValueError(f"Unsupported sigma characteristic choice: {choice}")
+    return max(float(obs[choice]), floor)
 
 
 def compute_sigma_profile(
     galaxy_data: pd.DataFrame,
     D_bg: float = 0.0,
-    positive_only: bool = True,
+    positive_only: bool = False,
     proxy_mode: str = "log_ratio",
-    damping_mode: str = "bar_over_obs",
+    damping_mode: str = "bar_soft",
     upsilon_disk: float = 1.0,
     upsilon_bul: float = 1.0,
     floor: float = 1.0e-12,
-    sigma_weight_mode: str = "fixed",   # fixed / formula
+    sigma_weight_mode: str = "fixed",
     sigma_weight_value: float = 0.5,
     sigma_weight_g0: float | None = None,
     sigma_weight_sigma0: float | None = None,
@@ -144,28 +136,15 @@ def compute_sigma_profile(
     sigma_weight_lambda: float = 1.0,
     sigma_weight_g_choice: str = "gbar_char_logmean",
     sigma_weight_sigma_choice: str = "sigma_char_rms",
+    sigma_soft_power: float = 1.0,
+    sigma_floor_fraction: float = 0.15,
+    sigma_normalize: bool = True,
+    sigma_norm_mode: str = "tanh",
+    sigma_norm_strength: float = 1.0,
+    sigma_norm_floor_fraction: float = 0.25,
+    sigma_norm_choice: str = "sigma_char_rms",
 ) -> np.ndarray:
-    """
-    레거시 정합형 sigma profile.
-
-    핵심 변경:
-    기존의 고정 0.5 대신,
-    은하별 유도 weight w_gal 을 넣을 수 있음.
-
-    기존 fixed 모드:
-        sigma *= w + (1-w) * (a_bar / a_obs)
-        기본 w = 0.5
-
-    formula 모드:
-        w = function(g_char, sigma_char)
-    """
-    required = [
-        "r_kpc",
-        "v_obs_kmps",
-        "v_gas_kmps",
-        "v_disk_kmps",
-        "v_bul_kmps",
-    ]
+    required = ["r_kpc", "v_obs_kmps", "v_gas_kmps", "v_disk_kmps", "v_bul_kmps"]
     missing = [c for c in required if c not in galaxy_data.columns]
     if missing:
         raise ValueError(f"Missing required columns for sigma profile: {missing}")
@@ -178,12 +157,7 @@ def compute_sigma_profile(
 
     a_obs = _compute_observed_acceleration(r, v_obs)
     a_bar = _compute_baryonic_acceleration(
-        r,
-        v_gas,
-        v_disk,
-        v_bul,
-        upsilon_disk=upsilon_disk,
-        upsilon_bul=upsilon_bul,
+        r, v_gas, v_disk, v_bul, upsilon_disk=upsilon_disk, upsilon_bul=upsilon_bul
     )
 
     if proxy_mode == "log_ratio":
@@ -194,40 +168,24 @@ def compute_sigma_profile(
     else:
         raise ValueError(f"Unsupported proxy_mode: {proxy_mode}")
 
-    sigma_raw = alpha_proxy - float(D_bg)
+    sigma_raw = np.where(np.isfinite(alpha_proxy - float(D_bg)), alpha_proxy - float(D_bg), 0.0)
 
     if damping_mode == "none":
         sigma = sigma_raw
-
-    elif damping_mode == "bar_over_obs":
-        ratio = np.clip(a_bar / np.maximum(a_obs, floor), 0.0, 1.0)
-
+    else:
         if sigma_weight_mode == "fixed":
             w = float(sigma_weight_value)
-
         elif sigma_weight_mode == "formula":
-            obs = compute_sigma_observables(
-                galaxy_data=galaxy_data,
-                sigma_raw=sigma_raw,
-                floor=floor,
-            )
-
+            obs = compute_sigma_observables(galaxy_data=galaxy_data, sigma_raw=sigma_raw, floor=floor)
             if sigma_weight_g0 is None or sigma_weight_sigma0 is None:
-                raise ValueError(
-                    "formula sigma weight mode requires sigma_weight_g0 and sigma_weight_sigma0."
-                )
-
+                raise ValueError("formula sigma weight mode requires sigma_weight_g0 and sigma_weight_sigma0.")
             if sigma_weight_g_choice not in obs:
                 raise ValueError(f"Unsupported sigma_weight_g_choice: {sigma_weight_g_choice}")
             if sigma_weight_sigma_choice not in obs:
                 raise ValueError(f"Unsupported sigma_weight_sigma_choice: {sigma_weight_sigma_choice}")
-
-            g_char = float(obs[sigma_weight_g_choice])
-            s_char = float(obs[sigma_weight_sigma_choice])
-
             weight_info = compute_sigma_weight(
-                g_char=g_char,
-                sigma_char=s_char,
+                g_char=float(obs[sigma_weight_g_choice]),
+                sigma_char=float(obs[sigma_weight_sigma_choice]),
                 g0=float(sigma_weight_g0),
                 sigma0=float(sigma_weight_sigma0),
                 u=sigma_weight_u,
@@ -236,20 +194,43 @@ def compute_sigma_profile(
                 floor=floor,
             )
             w = float(weight_info["sigma_weight"])
-
         else:
             raise ValueError(f"Unsupported sigma_weight_mode: {sigma_weight_mode}")
 
         w = float(np.clip(w, 0.0, 1.0))
-        sigma = sigma_raw * (w + (1.0 - w) * ratio)
+        ratio_bar_obs = np.clip(a_bar / np.maximum(a_obs, floor), 0.0, 1.0)
+        soft_power = max(float(sigma_soft_power), floor)
+        floor_fraction = float(np.clip(sigma_floor_fraction, 0.0, 1.0))
 
-    else:
-        raise ValueError(f"Unsupported damping_mode: {damping_mode}")
+        if damping_mode == "bar_over_obs":
+            damping = w + (1.0 - w) * ratio_bar_obs
+        elif damping_mode == "bar_soft":
+            damping = w + (1.0 - w) * (floor_fraction + (1.0 - floor_fraction) * ratio_bar_obs ** soft_power)
+        else:
+            raise ValueError(f"Unsupported damping_mode: {damping_mode}")
 
-    if positive_only:
-        sigma = np.maximum(sigma, 0.0)
+        sigma = sigma_raw * damping
 
     sigma = np.asarray(sigma, dtype=float)
     sigma = np.where(np.isfinite(sigma), sigma, 0.0)
 
+    if positive_only:
+        sigma = np.maximum(sigma, 0.0)
+
+    if sigma_normalize:
+        obs_after = compute_sigma_observables(galaxy_data=galaxy_data, sigma_raw=sigma, floor=floor)
+        sigma_char = _compute_sigma_char_value(obs_after, sigma_norm_choice, floor)
+        sigma_ref = max(sigma_char * max(float(sigma_norm_floor_fraction), floor), floor)
+        scale = max(float(sigma_norm_strength), floor) * sigma_ref
+
+        if sigma_norm_mode == "tanh":
+            sigma = sigma_ref * np.tanh(sigma / scale)
+        elif sigma_norm_mode == "linear":
+            sigma = sigma / scale
+        elif sigma_norm_mode == "none":
+            pass
+        else:
+            raise ValueError(f"Unsupported sigma_norm_mode: {sigma_norm_mode}")
+
+    sigma = np.where(np.isfinite(sigma), sigma, 0.0)
     return sigma
