@@ -1,0 +1,12 @@
+Structure catalogs used in this test:
+
+1. Bizyaev et al. 2014, ApJ, 787, 24.
+   VizieR catalogue: J/ApJ/787/24.
+
+2. Bizyaev, D., & Mitronova, S. 2002, A&A, 389, 795.
+   DOI: 10.1051/0004-6361:20020633.
+
+Rotation-curve base sample:
+3. Lelli, F., McGaugh, S. S., & Schombert, J. M. 2016, AJ, 152, 157.
+   DOI: 10.3847/0004-6256/152/6/157.
+   Data: SPARC public database.

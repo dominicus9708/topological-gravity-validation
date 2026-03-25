@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.2" >
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.cds.unistra.fr
+    Date: 2026-03-25T13:37:29 [V7.5.6]
+   In case of problem, please report to:	cds-question@unistra.fr
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO name="service_protocol" value="ASU">  IVOID of the protocol through which the data was retrieved</INFO>
+<INFO name="request_date" value="2026-03-25T13:37:29">  Query execution date</INFO>
+<INFO name="request" value="https://vizier.cds.unistra.fr/viz-bin/votable/-tsv?-oc.form=dec&amp;-out.max=unlimited&amp;-out.all=2&amp;-out.add=_r&amp;-out.add=_p&amp;-out.add=_x,_y&amp;-out.add=_Glon,_Glat&amp;-out.add=_RAJ,_DEJ&amp;-out.add=_RAB,_DEB&amp;-out.add=_Elon,_Elat&amp;-sort=_r&amp;-c.eq=J2000&amp;-c.r=  2&amp;-c.u=arcmin&amp;-c.geom=r&amp;-source=J/AJ/152/157/table1&amp;-order=I&amp;-out=Name&amp;-out=Nvel&amp;-out=Type&amp;-out=Dist&amp;-out=e_Dist&amp;-out=f_Dist&amp;-out=i&amp;-out=e_i&amp;-out=L3.6&amp;-out=e_L3.6&amp;-out.all=2&amp;-out=Reff&amp;-out=SBeff&amp;-out=Rdisk&amp;-out=SBdisk&amp;-out=MHI&amp;-out=RHI&amp;-out=Vflat&amp;-out=e_Vflat&amp;-out=Qual&amp;-out=Ref&amp;-out=L16a&amp;-out=L16b&amp;-out=S4G&amp;-out=EDD&amp;-out=RC&amp;RC=RC&amp;-out=SimbadName&amp;-out=NEDname&amp;-out=_RA&amp;-out=_DE&amp;-out.all=2&amp;">  Full request URL (POST)</INFO>
+<INFO name="contact" value="cds-question@unistra.fr">  Email or URL to contact publisher</INFO>
+<INFO name="server_software" value="VizieR/7.5.6">  Software version</INFO>
+<INFO name="publisher" value="CDS">  Data centre that produced the VOTable</INFO>
+
+<!--
+Execution Reports
+ -->
+
+<RESOURCE ID="yCat_51520157" name="J/AJ/152/157" type="results">
+  <DESCRIPTION>Mass models for 175 disk galaxies with SPARC (Lelli+, 2016)</DESCRIPTION>  <INFO name="ivoid" value="ivo://cds.vizier/j/aj/152/157">    IVOID of underlying data collection  </INFO>
+  <INFO name="data_ivoid" value="ivo://cds.vizier/j/aj/152/157">    IVOID of underlying data collection  </INFO>
+  <INFO name="creator" value="Lelli F.">    First author or institution  </INFO>
+  <INFO name="cites" value="bibcode:2016AJ....152..157L">    Article or Data origin sources  </INFO>
+  <INFO name="journal" value="AJ">    Journal name  </INFO>
+  <INFO name="original_date" value="2016">    Year of the article publication  </INFO>
+  <INFO name="reference_url" value="https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/152/157">    Dataset landing page  </INFO>
+  <INFO name="citation" value="doi:10.26093/cds/vizier.51520157">    Dataset identifier that can be used for citation  </INFO>
+  <INFO name="publication_date" value="2017-10-11">    Date of first publication in the data centre  </INFO>
+  <INFO name="rights_uri" value="https://cds.unistra.fr/vizier-org/licences_vizier.html">    Licence URI  </INFO>
+
+  <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
+  <COOSYS ID="G" system="galactic"/>
+  <COOSYS ID="B1950" system="eq_FK4" equinox="B1950"/>
+  <COOSYS ID="E2000" system="ecl_FK5" equinox="E2000"/>
+  <TABLE ID="J_AJ_152_157_table1" name="J/AJ/152/157/table1">
+    <DESCRIPTION>*Galaxy sample</DESCRIPTION>
+    <!-- RowName: ${Name} -->
+    <!-- Definitions of GROUPs and FIELDs -->
+    <FIELD name="_Glon" ucd="pos.galactic.lon" ref="G" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_GAL_LON" -->
+      <DESCRIPTION>Galactic longitude (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_Glat" ucd="pos.galactic.lat" ref="G" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_GAL_LAT" -->
+      <DESCRIPTION>Galactic latitude (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_RAJ2000" ucd="pos.eq.ra" ref="J2000" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EQ_RA" -->
+      <DESCRIPTION>Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_DEJ2000" ucd="pos.eq.dec" ref="J2000" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EQ_DEC" -->
+      <DESCRIPTION>Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_RAB1950" ucd="pos.eq.ra" ref="B1950" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EQ_RA" -->
+      <DESCRIPTION>Right ascension (FK4, Equinox=B1950.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_DEB1950" ucd="pos.eq.dec" ref="B1950" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EQ_DEC" -->
+      <DESCRIPTION>Declination (FK4, Equinox=B1950.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_Elon2000" ucd="pos.ecliptic.lon" ref="E2000" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EC_LON" -->
+      <DESCRIPTION>Ecliptic longitud Equinox=J2000.0 (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_Elat2000" ucd="pos.ecliptic.lat" ref="E2000" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EC_LAT" -->
+      <DESCRIPTION>Ecliptic latitud Equinox=J2000.0 (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="recno" ucd="meta.record" datatype="int" width="8" type="hidden"><!-- ucd="RECORD" -->
+      <DESCRIPTION>Record number assigned by the VizieR team. Should Not be used for identification.</DESCRIPTION>
+      <LINK href="http://vizier.cds.unistra.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=J/AJ/152/157/table1&amp;recno=${recno}"/>
+    </FIELD>
+    <FIELD name="Name" ucd="meta.id;meta.main" datatype="char" arraysize="11*"><!-- ucd="ID_MAIN" -->
+      <DESCRIPTION>Galaxy name</DESCRIPTION>
+      <LINK href="http://vizier.cds.unistra.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=J/AJ/152/157/table1&amp;recno=${recno}"/>
+    </FIELD>
+    <FIELD name="Nvel" ucd="meta.number" datatype="short" width="3"><!-- ucd="NUMBER" -->
+      <DESCRIPTION>Number of velocities (table2)</DESCRIPTION>
+      <VALUES null="-32768" />
+    </FIELD>
+    <FIELD name="Type" ucd="meta.note" datatype="short" width="2"><!-- ucd="MORPH_TYPE" -->
+      <DESCRIPTION>[0/11] Numerical Hubble type (1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Dist" ucd="pos.distance;pos.heliocentric" datatype="float" width="6" precision="2" unit="Mpc"><!-- ucd="POS_GAL_HC" -->
+      <DESCRIPTION>[0.98/127.8] Assumed distance</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_Dist" ucd="stat.error" datatype="float" width="5" precision="2" unit="Mpc"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0.05/12.8] Mean error on Dist</DESCRIPTION>
+    </FIELD>
+    <FIELD name="f_Dist" ucd="meta.code" datatype="unsignedByte" width="1"><!-- ucd="CODE_MISC" -->
+      <DESCRIPTION>[1/5] Flag giving the distance method (2)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="i" ucd="src.orbital.inclination;pos.posAng" datatype="float" width="4" precision="1" unit="deg"><!-- ucd="POS_INCLIN_LOS" -->
+      <DESCRIPTION>[15/90] Assumed inclination angle (3)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_i" ucd="stat.error" datatype="float" width="4" precision="1" unit="deg"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[1/10] Mean error on i</DESCRIPTION>
+    </FIELD>
+    <FIELD name="L3.6" ucd="phys.luminosity;em.IR" datatype="float" width="7" precision="3" unit="GsolLum"><!-- ucd="PHYS_LUMINOSITY_IR_MISC" -->
+      <DESCRIPTION>[0/490] Total luminosity at 3.6{mu}m (L_[3.6]_)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_L3.6" ucd="stat.error" datatype="float" width="7" precision="3" unit="GsolLum"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0/6.2] Mean error on L3.6</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Reff" ucd="phys.size.radius" datatype="float" width="5" precision="2" unit="kpc"><!-- ucd="PHYS_SIZE_RADIUS_GENERAL" -->
+      <DESCRIPTION>[0/12.4] Effective radius (R_eff_) encompassing half of the total 3.6{mu}m luminosity</DESCRIPTION>
+    </FIELD>
+    <FIELD name="SBeff" ucd="phot.mag.sb" datatype="double" width="8" precision="2" unit="solLum.pc**-2"><!-- ucd="PHOT_SB_GENERAL" -->
+      <DESCRIPTION>[5.3/3317.7] Effective 3.6{mu}m surface brightness ({Sigma}_eff_), i.e., the average surface brightness within R_eff_</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Rdisk" ucd="src.morph.scLength" datatype="float" width="5" precision="2" unit="kpc"><!-- ucd="PHYS_SIZE_LENGTH" -->
+      <DESCRIPTION>[0.18/18.8] The 3.6{mu}m scale length of the stellar disk (R_d_)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="SBdisk" ucd="phot.mag.sb" datatype="double" width="8" precision="2" unit="solLum.pc**-2"><!-- ucd="PHOT_SB_GENERAL" -->
+      <DESCRIPTION>[12/23813.9] Extrapolated 3.6{mu}m central surface brightness of the stellar disk ({Sigma}_d_)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="MHI" ucd="phys.mass" datatype="float" width="7" precision="3" unit="GsolMass"><!-- ucd="PHYS_MASS_MISC" -->
+      <DESCRIPTION>[0.01/40.1] Total HI mass (M_HI_)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="RHI" ucd="phys.size.radius" datatype="float" width="5" precision="2" unit="kpc"><!-- ucd="PHYS_SIZE_RADIUS_GENERAL" -->
+      <DESCRIPTION>[0/74.3] HI radius (R_HI_) (4)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Vflat" ucd="phys.veloc" datatype="float" width="5" precision="1" unit="km/s"><!-- ucd="VELOC_ROTAT" -->
+      <DESCRIPTION>[0/332] Asymptotically velocity along the flat part of the rotation curve (V_f_) (5)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_Vflat" ucd="stat.error" datatype="float" width="5" precision="1" unit="km/s"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0/20.7] Mean error on Vflat</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Qual" ucd="meta.code.qual" datatype="short" width="3"><!-- ucd="CODE_QUALITY" -->
+      <DESCRIPTION>[1/3] Rotation-curve quality flag (1=high, 2=medium, or 3=low) (6)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Ref" ucd="pos.frame" datatype="char" arraysize="14*"><!-- ucd="REFER_CODE" -->
+      <DESCRIPTION>References for HI and H{alpha} data; in refs.dat file</DESCRIPTION>
+      <LINK href="http://vizier.cds.unistra.fr/viz-bin/VizieR-n?-info=XML&amp;-source=J/AJ/152/157/refs&amp;Ref=,${Ref}"/>
+    </FIELD>
+    <FIELD name="L16a" ucd="meta.number" datatype="short" width="3"><!-- ucd="NUMBER" -->
+      <DESCRIPTION>Indicates a galaxy in the SPARC paper of Lelli et al. 2016 (Cat. J/ApJ/816/L14)</DESCRIPTION>
+      <VALUES null="-32768" />
+    </FIELD>
+    <FIELD name="L16b" ucd="meta.number" datatype="short" width="3"><!-- ucd="NUMBER" -->
+      <DESCRIPTION>Indicates a galaxy in the SPARC paper of Lelli et al. 2016 (Cat. J/ApJ/827/L19)</DESCRIPTION>
+      <VALUES null="-32768" />
+    </FIELD>
+    <FIELD name="S4G" ucd="meta.number" datatype="short" width="3"><!-- ucd="NUMBER" -->
+      <DESCRIPTION>Indicates an object from the Spitzer Survey for Stellar Structure in Galaxies (S4G; Sheth et al. 2010, Cat. J/PASP/122/1397)</DESCRIPTION>
+      <VALUES null="-32768" />
+    </FIELD>
+    <FIELD name="EDD" ucd="meta.number" datatype="short" width="3"><!-- ucd="NUMBER" -->
+      <DESCRIPTION>Indicates an object from the Extragalactic Distance Database (EDD; Jacobs et al. 2009, Cat. J/PASP/138/332)</DESCRIPTION>
+      <VALUES null="-32768" />
+    </FIELD>
+    <FIELD name="RC" ucd="meta.ref.url" datatype="char" arraysize="2"><!-- ucd="DATA_LINK" -->
+      <DESCRIPTION>Rotation Curve</DESCRIPTION>
+      <LINK content-type="timeserie/votable" href="http://vizier.cds.unistra.fr/viz-bin/vizgraph?-s=J/AJ/152/157&amp;-i=.graph_sql&amp;Name=${Name}&amp;Qual=${Qual}&amp;--output=votable&amp;value=RC"/>
+    </FIELD>
+    <FIELD name="SimbadName" ucd="meta.id" datatype="char" arraysize="13*"><!-- ucd="ID_ALTERNATIVE" -->
+      <DESCRIPTION>Simbad column added by the CDS</DESCRIPTION>
+<!-- Designation understandable by the {\bf\fg{FireBrick}Simbad} data-base -->
+
+      <LINK href="http://simbad.cds.unistra.fr/simbad/sim-id?Ident=${SimbadName}"/>
+    </FIELD>
+    <FIELD name="NEDname" ucd="meta.id" datatype="char" arraysize="13*"><!-- ucd="ID_ALTERNATIVE" -->
+      <DESCRIPTION>Simbad column added by the CDS</DESCRIPTION>
+<!-- Designation understandable by the {\bf\fg{FireBrick}NED} data-base -->
+
+      <LINK href="$EDOBJECT_URL${NEDname}"/>
+    </FIELD>
+    <FIELD name="_RA" ucd="pos.eq.ra;meta.main" ref="J2000" datatype="double" width="9" precision="5" unit="deg"><!-- ucd="POS_EQ_RA_MAIN" -->
+      <DESCRIPTION>Position from SIMBAD database (right ascension part)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_DE" ucd="pos.eq.dec;meta.main" ref="J2000" datatype="double" width="9" precision="5" unit="deg"><!-- ucd="POS_EQ_DEC_MAIN" -->
+      <DESCRIPTION>Position from SIMBAD database (declination part)</DESCRIPTION>
+    </FIELD>
+<DATA><CSV headlines="3" colsep=";"><![CDATA[
+_Glon;_Glat;_RAJ2000;_DEJ2000;_RAB1950;_DEB1950;_Elon2000;_Elat2000;recno;Name;Nvel;Type;Dist;e_Dist;f_Dist;i;e_i;L3.6;e_L3.6;Reff;SBeff;Rdisk;SBdisk;MHI;RHI;Vflat;e_Vflat;Qual;Ref;L16a;L16b;S4G;EDD;RC;SimbadName;NEDname;_RA;_DE
+deg;deg;deg;deg;deg;deg;deg;deg; ; ; ; ;Mpc;Mpc; ;deg;deg;GLsun;GLsun;kpc;Lsun/pc2;kpc;Lsun/pc2;GMsun;kpc;km/s;km/s; ; ; ; ; ; ; ; ; ;deg;deg
+-----------;-----------;-----------;-----------;-----------;-----------;-----------;-----------;--------;-----------;---;--;------;-----;-;----;----;-------;-------;-----;--------;-----;--------;-------;-----;-----;-----;---;--------------;---;---;---;---;--;-------------;-------------;---------;---------
+143.3846041;+14.4232554;073.2795833;+67.0991667;072.0114555;+67.0161786;081.0187022;+44.1804512;       1;CamB       ;  9;10;  3.36; 0.26;2;65.0; 5.0;  0.075;  0.003; 1.21;    7.89; 0.47;   66.20;  0.012; 1.21;  0.0;  0.0;  2;Bm03          ;  0;  1;  0;  1;RC;NAME Cam B   ;NAME Cam B   ;073.27958;+67.09917
+038.4804930;+67.3531313;218.3346469;+26.9980389;217.7817373;+27.2171568;205.0383028;+39.5191062;       2;D512-2     ;  4;10; 15.20; 4.56;1;56.0;10.0;  0.325;  0.022; 2.37;    9.22; 1.24;   93.94;  0.081; 0.00;  0.0;  0.0;  2;Tr09          ;  0;  1;  0;  0;RC;ESDO 512-02  ;ESDO 512-02  ;218.33465;+26.99804
+207.6381598;+37.5976116;135.7223189;+20.0756139;135.0098532;+20.2736594;132.3338585;+03.1015159;       3;D564-8     ;  6;10;  8.79; 0.28;2;63.0; 7.0;  0.033;  0.004; 0.72;   10.11; 0.61;   21.13;  0.029; 0.00;  0.0;  0.0;  2;Tr09          ;  0;  1;  0;  0;RC;ESDO 564-8   ;ESDO 564-8   ;135.72232;+20.07561
+206.9957676;+20.8968663;119.2542811;+14.3965711;118.5508235;+14.5310847;118.4327711;-06.2018384;       4;D631-7     ; 16;10;  7.72; 0.18;2;59.0; 3.0;  0.196;  0.009; 1.22;   20.93; 0.70;  115.04;  0.290; 0.00; 57.7;  2.7;  1;Tr09,dB01     ;  1;  1;  0;  0;RC;ESDO 631-7   ;ESDO 631-7   ;119.25428;+14.39657
+195.4157028;+50.5640409;147.5948689;+31.4882769;146.8615402;+31.7222742;138.9457082;+17.3040960;       5;DDO064     ; 14;10;  6.80; 2.04;1;60.0; 5.0;  0.157;  0.007; 1.20;   17.41; 0.69;  151.65;  0.211; 3.49; 46.1;  3.9;  1;dB02,Sw02     ;  0;  1;  0;  0;RC;DDO064       ;DDO064       ;147.59487;+31.48828
+035.1601402;+89.4101541;193.5218667;+27.1496306;192.9139951;+27.4205490;180.6207694;+30.0940413;       6;DDO154     ; 12;10;  4.04; 0.20;2;64.0; 3.0;  0.053;  0.002; 0.65;   19.99; 0.37;   71.26;  0.275; 4.96; 47.0;  1.0;  2;Be91,CB89     ;  1;  1;  0;  0;RC;DDO154       ;DDO154       ;193.52187;+27.14963
+306.9528551;+45.3562520;195.8197333;-17.4230306;195.1558956;-17.1547744;201.2912718;-09.8606755;       7;DDO161     ; 31;10;  7.50; 2.25;1;70.0;10.0;  0.548;  0.015; 2.04;   20.74; 1.22;  169.37;  1.378;10.69; 66.3;  1.9;  1;Co00          ;  1;  1;  0;  0;RC;DDO161       ;DDO161       ;195.81973;-17.42303
+110.7670769;+70.6607072;198.6166561;+45.9197619;198.0668092;+46.1838911;172.9103524;+48.3679624;       8;DDO168     ; 10;10;  4.25; 0.21;2;63.0; 6.0;  0.191;  0.005; 1.29;   18.23; 1.02;   92.22;  0.413; 4.30; 53.4;  1.9;  2;Sa96,Br92     ;  1;  1;  0;  1;RC;DDO168       ;DDO168       ;198.61666;+45.91976
+017.1505747;+84.2631395;198.9740769;+25.4361481;198.3760076;+25.6997886;186.5824841;+30.7210974;       9;DDO170     ;  8;10; 15.40; 4.62;1;66.0; 7.0;  0.543;  0.030; 3.03;    9.39; 1.95;   73.93;  0.735; 9.14; 60.0;  1.6;  2;Be91,La90     ;  1;  1;  0;  0;RC;DDO170       ;DDO170       ;198.97408;+25.43615
+301.0395569;-51.4762804;015.7143583;-65.6099917;015.2385124;-65.8783322;326.8464634;-61.6532885;      10;ESO079-G014; 15; 4; 28.70; 7.17;1;79.0; 5.0; 51.733;  0.524; 7.23;  157.34; 5.08; 2295.25;  3.140;17.67;175.0;  3.5;  1;Ge04          ;  1;  1;  0;  0;RC;ESO079-G014  ;ESO079-G014  ;015.71436;-65.60999
+273.2772010;-50.8250380;048.2697750;-57.3572472;047.9538184;-57.5431613;005.4699167;-68.8580643;      11;ESO116-G012; 15; 7; 13.00; 3.90;1;74.0; 3.0;  4.292;  0.071; 2.75;   90.54; 1.51; 1320.78;  1.083; 9.58;109.1;  3.1;  1;Ge04          ;  1;  1;  0;  0;RC;ESO116-G012  ;ESO116-G012  ;048.26977;-57.35725
+315.1217992;+33.7387310;204.3350000;-28.0441667;203.6343308;-27.7898209;212.9227191;-16.6598548;      12;ESO444-G084;  7;10;  4.83; 0.48;2;32.0; 6.0;  0.071;  0.003; 0.75;   19.81; 0.46;   66.81;  0.135; 2.95;  0.0;  0.0;  2;Co00          ;  0;  1;  0;  0;RC;ESO444-G084  ;ESO444-G084  ;204.33500;-28.04417
+244.8670996;+14.3973481;131.8207542;-20.0356611;131.2557429;-19.8510783;141.0668096;-36.3581377;      13;ESO563-G021; 30; 4; 60.80; 9.10;1;83.0; 3.0;311.177;  2.579;10.59;  429.37; 5.45; 6558.89; 24.298;55.71;314.6; 11.7;  1;SG06          ;  1;  1;  0;  0;RC;ESO563-G021  ;ESO563-G021  ;131.82075;-20.03566
+199.9475762;+26.7207538;122.3858333;+22.5594444;121.6468320;+22.7069903;119.6740944;+02.3945325;      14;F561-1     ;  6; 9; 66.40;10.00;1;24.0;10.0;  4.077;  0.327; 5.39;   22.12; 2.79;   93.07;  1.622;10.69; 50.0;  2.9;  3;dB97,dB96     ;  0;  0;  0;  0;RC;LSB F561-1   ;LSB F561-1   ;122.38583;+22.55944
+207.2466952;+35.7469970;133.7558333;+19.7516667;133.0422224;+19.9428842;130.6480060;+02.2723403;      15;F563-1     ; 17; 9; 48.90; 9.80;1;25.0; 5.0;  1.903;  0.170; 4.61;   14.22; 3.52;   41.77;  3.200;23.47;109.9; 12.5;  1;KN08,dB96     ;  0;  0;  0;  0;RC;LSB F563-1   ;LSB F563-1   ;133.75583;+19.75167
+207.3992751;+33.5912808;131.6575000;+18.8902778;130.9449623;+19.0739657;128.9731509;+00.9085185;      16;F563-V1    ;  6;10; 54.00;10.80;1;60.0;10.0;  1.540;  0.165; 5.01;    9.75; 3.79;   40.63;  0.610; 6.83;  0.0;  0.0;  3;dB97,dB96     ;  0;  0;  0;  0;RC;VLSB F563-V01;VLSB F563-V01;131.65750;+18.89028
+208.5571320;+34.8514084;133.2583333;+18.4383333;132.5493717;+18.6277971;130.5556358;+00.8804622;      17;F563-V2    ; 10;10; 59.70;11.90;1;29.0;10.0;  2.986;  0.267; 4.49;   23.60; 2.43;  146.16;  2.169;11.37;116.6;  9.4;  1;dB01,dB96     ;  0;  0;  0;  0;RC;VLSB F563-V02;VLSB F563-V02;133.25833;+18.43833
+208.8780786;+45.8277787;144.4025000;+21.7708333;143.6962419;+21.9961267;139.5634500;+07.1959587;      18;F565-V2    ;  7;10; 51.80;10.40;1;60.0;10.0;  0.559;  0.098; 3.57;    6.93; 2.17;   40.26;  0.699; 7.31;  0.0;  0.0;  2;dB97,dB96     ;  0;  1;  0;  0;RC;VLSB F565-V02;VLSB F565-V02;144.40250;+21.77083
+214.2926702;+54.5849314;154.4845833;+21.0613889;153.7968917;+21.3118258;148.7148096;+09.7771278;      19;F567-2     ;  5; 9; 79.00;11.80;1;20.0;10.0;  2.134;  0.305; 5.43;   11.50; 3.08;   46.65;  2.449;14.94;  0.0;  0.0;  3;dB97,dB96     ;  0;  0;  0;  0;RC;LSB F567-2   ;LSB F567-2   ;154.48458;+21.06139
+212.8920444;+56.7023224;156.4254167;+22.4244444;155.7379161;+22.6788471;149.9097917;+11.7082803;      20;F568-1     ; 12; 5; 90.70; 9.70;1;26.0; 5.0;  6.252;  0.564; 7.00;   20.36; 5.18;   57.13;  4.498;16.31;  0.0;  0.0;  1;dB01,dB96     ;  0;  0;  0;  0;RC;LSB F568-1   ;LSB F568-1   ;156.42542;+22.42444
+213.3874048;+56.9335531;156.7458333;+22.2266667;156.0593743;+22.4816976;150.2659126;+11.6352305;      21;F568-3     ; 18; 7; 82.40; 8.24;1;40.0;10.0;  8.346;  0.592; 7.47;   23.81; 4.99;  132.08;  3.195;16.14;  0.0;  0.0;  1;KN08,dB96     ;  0;  1;  0;  0;RC;LSB F568-3   ;LSB F568-3   ;156.74583;+22.22667
+215.9698689;+60.8996585;161.2586000;+22.0543167;160.5808498;+22.3173293;154.2908709;+13.0645161;      22;F568-V1    ; 15; 7; 80.60; 8.06;1;40.0;10.0;  3.825;  0.384; 4.40;   31.39; 2.85;   90.54;  2.491;14.38;112.3; 15.8;  1;dB01,dB96     ;  1;  1;  0;  0;RC;VLSB F568-V01;VLSB F568-V01;161.25860;+22.05432
+232.4293226;+70.5990910;173.4762500;+19.3550000;172.8238333;+19.6313183;166.2035322;+15.1550979;      23;F571-8     ; 13; 5; 53.30;10.70;1;85.0; 5.0; 10.164;  0.412; 1.40;  825.71; 3.56;   87.26;  1.782;24.55;139.7;  4.3;  1;dB01,dB96     ;  1;  1;  0;  0;RC;LSB F571-8   ;LSB F571-8   ;173.47625;+19.35500
+231.4173788;+68.7610087;171.5750000;+18.8316667;170.9197793;+19.1067315;164.7286983;+13.9451241;      24;F571-V1    ;  7; 7; 80.10; 8.00;1;30.0;10.0;  1.849;  0.267; 4.38;   15.30; 2.47;   64.39;  1.217;10.10; 83.6;  3.5;  2;dB97,dB96     ;  0;  1;  0;  0;RC;VLSB F571-V01;VLSB F571-V01;171.57500;+18.83167
+270.3604816;+84.3154482;189.5554167;+22.2997222;188.9331876;+22.5744066;179.3705097;+24.1566807;      25;F574-1     ; 14; 7; 96.80; 9.68;1;65.0;10.0;  6.537;  0.596; 5.87;   29.98; 4.46;  128.48;  3.524;16.19; 97.8;  4.1;  1;dB01,dB96     ;  1;  1;  0;  0;RC;LSB F574-1   ;LSB F574-1   ;189.55542;+22.29972
+291.4487150;+84.5711094;191.6970833;+21.8033333;191.0785242;+22.0761538;181.5724717;+24.5601470;      26;F574-2     ;  5; 9; 89.10; 8.91;1;30.0;10.0;  2.877;  0.384; 6.48;   10.89; 3.76;   41.38;  1.701;12.61;  0.0;  0.0;  3;dB97,dB96     ;  0;  0;  0;  0;RC;LSB F574-2   ;LSB F574-2   ;191.69708;+21.80333
+027.7771949;+66.6553289;218.2004167;+22.7661111;217.6318412;+22.9856591;207.0022410;+35.5818001;      27;F579-V1    ; 14; 5; 89.50; 8.95;1;26.0;10.0; 11.848;  0.742; 5.76;   56.60; 3.37;  201.76;  2.245;20.96;112.1; 13.4;  1;dB01,dB96     ;  0;  0;  0;  0;RC;VLSB F579-V01;VLSB F579-V01;218.20042;+22.76611
+034.6573794;+47.2296317;239.3645139;+20.6664211;238.8141618;+20.8093768;231.4459933;+40.0935766;      28;F583-1     ; 25; 9; 35.40; 8.85;1;63.0; 5.0;  0.986;  0.093; 3.74;   11.19; 2.36;   60.93;  2.126;15.65; 85.8;  3.6;  1;KN08,dB96     ;  1;  1;  0;  0;RC;LSB F583-1   ;LSB F583-1   ;239.36451;+20.66642
+031.4270009;+47.7864464;238.0500000;+18.7850000;237.4896577;+18.9334183;230.5546621;+37.9508459;      29;F583-4     ; 12; 5; 53.30;10.70;1;55.0;10.0;  1.715;  0.185; 3.31;   24.94; 1.93;   83.34;  0.641; 7.80;  0.0;  0.0;  1;KN08,dB96     ;  0;  1;  0;  0;RC;LSB F583-4   ;LSB F583-4   ;238.05000;+18.78500
+140.2068473;+43.6071974;157.0978375;+68.4121389;156.1765039;+68.6675863;124.0653237;+52.7659212;      30;IC2574     ; 34; 9;  3.91; 0.20;2;75.0; 7.0;  1.016;  0.012; 3.18;   15.88; 2.78;   80.32;  1.036;10.81; 66.4;  2.0;  2;Sa96,MC94     ;  1;  1;  1;  1;RC;IC2574       ;IC2574       ;157.09784;+68.41214
+001.5983861;+85.4555127;197.1315917;+24.7008333;196.5281806;+24.9672077;185.2194398;+29.3306441;      31;IC4202     ; 32; 4;100.40;10.00;1;90.0; 1.0;179.749;  3.311; 8.55;  391.59; 4.78; 8888.53; 12.326;32.13;242.6; 11.0;  1;SG06          ;  1;  0;  0;  0;RC;IC4202       ;IC4202       ;197.13159;+24.70083
+095.5758057;+12.2281590;307.6370833;+60.3547222;307.3828413;+60.1852707;357.4101646;+72.4007272;      32;KK98-251   ; 15;10;  6.80; 2.04;1;59.0; 5.0;  0.085;  0.007; 1.28;    7.89; 1.34;   52.10;  0.115; 2.90; 33.7;  1.6;  2;BC04          ;  1;  1;  0;  0;RC;[KK98a] 251  ;[KK98a] 251  ;307.63708;+60.35472
+043.6915477;-80.4347899;002.4855917;-24.9631306;001.8498098;-25.2413216;351.7202992;-23.7563915;      33;NGC0024    ; 29; 5;  7.30; 0.36;2;64.0; 3.0;  3.889;  0.036; 2.01;  151.65; 1.34; 1182.58;  0.676; 7.29;106.3;  7.9;  1;Di08,Ch06     ;  1;  1;  1;  0;RC;NGC0024      ;NGC0024      ;002.48559;-24.96313
+332.8820402;-75.7309089;003.7233417;-39.1966278;003.0961941;-39.4745439;345.1384997;-36.8593272;      34;NGC0055    ; 21; 9;  2.11; 0.11;2;77.0; 3.0;  4.628;  0.013; 3.67;   54.55; 6.11;  391.59;  1.565;10.24; 85.6;  5.0;  2;Sa96,Pu91     ;  1;  1;  1;  0;RC;NGC0055      ;NGC0055      ;003.72334;-39.19663
+113.4793038;-45.8820349;006.0118208;+16.4863889;005.3630230;+16.2094346;012.1337620;+12.7338281;      35;NGC0100    ; 21; 6; 13.50; 4.05;1;89.0; 1.0;  3.232;  0.063; 2.81;   64.99; 1.66; 1193.52;  1.990;16.36; 88.1;  6.4;  1;dB02,Rh96     ;  0;  0;  1;  0;RC;NGC0100      ;NGC0100      ;006.01182;+16.48639
+113.9473819;-83.5570860;011.7856417;-20.7604000;011.1660877;-21.0332203;002.1417458;-23.6521187;      36;NGC0247    ; 26; 7;  3.70; 0.19;2;74.0; 3.0;  7.332;  0.027; 5.87;   33.79; 3.74;  506.79;  1.746;12.79;104.9;  8.0;  2;Sa96,Ca90     ;  1;  1;  1;  0;RC;NGC0247      ;NGC0247      ;011.78564;-20.76040
+299.1243611;-85.9130414;013.1765208;-31.2058306;012.5735978;-31.4772321;358.1284544;-33.5672189;      37;NGC0289    ; 28; 4; 20.80; 5.20;1;46.0; 5.0; 72.065;  0.465; 2.69; 1587.93; 6.74;   69.96; 27.469;49.51;163.0;  8.0;  2;Wa97          ;  1;  1;  1;  0;RC;NGC0289      ;NGC0289      ;013.17652;-31.20583
+299.2086111;-79.4188928;013.7228292;-37.6843806;013.1323082;-37.9551797;354.7295364;-39.4604143;      38;NGC0300    ; 25; 7;  2.08; 0.10;2;42.0;10.0;  2.922;  0.008; 1.77;  147.51; 1.75;  437.35;  0.936; 9.20; 93.3;  7.0;  2;Sa96,CP90     ;  1;  1;  1;  0;RC;NGC0300      ;NGC0300      ;013.72283;-37.68438
+138.2186446;-22.4571483;030.9368750;+38.2586722;030.1850930;+38.0190425;042.4775782;+24.0505662;      39;NGC0801    ; 13; 5; 80.70; 8.07;1;80.0; 1.0;312.570;  3.455; 7.76;  818.14; 8.72; 1558.94; 23.201;44.99;220.1;  6.2;  1;Sa96,Br92     ;  1;  1;  0;  0;RC;NGC0801      ;NGC0801      ;030.93687;+38.25867
+140.3822389;-17.4152486;035.6371125;+42.3483194;034.8506489;+42.1210472;047.8262091;+26.5360123;      40;NGC0891    ; 18; 3;  9.91; 0.50;2;90.0; 1.0;138.340;  0.255; 3.68; 1617.45; 2.55; 5067.92;  4.462;18.16;216.1;  5.7;  1;Fr11          ;  1;  0;  0;  0;RC;NGC0891      ;NGC0891      ;035.63711;+42.34832
+144.0051496;-17.5450420;039.8203875;+40.8722917;039.0273616;+40.6573279;050.5012884;+24.0641060;      41;NGC1003    ; 36; 6; 11.40; 3.42;1;67.0; 5.0;  6.820;  0.075; 2.76;  140.87; 1.61; 1345.33;  5.880;33.33;109.8;  4.2;  1;Sa96,Br92     ;  1;  1;  0;  0;RC;NGC1003      ;NGC1003      ;039.82039;+40.87229
+173.5088194;-51.4438017;041.6413167;-00.2470417;041.0017947;-00.4560911;039.1272362;-15.5609041;      42;NGC1090    ; 24; 4; 37.00; 9.25;1;64.0; 3.0; 72.045;  0.796; 6.36;  283.68; 3.53; 2055.09;  8.783;30.49;164.4;  3.7;  1;Ge04          ;  1;  1;  1;  0;RC;NGC1090      ;NGC1090      ;041.64132;-00.24704
+261.0784928;-38.7433607;073.5562500;-53.3610611;073.2749030;-53.4405501;050.6397519;-74.5516461;      43;NGC1705    ; 14;11;  5.73; 0.29;2;80.0;10.0;  0.533;  0.010; 0.49;  347.40; 0.39;  587.26;  0.139; 2.36; 71.9;  4.3;  3;Le14          ;  0;  0;  1;  0;RC;NGC1705      ;NGC1705      ;073.55625;-53.36106
+146.4264069;+28.5320752;112.2160417;+69.2086389;110.8919515;+69.3108789;101.2721494;+46.6370946;      44;NGC2366    ; 26;10;  3.27; 0.16;2;68.0; 5.0;  0.236;  0.005; 1.08;   31.98; 0.65;  113.98;  0.647; 6.94; 50.2;  3.2;  3;Le14          ;  0;  0;  0;  1;RC;NGC2366      ;NGC2366      ;112.21604;+69.20864
+150.5690875;+29.1858072;114.2141500;+65.6025472;113.0099185;+65.7140145;103.4592480;+43.2907874;      45;NGC2403    ; 73; 6;  3.16; 0.16;2;63.0; 3.0; 10.041;  0.028; 2.16;  341.06; 1.39; 1408.74;  3.199;15.11;131.2;  4.9;  1;Da06,Fr02     ;  1;  1;  0;  1;RC;NGC2403      ;NGC2403      ;114.21415;+65.60255
+190.4547405;+38.7608076;133.1722708;+33.4218000;132.3963769;+33.6108276;126.2939884;+15.2612119;      46;NGC2683    ; 11; 3;  9.81; 0.49;2;80.0; 5.0; 80.415;  0.222; 3.34; 1139.80; 2.18;10205.40;  1.406;13.79;154.0;  8.1;  2;Sa96,Br92     ;  1;  1;  1;  0;RC;NGC2683      ;NGC2683      ;133.17227;+33.42180
+166.9420675;+44.1513145;140.5110625;+50.9764778;139.6492530;+51.1898999;125.6935473;+33.6080097;      47;NGC2841    ; 50; 3; 14.10; 1.40;3;76.0;10.0;188.121;  0.520; 5.51;  983.63; 3.64; 4751.49;  9.775;45.12;284.8;  8.6;  1;Di08,Be91     ;  1;  1;  1;  0;RC;NGC2841      ;NGC2841      ;140.51106;+50.97648
+208.7114992;+44.5400933;143.0421292;+21.5008306;142.3346697;+21.7221800;138.4458888;+06.5320103;      48;NGC2903    ; 34; 4;  6.60; 1.98;1;66.0; 3.0; 81.863;  0.151; 4.54;  632.16; 2.33; 1193.52;  2.552;13.76;184.6;  5.6;  1;Be91,Be87     ;  1;  1;  1;  0;RC;NGC2903      ;NGC2903      ;143.04213;+21.50083
+291.9660937;-18.3572620;141.5480500;-76.6263194;141.6289594;-76.4081572;234.6144307;-71.7715482;      49;NGC2915    ; 30;11;  4.06; 0.20;2;56.0; 4.0;  0.641;  0.008; 0.53;  347.40; 0.55;  313.93;  0.508; 7.16; 83.5;  6.3;  2;El10          ;  1;  1;  0;  1;RC;NGC2915      ;NGC2915      ;141.54805;-76.62632
+188.4456864;+48.9422827;145.3191667;+35.8821167;144.5624070;+36.1099117;135.4398383;+20.7548583;      50;NGC2955    ; 24; 3; 97.90; 9.80;1;56.0; 7.0;319.422;  4.413; 7.22;  974.61;18.76;   50.68; 28.949;40.34;  0.0;  0.0;  1;SG06          ;  0;  1;  0;  0;RC;NGC2955      ;NGC2955      ;145.31917;+35.88212
+143.9144213;+40.9025075;146.8144083;+67.9163806;145.7910526;+68.1478926;119.4440178;+50.2029527;      51;NGC2976    ; 27; 5;  3.58; 0.18;2;61.0;10.0;  3.371;  0.019; 1.31;  308.20; 1.01; 1502.55;  0.172; 3.04; 85.4;  3.3;  2;Si03          ;  1;  1;  1;  1;RC;NGC2976      ;NGC2976      ;146.81441;+67.91638
+175.7183046;+49.8102289;147.1817917;+44.0812861;146.3929365;+44.3141071;133.6008887;+28.9080734;      52;NGC2998    ; 13; 5; 68.10;10.20;1;58.0; 2.0;150.902;  2.085; 7.06;  479.55; 6.20;  774.16; 23.451;43.58;209.9;  8.1;  1;Sa96,Br92     ;  1;  1;  0;  0;RC;NGC2998      ;NGC2998      ;147.18179;+44.08129
+262.1016355;+23.0701730;150.7786542;-26.1595722;150.2050080;-25.9173106;163.8627261;-35.3655314;      53;NGC3109    ; 25; 9;  1.33; 0.07;2;70.0; 5.0;  0.194;  0.002; 1.64;   11.40; 1.56;  140.87;  0.477; 6.00; 66.2;  2.6;  1;Be91,JC90     ;  1;  1;  0;  1;RC;NGC3109      ;NGC3109      ;150.77865;-26.15957
+171.2184861;+54.8289153;154.9791250;+45.5496889;154.2162591;+45.8010611;138.7909183;+32.4888600;      54;NGC3198    ; 43; 5; 13.80; 1.40;3;73.0; 3.0; 38.279;  0.212; 5.84;  178.99; 3.14; 1602.62; 10.869;35.66;150.1;  3.9;  1;Da06,Be91,Be87;  1;  1;  1;  0;RC;NGC3198      ;NGC3198      ;154.97912;+45.54969
+255.5318557;+52.8292532;166.4524708;-00.0359000;165.8116994;+00.2343210;167.5479558;-05.3796614;      55;NGC3521    ; 41; 4;  7.70; 2.30;1;75.0; 5.0; 84.836;  0.156; 2.45; 2232.70; 2.40; 2112.66;  4.154;18.85;213.7; 15.9;  1;Da06,Sa96     ;  1;  1;  1;  0;RC;NGC3521      ;NGC3521      ;166.45247;-00.03590
+155.3788330;+64.8788316;173.3382250;+47.0290917;172.6609799;+47.3052882;151.7615471;+39.7819468;      56;NGC3726    ; 12; 5; 18.00; 2.50;4;53.0; 2.0; 70.234;  0.388; 7.52;  198.08; 3.40; 1789.91;  6.473;22.20;168.0;  6.2;  2;VS01,SV98     ;  1;  1;  1;  0;RC;NGC3726      ;NGC3726      ;173.33822;+47.02909
+157.5724037;+66.4453606;174.0239739;+45.2841550;173.3522620;+45.5607406;153.4358349;+38.5230254;      57;NGC3741    ; 21;10;  3.21; 0.17;2;70.0; 4.0;  0.028;  0.001; 0.32;   42.94; 0.20;  143.49;  0.182; 4.20; 50.1;  2.1;  1;Ge07,Bm05     ;  1;  1;  0;  1;RC;NGC3741      ;NGC3741      ;174.02397;+45.28415
+152.7218223;+64.7493811;174.4337750;+47.8930917;173.7612952;+48.1698862;152.0039493;+40.9048592;      58;NGC3769    ; 12; 3; 18.00; 2.50;4;70.0; 2.0; 18.679;  0.189; 2.18;  626.37; 3.38;  160.26;  5.529;22.57;118.6;  8.4;  2;VS01,SV98     ;  1;  1;  1;  0;RC;NGC3769      ;NGC3769      ;174.43377;+47.89309
+150.7196050;+65.9566004;176.5324250;+47.4945000;175.8715497;+47.7721586;153.8764621;+41.3092913;      59;NGC3877    ; 13; 5; 18.00; 2.50;4;76.0; 1.0; 72.535;  0.401; 4.39;  598.18; 2.53; 3410.59;  1.483;11.47;168.4;  5.1;  2;VS01,SV98     ;  1;  1;  1;  0;RC;NGC3877      ;NGC3877      ;176.53242;+47.49450
+148.1549550;+65.2273931;177.1591958;+48.7107889;176.5009222;+48.9886315;153.4791116;+42.5611519;      60;NGC3893    ; 10; 5; 18.00; 2.50;4;49.0; 2.0; 58.525;  0.377; 2.43; 1573.37; 2.38; 2055.09;  5.799;20.84;174.0;  8.9;  1;VS01,SV98     ;  1;  1;  1;  0;RC;NGC3893      ;NGC3893      ;177.15920;+48.71079
+143.6500323;+62.7941202;177.6895292;+51.8242111;177.0324875;+52.1021815;151.4823861;+45.3438613;      61;NGC3917    ; 17; 6; 18.00; 2.50;4;79.0; 2.0; 21.966;  0.202; 5.56;  112.94; 2.63; 1226.96;  1.888;14.08;135.9;  4.1;  1;VS01,SV98     ;  1;  1;  1;  0;RC;NGC3917      ;NGC3917      ;177.68953;+51.82421
+147.6334497;+66.4057461;178.4239500;+47.8587833;177.7730287;+48.1368990;155.0614440;+42.2964204;      62;NGC3949    ;  7; 4; 18.00; 2.50;4;55.0; 2.0; 38.067;  0.280; 2.39; 1058.84; 3.59;  185.71;  3.371;13.72;163.0;  7.1;  2;VS01,SV98     ;  1;  1;  1;  0;RC;NGC3949      ;NGC3949      ;178.42395;+47.85878
+142.2176521;+62.5904993;178.4542833;+52.3265417;177.8017870;+52.6046580;151.6264402;+46.0243995;      63;NGC3953    ;  8; 4; 18.00; 2.50;4;62.0; 1.0;141.301;  0.521; 6.17;  587.26; 4.89; 1999.08;  2.832;17.38;220.8;  6.1;  1;VS01,SV98     ;  1;  1;  1;  0;RC;NGC3953      ;NGC3953      ;178.45428;+52.32654
+138.8479825;+60.0534496;178.9379875;+55.3206722;178.2875372;+55.5988529;149.3739131;+48.6160172;      64;NGC3972    ; 10; 4; 18.00; 2.50;4;77.0; 1.0; 14.353;  0.172; 3.73;  164.75; 2.18; 1587.93;  1.214;10.05;132.7;  2.9;  1;VS01,SV98     ;  1;  1;  1;  0;RC;NGC3972      ;NGC3972      ;178.93799;+55.32067
+140.0916480;+61.9233466;179.3999333;+53.3745194;178.7532048;+53.6527470;151.4207191;+47.2094559;      65;NGC3992    ;  9; 4; 23.70; 2.30;5;56.0; 2.0;226.932;  0.836; 9.99;  360.44; 4.96; 3257.09; 16.599;32.75;241.0;  5.2;  1;VS01,SV98     ;  1;  1;  1;  0;RC;NGC3992      ;NGC3992      ;179.39993;+53.37452
+146.6730323;+67.3589614;179.6582958;+47.2613111;179.0141211;+47.5395617;156.4445881;+42.2402401;      66;NGC4010    ; 12; 7; 18.00; 2.50;4;89.0; 1.0; 17.193;  0.190; 6.63;   14.75; 2.81; 2611.14;  2.832;17.59;125.8;  4.7;  2;VS01,SV98     ;  1;  0;  1;  0;RC;NGC4010      ;NGC4010      ;179.65830;+47.26131
+151.8645887;+70.0888237;179.6309042;+43.9470222;178.9869831;+44.2252746;158.7271871;+39.4111716;      67;NGC4013    ; 36; 3; 18.00; 2.50;4;89.0; 1.0; 79.094;  0.364; 4.11;  746.16; 3.53;10205.40;  2.967;31.35;172.9;  7.1;  2;VS01,SV98     ;  1;  0;  1;  0;RC;NGC4013      ;NGC4013      ;179.63090;+43.94702
+148.8826210;+70.0853236;180.7903583;+44.5312611;180.1519492;+44.8095235;159.2582367;+40.3413530;      68;NGC4051    ;  7; 4; 18.00; 2.50;4;49.0; 3.0; 95.268;  0.439; 6.87;  319.76; 4.65; 1320.78;  2.697;15.13;157.0;  5.5;  2;VS01,SV98     ;  1;  1;  1;  0;RC;NGC4051      ;NGC4051      ;180.79036;+44.53126
+138.9003691;+63.0438462;181.0136050;+52.5905689;180.3773766;+52.8688124;153.2545351;+47.1422120;      69;NGC4068    ;  6;10;  4.37; 0.22;2;44.0; 6.0;  0.236;  0.005; 1.11;   30.26; 0.59;  261.11;  0.154; 3.18;  0.0;  0.0;  2;Le14          ;  0;  1;  1;  1;RC;NGC4068      ;NGC4068      ;181.01360;+52.59057
+140.5869128;+65.1672179;181.3446042;+50.3527500;180.7099858;+50.6309712;155.3628425;+45.4309517;      70;NGC4085    ;  7; 5; 18.00; 2.50;4;82.0; 2.0; 21.724;  0.200; 2.00;  856.70; 1.65; 5021.46;  1.349;10.16;131.5;  4.8;  2;VS01,SV98     ;  1;  1;  1;  0;RC;NGC4085      ;NGC4085      ;181.34460;+50.35275
+140.3351348;+65.0110730;181.3924542;+50.5390278;180.7581607;+50.8172445;155.2477763;+45.6016183;      71;NGC4088    ; 12; 4; 18.00; 2.50;4;69.0; 2.0;107.286;  0.494; 6.10;  457.96; 2.58; 3988.69;  8.226;22.25;171.7;  6.9;  1;VS01,SV98     ;  1;  1;  1;  0;RC;NGC4088      ;NGC4088      ;181.39245;+50.53903
+141.1101098;+65.9167467;181.5358417;+49.5823111;180.9021580;+49.8605147;156.1228129;+44.8640067;      72;NGC4100    ; 24; 4; 18.00; 2.50;4;73.0; 2.0; 59.394;  0.328; 4.93;  388.00; 2.15; 8970.78;  3.102;18.06;158.2;  5.0;  1;VS01,SV98     ;  1;  1;  1;  0;RC;NGC4100      ;NGC4100      ;181.53584;+49.58231
+147.3049195;+71.4037629;182.3741167;+43.6853167;181.7430373;+43.9634094;161.1081909;+40.2120207;      73;NGC4138    ;  7; 0; 18.00; 2.50;4;53.0; 3.0; 44.111;  0.284; 1.91; 1909.11; 1.51; 3952.12;  1.483;18.58;147.3;  5.9;  2;VS01,SV98     ;  1;  1;  1;  0;RC;NGC4138      ;NGC4138      ;182.37412;+43.68532
+138.4714421;+65.4082211;182.7681875;+50.4846806;182.1420414;+50.7626906;156.3234534;+46.0560605;      74;NGC4157    ; 17; 3; 18.00; 2.50;4;82.0; 3.0;105.620;  0.486; 4.44;  848.85; 2.32;23813.87;  8.226;24.09;184.7;  7.2;  1;VS01,SV98     ;  1;  1;  1;  0;RC;NGC4157      ;NGC4157      ;182.76819;+50.48468
+145.3980135;+71.7272187;183.3202500;+43.6982694;182.6935921;+43.9761584;161.8656957;+40.5799430;      75;NGC4183    ; 23; 6; 18.00; 2.50;4;82.0; 2.0; 10.838;  0.150; 4.47;   86.46; 2.79; 1098.58;  3.506;16.07;110.6;  5.4;  1;VS01,SV98     ;  1;  1;  1;  0;RC;NGC4183      ;NGC4183      ;183.32025;+43.69827
+160.2543122;+78.0745434;183.9132250;+36.3268889;183.2854581;+36.6046205;167.0250915;+34.4286164;      76;NGC4214    ; 14;10;  2.87; 0.14;2;15.0;10.0;  1.141;  0.008; 0.70;  363.77; 0.51; 1308.67;  0.486; 5.84; 80.1;  5.8;  2;Le14          ;  0;  0;  1;  1;RC;NGC4214      ;NGC4214      ;183.91322;+36.32689
+139.8977523;+68.8468054;183.9620833;+47.0917889;183.3405681;+47.3694924;159.9269420;+43.6869644;      77;NGC4217    ; 19; 3; 18.00; 2.50;4;86.0; 2.0; 85.299;  0.393; 5.28;  483.98; 2.94; 4373.51;  2.562;16.70;181.3;  7.2;  1;VS01,SV98     ;  1;  0;  1;  0;RC;NGC4217      ;NGC4217      ;183.96208;+47.09179
+136.7277085;+70.7447961;186.3962417;+45.6846694;185.7859530;+45.9613678;162.9282806;+43.4263617;      78;NGC4389    ;  6; 4; 18.00; 2.50;4;50.0; 4.0; 21.328;  0.216; 4.05;  207.41; 2.79;  322.72;  0.539; 6.81;  0.0;  0.0;  3;VS01,SV98     ;  0;  0;  1;  0;RC;NGC4389      ;NGC4389      ;186.39624;+45.68467
+198.4173979;+86.4702856;188.9903708;+27.9597611;188.3721092;+28.2348635;176.0749119;+29.0168775;      79;NGC4559    ; 32; 6;  9.00; 2.70;1;67.0; 1.0; 19.377;  0.107; 3.82;  211.27; 2.10; 1602.62;  5.811;21.16;121.2;  5.1;  1;Ba05          ;  0;  1;  1;  0;RC;NGC4559      ;NGC4559      ;188.99037;+27.95976
+101.6124824;+79.2491629;197.7346333;+37.0589417;197.1572461;+37.3244178;178.7420420;+40.5115060;      80;NGC5005    ; 18; 4; 16.90; 1.50;5;68.0; 2.0;178.720;  0.494; 3.97; 1789.91; 9.45;   96.57;  1.280;10.41;262.2; 20.7;  1;Ri15          ;  1;  1;  1;  0;RC;NGC5005      ;NGC5005      ;197.73463;+37.05894
+098.0585179;+79.4480094;198.3647292;+36.5936500;197.7884551;+36.8581922;179.6208407;+40.3583283;      81;NGC5033    ; 22; 5; 15.70; 4.70;1;66.0; 1.0;110.509;  0.407; 2.94; 2036.24; 5.16;  614.94; 11.314;29.53;194.2;  3.6;  1;Sa96,Be87     ;  1;  1;  1;  0;RC;NGC5033      ;NGC5033      ;198.36473;+36.59365
+105.9970472;+74.2875984;198.9555375;+42.0292889;198.3955304;+42.2929075;176.3399034;+45.2546543;      82;NGC5055    ; 28; 4;  9.90; 0.30;2;55.0; 6.0;152.922;  0.282; 4.18; 1383.02; 3.20; 3348.34; 11.722;35.06;179.0;  4.9;  1;Ba06,Bl04     ;  1;  1;  1;  0;RC;NGC5055      ;NGC5055      ;198.95554;+42.02929
+082.1724937;+71.1958712;208.9167625;+40.4617694;208.3903603;+40.7059606;186.7991550;+47.8791241;      83;NGC5371    ; 19; 4; 39.70; 9.92;1;53.0; 2.0;340.393;  1.881; 9.80;  560.83; 7.44; 1395.82; 11.180;30.03;209.5;  3.9;  1;Sa96,Be87     ;  1;  1;  1;  0;RC;NGC5371      ;NGC5371      ;208.91676;+40.46177
+100.9964178;+56.4748602;214.9508500;+56.7290500;214.5529469;+56.9576681;174.3820344;+63.1391033;      84;NGC5585    ; 24; 7;  7.06; 2.12;1;51.0; 2.0;  2.943;  0.033; 2.27;   90.54; 1.53;  297.05;  1.683;10.92; 90.3;  2.4;  1;Bl99,Sa96,Co91;  1;  1;  1;  0;RC;NGC5585      ;NGC5585      ;214.95085;+56.72905
+091.5842729;+51.0870226;228.9736958;+56.3288500;228.6484100;+56.5120853;188.2405142;+68.4246450;      85;NGC5907    ; 19; 5; 17.30; 0.90;2;88.0; 2.0;175.425;  0.646; 7.88;  449.60; 5.34; 8646.29; 21.025; 0.00;215.0;  2.9;  1;Sa96,SA87     ;  1;  0;  1;  0;RC;NGC5907      ;NGC5907      ;228.97370;+56.32885
+092.9792137;+46.8294415;234.9045417;+59.3319500;234.6483846;+59.4924274;187.9112495;+72.7780542;      86;NGC5985    ; 33; 3; 39.70; 9.90;1;60.0; 2.0;208.728;  1.538;10.71;  288.95; 7.01; 1461.61; 11.586;39.50;293.6;  8.6;  1;Bl04,Br92     ;  0;  1;  1;  0;RC;NGC5985      ;NGC5985      ;234.90454;+59.33195
+095.6923901;+44.1244917;237.8551333;+62.3100306;237.6643204;+62.4584586;182.0302135;+75.6764369;      87;NGC6015    ; 44; 6; 17.00; 5.10;1;60.0; 2.0; 32.129;  0.237; 3.92;  331.76; 2.30; 1926.77;  5.834;21.43;154.1;  7.0;  2;VM97          ;  1;  1;  1;  0;RC;NGC6015      ;NGC6015      ;237.85513;+62.31003
+062.3114538;+42.1427381;249.1355458;+39.0280028;248.7056478;+39.1280745;236.3418618;+60.0526004;      88;NGC6195    ; 23; 3;127.80;12.80;1;62.0; 5.0;391.076;  6.123; 9.52;  686.80;13.94;  174.11; 20.907;40.89;251.7;  9.3;  1;SG06          ;  1;  1;  0;  0;RC;NGC6195      ;NGC6195      ;249.13555;+39.02800
+100.5726001;+30.6407527;267.3604750;+70.1443417;267.4897766;+70.1568227;103.9784462;+86.2872937;      89;NGC6503    ; 31; 6;  6.26; 0.31;2;74.0; 2.0; 12.845;  0.059; 1.62;  774.16; 2.16;  398.87;  1.744;14.05;116.3;  2.4;  1;Be91,Be87     ;  1;  1;  1;  0;RC;NGC6503      ;NGC6503      ;267.36047;+70.14434
+054.5924740;+13.9191214;279.6412042;+25.3751083;279.1305212;+25.3297071;283.1677622;+48.3746443;      90;NGC6674    ; 15; 3; 51.20;10.20;1;54.0; 6.0;214.654;  1.977; 7.75;  560.83; 6.04; 1370.35; 32.165;50.02;241.3;  4.9;  1;Sa96,Br92     ;  1;  1;  0;  0;RC;NGC6674      ;NGC6674      ;279.64120;+25.37511
+094.9750234;+21.5188601;289.1715375;+63.9733056;289.0681149;+63.8821429;351.0026291;+81.6110282;      91;NGC6789    ;  4;11;  3.52; 0.18;2;43.0; 7.0;  0.100;  0.003; 0.52;   59.27; 0.31;  319.76;  0.017; 0.97;  0.0;  0.0;  2;Le14          ;  0;  1;  0;  0;RC;NGC6789      ;NGC6789      ;289.17154;+63.97331
+095.7187582;+11.6727361;308.7180500;+60.1536778;308.4550495;+59.9801090;357.9314046;+71.8507592;      92;NGC6946    ; 58; 6;  5.52; 1.66;2;38.0; 2.0; 66.173;  0.122; 4.20;  571.26; 2.44; 2232.70;  5.670;21.25;158.9; 10.9;  1;Bo08          ;  1;  1;  0;  0;RC;NGC6946      ;NGC6946      ;308.71805;+60.15368
+093.7221383;-20.7239366;339.2670917;+34.4159194;338.6944021;+34.1561357;356.8008814;+39.3996698;      93;NGC7331    ; 36; 3; 14.70; 1.50;3;75.0; 2.0;250.631;  0.693; 3.99; 2470.76; 5.02; 1806.47; 11.067;27.01;239.0;  5.4;  1;Be91,Be87     ;  1;  1;  0;  0;RC;NGC7331      ;NGC7331      ;339.26709;+34.41592
+004.5155729;-77.1713993;359.4576125;-32.5910306;358.8141931;-32.8693989;345.2649881;-29.4075775;      94;NGC7793    ; 46; 7;  3.61; 0.18;2;47.0; 9.0;  7.050;  0.026; 2.19;  233.79; 1.21; 1068.64;  0.861; 7.35;  0.0;  0.0;  1;Di08,Sa96,CP90;  0;  1;  1;  1;RC;NGC7793      ;NGC7793      ;359.45761;-32.59103
+106.4089910;-45.1749085;000.8122792;+16.1452278;000.1708787;+15.8669127;007.3039060;+14.4603699;      95;NGC7814    ; 18; 2; 14.40; 0.66;2;90.0; 1.0; 74.529;  0.343; 2.08; 2709.13; 2.54; 2635.30;  1.070;12.15;218.9;  7.0;  1;Fr11          ;  1;  0;  1;  0;RC;NGC7814      ;NGC7814      ;000.81228;+16.14523
+081.9604170;+66.1968844;214.2573333;+43.5037222;213.7649489;+43.7343832;189.5420272;+52.5615614;      96;PGC51017   ;  6;11; 13.60; 1.40;2;66.0; 3.0;  0.155;  0.014; 1.28;   15.03; 0.53;   93.94;  0.201; 4.29; 18.6;  1.3;  3;Le14          ;  0;  0;  0;  0;RC;PGC51017     ;PGC51017     ;214.25733;+43.50372
+114.4609452;-26.2591985;003.4622083;+35.9935000;002.8104897;+35.7156221;019.0328776;+31.3163249;      97;UGC00128   ; 22; 8; 64.50; 9.70;1;57.0;10.0; 12.020;  0.565; 9.63;   20.36; 5.95;   88.89;  7.431;31.27;129.3;  2.8;  1;VB99,VH93     ;  1;  1;  0;  0;RC;UGC00128     ;UGC00128     ;003.46221;+35.99350
+110.5805192;-51.2390102;005.0215000;+10.8793056;004.3764667;+10.6019074;008.9428196;+07.9885254;      98;UGC00191   ;  9; 9; 17.10; 5.10;1;45.0; 5.0;  2.004;  0.063; 2.50;   50.21; 1.58;  207.41;  1.343;10.03;  0.0;  0.0;  1;KN08,vZ97     ;  1;  1;  1;  0;RC;UGC00191     ;UGC00191     ;005.02150;+10.87931
+127.2642650;-55.1617716;015.3548781;+07.6259911;014.7046953;+07.3571738;017.0753567;+00.9945260;      99;UGC00634   ;  4; 9; 30.90; 7.70;1;37.0; 8.0;  2.989;  0.146; 4.26;   26.11; 2.45;  126.13;  3.663;16.78;  0.0;  0.0;  2;vZ97          ;  1;  1;  1;  0;RC;UGC00634     ;UGC00634     ;015.35488;+07.62599
+126.1402740;-13.1493155;017.6833333;+49.6021944;016.9457641;+49.3365304;038.0650562;+38.3463398;     100;UGC00731   ; 12;10; 12.50; 3.75;1;57.0; 3.0;  0.323;  0.019; 1.40;   25.63; 2.30;   82.57;  1.807;11.57; 73.3;  2.3;  1;Sw09,Sw02     ;  1;  1;  0;  0;RC;UGC00731     ;UGC00731     ;017.68333;+49.60219
+134.2768620;-49.8006871;020.3295417;+12.4117222;019.6681369;+12.1501749;023.4262336;+03.5680273;     101;UGC00891   ;  5; 9; 10.20; 3.10;1;60.0; 5.0;  0.374;  0.017; 1.76;   19.09; 1.43;  113.98;  0.428; 6.23;  0.0;  0.0;  2;vZ97          ;  0;  1;  1;  0;RC;UGC00891     ;UGC00891     ;020.32954;+12.41172
+138.0070584;-35.7615810;026.3843789;+25.5214681;025.6857071;+25.2714011;033.7082939;+13.6373861;     102;UGC01230   ; 11; 9; 53.70;10.70;1;22.0;10.0;  7.620;  0.379; 6.45;   28.63; 4.34;   69.32;  6.430;26.29;103.7;  6.1;  1;dB02,VdH93    ;  0;  0;  0;  0;RC;UGC01230     ;UGC01230     ;026.38438;+25.52147
+136.8711266;-28.7066759;027.3821250;+32.5878333;026.6610077;+32.3399170;037.2917347;+19.8770879;     103;UGC01281   ; 25; 8;  5.27; 0.24;2;90.0; 1.0;  0.353;  0.009; 2.01;   13.83; 1.63;  135.78;  0.294; 5.26; 55.2;  3.5;  1;dB02,Sw02     ;  0;  0;  0;  0;RC;UGC01281     ;UGC01281     ;027.38212;+32.58783
+146.1872922;-24.7402431;038.3255000;+33.4904167;037.5720715;+33.2709653;046.6880486;+17.4903129;     104;UGC02023   ;  5;10; 10.40; 3.10;1;19.0;10.0;  1.308;  0.033; 2.73;   27.59; 1.55;  121.57;  0.477; 6.50;  0.0;  0.0;  2;Sw09,Sw02     ;  0;  0;  0;  0;RC;UGC02023     ;UGC02023     ;038.32550;+33.49042
+147.1450827;-19.7961732;041.9808250;+37.5384417;041.1987511;+37.3303068;051.0412513;+20.3675014;     105;UGC02259   ;  8; 8; 10.50; 3.10;1;41.0; 3.0;  1.725;  0.038; 2.40;   47.08; 1.62;  172.52;  0.494; 7.28; 86.2;  2.9;  2;Be91,Ca88     ;  1;  1;  0;  0;RC;UGC02259     ;UGC02259     ;041.98082;+37.53844
+156.3067538;-29.1914947;044.9284917;+25.2411944;044.1961878;+25.0429040;049.7218298;+07.8826143;     106;UGC02455   ;  8;10;  6.92; 2.08;1;51.0; 5.0;  3.649;  0.034; 1.49;  254.00; 0.99;  795.85;  0.803; 7.11;  0.0;  0.0;  3;Sw09,Sw02     ;  0;  0;  0;  0;RC;UGC02455     ;UGC02455     ;044.92849;+25.24119
+150.9350396;-20.4857964;045.4264917;+35.2056500;044.6474060;+35.0089965;053.0848994;+17.3022747;     107;UGC02487   ; 17; 0; 69.10;10.40;1;36.0; 5.0;489.955;  4.061; 9.63;  818.14; 7.89; 1150.35; 17.963;40.20;332.0;  3.5;  1;No07,No05     ;  1;  1;  0;  0;RC;UGC02487     ;UGC02487     ;045.42649;+35.20565
+159.5796591;-14.0520467;058.2601667;+35.5894722;057.4513520;+35.4414094;063.7113457;+15.0019567;     108;UGC02885   ; 19; 5; 80.60; 8.06;1;64.0; 4.0;403.525;  4.088;12.20;  421.53;11.40;  470.79; 40.075;74.24;289.5; 12.0;  1;Sa96,RA85     ;  1;  1;  0;  0;RC;UGC02885     ;UGC02885     ;058.26017;+35.58947
+136.8059096;+14.1946760;060.6409792;+71.7059250;059.2746471;+71.5666295;076.2448367;+49.6662395;     109;UGC02916   ; 43; 2; 65.40; 9.80;1;50.0; 5.0;124.153;  1.830; 2.80; 2425.66; 6.15;  520.99; 23.273;34.24;182.7;  6.9;  2;No07,No05     ;  1;  1;  0;  0;RC;UGC02916     ;UGC02916     ;060.64098;+71.70592
+138.4632148;+13.1101785;061.9454500;+69.8124306;060.6433589;+69.6787913;076.0370554;+47.7295217;     110;UGC02953   ;115; 2; 16.50; 4.95;1;50.0; 4.0;259.518;  0.717; 5.03; 1544.65; 3.55; 4215.31;  7.678;24.00;264.9;  6.0;  2;No07,No05     ;  1;  1;  0;  0;RC;UGC02953     ;UGC02953     ;061.94545;+69.81243
+172.9607819;-08.2063908;074.0617292;+30.0521889;073.2668339;+29.9739148;076.1329042;+07.3769395;     111;UGC03205   ; 48; 2; 50.00;10.00;1;67.0; 4.0;113.642;  1.361; 5.35;  587.26; 3.19; 3915.89;  9.677;28.60;219.6;  8.6;  1;No07,No05     ;  1;  1;  0;  0;RC;UGC03205     ;UGC03205     ;074.06173;+30.05219
+154.9690081;+23.3139118;102.5360958;+60.8456944;101.4068945;+60.9034250;097.6843398;+37.7403788;     112;UGC03546   ; 30; 1; 28.70; 7.20;1;55.0; 5.0;101.336;  0.747; 2.58; 2403.42; 3.79;  922.21;  2.675;18.37;196.9;  7.4;  1;No07,No05     ;  1;  1;  0;  0;RC;UGC03546     ;UGC03546     ;102.53610;+60.84569
+145.7169251;+25.6460301;103.8786375;+69.5629972;102.5097251;+69.6265248;096.9836324;+46.4599342;     113;UGC03580   ; 47; 1; 20.70; 5.20;1;63.0; 4.0; 13.266;  0.195; 1.84;  614.94; 2.43;  302.57;  4.370;19.97;126.2;  3.2;  2;No07,No05     ;  1;  1;  0;  0;RC;UGC03580     ;UGC03580     ;103.87864;+69.56300
+174.1240189;+33.0572474;123.4954542;+45.7421500;122.6148322;+45.8939403;115.1896894;+25.1889103;     114;UGC04278   ; 25; 7;  9.51; 2.85;1;90.0; 3.0;  1.307;  0.026; 2.46;   34.11; 2.21;  377.42;  1.116; 8.90; 91.4;  4.8;  1;dB02,Sw02     ;  0;  0;  0;  0;RC;UGC04278     ;UGC04278     ;123.49545;+45.74215
+144.2767484;+32.6884334;124.7707375;+70.7200306;123.4686640;+70.8761248;106.7840739;+49.3003698;     115;UGC04305   ; 22;10;  3.45; 0.17;2;40.0;10.0;  0.736;  0.007; 1.23;   76.71; 1.16;   88.07;  0.690; 7.41; 34.5;  2.7;  3;Sw09,Sw02     ;  0;  0;  1;  0;RC;UGC04305     ;UGC04305     ;124.77074;+70.72003
+169.0970934;+34.2906310;124.8355361;+50.0096100;123.9203413;+50.1667427;114.9590829;+29.5449942;     116;UGC04325   ;  8; 9;  9.60; 2.88;1;41.0; 3.0;  2.026;  0.035; 2.79;   41.00; 1.86;  213.22;  0.678; 6.61; 90.9;  2.7;  1;Sw09,Sw02     ;  1;  1;  0;  0;RC;UGC04325     ;UGC04325     ;124.83554;+50.00961
+144.9681062;+34.3810080;129.2637083;+69.7747778;128.0304399;+69.9485675;109.4719517;+48.9764942;     117;UGC04483   ;  8;10;  3.34; 0.31;2;58.0; 3.0;  0.013;  0.001; 0.26;   29.71; 0.18;   82.57;  0.032; 1.46;  0.0;  0.0;  2;Le14,Le12     ;  0;  1;  1;  0;RC;UGC04483     ;UGC04483     ;129.26371;+69.77478
+167.0910514;+37.1955109;129.4228708;+51.6523833;128.5078821;+51.8273802;117.6614616;+31.9313315;     118;UGC04499   ;  9; 8; 12.50; 3.75;1;50.0; 3.0;  1.552;  0.043; 2.69;   33.79; 1.73;  127.30;  1.100; 8.67; 72.8;  2.4;  1;Sw09,Sw02     ;  1;  1;  1;  0;RC;UGC04499     ;UGC04499     ;129.42287;+51.65238
+206.9571278;+43.0672610;141.1224458;+22.2748250;140.4093284;+22.4903899;136.4983477;+06.7036659;     119;UGC05005   ; 11;10; 53.70;10.70;1;41.0;10.0;  4.100;  0.283; 5.02;   25.63; 3.20;   65.59;  3.093;21.61; 98.9;  7.2;  1;dB02,VH93     ;  0;  1;  0;  0;RC;UGC05005     ;UGC05005     ;141.12245;+22.27482
+139.0134476;+38.6828306;147.5926375;+72.2786472;146.4748304;+72.5121094;115.9281681;+54.0037533;     120;UGC05253   ; 73; 2; 22.90; 5.72;1;37.0; 4.0;171.582;  0.790; 4.28; 1488.78; 8.07;  189.16; 16.396;36.64;213.7;  7.1;  2;No07,No05     ;  1;  1;  0;  0;RC;UGC05253     ;UGC05253     ;147.59264;+72.27865
+180.2850393;+53.1004234;150.9882711;+40.7615089;150.2293992;+41.0039730;137.9843507;+26.9307198;     121;UGC05414   ;  6;10;  9.40; 2.82;1;55.0; 3.0;  1.123;  0.028; 2.33;   32.87; 1.47;  127.30;  0.574; 6.65;  0.0;  0.0;  1;Sw09,Sw02     ;  0;  1;  0;  0;RC;UGC05414     ;UGC05414     ;150.98827;+40.76151
+208.2394926;+58.7111261;157.9302811;+25.3076100;157.2391628;+25.5648812;150.1032114;+14.8973976;     122;UGC05716   ; 12; 9; 21.30; 5.30;1;54.0;10.0;  0.588;  0.042; 1.84;   27.59; 1.14;   90.54;  1.094;10.64; 73.1;  1.2;  2;vZ97          ;  1;  1;  0;  0;RC;UGC05716     ;UGC05716     ;157.93028;+25.30761
+203.7571979;+59.2135438;158.0720042;+27.6687750;157.3757425;+27.9263004;149.2823695;+17.1264712;     123;UGC05721   ; 23; 7;  6.18; 1.85;1;61.0; 5.0;  0.531;  0.011; 0.60;  233.79; 0.38;  913.76;  0.562; 6.74; 79.7;  6.6;  1;dB02,Sw02     ;  1;  1;  0;  0;RC;UGC05721     ;UGC05721     ;158.07200;+27.66877
+216.7166693;+58.5224808;158.9379583;+20.9901944;158.2580838;+21.2493073;152.6669698;+11.2554166;     124;UGC05750   ; 11; 8; 58.70;11.70;1;64.0;10.0;  3.336;  0.264; 8.80;    6.87; 3.46;  124.98;  1.099;16.79;  0.0;  0.0;  1;dB01,VdH93    ;  0;  1;  0;  0;RC;UGC05750     ;UGC05750     ;158.93796;+20.99019
+196.1773774;+60.4262084;159.1797589;+31.5472581;158.4770909;+31.8067647;148.6101161;+21.0718717;     125;UGC05764   ; 10;10;  7.47; 2.24;1;60.0;10.0;  0.085;  0.006; 1.20;    9.31; 1.17;   33.79;  0.163; 3.51;  0.0;  0.0;  2;vZ97          ;  0;  1;  1;  0;RC;UGC05764     ;UGC05764     ;159.17976;+31.54726
+190.0680826;+61.5334923;160.6782789;+34.4492761;159.9730421;+34.7113169;148.5817025;+24.2341097;     126;UGC05829   ; 11;10;  8.64; 2.59;1;34.0;10.0;  0.564;  0.019; 2.91;   10.59; 1.99;   63.22;  1.023; 7.87;  0.0;  0.0;  2;Sw09,Sw02     ;  0;  1;  1;  0;RC;UGC05829     ;UGC05829     ;160.67828;+34.44928
+140.9017923;+47.1191125;162.4017181;+65.5336311;161.5707968;+65.7982521;129.6152951;+51.7472958;     127;UGC05918   ;  8;10;  7.66; 2.30;1;46.0; 5.0;  0.233;  0.011; 2.63;    5.36; 1.66;   24.94;  0.297; 5.90;  0.0;  0.0;  2;Sw09,Sw02     ;  0;  1;  1;  0;RC;UGC05918     ;UGC05918     ;162.40172;+65.53363
+184.7725718;+63.1623405;163.1297167;+36.6187778;162.4275359;+36.8845857;149.5809031;+27.0401330;     128;UGC05986   ; 15; 9;  8.63; 2.59;1;90.0; 3.0;  4.695;  0.048; 3.12;   76.71; 1.67; 1725.16;  2.667;16.53;113.0;  4.1;  2;Sw09,Sw02     ;  1;  0;  0;  0;RC;UGC05986     ;UGC05986     ;163.12972;+36.61878
+242.2352397;+55.8279869;163.2443831;+07.6197961;162.5926012;+07.8858412;161.6439981;+00.4580528;     129;UGC05999   ;  5;10; 47.70; 9.50;1;22.0;10.0;  3.384;  0.231; 4.83;   22.95; 3.22;   51.62;  2.022;15.26;  0.0;  0.0;  2;dB97,VH93     ;  0;  0;  0;  0;RC;UGC05999     ;UGC05999     ;163.24438;+07.61980
+152.0791127;+60.9605454;170.8467681;+50.8926819;170.1493213;+51.1671321;147.2395472;+42.2232763;     130;UGC06399   ;  9; 9; 18.00; 2.50;4;75.0; 2.0;  2.296;  0.072; 3.45;   30.82; 2.05;  311.05;  0.674; 8.80; 85.0;  3.8;  1;VS01,SV98     ;  1;  1;  1;  0;RC;UGC06399     ;UGC06399     ;170.84677;+50.89268
+147.5605802;+59.1399023;171.6685439;+53.7466711;170.9703262;+54.0217490;145.6833437;+44.8927970;     131;UGC06446   ; 17; 7; 12.00; 3.60;1;51.0; 3.0;  0.988;  0.032; 2.06;   37.05; 1.49;   86.46;  1.379;10.33; 82.2;  4.3;  1;VS01,SV98     ;  1;  1;  1;  0;RC;UGC06446     ;UGC06446     ;171.66854;+53.74667
+240.1015332;+70.5636355;174.8118458;+17.1435778;174.1628589;+17.4205986;168.3316290;+13.6548284;     132;UGC06614   ; 13; 1; 88.70; 8.87;1;36.0;10.0;124.350;  2.520; 3.68; 1461.61; 5.10;  540.54; 21.888;60.63;199.8; 16.0;  1;dB01,VH93     ;  1;  1;  0;  0;RC;UGC06614     ;UGC06614     ;174.81185;+17.14358
+155.1688016;+66.4665518;175.0239169;+45.9421569;174.3565105;+46.2192345;153.7789434;+39.4455518;     133;UGC06628   ;  7; 9; 15.10; 4.53;1;20.0;10.0;  3.739;  0.076; 4.14;   34.74; 2.82;  103.00;  1.500;10.47; 41.8;  6.4;  2;Sw09,Sw02     ;  0;  0;  1;  0;RC;UGC06628     ;UGC06628     ;175.02392;+45.94216
+146.2690102;+62.2901567;175.6096208;+51.5980056;174.9398944;+51.8753260;150.1548516;+44.4342069;     134;UGC06667   ;  9; 6; 18.00; 2.50;4;89.0; 1.0;  1.397;  0.066; 3.50;   18.06; 5.15;  614.94;  0.809; 8.59; 83.8;  3.1;  1;VS01,SV98     ;  1;  0;  1;  0;RC;UGC06667     ;UGC06667     ;175.60962;+51.59801
+209.8071752;+76.1446443;177.2893083;+27.0220750;176.6410774;+27.2999784;166.1506593;+23.5834757;     135;UGC06786   ; 45; 0; 29.30; 7.32;1;64.0; 3.0; 73.407;  0.676; 3.42;  992.73; 3.60; 1078.52;  5.030;20.31;219.4;  7.8;  1;No07,No05     ;  1;  1;  0;  0;RC;UGC06786     ;UGC06786     ;177.28931;+27.02207
+139.7912258;+58.9619233;177.3140417;+56.0843500;176.6514821;+56.3622263;147.5722703;+48.6754017;     136;UGC06787   ; 71; 2; 21.30; 5.32;1;66.0; 3.0; 98.256;  0.543; 2.88; 1891.60; 5.37;  429.37;  5.030;26.44;248.1;  4.8;  2;No07,No05     ;  1;  1;  0;  0;RC;UGC06787     ;UGC06787     ;177.31404;+56.08435
+151.7570983;+67.7782657;177.6956369;+45.8071969;177.0417653;+46.0851747;155.9441573;+40.2920612;     137;UGC06818   ;  8; 9; 18.00; 2.50;4;75.0; 3.0;  1.588;  0.057; 2.12;   56.08; 1.39;  286.31;  1.079; 6.96; 71.2;  4.0;  2;VS01,SV98     ;  1;  1;  1;  0;RC;UGC06818     ;UGC06818     ;177.69564;+45.80720
+143.4700604;+64.4516892;179.1198875;+50.4283944;178.4721108;+50.7065994;153.6431185;+44.6947457;     138;UGC06917   ; 11; 9; 18.00; 2.50;4;56.0; 2.0;  6.832;  0.120; 4.52;   53.07; 2.76;  261.11;  2.023;12.67;108.7;  3.5;  1;VS01,SV98     ;  1;  1;  1;  0;RC;UGC06917     ;UGC06917     ;179.11989;+50.42839
+140.5151790;+62.0637956;179.2063583;+53.1603361;178.5584119;+53.4385471;151.4664816;+46.9679873;     139;UGC06923   ;  6;10; 18.00; 2.50;4;65.0; 2.0;  2.890;  0.077; 1.66;  166.28; 1.44;  347.40;  0.809; 6.75; 79.6;  2.5;  2;VS01,SV98     ;  1;  1;  0;  0;RC;UGC06923     ;UGC06923     ;179.20636;+53.16034
+144.5459465;+65.5106816;179.3224792;+49.2832528;178.6761372;+49.5614777;154.6827000;+43.8149519;     140;UGC06930   ; 10; 7; 18.00; 2.50;4;32.0; 5.0;  8.932;  0.140; 4.38;   73.93; 3.94;  189.16;  3.237;16.76;107.2;  5.1;  1;VS01,SV98     ;  1;  1;  1;  0;RC;UGC06930     ;UGC06930     ;179.32248;+49.28325
+153.9677502;+71.0966217;179.7176042;+42.7224028;179.0742107;+43.0006613;159.6012016;+38.3908504;     141;UGC06973   ;  9; 2; 18.00; 2.50;4;71.0; 3.0; 53.870;  0.347; 1.61; 3317.65; 1.07;12730.05;  1.753;11.57;174.2;  6.2;  3;VS01,SV98     ;  1;  0;  0;  0;RC;UGC06973     ;UGC06973     ;179.71760;+42.72240
+140.2719868;+62.6244026;179.7863917;+52.7077861;179.1422927;+52.9860381;152.2678133;+46.8034371;     142;UGC06983   ; 17; 6; 18.00; 2.50;4;49.0; 1.0;  5.298;  0.102; 3.95;   53.56; 3.21;  121.57;  2.967;16.07;109.0;  5.8;  1;VS01,SV98     ;  1;  1;  1;  0;RC;UGC06983     ;UGC06983     ;179.78639;+52.70779
+149.9208728;+71.5223254;181.4906089;+43.1433561;180.8553010;+43.4215709;160.7584677;+39.4161366;     143;UGC07089   ; 12; 8; 18.00; 2.50;4;80.0; 3.0;  3.585;  0.089; 3.90;   37.40; 2.26;  520.99;  1.214; 9.29;  0.0;  0.0;  2;VS01,SV98     ;  0;  1;  1;  0;RC;UGC07089     ;UGC07089     ;181.49061;+43.14336
+163.3461018;+76.7602794;182.1729750;+36.8022972;181.5390766;+37.0804315;165.2648104;+34.1734026;     144;UGC07125   ; 13; 9; 19.80; 5.90;1;90.0; 3.0;  2.712;  0.080; 3.92;   28.11; 3.38;  103.00;  4.629;23.04; 65.2;  2.1;  1;Sw09,Sw02     ;  1;  0;  1;  0;RC;UGC07125     ;UGC07125     ;182.17297;+36.80230
+143.1741975;+69.0076650;182.4941708;+46.4571806;181.8646878;+46.7352487;159.2445423;+42.6073859;     145;UGC07151   ; 11; 6;  6.87; 0.34;2;90.0; 3.0;  2.284;  0.025; 2.17;   76.71; 1.25;  965.67;  0.616; 6.39; 73.5;  2.8;  1;Sw09,Sw02     ;  1;  0;  0;  0;RC;UGC07151     ;UGC07151     ;182.49417;+46.45718
+160.6315470;+77.5899650;183.4339917;+36.6312750;182.8046303;+36.9091429;166.4376678;+34.5098570;     146;UGC07232   ;  4;10;  2.83; 0.17;2;59.0; 5.0;  0.113;  0.002; 0.46;   83.34; 0.29;  227.42;  0.046; 1.54;  0.0;  0.0;  2;Sw09,Sw02     ;  0;  1;  0;  0;RC;UGC07232     ;UGC07232     ;183.43399;+36.63127
+249.0408508;+79.5037327;183.8098292;+20.6590778;183.1755872;+20.9368628;174.9016906;+20.3909820;     147;UGC07261   ;  7; 8; 13.10; 3.93;1;30.0;10.0;  1.753;  0.048; 2.66;   39.16; 1.20;  566.02;  1.388;10.10; 74.7;  3.4;  2;Sw09,Sw02     ;  0;  1;  0;  0;RC;UGC07261     ;UGC07261     ;183.80983;+20.65908
+140.7702875;+70.3155377;184.3757250;+45.6192944;183.7553082;+45.8968640;161.3528658;+42.6064483;     148;UGC07323   ; 10; 8;  8.00; 2.40;1;47.0; 3.0;  4.109;  0.042; 3.26;   61.49; 2.26;  283.68;  0.722; 7.14;  0.0;  0.0;  1;Sw09,Sw02     ;  0;  1;  0;  0;RC;UGC07323     ;UGC07323     ;184.37572;+45.61929
+138.5557463;+69.8915908;185.1588292;+46.2910194;184.5428901;+46.5682917;161.4802250;+43.4660630;     149;UGC07399   ; 10; 8;  8.43; 2.53;1;55.0; 3.0;  1.156;  0.024; 1.27;  113.98; 1.64;  135.78;  0.745; 7.85;103.0;  3.3;  1;Sw09,Sw02     ;  1;  1;  0;  0;RC;UGC07399     ;UGC07399     ;185.15883;+46.29102
+162.0942573;+81.5331072;186.4538417;+33.5467500;185.8330100;+33.8234354;170.8177439;+32.9754952;     150;UGC07524   ; 31; 9;  4.74; 0.24;2;46.0; 3.0;  2.436;  0.025; 3.61;   29.71; 3.46;  106.86;  1.779;12.11; 79.5;  3.6;  1;Sw09,Sw02     ;  1;  1;  0;  0;RC;UGC07524     ;UGC07524     ;186.45384;+33.54675
+148.5919648;+78.7448747;186.7731919;+37.1417739;186.1563622;+37.4182834;168.9965687;+36.2537739;     151;UGC07559   ;  7;10;  4.97; 0.25;2;61.0; 3.0;  0.109;  0.004; 0.98;   17.90; 0.58;   55.06;  0.169; 3.76;  0.0;  0.0;  2;Sw09,Sw02     ;  0;  1;  1;  0;RC;UGC07559     ;UGC07559     ;186.77319;+37.14177
+137.7441754;+72.9394672;186.9245319;+43.4994689;186.3144412;+43.7758854;164.9536272;+41.7847264;     152;UGC07577   ;  9;10;  2.59; 0.13;2;63.0; 3.0;  0.045;  0.002; 0.77;   11.94; 0.90;   54.55;  0.044; 2.07;  0.0;  0.0;  2;Sw09,Sw02     ;  0;  1;  1;  0;RC;UGC07577     ;UGC07577     ;186.92453;+43.49947
+251.6412365;+83.2915220;187.1837989;+22.8204411;186.5572157;+23.0967410;176.9627316;+23.6838575;     153;UGC07603   ; 12; 7;  4.70; 1.41;1;78.0; 3.0;  0.376;  0.008; 0.85;   81.81; 0.53;  520.99;  0.258; 4.37; 61.6;  2.8;  1;Sw09,Sw02     ;  1;  1;  0;  0;RC;UGC07603     ;UGC07603     ;187.18380;+22.82044
+137.4215501;+73.2598938;187.1836589;+43.2238300;186.5744567;+43.5000985;165.3631312;+41.6504266;     154;UGC07608   ;  8;10;  8.21; 2.46;1;25.0;10.0;  0.264;  0.012; 1.60;   16.48; 1.50;   46.65;  0.535; 6.73;  0.0;  0.0;  1;Sw09,Sw02     ;  0;  0;  1;  0;RC;UGC07608     ;UGC07608     ;187.18366;+43.22383
+135.6417551;+73.9523095;188.1120561;+42.7041211;187.5064404;+42.9798125;166.5016874;+41.5670428;     155;UGC07690   ;  7;10;  8.11; 2.43;1;41.0; 5.0;  0.858;  0.018; 0.86;  184.01; 0.57;  395.21;  0.390; 5.50; 57.4;  3.2;  2;Sw09,Sw02     ;  1;  1;  1;  0;RC;UGC07690     ;UGC07690     ;188.11206;+42.70412
+131.9538837;+78.4652490;190.5631489;+38.5016269;189.9620960;+38.7754515;171.4250831;+38.9198780;     156;UGC07866   ;  7;10;  4.57; 0.23;2;44.0; 5.0;  0.124;  0.004; 0.95;   21.92; 0.61;   97.46;  0.118; 3.30;  0.0;  0.0;  2;Sw09,Sw02     ;  0;  1;  0;  0;RC;UGC07866     ;UGC07866     ;190.56315;+38.50163
+110.3863808;+72.5810349;198.0491625;+44.0380222;197.4909760;+44.3030140;173.9737118;+46.5831220;     157;UGC08286   ; 17; 6;  6.50; 0.21;2;90.0; 3.0;  1.255;  0.018; 2.25;   39.52; 1.05; 1488.78;  0.642; 8.07; 82.4;  2.3;  1;Sw09,Sw02     ;  1;  0;  0;  0;RC;UGC08286     ;UGC08286     ;198.04916;+44.03802
+113.5008055;+58.0051348;202.4021167;+58.4187306;201.9330886;+58.6764165;162.1685383;+59.4282112;     158;UGC08490   ; 30; 9;  4.65; 0.53;2;50.0; 3.0;  1.017;  0.012; 1.14;  124.98; 0.67;  576.54;  0.720; 7.80; 78.6;  3.8;  1;Sw09,Sw02     ;  1;  1;  0;  0;RC;UGC08490     ;UGC08490     ;202.40212;+58.41873
+103.9495909;+67.6119521;203.5117958;+47.9154667;202.9932958;+48.1711269;175.3583431;+51.9313630;     159;UGC08550   ; 11; 7;  6.70; 2.00;1;90.0; 3.0;  0.289;  0.009; 1.01;   45.38; 0.45; 1284.78;  0.288; 5.59; 56.9;  1.9;  1;Sw09,Sw02     ;  1;  0;  0;  0;RC;UGC08550     ;UGC08550     ;203.51180;+47.91547
+088.9098945;+71.8922774;206.2861167;+41.5033028;205.7539058;+41.7533666;183.4686852;+47.7236490;     160;UGC08699   ; 41; 2; 39.30; 9.82;1;73.0; 9.0; 50.302;  0.695; 1.91; 2191.95; 3.09; 1370.35;  3.738;19.05;182.4;  6.9;  2;No07,No05     ;  1;  1;  0;  0;RC;UGC08699     ;UGC08699     ;206.28612;+41.50330
+103.7019725;+60.7949036;208.6900069;+53.9055731;208.2320232;+54.1501986;173.1651825;+58.6348307;     161;UGC08837   ;  8;10;  7.21; 0.36;2;80.0; 5.0;  0.501;  0.015; 2.25;   15.73; 1.72;   77.42;  0.320; 4.75;  0.0;  0.0;  2;Sw09,Sw02     ;  0;  1;  1;  0;RC;UGC08837     ;UGC08837     ;208.69001;+53.90557
+348.7794640;+62.8518376;212.1212750;+07.0580000;211.4990181;+07.2945170;207.3777892;+18.8223732;     162;UGC09037   ; 22; 6; 83.60; 8.40;1;65.0; 5.0; 68.614;  1.769; 5.69;  334.83; 4.28;  841.07; 19.078;39.72;152.3;  9.6;  2;Ha14          ;  1;  1;  0;  0;RC;UGC09037     ;UGC09037     ;212.12127;+07.05800
+062.6259758;+70.1749706;214.0321333;+35.3437167;213.5015786;+35.5750480;195.5996333;+45.4251973;     163;UGC09133   ; 68; 2; 57.10;11.40;1;53.0; 6.0;282.926;  2.345; 5.92; 1284.78; 6.97;  864.63; 33.428;60.35;226.8;  4.2;  1;No07,No05     ;  1;  1;  0;  0;RC;UGC09133     ;UGC09133     ;214.03213;+35.34372
+102.1906502;+42.3656230;235.4500417;+67.2538889;235.3578019;+67.4118650;161.1964816;+76.6063209;     164;UGC09992   ;  5;10; 10.70; 3.21;1;30.0;10.0;  0.336;  0.017; 1.62;   20.18; 1.04;   73.25;  0.318; 5.45; 33.6;  3.3;  2;Sw09,Sw02     ;  0;  1;  1;  0;RC;UGC09992     ;UGC09992     ;235.45004;+67.25389
+073.6236435;+45.5297206;244.0745881;+47.0453189;243.7028059;+47.1677754;222.3062699;+66.2446795;     165;UGC10310   ;  7; 9; 15.20; 4.60;1;34.0; 6.0;  1.741;  0.053; 3.12;   28.37; 1.80;  158.79;  1.196; 9.58; 71.4;  3.9;  1;Sw09,Sw02     ;  1;  1;  1;  0;RC;UGC10310     ;UGC10310     ;244.07459;+47.04532
+103.7483596;+22.8449555;292.4844042;+72.1128167;292.6373096;+72.0060390;045.1728148;+80.4086976;     166;UGC11455   ; 36; 6; 78.60;11.80;1;90.0; 1.0;374.322;  3.792;10.06;  571.26; 5.93; 9568.20; 13.335;43.44;269.4;  7.4;  1;SG06          ;  1;  0;  0;  0;RC;UGC11455     ;UGC11455     ;292.48440;+72.11282
+094.9802566;+12.8147895;306.0028561;+60.1948361;305.7544082;+60.0317368;355.3493120;+72.9536544;     167;UGC11557   ; 12; 8; 24.20; 6.05;1;30.0;10.0; 12.101;  0.212; 4.18;  106.86; 2.75;  337.93;  2.605;16.66;  0.0;  0.0;  2;Sw02,dB01     ;  0;  1;  0;  0;RC;UGC11557     ;UGC11557     ;306.00286;+60.19484
+070.3391843;-29.5161595;327.3693333;+14.2309444;326.7666169;+13.9973354;334.9364960;+25.6869218;     168;UGC11820   ; 10; 9; 18.10; 5.43;1;45.0;10.0;  0.970;  0.047; 2.74;   20.18; 2.08;   34.11;  1.977;12.99;  0.0;  0.0;  1;KN08,vZ97     ;  0;  1;  0;  0;RC;UGC11820     ;UGC11820     ;327.36933;+14.23094
+086.5063908;-19.7072145;331.9682000;+31.3592556;331.4074974;+31.1142397;347.9289540;+39.5753140;     169;UGC11914   ; 65; 2; 16.90; 5.10;1;31.0; 5.0;150.028;  0.553; 3.12; 2425.66; 2.44; 3168.33;  0.888; 9.26;288.1; 10.5;  1;No07,No05     ;  1;  1;  0;  0;RC;UGC11914     ;UGC11914     ;331.96820;+31.35926
+092.9307562;-41.3800632;349.8769833;+16.0747917;349.2506483;+15.8010695;357.2877414;+18.7369624;     170;UGC12506   ; 31; 6;100.60;10.10;1;86.0; 4.0;139.571;  3.214;12.36;  144.82; 7.38; 5608.28; 35.556;59.01;234.0; 16.8;  2;Ha14          ;  1;  0;  0;  0;RC;UGC12506     ;UGC12506     ;349.87698;+16.07479
+106.7712646;-19.3111917;352.4949167;+40.9903333;351.8868844;+40.7146239;012.8318883;+39.8681064;     171;UGC12632   ; 15; 9;  9.77; 2.93;1;46.0; 3.0;  1.301;  0.030; 3.94;   13.09; 2.42;   66.81;  1.744;12.60; 71.7;  2.8;  1;Sw09,Sw02     ;  1;  1;  0;  0;RC;UGC12632     ;UGC12632     ;352.49492;+40.99033
+103.7382491;-33.9841946;355.1665000;+26.2360556;354.5380067;+25.9588678;006.7952069;+25.8270213;     172;UGC12732   ; 16; 9; 13.20; 4.00;1;39.0; 6.0;  1.667;  0.048; 3.12;   26.84; 1.98;  120.46;  3.660;17.41;  0.0;  0.0;  1;Sw09,Sw02     ;  0;  1;  1;  0;RC;UGC12732     ;UGC12732     ;355.16650;+26.23606
+134.1532518;+68.0826602;186.5667500;+48.4935000;185.9605503;+48.7701053;160.8706781;+45.8263335;     173;UGCA281    ;  7;11;  5.68; 0.28;2;67.0; 3.0;  0.194;  0.007; 1.57;   12.50; 1.72;   12.05;  0.062; 1.83;  0.0;  0.0;  3;Le14          ;  0;  0;  0;  0;RC;UGCA281      ;UGCA281      ;186.56675;+48.49350
+010.7016261;-74.5289099;355.9397875;-31.9567694;355.2857051;-32.2343522;342.5733673;-27.4973825;     174;UGCA442    ;  8; 9;  4.35; 0.22;2;64.0; 7.0;  0.140;  0.005; 1.71;    7.60; 1.18;  116.10;  0.263; 4.37; 56.4;  2.1;  1;Co00          ;  1;  1;  0;  0;RC;UGCA442      ;UGCA442      ;355.93979;-31.95677
+075.8531917;-73.6257871;000.4912500;-15.4638889;359.8507656;-15.7422636;354.1657170;-14.3542352;     175;UGCA444    ; 36;10;  0.98; 0.05;2;78.0; 4.0;  0.012;  0.000; 0.41;   11.94; 0.83;   22.74;  0.067; 2.08; 37.0;  4.8;  2;Ke07          ;  1;  1;  0;  0;RC;UGCA444      ;UGCA444      ;000.49125;-15.46389
+]]></CSV></DATA>
+</TABLE>
+<INFO name="matches" value="175">matching records</INFO>
+
+<INFO name="Warning" value="No center provided++++"/>
+<INFO name="Warning" value="skip recno in all column selection"/>
+<INFO name="Warning" value="Column '_p' can'be created (No center specified)"/>
+<INFO name="Warning" value="Column '_x' can'be created (No center specified)"/>
+<INFO name="Warning" value="Column '_y' can'be created (No center specified)"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="increase the precision for computed column 8"/>
+<INFO name="Warning" value="increase the precision for computed column 8"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="increase the precision for computed column 8"/>
+<INFO name="Warning" value="increase the precision for computed column 8"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+<INFO name="Warning" value="increase the precision for computed column 8"/>
+<INFO name="Warning" value="vc_coo can't change epoch"/>
+</RESOURCE>
+</VOTABLE>

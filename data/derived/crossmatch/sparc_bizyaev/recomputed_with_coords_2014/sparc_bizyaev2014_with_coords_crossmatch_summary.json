@@ -1,0 +1,35 @@
+{
+  "rows_total": 5733,
+  "rows_matched_any": 33,
+  "rows_unmatched": 5700,
+  "match_reason_counts": {
+    "unmatched": 5700,
+    "coord_review": 21,
+    "name_exact": 7,
+    "coord_strict": 4,
+    "coord_exact": 1
+  },
+  "rows_with_catalog_token": 4434,
+  "rows_with_coords": 5733,
+  "median_z0_over_h_matched": 0.3068328319724968,
+  "median_h_over_z0_matched": 3.2591036414565826,
+  "median_sep_deg_matched": 0.1703601224655116,
+  "bizyaev_file": "data\\derived\\Bizyaev\\bizyaev_table4_rband_for_crossmatch.csv",
+  "sparc_index_file": "data\\derived\\crossmatch\\sparc_diskmass_S4G\\sparc_galaxy_index_with_coords.csv",
+  "output_dir": "data\\derived\\crossmatch\\sparc_bizyaev\\recomputed_with_coords_2014",
+  "strict_coord_sep_deg": 0.03,
+  "max_coord_sep_deg": 0.1,
+  "review_coord_sep_deg": 0.3,
+  "detected_sparc_columns": {
+    "name": "galaxy_id",
+    "ra": "RA_deg",
+    "dec": "DEC_deg"
+  },
+  "detected_bizyaev_columns": {
+    "name": "preferred_name",
+    "ra": "RAJ2000",
+    "dec": "DEJ2000",
+    "aname": "AName",
+    "ned": "NED"
+  }
+}

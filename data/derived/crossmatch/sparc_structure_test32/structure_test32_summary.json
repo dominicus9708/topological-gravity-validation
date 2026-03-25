@@ -1,0 +1,22 @@
+{
+  "final_unique_input_rows": 32,
+  "exported_galaxy_files": 32,
+  "missing_or_skipped_rows": 0,
+  "included_source_counts": {
+    "Bizyaev_2014": 31,
+    "Bizyaev_2002": 1
+  },
+  "duplicate_status_counts": {
+    "unique_to_2014": 27,
+    "confirmed_duplicate_by_sparc_name": 4,
+    "unique_to_2002": 1
+  },
+  "input_final_unique_file": "data\\derived\\crossmatch\\sparc_bizyaev\\merged_future\\sparc_bizyaev_final_unique_sample.csv",
+  "input_match_2014_file": "data\\derived\\crossmatch\\sparc_bizyaev\\recomputed_with_coords_2014\\matched\\sparc_bizyaev2014_with_coords_crossmatch_matched.csv",
+  "input_match_2002_file": "data\\derived\\crossmatch\\sparc_bizyaev2002\\working\\matched\\sparc_bizyaev2002_crossmatch_matched.csv",
+  "input_sparc_normalized_dir": "data\\processed\\sparc_normalized",
+  "output_dir": "data\\derived\\crossmatch\\sparc_structure_test32",
+  "per_galaxy_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "master_catalog_file": "data\\derived\\crossmatch\\sparc_structure_test32\\structure_test32_master_catalog.csv",
+  "missing_rows_file": "data\\derived\\crossmatch\\sparc_structure_test32\\missing_source_files.csv"
+}

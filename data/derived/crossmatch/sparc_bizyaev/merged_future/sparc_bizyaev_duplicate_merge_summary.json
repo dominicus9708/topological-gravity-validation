@@ -1,0 +1,16 @@
+{
+  "rows_2014_matched": 33,
+  "rows_2002_matched": 5,
+  "candidate_rows_total_before_duplicate_screening": 38,
+  "confirmed_duplicates_count": 4,
+  "review_needed_count": 0,
+  "final_unique_sample_count": 32,
+  "unique_to_2014_count": 27,
+  "unique_to_2002_count": 1,
+  "duplicate_kept_as_2014_primary_count": 4,
+  "review_sep_arcsec_threshold": 60.0,
+  "input_2014": "data\\derived\\crossmatch\\sparc_bizyaev\\recomputed_with_coords_2014\\matched\\sparc_bizyaev2014_with_coords_crossmatch_matched.csv",
+  "input_2002": "data\\derived\\crossmatch\\sparc_bizyaev2002\\working\\matched\\sparc_bizyaev2002_crossmatch_matched.csv",
+  "input_sparc_index": "data\\derived\\crossmatch\\sparc_diskmass_S4G\\sparc_galaxy_index_with_coords.csv",
+  "output_dir": "data\\derived\\crossmatch\\sparc_bizyaev\\merged_future"
+}

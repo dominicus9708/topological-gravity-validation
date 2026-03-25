@@ -21,6 +21,8 @@ C:.
 |   |   |       bizyaev_table6_raw.csv
 |   |   |       
 |   |   +---crossmatch
+|   |   |   |   README.md
+|   |   |   |   
 |   |   |   +---diagnostic_match_inputs
 |   |   |   |       catalog_overlap_detail.csv
 |   |   |   |       diagnostic_report.txt
@@ -33,24 +35,74 @@ C:.
 |   |   |   |       sparc_enriched_preview.csv
 |   |   |   |       sparc_fill_stats.csv
 |   |   |   |       
-|   |   |   \---sparc_diskmass_S4G
-|   |   |           diskmass_alias_confirmed_auto.csv
-|   |   |           diskmass_alias_review_candidates.csv
-|   |   |           diskmass_alias_review_needed.csv
-|   |   |           diskmass_alias_seed.csv
-|   |   |           diskmass_alias_weak_or_none.csv
-|   |   |           sparc_diskmass_crossmatch_coord_bridge.csv
-|   |   |           sparc_diskmass_crossmatch_direct.csv
-|   |   |           sparc_diskmass_crossmatch_same_name.csv
-|   |   |           sparc_diskmass_unmatched_coord_bridge.csv
-|   |   |           sparc_diskmass_unmatched_direct.csv
-|   |   |           sparc_diskmass_unmatched_same_name.csv
-|   |   |           sparc_galaxy_index.csv
-|   |   |           sparc_s4g_crossmatch_direct.csv
-|   |   |           sparc_s4g_crossmatch_loose.csv
-|   |   |           sparc_s4g_unmatched_direct.csv
-|   |   |           sparc_s4g_unmatched_loose.csv
-|   |   |           
+|   |   |   +---sparc_bizyaev
+|   |   |   |   +---baseline_exact_2014
+|   |   |   |   |       README.md
+|   |   |   |   |       sparc_bizyaev_crossmatch_exact.csv
+|   |   |   |   |       sparc_bizyaev_crossmatch_matched.csv
+|   |   |   |   |       
+|   |   |   |   +---merged_future
+|   |   |   |   +---recomputed_with_coords_2014
+|   |   |   |   |   |   sparc_bizyaev2014_with_coords_crossmatch_all.csv
+|   |   |   |   |   |   sparc_bizyaev2014_with_coords_crossmatch_coord_review.csv
+|   |   |   |   |   |   sparc_bizyaev2014_with_coords_crossmatch_summary.json
+|   |   |   |   |   |   sparc_bizyaev2014_with_coords_crossmatch_unmatched.csv
+|   |   |   |   |   |   sparc_bizyaev2014_with_coords_nearest_neighbors.csv
+|   |   |   |   |   |   
+|   |   |   |   |   \---matched
+|   |   |   |   |           sparc_bizyaev2014_with_coords_crossmatch_exact.csv
+|   |   |   |   |           sparc_bizyaev2014_with_coords_crossmatch_matched.csv
+|   |   |   |   |           
+|   |   |   |   \---working
+|   |   |   |           sparc_bizyaev_crossmatch_all.csv
+|   |   |   |           sparc_bizyaev_crossmatch_coord_review.csv
+|   |   |   |           sparc_bizyaev_crossmatch_summary.json
+|   |   |   |           sparc_bizyaev_crossmatch_unmatched.csv
+|   |   |   |           
+|   |   |   +---sparc_bizyaev2002
+|   |   |   |   \---working
+|   |   |   |       |   sparc_bizyaev2002_crossmatch_all.csv
+|   |   |   |       |   sparc_bizyaev2002_crossmatch_coord_review.csv
+|   |   |   |       |   sparc_bizyaev2002_crossmatch_summary.json
+|   |   |   |       |   sparc_bizyaev2002_crossmatch_unmatched.csv
+|   |   |   |       |   sparc_bizyaev2002_nearest_neighbors.csv
+|   |   |   |       |   
+|   |   |   |       \---matched
+|   |   |   |               sparc_bizyaev2002_crossmatch_exact.csv
+|   |   |   |               sparc_bizyaev2002_crossmatch_matched.csv
+|   |   |   |               
+|   |   |   +---sparc_diskmass_S4G
+|   |   |   |   |   sparc_galaxy_index_with_coords.csv
+|   |   |   |   |   sparc_galaxy_index_with_coords_summary.json
+|   |   |   |   |   
+|   |   |   |   \---v1
+|   |   |   |           diskmass_alias_confirmed_auto.csv
+|   |   |   |           diskmass_alias_review_candidates.csv
+|   |   |   |           diskmass_alias_review_needed.csv
+|   |   |   |           diskmass_alias_seed.csv
+|   |   |   |           diskmass_alias_weak_or_none.csv
+|   |   |   |           sparc_diskmass_crossmatch_coord_bridge.csv
+|   |   |   |           sparc_diskmass_crossmatch_direct.csv
+|   |   |   |           sparc_diskmass_crossmatch_same_name.csv
+|   |   |   |           sparc_diskmass_unmatched_coord_bridge.csv
+|   |   |   |           sparc_diskmass_unmatched_direct.csv
+|   |   |   |           sparc_diskmass_unmatched_same_name.csv
+|   |   |   |           sparc_galaxy_index.csv
+|   |   |   |           sparc_s4g_crossmatch_direct.csv
+|   |   |   |           sparc_s4g_crossmatch_loose.csv
+|   |   |   |           sparc_s4g_unmatched_direct.csv
+|   |   |   |           sparc_s4g_unmatched_loose.csv
+|   |   |   |           
+|   |   |   \---sparc_kautsch2006
+|   |   |       \---working
+|   |   |               sparc_kautsch2006_crossmatch_all.csv
+|   |   |               sparc_kautsch2006_crossmatch_coord_review.csv
+|   |   |               sparc_kautsch2006_crossmatch_exact.csv
+|   |   |               sparc_kautsch2006_crossmatch_matched.csv
+|   |   |               sparc_kautsch2006_crossmatch_summary.json
+|   |   |               sparc_kautsch2006_crossmatch_unmatched.csv
+|   |   |               sparc_kautsch2006_nearest_neighbors.csv
+|   |   |               
 |   |   +---diskmass
 |   |   |       J_ApJS_276_59_sample_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample.csv
 |   |   |       J_ApJS_276_59_table7_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample_(Swaters+, 2025).csv
@@ -239,6 +291,25 @@ C:.
 |   |   |       UGCA444.csv
 |   |   |       
 |   |   \---structure
+|   |       \---edge_on_candidates
+|   |           |   edge_on_candidate_conversion_summary.json
+|   |           |   
+|   |           +---Bizyaev_2002
+|   |           |       bizyaev_2002_prepared.csv
+|   |           |       bizyaev_2002_raw.csv
+|   |           |       
+|   |           \---Kautsch_2006
+|   |                   kautsch_2006_prepared.csv
+|   |                   kautsch_2006_raw.csv
+|   |                   
+|   +---external_catalogs
+|   |   \---edge_on_candidates
+|   |       +---Bizyaev 2002
+|   |       |       J_A+A_389_795_table1_Photometric_parameters_of_disks_of galaxies.tsv
+|   |       |       
+|   |       \---Kautsch 2006
+|   |               J_A+A_445_765_edge_Catalog_of_edge_on_galaxies.tsv
+|   |               
 |   +---metadata
 |   +---processed
 |   |   +---sparc_normalized
@@ -774,7 +845,7 @@ C:.
 |   |           UGCA444_normalized.csv
 |   |           
 |   \---raw
-|       +---Bizyaev
+|       +---Bizyaev 2014
 |       |       J_ApJ_787_24_table4_The_Structural_Parameters_of_True_Edge-on_Galaxies_from the_1-D_Analysis.tsv
 |       |       J_ApJ_787_24_table6_The_Structural_Parameters_of_true_Edge_on_Galaxies_in_the_r-band_from_our_3D_Analysis.tsv
 |       |       
@@ -782,8 +853,10 @@ C:.
 |       |       J_ApJS_276_59_sample_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample.tsv
 |       |       J_ApJS_276_59_table7_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample_(Swaters+, 2025).tsv
 |       |       J_ApJ_716_198_The_ DiskMass_survey_I.tsv
+|       |       README.md
 |       |       
 |       +---s4g
+|       |       README.md
 |       |       S4G_catalog.tsv
 |       |       
 |       \---sparc
@@ -818,6 +891,7 @@ C:.
 |               F583-4_rotmod.dat
 |               IC2574_rotmod.dat
 |               IC4202_rotmod.dat
+|               J_AJ_152_157_table1_Mass models for 175 disk galaxies with SPARC.tsv
 |               KK98-251_rotmod.dat
 |               NGC0024_rotmod.dat
 |               NGC0055_rotmod.dat
@@ -883,6 +957,7 @@ C:.
 |               NGC7793_rotmod.dat
 |               NGC7814_rotmod.dat
 |               PGC51017_rotmod.dat
+|               README.md
 |               Rotmod_LTG.zip
 |               UGC00128_rotmod.dat
 |               UGC00191_rotmod.dat
@@ -15300,7 +15375,21 @@ C:.
 |           
 \---src
     +---crossmatch
+    |   |   build_sparc_bizyaev2002_crossmatch_with_coords.py
+    |   |   build_sparc_bizyaev2014_crossmatch_with_coords.py
+    |   |   build_sparc_galaxy_index_with_coords.py
+    |   |   build_sparc_galaxy_index_with_coords_from_vizier.py
+    |   |   build_sparc_galaxy_index_with_coords_from_vizier_v2.py
+    |   |   build_sparc_galaxy_index_with_coords_from_vizier_v3.py
+    |   |   build_sparc_galaxy_index_with_coords_from_vizier_v4.py
+    |   |   build_sparc_kautsch2006_crossmatch.py
+    |   |   build_sparc_kautsch2006_crossmatch_v2.py
+    |   |   build_sparc_kautsch2006_crossmatch_v3.py
+    |   |   build_sparc_kautsch2006_crossmatch_with_coords.py
+    |   |   convert_edge_on_candidate_catalogs.py
+    |   |   
     |   +---Bizyaev
+    |   |       build_sparc_bizyaev_crossmatch.py
     |   |       convert_bizyaev_vizier.py
     |   |       
     |   \---diskmass_spark_s4g

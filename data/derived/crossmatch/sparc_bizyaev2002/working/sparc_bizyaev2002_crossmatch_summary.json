@@ -1,0 +1,30 @@
+{
+  "rows_total": 153,
+  "rows_matched_any": 5,
+  "rows_unmatched": 148,
+  "match_reason_counts": {
+    "unmatched": 148,
+    "coord_strict": 5
+  },
+  "rows_with_catalog_token": 0,
+  "rows_with_coords": 153,
+  "median_sep_deg_matched": 0.00044525503033775784,
+  "bizyaev2002_file": "data\\derived\\structure\\edge_on_candidates\\Bizyaev_2002\\bizyaev_2002_prepared.csv",
+  "sparc_index_file": "data\\derived\\crossmatch\\sparc_diskmass_S4G\\sparc_galaxy_index_with_coords.csv",
+  "output_dir": "data\\derived\\crossmatch\\sparc_bizyaev2002\\working",
+  "strict_coord_sep_deg": 0.03,
+  "max_coord_sep_deg": 0.1,
+  "review_coord_sep_deg": 0.3,
+  "detected_sparc_columns": {
+    "name": "galaxy_id",
+    "ra": "RA_deg",
+    "dec": "DEC_deg"
+  },
+  "detected_bizyaev2002_columns": {
+    "name": "preferred_name",
+    "ra": "_RAJ2000",
+    "dec": "_DEJ2000",
+    "aname": null,
+    "ned": "NED"
+  }
+}

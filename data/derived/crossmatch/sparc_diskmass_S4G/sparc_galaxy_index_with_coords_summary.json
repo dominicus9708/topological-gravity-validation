@@ -1,0 +1,31 @@
+{
+  "rows_total": 175,
+  "rows_with_coords": 175,
+  "rows_with_simbad": 175,
+  "rows_with_ned": 175,
+  "rows_with_s4g": 175,
+  "read_mode": "votable_xml_csv_cdata",
+  "detected_columns": {
+    "name": "Name",
+    "ra": "_RAJ2000",
+    "dec": "_DEJ2000",
+    "simbad": "SimbadName",
+    "ned": "NEDname",
+    "s4g": "S4G",
+    "edd": "EDD",
+    "type": "Type",
+    "dist": "Dist",
+    "inc": "i",
+    "l36": "L3.6",
+    "reff": "Reff",
+    "rdisk": "Rdisk",
+    "mhi": "MHI",
+    "rhi": "RHI",
+    "vflat": "Vflat",
+    "evflat": "e_Vflat",
+    "qual": "Qual",
+    "ref": "Ref"
+  },
+  "input_file": "data\\raw\\sparc\\J_AJ_152_157_table1_Mass models for 175 disk galaxies with SPARC.tsv",
+  "output_file": "data\\derived\\crossmatch\\sparc_diskmass_S4G\\sparc_galaxy_index_with_coords.csv"
+}
