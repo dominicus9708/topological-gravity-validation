@@ -1,0 +1,5 @@
+galaxy_id,source,radius_kpc,v_obs_kms,v_err_kms,v_gas_kms,v_disk_kms,v_bulge_kms,v_bar_kms
+NGC6789,SPARC,0.1,13.9,3.84,2.8,7.62,0,8.118152499
+NGC6789,SPARC,0.3,29.9,3.92,7.72,17.26,0,18.90782907
+NGC6789,SPARC,0.51,46.7,4.1,11.07,20.43,0,23.23638956
+NGC6789,SPARC,0.71,60.4,9.4,11.87,21.37,0,24.44532266

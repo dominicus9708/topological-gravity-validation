@@ -1,0 +1,2 @@
+input_file,output_file,header_column_count,row_count,skipped_after_header
+data\raw\s4g\S4G_catalog.tsv,data\derived\s4g\S4G_catalog.csv,27,2352,2

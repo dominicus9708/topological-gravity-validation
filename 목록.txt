@@ -9,7 +9,218 @@ C:.
 |   requirements.txt
 |   목록.txt
 |   
++----Command
 +---data
+|   +---derived
+|   |   +---crossmatch
+|   |   |   |   diskmass_alias_confirmed_auto.csv
+|   |   |   |   diskmass_alias_review_candidates.csv
+|   |   |   |   diskmass_alias_review_needed.csv
+|   |   |   |   diskmass_alias_seed.csv
+|   |   |   |   diskmass_alias_weak_or_none.csv
+|   |   |   |   sparc_diskmass_crossmatch_coord_bridge.csv
+|   |   |   |   sparc_diskmass_crossmatch_direct.csv
+|   |   |   |   sparc_diskmass_crossmatch_same_name.csv
+|   |   |   |   sparc_diskmass_unmatched_coord_bridge.csv
+|   |   |   |   sparc_diskmass_unmatched_direct.csv
+|   |   |   |   sparc_diskmass_unmatched_same_name.csv
+|   |   |   |   sparc_galaxy_index.csv
+|   |   |   |   sparc_s4g_crossmatch_direct.csv
+|   |   |   |   sparc_s4g_crossmatch_loose.csv
+|   |   |   |   sparc_s4g_unmatched_direct.csv
+|   |   |   |   sparc_s4g_unmatched_loose.csv
+|   |   |   |   
+|   |   |   \---diagnostic_match_inputs
+|   |   +---diskmass
+|   |   |       J_ApJS_276_59_sample_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample.csv
+|   |   |       J_ApJS_276_59_table7_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample_(Swaters+, 2025).csv
+|   |   |       J_ApJ_716_198_The_ DiskMass_survey_I.csv
+|   |   |       
+|   |   +---rotation_curves
+|   |   +---s4g
+|   |   |       S4G_catalog.csv
+|   |   |       vizier_xml_csv_normalization_summary.csv
+|   |   |       
+|   |   +---sparc
+|   |   |       CamB.csv
+|   |   |       D512-2.csv
+|   |   |       D564-8.csv
+|   |   |       D631-7.csv
+|   |   |       DDO064.csv
+|   |   |       DDO154.csv
+|   |   |       DDO161.csv
+|   |   |       DDO168.csv
+|   |   |       DDO170.csv
+|   |   |       ESO079-G014.csv
+|   |   |       ESO116-G012.csv
+|   |   |       ESO444-G084.csv
+|   |   |       ESO563-G021.csv
+|   |   |       F561-1.csv
+|   |   |       F563-1.csv
+|   |   |       F563-V1.csv
+|   |   |       F563-V2.csv
+|   |   |       F565-V2.csv
+|   |   |       F567-2.csv
+|   |   |       F568-1.csv
+|   |   |       F568-3.csv
+|   |   |       F568-V1.csv
+|   |   |       F571-8.csv
+|   |   |       F571-V1.csv
+|   |   |       F574-1.csv
+|   |   |       F574-2.csv
+|   |   |       F579-V1.csv
+|   |   |       F583-1.csv
+|   |   |       F583-4.csv
+|   |   |       IC2574.csv
+|   |   |       IC4202.csv
+|   |   |       KK98-251.csv
+|   |   |       NGC0024.csv
+|   |   |       NGC0055.csv
+|   |   |       NGC0100.csv
+|   |   |       NGC0247.csv
+|   |   |       NGC0289.csv
+|   |   |       NGC0300.csv
+|   |   |       NGC0801.csv
+|   |   |       NGC0891.csv
+|   |   |       NGC1003.csv
+|   |   |       NGC1090.csv
+|   |   |       NGC1705.csv
+|   |   |       NGC2366.csv
+|   |   |       NGC2403.csv
+|   |   |       NGC2683.csv
+|   |   |       NGC2841.csv
+|   |   |       NGC2903.csv
+|   |   |       NGC2915.csv
+|   |   |       NGC2955.csv
+|   |   |       NGC2976.csv
+|   |   |       NGC2998.csv
+|   |   |       NGC3109.csv
+|   |   |       NGC3198.csv
+|   |   |       NGC3521.csv
+|   |   |       NGC3726.csv
+|   |   |       NGC3741.csv
+|   |   |       NGC3769.csv
+|   |   |       NGC3877.csv
+|   |   |       NGC3893.csv
+|   |   |       NGC3917.csv
+|   |   |       NGC3949.csv
+|   |   |       NGC3953.csv
+|   |   |       NGC3972.csv
+|   |   |       NGC3992.csv
+|   |   |       NGC4010.csv
+|   |   |       NGC4013.csv
+|   |   |       NGC4051.csv
+|   |   |       NGC4068.csv
+|   |   |       NGC4085.csv
+|   |   |       NGC4088.csv
+|   |   |       NGC4100.csv
+|   |   |       NGC4138.csv
+|   |   |       NGC4157.csv
+|   |   |       NGC4183.csv
+|   |   |       NGC4214.csv
+|   |   |       NGC4217.csv
+|   |   |       NGC4389.csv
+|   |   |       NGC4559.csv
+|   |   |       NGC5005.csv
+|   |   |       NGC5033.csv
+|   |   |       NGC5055.csv
+|   |   |       NGC5371.csv
+|   |   |       NGC5585.csv
+|   |   |       NGC5907.csv
+|   |   |       NGC5985.csv
+|   |   |       NGC6015.csv
+|   |   |       NGC6195.csv
+|   |   |       NGC6503.csv
+|   |   |       NGC6674.csv
+|   |   |       NGC6789.csv
+|   |   |       NGC6946.csv
+|   |   |       NGC7331.csv
+|   |   |       NGC7793.csv
+|   |   |       NGC7814.csv
+|   |   |       normalization_summary.csv
+|   |   |       PGC51017.csv
+|   |   |       UGC00128.csv
+|   |   |       UGC00191.csv
+|   |   |       UGC00634.csv
+|   |   |       UGC00731.csv
+|   |   |       UGC00891.csv
+|   |   |       UGC01230.csv
+|   |   |       UGC01281.csv
+|   |   |       UGC02023.csv
+|   |   |       UGC02259.csv
+|   |   |       UGC02455.csv
+|   |   |       UGC02487.csv
+|   |   |       UGC02885.csv
+|   |   |       UGC02916.csv
+|   |   |       UGC02953.csv
+|   |   |       UGC03205.csv
+|   |   |       UGC03546.csv
+|   |   |       UGC03580.csv
+|   |   |       UGC04278.csv
+|   |   |       UGC04305.csv
+|   |   |       UGC04325.csv
+|   |   |       UGC04483.csv
+|   |   |       UGC04499.csv
+|   |   |       UGC05005.csv
+|   |   |       UGC05253.csv
+|   |   |       UGC05414.csv
+|   |   |       UGC05716.csv
+|   |   |       UGC05721.csv
+|   |   |       UGC05750.csv
+|   |   |       UGC05764.csv
+|   |   |       UGC05829.csv
+|   |   |       UGC05918.csv
+|   |   |       UGC05986.csv
+|   |   |       UGC05999.csv
+|   |   |       UGC06399.csv
+|   |   |       UGC06446.csv
+|   |   |       UGC06614.csv
+|   |   |       UGC06628.csv
+|   |   |       UGC06667.csv
+|   |   |       UGC06786.csv
+|   |   |       UGC06787.csv
+|   |   |       UGC06818.csv
+|   |   |       UGC06917.csv
+|   |   |       UGC06923.csv
+|   |   |       UGC06930.csv
+|   |   |       UGC06973.csv
+|   |   |       UGC06983.csv
+|   |   |       UGC07089.csv
+|   |   |       UGC07125.csv
+|   |   |       UGC07151.csv
+|   |   |       UGC07232.csv
+|   |   |       UGC07261.csv
+|   |   |       UGC07323.csv
+|   |   |       UGC07399.csv
+|   |   |       UGC07524.csv
+|   |   |       UGC07559.csv
+|   |   |       UGC07577.csv
+|   |   |       UGC07603.csv
+|   |   |       UGC07608.csv
+|   |   |       UGC07690.csv
+|   |   |       UGC07866.csv
+|   |   |       UGC08286.csv
+|   |   |       UGC08490.csv
+|   |   |       UGC08550.csv
+|   |   |       UGC08699.csv
+|   |   |       UGC08837.csv
+|   |   |       UGC09037.csv
+|   |   |       UGC09133.csv
+|   |   |       UGC09992.csv
+|   |   |       UGC10310.csv
+|   |   |       UGC11455.csv
+|   |   |       UGC11557.csv
+|   |   |       UGC11820.csv
+|   |   |       UGC11914.csv
+|   |   |       UGC12506.csv
+|   |   |       UGC12632.csv
+|   |   |       UGC12732.csv
+|   |   |       UGCA281.csv
+|   |   |       UGCA442.csv
+|   |   |       UGCA444.csv
+|   |   |       
+|   |   \---structure
+|   +---metadata
 |   +---processed
 |   |   +---sparc_normalized
 |   |   |       CamB_normalized.csv
@@ -544,363 +755,192 @@ C:.
 |   |           UGCA444_normalized.csv
 |   |           
 |   \---raw
-|       |   sparcv_csv폴더에 대한 설명.txt
-|       |   sparc폴더에 대한 설명.txt
-|       |   
-|       +---sparc
-|       |       CamB_rotmod.dat
-|       |       D512-2_rotmod.dat
-|       |       D564-8_rotmod.dat
-|       |       D631-7_rotmod.dat
-|       |       DDO064_rotmod.dat
-|       |       DDO154_rotmod.dat
-|       |       DDO161_rotmod.dat
-|       |       DDO168_rotmod.dat
-|       |       DDO170_rotmod.dat
-|       |       ESO079-G014_rotmod.dat
-|       |       ESO116-G012_rotmod.dat
-|       |       ESO444-G084_rotmod.dat
-|       |       ESO563-G021_rotmod.dat
-|       |       F561-1_rotmod.dat
-|       |       F563-1_rotmod.dat
-|       |       F563-V1_rotmod.dat
-|       |       F563-V2_rotmod.dat
-|       |       F565-V2_rotmod.dat
-|       |       F567-2_rotmod.dat
-|       |       F568-1_rotmod.dat
-|       |       F568-3_rotmod.dat
-|       |       F568-V1_rotmod.dat
-|       |       F571-8_rotmod.dat
-|       |       F571-V1_rotmod.dat
-|       |       F574-1_rotmod.dat
-|       |       F574-2_rotmod.dat
-|       |       F579-V1_rotmod.dat
-|       |       F583-1_rotmod.dat
-|       |       F583-4_rotmod.dat
-|       |       IC2574_rotmod.dat
-|       |       IC4202_rotmod.dat
-|       |       KK98-251_rotmod.dat
-|       |       NGC0024_rotmod.dat
-|       |       NGC0055_rotmod.dat
-|       |       NGC0100_rotmod.dat
-|       |       NGC0247_rotmod.dat
-|       |       NGC0289_rotmod.dat
-|       |       NGC0300_rotmod.dat
-|       |       NGC0801_rotmod.dat
-|       |       NGC0891_rotmod.dat
-|       |       NGC1003_rotmod.dat
-|       |       NGC1090_rotmod.dat
-|       |       NGC1705_rotmod.dat
-|       |       NGC2366_rotmod.dat
-|       |       NGC2403_rotmod.dat
-|       |       NGC2683_rotmod.dat
-|       |       NGC2841_rotmod.dat
-|       |       NGC2903_rotmod.dat
-|       |       NGC2915_rotmod.dat
-|       |       NGC2955_rotmod.dat
-|       |       NGC2976_rotmod.dat
-|       |       NGC2998_rotmod.dat
-|       |       NGC3109_rotmod.dat
-|       |       NGC3198_rotmod.dat
-|       |       NGC3521_rotmod.dat
-|       |       NGC3726_rotmod.dat
-|       |       NGC3741_rotmod.dat
-|       |       NGC3769_rotmod.dat
-|       |       NGC3877_rotmod.dat
-|       |       NGC3893_rotmod.dat
-|       |       NGC3917_rotmod.dat
-|       |       NGC3949_rotmod.dat
-|       |       NGC3953_rotmod.dat
-|       |       NGC3972_rotmod.dat
-|       |       NGC3992_rotmod.dat
-|       |       NGC4010_rotmod.dat
-|       |       NGC4013_rotmod.dat
-|       |       NGC4051_rotmod.dat
-|       |       NGC4068_rotmod.dat
-|       |       NGC4085_rotmod.dat
-|       |       NGC4088_rotmod.dat
-|       |       NGC4100_rotmod.dat
-|       |       NGC4138_rotmod.dat
-|       |       NGC4157_rotmod.dat
-|       |       NGC4183_rotmod.dat
-|       |       NGC4214_rotmod.dat
-|       |       NGC4217_rotmod.dat
-|       |       NGC4389_rotmod.dat
-|       |       NGC4559_rotmod.dat
-|       |       NGC5005_rotmod.dat
-|       |       NGC5033_rotmod.dat
-|       |       NGC5055_rotmod.dat
-|       |       NGC5371_rotmod.dat
-|       |       NGC5585_rotmod.dat
-|       |       NGC5907_rotmod.dat
-|       |       NGC5985_rotmod.dat
-|       |       NGC6015_rotmod.dat
-|       |       NGC6195_rotmod.dat
-|       |       NGC6503_rotmod.dat
-|       |       NGC6674_rotmod.dat
-|       |       NGC6789_rotmod.dat
-|       |       NGC6946_rotmod.dat
-|       |       NGC7331_rotmod.dat
-|       |       NGC7793_rotmod.dat
-|       |       NGC7814_rotmod.dat
-|       |       PGC51017_rotmod.dat
-|       |       Rotmod_LTG.zip
-|       |       UGC00128_rotmod.dat
-|       |       UGC00191_rotmod.dat
-|       |       UGC00634_rotmod.dat
-|       |       UGC00731_rotmod.dat
-|       |       UGC00891_rotmod.dat
-|       |       UGC01230_rotmod.dat
-|       |       UGC01281_rotmod.dat
-|       |       UGC02023_rotmod.dat
-|       |       UGC02259_rotmod.dat
-|       |       UGC02455_rotmod.dat
-|       |       UGC02487_rotmod.dat
-|       |       UGC02885_rotmod.dat
-|       |       UGC02916_rotmod.dat
-|       |       UGC02953_rotmod.dat
-|       |       UGC03205_rotmod.dat
-|       |       UGC03546_rotmod.dat
-|       |       UGC03580_rotmod.dat
-|       |       UGC04278_rotmod.dat
-|       |       UGC04305_rotmod.dat
-|       |       UGC04325_rotmod.dat
-|       |       UGC04483_rotmod.dat
-|       |       UGC04499_rotmod.dat
-|       |       UGC05005_rotmod.dat
-|       |       UGC05253_rotmod.dat
-|       |       UGC05414_rotmod.dat
-|       |       UGC05716_rotmod.dat
-|       |       UGC05721_rotmod.dat
-|       |       UGC05750_rotmod.dat
-|       |       UGC05764_rotmod.dat
-|       |       UGC05829_rotmod.dat
-|       |       UGC05918_rotmod.dat
-|       |       UGC05986_rotmod.dat
-|       |       UGC05999_rotmod.dat
-|       |       UGC06399_rotmod.dat
-|       |       UGC06446_rotmod.dat
-|       |       UGC06614_rotmod.dat
-|       |       UGC06628_rotmod.dat
-|       |       UGC06667_rotmod.dat
-|       |       UGC06786_rotmod.dat
-|       |       UGC06787_rotmod.dat
-|       |       UGC06818_rotmod.dat
-|       |       UGC06917_rotmod.dat
-|       |       UGC06923_rotmod.dat
-|       |       UGC06930_rotmod.dat
-|       |       UGC06973_rotmod.dat
-|       |       UGC06983_rotmod.dat
-|       |       UGC07089_rotmod.dat
-|       |       UGC07125_rotmod.dat
-|       |       UGC07151_rotmod.dat
-|       |       UGC07232_rotmod.dat
-|       |       UGC07261_rotmod.dat
-|       |       UGC07323_rotmod.dat
-|       |       UGC07399_rotmod.dat
-|       |       UGC07524_rotmod.dat
-|       |       UGC07559_rotmod.dat
-|       |       UGC07577_rotmod.dat
-|       |       UGC07603_rotmod.dat
-|       |       UGC07608_rotmod.dat
-|       |       UGC07690_rotmod.dat
-|       |       UGC07866_rotmod.dat
-|       |       UGC08286_rotmod.dat
-|       |       UGC08490_rotmod.dat
-|       |       UGC08550_rotmod.dat
-|       |       UGC08699_rotmod.dat
-|       |       UGC08837_rotmod.dat
-|       |       UGC09037_rotmod.dat
-|       |       UGC09133_rotmod.dat
-|       |       UGC09992_rotmod.dat
-|       |       UGC10310_rotmod.dat
-|       |       UGC11455_rotmod.dat
-|       |       UGC11557_rotmod.dat
-|       |       UGC11820_rotmod.dat
-|       |       UGC11914_rotmod.dat
-|       |       UGC12506_rotmod.dat
-|       |       UGC12632_rotmod.dat
-|       |       UGC12732_rotmod.dat
-|       |       UGCA281_rotmod.dat
-|       |       UGCA442_rotmod.dat
-|       |       UGCA444_rotmod.dat
+|       +---diskmass
+|       |       J_ApJS_276_59_sample_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample.tsv
+|       |       J_ApJS_276_59_table7_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample_(Swaters+, 2025).tsv
+|       |       J_ApJ_716_198_The_ DiskMass_survey_I.tsv
 |       |       
-|       \---sparc_csv
-|               CamB.csv
-|               D512-2.csv
-|               D564-8.csv
-|               D631-7.csv
-|               DDO064.csv
-|               DDO154.csv
-|               DDO161.csv
-|               DDO168.csv
-|               DDO170.csv
-|               ESO079-G014.csv
-|               ESO116-G012.csv
-|               ESO444-G084.csv
-|               ESO563-G021.csv
-|               F561-1.csv
-|               F563-1.csv
-|               F563-V1.csv
-|               F563-V2.csv
-|               F565-V2.csv
-|               F567-2.csv
-|               F568-1.csv
-|               F568-3.csv
-|               F568-V1.csv
-|               F571-8.csv
-|               F571-V1.csv
-|               F574-1.csv
-|               F574-2.csv
-|               F579-V1.csv
-|               F583-1.csv
-|               F583-4.csv
-|               IC2574.csv
-|               IC4202.csv
-|               KK98-251.csv
-|               NGC0024.csv
-|               NGC0055.csv
-|               NGC0100.csv
-|               NGC0247.csv
-|               NGC0289.csv
-|               NGC0300.csv
-|               NGC0801.csv
-|               NGC0891.csv
-|               NGC1003.csv
-|               NGC1090.csv
-|               NGC1705.csv
-|               NGC2366.csv
-|               NGC2403.csv
-|               NGC2683.csv
-|               NGC2841.csv
-|               NGC2903.csv
-|               NGC2915.csv
-|               NGC2955.csv
-|               NGC2976.csv
-|               NGC2998.csv
-|               NGC3109.csv
-|               NGC3198.csv
-|               NGC3521.csv
-|               NGC3726.csv
-|               NGC3741.csv
-|               NGC3769.csv
-|               NGC3877.csv
-|               NGC3893.csv
-|               NGC3917.csv
-|               NGC3949.csv
-|               NGC3953.csv
-|               NGC3972.csv
-|               NGC3992.csv
-|               NGC4010.csv
-|               NGC4013.csv
-|               NGC4051.csv
-|               NGC4068.csv
-|               NGC4085.csv
-|               NGC4088.csv
-|               NGC4100.csv
-|               NGC4138.csv
-|               NGC4157.csv
-|               NGC4183.csv
-|               NGC4214.csv
-|               NGC4217.csv
-|               NGC4389.csv
-|               NGC4559.csv
-|               NGC5005.csv
-|               NGC5033.csv
-|               NGC5055.csv
-|               NGC5371.csv
-|               NGC5585.csv
-|               NGC5907.csv
-|               NGC5985.csv
-|               NGC6015.csv
-|               NGC6195.csv
-|               NGC6503.csv
-|               NGC6674.csv
-|               NGC6789.csv
-|               NGC6946.csv
-|               NGC7331.csv
-|               NGC7793.csv
-|               NGC7814.csv
-|               PGC51017.csv
-|               UGC00128.csv
-|               UGC00191.csv
-|               UGC00634.csv
-|               UGC00731.csv
-|               UGC00891.csv
-|               UGC01230.csv
-|               UGC01281.csv
-|               UGC02023.csv
-|               UGC02259.csv
-|               UGC02455.csv
-|               UGC02487.csv
-|               UGC02885.csv
-|               UGC02916.csv
-|               UGC02953.csv
-|               UGC03205.csv
-|               UGC03546.csv
-|               UGC03580.csv
-|               UGC04278.csv
-|               UGC04305.csv
-|               UGC04325.csv
-|               UGC04483.csv
-|               UGC04499.csv
-|               UGC05005.csv
-|               UGC05253.csv
-|               UGC05414.csv
-|               UGC05716.csv
-|               UGC05721.csv
-|               UGC05750.csv
-|               UGC05764.csv
-|               UGC05829.csv
-|               UGC05918.csv
-|               UGC05986.csv
-|               UGC05999.csv
-|               UGC06399.csv
-|               UGC06446.csv
-|               UGC06614.csv
-|               UGC06628.csv
-|               UGC06667.csv
-|               UGC06786.csv
-|               UGC06787.csv
-|               UGC06818.csv
-|               UGC06917.csv
-|               UGC06923.csv
-|               UGC06930.csv
-|               UGC06973.csv
-|               UGC06983.csv
-|               UGC07089.csv
-|               UGC07125.csv
-|               UGC07151.csv
-|               UGC07232.csv
-|               UGC07261.csv
-|               UGC07323.csv
-|               UGC07399.csv
-|               UGC07524.csv
-|               UGC07559.csv
-|               UGC07577.csv
-|               UGC07603.csv
-|               UGC07608.csv
-|               UGC07690.csv
-|               UGC07866.csv
-|               UGC08286.csv
-|               UGC08490.csv
-|               UGC08550.csv
-|               UGC08699.csv
-|               UGC08837.csv
-|               UGC09037.csv
-|               UGC09133.csv
-|               UGC09992.csv
-|               UGC10310.csv
-|               UGC11455.csv
-|               UGC11557.csv
-|               UGC11820.csv
-|               UGC11914.csv
-|               UGC12506.csv
-|               UGC12632.csv
-|               UGC12732.csv
-|               UGCA281.csv
-|               UGCA442.csv
-|               UGCA444.csv
+|       +---little_things
+|       +---s4g
+|       |       S4G_catalog.tsv
+|       |       
+|       \---sparc
+|               CamB_rotmod.dat
+|               D512-2_rotmod.dat
+|               D564-8_rotmod.dat
+|               D631-7_rotmod.dat
+|               DDO064_rotmod.dat
+|               DDO154_rotmod.dat
+|               DDO161_rotmod.dat
+|               DDO168_rotmod.dat
+|               DDO170_rotmod.dat
+|               ESO079-G014_rotmod.dat
+|               ESO116-G012_rotmod.dat
+|               ESO444-G084_rotmod.dat
+|               ESO563-G021_rotmod.dat
+|               F561-1_rotmod.dat
+|               F563-1_rotmod.dat
+|               F563-V1_rotmod.dat
+|               F563-V2_rotmod.dat
+|               F565-V2_rotmod.dat
+|               F567-2_rotmod.dat
+|               F568-1_rotmod.dat
+|               F568-3_rotmod.dat
+|               F568-V1_rotmod.dat
+|               F571-8_rotmod.dat
+|               F571-V1_rotmod.dat
+|               F574-1_rotmod.dat
+|               F574-2_rotmod.dat
+|               F579-V1_rotmod.dat
+|               F583-1_rotmod.dat
+|               F583-4_rotmod.dat
+|               IC2574_rotmod.dat
+|               IC4202_rotmod.dat
+|               KK98-251_rotmod.dat
+|               NGC0024_rotmod.dat
+|               NGC0055_rotmod.dat
+|               NGC0100_rotmod.dat
+|               NGC0247_rotmod.dat
+|               NGC0289_rotmod.dat
+|               NGC0300_rotmod.dat
+|               NGC0801_rotmod.dat
+|               NGC0891_rotmod.dat
+|               NGC1003_rotmod.dat
+|               NGC1090_rotmod.dat
+|               NGC1705_rotmod.dat
+|               NGC2366_rotmod.dat
+|               NGC2403_rotmod.dat
+|               NGC2683_rotmod.dat
+|               NGC2841_rotmod.dat
+|               NGC2903_rotmod.dat
+|               NGC2915_rotmod.dat
+|               NGC2955_rotmod.dat
+|               NGC2976_rotmod.dat
+|               NGC2998_rotmod.dat
+|               NGC3109_rotmod.dat
+|               NGC3198_rotmod.dat
+|               NGC3521_rotmod.dat
+|               NGC3726_rotmod.dat
+|               NGC3741_rotmod.dat
+|               NGC3769_rotmod.dat
+|               NGC3877_rotmod.dat
+|               NGC3893_rotmod.dat
+|               NGC3917_rotmod.dat
+|               NGC3949_rotmod.dat
+|               NGC3953_rotmod.dat
+|               NGC3972_rotmod.dat
+|               NGC3992_rotmod.dat
+|               NGC4010_rotmod.dat
+|               NGC4013_rotmod.dat
+|               NGC4051_rotmod.dat
+|               NGC4068_rotmod.dat
+|               NGC4085_rotmod.dat
+|               NGC4088_rotmod.dat
+|               NGC4100_rotmod.dat
+|               NGC4138_rotmod.dat
+|               NGC4157_rotmod.dat
+|               NGC4183_rotmod.dat
+|               NGC4214_rotmod.dat
+|               NGC4217_rotmod.dat
+|               NGC4389_rotmod.dat
+|               NGC4559_rotmod.dat
+|               NGC5005_rotmod.dat
+|               NGC5033_rotmod.dat
+|               NGC5055_rotmod.dat
+|               NGC5371_rotmod.dat
+|               NGC5585_rotmod.dat
+|               NGC5907_rotmod.dat
+|               NGC5985_rotmod.dat
+|               NGC6015_rotmod.dat
+|               NGC6195_rotmod.dat
+|               NGC6503_rotmod.dat
+|               NGC6674_rotmod.dat
+|               NGC6789_rotmod.dat
+|               NGC6946_rotmod.dat
+|               NGC7331_rotmod.dat
+|               NGC7793_rotmod.dat
+|               NGC7814_rotmod.dat
+|               PGC51017_rotmod.dat
+|               Rotmod_LTG.zip
+|               UGC00128_rotmod.dat
+|               UGC00191_rotmod.dat
+|               UGC00634_rotmod.dat
+|               UGC00731_rotmod.dat
+|               UGC00891_rotmod.dat
+|               UGC01230_rotmod.dat
+|               UGC01281_rotmod.dat
+|               UGC02023_rotmod.dat
+|               UGC02259_rotmod.dat
+|               UGC02455_rotmod.dat
+|               UGC02487_rotmod.dat
+|               UGC02885_rotmod.dat
+|               UGC02916_rotmod.dat
+|               UGC02953_rotmod.dat
+|               UGC03205_rotmod.dat
+|               UGC03546_rotmod.dat
+|               UGC03580_rotmod.dat
+|               UGC04278_rotmod.dat
+|               UGC04305_rotmod.dat
+|               UGC04325_rotmod.dat
+|               UGC04483_rotmod.dat
+|               UGC04499_rotmod.dat
+|               UGC05005_rotmod.dat
+|               UGC05253_rotmod.dat
+|               UGC05414_rotmod.dat
+|               UGC05716_rotmod.dat
+|               UGC05721_rotmod.dat
+|               UGC05750_rotmod.dat
+|               UGC05764_rotmod.dat
+|               UGC05829_rotmod.dat
+|               UGC05918_rotmod.dat
+|               UGC05986_rotmod.dat
+|               UGC05999_rotmod.dat
+|               UGC06399_rotmod.dat
+|               UGC06446_rotmod.dat
+|               UGC06614_rotmod.dat
+|               UGC06628_rotmod.dat
+|               UGC06667_rotmod.dat
+|               UGC06786_rotmod.dat
+|               UGC06787_rotmod.dat
+|               UGC06818_rotmod.dat
+|               UGC06917_rotmod.dat
+|               UGC06923_rotmod.dat
+|               UGC06930_rotmod.dat
+|               UGC06973_rotmod.dat
+|               UGC06983_rotmod.dat
+|               UGC07089_rotmod.dat
+|               UGC07125_rotmod.dat
+|               UGC07151_rotmod.dat
+|               UGC07232_rotmod.dat
+|               UGC07261_rotmod.dat
+|               UGC07323_rotmod.dat
+|               UGC07399_rotmod.dat
+|               UGC07524_rotmod.dat
+|               UGC07559_rotmod.dat
+|               UGC07577_rotmod.dat
+|               UGC07603_rotmod.dat
+|               UGC07608_rotmod.dat
+|               UGC07690_rotmod.dat
+|               UGC07866_rotmod.dat
+|               UGC08286_rotmod.dat
+|               UGC08490_rotmod.dat
+|               UGC08550_rotmod.dat
+|               UGC08699_rotmod.dat
+|               UGC08837_rotmod.dat
+|               UGC09037_rotmod.dat
+|               UGC09133_rotmod.dat
+|               UGC09992_rotmod.dat
+|               UGC10310_rotmod.dat
+|               UGC11455_rotmod.dat
+|               UGC11557_rotmod.dat
+|               UGC11820_rotmod.dat
+|               UGC11914_rotmod.dat
+|               UGC12506_rotmod.dat
+|               UGC12632_rotmod.dat
+|               UGC12732_rotmod.dat
+|               UGCA281_rotmod.dat
+|               UGCA442_rotmod.dat
+|               UGCA444_rotmod.dat
 |               
 +---docs
 |       galaxy_pipeline.md
@@ -1968,6 +2008,7 @@ C:.
 |           UGCA444_residuals.png
 |           UGCA444_rotation.png
 |           
++---logspowershell
 +---notebooks
 |   |   01_rotation_pipeline-text.ipynb
 |   |   
@@ -1976,1111 +2017,1112 @@ C:.
 |           Untitled-checkpoint.ipynb
 |           
 +---outputs
-|   +---2026-03-21_1623_beta_abar
-|   |   +---figures
-|   |   +---logs
-|   |   |       run_log.txt
-|   |   |       
-|   |   +---metadata
-|   |   |       run_metadata.json
-|   |   |       
-|   |   +---summaries
-|   |   |       rotation_pipeline_summary_beta_abar.csv
-|   |   |       
-|   |   \---tables
-|   +---2026-03-21_1629_beta_abar
-|   |   +---figures
-|   |   |       CamB_rotation_curve.png
-|   |   |       D512-2_rotation_curve.png
-|   |   |       D564-8_rotation_curve.png
-|   |   |       D631-7_rotation_curve.png
-|   |   |       DDO064_rotation_curve.png
-|   |   |       DDO154_rotation_curve.png
-|   |   |       DDO161_rotation_curve.png
-|   |   |       DDO168_rotation_curve.png
-|   |   |       DDO170_rotation_curve.png
-|   |   |       ESO079-G014_rotation_curve.png
-|   |   |       ESO116-G012_rotation_curve.png
-|   |   |       ESO444-G084_rotation_curve.png
-|   |   |       ESO563-G021_rotation_curve.png
-|   |   |       F561-1_rotation_curve.png
-|   |   |       F563-1_rotation_curve.png
-|   |   |       F563-V1_rotation_curve.png
-|   |   |       F563-V2_rotation_curve.png
-|   |   |       F565-V2_rotation_curve.png
-|   |   |       F567-2_rotation_curve.png
-|   |   |       F568-1_rotation_curve.png
-|   |   |       F568-3_rotation_curve.png
-|   |   |       F568-V1_rotation_curve.png
-|   |   |       F571-8_rotation_curve.png
-|   |   |       F571-V1_rotation_curve.png
-|   |   |       F574-1_rotation_curve.png
-|   |   |       F574-2_rotation_curve.png
-|   |   |       F579-V1_rotation_curve.png
-|   |   |       F583-1_rotation_curve.png
-|   |   |       F583-4_rotation_curve.png
-|   |   |       IC2574_rotation_curve.png
-|   |   |       IC4202_rotation_curve.png
-|   |   |       KK98-251_rotation_curve.png
-|   |   |       NGC0024_rotation_curve.png
-|   |   |       NGC0055_rotation_curve.png
-|   |   |       NGC0100_rotation_curve.png
-|   |   |       NGC0247_rotation_curve.png
-|   |   |       NGC0289_rotation_curve.png
-|   |   |       NGC0300_rotation_curve.png
-|   |   |       NGC0801_rotation_curve.png
-|   |   |       NGC0891_rotation_curve.png
-|   |   |       NGC1003_rotation_curve.png
-|   |   |       NGC1090_rotation_curve.png
-|   |   |       NGC1705_rotation_curve.png
-|   |   |       NGC2366_rotation_curve.png
-|   |   |       NGC2403_rotation_curve.png
-|   |   |       NGC2683_rotation_curve.png
-|   |   |       NGC2841_rotation_curve.png
-|   |   |       NGC2903_rotation_curve.png
-|   |   |       NGC2915_rotation_curve.png
-|   |   |       NGC2955_rotation_curve.png
-|   |   |       NGC2976_rotation_curve.png
-|   |   |       NGC2998_rotation_curve.png
-|   |   |       NGC3109_rotation_curve.png
-|   |   |       NGC3198_rotation_curve.png
-|   |   |       NGC3521_rotation_curve.png
-|   |   |       NGC3726_rotation_curve.png
-|   |   |       NGC3741_rotation_curve.png
-|   |   |       NGC3769_rotation_curve.png
-|   |   |       NGC3877_rotation_curve.png
-|   |   |       NGC3893_rotation_curve.png
-|   |   |       NGC3917_rotation_curve.png
-|   |   |       NGC3949_rotation_curve.png
-|   |   |       NGC3953_rotation_curve.png
-|   |   |       NGC3972_rotation_curve.png
-|   |   |       NGC3992_rotation_curve.png
-|   |   |       NGC4010_rotation_curve.png
-|   |   |       NGC4013_rotation_curve.png
-|   |   |       NGC4051_rotation_curve.png
-|   |   |       NGC4068_rotation_curve.png
-|   |   |       NGC4085_rotation_curve.png
-|   |   |       NGC4088_rotation_curve.png
-|   |   |       NGC4100_rotation_curve.png
-|   |   |       NGC4138_rotation_curve.png
-|   |   |       NGC4157_rotation_curve.png
-|   |   |       NGC4183_rotation_curve.png
-|   |   |       NGC4214_rotation_curve.png
-|   |   |       NGC4217_rotation_curve.png
-|   |   |       NGC4389_rotation_curve.png
-|   |   |       NGC4559_rotation_curve.png
-|   |   |       NGC5005_rotation_curve.png
-|   |   |       NGC5033_rotation_curve.png
-|   |   |       NGC5055_rotation_curve.png
-|   |   |       NGC5371_rotation_curve.png
-|   |   |       NGC5585_rotation_curve.png
-|   |   |       NGC5907_rotation_curve.png
-|   |   |       NGC5985_rotation_curve.png
-|   |   |       NGC6015_rotation_curve.png
-|   |   |       NGC6195_rotation_curve.png
-|   |   |       NGC6503_rotation_curve.png
-|   |   |       NGC6674_rotation_curve.png
-|   |   |       NGC6789_rotation_curve.png
-|   |   |       NGC6946_rotation_curve.png
-|   |   |       NGC7331_rotation_curve.png
-|   |   |       NGC7793_rotation_curve.png
-|   |   |       NGC7814_rotation_curve.png
-|   |   |       PGC51017_rotation_curve.png
-|   |   |       UGC00128_rotation_curve.png
-|   |   |       UGC00191_rotation_curve.png
-|   |   |       UGC00634_rotation_curve.png
-|   |   |       UGC00731_rotation_curve.png
-|   |   |       UGC00891_rotation_curve.png
-|   |   |       UGC01230_rotation_curve.png
-|   |   |       UGC01281_rotation_curve.png
-|   |   |       UGC02023_rotation_curve.png
-|   |   |       UGC02259_rotation_curve.png
-|   |   |       UGC02455_rotation_curve.png
-|   |   |       UGC02487_rotation_curve.png
-|   |   |       UGC02885_rotation_curve.png
-|   |   |       UGC02916_rotation_curve.png
-|   |   |       UGC02953_rotation_curve.png
-|   |   |       UGC03205_rotation_curve.png
-|   |   |       UGC03546_rotation_curve.png
-|   |   |       UGC03580_rotation_curve.png
-|   |   |       UGC04278_rotation_curve.png
-|   |   |       UGC04305_rotation_curve.png
-|   |   |       UGC04325_rotation_curve.png
-|   |   |       UGC04483_rotation_curve.png
-|   |   |       UGC04499_rotation_curve.png
-|   |   |       UGC05005_rotation_curve.png
-|   |   |       UGC05253_rotation_curve.png
-|   |   |       UGC05414_rotation_curve.png
-|   |   |       UGC05716_rotation_curve.png
-|   |   |       UGC05721_rotation_curve.png
-|   |   |       UGC05750_rotation_curve.png
-|   |   |       UGC05764_rotation_curve.png
-|   |   |       UGC05829_rotation_curve.png
-|   |   |       UGC05918_rotation_curve.png
-|   |   |       UGC05986_rotation_curve.png
-|   |   |       UGC05999_rotation_curve.png
-|   |   |       UGC06399_rotation_curve.png
-|   |   |       UGC06446_rotation_curve.png
-|   |   |       UGC06614_rotation_curve.png
-|   |   |       UGC06628_rotation_curve.png
-|   |   |       UGC06667_rotation_curve.png
-|   |   |       UGC06786_rotation_curve.png
-|   |   |       UGC06787_rotation_curve.png
-|   |   |       UGC06818_rotation_curve.png
-|   |   |       UGC06917_rotation_curve.png
-|   |   |       UGC06923_rotation_curve.png
-|   |   |       UGC06930_rotation_curve.png
-|   |   |       UGC06973_rotation_curve.png
-|   |   |       UGC06983_rotation_curve.png
-|   |   |       UGC07089_rotation_curve.png
-|   |   |       UGC07125_rotation_curve.png
-|   |   |       UGC07151_rotation_curve.png
-|   |   |       UGC07232_rotation_curve.png
-|   |   |       UGC07261_rotation_curve.png
-|   |   |       UGC07323_rotation_curve.png
-|   |   |       UGC07399_rotation_curve.png
-|   |   |       UGC07524_rotation_curve.png
-|   |   |       UGC07559_rotation_curve.png
-|   |   |       UGC07577_rotation_curve.png
-|   |   |       UGC07603_rotation_curve.png
-|   |   |       UGC07608_rotation_curve.png
-|   |   |       UGC07690_rotation_curve.png
-|   |   |       UGC07866_rotation_curve.png
-|   |   |       UGC08286_rotation_curve.png
-|   |   |       UGC08490_rotation_curve.png
-|   |   |       UGC08550_rotation_curve.png
-|   |   |       UGC08699_rotation_curve.png
-|   |   |       UGC08837_rotation_curve.png
-|   |   |       UGC09037_rotation_curve.png
-|   |   |       UGC09133_rotation_curve.png
-|   |   |       UGC09992_rotation_curve.png
-|   |   |       UGC10310_rotation_curve.png
-|   |   |       UGC11455_rotation_curve.png
-|   |   |       UGC11557_rotation_curve.png
-|   |   |       UGC11820_rotation_curve.png
-|   |   |       UGC11914_rotation_curve.png
-|   |   |       UGC12506_rotation_curve.png
-|   |   |       UGC12632_rotation_curve.png
-|   |   |       UGC12732_rotation_curve.png
-|   |   |       UGCA281_rotation_curve.png
-|   |   |       UGCA442_rotation_curve.png
-|   |   |       UGCA444_rotation_curve.png
-|   |   |       
-|   |   +---logs
-|   |   |       run_log.txt
-|   |   |       
-|   |   +---metadata
-|   |   |       run_metadata.json
-|   |   |       
-|   |   +---summaries
-|   |   |       rotation_pipeline_summary_beta_abar.csv
-|   |   |       
-|   |   \---tables
-|   |           CamB_residuals.csv
-|   |           D512-2_residuals.csv
-|   |           D564-8_residuals.csv
-|   |           D631-7_residuals.csv
-|   |           DDO064_residuals.csv
-|   |           DDO154_residuals.csv
-|   |           DDO161_residuals.csv
-|   |           DDO168_residuals.csv
-|   |           DDO170_residuals.csv
-|   |           ESO079-G014_residuals.csv
-|   |           ESO116-G012_residuals.csv
-|   |           ESO444-G084_residuals.csv
-|   |           ESO563-G021_residuals.csv
-|   |           F561-1_residuals.csv
-|   |           F563-1_residuals.csv
-|   |           F563-V1_residuals.csv
-|   |           F563-V2_residuals.csv
-|   |           F565-V2_residuals.csv
-|   |           F567-2_residuals.csv
-|   |           F568-1_residuals.csv
-|   |           F568-3_residuals.csv
-|   |           F568-V1_residuals.csv
-|   |           F571-8_residuals.csv
-|   |           F571-V1_residuals.csv
-|   |           F574-1_residuals.csv
-|   |           F574-2_residuals.csv
-|   |           F579-V1_residuals.csv
-|   |           F583-1_residuals.csv
-|   |           F583-4_residuals.csv
-|   |           IC2574_residuals.csv
-|   |           IC4202_residuals.csv
-|   |           KK98-251_residuals.csv
-|   |           NGC0024_residuals.csv
-|   |           NGC0055_residuals.csv
-|   |           NGC0100_residuals.csv
-|   |           NGC0247_residuals.csv
-|   |           NGC0289_residuals.csv
-|   |           NGC0300_residuals.csv
-|   |           NGC0801_residuals.csv
-|   |           NGC0891_residuals.csv
-|   |           NGC1003_residuals.csv
-|   |           NGC1090_residuals.csv
-|   |           NGC1705_residuals.csv
-|   |           NGC2366_residuals.csv
-|   |           NGC2403_residuals.csv
-|   |           NGC2683_residuals.csv
-|   |           NGC2841_residuals.csv
-|   |           NGC2903_residuals.csv
-|   |           NGC2915_residuals.csv
-|   |           NGC2955_residuals.csv
-|   |           NGC2976_residuals.csv
-|   |           NGC2998_residuals.csv
-|   |           NGC3109_residuals.csv
-|   |           NGC3198_residuals.csv
-|   |           NGC3521_residuals.csv
-|   |           NGC3726_residuals.csv
-|   |           NGC3741_residuals.csv
-|   |           NGC3769_residuals.csv
-|   |           NGC3877_residuals.csv
-|   |           NGC3893_residuals.csv
-|   |           NGC3917_residuals.csv
-|   |           NGC3949_residuals.csv
-|   |           NGC3953_residuals.csv
-|   |           NGC3972_residuals.csv
-|   |           NGC3992_residuals.csv
-|   |           NGC4010_residuals.csv
-|   |           NGC4013_residuals.csv
-|   |           NGC4051_residuals.csv
-|   |           NGC4068_residuals.csv
-|   |           NGC4085_residuals.csv
-|   |           NGC4088_residuals.csv
-|   |           NGC4100_residuals.csv
-|   |           NGC4138_residuals.csv
-|   |           NGC4157_residuals.csv
-|   |           NGC4183_residuals.csv
-|   |           NGC4214_residuals.csv
-|   |           NGC4217_residuals.csv
-|   |           NGC4389_residuals.csv
-|   |           NGC4559_residuals.csv
-|   |           NGC5005_residuals.csv
-|   |           NGC5033_residuals.csv
-|   |           NGC5055_residuals.csv
-|   |           NGC5371_residuals.csv
-|   |           NGC5585_residuals.csv
-|   |           NGC5907_residuals.csv
-|   |           NGC5985_residuals.csv
-|   |           NGC6015_residuals.csv
-|   |           NGC6195_residuals.csv
-|   |           NGC6503_residuals.csv
-|   |           NGC6674_residuals.csv
-|   |           NGC6789_residuals.csv
-|   |           NGC6946_residuals.csv
-|   |           NGC7331_residuals.csv
-|   |           NGC7793_residuals.csv
-|   |           NGC7814_residuals.csv
-|   |           PGC51017_residuals.csv
-|   |           UGC00128_residuals.csv
-|   |           UGC00191_residuals.csv
-|   |           UGC00634_residuals.csv
-|   |           UGC00731_residuals.csv
-|   |           UGC00891_residuals.csv
-|   |           UGC01230_residuals.csv
-|   |           UGC01281_residuals.csv
-|   |           UGC02023_residuals.csv
-|   |           UGC02259_residuals.csv
-|   |           UGC02455_residuals.csv
-|   |           UGC02487_residuals.csv
-|   |           UGC02885_residuals.csv
-|   |           UGC02916_residuals.csv
-|   |           UGC02953_residuals.csv
-|   |           UGC03205_residuals.csv
-|   |           UGC03546_residuals.csv
-|   |           UGC03580_residuals.csv
-|   |           UGC04278_residuals.csv
-|   |           UGC04305_residuals.csv
-|   |           UGC04325_residuals.csv
-|   |           UGC04483_residuals.csv
-|   |           UGC04499_residuals.csv
-|   |           UGC05005_residuals.csv
-|   |           UGC05253_residuals.csv
-|   |           UGC05414_residuals.csv
-|   |           UGC05716_residuals.csv
-|   |           UGC05721_residuals.csv
-|   |           UGC05750_residuals.csv
-|   |           UGC05764_residuals.csv
-|   |           UGC05829_residuals.csv
-|   |           UGC05918_residuals.csv
-|   |           UGC05986_residuals.csv
-|   |           UGC05999_residuals.csv
-|   |           UGC06399_residuals.csv
-|   |           UGC06446_residuals.csv
-|   |           UGC06614_residuals.csv
-|   |           UGC06628_residuals.csv
-|   |           UGC06667_residuals.csv
-|   |           UGC06786_residuals.csv
-|   |           UGC06787_residuals.csv
-|   |           UGC06818_residuals.csv
-|   |           UGC06917_residuals.csv
-|   |           UGC06923_residuals.csv
-|   |           UGC06930_residuals.csv
-|   |           UGC06973_residuals.csv
-|   |           UGC06983_residuals.csv
-|   |           UGC07089_residuals.csv
-|   |           UGC07125_residuals.csv
-|   |           UGC07151_residuals.csv
-|   |           UGC07232_residuals.csv
-|   |           UGC07261_residuals.csv
-|   |           UGC07323_residuals.csv
-|   |           UGC07399_residuals.csv
-|   |           UGC07524_residuals.csv
-|   |           UGC07559_residuals.csv
-|   |           UGC07577_residuals.csv
-|   |           UGC07603_residuals.csv
-|   |           UGC07608_residuals.csv
-|   |           UGC07690_residuals.csv
-|   |           UGC07866_residuals.csv
-|   |           UGC08286_residuals.csv
-|   |           UGC08490_residuals.csv
-|   |           UGC08550_residuals.csv
-|   |           UGC08699_residuals.csv
-|   |           UGC08837_residuals.csv
-|   |           UGC09037_residuals.csv
-|   |           UGC09133_residuals.csv
-|   |           UGC09992_residuals.csv
-|   |           UGC10310_residuals.csv
-|   |           UGC11455_residuals.csv
-|   |           UGC11557_residuals.csv
-|   |           UGC11820_residuals.csv
-|   |           UGC11914_residuals.csv
-|   |           UGC12506_residuals.csv
-|   |           UGC12632_residuals.csv
-|   |           UGC12732_residuals.csv
-|   |           UGCA281_residuals.csv
-|   |           UGCA442_residuals.csv
-|   |           UGCA444_residuals.csv
-|   |           
-|   +---2026-03-21_1654_beta_abar
-|   |   +---figures
-|   |   |       CamB.png
-|   |   |       D512-2.png
-|   |   |       D564-8.png
-|   |   |       D631-7.png
-|   |   |       DDO064.png
-|   |   |       DDO154.png
-|   |   |       DDO161.png
-|   |   |       DDO168.png
-|   |   |       DDO170.png
-|   |   |       ESO079-G014.png
-|   |   |       ESO116-G012.png
-|   |   |       ESO444-G084.png
-|   |   |       ESO563-G021.png
-|   |   |       F561-1.png
-|   |   |       F563-1.png
-|   |   |       F563-V1.png
-|   |   |       F563-V2.png
-|   |   |       F565-V2.png
-|   |   |       F567-2.png
-|   |   |       F568-1.png
-|   |   |       F568-3.png
-|   |   |       F568-V1.png
-|   |   |       F571-8.png
-|   |   |       F571-V1.png
-|   |   |       F574-1.png
-|   |   |       F574-2.png
-|   |   |       F579-V1.png
-|   |   |       F583-1.png
-|   |   |       F583-4.png
-|   |   |       IC2574.png
-|   |   |       IC4202.png
-|   |   |       KK98-251.png
-|   |   |       NGC0024.png
-|   |   |       NGC0055.png
-|   |   |       NGC0100.png
-|   |   |       NGC0247.png
-|   |   |       NGC0289.png
-|   |   |       NGC0300.png
-|   |   |       NGC0801.png
-|   |   |       NGC0891.png
-|   |   |       NGC1003.png
-|   |   |       NGC1090.png
-|   |   |       NGC1705.png
-|   |   |       NGC2366.png
-|   |   |       NGC2403.png
-|   |   |       NGC2683.png
-|   |   |       NGC2841.png
-|   |   |       NGC2903.png
-|   |   |       NGC2915.png
-|   |   |       NGC2955.png
-|   |   |       NGC2976.png
-|   |   |       NGC2998.png
-|   |   |       NGC3109.png
-|   |   |       NGC3198.png
-|   |   |       NGC3521.png
-|   |   |       NGC3726.png
-|   |   |       NGC3741.png
-|   |   |       NGC3769.png
-|   |   |       NGC3877.png
-|   |   |       NGC3893.png
-|   |   |       NGC3917.png
-|   |   |       NGC3949.png
-|   |   |       NGC3953.png
-|   |   |       NGC3972.png
-|   |   |       NGC3992.png
-|   |   |       NGC4010.png
-|   |   |       NGC4013.png
-|   |   |       NGC4051.png
-|   |   |       NGC4068.png
-|   |   |       NGC4085.png
-|   |   |       NGC4088.png
-|   |   |       NGC4100.png
-|   |   |       NGC4138.png
-|   |   |       NGC4157.png
-|   |   |       NGC4183.png
-|   |   |       NGC4214.png
-|   |   |       NGC4217.png
-|   |   |       NGC4389.png
-|   |   |       NGC4559.png
-|   |   |       NGC5005.png
-|   |   |       NGC5033.png
-|   |   |       NGC5055.png
-|   |   |       NGC5371.png
-|   |   |       NGC5585.png
-|   |   |       NGC5907.png
-|   |   |       NGC5985.png
-|   |   |       NGC6015.png
-|   |   |       NGC6195.png
-|   |   |       NGC6503.png
-|   |   |       NGC6674.png
-|   |   |       NGC6789.png
-|   |   |       NGC6946.png
-|   |   |       NGC7331.png
-|   |   |       NGC7793.png
-|   |   |       NGC7814.png
-|   |   |       PGC51017.png
-|   |   |       UGC00128.png
-|   |   |       UGC00191.png
-|   |   |       UGC00634.png
-|   |   |       UGC00731.png
-|   |   |       UGC00891.png
-|   |   |       UGC01230.png
-|   |   |       UGC01281.png
-|   |   |       UGC02023.png
-|   |   |       UGC02259.png
-|   |   |       UGC02455.png
-|   |   |       UGC02487.png
-|   |   |       UGC02885.png
-|   |   |       UGC02916.png
-|   |   |       UGC02953.png
-|   |   |       UGC03205.png
-|   |   |       UGC03546.png
-|   |   |       UGC03580.png
-|   |   |       UGC04278.png
-|   |   |       UGC04305.png
-|   |   |       UGC04325.png
-|   |   |       UGC04483.png
-|   |   |       UGC04499.png
-|   |   |       UGC05005.png
-|   |   |       UGC05253.png
-|   |   |       UGC05414.png
-|   |   |       UGC05716.png
-|   |   |       UGC05721.png
-|   |   |       UGC05750.png
-|   |   |       UGC05764.png
-|   |   |       UGC05829.png
-|   |   |       UGC05918.png
-|   |   |       UGC05986.png
-|   |   |       UGC05999.png
-|   |   |       UGC06399.png
-|   |   |       UGC06446.png
-|   |   |       UGC06614.png
-|   |   |       UGC06628.png
-|   |   |       UGC06667.png
-|   |   |       UGC06786.png
-|   |   |       UGC06787.png
-|   |   |       UGC06818.png
-|   |   |       UGC06917.png
-|   |   |       UGC06923.png
-|   |   |       UGC06930.png
-|   |   |       UGC06973.png
-|   |   |       UGC06983.png
-|   |   |       UGC07089.png
-|   |   |       UGC07125.png
-|   |   |       UGC07151.png
-|   |   |       UGC07232.png
-|   |   |       UGC07261.png
-|   |   |       UGC07323.png
-|   |   |       UGC07399.png
-|   |   |       UGC07524.png
-|   |   |       UGC07559.png
-|   |   |       UGC07577.png
-|   |   |       UGC07603.png
-|   |   |       UGC07608.png
-|   |   |       UGC07690.png
-|   |   |       UGC07866.png
-|   |   |       UGC08286.png
-|   |   |       UGC08490.png
-|   |   |       UGC08550.png
-|   |   |       UGC08699.png
-|   |   |       UGC08837.png
-|   |   |       UGC09037.png
-|   |   |       UGC09133.png
-|   |   |       UGC09992.png
-|   |   |       UGC10310.png
-|   |   |       UGC11455.png
-|   |   |       UGC11557.png
-|   |   |       UGC11820.png
-|   |   |       UGC11914.png
-|   |   |       UGC12506.png
-|   |   |       UGC12632.png
-|   |   |       UGC12732.png
-|   |   |       UGCA281.png
-|   |   |       UGCA442.png
-|   |   |       UGCA444.png
-|   |   |       
-|   |   +---logs
-|   |   |       run_log.txt
-|   |   |       
-|   |   +---metadata
-|   |   |       meta.json
-|   |   |       
-|   |   +---summaries
-|   |   |       summary_beta_abar.csv
-|   |   |       
-|   |   \---tables
-|   |           CamB.csv
-|   |           D512-2.csv
-|   |           D564-8.csv
-|   |           D631-7.csv
-|   |           DDO064.csv
-|   |           DDO154.csv
-|   |           DDO161.csv
-|   |           DDO168.csv
-|   |           DDO170.csv
-|   |           ESO079-G014.csv
-|   |           ESO116-G012.csv
-|   |           ESO444-G084.csv
-|   |           ESO563-G021.csv
-|   |           F561-1.csv
-|   |           F563-1.csv
-|   |           F563-V1.csv
-|   |           F563-V2.csv
-|   |           F565-V2.csv
-|   |           F567-2.csv
-|   |           F568-1.csv
-|   |           F568-3.csv
-|   |           F568-V1.csv
-|   |           F571-8.csv
-|   |           F571-V1.csv
-|   |           F574-1.csv
-|   |           F574-2.csv
-|   |           F579-V1.csv
-|   |           F583-1.csv
-|   |           F583-4.csv
-|   |           IC2574.csv
-|   |           IC4202.csv
-|   |           KK98-251.csv
-|   |           NGC0024.csv
-|   |           NGC0055.csv
-|   |           NGC0100.csv
-|   |           NGC0247.csv
-|   |           NGC0289.csv
-|   |           NGC0300.csv
-|   |           NGC0801.csv
-|   |           NGC0891.csv
-|   |           NGC1003.csv
-|   |           NGC1090.csv
-|   |           NGC1705.csv
-|   |           NGC2366.csv
-|   |           NGC2403.csv
-|   |           NGC2683.csv
-|   |           NGC2841.csv
-|   |           NGC2903.csv
-|   |           NGC2915.csv
-|   |           NGC2955.csv
-|   |           NGC2976.csv
-|   |           NGC2998.csv
-|   |           NGC3109.csv
-|   |           NGC3198.csv
-|   |           NGC3521.csv
-|   |           NGC3726.csv
-|   |           NGC3741.csv
-|   |           NGC3769.csv
-|   |           NGC3877.csv
-|   |           NGC3893.csv
-|   |           NGC3917.csv
-|   |           NGC3949.csv
-|   |           NGC3953.csv
-|   |           NGC3972.csv
-|   |           NGC3992.csv
-|   |           NGC4010.csv
-|   |           NGC4013.csv
-|   |           NGC4051.csv
-|   |           NGC4068.csv
-|   |           NGC4085.csv
-|   |           NGC4088.csv
-|   |           NGC4100.csv
-|   |           NGC4138.csv
-|   |           NGC4157.csv
-|   |           NGC4183.csv
-|   |           NGC4214.csv
-|   |           NGC4217.csv
-|   |           NGC4389.csv
-|   |           NGC4559.csv
-|   |           NGC5005.csv
-|   |           NGC5033.csv
-|   |           NGC5055.csv
-|   |           NGC5371.csv
-|   |           NGC5585.csv
-|   |           NGC5907.csv
-|   |           NGC5985.csv
-|   |           NGC6015.csv
-|   |           NGC6195.csv
-|   |           NGC6503.csv
-|   |           NGC6674.csv
-|   |           NGC6789.csv
-|   |           NGC6946.csv
-|   |           NGC7331.csv
-|   |           NGC7793.csv
-|   |           NGC7814.csv
-|   |           PGC51017.csv
-|   |           UGC00128.csv
-|   |           UGC00191.csv
-|   |           UGC00634.csv
-|   |           UGC00731.csv
-|   |           UGC00891.csv
-|   |           UGC01230.csv
-|   |           UGC01281.csv
-|   |           UGC02023.csv
-|   |           UGC02259.csv
-|   |           UGC02455.csv
-|   |           UGC02487.csv
-|   |           UGC02885.csv
-|   |           UGC02916.csv
-|   |           UGC02953.csv
-|   |           UGC03205.csv
-|   |           UGC03546.csv
-|   |           UGC03580.csv
-|   |           UGC04278.csv
-|   |           UGC04305.csv
-|   |           UGC04325.csv
-|   |           UGC04483.csv
-|   |           UGC04499.csv
-|   |           UGC05005.csv
-|   |           UGC05253.csv
-|   |           UGC05414.csv
-|   |           UGC05716.csv
-|   |           UGC05721.csv
-|   |           UGC05750.csv
-|   |           UGC05764.csv
-|   |           UGC05829.csv
-|   |           UGC05918.csv
-|   |           UGC05986.csv
-|   |           UGC05999.csv
-|   |           UGC06399.csv
-|   |           UGC06446.csv
-|   |           UGC06614.csv
-|   |           UGC06628.csv
-|   |           UGC06667.csv
-|   |           UGC06786.csv
-|   |           UGC06787.csv
-|   |           UGC06818.csv
-|   |           UGC06917.csv
-|   |           UGC06923.csv
-|   |           UGC06930.csv
-|   |           UGC06973.csv
-|   |           UGC06983.csv
-|   |           UGC07089.csv
-|   |           UGC07125.csv
-|   |           UGC07151.csv
-|   |           UGC07232.csv
-|   |           UGC07261.csv
-|   |           UGC07323.csv
-|   |           UGC07399.csv
-|   |           UGC07524.csv
-|   |           UGC07559.csv
-|   |           UGC07577.csv
-|   |           UGC07603.csv
-|   |           UGC07608.csv
-|   |           UGC07690.csv
-|   |           UGC07866.csv
-|   |           UGC08286.csv
-|   |           UGC08490.csv
-|   |           UGC08550.csv
-|   |           UGC08699.csv
-|   |           UGC08837.csv
-|   |           UGC09037.csv
-|   |           UGC09133.csv
-|   |           UGC09992.csv
-|   |           UGC10310.csv
-|   |           UGC11455.csv
-|   |           UGC11557.csv
-|   |           UGC11820.csv
-|   |           UGC11914.csv
-|   |           UGC12506.csv
-|   |           UGC12632.csv
-|   |           UGC12732.csv
-|   |           UGCA281.csv
-|   |           UGCA442.csv
-|   |           UGCA444.csv
-|   |           
-|   +---2026-03-21_1717_beta_abar
-|   |   +---figures
-|   |   |       CamB.png
-|   |   |       D512-2.png
-|   |   |       D564-8.png
-|   |   |       D631-7.png
-|   |   |       DDO064.png
-|   |   |       DDO154.png
-|   |   |       DDO161.png
-|   |   |       DDO168.png
-|   |   |       DDO170.png
-|   |   |       ESO079-G014.png
-|   |   |       ESO116-G012.png
-|   |   |       ESO444-G084.png
-|   |   |       ESO563-G021.png
-|   |   |       F561-1.png
-|   |   |       F563-1.png
-|   |   |       F563-V1.png
-|   |   |       F563-V2.png
-|   |   |       F565-V2.png
-|   |   |       F567-2.png
-|   |   |       F568-1.png
-|   |   |       F568-3.png
-|   |   |       F568-V1.png
-|   |   |       F571-8.png
-|   |   |       F571-V1.png
-|   |   |       F574-1.png
-|   |   |       F574-2.png
-|   |   |       F579-V1.png
-|   |   |       F583-1.png
-|   |   |       F583-4.png
-|   |   |       IC2574.png
-|   |   |       IC4202.png
-|   |   |       KK98-251.png
-|   |   |       NGC0024.png
-|   |   |       NGC0055.png
-|   |   |       NGC0100.png
-|   |   |       NGC0247.png
-|   |   |       NGC0289.png
-|   |   |       NGC0300.png
-|   |   |       NGC0801.png
-|   |   |       NGC0891.png
-|   |   |       NGC1003.png
-|   |   |       NGC1090.png
-|   |   |       NGC1705.png
-|   |   |       NGC2366.png
-|   |   |       NGC2403.png
-|   |   |       NGC2683.png
-|   |   |       NGC2841.png
-|   |   |       NGC2903.png
-|   |   |       NGC2915.png
-|   |   |       NGC2955.png
-|   |   |       NGC2976.png
-|   |   |       NGC2998.png
-|   |   |       NGC3109.png
-|   |   |       NGC3198.png
-|   |   |       NGC3521.png
-|   |   |       NGC3726.png
-|   |   |       NGC3741.png
-|   |   |       NGC3769.png
-|   |   |       NGC3877.png
-|   |   |       NGC3893.png
-|   |   |       NGC3917.png
-|   |   |       NGC3949.png
-|   |   |       NGC3953.png
-|   |   |       NGC3972.png
-|   |   |       NGC3992.png
-|   |   |       NGC4010.png
-|   |   |       NGC4013.png
-|   |   |       NGC4051.png
-|   |   |       NGC4068.png
-|   |   |       NGC4085.png
-|   |   |       NGC4088.png
-|   |   |       NGC4100.png
-|   |   |       NGC4138.png
-|   |   |       NGC4157.png
-|   |   |       NGC4183.png
-|   |   |       NGC4214.png
-|   |   |       NGC4217.png
-|   |   |       NGC4389.png
-|   |   |       NGC4559.png
-|   |   |       NGC5005.png
-|   |   |       NGC5033.png
-|   |   |       NGC5055.png
-|   |   |       NGC5371.png
-|   |   |       NGC5585.png
-|   |   |       NGC5907.png
-|   |   |       NGC5985.png
-|   |   |       NGC6015.png
-|   |   |       NGC6195.png
-|   |   |       NGC6503.png
-|   |   |       NGC6674.png
-|   |   |       NGC6789.png
-|   |   |       NGC6946.png
-|   |   |       NGC7331.png
-|   |   |       NGC7793.png
-|   |   |       NGC7814.png
-|   |   |       PGC51017.png
-|   |   |       UGC00128.png
-|   |   |       UGC00191.png
-|   |   |       UGC00634.png
-|   |   |       UGC00731.png
-|   |   |       UGC00891.png
-|   |   |       UGC01230.png
-|   |   |       UGC01281.png
-|   |   |       UGC02023.png
-|   |   |       UGC02259.png
-|   |   |       UGC02455.png
-|   |   |       UGC02487.png
-|   |   |       UGC02885.png
-|   |   |       UGC02916.png
-|   |   |       UGC02953.png
-|   |   |       UGC03205.png
-|   |   |       UGC03546.png
-|   |   |       UGC03580.png
-|   |   |       UGC04278.png
-|   |   |       UGC04305.png
-|   |   |       UGC04325.png
-|   |   |       UGC04483.png
-|   |   |       UGC04499.png
-|   |   |       UGC05005.png
-|   |   |       UGC05253.png
-|   |   |       UGC05414.png
-|   |   |       UGC05716.png
-|   |   |       UGC05721.png
-|   |   |       UGC05750.png
-|   |   |       UGC05764.png
-|   |   |       UGC05829.png
-|   |   |       UGC05918.png
-|   |   |       UGC05986.png
-|   |   |       UGC05999.png
-|   |   |       UGC06399.png
-|   |   |       UGC06446.png
-|   |   |       UGC06614.png
-|   |   |       UGC06628.png
-|   |   |       UGC06667.png
-|   |   |       UGC06786.png
-|   |   |       UGC06787.png
-|   |   |       UGC06818.png
-|   |   |       UGC06917.png
-|   |   |       UGC06923.png
-|   |   |       UGC06930.png
-|   |   |       UGC06973.png
-|   |   |       UGC06983.png
-|   |   |       UGC07089.png
-|   |   |       UGC07125.png
-|   |   |       UGC07151.png
-|   |   |       UGC07232.png
-|   |   |       UGC07261.png
-|   |   |       UGC07323.png
-|   |   |       UGC07399.png
-|   |   |       UGC07524.png
-|   |   |       UGC07559.png
-|   |   |       UGC07577.png
-|   |   |       UGC07603.png
-|   |   |       UGC07608.png
-|   |   |       UGC07690.png
-|   |   |       UGC07866.png
-|   |   |       UGC08286.png
-|   |   |       UGC08490.png
-|   |   |       UGC08550.png
-|   |   |       UGC08699.png
-|   |   |       UGC08837.png
-|   |   |       UGC09037.png
-|   |   |       UGC09133.png
-|   |   |       UGC09992.png
-|   |   |       UGC10310.png
-|   |   |       UGC11455.png
-|   |   |       UGC11557.png
-|   |   |       UGC11820.png
-|   |   |       UGC11914.png
-|   |   |       UGC12506.png
-|   |   |       UGC12632.png
-|   |   |       UGC12732.png
-|   |   |       UGCA281.png
-|   |   |       UGCA442.png
-|   |   |       UGCA444.png
-|   |   |       
-|   |   +---logs
-|   |   |       run_log.txt
-|   |   |       
-|   |   +---metadata
-|   |   |       meta.json
-|   |   |       
-|   |   +---summaries
-|   |   |       summary_beta_abar.csv
-|   |   |       
-|   |   \---tables
-|   |           CamB.csv
-|   |           D512-2.csv
-|   |           D564-8.csv
-|   |           D631-7.csv
-|   |           DDO064.csv
-|   |           DDO154.csv
-|   |           DDO161.csv
-|   |           DDO168.csv
-|   |           DDO170.csv
-|   |           ESO079-G014.csv
-|   |           ESO116-G012.csv
-|   |           ESO444-G084.csv
-|   |           ESO563-G021.csv
-|   |           F561-1.csv
-|   |           F563-1.csv
-|   |           F563-V1.csv
-|   |           F563-V2.csv
-|   |           F565-V2.csv
-|   |           F567-2.csv
-|   |           F568-1.csv
-|   |           F568-3.csv
-|   |           F568-V1.csv
-|   |           F571-8.csv
-|   |           F571-V1.csv
-|   |           F574-1.csv
-|   |           F574-2.csv
-|   |           F579-V1.csv
-|   |           F583-1.csv
-|   |           F583-4.csv
-|   |           IC2574.csv
-|   |           IC4202.csv
-|   |           KK98-251.csv
-|   |           NGC0024.csv
-|   |           NGC0055.csv
-|   |           NGC0100.csv
-|   |           NGC0247.csv
-|   |           NGC0289.csv
-|   |           NGC0300.csv
-|   |           NGC0801.csv
-|   |           NGC0891.csv
-|   |           NGC1003.csv
-|   |           NGC1090.csv
-|   |           NGC1705.csv
-|   |           NGC2366.csv
-|   |           NGC2403.csv
-|   |           NGC2683.csv
-|   |           NGC2841.csv
-|   |           NGC2903.csv
-|   |           NGC2915.csv
-|   |           NGC2955.csv
-|   |           NGC2976.csv
-|   |           NGC2998.csv
-|   |           NGC3109.csv
-|   |           NGC3198.csv
-|   |           NGC3521.csv
-|   |           NGC3726.csv
-|   |           NGC3741.csv
-|   |           NGC3769.csv
-|   |           NGC3877.csv
-|   |           NGC3893.csv
-|   |           NGC3917.csv
-|   |           NGC3949.csv
-|   |           NGC3953.csv
-|   |           NGC3972.csv
-|   |           NGC3992.csv
-|   |           NGC4010.csv
-|   |           NGC4013.csv
-|   |           NGC4051.csv
-|   |           NGC4068.csv
-|   |           NGC4085.csv
-|   |           NGC4088.csv
-|   |           NGC4100.csv
-|   |           NGC4138.csv
-|   |           NGC4157.csv
-|   |           NGC4183.csv
-|   |           NGC4214.csv
-|   |           NGC4217.csv
-|   |           NGC4389.csv
-|   |           NGC4559.csv
-|   |           NGC5005.csv
-|   |           NGC5033.csv
-|   |           NGC5055.csv
-|   |           NGC5371.csv
-|   |           NGC5585.csv
-|   |           NGC5907.csv
-|   |           NGC5985.csv
-|   |           NGC6015.csv
-|   |           NGC6195.csv
-|   |           NGC6503.csv
-|   |           NGC6674.csv
-|   |           NGC6789.csv
-|   |           NGC6946.csv
-|   |           NGC7331.csv
-|   |           NGC7793.csv
-|   |           NGC7814.csv
-|   |           PGC51017.csv
-|   |           UGC00128.csv
-|   |           UGC00191.csv
-|   |           UGC00634.csv
-|   |           UGC00731.csv
-|   |           UGC00891.csv
-|   |           UGC01230.csv
-|   |           UGC01281.csv
-|   |           UGC02023.csv
-|   |           UGC02259.csv
-|   |           UGC02455.csv
-|   |           UGC02487.csv
-|   |           UGC02885.csv
-|   |           UGC02916.csv
-|   |           UGC02953.csv
-|   |           UGC03205.csv
-|   |           UGC03546.csv
-|   |           UGC03580.csv
-|   |           UGC04278.csv
-|   |           UGC04305.csv
-|   |           UGC04325.csv
-|   |           UGC04483.csv
-|   |           UGC04499.csv
-|   |           UGC05005.csv
-|   |           UGC05253.csv
-|   |           UGC05414.csv
-|   |           UGC05716.csv
-|   |           UGC05721.csv
-|   |           UGC05750.csv
-|   |           UGC05764.csv
-|   |           UGC05829.csv
-|   |           UGC05918.csv
-|   |           UGC05986.csv
-|   |           UGC05999.csv
-|   |           UGC06399.csv
-|   |           UGC06446.csv
-|   |           UGC06614.csv
-|   |           UGC06628.csv
-|   |           UGC06667.csv
-|   |           UGC06786.csv
-|   |           UGC06787.csv
-|   |           UGC06818.csv
-|   |           UGC06917.csv
-|   |           UGC06923.csv
-|   |           UGC06930.csv
-|   |           UGC06973.csv
-|   |           UGC06983.csv
-|   |           UGC07089.csv
-|   |           UGC07125.csv
-|   |           UGC07151.csv
-|   |           UGC07232.csv
-|   |           UGC07261.csv
-|   |           UGC07323.csv
-|   |           UGC07399.csv
-|   |           UGC07524.csv
-|   |           UGC07559.csv
-|   |           UGC07577.csv
-|   |           UGC07603.csv
-|   |           UGC07608.csv
-|   |           UGC07690.csv
-|   |           UGC07866.csv
-|   |           UGC08286.csv
-|   |           UGC08490.csv
-|   |           UGC08550.csv
-|   |           UGC08699.csv
-|   |           UGC08837.csv
-|   |           UGC09037.csv
-|   |           UGC09133.csv
-|   |           UGC09992.csv
-|   |           UGC10310.csv
-|   |           UGC11455.csv
-|   |           UGC11557.csv
-|   |           UGC11820.csv
-|   |           UGC11914.csv
-|   |           UGC12506.csv
-|   |           UGC12632.csv
-|   |           UGC12732.csv
-|   |           UGCA281.csv
-|   |           UGCA442.csv
-|   |           UGCA444.csv
-|   |           
 |   \---galaxy_rotation
+|       +---pipeline_beta_abar
+|       |   +---2026-03-21_1623_beta_abar
+|       |   |   +---figures
+|       |   |   +---logs
+|       |   |   |       run_log.txt
+|       |   |   |       
+|       |   |   +---metadata
+|       |   |   |       run_metadata.json
+|       |   |   |       
+|       |   |   +---summaries
+|       |   |   |       rotation_pipeline_summary_beta_abar.csv
+|       |   |   |       
+|       |   |   \---tables
+|       |   +---2026-03-21_1629_beta_abar
+|       |   |   +---figures
+|       |   |   |       CamB_rotation_curve.png
+|       |   |   |       D512-2_rotation_curve.png
+|       |   |   |       D564-8_rotation_curve.png
+|       |   |   |       D631-7_rotation_curve.png
+|       |   |   |       DDO064_rotation_curve.png
+|       |   |   |       DDO154_rotation_curve.png
+|       |   |   |       DDO161_rotation_curve.png
+|       |   |   |       DDO168_rotation_curve.png
+|       |   |   |       DDO170_rotation_curve.png
+|       |   |   |       ESO079-G014_rotation_curve.png
+|       |   |   |       ESO116-G012_rotation_curve.png
+|       |   |   |       ESO444-G084_rotation_curve.png
+|       |   |   |       ESO563-G021_rotation_curve.png
+|       |   |   |       F561-1_rotation_curve.png
+|       |   |   |       F563-1_rotation_curve.png
+|       |   |   |       F563-V1_rotation_curve.png
+|       |   |   |       F563-V2_rotation_curve.png
+|       |   |   |       F565-V2_rotation_curve.png
+|       |   |   |       F567-2_rotation_curve.png
+|       |   |   |       F568-1_rotation_curve.png
+|       |   |   |       F568-3_rotation_curve.png
+|       |   |   |       F568-V1_rotation_curve.png
+|       |   |   |       F571-8_rotation_curve.png
+|       |   |   |       F571-V1_rotation_curve.png
+|       |   |   |       F574-1_rotation_curve.png
+|       |   |   |       F574-2_rotation_curve.png
+|       |   |   |       F579-V1_rotation_curve.png
+|       |   |   |       F583-1_rotation_curve.png
+|       |   |   |       F583-4_rotation_curve.png
+|       |   |   |       IC2574_rotation_curve.png
+|       |   |   |       IC4202_rotation_curve.png
+|       |   |   |       KK98-251_rotation_curve.png
+|       |   |   |       NGC0024_rotation_curve.png
+|       |   |   |       NGC0055_rotation_curve.png
+|       |   |   |       NGC0100_rotation_curve.png
+|       |   |   |       NGC0247_rotation_curve.png
+|       |   |   |       NGC0289_rotation_curve.png
+|       |   |   |       NGC0300_rotation_curve.png
+|       |   |   |       NGC0801_rotation_curve.png
+|       |   |   |       NGC0891_rotation_curve.png
+|       |   |   |       NGC1003_rotation_curve.png
+|       |   |   |       NGC1090_rotation_curve.png
+|       |   |   |       NGC1705_rotation_curve.png
+|       |   |   |       NGC2366_rotation_curve.png
+|       |   |   |       NGC2403_rotation_curve.png
+|       |   |   |       NGC2683_rotation_curve.png
+|       |   |   |       NGC2841_rotation_curve.png
+|       |   |   |       NGC2903_rotation_curve.png
+|       |   |   |       NGC2915_rotation_curve.png
+|       |   |   |       NGC2955_rotation_curve.png
+|       |   |   |       NGC2976_rotation_curve.png
+|       |   |   |       NGC2998_rotation_curve.png
+|       |   |   |       NGC3109_rotation_curve.png
+|       |   |   |       NGC3198_rotation_curve.png
+|       |   |   |       NGC3521_rotation_curve.png
+|       |   |   |       NGC3726_rotation_curve.png
+|       |   |   |       NGC3741_rotation_curve.png
+|       |   |   |       NGC3769_rotation_curve.png
+|       |   |   |       NGC3877_rotation_curve.png
+|       |   |   |       NGC3893_rotation_curve.png
+|       |   |   |       NGC3917_rotation_curve.png
+|       |   |   |       NGC3949_rotation_curve.png
+|       |   |   |       NGC3953_rotation_curve.png
+|       |   |   |       NGC3972_rotation_curve.png
+|       |   |   |       NGC3992_rotation_curve.png
+|       |   |   |       NGC4010_rotation_curve.png
+|       |   |   |       NGC4013_rotation_curve.png
+|       |   |   |       NGC4051_rotation_curve.png
+|       |   |   |       NGC4068_rotation_curve.png
+|       |   |   |       NGC4085_rotation_curve.png
+|       |   |   |       NGC4088_rotation_curve.png
+|       |   |   |       NGC4100_rotation_curve.png
+|       |   |   |       NGC4138_rotation_curve.png
+|       |   |   |       NGC4157_rotation_curve.png
+|       |   |   |       NGC4183_rotation_curve.png
+|       |   |   |       NGC4214_rotation_curve.png
+|       |   |   |       NGC4217_rotation_curve.png
+|       |   |   |       NGC4389_rotation_curve.png
+|       |   |   |       NGC4559_rotation_curve.png
+|       |   |   |       NGC5005_rotation_curve.png
+|       |   |   |       NGC5033_rotation_curve.png
+|       |   |   |       NGC5055_rotation_curve.png
+|       |   |   |       NGC5371_rotation_curve.png
+|       |   |   |       NGC5585_rotation_curve.png
+|       |   |   |       NGC5907_rotation_curve.png
+|       |   |   |       NGC5985_rotation_curve.png
+|       |   |   |       NGC6015_rotation_curve.png
+|       |   |   |       NGC6195_rotation_curve.png
+|       |   |   |       NGC6503_rotation_curve.png
+|       |   |   |       NGC6674_rotation_curve.png
+|       |   |   |       NGC6789_rotation_curve.png
+|       |   |   |       NGC6946_rotation_curve.png
+|       |   |   |       NGC7331_rotation_curve.png
+|       |   |   |       NGC7793_rotation_curve.png
+|       |   |   |       NGC7814_rotation_curve.png
+|       |   |   |       PGC51017_rotation_curve.png
+|       |   |   |       UGC00128_rotation_curve.png
+|       |   |   |       UGC00191_rotation_curve.png
+|       |   |   |       UGC00634_rotation_curve.png
+|       |   |   |       UGC00731_rotation_curve.png
+|       |   |   |       UGC00891_rotation_curve.png
+|       |   |   |       UGC01230_rotation_curve.png
+|       |   |   |       UGC01281_rotation_curve.png
+|       |   |   |       UGC02023_rotation_curve.png
+|       |   |   |       UGC02259_rotation_curve.png
+|       |   |   |       UGC02455_rotation_curve.png
+|       |   |   |       UGC02487_rotation_curve.png
+|       |   |   |       UGC02885_rotation_curve.png
+|       |   |   |       UGC02916_rotation_curve.png
+|       |   |   |       UGC02953_rotation_curve.png
+|       |   |   |       UGC03205_rotation_curve.png
+|       |   |   |       UGC03546_rotation_curve.png
+|       |   |   |       UGC03580_rotation_curve.png
+|       |   |   |       UGC04278_rotation_curve.png
+|       |   |   |       UGC04305_rotation_curve.png
+|       |   |   |       UGC04325_rotation_curve.png
+|       |   |   |       UGC04483_rotation_curve.png
+|       |   |   |       UGC04499_rotation_curve.png
+|       |   |   |       UGC05005_rotation_curve.png
+|       |   |   |       UGC05253_rotation_curve.png
+|       |   |   |       UGC05414_rotation_curve.png
+|       |   |   |       UGC05716_rotation_curve.png
+|       |   |   |       UGC05721_rotation_curve.png
+|       |   |   |       UGC05750_rotation_curve.png
+|       |   |   |       UGC05764_rotation_curve.png
+|       |   |   |       UGC05829_rotation_curve.png
+|       |   |   |       UGC05918_rotation_curve.png
+|       |   |   |       UGC05986_rotation_curve.png
+|       |   |   |       UGC05999_rotation_curve.png
+|       |   |   |       UGC06399_rotation_curve.png
+|       |   |   |       UGC06446_rotation_curve.png
+|       |   |   |       UGC06614_rotation_curve.png
+|       |   |   |       UGC06628_rotation_curve.png
+|       |   |   |       UGC06667_rotation_curve.png
+|       |   |   |       UGC06786_rotation_curve.png
+|       |   |   |       UGC06787_rotation_curve.png
+|       |   |   |       UGC06818_rotation_curve.png
+|       |   |   |       UGC06917_rotation_curve.png
+|       |   |   |       UGC06923_rotation_curve.png
+|       |   |   |       UGC06930_rotation_curve.png
+|       |   |   |       UGC06973_rotation_curve.png
+|       |   |   |       UGC06983_rotation_curve.png
+|       |   |   |       UGC07089_rotation_curve.png
+|       |   |   |       UGC07125_rotation_curve.png
+|       |   |   |       UGC07151_rotation_curve.png
+|       |   |   |       UGC07232_rotation_curve.png
+|       |   |   |       UGC07261_rotation_curve.png
+|       |   |   |       UGC07323_rotation_curve.png
+|       |   |   |       UGC07399_rotation_curve.png
+|       |   |   |       UGC07524_rotation_curve.png
+|       |   |   |       UGC07559_rotation_curve.png
+|       |   |   |       UGC07577_rotation_curve.png
+|       |   |   |       UGC07603_rotation_curve.png
+|       |   |   |       UGC07608_rotation_curve.png
+|       |   |   |       UGC07690_rotation_curve.png
+|       |   |   |       UGC07866_rotation_curve.png
+|       |   |   |       UGC08286_rotation_curve.png
+|       |   |   |       UGC08490_rotation_curve.png
+|       |   |   |       UGC08550_rotation_curve.png
+|       |   |   |       UGC08699_rotation_curve.png
+|       |   |   |       UGC08837_rotation_curve.png
+|       |   |   |       UGC09037_rotation_curve.png
+|       |   |   |       UGC09133_rotation_curve.png
+|       |   |   |       UGC09992_rotation_curve.png
+|       |   |   |       UGC10310_rotation_curve.png
+|       |   |   |       UGC11455_rotation_curve.png
+|       |   |   |       UGC11557_rotation_curve.png
+|       |   |   |       UGC11820_rotation_curve.png
+|       |   |   |       UGC11914_rotation_curve.png
+|       |   |   |       UGC12506_rotation_curve.png
+|       |   |   |       UGC12632_rotation_curve.png
+|       |   |   |       UGC12732_rotation_curve.png
+|       |   |   |       UGCA281_rotation_curve.png
+|       |   |   |       UGCA442_rotation_curve.png
+|       |   |   |       UGCA444_rotation_curve.png
+|       |   |   |       
+|       |   |   +---logs
+|       |   |   |       run_log.txt
+|       |   |   |       
+|       |   |   +---metadata
+|       |   |   |       run_metadata.json
+|       |   |   |       
+|       |   |   +---summaries
+|       |   |   |       rotation_pipeline_summary_beta_abar.csv
+|       |   |   |       
+|       |   |   \---tables
+|       |   |           CamB_residuals.csv
+|       |   |           D512-2_residuals.csv
+|       |   |           D564-8_residuals.csv
+|       |   |           D631-7_residuals.csv
+|       |   |           DDO064_residuals.csv
+|       |   |           DDO154_residuals.csv
+|       |   |           DDO161_residuals.csv
+|       |   |           DDO168_residuals.csv
+|       |   |           DDO170_residuals.csv
+|       |   |           ESO079-G014_residuals.csv
+|       |   |           ESO116-G012_residuals.csv
+|       |   |           ESO444-G084_residuals.csv
+|       |   |           ESO563-G021_residuals.csv
+|       |   |           F561-1_residuals.csv
+|       |   |           F563-1_residuals.csv
+|       |   |           F563-V1_residuals.csv
+|       |   |           F563-V2_residuals.csv
+|       |   |           F565-V2_residuals.csv
+|       |   |           F567-2_residuals.csv
+|       |   |           F568-1_residuals.csv
+|       |   |           F568-3_residuals.csv
+|       |   |           F568-V1_residuals.csv
+|       |   |           F571-8_residuals.csv
+|       |   |           F571-V1_residuals.csv
+|       |   |           F574-1_residuals.csv
+|       |   |           F574-2_residuals.csv
+|       |   |           F579-V1_residuals.csv
+|       |   |           F583-1_residuals.csv
+|       |   |           F583-4_residuals.csv
+|       |   |           IC2574_residuals.csv
+|       |   |           IC4202_residuals.csv
+|       |   |           KK98-251_residuals.csv
+|       |   |           NGC0024_residuals.csv
+|       |   |           NGC0055_residuals.csv
+|       |   |           NGC0100_residuals.csv
+|       |   |           NGC0247_residuals.csv
+|       |   |           NGC0289_residuals.csv
+|       |   |           NGC0300_residuals.csv
+|       |   |           NGC0801_residuals.csv
+|       |   |           NGC0891_residuals.csv
+|       |   |           NGC1003_residuals.csv
+|       |   |           NGC1090_residuals.csv
+|       |   |           NGC1705_residuals.csv
+|       |   |           NGC2366_residuals.csv
+|       |   |           NGC2403_residuals.csv
+|       |   |           NGC2683_residuals.csv
+|       |   |           NGC2841_residuals.csv
+|       |   |           NGC2903_residuals.csv
+|       |   |           NGC2915_residuals.csv
+|       |   |           NGC2955_residuals.csv
+|       |   |           NGC2976_residuals.csv
+|       |   |           NGC2998_residuals.csv
+|       |   |           NGC3109_residuals.csv
+|       |   |           NGC3198_residuals.csv
+|       |   |           NGC3521_residuals.csv
+|       |   |           NGC3726_residuals.csv
+|       |   |           NGC3741_residuals.csv
+|       |   |           NGC3769_residuals.csv
+|       |   |           NGC3877_residuals.csv
+|       |   |           NGC3893_residuals.csv
+|       |   |           NGC3917_residuals.csv
+|       |   |           NGC3949_residuals.csv
+|       |   |           NGC3953_residuals.csv
+|       |   |           NGC3972_residuals.csv
+|       |   |           NGC3992_residuals.csv
+|       |   |           NGC4010_residuals.csv
+|       |   |           NGC4013_residuals.csv
+|       |   |           NGC4051_residuals.csv
+|       |   |           NGC4068_residuals.csv
+|       |   |           NGC4085_residuals.csv
+|       |   |           NGC4088_residuals.csv
+|       |   |           NGC4100_residuals.csv
+|       |   |           NGC4138_residuals.csv
+|       |   |           NGC4157_residuals.csv
+|       |   |           NGC4183_residuals.csv
+|       |   |           NGC4214_residuals.csv
+|       |   |           NGC4217_residuals.csv
+|       |   |           NGC4389_residuals.csv
+|       |   |           NGC4559_residuals.csv
+|       |   |           NGC5005_residuals.csv
+|       |   |           NGC5033_residuals.csv
+|       |   |           NGC5055_residuals.csv
+|       |   |           NGC5371_residuals.csv
+|       |   |           NGC5585_residuals.csv
+|       |   |           NGC5907_residuals.csv
+|       |   |           NGC5985_residuals.csv
+|       |   |           NGC6015_residuals.csv
+|       |   |           NGC6195_residuals.csv
+|       |   |           NGC6503_residuals.csv
+|       |   |           NGC6674_residuals.csv
+|       |   |           NGC6789_residuals.csv
+|       |   |           NGC6946_residuals.csv
+|       |   |           NGC7331_residuals.csv
+|       |   |           NGC7793_residuals.csv
+|       |   |           NGC7814_residuals.csv
+|       |   |           PGC51017_residuals.csv
+|       |   |           UGC00128_residuals.csv
+|       |   |           UGC00191_residuals.csv
+|       |   |           UGC00634_residuals.csv
+|       |   |           UGC00731_residuals.csv
+|       |   |           UGC00891_residuals.csv
+|       |   |           UGC01230_residuals.csv
+|       |   |           UGC01281_residuals.csv
+|       |   |           UGC02023_residuals.csv
+|       |   |           UGC02259_residuals.csv
+|       |   |           UGC02455_residuals.csv
+|       |   |           UGC02487_residuals.csv
+|       |   |           UGC02885_residuals.csv
+|       |   |           UGC02916_residuals.csv
+|       |   |           UGC02953_residuals.csv
+|       |   |           UGC03205_residuals.csv
+|       |   |           UGC03546_residuals.csv
+|       |   |           UGC03580_residuals.csv
+|       |   |           UGC04278_residuals.csv
+|       |   |           UGC04305_residuals.csv
+|       |   |           UGC04325_residuals.csv
+|       |   |           UGC04483_residuals.csv
+|       |   |           UGC04499_residuals.csv
+|       |   |           UGC05005_residuals.csv
+|       |   |           UGC05253_residuals.csv
+|       |   |           UGC05414_residuals.csv
+|       |   |           UGC05716_residuals.csv
+|       |   |           UGC05721_residuals.csv
+|       |   |           UGC05750_residuals.csv
+|       |   |           UGC05764_residuals.csv
+|       |   |           UGC05829_residuals.csv
+|       |   |           UGC05918_residuals.csv
+|       |   |           UGC05986_residuals.csv
+|       |   |           UGC05999_residuals.csv
+|       |   |           UGC06399_residuals.csv
+|       |   |           UGC06446_residuals.csv
+|       |   |           UGC06614_residuals.csv
+|       |   |           UGC06628_residuals.csv
+|       |   |           UGC06667_residuals.csv
+|       |   |           UGC06786_residuals.csv
+|       |   |           UGC06787_residuals.csv
+|       |   |           UGC06818_residuals.csv
+|       |   |           UGC06917_residuals.csv
+|       |   |           UGC06923_residuals.csv
+|       |   |           UGC06930_residuals.csv
+|       |   |           UGC06973_residuals.csv
+|       |   |           UGC06983_residuals.csv
+|       |   |           UGC07089_residuals.csv
+|       |   |           UGC07125_residuals.csv
+|       |   |           UGC07151_residuals.csv
+|       |   |           UGC07232_residuals.csv
+|       |   |           UGC07261_residuals.csv
+|       |   |           UGC07323_residuals.csv
+|       |   |           UGC07399_residuals.csv
+|       |   |           UGC07524_residuals.csv
+|       |   |           UGC07559_residuals.csv
+|       |   |           UGC07577_residuals.csv
+|       |   |           UGC07603_residuals.csv
+|       |   |           UGC07608_residuals.csv
+|       |   |           UGC07690_residuals.csv
+|       |   |           UGC07866_residuals.csv
+|       |   |           UGC08286_residuals.csv
+|       |   |           UGC08490_residuals.csv
+|       |   |           UGC08550_residuals.csv
+|       |   |           UGC08699_residuals.csv
+|       |   |           UGC08837_residuals.csv
+|       |   |           UGC09037_residuals.csv
+|       |   |           UGC09133_residuals.csv
+|       |   |           UGC09992_residuals.csv
+|       |   |           UGC10310_residuals.csv
+|       |   |           UGC11455_residuals.csv
+|       |   |           UGC11557_residuals.csv
+|       |   |           UGC11820_residuals.csv
+|       |   |           UGC11914_residuals.csv
+|       |   |           UGC12506_residuals.csv
+|       |   |           UGC12632_residuals.csv
+|       |   |           UGC12732_residuals.csv
+|       |   |           UGCA281_residuals.csv
+|       |   |           UGCA442_residuals.csv
+|       |   |           UGCA444_residuals.csv
+|       |   |           
+|       |   +---2026-03-21_1654_beta_abar
+|       |   |   +---figures
+|       |   |   |       CamB.png
+|       |   |   |       D512-2.png
+|       |   |   |       D564-8.png
+|       |   |   |       D631-7.png
+|       |   |   |       DDO064.png
+|       |   |   |       DDO154.png
+|       |   |   |       DDO161.png
+|       |   |   |       DDO168.png
+|       |   |   |       DDO170.png
+|       |   |   |       ESO079-G014.png
+|       |   |   |       ESO116-G012.png
+|       |   |   |       ESO444-G084.png
+|       |   |   |       ESO563-G021.png
+|       |   |   |       F561-1.png
+|       |   |   |       F563-1.png
+|       |   |   |       F563-V1.png
+|       |   |   |       F563-V2.png
+|       |   |   |       F565-V2.png
+|       |   |   |       F567-2.png
+|       |   |   |       F568-1.png
+|       |   |   |       F568-3.png
+|       |   |   |       F568-V1.png
+|       |   |   |       F571-8.png
+|       |   |   |       F571-V1.png
+|       |   |   |       F574-1.png
+|       |   |   |       F574-2.png
+|       |   |   |       F579-V1.png
+|       |   |   |       F583-1.png
+|       |   |   |       F583-4.png
+|       |   |   |       IC2574.png
+|       |   |   |       IC4202.png
+|       |   |   |       KK98-251.png
+|       |   |   |       NGC0024.png
+|       |   |   |       NGC0055.png
+|       |   |   |       NGC0100.png
+|       |   |   |       NGC0247.png
+|       |   |   |       NGC0289.png
+|       |   |   |       NGC0300.png
+|       |   |   |       NGC0801.png
+|       |   |   |       NGC0891.png
+|       |   |   |       NGC1003.png
+|       |   |   |       NGC1090.png
+|       |   |   |       NGC1705.png
+|       |   |   |       NGC2366.png
+|       |   |   |       NGC2403.png
+|       |   |   |       NGC2683.png
+|       |   |   |       NGC2841.png
+|       |   |   |       NGC2903.png
+|       |   |   |       NGC2915.png
+|       |   |   |       NGC2955.png
+|       |   |   |       NGC2976.png
+|       |   |   |       NGC2998.png
+|       |   |   |       NGC3109.png
+|       |   |   |       NGC3198.png
+|       |   |   |       NGC3521.png
+|       |   |   |       NGC3726.png
+|       |   |   |       NGC3741.png
+|       |   |   |       NGC3769.png
+|       |   |   |       NGC3877.png
+|       |   |   |       NGC3893.png
+|       |   |   |       NGC3917.png
+|       |   |   |       NGC3949.png
+|       |   |   |       NGC3953.png
+|       |   |   |       NGC3972.png
+|       |   |   |       NGC3992.png
+|       |   |   |       NGC4010.png
+|       |   |   |       NGC4013.png
+|       |   |   |       NGC4051.png
+|       |   |   |       NGC4068.png
+|       |   |   |       NGC4085.png
+|       |   |   |       NGC4088.png
+|       |   |   |       NGC4100.png
+|       |   |   |       NGC4138.png
+|       |   |   |       NGC4157.png
+|       |   |   |       NGC4183.png
+|       |   |   |       NGC4214.png
+|       |   |   |       NGC4217.png
+|       |   |   |       NGC4389.png
+|       |   |   |       NGC4559.png
+|       |   |   |       NGC5005.png
+|       |   |   |       NGC5033.png
+|       |   |   |       NGC5055.png
+|       |   |   |       NGC5371.png
+|       |   |   |       NGC5585.png
+|       |   |   |       NGC5907.png
+|       |   |   |       NGC5985.png
+|       |   |   |       NGC6015.png
+|       |   |   |       NGC6195.png
+|       |   |   |       NGC6503.png
+|       |   |   |       NGC6674.png
+|       |   |   |       NGC6789.png
+|       |   |   |       NGC6946.png
+|       |   |   |       NGC7331.png
+|       |   |   |       NGC7793.png
+|       |   |   |       NGC7814.png
+|       |   |   |       PGC51017.png
+|       |   |   |       UGC00128.png
+|       |   |   |       UGC00191.png
+|       |   |   |       UGC00634.png
+|       |   |   |       UGC00731.png
+|       |   |   |       UGC00891.png
+|       |   |   |       UGC01230.png
+|       |   |   |       UGC01281.png
+|       |   |   |       UGC02023.png
+|       |   |   |       UGC02259.png
+|       |   |   |       UGC02455.png
+|       |   |   |       UGC02487.png
+|       |   |   |       UGC02885.png
+|       |   |   |       UGC02916.png
+|       |   |   |       UGC02953.png
+|       |   |   |       UGC03205.png
+|       |   |   |       UGC03546.png
+|       |   |   |       UGC03580.png
+|       |   |   |       UGC04278.png
+|       |   |   |       UGC04305.png
+|       |   |   |       UGC04325.png
+|       |   |   |       UGC04483.png
+|       |   |   |       UGC04499.png
+|       |   |   |       UGC05005.png
+|       |   |   |       UGC05253.png
+|       |   |   |       UGC05414.png
+|       |   |   |       UGC05716.png
+|       |   |   |       UGC05721.png
+|       |   |   |       UGC05750.png
+|       |   |   |       UGC05764.png
+|       |   |   |       UGC05829.png
+|       |   |   |       UGC05918.png
+|       |   |   |       UGC05986.png
+|       |   |   |       UGC05999.png
+|       |   |   |       UGC06399.png
+|       |   |   |       UGC06446.png
+|       |   |   |       UGC06614.png
+|       |   |   |       UGC06628.png
+|       |   |   |       UGC06667.png
+|       |   |   |       UGC06786.png
+|       |   |   |       UGC06787.png
+|       |   |   |       UGC06818.png
+|       |   |   |       UGC06917.png
+|       |   |   |       UGC06923.png
+|       |   |   |       UGC06930.png
+|       |   |   |       UGC06973.png
+|       |   |   |       UGC06983.png
+|       |   |   |       UGC07089.png
+|       |   |   |       UGC07125.png
+|       |   |   |       UGC07151.png
+|       |   |   |       UGC07232.png
+|       |   |   |       UGC07261.png
+|       |   |   |       UGC07323.png
+|       |   |   |       UGC07399.png
+|       |   |   |       UGC07524.png
+|       |   |   |       UGC07559.png
+|       |   |   |       UGC07577.png
+|       |   |   |       UGC07603.png
+|       |   |   |       UGC07608.png
+|       |   |   |       UGC07690.png
+|       |   |   |       UGC07866.png
+|       |   |   |       UGC08286.png
+|       |   |   |       UGC08490.png
+|       |   |   |       UGC08550.png
+|       |   |   |       UGC08699.png
+|       |   |   |       UGC08837.png
+|       |   |   |       UGC09037.png
+|       |   |   |       UGC09133.png
+|       |   |   |       UGC09992.png
+|       |   |   |       UGC10310.png
+|       |   |   |       UGC11455.png
+|       |   |   |       UGC11557.png
+|       |   |   |       UGC11820.png
+|       |   |   |       UGC11914.png
+|       |   |   |       UGC12506.png
+|       |   |   |       UGC12632.png
+|       |   |   |       UGC12732.png
+|       |   |   |       UGCA281.png
+|       |   |   |       UGCA442.png
+|       |   |   |       UGCA444.png
+|       |   |   |       
+|       |   |   +---logs
+|       |   |   |       run_log.txt
+|       |   |   |       
+|       |   |   +---metadata
+|       |   |   |       meta.json
+|       |   |   |       
+|       |   |   +---summaries
+|       |   |   |       summary_beta_abar.csv
+|       |   |   |       
+|       |   |   \---tables
+|       |   |           CamB.csv
+|       |   |           D512-2.csv
+|       |   |           D564-8.csv
+|       |   |           D631-7.csv
+|       |   |           DDO064.csv
+|       |   |           DDO154.csv
+|       |   |           DDO161.csv
+|       |   |           DDO168.csv
+|       |   |           DDO170.csv
+|       |   |           ESO079-G014.csv
+|       |   |           ESO116-G012.csv
+|       |   |           ESO444-G084.csv
+|       |   |           ESO563-G021.csv
+|       |   |           F561-1.csv
+|       |   |           F563-1.csv
+|       |   |           F563-V1.csv
+|       |   |           F563-V2.csv
+|       |   |           F565-V2.csv
+|       |   |           F567-2.csv
+|       |   |           F568-1.csv
+|       |   |           F568-3.csv
+|       |   |           F568-V1.csv
+|       |   |           F571-8.csv
+|       |   |           F571-V1.csv
+|       |   |           F574-1.csv
+|       |   |           F574-2.csv
+|       |   |           F579-V1.csv
+|       |   |           F583-1.csv
+|       |   |           F583-4.csv
+|       |   |           IC2574.csv
+|       |   |           IC4202.csv
+|       |   |           KK98-251.csv
+|       |   |           NGC0024.csv
+|       |   |           NGC0055.csv
+|       |   |           NGC0100.csv
+|       |   |           NGC0247.csv
+|       |   |           NGC0289.csv
+|       |   |           NGC0300.csv
+|       |   |           NGC0801.csv
+|       |   |           NGC0891.csv
+|       |   |           NGC1003.csv
+|       |   |           NGC1090.csv
+|       |   |           NGC1705.csv
+|       |   |           NGC2366.csv
+|       |   |           NGC2403.csv
+|       |   |           NGC2683.csv
+|       |   |           NGC2841.csv
+|       |   |           NGC2903.csv
+|       |   |           NGC2915.csv
+|       |   |           NGC2955.csv
+|       |   |           NGC2976.csv
+|       |   |           NGC2998.csv
+|       |   |           NGC3109.csv
+|       |   |           NGC3198.csv
+|       |   |           NGC3521.csv
+|       |   |           NGC3726.csv
+|       |   |           NGC3741.csv
+|       |   |           NGC3769.csv
+|       |   |           NGC3877.csv
+|       |   |           NGC3893.csv
+|       |   |           NGC3917.csv
+|       |   |           NGC3949.csv
+|       |   |           NGC3953.csv
+|       |   |           NGC3972.csv
+|       |   |           NGC3992.csv
+|       |   |           NGC4010.csv
+|       |   |           NGC4013.csv
+|       |   |           NGC4051.csv
+|       |   |           NGC4068.csv
+|       |   |           NGC4085.csv
+|       |   |           NGC4088.csv
+|       |   |           NGC4100.csv
+|       |   |           NGC4138.csv
+|       |   |           NGC4157.csv
+|       |   |           NGC4183.csv
+|       |   |           NGC4214.csv
+|       |   |           NGC4217.csv
+|       |   |           NGC4389.csv
+|       |   |           NGC4559.csv
+|       |   |           NGC5005.csv
+|       |   |           NGC5033.csv
+|       |   |           NGC5055.csv
+|       |   |           NGC5371.csv
+|       |   |           NGC5585.csv
+|       |   |           NGC5907.csv
+|       |   |           NGC5985.csv
+|       |   |           NGC6015.csv
+|       |   |           NGC6195.csv
+|       |   |           NGC6503.csv
+|       |   |           NGC6674.csv
+|       |   |           NGC6789.csv
+|       |   |           NGC6946.csv
+|       |   |           NGC7331.csv
+|       |   |           NGC7793.csv
+|       |   |           NGC7814.csv
+|       |   |           PGC51017.csv
+|       |   |           UGC00128.csv
+|       |   |           UGC00191.csv
+|       |   |           UGC00634.csv
+|       |   |           UGC00731.csv
+|       |   |           UGC00891.csv
+|       |   |           UGC01230.csv
+|       |   |           UGC01281.csv
+|       |   |           UGC02023.csv
+|       |   |           UGC02259.csv
+|       |   |           UGC02455.csv
+|       |   |           UGC02487.csv
+|       |   |           UGC02885.csv
+|       |   |           UGC02916.csv
+|       |   |           UGC02953.csv
+|       |   |           UGC03205.csv
+|       |   |           UGC03546.csv
+|       |   |           UGC03580.csv
+|       |   |           UGC04278.csv
+|       |   |           UGC04305.csv
+|       |   |           UGC04325.csv
+|       |   |           UGC04483.csv
+|       |   |           UGC04499.csv
+|       |   |           UGC05005.csv
+|       |   |           UGC05253.csv
+|       |   |           UGC05414.csv
+|       |   |           UGC05716.csv
+|       |   |           UGC05721.csv
+|       |   |           UGC05750.csv
+|       |   |           UGC05764.csv
+|       |   |           UGC05829.csv
+|       |   |           UGC05918.csv
+|       |   |           UGC05986.csv
+|       |   |           UGC05999.csv
+|       |   |           UGC06399.csv
+|       |   |           UGC06446.csv
+|       |   |           UGC06614.csv
+|       |   |           UGC06628.csv
+|       |   |           UGC06667.csv
+|       |   |           UGC06786.csv
+|       |   |           UGC06787.csv
+|       |   |           UGC06818.csv
+|       |   |           UGC06917.csv
+|       |   |           UGC06923.csv
+|       |   |           UGC06930.csv
+|       |   |           UGC06973.csv
+|       |   |           UGC06983.csv
+|       |   |           UGC07089.csv
+|       |   |           UGC07125.csv
+|       |   |           UGC07151.csv
+|       |   |           UGC07232.csv
+|       |   |           UGC07261.csv
+|       |   |           UGC07323.csv
+|       |   |           UGC07399.csv
+|       |   |           UGC07524.csv
+|       |   |           UGC07559.csv
+|       |   |           UGC07577.csv
+|       |   |           UGC07603.csv
+|       |   |           UGC07608.csv
+|       |   |           UGC07690.csv
+|       |   |           UGC07866.csv
+|       |   |           UGC08286.csv
+|       |   |           UGC08490.csv
+|       |   |           UGC08550.csv
+|       |   |           UGC08699.csv
+|       |   |           UGC08837.csv
+|       |   |           UGC09037.csv
+|       |   |           UGC09133.csv
+|       |   |           UGC09992.csv
+|       |   |           UGC10310.csv
+|       |   |           UGC11455.csv
+|       |   |           UGC11557.csv
+|       |   |           UGC11820.csv
+|       |   |           UGC11914.csv
+|       |   |           UGC12506.csv
+|       |   |           UGC12632.csv
+|       |   |           UGC12732.csv
+|       |   |           UGCA281.csv
+|       |   |           UGCA442.csv
+|       |   |           UGCA444.csv
+|       |   |           
+|       |   \---2026-03-21_1717_beta_abar
+|       |       +---figures
+|       |       |       CamB.png
+|       |       |       D512-2.png
+|       |       |       D564-8.png
+|       |       |       D631-7.png
+|       |       |       DDO064.png
+|       |       |       DDO154.png
+|       |       |       DDO161.png
+|       |       |       DDO168.png
+|       |       |       DDO170.png
+|       |       |       ESO079-G014.png
+|       |       |       ESO116-G012.png
+|       |       |       ESO444-G084.png
+|       |       |       ESO563-G021.png
+|       |       |       F561-1.png
+|       |       |       F563-1.png
+|       |       |       F563-V1.png
+|       |       |       F563-V2.png
+|       |       |       F565-V2.png
+|       |       |       F567-2.png
+|       |       |       F568-1.png
+|       |       |       F568-3.png
+|       |       |       F568-V1.png
+|       |       |       F571-8.png
+|       |       |       F571-V1.png
+|       |       |       F574-1.png
+|       |       |       F574-2.png
+|       |       |       F579-V1.png
+|       |       |       F583-1.png
+|       |       |       F583-4.png
+|       |       |       IC2574.png
+|       |       |       IC4202.png
+|       |       |       KK98-251.png
+|       |       |       NGC0024.png
+|       |       |       NGC0055.png
+|       |       |       NGC0100.png
+|       |       |       NGC0247.png
+|       |       |       NGC0289.png
+|       |       |       NGC0300.png
+|       |       |       NGC0801.png
+|       |       |       NGC0891.png
+|       |       |       NGC1003.png
+|       |       |       NGC1090.png
+|       |       |       NGC1705.png
+|       |       |       NGC2366.png
+|       |       |       NGC2403.png
+|       |       |       NGC2683.png
+|       |       |       NGC2841.png
+|       |       |       NGC2903.png
+|       |       |       NGC2915.png
+|       |       |       NGC2955.png
+|       |       |       NGC2976.png
+|       |       |       NGC2998.png
+|       |       |       NGC3109.png
+|       |       |       NGC3198.png
+|       |       |       NGC3521.png
+|       |       |       NGC3726.png
+|       |       |       NGC3741.png
+|       |       |       NGC3769.png
+|       |       |       NGC3877.png
+|       |       |       NGC3893.png
+|       |       |       NGC3917.png
+|       |       |       NGC3949.png
+|       |       |       NGC3953.png
+|       |       |       NGC3972.png
+|       |       |       NGC3992.png
+|       |       |       NGC4010.png
+|       |       |       NGC4013.png
+|       |       |       NGC4051.png
+|       |       |       NGC4068.png
+|       |       |       NGC4085.png
+|       |       |       NGC4088.png
+|       |       |       NGC4100.png
+|       |       |       NGC4138.png
+|       |       |       NGC4157.png
+|       |       |       NGC4183.png
+|       |       |       NGC4214.png
+|       |       |       NGC4217.png
+|       |       |       NGC4389.png
+|       |       |       NGC4559.png
+|       |       |       NGC5005.png
+|       |       |       NGC5033.png
+|       |       |       NGC5055.png
+|       |       |       NGC5371.png
+|       |       |       NGC5585.png
+|       |       |       NGC5907.png
+|       |       |       NGC5985.png
+|       |       |       NGC6015.png
+|       |       |       NGC6195.png
+|       |       |       NGC6503.png
+|       |       |       NGC6674.png
+|       |       |       NGC6789.png
+|       |       |       NGC6946.png
+|       |       |       NGC7331.png
+|       |       |       NGC7793.png
+|       |       |       NGC7814.png
+|       |       |       PGC51017.png
+|       |       |       UGC00128.png
+|       |       |       UGC00191.png
+|       |       |       UGC00634.png
+|       |       |       UGC00731.png
+|       |       |       UGC00891.png
+|       |       |       UGC01230.png
+|       |       |       UGC01281.png
+|       |       |       UGC02023.png
+|       |       |       UGC02259.png
+|       |       |       UGC02455.png
+|       |       |       UGC02487.png
+|       |       |       UGC02885.png
+|       |       |       UGC02916.png
+|       |       |       UGC02953.png
+|       |       |       UGC03205.png
+|       |       |       UGC03546.png
+|       |       |       UGC03580.png
+|       |       |       UGC04278.png
+|       |       |       UGC04305.png
+|       |       |       UGC04325.png
+|       |       |       UGC04483.png
+|       |       |       UGC04499.png
+|       |       |       UGC05005.png
+|       |       |       UGC05253.png
+|       |       |       UGC05414.png
+|       |       |       UGC05716.png
+|       |       |       UGC05721.png
+|       |       |       UGC05750.png
+|       |       |       UGC05764.png
+|       |       |       UGC05829.png
+|       |       |       UGC05918.png
+|       |       |       UGC05986.png
+|       |       |       UGC05999.png
+|       |       |       UGC06399.png
+|       |       |       UGC06446.png
+|       |       |       UGC06614.png
+|       |       |       UGC06628.png
+|       |       |       UGC06667.png
+|       |       |       UGC06786.png
+|       |       |       UGC06787.png
+|       |       |       UGC06818.png
+|       |       |       UGC06917.png
+|       |       |       UGC06923.png
+|       |       |       UGC06930.png
+|       |       |       UGC06973.png
+|       |       |       UGC06983.png
+|       |       |       UGC07089.png
+|       |       |       UGC07125.png
+|       |       |       UGC07151.png
+|       |       |       UGC07232.png
+|       |       |       UGC07261.png
+|       |       |       UGC07323.png
+|       |       |       UGC07399.png
+|       |       |       UGC07524.png
+|       |       |       UGC07559.png
+|       |       |       UGC07577.png
+|       |       |       UGC07603.png
+|       |       |       UGC07608.png
+|       |       |       UGC07690.png
+|       |       |       UGC07866.png
+|       |       |       UGC08286.png
+|       |       |       UGC08490.png
+|       |       |       UGC08550.png
+|       |       |       UGC08699.png
+|       |       |       UGC08837.png
+|       |       |       UGC09037.png
+|       |       |       UGC09133.png
+|       |       |       UGC09992.png
+|       |       |       UGC10310.png
+|       |       |       UGC11455.png
+|       |       |       UGC11557.png
+|       |       |       UGC11820.png
+|       |       |       UGC11914.png
+|       |       |       UGC12506.png
+|       |       |       UGC12632.png
+|       |       |       UGC12732.png
+|       |       |       UGCA281.png
+|       |       |       UGCA442.png
+|       |       |       UGCA444.png
+|       |       |       
+|       |       +---logs
+|       |       |       run_log.txt
+|       |       |       
+|       |       +---metadata
+|       |       |       meta.json
+|       |       |       
+|       |       +---summaries
+|       |       |       summary_beta_abar.csv
+|       |       |       
+|       |       \---tables
+|       |               CamB.csv
+|       |               D512-2.csv
+|       |               D564-8.csv
+|       |               D631-7.csv
+|       |               DDO064.csv
+|       |               DDO154.csv
+|       |               DDO161.csv
+|       |               DDO168.csv
+|       |               DDO170.csv
+|       |               ESO079-G014.csv
+|       |               ESO116-G012.csv
+|       |               ESO444-G084.csv
+|       |               ESO563-G021.csv
+|       |               F561-1.csv
+|       |               F563-1.csv
+|       |               F563-V1.csv
+|       |               F563-V2.csv
+|       |               F565-V2.csv
+|       |               F567-2.csv
+|       |               F568-1.csv
+|       |               F568-3.csv
+|       |               F568-V1.csv
+|       |               F571-8.csv
+|       |               F571-V1.csv
+|       |               F574-1.csv
+|       |               F574-2.csv
+|       |               F579-V1.csv
+|       |               F583-1.csv
+|       |               F583-4.csv
+|       |               IC2574.csv
+|       |               IC4202.csv
+|       |               KK98-251.csv
+|       |               NGC0024.csv
+|       |               NGC0055.csv
+|       |               NGC0100.csv
+|       |               NGC0247.csv
+|       |               NGC0289.csv
+|       |               NGC0300.csv
+|       |               NGC0801.csv
+|       |               NGC0891.csv
+|       |               NGC1003.csv
+|       |               NGC1090.csv
+|       |               NGC1705.csv
+|       |               NGC2366.csv
+|       |               NGC2403.csv
+|       |               NGC2683.csv
+|       |               NGC2841.csv
+|       |               NGC2903.csv
+|       |               NGC2915.csv
+|       |               NGC2955.csv
+|       |               NGC2976.csv
+|       |               NGC2998.csv
+|       |               NGC3109.csv
+|       |               NGC3198.csv
+|       |               NGC3521.csv
+|       |               NGC3726.csv
+|       |               NGC3741.csv
+|       |               NGC3769.csv
+|       |               NGC3877.csv
+|       |               NGC3893.csv
+|       |               NGC3917.csv
+|       |               NGC3949.csv
+|       |               NGC3953.csv
+|       |               NGC3972.csv
+|       |               NGC3992.csv
+|       |               NGC4010.csv
+|       |               NGC4013.csv
+|       |               NGC4051.csv
+|       |               NGC4068.csv
+|       |               NGC4085.csv
+|       |               NGC4088.csv
+|       |               NGC4100.csv
+|       |               NGC4138.csv
+|       |               NGC4157.csv
+|       |               NGC4183.csv
+|       |               NGC4214.csv
+|       |               NGC4217.csv
+|       |               NGC4389.csv
+|       |               NGC4559.csv
+|       |               NGC5005.csv
+|       |               NGC5033.csv
+|       |               NGC5055.csv
+|       |               NGC5371.csv
+|       |               NGC5585.csv
+|       |               NGC5907.csv
+|       |               NGC5985.csv
+|       |               NGC6015.csv
+|       |               NGC6195.csv
+|       |               NGC6503.csv
+|       |               NGC6674.csv
+|       |               NGC6789.csv
+|       |               NGC6946.csv
+|       |               NGC7331.csv
+|       |               NGC7793.csv
+|       |               NGC7814.csv
+|       |               PGC51017.csv
+|       |               UGC00128.csv
+|       |               UGC00191.csv
+|       |               UGC00634.csv
+|       |               UGC00731.csv
+|       |               UGC00891.csv
+|       |               UGC01230.csv
+|       |               UGC01281.csv
+|       |               UGC02023.csv
+|       |               UGC02259.csv
+|       |               UGC02455.csv
+|       |               UGC02487.csv
+|       |               UGC02885.csv
+|       |               UGC02916.csv
+|       |               UGC02953.csv
+|       |               UGC03205.csv
+|       |               UGC03546.csv
+|       |               UGC03580.csv
+|       |               UGC04278.csv
+|       |               UGC04305.csv
+|       |               UGC04325.csv
+|       |               UGC04483.csv
+|       |               UGC04499.csv
+|       |               UGC05005.csv
+|       |               UGC05253.csv
+|       |               UGC05414.csv
+|       |               UGC05716.csv
+|       |               UGC05721.csv
+|       |               UGC05750.csv
+|       |               UGC05764.csv
+|       |               UGC05829.csv
+|       |               UGC05918.csv
+|       |               UGC05986.csv
+|       |               UGC05999.csv
+|       |               UGC06399.csv
+|       |               UGC06446.csv
+|       |               UGC06614.csv
+|       |               UGC06628.csv
+|       |               UGC06667.csv
+|       |               UGC06786.csv
+|       |               UGC06787.csv
+|       |               UGC06818.csv
+|       |               UGC06917.csv
+|       |               UGC06923.csv
+|       |               UGC06930.csv
+|       |               UGC06973.csv
+|       |               UGC06983.csv
+|       |               UGC07089.csv
+|       |               UGC07125.csv
+|       |               UGC07151.csv
+|       |               UGC07232.csv
+|       |               UGC07261.csv
+|       |               UGC07323.csv
+|       |               UGC07399.csv
+|       |               UGC07524.csv
+|       |               UGC07559.csv
+|       |               UGC07577.csv
+|       |               UGC07603.csv
+|       |               UGC07608.csv
+|       |               UGC07690.csv
+|       |               UGC07866.csv
+|       |               UGC08286.csv
+|       |               UGC08490.csv
+|       |               UGC08550.csv
+|       |               UGC08699.csv
+|       |               UGC08837.csv
+|       |               UGC09037.csv
+|       |               UGC09133.csv
+|       |               UGC09992.csv
+|       |               UGC10310.csv
+|       |               UGC11455.csv
+|       |               UGC11557.csv
+|       |               UGC11820.csv
+|       |               UGC11914.csv
+|       |               UGC12506.csv
+|       |               UGC12632.csv
+|       |               UGC12732.csv
+|       |               UGCA281.csv
+|       |               UGCA442.csv
+|       |               UGCA444.csv
+|       |               
 |       +---pipeline_beta_formula
 |       |   |   estimated_formula_params.json
 |       |   |   
@@ -12932,15 +12974,1155 @@ C:.
 |           |           worst_fit_galaxies_mafe_local_structural_coupling_v4.csv
 |           |           worst_fit_galaxies_rmse_local_structural_coupling_v4.csv
 |           |           
-|           \---2026-03-23_182300_local_structural_coupling_v5
+|           +---2026-03-23_182300_local_structural_coupling_v5
+|           |   +---figures
+|           |   |   |   beta_mean_distribution_local_structural_coupling_v5.png
+|           |   |   |   eta_mean_distribution_local_structural_coupling_v5.png
+|           |   |   |   mean_absolute_fractional_error_distribution_local_structural_coupling_v5.png
+|           |   |   |   projection_mean_distribution_local_structural_coupling_v5.png
+|           |   |   |   rmse_kmps_distribution_local_structural_coupling_v5.png
+|           |   |   |   sigma_flip_severity_distribution_local_structural_coupling_v5.png
+|           |   |   |   struct_to_bar_ratio_max_distribution_local_structural_coupling_v5.png
+|           |   |   |   
+|           |   |   \---individual
+|           |   |           CamB_rotation_curve.png
+|           |   |           D512-2_rotation_curve.png
+|           |   |           D564-8_rotation_curve.png
+|           |   |           D631-7_rotation_curve.png
+|           |   |           DDO064_rotation_curve.png
+|           |   |           DDO154_rotation_curve.png
+|           |   |           DDO161_rotation_curve.png
+|           |   |           DDO168_rotation_curve.png
+|           |   |           DDO170_rotation_curve.png
+|           |   |           ESO079-G014_rotation_curve.png
+|           |   |           ESO116-G012_rotation_curve.png
+|           |   |           ESO444-G084_rotation_curve.png
+|           |   |           ESO563-G021_rotation_curve.png
+|           |   |           F561-1_rotation_curve.png
+|           |   |           F563-1_rotation_curve.png
+|           |   |           F563-V1_rotation_curve.png
+|           |   |           F563-V2_rotation_curve.png
+|           |   |           F565-V2_rotation_curve.png
+|           |   |           F567-2_rotation_curve.png
+|           |   |           F568-1_rotation_curve.png
+|           |   |           F568-3_rotation_curve.png
+|           |   |           F568-V1_rotation_curve.png
+|           |   |           F571-8_rotation_curve.png
+|           |   |           F571-V1_rotation_curve.png
+|           |   |           F574-1_rotation_curve.png
+|           |   |           F574-2_rotation_curve.png
+|           |   |           F579-V1_rotation_curve.png
+|           |   |           F583-1_rotation_curve.png
+|           |   |           F583-4_rotation_curve.png
+|           |   |           IC2574_rotation_curve.png
+|           |   |           IC4202_rotation_curve.png
+|           |   |           KK98-251_rotation_curve.png
+|           |   |           NGC0024_rotation_curve.png
+|           |   |           NGC0055_rotation_curve.png
+|           |   |           NGC0100_rotation_curve.png
+|           |   |           NGC0247_rotation_curve.png
+|           |   |           NGC0289_rotation_curve.png
+|           |   |           NGC0300_rotation_curve.png
+|           |   |           NGC0801_rotation_curve.png
+|           |   |           NGC0891_rotation_curve.png
+|           |   |           NGC1003_rotation_curve.png
+|           |   |           NGC1090_rotation_curve.png
+|           |   |           NGC1705_rotation_curve.png
+|           |   |           NGC2366_rotation_curve.png
+|           |   |           NGC2403_rotation_curve.png
+|           |   |           NGC2683_rotation_curve.png
+|           |   |           NGC2841_rotation_curve.png
+|           |   |           NGC2903_rotation_curve.png
+|           |   |           NGC2915_rotation_curve.png
+|           |   |           NGC2955_rotation_curve.png
+|           |   |           NGC2976_rotation_curve.png
+|           |   |           NGC2998_rotation_curve.png
+|           |   |           NGC3109_rotation_curve.png
+|           |   |           NGC3198_rotation_curve.png
+|           |   |           NGC3521_rotation_curve.png
+|           |   |           NGC3726_rotation_curve.png
+|           |   |           NGC3741_rotation_curve.png
+|           |   |           NGC3769_rotation_curve.png
+|           |   |           NGC3877_rotation_curve.png
+|           |   |           NGC3893_rotation_curve.png
+|           |   |           NGC3917_rotation_curve.png
+|           |   |           NGC3949_rotation_curve.png
+|           |   |           NGC3953_rotation_curve.png
+|           |   |           NGC3972_rotation_curve.png
+|           |   |           NGC3992_rotation_curve.png
+|           |   |           NGC4010_rotation_curve.png
+|           |   |           NGC4013_rotation_curve.png
+|           |   |           NGC4051_rotation_curve.png
+|           |   |           NGC4068_rotation_curve.png
+|           |   |           NGC4085_rotation_curve.png
+|           |   |           NGC4088_rotation_curve.png
+|           |   |           NGC4100_rotation_curve.png
+|           |   |           NGC4138_rotation_curve.png
+|           |   |           NGC4157_rotation_curve.png
+|           |   |           NGC4183_rotation_curve.png
+|           |   |           NGC4214_rotation_curve.png
+|           |   |           NGC4217_rotation_curve.png
+|           |   |           NGC4389_rotation_curve.png
+|           |   |           NGC4559_rotation_curve.png
+|           |   |           NGC5005_rotation_curve.png
+|           |   |           NGC5033_rotation_curve.png
+|           |   |           NGC5055_rotation_curve.png
+|           |   |           NGC5371_rotation_curve.png
+|           |   |           NGC5585_rotation_curve.png
+|           |   |           NGC5907_rotation_curve.png
+|           |   |           NGC5985_rotation_curve.png
+|           |   |           NGC6015_rotation_curve.png
+|           |   |           NGC6195_rotation_curve.png
+|           |   |           NGC6503_rotation_curve.png
+|           |   |           NGC6674_rotation_curve.png
+|           |   |           NGC6789_rotation_curve.png
+|           |   |           NGC6946_rotation_curve.png
+|           |   |           NGC7331_rotation_curve.png
+|           |   |           NGC7793_rotation_curve.png
+|           |   |           NGC7814_rotation_curve.png
+|           |   |           PGC51017_rotation_curve.png
+|           |   |           UGC00128_rotation_curve.png
+|           |   |           UGC00191_rotation_curve.png
+|           |   |           UGC00634_rotation_curve.png
+|           |   |           UGC00731_rotation_curve.png
+|           |   |           UGC00891_rotation_curve.png
+|           |   |           UGC01230_rotation_curve.png
+|           |   |           UGC01281_rotation_curve.png
+|           |   |           UGC02023_rotation_curve.png
+|           |   |           UGC02259_rotation_curve.png
+|           |   |           UGC02455_rotation_curve.png
+|           |   |           UGC02487_rotation_curve.png
+|           |   |           UGC02885_rotation_curve.png
+|           |   |           UGC02916_rotation_curve.png
+|           |   |           UGC02953_rotation_curve.png
+|           |   |           UGC03205_rotation_curve.png
+|           |   |           UGC03546_rotation_curve.png
+|           |   |           UGC03580_rotation_curve.png
+|           |   |           UGC04278_rotation_curve.png
+|           |   |           UGC04305_rotation_curve.png
+|           |   |           UGC04325_rotation_curve.png
+|           |   |           UGC04483_rotation_curve.png
+|           |   |           UGC04499_rotation_curve.png
+|           |   |           UGC05005_rotation_curve.png
+|           |   |           UGC05253_rotation_curve.png
+|           |   |           UGC05414_rotation_curve.png
+|           |   |           UGC05716_rotation_curve.png
+|           |   |           UGC05721_rotation_curve.png
+|           |   |           UGC05750_rotation_curve.png
+|           |   |           UGC05764_rotation_curve.png
+|           |   |           UGC05829_rotation_curve.png
+|           |   |           UGC05918_rotation_curve.png
+|           |   |           UGC05986_rotation_curve.png
+|           |   |           UGC05999_rotation_curve.png
+|           |   |           UGC06399_rotation_curve.png
+|           |   |           UGC06446_rotation_curve.png
+|           |   |           UGC06614_rotation_curve.png
+|           |   |           UGC06628_rotation_curve.png
+|           |   |           UGC06667_rotation_curve.png
+|           |   |           UGC06786_rotation_curve.png
+|           |   |           UGC06787_rotation_curve.png
+|           |   |           UGC06818_rotation_curve.png
+|           |   |           UGC06917_rotation_curve.png
+|           |   |           UGC06923_rotation_curve.png
+|           |   |           UGC06930_rotation_curve.png
+|           |   |           UGC06973_rotation_curve.png
+|           |   |           UGC06983_rotation_curve.png
+|           |   |           UGC07089_rotation_curve.png
+|           |   |           UGC07125_rotation_curve.png
+|           |   |           UGC07151_rotation_curve.png
+|           |   |           UGC07232_rotation_curve.png
+|           |   |           UGC07261_rotation_curve.png
+|           |   |           UGC07323_rotation_curve.png
+|           |   |           UGC07399_rotation_curve.png
+|           |   |           UGC07524_rotation_curve.png
+|           |   |           UGC07559_rotation_curve.png
+|           |   |           UGC07577_rotation_curve.png
+|           |   |           UGC07603_rotation_curve.png
+|           |   |           UGC07608_rotation_curve.png
+|           |   |           UGC07690_rotation_curve.png
+|           |   |           UGC07866_rotation_curve.png
+|           |   |           UGC08286_rotation_curve.png
+|           |   |           UGC08490_rotation_curve.png
+|           |   |           UGC08550_rotation_curve.png
+|           |   |           UGC08699_rotation_curve.png
+|           |   |           UGC08837_rotation_curve.png
+|           |   |           UGC09037_rotation_curve.png
+|           |   |           UGC09133_rotation_curve.png
+|           |   |           UGC09992_rotation_curve.png
+|           |   |           UGC10310_rotation_curve.png
+|           |   |           UGC11455_rotation_curve.png
+|           |   |           UGC11557_rotation_curve.png
+|           |   |           UGC11820_rotation_curve.png
+|           |   |           UGC11914_rotation_curve.png
+|           |   |           UGC12506_rotation_curve.png
+|           |   |           UGC12632_rotation_curve.png
+|           |   |           UGC12732_rotation_curve.png
+|           |   |           UGCA281_rotation_curve.png
+|           |   |           UGCA442_rotation_curve.png
+|           |   |           UGCA444_rotation_curve.png
+|           |   |           
+|           |   +---logs
+|           |   |       run_log_local_structural_coupling_v5.txt
+|           |   |       
+|           |   +---metadata
+|           |   |       run_summary_local_structural_coupling_v5.json
+|           |   |       
+|           |   +---summaries
+|           |   |       rotation_pipeline_summary_local_structural_coupling_v5.csv
+|           |   |       
+|           |   \---tables
+|           |           best_mean_absolute_fractional_error_local_structural_coupling_v5.csv
+|           |           best_rmse_kmps_local_structural_coupling_v5.csv
+|           |           best_sigma_flip_severity_local_structural_coupling_v5.csv
+|           |           camb_rotation_table.csv
+|           |           d512-2_rotation_table.csv
+|           |           d564-8_rotation_table.csv
+|           |           d631-7_rotation_table.csv
+|           |           ddo064_rotation_table.csv
+|           |           ddo154_rotation_table.csv
+|           |           ddo161_rotation_table.csv
+|           |           ddo168_rotation_table.csv
+|           |           ddo170_rotation_table.csv
+|           |           eso079-g014_rotation_table.csv
+|           |           eso116-g012_rotation_table.csv
+|           |           eso444-g084_rotation_table.csv
+|           |           eso563-g021_rotation_table.csv
+|           |           f561-1_rotation_table.csv
+|           |           f563-1_rotation_table.csv
+|           |           f563-v1_rotation_table.csv
+|           |           f563-v2_rotation_table.csv
+|           |           f565-v2_rotation_table.csv
+|           |           f567-2_rotation_table.csv
+|           |           f568-1_rotation_table.csv
+|           |           f568-3_rotation_table.csv
+|           |           f568-v1_rotation_table.csv
+|           |           f571-8_rotation_table.csv
+|           |           f571-v1_rotation_table.csv
+|           |           f574-1_rotation_table.csv
+|           |           f574-2_rotation_table.csv
+|           |           f579-v1_rotation_table.csv
+|           |           f583-1_rotation_table.csv
+|           |           f583-4_rotation_table.csv
+|           |           ic2574_rotation_table.csv
+|           |           ic4202_rotation_table.csv
+|           |           kk98-251_rotation_table.csv
+|           |           ngc0024_rotation_table.csv
+|           |           ngc0055_rotation_table.csv
+|           |           ngc0100_rotation_table.csv
+|           |           ngc0247_rotation_table.csv
+|           |           ngc0289_rotation_table.csv
+|           |           ngc0300_rotation_table.csv
+|           |           ngc0801_rotation_table.csv
+|           |           ngc0891_rotation_table.csv
+|           |           ngc1003_rotation_table.csv
+|           |           ngc1090_rotation_table.csv
+|           |           ngc1705_rotation_table.csv
+|           |           ngc2366_rotation_table.csv
+|           |           ngc2403_rotation_table.csv
+|           |           ngc2683_rotation_table.csv
+|           |           ngc2841_rotation_table.csv
+|           |           ngc2903_rotation_table.csv
+|           |           ngc2915_rotation_table.csv
+|           |           ngc2955_rotation_table.csv
+|           |           ngc2976_rotation_table.csv
+|           |           ngc2998_rotation_table.csv
+|           |           ngc3109_rotation_table.csv
+|           |           ngc3198_rotation_table.csv
+|           |           ngc3521_rotation_table.csv
+|           |           ngc3726_rotation_table.csv
+|           |           ngc3741_rotation_table.csv
+|           |           ngc3769_rotation_table.csv
+|           |           ngc3877_rotation_table.csv
+|           |           ngc3893_rotation_table.csv
+|           |           ngc3917_rotation_table.csv
+|           |           ngc3949_rotation_table.csv
+|           |           ngc3953_rotation_table.csv
+|           |           ngc3972_rotation_table.csv
+|           |           ngc3992_rotation_table.csv
+|           |           ngc4010_rotation_table.csv
+|           |           ngc4013_rotation_table.csv
+|           |           ngc4051_rotation_table.csv
+|           |           ngc4068_rotation_table.csv
+|           |           ngc4085_rotation_table.csv
+|           |           ngc4088_rotation_table.csv
+|           |           ngc4100_rotation_table.csv
+|           |           ngc4138_rotation_table.csv
+|           |           ngc4157_rotation_table.csv
+|           |           ngc4183_rotation_table.csv
+|           |           ngc4214_rotation_table.csv
+|           |           ngc4217_rotation_table.csv
+|           |           ngc4389_rotation_table.csv
+|           |           ngc4559_rotation_table.csv
+|           |           ngc5005_rotation_table.csv
+|           |           ngc5033_rotation_table.csv
+|           |           ngc5055_rotation_table.csv
+|           |           ngc5371_rotation_table.csv
+|           |           ngc5585_rotation_table.csv
+|           |           ngc5907_rotation_table.csv
+|           |           ngc5985_rotation_table.csv
+|           |           ngc6015_rotation_table.csv
+|           |           ngc6195_rotation_table.csv
+|           |           ngc6503_rotation_table.csv
+|           |           ngc6674_rotation_table.csv
+|           |           ngc6789_rotation_table.csv
+|           |           ngc6946_rotation_table.csv
+|           |           ngc7331_rotation_table.csv
+|           |           ngc7793_rotation_table.csv
+|           |           ngc7814_rotation_table.csv
+|           |           pgc51017_rotation_table.csv
+|           |           rotation_pipeline_summary_local_structural_coupling_v5.csv
+|           |           ugc00128_rotation_table.csv
+|           |           ugc00191_rotation_table.csv
+|           |           ugc00634_rotation_table.csv
+|           |           ugc00731_rotation_table.csv
+|           |           ugc00891_rotation_table.csv
+|           |           ugc01230_rotation_table.csv
+|           |           ugc01281_rotation_table.csv
+|           |           ugc02023_rotation_table.csv
+|           |           ugc02259_rotation_table.csv
+|           |           ugc02455_rotation_table.csv
+|           |           ugc02487_rotation_table.csv
+|           |           ugc02885_rotation_table.csv
+|           |           ugc02916_rotation_table.csv
+|           |           ugc02953_rotation_table.csv
+|           |           ugc03205_rotation_table.csv
+|           |           ugc03546_rotation_table.csv
+|           |           ugc03580_rotation_table.csv
+|           |           ugc04278_rotation_table.csv
+|           |           ugc04305_rotation_table.csv
+|           |           ugc04325_rotation_table.csv
+|           |           ugc04483_rotation_table.csv
+|           |           ugc04499_rotation_table.csv
+|           |           ugc05005_rotation_table.csv
+|           |           ugc05253_rotation_table.csv
+|           |           ugc05414_rotation_table.csv
+|           |           ugc05716_rotation_table.csv
+|           |           ugc05721_rotation_table.csv
+|           |           ugc05750_rotation_table.csv
+|           |           ugc05764_rotation_table.csv
+|           |           ugc05829_rotation_table.csv
+|           |           ugc05918_rotation_table.csv
+|           |           ugc05986_rotation_table.csv
+|           |           ugc05999_rotation_table.csv
+|           |           ugc06399_rotation_table.csv
+|           |           ugc06446_rotation_table.csv
+|           |           ugc06614_rotation_table.csv
+|           |           ugc06628_rotation_table.csv
+|           |           ugc06667_rotation_table.csv
+|           |           ugc06786_rotation_table.csv
+|           |           ugc06787_rotation_table.csv
+|           |           ugc06818_rotation_table.csv
+|           |           ugc06917_rotation_table.csv
+|           |           ugc06923_rotation_table.csv
+|           |           ugc06930_rotation_table.csv
+|           |           ugc06973_rotation_table.csv
+|           |           ugc06983_rotation_table.csv
+|           |           ugc07089_rotation_table.csv
+|           |           ugc07125_rotation_table.csv
+|           |           ugc07151_rotation_table.csv
+|           |           ugc07232_rotation_table.csv
+|           |           ugc07261_rotation_table.csv
+|           |           ugc07323_rotation_table.csv
+|           |           ugc07399_rotation_table.csv
+|           |           ugc07524_rotation_table.csv
+|           |           ugc07559_rotation_table.csv
+|           |           ugc07577_rotation_table.csv
+|           |           ugc07603_rotation_table.csv
+|           |           ugc07608_rotation_table.csv
+|           |           ugc07690_rotation_table.csv
+|           |           ugc07866_rotation_table.csv
+|           |           ugc08286_rotation_table.csv
+|           |           ugc08490_rotation_table.csv
+|           |           ugc08550_rotation_table.csv
+|           |           ugc08699_rotation_table.csv
+|           |           ugc08837_rotation_table.csv
+|           |           ugc09037_rotation_table.csv
+|           |           ugc09133_rotation_table.csv
+|           |           ugc09992_rotation_table.csv
+|           |           ugc10310_rotation_table.csv
+|           |           ugc11455_rotation_table.csv
+|           |           ugc11557_rotation_table.csv
+|           |           ugc11820_rotation_table.csv
+|           |           ugc11914_rotation_table.csv
+|           |           ugc12506_rotation_table.csv
+|           |           ugc12632_rotation_table.csv
+|           |           ugc12732_rotation_table.csv
+|           |           ugca281_rotation_table.csv
+|           |           ugca442_rotation_table.csv
+|           |           ugca444_rotation_table.csv
+|           |           worst_mean_absolute_fractional_error_local_structural_coupling_v5.csv
+|           |           worst_rmse_kmps_local_structural_coupling_v5.csv
+|           |           worst_sigma_flip_severity_local_structural_coupling_v5.csv
+|           |           
+|           +---2026-03-23_203743_local_structural_coupling_v6
+|           |   +---figures
+|           |   |   |   beta_mean_distribution_local_structural_coupling_v6.png
+|           |   |   |   eta_mean_distribution_local_structural_coupling_v6.png
+|           |   |   |   mean_absolute_fractional_error_distribution_local_structural_coupling_v6.png
+|           |   |   |   projection_mean_distribution_local_structural_coupling_v6.png
+|           |   |   |   rmse_kmps_distribution_local_structural_coupling_v6.png
+|           |   |   |   sigma_flip_severity_distribution_local_structural_coupling_v6.png
+|           |   |   |   struct_to_bar_ratio_max_distribution_local_structural_coupling_v6.png
+|           |   |   |   
+|           |   |   \---individual
+|           |   |           CamB_rotation_curve.png
+|           |   |           D512-2_rotation_curve.png
+|           |   |           D564-8_rotation_curve.png
+|           |   |           D631-7_rotation_curve.png
+|           |   |           DDO064_rotation_curve.png
+|           |   |           DDO154_rotation_curve.png
+|           |   |           DDO161_rotation_curve.png
+|           |   |           DDO168_rotation_curve.png
+|           |   |           DDO170_rotation_curve.png
+|           |   |           ESO079-G014_rotation_curve.png
+|           |   |           ESO116-G012_rotation_curve.png
+|           |   |           ESO444-G084_rotation_curve.png
+|           |   |           ESO563-G021_rotation_curve.png
+|           |   |           F561-1_rotation_curve.png
+|           |   |           F563-1_rotation_curve.png
+|           |   |           F563-V1_rotation_curve.png
+|           |   |           F563-V2_rotation_curve.png
+|           |   |           F565-V2_rotation_curve.png
+|           |   |           F567-2_rotation_curve.png
+|           |   |           F568-1_rotation_curve.png
+|           |   |           F568-3_rotation_curve.png
+|           |   |           F568-V1_rotation_curve.png
+|           |   |           F571-8_rotation_curve.png
+|           |   |           F571-V1_rotation_curve.png
+|           |   |           F574-1_rotation_curve.png
+|           |   |           F574-2_rotation_curve.png
+|           |   |           F579-V1_rotation_curve.png
+|           |   |           F583-1_rotation_curve.png
+|           |   |           F583-4_rotation_curve.png
+|           |   |           IC2574_rotation_curve.png
+|           |   |           IC4202_rotation_curve.png
+|           |   |           KK98-251_rotation_curve.png
+|           |   |           NGC0024_rotation_curve.png
+|           |   |           NGC0055_rotation_curve.png
+|           |   |           NGC0100_rotation_curve.png
+|           |   |           NGC0247_rotation_curve.png
+|           |   |           NGC0289_rotation_curve.png
+|           |   |           NGC0300_rotation_curve.png
+|           |   |           NGC0801_rotation_curve.png
+|           |   |           NGC0891_rotation_curve.png
+|           |   |           NGC1003_rotation_curve.png
+|           |   |           NGC1090_rotation_curve.png
+|           |   |           NGC1705_rotation_curve.png
+|           |   |           NGC2366_rotation_curve.png
+|           |   |           NGC2403_rotation_curve.png
+|           |   |           NGC2683_rotation_curve.png
+|           |   |           NGC2841_rotation_curve.png
+|           |   |           NGC2903_rotation_curve.png
+|           |   |           NGC2915_rotation_curve.png
+|           |   |           NGC2955_rotation_curve.png
+|           |   |           NGC2976_rotation_curve.png
+|           |   |           NGC2998_rotation_curve.png
+|           |   |           NGC3109_rotation_curve.png
+|           |   |           NGC3198_rotation_curve.png
+|           |   |           NGC3521_rotation_curve.png
+|           |   |           NGC3726_rotation_curve.png
+|           |   |           NGC3741_rotation_curve.png
+|           |   |           NGC3769_rotation_curve.png
+|           |   |           NGC3877_rotation_curve.png
+|           |   |           NGC3893_rotation_curve.png
+|           |   |           NGC3917_rotation_curve.png
+|           |   |           NGC3949_rotation_curve.png
+|           |   |           NGC3953_rotation_curve.png
+|           |   |           NGC3972_rotation_curve.png
+|           |   |           NGC3992_rotation_curve.png
+|           |   |           NGC4010_rotation_curve.png
+|           |   |           NGC4013_rotation_curve.png
+|           |   |           NGC4051_rotation_curve.png
+|           |   |           NGC4068_rotation_curve.png
+|           |   |           NGC4085_rotation_curve.png
+|           |   |           NGC4088_rotation_curve.png
+|           |   |           NGC4100_rotation_curve.png
+|           |   |           NGC4138_rotation_curve.png
+|           |   |           NGC4157_rotation_curve.png
+|           |   |           NGC4183_rotation_curve.png
+|           |   |           NGC4214_rotation_curve.png
+|           |   |           NGC4217_rotation_curve.png
+|           |   |           NGC4389_rotation_curve.png
+|           |   |           NGC4559_rotation_curve.png
+|           |   |           NGC5005_rotation_curve.png
+|           |   |           NGC5033_rotation_curve.png
+|           |   |           NGC5055_rotation_curve.png
+|           |   |           NGC5371_rotation_curve.png
+|           |   |           NGC5585_rotation_curve.png
+|           |   |           NGC5907_rotation_curve.png
+|           |   |           NGC5985_rotation_curve.png
+|           |   |           NGC6015_rotation_curve.png
+|           |   |           NGC6195_rotation_curve.png
+|           |   |           NGC6503_rotation_curve.png
+|           |   |           NGC6674_rotation_curve.png
+|           |   |           NGC6789_rotation_curve.png
+|           |   |           NGC6946_rotation_curve.png
+|           |   |           NGC7331_rotation_curve.png
+|           |   |           NGC7793_rotation_curve.png
+|           |   |           NGC7814_rotation_curve.png
+|           |   |           PGC51017_rotation_curve.png
+|           |   |           UGC00128_rotation_curve.png
+|           |   |           UGC00191_rotation_curve.png
+|           |   |           UGC00634_rotation_curve.png
+|           |   |           UGC00731_rotation_curve.png
+|           |   |           UGC00891_rotation_curve.png
+|           |   |           UGC01230_rotation_curve.png
+|           |   |           UGC01281_rotation_curve.png
+|           |   |           UGC02023_rotation_curve.png
+|           |   |           UGC02259_rotation_curve.png
+|           |   |           UGC02455_rotation_curve.png
+|           |   |           UGC02487_rotation_curve.png
+|           |   |           UGC02885_rotation_curve.png
+|           |   |           UGC02916_rotation_curve.png
+|           |   |           UGC02953_rotation_curve.png
+|           |   |           UGC03205_rotation_curve.png
+|           |   |           UGC03546_rotation_curve.png
+|           |   |           UGC03580_rotation_curve.png
+|           |   |           UGC04278_rotation_curve.png
+|           |   |           UGC04305_rotation_curve.png
+|           |   |           UGC04325_rotation_curve.png
+|           |   |           UGC04483_rotation_curve.png
+|           |   |           UGC04499_rotation_curve.png
+|           |   |           UGC05005_rotation_curve.png
+|           |   |           UGC05253_rotation_curve.png
+|           |   |           UGC05414_rotation_curve.png
+|           |   |           UGC05716_rotation_curve.png
+|           |   |           UGC05721_rotation_curve.png
+|           |   |           UGC05750_rotation_curve.png
+|           |   |           UGC05764_rotation_curve.png
+|           |   |           UGC05829_rotation_curve.png
+|           |   |           UGC05918_rotation_curve.png
+|           |   |           UGC05986_rotation_curve.png
+|           |   |           UGC05999_rotation_curve.png
+|           |   |           UGC06399_rotation_curve.png
+|           |   |           UGC06446_rotation_curve.png
+|           |   |           UGC06614_rotation_curve.png
+|           |   |           UGC06628_rotation_curve.png
+|           |   |           UGC06667_rotation_curve.png
+|           |   |           UGC06786_rotation_curve.png
+|           |   |           UGC06787_rotation_curve.png
+|           |   |           UGC06818_rotation_curve.png
+|           |   |           UGC06917_rotation_curve.png
+|           |   |           UGC06923_rotation_curve.png
+|           |   |           UGC06930_rotation_curve.png
+|           |   |           UGC06973_rotation_curve.png
+|           |   |           UGC06983_rotation_curve.png
+|           |   |           UGC07089_rotation_curve.png
+|           |   |           UGC07125_rotation_curve.png
+|           |   |           UGC07151_rotation_curve.png
+|           |   |           UGC07232_rotation_curve.png
+|           |   |           UGC07261_rotation_curve.png
+|           |   |           UGC07323_rotation_curve.png
+|           |   |           UGC07399_rotation_curve.png
+|           |   |           UGC07524_rotation_curve.png
+|           |   |           UGC07559_rotation_curve.png
+|           |   |           UGC07577_rotation_curve.png
+|           |   |           UGC07603_rotation_curve.png
+|           |   |           UGC07608_rotation_curve.png
+|           |   |           UGC07690_rotation_curve.png
+|           |   |           UGC07866_rotation_curve.png
+|           |   |           UGC08286_rotation_curve.png
+|           |   |           UGC08490_rotation_curve.png
+|           |   |           UGC08550_rotation_curve.png
+|           |   |           UGC08699_rotation_curve.png
+|           |   |           UGC08837_rotation_curve.png
+|           |   |           UGC09037_rotation_curve.png
+|           |   |           UGC09133_rotation_curve.png
+|           |   |           UGC09992_rotation_curve.png
+|           |   |           UGC10310_rotation_curve.png
+|           |   |           UGC11455_rotation_curve.png
+|           |   |           UGC11557_rotation_curve.png
+|           |   |           UGC11820_rotation_curve.png
+|           |   |           UGC11914_rotation_curve.png
+|           |   |           UGC12506_rotation_curve.png
+|           |   |           UGC12632_rotation_curve.png
+|           |   |           UGC12732_rotation_curve.png
+|           |   |           UGCA281_rotation_curve.png
+|           |   |           UGCA442_rotation_curve.png
+|           |   |           UGCA444_rotation_curve.png
+|           |   |           
+|           |   +---logs
+|           |   |       run_log_local_structural_coupling_v6.txt
+|           |   |       
+|           |   +---metadata
+|           |   |       run_summary_local_structural_coupling_v6.json
+|           |   |       
+|           |   +---summaries
+|           |   |       rotation_pipeline_summary_local_structural_coupling_v6.csv
+|           |   |       
+|           |   \---tables
+|           |           best_mean_absolute_fractional_error_local_structural_coupling_v6.csv
+|           |           best_rmse_kmps_local_structural_coupling_v6.csv
+|           |           best_sigma_flip_severity_local_structural_coupling_v6.csv
+|           |           camb_rotation_table.csv
+|           |           d512-2_rotation_table.csv
+|           |           d564-8_rotation_table.csv
+|           |           d631-7_rotation_table.csv
+|           |           ddo064_rotation_table.csv
+|           |           ddo154_rotation_table.csv
+|           |           ddo161_rotation_table.csv
+|           |           ddo168_rotation_table.csv
+|           |           ddo170_rotation_table.csv
+|           |           eso079-g014_rotation_table.csv
+|           |           eso116-g012_rotation_table.csv
+|           |           eso444-g084_rotation_table.csv
+|           |           eso563-g021_rotation_table.csv
+|           |           f561-1_rotation_table.csv
+|           |           f563-1_rotation_table.csv
+|           |           f563-v1_rotation_table.csv
+|           |           f563-v2_rotation_table.csv
+|           |           f565-v2_rotation_table.csv
+|           |           f567-2_rotation_table.csv
+|           |           f568-1_rotation_table.csv
+|           |           f568-3_rotation_table.csv
+|           |           f568-v1_rotation_table.csv
+|           |           f571-8_rotation_table.csv
+|           |           f571-v1_rotation_table.csv
+|           |           f574-1_rotation_table.csv
+|           |           f574-2_rotation_table.csv
+|           |           f579-v1_rotation_table.csv
+|           |           f583-1_rotation_table.csv
+|           |           f583-4_rotation_table.csv
+|           |           ic2574_rotation_table.csv
+|           |           ic4202_rotation_table.csv
+|           |           kk98-251_rotation_table.csv
+|           |           ngc0024_rotation_table.csv
+|           |           ngc0055_rotation_table.csv
+|           |           ngc0100_rotation_table.csv
+|           |           ngc0247_rotation_table.csv
+|           |           ngc0289_rotation_table.csv
+|           |           ngc0300_rotation_table.csv
+|           |           ngc0801_rotation_table.csv
+|           |           ngc0891_rotation_table.csv
+|           |           ngc1003_rotation_table.csv
+|           |           ngc1090_rotation_table.csv
+|           |           ngc1705_rotation_table.csv
+|           |           ngc2366_rotation_table.csv
+|           |           ngc2403_rotation_table.csv
+|           |           ngc2683_rotation_table.csv
+|           |           ngc2841_rotation_table.csv
+|           |           ngc2903_rotation_table.csv
+|           |           ngc2915_rotation_table.csv
+|           |           ngc2955_rotation_table.csv
+|           |           ngc2976_rotation_table.csv
+|           |           ngc2998_rotation_table.csv
+|           |           ngc3109_rotation_table.csv
+|           |           ngc3198_rotation_table.csv
+|           |           ngc3521_rotation_table.csv
+|           |           ngc3726_rotation_table.csv
+|           |           ngc3741_rotation_table.csv
+|           |           ngc3769_rotation_table.csv
+|           |           ngc3877_rotation_table.csv
+|           |           ngc3893_rotation_table.csv
+|           |           ngc3917_rotation_table.csv
+|           |           ngc3949_rotation_table.csv
+|           |           ngc3953_rotation_table.csv
+|           |           ngc3972_rotation_table.csv
+|           |           ngc3992_rotation_table.csv
+|           |           ngc4010_rotation_table.csv
+|           |           ngc4013_rotation_table.csv
+|           |           ngc4051_rotation_table.csv
+|           |           ngc4068_rotation_table.csv
+|           |           ngc4085_rotation_table.csv
+|           |           ngc4088_rotation_table.csv
+|           |           ngc4100_rotation_table.csv
+|           |           ngc4138_rotation_table.csv
+|           |           ngc4157_rotation_table.csv
+|           |           ngc4183_rotation_table.csv
+|           |           ngc4214_rotation_table.csv
+|           |           ngc4217_rotation_table.csv
+|           |           ngc4389_rotation_table.csv
+|           |           ngc4559_rotation_table.csv
+|           |           ngc5005_rotation_table.csv
+|           |           ngc5033_rotation_table.csv
+|           |           ngc5055_rotation_table.csv
+|           |           ngc5371_rotation_table.csv
+|           |           ngc5585_rotation_table.csv
+|           |           ngc5907_rotation_table.csv
+|           |           ngc5985_rotation_table.csv
+|           |           ngc6015_rotation_table.csv
+|           |           ngc6195_rotation_table.csv
+|           |           ngc6503_rotation_table.csv
+|           |           ngc6674_rotation_table.csv
+|           |           ngc6789_rotation_table.csv
+|           |           ngc6946_rotation_table.csv
+|           |           ngc7331_rotation_table.csv
+|           |           ngc7793_rotation_table.csv
+|           |           ngc7814_rotation_table.csv
+|           |           pgc51017_rotation_table.csv
+|           |           rotation_pipeline_summary_local_structural_coupling_v6.csv
+|           |           ugc00128_rotation_table.csv
+|           |           ugc00191_rotation_table.csv
+|           |           ugc00634_rotation_table.csv
+|           |           ugc00731_rotation_table.csv
+|           |           ugc00891_rotation_table.csv
+|           |           ugc01230_rotation_table.csv
+|           |           ugc01281_rotation_table.csv
+|           |           ugc02023_rotation_table.csv
+|           |           ugc02259_rotation_table.csv
+|           |           ugc02455_rotation_table.csv
+|           |           ugc02487_rotation_table.csv
+|           |           ugc02885_rotation_table.csv
+|           |           ugc02916_rotation_table.csv
+|           |           ugc02953_rotation_table.csv
+|           |           ugc03205_rotation_table.csv
+|           |           ugc03546_rotation_table.csv
+|           |           ugc03580_rotation_table.csv
+|           |           ugc04278_rotation_table.csv
+|           |           ugc04305_rotation_table.csv
+|           |           ugc04325_rotation_table.csv
+|           |           ugc04483_rotation_table.csv
+|           |           ugc04499_rotation_table.csv
+|           |           ugc05005_rotation_table.csv
+|           |           ugc05253_rotation_table.csv
+|           |           ugc05414_rotation_table.csv
+|           |           ugc05716_rotation_table.csv
+|           |           ugc05721_rotation_table.csv
+|           |           ugc05750_rotation_table.csv
+|           |           ugc05764_rotation_table.csv
+|           |           ugc05829_rotation_table.csv
+|           |           ugc05918_rotation_table.csv
+|           |           ugc05986_rotation_table.csv
+|           |           ugc05999_rotation_table.csv
+|           |           ugc06399_rotation_table.csv
+|           |           ugc06446_rotation_table.csv
+|           |           ugc06614_rotation_table.csv
+|           |           ugc06628_rotation_table.csv
+|           |           ugc06667_rotation_table.csv
+|           |           ugc06786_rotation_table.csv
+|           |           ugc06787_rotation_table.csv
+|           |           ugc06818_rotation_table.csv
+|           |           ugc06917_rotation_table.csv
+|           |           ugc06923_rotation_table.csv
+|           |           ugc06930_rotation_table.csv
+|           |           ugc06973_rotation_table.csv
+|           |           ugc06983_rotation_table.csv
+|           |           ugc07089_rotation_table.csv
+|           |           ugc07125_rotation_table.csv
+|           |           ugc07151_rotation_table.csv
+|           |           ugc07232_rotation_table.csv
+|           |           ugc07261_rotation_table.csv
+|           |           ugc07323_rotation_table.csv
+|           |           ugc07399_rotation_table.csv
+|           |           ugc07524_rotation_table.csv
+|           |           ugc07559_rotation_table.csv
+|           |           ugc07577_rotation_table.csv
+|           |           ugc07603_rotation_table.csv
+|           |           ugc07608_rotation_table.csv
+|           |           ugc07690_rotation_table.csv
+|           |           ugc07866_rotation_table.csv
+|           |           ugc08286_rotation_table.csv
+|           |           ugc08490_rotation_table.csv
+|           |           ugc08550_rotation_table.csv
+|           |           ugc08699_rotation_table.csv
+|           |           ugc08837_rotation_table.csv
+|           |           ugc09037_rotation_table.csv
+|           |           ugc09133_rotation_table.csv
+|           |           ugc09992_rotation_table.csv
+|           |           ugc10310_rotation_table.csv
+|           |           ugc11455_rotation_table.csv
+|           |           ugc11557_rotation_table.csv
+|           |           ugc11820_rotation_table.csv
+|           |           ugc11914_rotation_table.csv
+|           |           ugc12506_rotation_table.csv
+|           |           ugc12632_rotation_table.csv
+|           |           ugc12732_rotation_table.csv
+|           |           ugca281_rotation_table.csv
+|           |           ugca442_rotation_table.csv
+|           |           ugca444_rotation_table.csv
+|           |           worst_mean_absolute_fractional_error_local_structural_coupling_v6.csv
+|           |           worst_rmse_kmps_local_structural_coupling_v6.csv
+|           |           worst_sigma_flip_severity_local_structural_coupling_v6.csv
+|           |           
+|           +---2026-03-23_211912_local_structural_coupling_v6
+|           |   +---figures
+|           |   |   |   beta_mean_distribution_local_structural_coupling_v6.png
+|           |   |   |   eta_mean_distribution_local_structural_coupling_v6.png
+|           |   |   |   mean_absolute_fractional_error_distribution_local_structural_coupling_v6.png
+|           |   |   |   projection_mean_distribution_local_structural_coupling_v6.png
+|           |   |   |   rmse_kmps_distribution_local_structural_coupling_v6.png
+|           |   |   |   sigma_flip_severity_distribution_local_structural_coupling_v6.png
+|           |   |   |   struct_to_bar_ratio_max_distribution_local_structural_coupling_v6.png
+|           |   |   |   
+|           |   |   \---individual
+|           |   |           CamB_rotation_curve.png
+|           |   |           D512-2_rotation_curve.png
+|           |   |           D564-8_rotation_curve.png
+|           |   |           D631-7_rotation_curve.png
+|           |   |           DDO064_rotation_curve.png
+|           |   |           DDO154_rotation_curve.png
+|           |   |           DDO161_rotation_curve.png
+|           |   |           DDO168_rotation_curve.png
+|           |   |           DDO170_rotation_curve.png
+|           |   |           ESO079-G014_rotation_curve.png
+|           |   |           ESO116-G012_rotation_curve.png
+|           |   |           ESO444-G084_rotation_curve.png
+|           |   |           ESO563-G021_rotation_curve.png
+|           |   |           F561-1_rotation_curve.png
+|           |   |           F563-1_rotation_curve.png
+|           |   |           F563-V1_rotation_curve.png
+|           |   |           F563-V2_rotation_curve.png
+|           |   |           F565-V2_rotation_curve.png
+|           |   |           F567-2_rotation_curve.png
+|           |   |           F568-1_rotation_curve.png
+|           |   |           F568-3_rotation_curve.png
+|           |   |           F568-V1_rotation_curve.png
+|           |   |           F571-8_rotation_curve.png
+|           |   |           F571-V1_rotation_curve.png
+|           |   |           F574-1_rotation_curve.png
+|           |   |           F574-2_rotation_curve.png
+|           |   |           F579-V1_rotation_curve.png
+|           |   |           F583-1_rotation_curve.png
+|           |   |           F583-4_rotation_curve.png
+|           |   |           IC2574_rotation_curve.png
+|           |   |           IC4202_rotation_curve.png
+|           |   |           KK98-251_rotation_curve.png
+|           |   |           NGC0024_rotation_curve.png
+|           |   |           NGC0055_rotation_curve.png
+|           |   |           NGC0100_rotation_curve.png
+|           |   |           NGC0247_rotation_curve.png
+|           |   |           NGC0289_rotation_curve.png
+|           |   |           NGC0300_rotation_curve.png
+|           |   |           NGC0801_rotation_curve.png
+|           |   |           NGC0891_rotation_curve.png
+|           |   |           NGC1003_rotation_curve.png
+|           |   |           NGC1090_rotation_curve.png
+|           |   |           NGC1705_rotation_curve.png
+|           |   |           NGC2366_rotation_curve.png
+|           |   |           NGC2403_rotation_curve.png
+|           |   |           NGC2683_rotation_curve.png
+|           |   |           NGC2841_rotation_curve.png
+|           |   |           NGC2903_rotation_curve.png
+|           |   |           NGC2915_rotation_curve.png
+|           |   |           NGC2955_rotation_curve.png
+|           |   |           NGC2976_rotation_curve.png
+|           |   |           NGC2998_rotation_curve.png
+|           |   |           NGC3109_rotation_curve.png
+|           |   |           NGC3198_rotation_curve.png
+|           |   |           NGC3521_rotation_curve.png
+|           |   |           NGC3726_rotation_curve.png
+|           |   |           NGC3741_rotation_curve.png
+|           |   |           NGC3769_rotation_curve.png
+|           |   |           NGC3877_rotation_curve.png
+|           |   |           NGC3893_rotation_curve.png
+|           |   |           NGC3917_rotation_curve.png
+|           |   |           NGC3949_rotation_curve.png
+|           |   |           NGC3953_rotation_curve.png
+|           |   |           NGC3972_rotation_curve.png
+|           |   |           NGC3992_rotation_curve.png
+|           |   |           NGC4010_rotation_curve.png
+|           |   |           NGC4013_rotation_curve.png
+|           |   |           NGC4051_rotation_curve.png
+|           |   |           NGC4068_rotation_curve.png
+|           |   |           NGC4085_rotation_curve.png
+|           |   |           NGC4088_rotation_curve.png
+|           |   |           NGC4100_rotation_curve.png
+|           |   |           NGC4138_rotation_curve.png
+|           |   |           NGC4157_rotation_curve.png
+|           |   |           NGC4183_rotation_curve.png
+|           |   |           NGC4214_rotation_curve.png
+|           |   |           NGC4217_rotation_curve.png
+|           |   |           NGC4389_rotation_curve.png
+|           |   |           NGC4559_rotation_curve.png
+|           |   |           NGC5005_rotation_curve.png
+|           |   |           NGC5033_rotation_curve.png
+|           |   |           NGC5055_rotation_curve.png
+|           |   |           NGC5371_rotation_curve.png
+|           |   |           NGC5585_rotation_curve.png
+|           |   |           NGC5907_rotation_curve.png
+|           |   |           NGC5985_rotation_curve.png
+|           |   |           NGC6015_rotation_curve.png
+|           |   |           NGC6195_rotation_curve.png
+|           |   |           NGC6503_rotation_curve.png
+|           |   |           NGC6674_rotation_curve.png
+|           |   |           NGC6789_rotation_curve.png
+|           |   |           NGC6946_rotation_curve.png
+|           |   |           NGC7331_rotation_curve.png
+|           |   |           NGC7793_rotation_curve.png
+|           |   |           NGC7814_rotation_curve.png
+|           |   |           PGC51017_rotation_curve.png
+|           |   |           UGC00128_rotation_curve.png
+|           |   |           UGC00191_rotation_curve.png
+|           |   |           UGC00634_rotation_curve.png
+|           |   |           UGC00731_rotation_curve.png
+|           |   |           UGC00891_rotation_curve.png
+|           |   |           UGC01230_rotation_curve.png
+|           |   |           UGC01281_rotation_curve.png
+|           |   |           UGC02023_rotation_curve.png
+|           |   |           UGC02259_rotation_curve.png
+|           |   |           UGC02455_rotation_curve.png
+|           |   |           UGC02487_rotation_curve.png
+|           |   |           UGC02885_rotation_curve.png
+|           |   |           UGC02916_rotation_curve.png
+|           |   |           UGC02953_rotation_curve.png
+|           |   |           UGC03205_rotation_curve.png
+|           |   |           UGC03546_rotation_curve.png
+|           |   |           UGC03580_rotation_curve.png
+|           |   |           UGC04278_rotation_curve.png
+|           |   |           UGC04305_rotation_curve.png
+|           |   |           UGC04325_rotation_curve.png
+|           |   |           UGC04483_rotation_curve.png
+|           |   |           UGC04499_rotation_curve.png
+|           |   |           UGC05005_rotation_curve.png
+|           |   |           UGC05253_rotation_curve.png
+|           |   |           UGC05414_rotation_curve.png
+|           |   |           UGC05716_rotation_curve.png
+|           |   |           UGC05721_rotation_curve.png
+|           |   |           UGC05750_rotation_curve.png
+|           |   |           UGC05764_rotation_curve.png
+|           |   |           UGC05829_rotation_curve.png
+|           |   |           UGC05918_rotation_curve.png
+|           |   |           UGC05986_rotation_curve.png
+|           |   |           UGC05999_rotation_curve.png
+|           |   |           UGC06399_rotation_curve.png
+|           |   |           UGC06446_rotation_curve.png
+|           |   |           UGC06614_rotation_curve.png
+|           |   |           UGC06628_rotation_curve.png
+|           |   |           UGC06667_rotation_curve.png
+|           |   |           UGC06786_rotation_curve.png
+|           |   |           UGC06787_rotation_curve.png
+|           |   |           UGC06818_rotation_curve.png
+|           |   |           UGC06917_rotation_curve.png
+|           |   |           UGC06923_rotation_curve.png
+|           |   |           UGC06930_rotation_curve.png
+|           |   |           UGC06973_rotation_curve.png
+|           |   |           UGC06983_rotation_curve.png
+|           |   |           UGC07089_rotation_curve.png
+|           |   |           UGC07125_rotation_curve.png
+|           |   |           UGC07151_rotation_curve.png
+|           |   |           UGC07232_rotation_curve.png
+|           |   |           UGC07261_rotation_curve.png
+|           |   |           UGC07323_rotation_curve.png
+|           |   |           UGC07399_rotation_curve.png
+|           |   |           UGC07524_rotation_curve.png
+|           |   |           UGC07559_rotation_curve.png
+|           |   |           UGC07577_rotation_curve.png
+|           |   |           UGC07603_rotation_curve.png
+|           |   |           UGC07608_rotation_curve.png
+|           |   |           UGC07690_rotation_curve.png
+|           |   |           UGC07866_rotation_curve.png
+|           |   |           UGC08286_rotation_curve.png
+|           |   |           UGC08490_rotation_curve.png
+|           |   |           UGC08550_rotation_curve.png
+|           |   |           UGC08699_rotation_curve.png
+|           |   |           UGC08837_rotation_curve.png
+|           |   |           UGC09037_rotation_curve.png
+|           |   |           UGC09133_rotation_curve.png
+|           |   |           UGC09992_rotation_curve.png
+|           |   |           UGC10310_rotation_curve.png
+|           |   |           UGC11455_rotation_curve.png
+|           |   |           UGC11557_rotation_curve.png
+|           |   |           UGC11820_rotation_curve.png
+|           |   |           UGC11914_rotation_curve.png
+|           |   |           UGC12506_rotation_curve.png
+|           |   |           UGC12632_rotation_curve.png
+|           |   |           UGC12732_rotation_curve.png
+|           |   |           UGCA281_rotation_curve.png
+|           |   |           UGCA442_rotation_curve.png
+|           |   |           UGCA444_rotation_curve.png
+|           |   |           
+|           |   +---logs
+|           |   |       run_log_local_structural_coupling_v6.txt
+|           |   |       
+|           |   +---metadata
+|           |   |       run_summary_local_structural_coupling_v6.json
+|           |   |       
+|           |   +---summaries
+|           |   |       rotation_pipeline_summary_local_structural_coupling_v6.csv
+|           |   |       
+|           |   \---tables
+|           |           best_mean_absolute_fractional_error_local_structural_coupling_v6.csv
+|           |           best_rmse_kmps_local_structural_coupling_v6.csv
+|           |           best_sigma_flip_severity_local_structural_coupling_v6.csv
+|           |           camb_rotation_table.csv
+|           |           d512-2_rotation_table.csv
+|           |           d564-8_rotation_table.csv
+|           |           d631-7_rotation_table.csv
+|           |           ddo064_rotation_table.csv
+|           |           ddo154_rotation_table.csv
+|           |           ddo161_rotation_table.csv
+|           |           ddo168_rotation_table.csv
+|           |           ddo170_rotation_table.csv
+|           |           eso079-g014_rotation_table.csv
+|           |           eso116-g012_rotation_table.csv
+|           |           eso444-g084_rotation_table.csv
+|           |           eso563-g021_rotation_table.csv
+|           |           f561-1_rotation_table.csv
+|           |           f563-1_rotation_table.csv
+|           |           f563-v1_rotation_table.csv
+|           |           f563-v2_rotation_table.csv
+|           |           f565-v2_rotation_table.csv
+|           |           f567-2_rotation_table.csv
+|           |           f568-1_rotation_table.csv
+|           |           f568-3_rotation_table.csv
+|           |           f568-v1_rotation_table.csv
+|           |           f571-8_rotation_table.csv
+|           |           f571-v1_rotation_table.csv
+|           |           f574-1_rotation_table.csv
+|           |           f574-2_rotation_table.csv
+|           |           f579-v1_rotation_table.csv
+|           |           f583-1_rotation_table.csv
+|           |           f583-4_rotation_table.csv
+|           |           ic2574_rotation_table.csv
+|           |           ic4202_rotation_table.csv
+|           |           kk98-251_rotation_table.csv
+|           |           ngc0024_rotation_table.csv
+|           |           ngc0055_rotation_table.csv
+|           |           ngc0100_rotation_table.csv
+|           |           ngc0247_rotation_table.csv
+|           |           ngc0289_rotation_table.csv
+|           |           ngc0300_rotation_table.csv
+|           |           ngc0801_rotation_table.csv
+|           |           ngc0891_rotation_table.csv
+|           |           ngc1003_rotation_table.csv
+|           |           ngc1090_rotation_table.csv
+|           |           ngc1705_rotation_table.csv
+|           |           ngc2366_rotation_table.csv
+|           |           ngc2403_rotation_table.csv
+|           |           ngc2683_rotation_table.csv
+|           |           ngc2841_rotation_table.csv
+|           |           ngc2903_rotation_table.csv
+|           |           ngc2915_rotation_table.csv
+|           |           ngc2955_rotation_table.csv
+|           |           ngc2976_rotation_table.csv
+|           |           ngc2998_rotation_table.csv
+|           |           ngc3109_rotation_table.csv
+|           |           ngc3198_rotation_table.csv
+|           |           ngc3521_rotation_table.csv
+|           |           ngc3726_rotation_table.csv
+|           |           ngc3741_rotation_table.csv
+|           |           ngc3769_rotation_table.csv
+|           |           ngc3877_rotation_table.csv
+|           |           ngc3893_rotation_table.csv
+|           |           ngc3917_rotation_table.csv
+|           |           ngc3949_rotation_table.csv
+|           |           ngc3953_rotation_table.csv
+|           |           ngc3972_rotation_table.csv
+|           |           ngc3992_rotation_table.csv
+|           |           ngc4010_rotation_table.csv
+|           |           ngc4013_rotation_table.csv
+|           |           ngc4051_rotation_table.csv
+|           |           ngc4068_rotation_table.csv
+|           |           ngc4085_rotation_table.csv
+|           |           ngc4088_rotation_table.csv
+|           |           ngc4100_rotation_table.csv
+|           |           ngc4138_rotation_table.csv
+|           |           ngc4157_rotation_table.csv
+|           |           ngc4183_rotation_table.csv
+|           |           ngc4214_rotation_table.csv
+|           |           ngc4217_rotation_table.csv
+|           |           ngc4389_rotation_table.csv
+|           |           ngc4559_rotation_table.csv
+|           |           ngc5005_rotation_table.csv
+|           |           ngc5033_rotation_table.csv
+|           |           ngc5055_rotation_table.csv
+|           |           ngc5371_rotation_table.csv
+|           |           ngc5585_rotation_table.csv
+|           |           ngc5907_rotation_table.csv
+|           |           ngc5985_rotation_table.csv
+|           |           ngc6015_rotation_table.csv
+|           |           ngc6195_rotation_table.csv
+|           |           ngc6503_rotation_table.csv
+|           |           ngc6674_rotation_table.csv
+|           |           ngc6789_rotation_table.csv
+|           |           ngc6946_rotation_table.csv
+|           |           ngc7331_rotation_table.csv
+|           |           ngc7793_rotation_table.csv
+|           |           ngc7814_rotation_table.csv
+|           |           pgc51017_rotation_table.csv
+|           |           rotation_pipeline_summary_local_structural_coupling_v6.csv
+|           |           ugc00128_rotation_table.csv
+|           |           ugc00191_rotation_table.csv
+|           |           ugc00634_rotation_table.csv
+|           |           ugc00731_rotation_table.csv
+|           |           ugc00891_rotation_table.csv
+|           |           ugc01230_rotation_table.csv
+|           |           ugc01281_rotation_table.csv
+|           |           ugc02023_rotation_table.csv
+|           |           ugc02259_rotation_table.csv
+|           |           ugc02455_rotation_table.csv
+|           |           ugc02487_rotation_table.csv
+|           |           ugc02885_rotation_table.csv
+|           |           ugc02916_rotation_table.csv
+|           |           ugc02953_rotation_table.csv
+|           |           ugc03205_rotation_table.csv
+|           |           ugc03546_rotation_table.csv
+|           |           ugc03580_rotation_table.csv
+|           |           ugc04278_rotation_table.csv
+|           |           ugc04305_rotation_table.csv
+|           |           ugc04325_rotation_table.csv
+|           |           ugc04483_rotation_table.csv
+|           |           ugc04499_rotation_table.csv
+|           |           ugc05005_rotation_table.csv
+|           |           ugc05253_rotation_table.csv
+|           |           ugc05414_rotation_table.csv
+|           |           ugc05716_rotation_table.csv
+|           |           ugc05721_rotation_table.csv
+|           |           ugc05750_rotation_table.csv
+|           |           ugc05764_rotation_table.csv
+|           |           ugc05829_rotation_table.csv
+|           |           ugc05918_rotation_table.csv
+|           |           ugc05986_rotation_table.csv
+|           |           ugc05999_rotation_table.csv
+|           |           ugc06399_rotation_table.csv
+|           |           ugc06446_rotation_table.csv
+|           |           ugc06614_rotation_table.csv
+|           |           ugc06628_rotation_table.csv
+|           |           ugc06667_rotation_table.csv
+|           |           ugc06786_rotation_table.csv
+|           |           ugc06787_rotation_table.csv
+|           |           ugc06818_rotation_table.csv
+|           |           ugc06917_rotation_table.csv
+|           |           ugc06923_rotation_table.csv
+|           |           ugc06930_rotation_table.csv
+|           |           ugc06973_rotation_table.csv
+|           |           ugc06983_rotation_table.csv
+|           |           ugc07089_rotation_table.csv
+|           |           ugc07125_rotation_table.csv
+|           |           ugc07151_rotation_table.csv
+|           |           ugc07232_rotation_table.csv
+|           |           ugc07261_rotation_table.csv
+|           |           ugc07323_rotation_table.csv
+|           |           ugc07399_rotation_table.csv
+|           |           ugc07524_rotation_table.csv
+|           |           ugc07559_rotation_table.csv
+|           |           ugc07577_rotation_table.csv
+|           |           ugc07603_rotation_table.csv
+|           |           ugc07608_rotation_table.csv
+|           |           ugc07690_rotation_table.csv
+|           |           ugc07866_rotation_table.csv
+|           |           ugc08286_rotation_table.csv
+|           |           ugc08490_rotation_table.csv
+|           |           ugc08550_rotation_table.csv
+|           |           ugc08699_rotation_table.csv
+|           |           ugc08837_rotation_table.csv
+|           |           ugc09037_rotation_table.csv
+|           |           ugc09133_rotation_table.csv
+|           |           ugc09992_rotation_table.csv
+|           |           ugc10310_rotation_table.csv
+|           |           ugc11455_rotation_table.csv
+|           |           ugc11557_rotation_table.csv
+|           |           ugc11820_rotation_table.csv
+|           |           ugc11914_rotation_table.csv
+|           |           ugc12506_rotation_table.csv
+|           |           ugc12632_rotation_table.csv
+|           |           ugc12732_rotation_table.csv
+|           |           ugca281_rotation_table.csv
+|           |           ugca442_rotation_table.csv
+|           |           ugca444_rotation_table.csv
+|           |           worst_mean_absolute_fractional_error_local_structural_coupling_v6.csv
+|           |           worst_rmse_kmps_local_structural_coupling_v6.csv
+|           |           worst_sigma_flip_severity_local_structural_coupling_v6.csv
+|           |           
+|           \---2026-03-23_214710_local_structural_coupling_v6
 |               +---figures
-|               |   |   beta_mean_distribution_local_structural_coupling_v5.png
-|               |   |   eta_mean_distribution_local_structural_coupling_v5.png
-|               |   |   mean_absolute_fractional_error_distribution_local_structural_coupling_v5.png
-|               |   |   projection_mean_distribution_local_structural_coupling_v5.png
-|               |   |   rmse_kmps_distribution_local_structural_coupling_v5.png
-|               |   |   sigma_flip_severity_distribution_local_structural_coupling_v5.png
-|               |   |   struct_to_bar_ratio_max_distribution_local_structural_coupling_v5.png
+|               |   |   beta_mean_distribution_local_structural_coupling_v6.png
+|               |   |   eta_mean_distribution_local_structural_coupling_v6.png
+|               |   |   mean_absolute_fractional_error_distribution_local_structural_coupling_v6.png
+|               |   |   projection_mean_distribution_local_structural_coupling_v6.png
+|               |   |   rmse_kmps_distribution_local_structural_coupling_v6.png
+|               |   |   sigma_flip_severity_distribution_local_structural_coupling_v6.png
+|               |   |   struct_to_bar_ratio_max_distribution_local_structural_coupling_v6.png
 |               |   |   
 |               |   \---individual
 |               |           CamB_rotation_curve.png
@@ -13120,18 +14302,18 @@ C:.
 |               |           UGCA444_rotation_curve.png
 |               |           
 |               +---logs
-|               |       run_log_local_structural_coupling_v5.txt
+|               |       run_log_local_structural_coupling_v6.txt
 |               |       
 |               +---metadata
-|               |       run_summary_local_structural_coupling_v5.json
+|               |       run_summary_local_structural_coupling_v6.json
 |               |       
 |               +---summaries
-|               |       rotation_pipeline_summary_local_structural_coupling_v5.csv
+|               |       rotation_pipeline_summary_local_structural_coupling_v6.csv
 |               |       
 |               \---tables
-|                       best_mean_absolute_fractional_error_local_structural_coupling_v5.csv
-|                       best_rmse_kmps_local_structural_coupling_v5.csv
-|                       best_sigma_flip_severity_local_structural_coupling_v5.csv
+|                       best_mean_absolute_fractional_error_local_structural_coupling_v6.csv
+|                       best_rmse_kmps_local_structural_coupling_v6.csv
+|                       best_sigma_flip_severity_local_structural_coupling_v6.csv
 |                       camb_rotation_table.csv
 |                       d512-2_rotation_table.csv
 |                       d564-8_rotation_table.csv
@@ -13228,7 +14410,7 @@ C:.
 |                       ngc7793_rotation_table.csv
 |                       ngc7814_rotation_table.csv
 |                       pgc51017_rotation_table.csv
-|                       rotation_pipeline_summary_local_structural_coupling_v5.csv
+|                       rotation_pipeline_summary_local_structural_coupling_v6.csv
 |                       ugc00128_rotation_table.csv
 |                       ugc00191_rotation_table.csv
 |                       ugc00634_rotation_table.csv
@@ -13308,9 +14490,9 @@ C:.
 |                       ugca281_rotation_table.csv
 |                       ugca442_rotation_table.csv
 |                       ugca444_rotation_table.csv
-|                       worst_mean_absolute_fractional_error_local_structural_coupling_v5.csv
-|                       worst_rmse_kmps_local_structural_coupling_v5.csv
-|                       worst_sigma_flip_severity_local_structural_coupling_v5.csv
+|                       worst_mean_absolute_fractional_error_local_structural_coupling_v6.csv
+|                       worst_rmse_kmps_local_structural_coupling_v6.csv
+|                       worst_sigma_flip_severity_local_structural_coupling_v6.csv
 |                       
 +---paper
 |   \---figure
@@ -14095,6 +15277,21 @@ C:.
 |           UGCA444_residuals.csv
 |           
 \---src
+    +---crossmatch
+    |       build_diskmass_alias_auto_confirm.py
+    |       build_diskmass_alias_review_candidates.py
+    |       build_diskmass_alias_review_candidates_fixed.py
+    |       build_diskmass_alias_review_candidates_v2.py
+    |       build_diskmass_alias_review_candidates_v3.py
+    |       build_diskmass_alias_seed.py
+    |       build_sparc_diskmass_coord_bridge.py
+    |       build_sparc_diskmass_crossmatch_direct_fixed.py
+    |       build_sparc_diskmass_same_name_direct.py
+    |       build_sparc_galaxy_index.py
+    |       build_sparc_s4g_crossmatch_direct.py
+    |       build_sparc_s4g_crossmatch_loose.py
+    |       diagnose_diskmass_sparc_match_inputs.py
+    |       
     +---galaxy_rotation
     |   +---legacy
     |   |   |   galaxy_rotation_legacy_check_sparc_csv_quality.py
@@ -14181,7 +15378,6 @@ C:.
     |   |           galaxy_rotation_pipeline_sigma_model.cpython-312.pyc
     |   |           
     |   \---pipeline_structural_coupling
-    |       |   structural_couplingbeta_model.py
     |       |   structural_coupling_acceleration_model.py
     |       |   structural_coupling_beta_model.py
     |       |   structural_coupling_pipeline_metrics.py
@@ -14203,6 +15399,7 @@ C:.
     |               structural_couplingbeta_model.cpython-313.pyc
     |               structural_coupling_acceleration_model.cpython-312.pyc
     |               structural_coupling_acceleration_model.cpython-313.pyc
+    |               structural_coupling_beta_model.cpython-312.pyc
     |               structural_coupling_pipeline_metrics.cpython-312.pyc
     |               structural_coupling_pipeline_rotation.cpython-313.pyc
     |               structural_coupling_plotting.cpython-312.pyc
@@ -14211,6 +15408,15 @@ C:.
     |               structural_coupling_rotation_curve_model.cpython-312.pyc
     |               structural_coupling_sigma_model.cpython-312.pyc
     |               
+    +---normalization
+    |       normalize_diskmass_fixed.py
+    |       normalize_diskmass_sample_fixed.py
+    |       normalize_diskmass_survey1_fixed.py
+    |       normalize_diskmass_table7_fixed.py
+    |       normalize_sparc.py
+    |       normalize_vizier_xml_csv.py
+    |       
+    +---pipeline
     \---__pycache__
             constants.cpython-312.pyc
             data_loader.cpython-312.pyc

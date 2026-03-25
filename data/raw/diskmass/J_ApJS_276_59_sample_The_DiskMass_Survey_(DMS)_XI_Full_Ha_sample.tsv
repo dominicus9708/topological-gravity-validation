@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.2" >
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.cfa.harvard.edu
+    Date: 2026-03-24T08:53:56 [V7.5.6]
+   In case of problem, please report to:	cds-question@unistra.fr
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO name="service_protocol" value="ASU">  IVOID of the protocol through which the data was retrieved</INFO>
+<INFO name="request_date" value="2026-03-24T08:53:56">  Query execution date</INFO>
+<INFO name="request" value="https://vizier.cfa.harvard.edu/viz-bin/votable/-tsv?-oc.form=dec&amp;-out.max=50&amp;-out.add=_r&amp;-out.add=_RAJ,_DEJ&amp;-sort=_r&amp;-c.eq=J2000&amp;-c.r=  2&amp;-c.u=arcmin&amp;-c.geom=r&amp;-source=J/ApJS/276/59/sample&amp;-order=I&amp;-out=UGC&amp;-out=Nobs&amp;-out=N&amp;-out=sigMod&amp;-out=inc&amp;-out=e_inc&amp;-out=f_inc&amp;-out=phi0&amp;-out=e_phi0&amp;-out=Vrot&amp;-out=e_Vrot&amp;-out=hrot&amp;-out=e_hrot&amp;-out=f_hrot&amp;-out=Vsys&amp;-out=e_Vsys&amp;-out=Aphi&amp;-out=Arc&amp;-out=Note&amp;-out=Simbad&amp;Simbad=Simbad&amp;-out=NED&amp;NED=NED&amp;-out=LEDA&amp;LEDA=LEDA&amp;-out=Kmag&amp;-out=e_Kmag&amp;-out=Dist&amp;-out=e_Dist&amp;-out=Ak&amp;-out=Kcor&amp;-out=KMag&amp;-out=e_KMag&amp;-out=iiTF&amp;-out=e_iiTF&amp;-out=_RA&amp;-out=_DE&amp;">  Full request URL (POST)</INFO>
+<INFO name="contact" value="cds-question@unistra.fr">  Email or URL to contact publisher</INFO>
+<INFO name="server_software" value="VizieR/7.5.6">  Software version</INFO>
+<INFO name="publisher" value="CDS">  Data centre that produced the VOTable</INFO>
+
+<!--
+Execution Reports
+ -->
+
+<RESOURCE ID="yCat_22760059" name="J/ApJS/276/59" type="results">
+  <DESCRIPTION>The DiskMass Survey (DMS). XI. Full Ha sample (Swaters+, 2025)</DESCRIPTION>  <INFO name="ivoid" value="ivo://cds.vizier/j/apjs/276/59">    IVOID of underlying data collection  </INFO>
+  <INFO name="data_ivoid" value="ivo://cds.vizier/j/apjs/276/59">    IVOID of underlying data collection  </INFO>
+  <INFO name="creator" value="Swaters R.A.">    First author or institution  </INFO>
+  <INFO name="cites" value="bibcode:2025ApJS..276...59S">    Article or Data origin sources  </INFO>
+  <INFO name="journal" value="ApJS">    Journal name  </INFO>
+  <INFO name="original_date" value="2025">    Year of the article publication  </INFO>
+  <INFO name="reference_url" value="https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJS/276/59">    Dataset landing page  </INFO>
+  <INFO name="publication_date" value="2026-02-09">    Date of first publication in the data centre  </INFO>
+  <INFO name="rights_uri" value="https://cds.unistra.fr/vizier-org/licences_vizier.html">    Licence URI  </INFO>
+
+  <COOSYS ID="J2000_2000.000" system="eq_FK5" equinox="J2000" epoch="2000.000"/>
+  <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
+  <TABLE ID="J_ApJS_276_59_sample" name="J/ApJS/276/59/sample">
+    <DESCRIPTION>Halpha velocity field parameters (Table 3) and photometric data and inverse Tully-Fisher inclinations (Table 4)</DESCRIPTION>
+    <!-- RowName: ${UGC} -->
+    <!-- Definitions of GROUPs and FIELDs -->
+
+<!-- +++No column could be found to attach a LINK in table: J/ApJS/276/59/sample -->
+    <FIELD name="_RAJ2000" ucd="pos.eq.ra" ref="J2000" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EQ_RA" -->
+      <DESCRIPTION>Right ascension (FK5, Equinox=J2000.0) at Epoch=J2000. (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_DEJ2000" ucd="pos.eq.dec" ref="J2000" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EQ_DEC" -->
+      <DESCRIPTION>Declination (FK5, Equinox=J2000.0) at Epoch=J2000. (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="UGC" ucd="meta.id;meta.main" datatype="short" width="5"><!-- ucd="ID_MAIN" -->
+      <DESCRIPTION>[16/12808] UGC galaxy identifier</DESCRIPTION>
+      <LINK href="http://vizier.cfa.harvard.edu/viz-bin/VizieR-4?-info=XML&amp;-out.add=.&amp;-source=J/ApJ/716/198/table2&amp;UGC=${UGC}"/>
+    </FIELD>
+    <FIELD name="Nobs" ucd="meta.number" datatype="short" width="3"><!-- ucd="NUMBER" -->
+      <DESCRIPTION>Number of Halpha measurements for this galaxy (link to Table 7)</DESCRIPTION>
+      <VALUES null="-32768" />
+    </FIELD>
+    <FIELD name="N" ucd="meta.number" datatype="short" width="3"><!-- ucd="NUMBER" -->
+      <DESCRIPTION>[25/393] Number</DESCRIPTION>
+    </FIELD>
+    <FIELD name="sigMod" ucd="stat.error" datatype="float" width="4" precision="1" unit="km/s"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0/16.1] Extra error term, {sigma}_mod_ (see Equation 6)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="inc" ucd="src.orbital.inclination" datatype="float" width="4" precision="1" unit="deg"><!-- ucd="POS_INCLIN_LOS" -->
+      <DESCRIPTION>[14.5/47.5]? Inclination</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_inc" ucd="stat.error;src.orbital.inclination" datatype="float" width="4" precision="1" unit="deg"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0.8/15]? inc uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="f_inc" ucd="meta.code" datatype="char" arraysize="1"><!-- ucd="CODE_MISC" -->
+      <DESCRIPTION>Flag on inc (1)</DESCRIPTION>
+      <LINK href="http://vizier.cfa.harvard.edu/viz-bin/VizieR?-6N&amp;-info=XML&amp;-out.add=.&amp;&amp;lt;&amp;quot;Note&amp;quot;&amp;catid=22760059&amp;notid=1&amp;-out.emph=${f_inc}"/>
+    </FIELD>
+    <FIELD name="phi0" ucd="pos.posAng" datatype="float" width="5" precision="1" unit="deg"><!-- ucd="POS_POS-ANG" -->
+      <DESCRIPTION>[8/374.1] Position angle of the major axis, {phi}_0_</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_phi0" ucd="stat.error;pos.posAng" datatype="float" width="4" precision="1" unit="deg"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0.2/8] phi0 uncertainty</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Vrot" ucd="phys.veloc.rotat" datatype="float" width="5" precision="1" unit="km/s"><!-- ucd="VELOC_ROTAT" -->
+      <DESCRIPTION>[6.6/211] Asymptotic rotation speed, V_rot_</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_Vrot" ucd="stat.error;phys.veloc.rotat" datatype="float" width="4" precision="1" unit="km/s"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0.4/12.2] Vrot uncertainty</DESCRIPTION>
+    </FIELD>
+    <FIELD name="hrot" ucd="instr.scale" datatype="float" width="4" precision="1" unit="arcsec"><!-- ucd="INST_SCALE" -->
+      <DESCRIPTION>[0.1/38]? Rotation scale, h_rot_</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_hrot" ucd="stat.error;instr.scale" datatype="float" width="4" precision="1" unit="arcsec"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0/5.1]? hrot uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="f_hrot" ucd="meta.code" datatype="char" arraysize="3"><!-- ucd="CODE_MISC" -->
+      <DESCRIPTION>Flag on hrot (2)</DESCRIPTION>
+      <LINK href="http://vizier.cfa.harvard.edu/viz-bin/VizieR?-6N&amp;-info=XML&amp;-out.add=.&amp;&amp;lt;&amp;quot;Note&amp;quot;&amp;catid=22760059&amp;notid=2&amp;-out.emph=${f_hrot}"/>
+    </FIELD>
+    <FIELD name="Vsys" ucd="phys.veloc" datatype="float" width="7" precision="1" unit="km/s"><!-- ucd="VELOC_SYST_HC" -->
+      <DESCRIPTION>[224.8/12794] Systemic velocity</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_Vsys" ucd="stat.error;phys.veloc" datatype="float" width="4" precision="1" unit="km/s"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0.3/4] Vsys uncertainty</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Aphi" ucd="src.morph.param" datatype="float" width="6" precision="3"><!-- ucd="MORPH_ASYMMETRY" -->
+      <DESCRIPTION>[0.015/0.4] Asymetry measure, A_{phi}_, defined in Section 5.3</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Arc" ucd="src.morph.param" datatype="float" width="6" precision="3"><!-- ucd="MORPH_ASYMMETRY" -->
+      <DESCRIPTION>[0.016/0.8]? Asymmetry measure, A_RC_, defined in Section 5.3</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Note" ucd="meta.note" datatype="char" arraysize="3"><!-- ucd="NOTE" -->
+      <DESCRIPTION>Note (s) (3)</DESCRIPTION>
+      <LINK href="http://vizier.cfa.harvard.edu/viz-bin/VizieR?-6N&amp;-info=XML&amp;-out.add=.&amp;&amp;lt;&amp;quot;Note&amp;quot;&amp;catid=22760059&amp;notid=3&amp;-out.emph=${Note}"/>
+    </FIELD>
+    <FIELD name="Simbad" ucd="meta.ref.url" datatype="char" arraysize="6*"><!-- ucd="DATA_LINK" -->
+      <DESCRIPTION>Simbad column added by the CDS</DESCRIPTION>
+<!-- ask the {\bf\fg{FireBrick}Simbad} data-base about this object -->
+
+    </FIELD>
+    <FIELD name="NED" ucd="meta.ref.url" datatype="char" arraysize="3"><!-- ucd="DATA_LINK" -->
+      <DESCRIPTION>NED column added by the CDS</DESCRIPTION>
+<!-- ask the {\bf\fg{FireBrick}NED} data-base about this object -->
+
+    </FIELD>
+    <FIELD name="LEDA" ucd="meta.ref.url" datatype="char" arraysize="4"><!-- ucd="DATA_LINK" -->
+      <DESCRIPTION>VizieR added column, not part of original data</DESCRIPTION>
+<!-- ask the {\bf\fg{FireBrick}LEDA} data-base about this object -->
+
+    </FIELD>
+    <FIELD name="Kmag" ucd="phot.mag;em.IR.K" datatype="float" width="5" precision="2" unit="mag"><!-- ucd="PHOT_JHN_K" -->
+      <DESCRIPTION>[8.62/11.93] 2MASS K band magnitude (4)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_Kmag" ucd="stat.error;phot.mag;em.IR.K" datatype="float" width="5" precision="2" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0.01/0.23] Uncertainty on the Kmag</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Dist" ucd="pos.distance" datatype="float" width="5" precision="1" unit="Mpc"><!-- ucd="PHYS_DISTANCE_TRUE" -->
+      <DESCRIPTION>[1.8/181.4] Distance (5)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_Dist" ucd="stat.error;pos.distance" datatype="float" width="4" precision="1" unit="Mpc"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[2.5/2.5] Dist uncertainty</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Ak" ucd="phys.absorption;em.IR.K" datatype="float" width="5" precision="2" unit="mag"><!-- ucd="PHOT_EXTINCTION_ISM" -->
+      <DESCRIPTION>[-0.03/0.06] K-band extinction</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Kcor" ucd="arith.factor;phot.mag" datatype="float" width="5" precision="2" unit="mag"><!-- ucd="PHOT_K-CORRECTION" -->
+      <DESCRIPTION>[-0.1/0.01] K-correction</DESCRIPTION>
+    </FIELD>
+    <FIELD name="KMag" ucd="phys.magAbs;em.IR.K" datatype="float" width="6" precision="2" unit="mag"><!-- ucd="PHOT_ABS-MAG_BAND" -->
+      <DESCRIPTION>[-26.07/-16.09] Absolute K band magnitude</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_KMag" ucd="stat.error;phys.magAbs;em.IR.K" datatype="float" width="5" precision="2" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0.02/1.95] KMag uncertainty</DESCRIPTION>
+    </FIELD>
+    <FIELD name="iiTF" ucd="src.orbital.inclination" datatype="float" width="4" precision="1" unit="deg"><!-- ucd="POS_INCLIN_LOS" -->
+      <DESCRIPTION>[1.8/90] Inverse Tully-Fisher inclination, i_iTF_</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_iiTF" ucd="stat.error;src.orbital.inclination" datatype="float" width="4" precision="1" unit="deg"><!-- ucd="ERROR" -->
+      <DESCRIPTION>[0/4.3] iiTF uncertainty</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_RA" ucd="pos.eq.ra;meta.main" ref="J2000_2000.000" datatype="double" width="9" precision="5" unit="deg"><!-- ucd="POS_EQ_RA_MAIN" -->
+      <DESCRIPTION>Right Ascension (J2000) from SIMBAD (not part of the original data)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_DE" ucd="pos.eq.dec;meta.main" ref="J2000_2000.000" datatype="double" width="9" precision="5" unit="deg"><!-- ucd="POS_EQ_DEC_MAIN" -->
+      <DESCRIPTION>Declination (J2000) from SIMBAD (not part of the original data)</DESCRIPTION>
+    </FIELD>
+<DATA><CSV headlines="3" colsep=";"><![CDATA[
+_RAJ2000;_DEJ2000;UGC;Nobs;N;sigMod;inc;e_inc;f_inc;phi0;e_phi0;Vrot;e_Vrot;hrot;e_hrot;f_hrot;Vsys;e_Vsys;Aphi;Arc;Note;Simbad;NED;LEDA;Kmag;e_Kmag;Dist;e_Dist;Ak;Kcor;KMag;e_KMag;iiTF;e_iiTF;_RA;_DE
+deg;deg; ; ; ;km/s;deg;deg; ;deg;deg;km/s;km/s;arcsec;arcsec; ;km/s;km/s; ; ; ; ; ; ;mag;mag;Mpc;Mpc;mag;mag;mag;mag;deg;deg;deg;deg
+-----------;-----------;-----;---;---;----;----;----;-;-----;----;-----;----;----;----;---;-------;----;------;------;---;------;---;----;-----;-----;-----;----;-----;-----;------;-----;----;----;---------;---------
+000.9536628;+07.4787147;   16;172;171; 1.3;22.2; 2.6; ;335.2; 0.3; 85.2; 0.4; 5.8; 0.4;   ; 5235.9; 0.3; 0.028; 0.020;   ;Simbad;NED;LEDA; 9.39; 0.02; 66.6; 2.5; 0.02;-0.04;-24.80; 0.11;18.4; 1.0;000.95366;+07.47871
+002.1864219;+04.6125744;   74;154;150; 3.6;36.7; 2.1; ;297.8; 0.4;109.3; 1.0; 9.7; 0.5;   ; 3933.7; 0.7; 0.039; 0.043;   ;Simbad;NED;LEDA;10.21; 0.02; 48.7; 2.5; 0.01;-0.03;-23.27; 0.14;36.7; 2.2;002.18642;+04.61257
+007.6424872;+13.3662661;  305;124;113; 3.9;18.9; 6.1; ;158.8; 0.6; 93.5; 1.0; 4.0; 0.5;   ; 9970.8; 0.7; 0.046; 0.062;   ;Simbad;NED;LEDA;11.00; 0.04;133.2; 2.5; 0.03;-0.08;-24.74; 0.10;20.7; 1.1;007.64249;+13.36627
+007.8351956;+30.7925333;  311;155;151; 2.8;40.3; 2.4; ;239.7; 0.6; 63.9; 0.9; 4.5; 0.6;   ; 6429.9; 0.6; 0.054; 0.043;2  ;Simbad;NED;LEDA;10.85; 0.04; 94.2; 2.5; 0.02;-0.05;-24.10; 0.12;16.5; 0.9;007.83520;+30.79253
+010.5919375;+29.6416139;  448;174;165; 3.9;30.4; 2.9; ;307.7; 0.5; 84.6; 0.9; 2.8; 0.7;   ; 4856.6; 0.6; 0.051; 0.086;   ;Simbad;NED;LEDA;10.13; 0.02; 55.5; 2.5; 0.02;-0.04;-23.65; 0.10;24.9; 1.4;010.59194;+29.64161
+010.8849239;+14.3426106;  463;357;336; 3.7;26.4; 2.1; ; 68.9; 0.3;106.5; 0.6; 8.6; 0.3;   ; 4450.8; 0.5; 0.040; 0.029;   ;Simbad;NED;LEDA; 9.39; 0.02; 52.5; 2.5; 0.03;-0.04;-24.28; 0.12;26.8; 1.5;010.88492;+14.34261
+016.5584542;+03.5744056;  678;107;100; 2.9;25.8; 8.7; ;232.3; 1.1; 41.7; 1.1; 6.5; 0.7;   ; 5523.0; 0.7; 0.079; 0.081;2,3;Simbad;NED;LEDA;11.20; 0.10; 72.5; 2.5; 0.01;-0.04;-23.16; 0.27;13.6; 0.9;016.55845;+03.57441
+022.4831500;+32.5014111; 1069; 49; 50; 4.4;    ;    ;l; 35.9; 2.5; 30.4; 1.7; 4.5; 1.2;   ; 4653.0; 1.2; 0.143; 0.154;   ;Simbad;NED;LEDA;11.46; 0.02; 52.0; 2.5; 0.02;-0.04;-22.17; 0.11;12.7; 1.0;022.48315;+32.50141
+022.6943664;+21.4404275; 1081;164;161; 4.7;30.8; 5.7; ; 72.8; 0.8; 61.0; 1.6;15.9; 1.2;   ; 3117.7; 0.9; 0.070; 0.073;2  ;Simbad;NED;LEDA;10.03; 0.03; 37.2; 2.5; 0.02;-0.03;-22.86; 0.15;21.7; 1.3;022.69437;+21.44043
+022.8609750;+14.2774972; 1087;116;115; 1.1;27.2; 3.7; ; 82.2; 0.5; 59.6; 0.7; 8.2; 0.5;   ; 4469.8; 0.5; 0.037; 0.053;   ;Simbad;NED;LEDA;10.67; 0.05; 52.5; 2.5; 0.02;-0.04;-22.98; 0.19;20.5; 1.2;022.86097;+14.27750
+024.5868500;+07.5340944; 1167;202;202; 3.0;35.0; 2.0; ;109.3; 0.4;100.3; 0.7; 8.8; 0.4;   ; 4297.6; 0.5; 0.041; 0.042;1  ;Simbad;NED;LEDA;10.77; 0.06; 51.6; 2.5; 0.01;-0.04;-22.85; 0.21;37.7; 2.4;024.58685;+07.53409
+026.0339028;+34.3872331; 1212;119;116; 3.3;36.7; 1.9; ; 72.4; 0.4;161.8; 1.1; 2.6; 0.9;   ;10734.8; 0.9; 0.034; 0.019;1  ;Simbad;NED;LEDA;10.36; 0.04;147.0; 2.5; 0.02;-0.09;-25.58; 0.09;29.6; 1.6;026.03390;+34.38723
+030.2775397;+31.8824306; 1497;154;154; 3.4;    ;    ;l;139.4; 1.6; 15.1; 0.7; 3.1; 1.2;   ; 5193.2; 0.4; 0.192; 0.161;2  ;Simbad;NED;LEDA; 9.66; 0.01; 64.1; 2.5; 0.02;-0.04;-24.44; 0.08; 3.5; 0.2;030.27754;+31.88243
+030.6291733;+11.0930122; 1529;162;158; 1.5;29.3; 1.9; ;164.6; 0.3;118.4; 0.5; 6.1; 0.3;   ; 4632.7; 0.4; 0.027; 0.029;   ;Simbad;NED;LEDA; 9.91; 0.04; 56.6; 2.5; 0.03;-0.04;-23.92; 0.15;33.3; 1.9;030.62917;+11.09301
+030.9958300;+15.3180600; 1559;313;308; 7.9;38.1; 4.6; ; 76.2; 0.8; 64.0; 1.7;16.0; 1.1;   ; 3626.8; 0.9; 0.106; 0.064;4,5;Simbad;NED;LEDA;11.61; 0.08; 42.9; 2.5; 0.02;-0.03;-21.61; 0.25;32.3; 2.2;030.99583;+15.31806
+031.3135083;+06.1069222; 1579;169;139; 5.4;    ;    ;l;168.2; 1.3; 40.1; 1.7;15.1; 1.4;   ; 3404.4; 1.0; 0.118; 0.183;2,4;Simbad;NED;LEDA;11.40; 0.03; 41.9; 2.5; 0.01;-0.03;-21.76; 0.13;18.8; 1.3;031.31351;+06.10692
+032.1155667;+06.3948694; 1635;164;164; 2.0;22.0; 5.2; ;143.2; 0.5; 53.4; 0.6;10.5; 0.5;   ; 3515.3; 0.4; 0.044; 0.070;   ;Simbad;NED;LEDA;10.42; 0.03; 43.3; 2.5; 0.02;-0.03;-22.82; 0.15;19.1; 1.0;032.11557;+06.39487
+033.6421925;+37.4079622; 1721; 25; 25; 4.4;    ;    ;l;132.8; 2.0; 49.4; 2.3; 2.6; 0.0;   ; 4638.1; 1.8; 0.069; 0.090;   ;Simbad;NED;LEDA;10.61; 0.02; 51.5; 2.5; 0.02;-0.04;-23.00; 0.10;16.8; 1.2;033.64219;+37.40796
+033.6398353;-00.7667172; 1727;106; 88; 7.6;    ;    ;l;299.8; 1.0;104.1; 1.7; 1.7; 0.0;   ; 7934.9; 1.4; 0.067; 0.030;   ;Simbad;NED;LEDA; 9.49; 0.01;107.4; 2.5; 0.01;-0.06;-25.74; 0.06;17.7; 0.9;033.63984;-00.76672
+036.1032914;-02.1623125; 1862;109;100; 2.3;    ;    ;l; 19.7; 0.9; 56.9; 2.2;17.3; 1.2;   ; 1372.3; 1.1; 0.039; 0.182;4  ;Simbad;NED;LEDA;10.20; 0.13; 15.8; 2.5; 0.01;-0.01;-20.82; 0.57;35.4; 3.6;036.10329;-02.16231
+036.6553483;+12.1552056; 1908;155;154; 3.6;    ;    ;l;190.8; 0.5; 92.0; 0.8; 8.0; 0.4;   ; 8255.1; 0.6; 0.041; 0.060;   ;Simbad;NED;LEDA;10.04; 0.03;111.7; 2.5; 0.03;-0.07;-25.30; 0.07;17.5; 0.9;036.65535;+12.15521
+039.4934111;+34.2410953; 2109;156;153; 2.9;22.3; 5.6; ;133.3; 0.5; 67.9; 1.1;12.8; 0.7;   ; 3672.8; 0.6; 0.047; 0.118;   ;Simbad;NED;LEDA;10.07; 0.01; 40.7; 2.5; 0.03;-0.03;-23.04; 0.15;23.2; 1.3;039.49341;+34.24110
+040.8427944;+04.9683758; 2200; 66; 64; 1.0;40.2; 1.2; ;183.6; 0.4;189.3; 0.7; 4.3; 0.6;   ; 4089.0; 0.7; 0.016; 0.026;   ;Simbad;NED;LEDA; 8.62; 0.01; 50.6; 2.5; 0.02;-0.03;-24.95; 0.11;42.6; 2.6;040.84279;+04.96838
+067.9805458;+01.1991111; 3080;191;190; 2.4;    ;    ;l;314.4; 0.5; 56.2; 0.6; 9.0; 0.4;   ; 3522.9; 0.4; 0.052; 0.067;   ;Simbad;NED;LEDA;10.22; 0.08; 43.4; 2.5; 0.03;-0.03;-23.03; 0.27;19.1; 1.1;067.98055;+01.19911
+070.4510708;-01.3018850; 3134;150;150; 7.9;    ;    ;l;279.1; 1.2; 54.5; 1.9; 9.5; 1.1;   ; 8609.4; 1.2; 0.118; 0.083;2,4;Simbad;NED;LEDA;10.34; 0.03;111.4; 2.5; 0.01;-0.07;-24.98; 0.10;11.2; 0.7;070.45107;-01.30188
+070.7288411;+00.6186028; 3140;181;180; 2.9;    ;    ;l;353.7; 0.5; 52.7; 0.5; 2.8; 0.7;   ; 4607.2; 0.4; 0.054; 0.041;   ;Simbad;NED;LEDA; 9.45; 0.02; 59.5; 2.5; 0.03;-0.04;-24.48; 0.10;12.2; 0.6;070.72884;+00.61860
+107.9278792;+72.1692056; 3701;267;264; 4.2;44.8; 3.6; ; 90.9; 0.6; 62.6; 2.2;20.3; 1.3;   ; 2885.3; 1.0; 0.062; 0.104;1  ;Simbad;NED;LEDA;11.23; 0.09; 41.1; 2.5; 0.02;-0.02;-21.88; 0.28;29.2; 2.2;107.92788;+72.16921
+108.1361269;+71.7505053; 3714; 63; 63; 0.0;37.8; 3.5; ; 39.9; 0.9;121.7; 1.4; 4.8; 0.5;   ; 2951.9; 1.1; 0.020; 0.089;   ;Simbad;NED;LEDA; 9.37; 0.01; 42.0; 2.5; 0.02;-0.02;-23.79; 0.12;35.7; 2.1;108.13613;+71.75051
+115.3254386;+34.2321775; 3965;107;106; 4.3;    ;    ;l;283.8; 1.3; 35.0; 1.1; 4.2; 0.8;   ; 4661.1; 0.7; 0.091; 0.055;   ;Simbad;NED;LEDA;10.67; 0.01; 64.6; 2.5; 0.02;-0.04;-23.44; 0.09;10.6; 0.6;115.32544;+34.23218
+116.1614328;+40.3663733; 3997;120;119; 3.7;21.0; 7.4; ; 31.4; 0.7; 68.2; 1.1; 8.2; 0.6;   ; 5942.7; 0.8; 0.063; 0.067;   ;Simbad;NED;LEDA;11.70; 0.08; 84.2; 2.5; 0.02;-0.05;-23.00; 0.19;23.6; 1.4;116.16143;+40.36637
+117.9778600;+73.0157094; 4036;165;165; 4.9;34.7; 4.8; ;194.7; 0.8; 53.3; 1.3;12.6; 1.0;   ; 3428.5; 0.8; 0.074; 0.138;2  ;Simbad;NED;LEDA; 9.49; 0.03; 48.1; 2.5; 0.01;-0.03;-23.96; 0.15;14.2; 0.8;117.97786;+73.01571
+119.0649708;+78.0134417; 4066;141;137; 4.3;    ;    ;l;274.3; 1.0; 43.8; 1.7;12.7; 1.2;   ; 2304.4; 1.0; 0.094; 0.142;1  ;Simbad;NED;LEDA;11.23; 0.03; 34.9; 2.5; 0.01;-0.02;-21.52; 0.18;21.9; 1.5;119.06497;+78.01344
+118.9529211;+24.7059611; 4099;117;116; 4.3;47.5; 1.4; ;275.8; 0.4;147.5; 1.5; 9.5; 0.9;   ; 4668.9; 1.1; 0.034; 0.035;1  ;Simbad;NED;LEDA;10.53; 0.03; 64.2; 2.5; 0.03;-0.04;-23.57; 0.13;48.4; 3.3;118.95292;+24.70596
+119.2577167;+49.5673225; 4107;303;301; 2.5;19.4; 3.7; ;290.4; 0.3; 67.1; 0.5; 8.7; 0.3;   ; 3462.3; 0.3; 0.042; 0.060;2,4;Simbad;NED;LEDA;10.14; 0.02; 48.9; 2.5; 0.01;-0.03;-23.35; 0.12;21.1; 1.1;119.25772;+49.56732
+119.8484500;+16.4212056; 4139;123;122; 4.1;25.8; 5.5; ;233.0; 0.7; 81.8; 1.2; 8.4; 0.6;   ; 4882.4; 0.9; 0.051; 0.063;   ;Simbad;NED;LEDA;11.37; 0.10; 68.2; 2.5; 0.01;-0.04;-22.85; 0.25;29.9; 1.9;119.84845;+16.42121
+120.7067944;+15.8082542; 4189;140;140; 2.5;    ;    ;l;215.1; 0.7; 45.1; 0.6; 9.6; 0.6;   ; 4804.5; 0.5; 0.066; 0.096;1  ;Simbad;NED;LEDA;10.66; 0.05; 66.9; 2.5; 0.01;-0.04;-23.52; 0.12;13.4; 0.7;120.70679;+15.80825
+122.5632769;+33.9566025; 4256;192;191; 7.5;31.1; 5.4; ;293.1; 0.8; 74.8; 1.8;12.8; 1.0;   ; 5212.1; 1.1; 0.070; 0.109;2,4;Simbad;NED;LEDA; 9.52; 0.01; 74.2; 2.5; 0.02;-0.04;-24.89; 0.08;15.8; 0.9;122.56328;+33.95660
+125.6873125;+24.2969442; 4368;372;372; 1.8;39.7; 0.8; ;127.1; 0.2;116.2; 0.4;12.6; 0.3;   ; 3818.3; 0.3; 0.026; 0.057;   ;Simbad;NED;LEDA;10.44; 0.07; 53.6; 2.5; 0.01;-0.03;-23.26; 0.23;39.7; 2.6;125.68731;+24.29694
+127.1663703;+73.7480828; 4397;166;166; 2.3;23.6; 3.4; ;330.2; 0.4; 93.8; 0.7;12.8; 0.4;   ; 3632.1; 0.5; 0.032; 0.085;4  ;Simbad;NED;LEDA; 9.97; 0.02; 51.9; 2.5; 0.01;-0.03;-23.64; 0.13;27.9; 1.5;127.16637;+73.74808
+127.8626875;+60.9950500; 4445; 45; 45; 2.8;22.0;12.9; ;199.6; 7.8;  6.6; 1.9; 1.2; 0.0;   ; 6329.5; 0.7; 0.358; 0.762;5  ;Simbad;NED;LEDA;11.02; 0.04; 93.7; 2.5; 0.03;-0.05;-23.91; 0.11; 1.8; 0.5;127.86269;+60.99505
+128.0471731;+22.5605569; 4458;123;118; 6.1;36.3; 2.3; ;289.6; 0.5;149.7;12.2;    ;    ;URC; 4717.8; 1.2; 0.046; 0.084;   ;Simbad;NED;LEDA; 8.88; 0.02; 68.6; 2.5; 0.01;-0.04;-25.35; 0.09;28.9; 3.0;128.04717;+22.56056
+131.0344394;+34.7172831; 4555;180;179; 3.2;37.1; 1.7; ; 90.8; 0.3;115.0; 0.9; 9.0; 0.4;   ; 4238.8; 0.6; 0.034; 0.029;1  ;Simbad;NED;LEDA;10.03; 0.04; 62.1; 2.5; 0.01;-0.03;-23.98; 0.12;31.8; 1.8;131.03444;+34.71728
+132.5841325;+41.2894214; 4622;117;116; 2.3;28.4; 3.4; ;117.4; 0.5; 88.4; 0.9; 5.4; 0.5;   ;12793.5; 0.7; 0.042; 0.066;2  ;Simbad;NED;LEDA;11.14; 0.08;181.4; 2.5; 0.01;-0.10;-25.26; 0.14;17.0; 0.9;132.58413;+41.28942
+145.5137225;+00.3364194; 5180;214;209; 3.8;26.7; 4.6; ;308.2; 0.5; 57.9; 0.8;15.0; 0.7;   ; 1899.1; 0.5; 0.058; 0.071;2  ;Simbad;NED;LEDA; 8.85; 0.01; 31.9; 2.5; 0.04;-0.01;-23.72; 0.19;16.4; 0.9;145.51372;+00.33642
+147.9168117;+65.4911242; 5277;131;131; 3.0;    ;    ;l; 63.8; 2.6; 12.2; 1.3;13.8; 3.2;   ; 3371.3; 0.7; 0.248; 0.249;1  ;Simbad;NED;LEDA;10.09; 0.02; 51.7; 2.5; 0.06;-0.03;-23.57; 0.13; 3.6; 0.4;147.91681;+65.49112
+148.5907767;+68.3323494; 5302;177;173; 4.9;38.2; 2.4; ;140.3; 0.5;112.8; 1.2;12.7; 0.5;   ; 4378.2; 0.8; 0.042; 0.046;1  ;Simbad;NED;LEDA;10.56; 0.02; 67.1; 2.5; 0.04;-0.04;-23.65; 0.08;34.1; 2.0;148.59078;+68.33235
+154.1422728;+21.1230556; 5544;107;107; 2.4;20.1; 5.3; ;320.2; 0.6; 83.4; 0.7; 2.4; 0.8;   ; 1306.6; 0.6; 0.041; 0.016;1  ;Simbad;NED;LEDA; 9.30; 0.07; 23.7; 2.5; 0.01;-0.01;-22.59; 0.36;32.8; 2.3;154.14227;+21.12306
+155.0151633;+38.6155397; 5577; 38; 38; 2.5;    ;    ;l;283.1; 2.3; 38.2; 5.6;14.3; 3.0;   ; 2046.8; 3.5; 0.031; 0.158;5  ;Simbad;NED;LEDA;11.16; 0.03; 34.5; 2.5; 0.01;-0.02;-21.55; 0.18;18.9; 3.1;155.01516;+38.61554
+161.4455692;+37.2113022; 5868; 37; 37; 2.8;33.7; 4.4; ;374.1; 0.8;147.1; 2.1; 2.5; 0.0;   ; 7199.6; 1.7; 0.032; 0.025;5  ;Simbad;NED;LEDA;10.50; 0.03;105.6; 2.5; 0.01;-0.06;-24.69; 0.09;34.2; 2.0;161.44557;+37.21130
+165.0098775;+14.8416619; 6077;178;177; 4.7;23.1; 8.9; ;199.7; 0.6; 65.6; 2.3;21.7; 1.5;   ; 1442.0; 1.1; 0.066; 0.264;2,4;Simbad;NED;LEDA; 9.21; 0.03; 28.5; 2.5; 0.01;-0.01;-23.09; 0.25;22.1; 1.5;165.00988;+14.84166
+]]></CSV></DATA>
+</TABLE>
+<INFO name="matches" value="50">matching records</INFO>
+
+<INFO name="Warning" value="No center provided++++"/>
+<INFO name="Warning" value="increase the precision for computed column 8"/>
+<INFO name="Warning" value="increase the precision for computed column 8"/>
+<INFO name="Warning" value="truncated result (maxtup=50)"/><INFO name="QUERY_STATUS" value="OVERFLOW"> value="truncated result (maxtup=50)"</INFO>
+
+</RESOURCE>
+</VOTABLE>

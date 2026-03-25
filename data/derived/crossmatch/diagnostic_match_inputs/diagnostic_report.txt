@@ -1,0 +1,34 @@
+DiskMass ↔ SPARC input diagnostic report
+================================================
+
+seed_file: data\derived\crossmatch\diskmass_alias_seed.csv
+sparc_file: data\derived\crossmatch\sparc_s4g_crossmatch_direct.csv
+
+[Primary column selection]
+- seed_name_column: UGC_sample
+- seed_ra_column: _RAJ2000_sample
+- seed_dec_column: _DEJ2000_sample
+- sparc_name_column: galaxy_id
+- sparc_ra_column: RAJ2000
+- sparc_dec_column: DEJ2000
+
+[Coordinate summary]
+- seed: rows=231, rows_with_coords=50, rows_without_coords=181, coord_fraction=0.21645
+  RA range: 14.304942 .. 342.914625
+  Dec range: -2.1623125 .. 78.0134417
+- sparc: rows=175, rows_with_coords=76, rows_without_coords=99, coord_fraction=0.434286
+  RA range: 12.180299999999999 .. 359.45721
+  Dec range: -53.36099 .. 70.72019
+
+[Catalog overlap]
+- seed_catalog_unique: 231
+- sparc_catalog_unique: 146
+- catalog_intersection_unique: 1
+- seed_rows_with_catalog: 231
+- sparc_rows_with_catalog: 146
+- seed_rows_having_any_catalog_match: 1
+
+[Interpretation hints]
+- DiskMass 입력에서 좌표 파싱 성공률이 낮습니다. RA/DEC 원본 컬럼 또는 sexagesimal 형식을 우선 점검해야 합니다.
+- SPARC 입력에서 좌표 열 선택 또는 좌표 형식 파싱이 실패하고 있을 가능성이 큽니다.
+- 카탈로그 번호 exact match 비율이 낮습니다. SPARC 쪽 alias/name 열을 더 폭넓게 포함해야 할 수 있습니다.

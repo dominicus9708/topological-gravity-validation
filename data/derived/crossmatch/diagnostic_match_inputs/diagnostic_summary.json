@@ -1,0 +1,65 @@
+{
+  "seed_file": "data\\derived\\crossmatch\\diskmass_alias_seed.csv",
+  "sparc_file": "data\\derived\\crossmatch\\sparc_s4g_crossmatch_direct.csv",
+  "primary_columns": {
+    "seed_name_column": "UGC_sample",
+    "seed_ra_column": "_RAJ2000_sample",
+    "seed_dec_column": "_DEJ2000_sample",
+    "sparc_name_column": "galaxy_id",
+    "sparc_ra_column": "RAJ2000",
+    "sparc_dec_column": "DEJ2000"
+  },
+  "seed_coord_summary": {
+    "label": "seed",
+    "rows": 231,
+    "rows_with_coords": 50,
+    "rows_without_coords": 181,
+    "coord_fraction": 0.21645,
+    "ra_min_deg": 14.304942,
+    "ra_max_deg": 342.914625,
+    "dec_min_deg": -2.1623125,
+    "dec_max_deg": 78.0134417
+  },
+  "sparc_coord_summary": {
+    "label": "sparc",
+    "rows": 175,
+    "rows_with_coords": 76,
+    "rows_without_coords": 99,
+    "coord_fraction": 0.434286,
+    "ra_min_deg": 12.180299999999999,
+    "ra_max_deg": 359.45721,
+    "dec_min_deg": -53.36099,
+    "dec_max_deg": 70.72019
+  },
+  "catalog_overlap_summary": {
+    "seed_catalog_unique": 231,
+    "sparc_catalog_unique": 146,
+    "catalog_intersection_unique": 1,
+    "seed_rows_with_catalog": 231,
+    "sparc_rows_with_catalog": 146,
+    "seed_rows_having_any_catalog_match": 1
+  },
+  "seed_alias_candidate_columns": [
+    "ugc_norm",
+    "UGC_sample",
+    "UGC_survey1",
+    "diskmass_display_name",
+    "diskmass_name_normalized",
+    "alias_match_status",
+    "candidate_sparc_name_normalized",
+    "alias_source",
+    "alias_confidence",
+    "auto_exact_name_hint"
+  ],
+  "sparc_alias_candidate_columns": [
+    "filename",
+    "name_normalized",
+    "s4g_name_normalized",
+    "Name"
+  ],
+  "interpretation_hints": [
+    "DiskMass 입력에서 좌표 파싱 성공률이 낮습니다. RA/DEC 원본 컬럼 또는 sexagesimal 형식을 우선 점검해야 합니다.",
+    "SPARC 입력에서 좌표 열 선택 또는 좌표 형식 파싱이 실패하고 있을 가능성이 큽니다.",
+    "카탈로그 번호 exact match 비율이 낮습니다. SPARC 쪽 alias/name 열을 더 폭넓게 포함해야 할 수 있습니다."
+  ]
+}

@@ -1,0 +1,5 @@
+galaxy_id,source,radius_kpc,v_obs_kms,v_err_kms,v_gas_kms,v_disk_kms,v_bulge_kms,v_bar_kms
+UGC07232,SPARC,0.21,16.4,3.3,3.43,15.55,0,15.9237998
+UGC07232,SPARC,0.41,26.2,3.3,6.87,25.1,0,26.02319927
+UGC07232,SPARC,0.62,35.2,3.3,10.25,25.64,0,27.61289735
+UGC07232,SPARC,0.82,44,3.3,12.77,24.3,0,27.45110016
