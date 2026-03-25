@@ -1,0 +1,18 @@
+{
+  "rows_total": 5733,
+  "rows_matched_any": 7,
+  "rows_unmatched": 5726,
+  "match_reason_counts": {
+    "unmatched": 5726,
+    "catalog_exact": 7
+  },
+  "rows_with_catalog_token": 4431,
+  "rows_with_coords": 5733,
+  "median_z0_over_h_matched": 0.2828685258964143,
+  "median_sep_deg_matched": null,
+  "bizyaev_file": "data\\derived\\Bizyaev\\bizyaev_table4_rband_for_crossmatch.csv",
+  "sparc_index_file": "data\\derived\\crossmatch\\sparc_diskmass_S4G\\sparc_galaxy_index.csv",
+  "output_dir": "data\\derived\\crossmatch\\sparc_bizyaev",
+  "max_coord_sep_deg": 0.1,
+  "review_coord_sep_deg": 0.3
+}

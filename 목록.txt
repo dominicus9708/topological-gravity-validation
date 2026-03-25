@@ -12,31 +12,50 @@ C:.
 +----Command
 +---data
 |   +---derived
+|   |   +---Bizyaev
+|   |   |       bizyaev_conversion_summary.json
+|   |   |       bizyaev_merged_rband_1d_3d.csv
+|   |   |       bizyaev_table4_raw.csv
+|   |   |       bizyaev_table4_rband.csv
+|   |   |       bizyaev_table4_rband_for_crossmatch.csv
+|   |   |       bizyaev_table6_raw.csv
+|   |   |       
 |   |   +---crossmatch
-|   |   |   |   diskmass_alias_confirmed_auto.csv
-|   |   |   |   diskmass_alias_review_candidates.csv
-|   |   |   |   diskmass_alias_review_needed.csv
-|   |   |   |   diskmass_alias_seed.csv
-|   |   |   |   diskmass_alias_weak_or_none.csv
-|   |   |   |   sparc_diskmass_crossmatch_coord_bridge.csv
-|   |   |   |   sparc_diskmass_crossmatch_direct.csv
-|   |   |   |   sparc_diskmass_crossmatch_same_name.csv
-|   |   |   |   sparc_diskmass_unmatched_coord_bridge.csv
-|   |   |   |   sparc_diskmass_unmatched_direct.csv
-|   |   |   |   sparc_diskmass_unmatched_same_name.csv
-|   |   |   |   sparc_galaxy_index.csv
-|   |   |   |   sparc_s4g_crossmatch_direct.csv
-|   |   |   |   sparc_s4g_crossmatch_loose.csv
-|   |   |   |   sparc_s4g_unmatched_direct.csv
-|   |   |   |   sparc_s4g_unmatched_loose.csv
-|   |   |   |   
-|   |   |   \---diagnostic_match_inputs
+|   |   |   +---diagnostic_match_inputs
+|   |   |   |       catalog_overlap_detail.csv
+|   |   |   |       diagnostic_report.txt
+|   |   |   |       diagnostic_summary.json
+|   |   |   |       nearest_coord_matches_sample.csv
+|   |   |   |       sample_exact_catalog_matches.csv
+|   |   |   |       sample_unmatched_catalog_rows.csv
+|   |   |   |       seed_enriched_preview.csv
+|   |   |   |       seed_fill_stats.csv
+|   |   |   |       sparc_enriched_preview.csv
+|   |   |   |       sparc_fill_stats.csv
+|   |   |   |       
+|   |   |   \---sparc_diskmass_S4G
+|   |   |           diskmass_alias_confirmed_auto.csv
+|   |   |           diskmass_alias_review_candidates.csv
+|   |   |           diskmass_alias_review_needed.csv
+|   |   |           diskmass_alias_seed.csv
+|   |   |           diskmass_alias_weak_or_none.csv
+|   |   |           sparc_diskmass_crossmatch_coord_bridge.csv
+|   |   |           sparc_diskmass_crossmatch_direct.csv
+|   |   |           sparc_diskmass_crossmatch_same_name.csv
+|   |   |           sparc_diskmass_unmatched_coord_bridge.csv
+|   |   |           sparc_diskmass_unmatched_direct.csv
+|   |   |           sparc_diskmass_unmatched_same_name.csv
+|   |   |           sparc_galaxy_index.csv
+|   |   |           sparc_s4g_crossmatch_direct.csv
+|   |   |           sparc_s4g_crossmatch_loose.csv
+|   |   |           sparc_s4g_unmatched_direct.csv
+|   |   |           sparc_s4g_unmatched_loose.csv
+|   |   |           
 |   |   +---diskmass
 |   |   |       J_ApJS_276_59_sample_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample.csv
 |   |   |       J_ApJS_276_59_table7_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample_(Swaters+, 2025).csv
 |   |   |       J_ApJ_716_198_The_ DiskMass_survey_I.csv
 |   |   |       
-|   |   +---rotation_curves
 |   |   +---s4g
 |   |   |       S4G_catalog.csv
 |   |   |       vizier_xml_csv_normalization_summary.csv
@@ -755,12 +774,15 @@ C:.
 |   |           UGCA444_normalized.csv
 |   |           
 |   \---raw
+|       +---Bizyaev
+|       |       J_ApJ_787_24_table4_The_Structural_Parameters_of_True_Edge-on_Galaxies_from the_1-D_Analysis.tsv
+|       |       J_ApJ_787_24_table6_The_Structural_Parameters_of_true_Edge_on_Galaxies_in_the_r-band_from_our_3D_Analysis.tsv
+|       |       
 |       +---diskmass
 |       |       J_ApJS_276_59_sample_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample.tsv
 |       |       J_ApJS_276_59_table7_The_DiskMass_Survey_(DMS)_XI_Full_Ha_sample_(Swaters+, 2025).tsv
 |       |       J_ApJ_716_198_The_ DiskMass_survey_I.tsv
 |       |       
-|       +---little_things
 |       +---s4g
 |       |       S4G_catalog.tsv
 |       |       
@@ -15278,20 +15300,24 @@ C:.
 |           
 \---src
     +---crossmatch
-    |       build_diskmass_alias_auto_confirm.py
-    |       build_diskmass_alias_review_candidates.py
-    |       build_diskmass_alias_review_candidates_fixed.py
-    |       build_diskmass_alias_review_candidates_v2.py
-    |       build_diskmass_alias_review_candidates_v3.py
-    |       build_diskmass_alias_seed.py
-    |       build_sparc_diskmass_coord_bridge.py
-    |       build_sparc_diskmass_crossmatch_direct_fixed.py
-    |       build_sparc_diskmass_same_name_direct.py
-    |       build_sparc_galaxy_index.py
-    |       build_sparc_s4g_crossmatch_direct.py
-    |       build_sparc_s4g_crossmatch_loose.py
-    |       diagnose_diskmass_sparc_match_inputs.py
-    |       
+    |   +---Bizyaev
+    |   |       convert_bizyaev_vizier.py
+    |   |       
+    |   \---diskmass_spark_s4g
+    |           build_diskmass_alias_auto_confirm.py
+    |           build_diskmass_alias_review_candidates.py
+    |           build_diskmass_alias_review_candidates_fixed.py
+    |           build_diskmass_alias_review_candidates_v2.py
+    |           build_diskmass_alias_review_candidates_v3.py
+    |           build_diskmass_alias_seed.py
+    |           build_sparc_diskmass_coord_bridge.py
+    |           build_sparc_diskmass_crossmatch_direct_fixed.py
+    |           build_sparc_diskmass_same_name_direct.py
+    |           build_sparc_galaxy_index.py
+    |           build_sparc_s4g_crossmatch_direct.py
+    |           build_sparc_s4g_crossmatch_loose.py
+    |           diagnose_diskmass_sparc_match_inputs_fixed.py
+    |           
     +---galaxy_rotation
     |   +---legacy
     |   |   |   galaxy_rotation_legacy_check_sparc_csv_quality.py
@@ -15409,13 +15435,19 @@ C:.
     |               structural_coupling_sigma_model.cpython-312.pyc
     |               
     +---normalization
-    |       normalize_diskmass_fixed.py
-    |       normalize_diskmass_sample_fixed.py
-    |       normalize_diskmass_survey1_fixed.py
-    |       normalize_diskmass_table7_fixed.py
-    |       normalize_sparc.py
-    |       normalize_vizier_xml_csv.py
-    |       
+    |   +---Bizyaev
+    |   +---diskmass
+    |   |       normalize_diskmass_fixed.py
+    |   |       normalize_diskmass_sample_fixed.py
+    |   |       normalize_diskmass_survey1_fixed.py
+    |   |       normalize_diskmass_table7_fixed.py
+    |   |       
+    |   +---s4g
+    |   |       normalize_vizier_xml_csv.py
+    |   |       
+    |   \---sparc
+    |           normalize_sparc.py
+    |           
     +---pipeline
     \---__pycache__
             constants.cpython-312.pyc

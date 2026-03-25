@@ -1,0 +1,22 @@
+{
+  "input": {
+    "table4": "data/raw/Bizyaev/J_ApJ_787_24_table4_The_Structural_Parameters_of_True_Edge-on_Galaxies_from the_1-D_Analysis.tsv",
+    "table6": "data/raw/Bizyaev/J_ApJ_787_24_table6_The_Structural_Parameters_of_true_Edge_on_Galaxies_in_the_r-band_from_our_3D_Analysis.tsv"
+  },
+  "output_dir": "data/derived/Bizyaev",
+  "table4_raw_rows": 17189,
+  "table4_rband_rows": 5733,
+  "table4_crossmatch_rows": 5733,
+  "table6_rows": 3912,
+  "merged_rows": 5733,
+  "table4_unique_preferred_name": 5380,
+  "table4_unique_catalog_name_normalized": 4436,
+  "table4_rband_unique_catalog_name_normalized": 4430,
+  "notes": [
+    "Table 4 is the main crossmatch-ready structural table.",
+    "Table 6 is kept as a cleaner 3D-analysis companion table.",
+    "Use z0_over_h or h_over_z0 as thickness-sensitive structural proxies.",
+    "preferred_name is chosen from AName, NED, then Name.",
+    "catalog_name_normalized attempts to map aliases into SPARC-like galaxy identifiers."
+  ]
+}
