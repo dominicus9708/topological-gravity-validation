@@ -23,6 +23,117 @@ C:.
 |   |   +---crossmatch
 |   |   |   |   README.md
 |   |   |   |   
+|   |   |   +---crossmatched
+|   |   |   |   \---20260326_201637_topostructure_v8_5
+|   |   |   |       |   aggregate_metrics_v8_5.json
+|   |   |   |       |   run_config.json
+|   |   |   |       |   topostructure_summary_v8_5.csv
+|   |   |   |       |   
+|   |   |   |       +---merged
+|   |   |   |       |       merged_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       merged_segment_topostructure_v8_5.csv
+|   |   |   |       |       merged_summary_topostructure_v8_5.csv
+|   |   |   |       |       
+|   |   |   |       +---per_galaxy
+|   |   |   |       |       DDO168_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       DDO168_segment_structure_v8_5.csv
+|   |   |   |       |       ESO563-G021_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       ESO563-G021_segment_structure_v8_5.csv
+|   |   |   |       |       IC4202_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       IC4202_segment_structure_v8_5.csv
+|   |   |   |       |       NGC0100_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC0100_segment_structure_v8_5.csv
+|   |   |   |       |       NGC2403_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC2403_segment_structure_v8_5.csv
+|   |   |   |       |       NGC2683_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC2683_segment_structure_v8_5.csv
+|   |   |   |       |       NGC2841_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC2841_segment_structure_v8_5.csv
+|   |   |   |       |       NGC2998_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC2998_segment_structure_v8_5.csv
+|   |   |   |       |       NGC3198_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC3198_segment_structure_v8_5.csv
+|   |   |   |       |       NGC3769_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC3769_segment_structure_v8_5.csv
+|   |   |   |       |       NGC3917_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC3917_segment_structure_v8_5.csv
+|   |   |   |       |       NGC4010_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC4010_segment_structure_v8_5.csv
+|   |   |   |       |       NGC4013_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC4013_segment_structure_v8_5.csv
+|   |   |   |       |       NGC4068_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC4068_segment_structure_v8_5.csv
+|   |   |   |       |       NGC4088_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC4088_segment_structure_v8_5.csv
+|   |   |   |       |       NGC4157_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC4157_segment_structure_v8_5.csv
+|   |   |   |       |       NGC4183_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC4183_segment_structure_v8_5.csv
+|   |   |   |       |       NGC4389_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC4389_segment_structure_v8_5.csv
+|   |   |   |       |       NGC5907_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC5907_segment_structure_v8_5.csv
+|   |   |   |       |       NGC5985_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       NGC5985_segment_structure_v8_5.csv
+|   |   |   |       |       UGC01281_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC01281_segment_structure_v8_5.csv
+|   |   |   |       |       UGC04278_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC04278_segment_structure_v8_5.csv
+|   |   |   |       |       UGC05721_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC05721_segment_structure_v8_5.csv
+|   |   |   |       |       UGC05750_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC05750_segment_structure_v8_5.csv
+|   |   |   |       |       UGC05986_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC05986_segment_structure_v8_5.csv
+|   |   |   |       |       UGC06667_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC06667_segment_structure_v8_5.csv
+|   |   |   |       |       UGC06917_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC06917_segment_structure_v8_5.csv
+|   |   |   |       |       UGC07089_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC07089_segment_structure_v8_5.csv
+|   |   |   |       |       UGC08490_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC08490_segment_structure_v8_5.csv
+|   |   |   |       |       UGC08837_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC08837_segment_structure_v8_5.csv
+|   |   |   |       |       UGC12506_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGC12506_segment_structure_v8_5.csv
+|   |   |   |       |       UGCA281_pointwise_topostructure_v8_5.csv
+|   |   |   |       |       UGCA281_segment_structure_v8_5.csv
+|   |   |   |       |       
+|   |   |   |       \---plots
+|   |   |   |               DDO168_topostructure_v8_5.png
+|   |   |   |               ESO563-G021_topostructure_v8_5.png
+|   |   |   |               IC4202_topostructure_v8_5.png
+|   |   |   |               NGC0100_topostructure_v8_5.png
+|   |   |   |               NGC2403_topostructure_v8_5.png
+|   |   |   |               NGC2683_topostructure_v8_5.png
+|   |   |   |               NGC2841_topostructure_v8_5.png
+|   |   |   |               NGC2998_topostructure_v8_5.png
+|   |   |   |               NGC3198_topostructure_v8_5.png
+|   |   |   |               NGC3769_topostructure_v8_5.png
+|   |   |   |               NGC3917_topostructure_v8_5.png
+|   |   |   |               NGC4010_topostructure_v8_5.png
+|   |   |   |               NGC4013_topostructure_v8_5.png
+|   |   |   |               NGC4068_topostructure_v8_5.png
+|   |   |   |               NGC4088_topostructure_v8_5.png
+|   |   |   |               NGC4157_topostructure_v8_5.png
+|   |   |   |               NGC4183_topostructure_v8_5.png
+|   |   |   |               NGC4389_topostructure_v8_5.png
+|   |   |   |               NGC5907_topostructure_v8_5.png
+|   |   |   |               NGC5985_topostructure_v8_5.png
+|   |   |   |               UGC01281_topostructure_v8_5.png
+|   |   |   |               UGC04278_topostructure_v8_5.png
+|   |   |   |               UGC05721_topostructure_v8_5.png
+|   |   |   |               UGC05750_topostructure_v8_5.png
+|   |   |   |               UGC05986_topostructure_v8_5.png
+|   |   |   |               UGC06667_topostructure_v8_5.png
+|   |   |   |               UGC06917_topostructure_v8_5.png
+|   |   |   |               UGC07089_topostructure_v8_5.png
+|   |   |   |               UGC08490_topostructure_v8_5.png
+|   |   |   |               UGC08837_topostructure_v8_5.png
+|   |   |   |               UGC12506_topostructure_v8_5.png
+|   |   |   |               UGCA281_topostructure_v8_5.png
+|   |   |   |               
 |   |   |   +---diagnostic_match_inputs
 |   |   |   |       catalog_overlap_detail.csv
 |   |   |   |       diagnostic_report.txt
@@ -17297,6 +17408,8 @@ C:.
     +---crossmatch
     |   |   build_structure_test32_dataset.py
     |   |   convert_edge_on_candidate_catalogs.py
+    |   |   galaxy_rotation_topostructure_pipeline_v8_5_formula_revised_softprop.py
+    |   |   galaxy_rotation_topostructure_pipeline_v8_5_wedge_volume.py
     |   |   run_sparc_structure_test32_topological_rotation_batch.py
     |   |   
     |   +---Bizyaev
