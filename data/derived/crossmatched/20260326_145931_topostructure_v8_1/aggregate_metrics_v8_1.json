@@ -1,0 +1,14 @@
+{
+  "galaxies_processed": 32,
+  "mean_rmse_vis_only_kms": 37.156493522124855,
+  "mean_rmse_topo_kms": 84.67491471392357,
+  "mean_rmse_improvement_kms": -47.518421191798716,
+  "median_rmse_improvement_kms": -44.62883743622877,
+  "mean_mae_vis_only_kms": 32.856437432281865,
+  "mean_mae_topo_kms": 75.38318818825701,
+  "mean_Dw_i": 2.036296051530718,
+  "mean_beta_i": 0.9568385649968032,
+  "mean_delta_sigma_i": 0.014904294091587899,
+  "mean_delta_m_struct_msun": 72698261100.89883,
+  "mean_v_struct_kms": 146.84163199743028
+}

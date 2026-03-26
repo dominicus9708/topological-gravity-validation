@@ -1,0 +1,8 @@
+SPARC Structure Test32 Batch Run
+========================================
+input_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\crossmatch\sparc_structure_test32\per_galaxy
+output_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\crossmatched\20260326_152823
+structural_mass_scale: 1.0
+total_files: 32
+ok_count: 31
+fail_count: 1

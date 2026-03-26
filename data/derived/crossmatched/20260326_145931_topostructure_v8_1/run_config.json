@@ -1,0 +1,17 @@
+{
+  "config": {
+    "segment_count": 5,
+    "min_points_per_segment": 4,
+    "h_fallback_kpc": 0.35,
+    "flare_alpha": 0.0,
+    "dpi": 160,
+    "c_struct_msun_per_kpc3": 100000000.0
+  },
+  "input_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "output_root": "data\\derived",
+  "glob": "*.csv",
+  "thickness_csv": null,
+  "galaxy_filter": null,
+  "tag": "topostructure_v8_1",
+  "model_note": "V8.1 keeps the user's Dw and beta test model, but uses shell geometry and a structural mass scale to form DeltaM_struct with physical mass dimension."
+}
