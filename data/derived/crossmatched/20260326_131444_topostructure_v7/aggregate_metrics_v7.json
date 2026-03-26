@@ -1,0 +1,13 @@
+{
+  "galaxies_processed": 32,
+  "mean_rmse_bar_only_kms": 37.10329981916384,
+  "mean_rmse_desc_kms": 36.69855381190974,
+  "mean_rmse_improvement_kms": 0.4047460072540943,
+  "median_rmse_improvement_kms": 0.2004266313898153,
+  "mean_mae_bar_only_kms": 32.77631034351904,
+  "mean_mae_desc_kms": 32.33501862440795,
+  "mean_d_gal_mean": 2.6043612099529247,
+  "mean_beta_i": 1.3674109558746061,
+  "mean_delta_d_eff_i": 0.49581844090006294,
+  "mean_g_trans": 23.52600051615684
+}

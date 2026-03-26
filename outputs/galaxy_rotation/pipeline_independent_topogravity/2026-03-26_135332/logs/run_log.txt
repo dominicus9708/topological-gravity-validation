@@ -1,0 +1,7 @@
+run_root: C:\Users\mincu\Desktop\topological_gravity_project\outputs\galaxy_rotation\pipeline_independent_topogravity\2026-03-26_135332
+data_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\processed\sparc_normalized_beta_abar
+g_scale: 300.0
+lambda_reorg: 0.0
+l0_kpc: 1.0
+summary_csv: C:\Users\mincu\Desktop\topological_gravity_project\outputs\galaxy_rotation\pipeline_independent_topogravity\2026-03-26_135332\summaries\rotation_pipeline_summary_independent_topogravity.csv
+metadata_json: C:\Users\mincu\Desktop\topological_gravity_project\outputs\galaxy_rotation\pipeline_independent_topogravity\2026-03-26_135332\metadata\run_metadata.json

@@ -1,0 +1,31 @@
+{
+  "config": {
+    "d_bg": 3.0,
+    "a": 0.12,
+    "rho0_msun_per_kpc3": 100000000.0,
+    "beta0": 0.85,
+    "eta": 0.0,
+    "psi_mode": "exp",
+    "psi_r0_kpc": 5.0,
+    "psi_m": 0.5,
+    "min_inside_sqrt": 1e-06,
+    "flare_alpha": 0.0,
+    "segment_count": 5,
+    "min_points_per_segment": 4,
+    "h_fallback_kpc": 0.35,
+    "beta_mode": "constant",
+    "lambda_sigma": 1.2,
+    "h_ref_kpc": 0.35,
+    "omega_density_power": 1.0,
+    "omega_thickness_power": 1.0,
+    "omega_radial_power": 0.0
+  },
+  "input_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "output_root": "data\\derived",
+  "glob": "*.csv",
+  "thickness_csv": null,
+  "galaxy_filter": null,
+  "tag": "topostructure_v4",
+  "dpi": 160,
+  "model_note": "V4 inserts a describability transform layer between internal baryonic proxy and external model velocity."
+}

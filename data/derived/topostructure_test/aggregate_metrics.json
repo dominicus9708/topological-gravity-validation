@@ -1,0 +1,10 @@
+{
+  "galaxies_processed": 32,
+  "mean_rmse_bar_only_kms": 37.10329981916384,
+  "mean_rmse_topo_kms": 40.12748017989526,
+  "mean_rmse_improvement_kms": -3.0241803607314117,
+  "median_rmse_improvement_kms": -1.8268410808812874,
+  "mean_mae_bar_only_kms": 32.776310343519036,
+  "mean_mae_topo_kms": 35.378281886417795,
+  "mean_d_gal_mean": 3.1445199427804367
+}
