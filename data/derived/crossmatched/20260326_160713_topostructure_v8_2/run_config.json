@@ -1,0 +1,22 @@
+{
+  "config": {
+    "segment_count": 5,
+    "min_points_per_segment": 4,
+    "h_fallback_kpc": 0.35,
+    "flare_alpha": 0.0,
+    "dpi": 160,
+    "g_topo_factor": 4.30091e-06,
+    "source_mode": "sigma",
+    "source_power": 2.0,
+    "hybrid_weight_sigma": 1.0,
+    "hybrid_weight_dw": 1.0,
+    "attenuation_lambda": 0.0
+  },
+  "input_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "output_root": "data\\derived",
+  "glob": "*.csv",
+  "thickness_csv": null,
+  "galaxy_filter": null,
+  "tag": "topostructure_v8_2",
+  "model_note": "V8.2 preserves informational gravity interpretation and uses perturbation-based source (default sigma^p * beta) instead of Dw^2 * beta."
+}

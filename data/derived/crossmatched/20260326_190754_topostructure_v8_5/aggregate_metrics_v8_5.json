@@ -1,0 +1,8 @@
+{
+  "galaxies_processed": 32,
+  "mean_gamma_topo": 662716.9955909573,
+  "median_gamma_topo": 739554.7012041702,
+  "mean_rmse_improvement_kms": -184.88480728323646,
+  "median_rmse_improvement_kms": -143.9626928500593,
+  "mean_v_struct_kms": 266.81157248688044
+}

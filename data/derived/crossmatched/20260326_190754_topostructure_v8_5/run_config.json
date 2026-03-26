@@ -1,0 +1,32 @@
+{
+  "config": {
+    "segment_count": 5,
+    "min_points_per_segment": 4,
+    "h_fallback_kpc": 0.35,
+    "flare_alpha": 0.0,
+    "dpi": 160,
+    "source_mode": "dynamic_structural",
+    "hybrid_weight_sigma": 1.0,
+    "hybrid_weight_dw": 1.0,
+    "attenuation_lambda": 0.0,
+    "gamma0": 10000.0,
+    "gamma_mode": "structural_product",
+    "dw_ref": 0.03,
+    "sigma_ref": 0.01,
+    "rscale_ref": 2.5,
+    "beta_ref": 0.95,
+    "gamma_exp_dw": 1.0,
+    "gamma_exp_sigma": 1.0,
+    "gamma_exp_rscale": 1.0,
+    "gamma_exp_beta": 0.0,
+    "gamma_min": 1e-06,
+    "gamma_max": 1000000.0
+  },
+  "input_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "output_root": "data\\derived",
+  "glob": "*.csv",
+  "thickness_csv": null,
+  "galaxy_filter": null,
+  "tag": "topostructure_v8_5",
+  "model_note": "V8.5 formula-revised: input/output preserved, while Dw, sigma, dynamic structural coupling, and observer-gap-weighted Gamma_topo were updated."
+}

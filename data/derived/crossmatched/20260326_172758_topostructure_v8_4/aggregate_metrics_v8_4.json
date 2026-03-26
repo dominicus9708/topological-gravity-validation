@@ -1,0 +1,12 @@
+{
+  "galaxies_processed": 32,
+  "mean_best_rmse_improvement_kms": 3.3884545037197515,
+  "median_best_rmse_improvement_kms": 0.2998357074139415,
+  "mean_best_gamma_topo": 159712.50000025,
+  "unique_best_gamma_values": [
+    1e-06,
+    100.0,
+    10000.0,
+    1000000.0
+  ]
+}
