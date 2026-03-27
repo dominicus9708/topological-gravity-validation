@@ -1,0 +1,37 @@
+{
+  "config": {
+    "segment_count": 5,
+    "min_points_per_segment": 4,
+    "h_fallback_kpc": 0.35,
+    "dpi": 160,
+    "r_ref_kpc": 0.25,
+    "rho_ref_floor_msun_per_kpc3": 1000000.0,
+    "w_geom": 1.0,
+    "w_dens": 1.0,
+    "dw_min": 2.0,
+    "dw_max": 3.5,
+    "dw_smoothing_window": 3,
+    "c_info": 1.0,
+    "tau_struct": 2.0,
+    "ell_min_factor": 1.0,
+    "ell_max_fraction_of_rmax": 0.6,
+    "propagation_source_power": 1.0,
+    "delta_floor": 0.0,
+    "delta_ceiling": 1.0,
+    "delta_p0_scale": 1.0,
+    "tag_name": "describability_gap_v7"
+  },
+  "input_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "output_root": "data\\derived\\crossmatched",
+  "glob": "*.csv",
+  "galaxy_filter": null,
+  "tag": "describability_gap_v7",
+  "model_note": "Occam-style v7: baryonic Newton baseline plus effective structural dimension Dw, smoothed radial derivative |dDw/dr| as the structural rearrangement source, outward cumulative propagation P, and a saturating propagation-to-gap map.",
+  "minimal_story": {
+    "Dw_i": "effective structural dimension per segment",
+    "Dw_smooth_i": "smoothed structural profile",
+    "dDw_dr_i": "continuous radial structural change used as rearrangement source",
+    "P_i": "outward cumulative attenuated sum of |dDw/dr| source from inner shells",
+    "DeltaD_i": "saturating function of P_i only"
+  }
+}
