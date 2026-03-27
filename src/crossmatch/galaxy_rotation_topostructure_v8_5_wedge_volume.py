@@ -102,8 +102,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--input-dir", required=True, help="Directory containing per-galaxy enriched CSV files.")
     parser.add_argument(
         "--output-root",
-        default=r"data\derived",
-        help="Root directory under which crossmatched/<timestamp_tag>/ will be created. Default: data\\derived",
+        default=r"data\derived\crossmatched",
+        help="Root directory under which <timestamp_tag>/ will be created. Default: data\\derived\\crossmatched",
     )
     parser.add_argument("--thickness-csv", default=None, help="Optional metadata CSV with columns galaxy,h0_kpc[,flare_alpha].")
     parser.add_argument("--glob", default="*.csv", help="Input file glob pattern. Default: *.csv")
@@ -627,9 +627,9 @@ def evaluate_with_gamma(seg_table_base: pd.DataFrame, gamma: float, factors: Dic
             "I_struct_i",
             "gamma_topo",
             "alpha_geom_i",
-            "alpha_mass_i",
+            "alpha_density_i",
             "weight_geom_i",
-            "weight_mass_i",
+            "weight_density_i",
             "mass_bar_segment_msun",
             "mass_norm_i",
             "alpha_relax_i",
@@ -748,7 +748,7 @@ def write_run_metadata(run_dir: Path, config: ModelConfig, args: argparse.Namesp
         "thickness_csv": args.thickness_csv,
         "galaxy_filter": args.galaxy_filter,
         "tag": args.tag,
-        "model_note": "V8.5 formula-revised: input/output preserved, while Dw, sigma, dynamic structural coupling, and observer-gap-weighted Gamma_topo were updated.",
+        "model_note": "V8.5 wedge-volume variant for src\crossmatch: angle factor treated as a common constant, Dw uses effective 3D wedge volume, and output_root is used directly without auto-appending extra folders.",
     }
     (run_dir / "run_config.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -759,7 +759,7 @@ def main() -> None:
     input_dir = Path(args.input_dir)
     output_root = Path(args.output_root)
     run_name = timestamp_label() if not args.tag else f"{timestamp_label()}_{args.tag}"
-    run_dir = output_root / "crossmatched" / run_name
+    run_dir = output_root / run_name
     per_galaxy_dir = run_dir / "per_galaxy"
     merged_dir = run_dir / "merged"
     plots_dir = run_dir / "plots"

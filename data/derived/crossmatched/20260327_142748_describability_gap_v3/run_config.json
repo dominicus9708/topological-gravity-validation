@@ -1,0 +1,42 @@
+{
+  "config": {
+    "segment_count": 5,
+    "min_points_per_segment": 4,
+    "h_fallback_kpc": 0.35,
+    "dpi": 160,
+    "r_ref_kpc": 0.25,
+    "rho_ref_floor_msun_per_kpc3": 1000000.0,
+    "w_geom": 1.0,
+    "w_dens": 1.0,
+    "dw_min": 2.0,
+    "dw_max": 3.5,
+    "kappa_dyn": 1.0,
+    "D_star": 2.5,
+    "c_info": 1.0,
+    "tau_struct": 2.0,
+    "ell_min_factor": 1.0,
+    "ell_max_fraction_of_rmax": 0.6,
+    "eta_floor": 0.3,
+    "eta_ceiling": 0.98,
+    "eta_sigma_weight": 0.3,
+    "eta_dw_weight": 0.25,
+    "eta_density_weight": 0.25,
+    "eta_flow_weight": 0.2,
+    "eta_transition_sharpness": 5.0,
+    "eta_center": 0.55,
+    "tag_name": "describability_gap_v3"
+  },
+  "input_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "output_root": "data\\derived\\crossmatched",
+  "glob": "*.csv",
+  "galaxy_filter": null,
+  "tag": "describability_gap_v3",
+  "model_note": "Baryonic Newton baseline preserved. External describability is derived from absolute structural-state quantities, not from an explicit radius baseline. eta_obs_i is induced from sigma_i, |Dw_i-D_star|, effective density, and internal structural flow strength.",
+  "derived_projection": {
+    "eta_sigma_term_i": "minmax(sigma_i)",
+    "eta_dw_term_i": "minmax(|Dw_i - D_star|)",
+    "eta_density_term_i": "minmax(log(1 + rho_eff_i))",
+    "eta_flow_term_i": "minmax(log(1 + |I_int_i|))",
+    "eta_obs_i": "eta_floor + (eta_ceiling - eta_floor) * logistic(weighted_sum - eta_center)"
+  }
+}

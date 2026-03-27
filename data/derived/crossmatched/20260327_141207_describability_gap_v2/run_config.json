@@ -1,0 +1,40 @@
+{
+  "config": {
+    "segment_count": 5,
+    "min_points_per_segment": 4,
+    "h_fallback_kpc": 0.35,
+    "flare_alpha": 0.0,
+    "dpi": 160,
+    "r_ref_kpc": 0.25,
+    "rho_ref_floor_msun_per_kpc3": 1000000.0,
+    "w_geom": 1.0,
+    "w_dens": 1.0,
+    "dw_min": 2.0,
+    "dw_max": 3.5,
+    "kappa_dyn": 1.0,
+    "D_star": 2.5,
+    "c_info": 1.0,
+    "tau_struct": 2.0,
+    "ell_min_factor": 1.0,
+    "ell_max_fraction_of_rmax": 0.6,
+    "eta_floor": 0.35,
+    "eta_ceiling": 0.98,
+    "eta_radius_weight": 0.55,
+    "eta_sigma_weight": 0.3,
+    "eta_dw_weight": 0.15,
+    "eta_transition_sharpness": 4.0,
+    "tag_name": "describability_gap_v2"
+  },
+  "input_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "output_root": "data\\derived\\crossmatched",
+  "glob": "*.csv",
+  "galaxy_filter": null,
+  "tag": "describability_gap_v2",
+  "model_note": "Baryonic Newton baseline preserved. External describability is derived, not imposed as a constant scale factor: eta_obs_i is induced from radius, local structural deviation sigma_i, and distance from D_star.",
+  "derived_projection": {
+    "eta_radius_term_i": "exp(-r_mid / median_positive_r_mid)",
+    "eta_sigma_term_i": "sigma_i / (sigma_i + median_positive_sigma)",
+    "eta_dw_term_i": "|Dw_i - D_star| / (dw_max - dw_min)",
+    "eta_obs_i": "eta_floor + (eta_ceiling - eta_floor) * logistic(weighted_sum - 0.5)"
+  }
+}
