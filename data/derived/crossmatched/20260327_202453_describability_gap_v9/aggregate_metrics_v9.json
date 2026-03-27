@@ -1,0 +1,9 @@
+{
+  "n_success": 29,
+  "n_failed": 3,
+  "mean_M_gal": 0.1273102239395805,
+  "mean_R_gal": 0.17152441533673446,
+  "mean_state_term_i": 0.47192812515805316,
+  "mean_history_term_mean": 0.3872798061530827,
+  "mean_causal_horizon_kpc": 5.185862068965518
+}

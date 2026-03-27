@@ -1,0 +1,9 @@
+{
+  "n_success": 29,
+  "n_failed": 3,
+  "mean_M_gal": 0.10655913020481998,
+  "mean_R_gal": -0.19494745515243092,
+  "mean_propagation_term_mean": 0.09192824285170384,
+  "mean_abs_dDw_dr_i": 0.01739137242803342,
+  "mean_causal_horizon_kpc": 5.185862068965518
+}

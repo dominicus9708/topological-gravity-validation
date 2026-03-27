@@ -1,0 +1,40 @@
+{
+  "config": {
+    "segment_count": 5,
+    "min_points_per_segment": 4,
+    "h_fallback_kpc": 0.35,
+    "dpi": 160,
+    "r_ref_kpc": 0.25,
+    "rho_ref_floor_msun_per_kpc3": 1000000.0,
+    "w_geom": 1.0,
+    "w_dens": 1.0,
+    "dw_min": 2.0,
+    "dw_max": 3.5,
+    "dw_smoothing_window": 3,
+    "c_info": 1.0,
+    "tau_struct": 2.0,
+    "ell_decay_factor": 1.0,
+    "ell_min_factor": 1.0,
+    "ell_max_fraction_of_rmax": 0.6,
+    "propagation_source_power": 1.0,
+    "causal_taper_width_fraction": 0.15,
+    "delta_floor": 0.0,
+    "delta_ceiling": 1.0,
+    "delta_p0_scale": 1.0,
+    "tag_name": "describability_gap_v8"
+  },
+  "input_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "output_root": "data\\derived\\crossmatched",
+  "glob": "*.csv",
+  "galaxy_filter": null,
+  "tag": "describability_gap_v8",
+  "model_note": "v8 adds explicit finite-speed causality to the derivative-driven propagation model. Rearrangement influence propagates outward only within a causal horizon c_info * tau_struct, with smooth taper and exponential decay.",
+  "minimal_story": {
+    "Dw_i": "effective structural dimension per segment",
+    "Dw_smooth_i": "smoothed structural profile",
+    "dDw_dr_i": "continuous radial structural change used as rearrangement source",
+    "causal_horizon_kpc": "c_info * tau_struct (minimum-adjusted)",
+    "P_i": "outward cumulative attenuated sum of source from inner shells inside causal horizon",
+    "DeltaD_i": "saturating function of P_i only"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "config": {
+    "segment_count": 5,
+    "min_points_per_segment": 4,
+    "h_fallback_kpc": 0.35,
+    "dpi": 160,
+    "r_ref_kpc": 0.25,
+    "rho_ref_floor_msun_per_kpc3": 1000000.0,
+    "w_geom": 1.0,
+    "w_dens": 1.0,
+    "dw_min": 2.0,
+    "dw_max": 3.5,
+    "D_star": 2.5,
+    "state_scale_factor": 1.0,
+    "dw_smoothing_window": 3,
+    "grad_scale_factor": 1.0,
+    "c_info": 1.0,
+    "tau_struct": 2.0,
+    "ell_decay_factor": 1.0,
+    "ell_min_factor": 1.0,
+    "ell_max_fraction_of_rmax": 0.6,
+    "causal_taper_width_fraction": 0.15,
+    "state_weight": 0.6,
+    "delta_floor": 0.0,
+    "delta_ceiling": 1.0,
+    "delta_p0_scale": 1.0,
+    "tag_name": "describability_gap_v9"
+  },
+  "input_dir": "data\\derived\\crossmatch\\sparc_structure_test32\\per_galaxy",
+  "output_root": "data\\derived\\crossmatched",
+  "glob": "*.csv",
+  "galaxy_filter": null,
+  "tag": "describability_gap_v9",
+  "model_note": "v9 integrates the v3 state axis and the v8 history axis. Describability loss is modeled as a minimal weighted combination of present structural state (distance from D_star) and causally accumulated rearrangement history from smoothed dDw/dr.",
+  "minimal_story": {
+    "D = D_bg + delta_D_gal": "galaxy as local structural deviation over a background field",
+    "state_term_i": "present local structural state based on |Dw_i - D_star|",
+    "history_source_i": "rearrangement source from smoothed radial gradient of Dw",
+    "history_term_i": "causally accumulated outward history term",
+    "DeltaD_i": "weighted combination of state axis and history axis"
+  }
+}
