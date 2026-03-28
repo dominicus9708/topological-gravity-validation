@@ -1,0 +1,28 @@
+{
+  "pipeline_name": "V838 Mon Light Echo Pipeline (updated)",
+  "created_at": "2026-03-29T02:29:24.012994",
+  "input_dir": "data\\derived\\Echo of Light\\input",
+  "results_dir": "results\\Echo of Light\\output\\20260329_022924",
+  "input_files": {
+    "verified_csv": "v838mon_measurements_verified.csv",
+    "all_csv": "v838mon_model_input_all.csv",
+    "tylenda_csv": "v838mon_model_input_tylenda.csv",
+    "crause_csv": "v838mon_model_input_crause.csv"
+  },
+  "row_counts": {
+    "measurements_verified": 17,
+    "model_input_all": 17,
+    "model_input_tylenda": 5,
+    "model_input_crause": 12
+  },
+  "dataset_counts_in_verified": {
+    "Crause_Table4": 12,
+    "Tylenda_Table1": 5
+  },
+  "notes": [
+    "This version matches the actual files currently listed in data/derived/Echo of Light/input.",
+    "It does not expect V838Mon_sources.csv or V838Mon_epochs.csv in the input folder.",
+    "It preserves verified and model-input tables as separate outputs.",
+    "Tylenda and Crause time conventions remain intentionally separated."
+  ]
+}

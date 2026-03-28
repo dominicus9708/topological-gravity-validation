@@ -1,0 +1,7 @@
+﻿epoch_id,observation_date,exposure_date,page_release_year,source_page_or_program,image_file,image_available,status,notes
+E-2002-05,2002-05-20,2002-05-20,,STScI/NASA epoch image,V838 Monocerotis 2002 05.jpg,yes,processed,Seen in uploaded montage and individual image; use exposure_date as the true observation date.
+E-2002-09,2002-09-02,2002-09-02,,STScI/NASA epoch image,V838 Monocerotis 2002 09.jpeg,yes,processed,Seen in uploaded montage and individual image.
+E-2002-10,2002-10-28,2002-10-28,,STScI/NASA montage only,,no_individual_file,processed,"Present in uploaded montage PDF, but no separate individual file uploaded in this chat."
+E-2002-12,2002-12-17,2002-12-17,,STScI/NASA epoch image,V838 Monocerotis 2002 12.jpeg,yes,processed,Seen in uploaded montage and individual image.
+E-2004-02,2004-02-08,2004-02-08,,STScI/NASA montage only,,no_individual_file,processed,"Present in uploaded montage PDF, but no separate individual file uploaded in this chat."
+E-2004-10,2004-10-24,2004-10-24,2004,STScI / HST program 10392,V838 Monocerotis 2004 10.jpeg,yes,processed,Individual image uploaded; page release year can differ from the true exposure date.

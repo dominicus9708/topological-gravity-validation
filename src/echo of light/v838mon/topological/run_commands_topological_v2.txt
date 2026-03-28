@@ -1,0 +1,22 @@
+Topological v2 command examples
+===============================
+
+1) Run with default folders and default parameters
+
+python "src/echo of light/v838mon/topological/v838mon_topological_pipeline_v2.py"
+
+2) Run with explicit folders
+
+python "src/echo of light/v838mon/topological/v838mon_topological_pipeline_v2.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --output-root "results/Echo of Light/output/V838Mon/topological"
+
+3) Run with explicit trial parameters
+
+python "src/echo of light/v838mon/topological/v838mon_topological_pipeline_v2.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --output-root "results/Echo of Light/output/V838Mon/topological" ^
+  --beta-sigma 1.0 ^
+  --beta-dsigma 0.25 ^
+  --gamma-sigma 0.25 ^
+  --gamma-dsigma 0.10

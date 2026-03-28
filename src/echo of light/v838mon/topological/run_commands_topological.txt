@@ -1,0 +1,32 @@
+Topological pipeline command examples
+====================================
+
+1) Run with the default folders and default trial parameters
+
+python "src/echo of light/v838mon/topological/v838mon_topological_pipeline.py"
+
+2) Run with explicit input and output
+
+python "src/echo of light/v838mon/topological/v838mon_topological_pipeline.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --output-root "results/Echo of Light/output/V838Mon/topological"
+
+3) Run with explicit trial parameters
+
+python "src/echo of light/v838mon/topological/v838mon_topological_pipeline.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --output-root "results/Echo of Light/output/V838Mon/topological" ^
+  --beta-sigma 1.0 ^
+  --beta-dsigma 0.0 ^
+  --gamma-sigma 0.25 ^
+  --gamma-dsigma 0.0
+
+4) Run with explicit file names too
+
+python "src/echo of light/v838mon/topological/v838mon_topological_pipeline.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --output-root "results/Echo of Light/output/V838Mon/topological" ^
+  --verified-csv "v838mon_measurements_verified.csv" ^
+  --all-csv "v838mon_model_input_all.csv" ^
+  --tylenda-csv "v838mon_model_input_tylenda.csv" ^
+  --crause-csv "v838mon_model_input_crause.csv"

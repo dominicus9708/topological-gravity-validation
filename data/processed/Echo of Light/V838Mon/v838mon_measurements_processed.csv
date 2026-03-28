@@ -1,0 +1,18 @@
+﻿dataset,observation_date,time_value,time_reference,radius_arcsec,ra_offset_arcsec,dec_offset_arcsec,x_center_arcsec,y_center_arcsec,source_table,source_id,manual_verification_status,notes
+Tylenda_Table1,2002-04-30,120.0,t in days since 2002-01-01 per paper,18.55,,,-0.84,0.46,Outer edge circle fit results,SRC-01,seed_verified_pending,Outer edge circle fit results
+Tylenda_Table1,2002-05-20,140.0,t in days since 2002-01-01 per paper,20.89,,,-1.12,0.51,Outer edge circle fit results,SRC-01,seed_verified_pending,Outer edge circle fit results
+Tylenda_Table1,2002-09-02,245.0,t in days since 2002-01-01 per paper,30.32,,,-2.27,0.37,Outer edge circle fit results,SRC-01,seed_verified_pending,Outer edge circle fit results
+Tylenda_Table1,2002-10-28,301.0,t in days since 2002-01-01 per paper,33.68,,,-2.36,1.11,Outer edge circle fit results,SRC-01,seed_verified_pending,Outer edge circle fit results
+Tylenda_Table1,2002-12-17,351.0,t in days since 2002-01-01 per paper,36.66,,,-2.61,1.58,Outer edge circle fit results,SRC-01,seed_verified_pending,Outer edge circle fit results
+Crause_Table4,2002-05-01,85,time since 2002-02-05 peak per paper,19.5,-1,1,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2002-06-02,117,time since 2002-02-05 peak per paper,21.4,0,0,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2002-09-16,223,time since 2002-02-05 peak per paper,31.9,-2,0,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2002-10-31,268,time since 2002-02-05 peak per paper,34.1,-2,2,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2003-01-26,355,time since 2002-02-05 peak per paper,39.4,-3,2,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2003-04-19,438,time since 2002-02-05 peak per paper,44.3,-4,3,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2003-05-21,470,time since 2002-02-05 peak per paper,46.5,-5,3,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2003-09-12,584,time since 2002-02-05 peak per paper,51.8,-6,3,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2003-11-03,636,time since 2002-02-05 peak per paper,53.9,-7,3,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2004-03-24,778,time since 2002-02-05 peak per paper,58.6,-7,5,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2004-05-07,822,time since 2002-02-05 peak per paper,61.4,-8,7,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets
+Crause_Table4,2004-12-11,1040,time since 2002-02-05 peak per paper,70.1,-10,9,,,Measured light echo radius and center offsets,SRC-02,seed_verified_pending,Measured light echo radius and center offsets

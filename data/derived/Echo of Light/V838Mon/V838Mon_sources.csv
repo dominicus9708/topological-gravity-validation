@@ -1,0 +1,6 @@
+﻿id,category,title,role,year,local_file,source_summary
+SRC-01,paper,On the light echo in V838 Mon,core theory / echo geometry / slab-shell model,2003,On the light echo in V838 Mon.pdf,"Defines ellipsoid/paraboloid echo geometry, apparent superluminal expansion, and analyzes HST outer rim plus center migration."
+SRC-02,paper,V838 Mon: light echo evolution and distance estimate,core measurements / radius-offset table / sheet-shell fit,2005,V838 Mon light echo evolution and distance estimate.pdf,"Provides multi-epoch measurements, fitted light-echo radius, center offsets, and sheet-vs-shell comparison."
+SRC-03,paper,Hubble Space Telescope Observations of the Light Echoes around V838 Monocerotis,HST overview / 3D dust mapping context,2004,Hubble Space Telescope Observations of the Light Echoes.pdf,Summarizes 5 HST observations in 2002 and the paraboloid-based 3D dust mapping interpretation.
+SRC-04,image,The Expanding Light Echo of Red Supergiant Star V838 Monocerotis,visual epoch montage,n/a,The Expanding Light Echo of Red Supergiant Star V838 Monocerotis.pdf,Single-page visual montage containing multiple V838 Mon observation epochs.
+SRC-05,video,STScI-01EVSMD4M4R616FG5FED5PW7WS.mp4,visual reference,n/a,STScI-01EVSMD4M4R616FG5FED5PW7WS.mp4,"Video asset from STScI/NASA source, kept as raw visual reference."

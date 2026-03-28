@@ -1,0 +1,22 @@
+Updated command examples
+========================
+
+1) Run with the actual current project defaults
+
+python "src/echo of light/v838mon/v838mon_echo_pipeline_updated.py"
+
+2) Run with explicit folders
+
+python "src/echo of light/v838mon/v838mon_echo_pipeline_updated.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --results-root "results/Echo of Light/output"
+
+3) Run with explicit file names
+
+python "src/echo of light/v838mon/v838mon_echo_pipeline_updated.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --results-root "results/Echo of Light/output" ^
+  --verified-csv "v838mon_measurements_verified.csv" ^
+  --all-csv "v838mon_model_input_all.csv" ^
+  --tylenda-csv "v838mon_model_input_tylenda.csv" ^
+  --crause-csv "v838mon_model_input_crause.csv"

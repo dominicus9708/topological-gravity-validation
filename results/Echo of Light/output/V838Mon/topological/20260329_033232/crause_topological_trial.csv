@@ -1,0 +1,13 @@
+﻿dataset,observation_date,time_value,time_reference,radius_arcsec,ra_offset_arcsec,dec_offset_arcsec,x_center_arcsec,y_center_arcsec,source_id,sigma_proxy,dsigma_dt_proxy,topological_radius_adjustment,radius_arcsec_topological_trial,topological_center_adjustment,ra_offset_arcsec_topological_trial,dec_offset_arcsec_topological_trial
+Crause,2002-05-01,85.0,time since 2002-02-05 peak per paper,19.5,-1.0,1.0,,,SRC-02,0.0,0.0,0.0,19.5,0.0,-1.0,1.0
+Crause,2002-06-02,117.0,time since 2002-02-05 peak per paper,21.4,0.0,0.0,,,SRC-02,0.0,0.0,0.0,21.4,0.0,0.0,0.0
+Crause,2002-09-16,223.0,time since 2002-02-05 peak per paper,31.9,-2.0,0.0,,,SRC-02,0.0,0.0,0.0,31.9,0.0,-2.0,0.0
+Crause,2002-10-31,268.0,time since 2002-02-05 peak per paper,34.1,-2.0,2.0,,,SRC-02,0.0,0.0,0.0,34.1,0.0,-2.0,2.0
+Crause,2003-01-26,355.0,time since 2002-02-05 peak per paper,39.4,-3.0,2.0,,,SRC-02,0.0,0.0,0.0,39.4,0.0,-3.0,2.0
+Crause,2003-04-19,438.0,time since 2002-02-05 peak per paper,44.3,-4.0,3.0,,,SRC-02,0.0,0.0,0.0,44.3,0.0,-4.0,3.0
+Crause,2003-05-21,470.0,time since 2002-02-05 peak per paper,46.5,-5.0,3.0,,,SRC-02,0.0,0.0,0.0,46.5,0.0,-5.0,3.0
+Crause,2003-09-12,584.0,time since 2002-02-05 peak per paper,51.8,-6.0,3.0,,,SRC-02,0.0,0.0,0.0,51.8,0.0,-6.0,3.0
+Crause,2003-11-03,636.0,time since 2002-02-05 peak per paper,53.9,-7.0,3.0,,,SRC-02,0.0,0.0,0.0,53.9,0.0,-7.0,3.0
+Crause,2004-03-24,778.0,time since 2002-02-05 peak per paper,58.6,-7.0,5.0,,,SRC-02,0.0,0.0,0.0,58.6,0.0,-7.0,5.0
+Crause,2004-05-07,822.0,time since 2002-02-05 peak per paper,61.4,-8.0,7.0,,,SRC-02,0.0,0.0,0.0,61.4,0.0,-8.0,7.0
+Crause,2004-12-11,1040.0,time since 2002-02-05 peak per paper,70.1,-10.0,9.0,,,SRC-02,0.0,0.0,0.0,70.1,0.0,-10.0,9.0

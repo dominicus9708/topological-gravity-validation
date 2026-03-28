@@ -1,0 +1,6 @@
+﻿dataset,observation_date,time_value,time_reference,radius_arcsec,ra_offset_arcsec,dec_offset_arcsec,x_center_arcsec,y_center_arcsec,source_id,sigma_proxy,dsigma_dt_proxy,topological_radius_adjustment,radius_arcsec_topological_trial,topological_center_adjustment,x_center_arcsec_topological_trial,y_center_arcsec_topological_trial
+Tylenda,2002-04-30,120.0,t in days since 2002-01-01 per paper,18.55,,,-0.84,0.46,SRC-01,0.0,0.0,0.0,18.55,0.0,-0.84,0.46
+Tylenda,2002-05-20,140.0,t in days since 2002-01-01 per paper,20.89,,,-1.12,0.51,SRC-01,0.0,0.0,0.0,20.89,0.0,-1.12,0.51
+Tylenda,2002-09-02,245.0,t in days since 2002-01-01 per paper,30.32,,,-2.27,0.37,SRC-01,0.0,0.0,0.0,30.32,0.0,-2.27,0.37
+Tylenda,2002-10-28,301.0,t in days since 2002-01-01 per paper,33.68,,,-2.36,1.11,SRC-01,0.0,0.0,0.0,33.68,0.0,-2.36,1.11
+Tylenda,2002-12-17,351.0,t in days since 2002-01-01 per paper,36.66,,,-2.61,1.58,SRC-01,0.0,0.0,0.0,36.66,0.0,-2.61,1.58

@@ -1,0 +1,33 @@
+{
+  "pipeline_name": "V838 Mon Light Echo Pipeline with Graphs",
+  "created_at": "2026-03-29T02:42:00.808757",
+  "input_dir": "data\\derived\\Echo of Light\\input",
+  "results_dir": "output\\V838Mon\\20260329_024159",
+  "input_files": {
+    "verified_csv": "v838mon_measurements_verified.csv",
+    "all_csv": "v838mon_model_input_all.csv",
+    "tylenda_csv": "v838mon_model_input_tylenda.csv",
+    "crause_csv": "v838mon_model_input_crause.csv"
+  },
+  "row_counts": {
+    "measurements_verified": 17,
+    "model_input_all": 17,
+    "model_input_tylenda": 5,
+    "model_input_crause": 12
+  },
+  "dataset_counts_in_verified": {
+    "Crause_Table4": 12,
+    "Tylenda_Table1": 5
+  },
+  "generated_plots": [
+    "plots/crause_radius_vs_time.png",
+    "plots/tylenda_radius_vs_time.png",
+    "plots/tylenda_center_shift.png",
+    "plots/crause_center_offset.png"
+  ],
+  "notes": [
+    "This version is a standard-reference graph reproduction step.",
+    "It is intended to visualize the Tylenda and Crause inputs before any topological-gravity correction term is added.",
+    "Tylenda and Crause time conventions remain intentionally separated."
+  ]
+}

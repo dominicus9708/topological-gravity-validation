@@ -1,0 +1,50 @@
+{
+  "pipeline_name": "V838 Mon Topological Pipeline (trial version)",
+  "created_at": "2026-03-29T03:32:33.139556",
+  "input_dir": "data\\derived\\Echo of Light\\input",
+  "results_dir": "results\\Echo of Light\\output\\V838Mon\\topological\\20260329_033232",
+  "input_files": {
+    "verified_csv": "v838mon_measurements_verified.csv",
+    "all_csv": "v838mon_model_input_all.csv",
+    "tylenda_csv": "v838mon_model_input_tylenda.csv",
+    "crause_csv": "v838mon_model_input_crause.csv"
+  },
+  "row_counts": {
+    "measurements_verified": 17,
+    "model_input_all": 17,
+    "model_input_tylenda": 5,
+    "model_input_crause": 12,
+    "tylenda_topological_trial": 5,
+    "crause_topological_trial": 12
+  },
+  "parameters": {
+    "beta_sigma": 1.0,
+    "beta_dsigma": 0.0,
+    "gamma_sigma": 0.25,
+    "gamma_dsigma": 0.0
+  },
+  "proxy_detection": {
+    "tylenda": {
+      "has_sigma_proxy": false,
+      "has_dsigma_dt_proxy": false
+    },
+    "crause": {
+      "has_sigma_proxy": false,
+      "has_dsigma_dt_proxy": false
+    }
+  },
+  "generated_plots": [
+    "plots/tylenda_radius_topological_trial.png",
+    "plots/crause_radius_topological_trial.png",
+    "plots/tylenda_center_topological_trial.png",
+    "plots/crause_offset_topological_trial.png",
+    "plots/tylenda_radius_adjustment.png",
+    "plots/crause_radius_adjustment.png"
+  ],
+  "notes": [
+    "This is the first topological-side trial layer built on top of the already prepared V838 Mon input tables.",
+    "If sigma_proxy or dsigma_dt_proxy are absent, the pipeline uses zero-valued defaults.",
+    "This means the first run can serve as a structural framework check even before proxy columns are added.",
+    "A later version can replace the proxy columns with observationally motivated structural quantities."
+  ]
+}

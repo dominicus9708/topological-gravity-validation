@@ -1,0 +1,22 @@
+Graph pipeline command examples
+===============================
+
+1) Run with default folders
+
+python "src/echo of light/v838mon/v838mon_echo_pipeline_graphs.py"
+
+2) Run with explicit input and output
+
+python "src/echo of light/v838mon/v838mon_echo_pipeline_graphs.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --output-root "output/V838Mon"
+
+3) Run with explicit file names
+
+python "src/echo of light/v838mon/v838mon_echo_pipeline_graphs.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --output-root "output/V838Mon" ^
+  --verified-csv "v838mon_measurements_verified.csv" ^
+  --all-csv "v838mon_model_input_all.csv" ^
+  --tylenda-csv "v838mon_model_input_tylenda.csv" ^
+  --crause-csv "v838mon_model_input_crause.csv"
