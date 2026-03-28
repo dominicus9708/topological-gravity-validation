@@ -1,0 +1,33 @@
+{
+  "pipeline_name": "V838 Mon Mass Structural Proxy Pipeline",
+  "created_at": "2026-03-29T04:56:12.967500",
+  "comparison_dir": "data\\derived\\Echo of Light\\comparison",
+  "input_dir": "data\\derived\\Echo of Light\\input",
+  "results_dir": "results\\Echo of Light\\output\\V838Mon\\topological\\mass\\20260329_045611",
+  "row_counts": {
+    "auxiliary_input": 12,
+    "auxiliary_phase_table": 12,
+    "tylenda_trial_rows": 5,
+    "crause_trial_rows": 12
+  },
+  "parameters": {
+    "d_bg": 3.0,
+    "lambda_sigma": 0.8,
+    "radius_power": 3.0
+  },
+  "notes": [
+    "This pipeline combines auxiliary mass/ejecta context with light-echo radius tables.",
+    "echo_volume_proxy_raw is derived from observed radius^3 and is only a geometric proxy.",
+    "Dw_trial_mass_volume is a heuristic trial index for consistency-oriented comparison."
+  ],
+  "generated_plots": [
+    "plots/tylenda_mass_proxy_vs_time.png",
+    "plots/crause_mass_proxy_vs_time.png",
+    "plots/tylenda_echo_volume_proxy_vs_time.png",
+    "plots/crause_echo_volume_proxy_vs_time.png",
+    "plots/tylenda_sigma_mass_volume_vs_time.png",
+    "plots/crause_sigma_mass_volume_vs_time.png",
+    "plots/tylenda_dw_trial_mass_volume_vs_time.png",
+    "plots/crause_dw_trial_mass_volume_vs_time.png"
+  ]
+}

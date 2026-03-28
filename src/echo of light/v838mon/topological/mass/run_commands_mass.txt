@@ -1,0 +1,23 @@
+Mass structural proxy command examples
+======================================
+
+1) Run with default folders and defaults
+
+python "src/echo of light/v838mon/mass/v838mon_mass_structural_proxy_pipeline.py"
+
+2) Run with explicit folders
+
+python "src/echo of light/v838mon/mass/v838mon_mass_structural_proxy_pipeline.py" ^
+  --comparison-dir "data/derived/Echo of Light/comparison" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --output-root "results/Echo of Light/output/V838Mon/topological/mass"
+
+3) Run with explicit trial parameters
+
+python "src/echo of light/v838mon/mass/v838mon_mass_structural_proxy_pipeline.py" ^
+  --comparison-dir "data/derived/Echo of Light/comparison" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --output-root "results/Echo of Light/output/V838Mon/topological/mass" ^
+  --d-bg 3.0 ^
+  --lambda-sigma 0.8 ^
+  --radius-power 3.0

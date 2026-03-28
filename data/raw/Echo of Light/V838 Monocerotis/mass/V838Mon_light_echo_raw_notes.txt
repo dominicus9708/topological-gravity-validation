@@ -1,0 +1,31 @@
+V838Mon_light_echo_raw_notes.txt
+================================
+
+Direct light-echo baseline source
+---------------------------------
+[LE-01] V838 Mon: light echo evolution and distance estimate
+- Most directly useful paper for 2002-2004 light echo geometry and time evolution
+- Covers images from 2002 May to 2004 December
+- Measures radius evolution and echo-centre shift
+- Compares thin-sheet and thin-shell dust models
+- Favors a thin interstellar sheet interpretation over a circumstellar shell
+- Useful as the main standard-reference paper for radius and centre/offset comparisons
+
+Public explanatory source
+-------------------------
+[LE-02] NASA Light Echoes from V838 Mon
+- Useful for non-technical framing
+- States clearly that what looks like outwardly moving structure is a light echo in ambient dust
+- Good source for explaining why apparent expansion is not literal matter ejection at that apparent speed
+
+Epoch image support
+-------------------
+[LE-03] NASA/Hubble epoch image references
+- Useful for keeping a visual time-series reference for 2002-2004
+- Good companion material for raw folders when comparing morphology by epoch
+
+How to use in the project
+-------------------------
+1. LE-01 = baseline science reference
+2. LE-02 = explanatory framing reference
+3. LE-03 = image-series support reference

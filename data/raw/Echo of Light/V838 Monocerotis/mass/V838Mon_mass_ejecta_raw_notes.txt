@@ -1,0 +1,37 @@
+V838Mon_mass_ejecta_raw_notes.txt
+=================================
+
+What can be used
+----------------
+The safest mass-related route for V838 Mon is not a full supernova-style mass budget.
+Instead, use:
+
+- event character of the 2002 outburst
+- ejecta/shell-mass estimates from spectroscopic interpretation
+- mass-related values only as auxiliary structural or event-strength constraints
+
+Main supporting source
+----------------------
+[ME-01] The 2002 outburst of V838 Mon: as cool as it gets
+- Useful for the physical character of the 2002 event
+- Summarizes multiple brightness peaks and very cool supergiant-like evolution
+- Includes shell/ejecta mass context on the order of about 10^-7 to 10^-5 solar masses
+- Best treated as an auxiliary raw-source note, not as a final precise total mass budget
+
+Caution
+-------
+Do not equate:
+- the dust responsible for the later light echo
+with
+- the full mass directly ejected during the 2002 event
+
+Why
+---
+The direct light-echo literature often favors an interstellar thin-sheet interpretation,
+which means the scattering dust is not simply identical to newly ejected stellar material.
+
+Suggested use in topological work
+---------------------------------
+- treat ejecta/shell-mass estimates as event-strength context
+- do not use them as a direct substitute for light-echo dust mass
+- keep them as auxiliary bounds when discussing structural reorganization intensity
