@@ -1,0 +1,6 @@
+﻿epoch_id,observation_date,time_role,source_id,time_value_days_since_discovery,notes,dataset,event_name
+E01,2014-01-21,discovery,SN14J-AUX-02,0,Discovery date reported as 2014 Jan 21.805; rounded to date field for CSV organization.,SN2014J,SN 2014J
+E02,2014-01-28,early_HST_UV_epoch_start,SN14J-AUX-02,7,Start of seven HST/WFC3 UVIS epochs between 2014-01-28 and 2014-03-07.,SN2014J,SN 2014J
+E03,2014-03-07,early_HST_UV_epoch_end,SN14J-AUX-02,45,End of seven HST/WFC3 UVIS epochs between 2014-01-28 and 2014-03-07.,SN2014J,SN 2014J
+E04,2014-11-06,light_echo_imaging_start,SN14J-LE-01,289,First date quoted by NASA for Hubble inset light-echo images.,SN2014J,SN 2014J
+E05,2016-10-12,light_echo_imaging_end,SN14J-LE-01,995,Last date quoted by NASA for Hubble inset light-echo images.,SN2014J,SN 2014J

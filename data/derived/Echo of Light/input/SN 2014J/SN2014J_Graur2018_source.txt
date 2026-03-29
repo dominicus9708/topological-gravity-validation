@@ -1,0 +1,33 @@
+SN2014J_Graur2018_source.txt
+============================
+
+Author: Or Graur
+Year: 2018
+Title: Late-time observations of the Type Ia supernova SN 2014J with the Hubble Space Telescope Wide Field Camera 3
+Journal: The Astrophysical Journal
+Article: 870:14
+DOI: 10.3847/1538-4357/aaf1c3
+
+Project role
+------------
+- late-time continuation source for SN 2014J
+- direct basis for:
+  * SN2014J_Graur2018_Table1_late_photometry.csv
+
+What was extracted
+------------------
+Table 1:
+- MJD
+- phase (days past B-band maximum)
+- filter
+- exposure
+- Vega magnitude
+- upper limits where given
+
+Important caution
+-----------------
+This is late-time SN photometry.
+It is not the same measurement class as the earlier Yang 2017 direct arc-geometry table.
+Recommended data_origin values:
+- direct_table_geometry
+- late_time_photometry

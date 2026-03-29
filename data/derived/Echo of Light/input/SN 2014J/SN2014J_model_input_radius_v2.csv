@@ -1,0 +1,5 @@
+﻿dataset,event_name,paper_source,table_id,observation_date,time_reference,time_value,component_label,radius_arcsec,radius_arcsec_err,center_offset_arcsec,offset_err_arcsec,foreground_distance_pc,foreground_distance_err_pc,projected_radius_pc,projected_radius_err_pc,scattering_angle_deg,scattering_angle_err_deg,measurement_role
+SN2014J,SN 2014J,Yang2017,Table4,2014-09-05,days_since_B_band_maximum,215.8,Arc,0.539,0.02,0.009,0.014,234.6,18.2,9.22,0.36,2.25,0.2,direct_table_radius
+SN2014J,SN 2014J,Yang2017,Table4,2014-11-06,days_since_B_band_maximum,276.5,Arc,0.599,0.014,0.006,0.015,226.3,11.8,10.25,0.27,2.6,0.15,direct_table_radius
+SN2014J,SN 2014J,Yang2017,Table4,2015-02-02,days_since_B_band_maximum,365.3,Arc,0.689,0.02,0.011,0.014,226.4,14.1,11.79,0.37,2.98,0.21,direct_table_radius
+SN2014J,SN 2014J,Yang2017,Table4,2015-03-27,days_since_B_band_maximum,415.6,Arc,0.735,0.012,0.012,0.01,226.6,9.0,12.58,0.25,3.18,0.14,direct_table_radius

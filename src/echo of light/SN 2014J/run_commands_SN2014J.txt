@@ -1,0 +1,12 @@
+SN 2014J pipeline command examples
+==================================
+
+1) Run with default folders
+
+python "src/echo of light/SN 2014J/sn2014j_standard_pipeline.py"
+
+2) Run with explicit input/output folders
+
+python "src/echo of light/SN 2014J/sn2014j_standard_pipeline.py" ^
+  --input-dir "data/derived/Echo of Light/input/SN 2014J" ^
+  --output-root "results/Echo of Light/output/SN 2014J"

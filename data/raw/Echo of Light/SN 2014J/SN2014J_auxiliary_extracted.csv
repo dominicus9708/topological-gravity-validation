@@ -1,0 +1,6 @@
+﻿aux_id,time_phase,approx_date_or_period,parameter_name,value_min,value_max,unit,value_type,source_id,comparison_role,notes
+AUX-01,explosion/discovery context,2014-01-21,distance_to_M82,3.3,3.3,Mpc,single_estimate,SN14J-AUX-02,context_only,Best distance estimate to M82 reported in the cited paper.
+AUX-02,maximum light context,2014-02-01 approx / JD 2456690.14,B_band_maximum_JD,2456690.14,2456690.14,JD,single_estimate,SN14J-AUX-01,phase_marker,B-band maximum from optical/NIR paper.
+AUX-03,explosion ejecta context,2014 event,total_ejected_mass,1.3,1.3,M_sun,single_estimate,SN14J-AUX-01,auxiliary_bound,Bolometric model fit indicates total ejected mass of about 1.3 solar masses.
+AUX-04,nucleosynthesis context,2014 event,Ni56_mass,0.6,0.6,M_sun,single_estimate,SN14J-AUX-01,auxiliary_bound,Bolometric model fit indicates nickel-56 mass around 0.6 solar masses.
+AUX-05,light echo interval,2014-11-06 to 2016-10-12,dust_cloud_distance_range,300,1600,light_year,range_estimate,SN14J-LE-01,geometry_context,NASA describes the reflected echo as involving a dust cloud extending 300 to 1600 light-years from the supernova.

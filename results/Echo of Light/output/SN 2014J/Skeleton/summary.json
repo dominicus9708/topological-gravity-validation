@@ -1,0 +1,21 @@
+{
+  "pipeline_name": "SN 2014J standard pipeline",
+  "created_at": "2026-03-29T07:11:04.486954",
+  "input_dir": "data\\derived\\Echo of Light\\input\\SN 2014J",
+  "results_dir": "results\\Echo of Light\\output\\SN 2014J\\20260329_071104",
+  "row_counts": {
+    "epochs": 5,
+    "measurements": 11,
+    "model_input_radius": 4,
+    "auxiliary": 5,
+    "sources": 6
+  },
+  "notes": [
+    "This is a first standard-reference pipeline for SN 2014J.",
+    "The model_input_radius table contains arcsec radius-like rows extracted from accessible sources.",
+    "The radius plot groups rows by component_label."
+  ],
+  "generated_plots": [
+    "plots/sn2014j_radius_vs_time.png"
+  ]
+}

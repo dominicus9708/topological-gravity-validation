@@ -1,0 +1,17 @@
+﻿paper_source,table_id,data_origin,mjd,phase_days,observation_date,filter,exposure_s,magnitude,magnitude_err,is_upper_limit
+Graur2018,Table1,late_time_photometry,57055.2,365.5,2015-02-02,F555W,384,18.824,0.002,False
+Graur2018,Table1,late_time_photometry,57055.2,365.5,2015-02-02,F438W,1536,19.962,0.003,False
+Graur2018,Table1,late_time_photometry,57223.1,533.4,2015-07-20,F555W,432,21.36,0.01,False
+Graur2018,Table1,late_time_photometry,57223.1,533.4,2015-07-20,F438W,1344,22.32,0.01,False
+Graur2018,Table1,late_time_photometry,57389.2,699.5,2016-01-02,F555W,432,22.36,0.03,False
+Graur2018,Table1,late_time_photometry,57389.3,699.6,2016-01-02,F438W,1344,23.73,0.05,False
+Graur2018,Table1,late_time_photometry,57571.1,881.4,2016-07-02,F555W,1720,23.57,0.06,False
+Graur2018,Table1,late_time_photometry,57571.2,881.5,2016-07-02,F438W,2420,24.86,0.09,False
+Graur2018,Table1,late_time_photometry,57678.1,988.4,2016-10-17,F555W,1664,24.13,0.1,False
+Graur2018,Table1,late_time_photometry,57678.1,988.4,2016-10-17,F814W,1640,23.48,0.19,False
+Graur2018,Table1,late_time_photometry,57678.1,988.4,2016-10-17,F438W,2600,25.67,0.18,False
+Graur2018,Table1,late_time_photometry,57828.0,1138.3,2017-03-16,F555W,1664,24.81,0.19,False
+Graur2018,Table1,late_time_photometry,57828.0,1138.3,2017-03-16,F814W,1640,24.4,,True
+Graur2018,Table1,late_time_photometry,57828.0,1138.3,2017-03-16,F438W,2600,26.1,,True
+Graur2018,Table1,late_time_photometry,57985.7,1296.0,2017-08-21,F555W,1664,25.3,,True
+Graur2018,Table1,late_time_photometry,57985.7,1296.0,2017-08-21,F814W,1640,24.4,,True

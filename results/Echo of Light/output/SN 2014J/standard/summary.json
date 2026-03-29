@@ -1,0 +1,19 @@
+{
+  "pipeline_name": "SN 2014J standard pipeline v2",
+  "created_at": "2026-03-29T08:52:40.951730",
+  "input_dir": "data\\derived\\Echo of Light\\input\\SN 2014J",
+  "results_dir": "results\\Echo of Light\\output\\SN 2014J\\20260329_085240",
+  "row_counts": {
+    "model_input_radius_v2": 4,
+    "arc_geometry_table4": 4,
+    "photometry_table3": 8
+  },
+  "notes": [
+    "This version is based on direct values extracted from Yang et al. 2017 Table 3 and Table 4.",
+    "The radius time series uses direct arc geometry table values rather than sparse preview-only estimates."
+  ],
+  "generated_plots": [
+    "plots/sn2014j_direct_table_radius_vs_time.png",
+    "plots/sn2014j_arc_geometry_context_vs_time.png"
+  ]
+}

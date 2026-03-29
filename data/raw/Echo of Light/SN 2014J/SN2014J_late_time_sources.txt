@@ -1,0 +1,55 @@
+SN2014J_late_time_sources.txt
+=============================
+
+Primary late-time source
+------------------------
+[LT-01]
+Author: Or Graur
+Year: 2018
+Title: Late-time observations of the type Ia supernova SN 2014J with the Hubble Space Telescope Wide Field Camera 3
+Journal: The Astrophysical Journal
+DOI: 10.3847/1538-4357/aaf1c3
+
+Why this matters
+----------------
+- Covers SN 2014J at approximately 360 to 1300 days past maximum light.
+- Specifically useful for extending the observation window beyond the ~400-day direct-table segment from Yang et al. 2017.
+- States that even though SN 2014J has a resolved light echo, the late-time photometry is not contaminated by an unresolved echo.
+
+Use role in project
+-------------------
+- late-time extension source
+- photometric continuation source
+- should be treated separately from direct-table light-echo geometry data
+
+Related standard-range source already in use
+--------------------------------------------
+[STD-01]
+Author: Yang et al.
+Year: 2017
+Title: Interstellar-medium mapping in M82 through light echoes around supernova 2014J
+
+Why this matters
+----------------
+- Provides direct-table values for approximately 215.8, 276.5, 365.3, and 415.6 days after B-band maximum.
+- Current standard v2 pipeline is based on its Table 3 and Table 4.
+
+Public image-range support
+--------------------------
+[IMG-01]
+Source: NASA / Hubble / STScI public image pages
+Window mentioned: 2014-11-06 to 2016-10-12
+
+Why this matters
+----------------
+- Confirms that public light-echo imaging extends to nearly 1000 days after discovery.
+- Useful as broad observational-range support, but not by itself a direct-table measurement source.
+
+Important caution
+-----------------
+If the late-time segment is added later, it should be stored with a source-quality distinction such as:
+- data_origin = direct_table
+- data_origin = late_time_photometry
+- data_origin = image_extracted
+
+Do not merge the late-time segment into the earlier direct-table geometry segment as if they are the same measurement class.

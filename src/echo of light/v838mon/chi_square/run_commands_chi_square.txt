@@ -1,0 +1,23 @@
+Chi-square pipeline command examples
+====================================
+
+1) Run with defaults
+
+python "src/echo of light/v838mon/chi_square/v838mon_chi_square_pipeline.py"
+
+2) Run with explicit paths
+
+python "src/echo of light/v838mon/chi_square/v838mon_chi_square_pipeline.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --mass-results-root "results/Echo of Light/output/V838Mon/topological/mass" ^
+  --output-root "results/Echo of Light/output/V838Mon/topological/chi_square"
+
+3) Run with explicit mass result folder and trial parameters
+
+python "src/echo of light/v838mon/chi_square/v838mon_chi_square_pipeline.py" ^
+  --input-dir "data/derived/Echo of Light/input" ^
+  --mass-results-dir "results/Echo of Light/output/V838Mon/topological/mass/YYYYMMDD_HHMMSS" ^
+  --output-root "results/Echo of Light/output/V838Mon/topological/chi_square" ^
+  --radius-relative-error 0.03 ^
+  --radius-error-floor 0.3 ^
+  --beta-radius 0.05

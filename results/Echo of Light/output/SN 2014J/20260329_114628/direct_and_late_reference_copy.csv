@@ -1,0 +1,12 @@
+﻿paper_source,data_origin,time_reference,time_value,observation_date,quantity_name,value,value_err,unit,filter_or_component,notes
+Yang2017,direct_table_geometry,days_since_B_band_maximum,215.8,2014-09-05,angular_radius_arcsec,0.539,0.02,arcsec,Arc,Direct Table 4 arc geometry
+Yang2017,direct_table_geometry,days_since_B_band_maximum,276.5,2014-11-06,angular_radius_arcsec,0.599,0.014,arcsec,Arc,Direct Table 4 arc geometry
+Yang2017,direct_table_geometry,days_since_B_band_maximum,365.3,2015-02-02,angular_radius_arcsec,0.689,0.02,arcsec,Arc,Direct Table 4 arc geometry
+Yang2017,direct_table_geometry,days_since_B_band_maximum,415.6,2015-03-27,angular_radius_arcsec,0.735,0.012,arcsec,Arc,Direct Table 4 arc geometry
+Graur2018,late_time_photometry,days_since_B_band_maximum,365.5,2015-02-02,SN_magnitude,18.824,0.002,Vega_mag,F555W,Direct Table 1 late-time photometry
+Graur2018,late_time_photometry,days_since_B_band_maximum,533.4,2015-07-20,SN_magnitude,21.36,0.01,Vega_mag,F555W,Direct Table 1 late-time photometry
+Graur2018,late_time_photometry,days_since_B_band_maximum,699.5,2016-01-02,SN_magnitude,22.36,0.03,Vega_mag,F555W,Direct Table 1 late-time photometry
+Graur2018,late_time_photometry,days_since_B_band_maximum,881.4,2016-07-02,SN_magnitude,23.57,0.06,Vega_mag,F555W,Direct Table 1 late-time photometry
+Graur2018,late_time_photometry,days_since_B_band_maximum,988.4,2016-10-17,SN_magnitude,24.13,0.1,Vega_mag,F555W,Direct Table 1 late-time photometry
+Graur2018,late_time_photometry,days_since_B_band_maximum,1138.3,2017-03-16,SN_magnitude,24.81,0.19,Vega_mag,F555W,Direct Table 1 late-time photometry
+Graur2018,late_time_photometry,days_since_B_band_maximum,1296.0,2017-08-21,SN_magnitude_upper_limit,25.3,,Vega_mag,F555W,Direct Table 1 late-time upper limit

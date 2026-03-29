@@ -1,0 +1,12 @@
+[Primary direct-table source]
+Yang, Y. et al. (2017).
+Interstellar-medium mapping in M82 through light echoes around supernova 2014J.
+Main use:
+- Table 4: arc geometry time series
+- Table 3: echo photometry time series
+
+[Secondary seed source]
+Crotts, A. P. S. (2015).
+Light Echoes from Supernova 2014J in M82.
+Main use:
+- early directly stated radius values (0.6 arcsec major echo, 0.4 arcsec possible inner echo)

@@ -1,0 +1,8 @@
+SN 2014J v2 command examples
+============================
+
+python "src/echo of light/SN 2014J/sn2014j_standard_pipeline_v2.py"
+
+python "src/echo of light/SN 2014J/sn2014j_standard_pipeline_v2.py" ^
+  --input-dir "data/derived/Echo of Light/input/SN 2014J" ^
+  --output-root "results/Echo of Light/output/SN 2014J"

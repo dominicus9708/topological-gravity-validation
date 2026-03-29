@@ -1,0 +1,24 @@
+{
+  "pipeline_name": "SN 2014J pipeline",
+  "created_at": "2026-03-29T11:46:28.837803",
+  "input_dir": "data\\derived\\Echo of Light\\input\\SN 2014J",
+  "results_dir": "results\\Echo of Light\\output\\SN 2014J\\20260329_114628",
+  "row_counts": {
+    "model_input_radius_v2": 4,
+    "yang_table4_arc_geometry": 4,
+    "yang_table3_photometry": 8,
+    "graur_late_photometry": 16,
+    "direct_and_late_reference": 11
+  },
+  "notes": [
+    "This pipeline reads the SN 2014J input folder directly.",
+    "Direct-table geometry and late-time photometry are kept as separate data classes.",
+    "The comparison plot overlays different origins with different markers/line styles."
+  ],
+  "generated_plots": [
+    "plots/sn2014j_direct_geometry_radius_vs_time.png",
+    "plots/sn2014j_arc_geometry_context_vs_time.png",
+    "plots/sn2014j_late_photometry_vs_phase.png",
+    "plots/sn2014j_direct_vs_late_reference.png"
+  ]
+}

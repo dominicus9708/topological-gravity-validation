@@ -1,0 +1,9 @@
+﻿paper_source,table_id,time_reference,time_value,observation_date,filter,SN_mag,SN_mag_err,LE_mag,LE_mag_err,component_label
+Yang2017,Table3,days_since_B_band_maximum,215.8,2014-09-05,F438W,17.61,0.016,22.05,0.36,total_echo_profile
+Yang2017,Table3,days_since_B_band_maximum,215.8,2014-09-05,F555W,16.446,0.011,21.12,0.06,total_echo_profile
+Yang2017,Table3,days_since_B_band_maximum,365.3,2015-02-02,F438W,19.735,0.011,21.53,0.13,total_echo_profile
+Yang2017,Table3,days_since_B_band_maximum,365.3,2015-02-02,F555W,18.715,0.013,20.87,0.06,total_echo_profile
+Yang2017,Table3,days_since_B_band_maximum,276.5,2014-11-06,F475W,17.467,0.002,21.16,0.03,total_echo_profile
+Yang2017,Table3,days_since_B_band_maximum,276.5,2014-11-06,F606W,17.343,0.002,20.73,0.08,total_echo_profile
+Yang2017,Table3,days_since_B_band_maximum,415.6,2015-03-27,F475W,19.568,0.002,21.37,0.02,total_echo_profile
+Yang2017,Table3,days_since_B_band_maximum,417.9,2015-03-27,F606W,19.516,0.004,20.98,0.05,total_echo_profile
