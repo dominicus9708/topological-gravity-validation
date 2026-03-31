@@ -1,0 +1,13 @@
+﻿date_utc,days_since_2011_eruption,series_type,measurement_or_event,data_status,source_id,source_url
+2011-04-14.29,0.0,eruption_reference,optical eruption/discovery epoch,direct,eruption_discovery,https://arxiv.org/abs/1109.0065
+2011-09-16,154.71,light_echo_image,HST image date from NASA public page,direct,image_nasa,https://science.nasa.gov/asset/hubble/flash-of-light-from-erupting-star-illuminates-debris-disk/
+2011-11-16,215.71,light_echo_image,HST image date from NASA public page,direct,image_nasa,https://science.nasa.gov/asset/hubble/flash-of-light-from-erupting-star-illuminates-debris-disk/
+2011-12-10,239.71,light_echo_image,HST image date from NASA public page,direct,image_nasa,https://science.nasa.gov/asset/hubble/flash-of-light-from-erupting-star-illuminates-debris-disk/
+2011-04-18~2012-05-02 approx,4.0,flash_ionization_epoch_range_start,Shara et al. report 7 HST Hα epochs from day 4 to day 383,direct,flash_ionization,https://arxiv.org/abs/1503.08840
+,55.0,flash_ionization_status,no discernible effect on ejecta until at least this time,direct,flash_ionization,https://arxiv.org/abs/1503.08840
+,132.0,flash_ionization_status,photoionization of hydrogen north and south of central star seen by this time,direct,flash_ionization,https://arxiv.org/abs/1503.08840
+,183.0,flash_ionization_status,hydrogen seen at day 132 had recombined in following 51 days,derived_from_abstract,flash_ionization,https://arxiv.org/abs/1503.08840
+,132.0,flash_ionization_status,material to NW and SE photoionized sometime between day 132 and day 183,direct,flash_ionization,https://arxiv.org/abs/1503.08840
+,183.0,flash_ionization_status,upper end of NW/SE photoionization window,direct,flash_ionization,https://arxiv.org/abs/1503.08840
+,282.0,flash_ionization_status,99 days after day 183 the hydrogen had recombined; almost no trace around T Pyx,derived_from_abstract,flash_ionization,https://arxiv.org/abs/1503.08840
+,383.0,flash_ionization_status,101 days after day 282 still almost no trace of hydrogen emission around T Pyx,derived_from_abstract,flash_ionization,https://arxiv.org/abs/1503.08840

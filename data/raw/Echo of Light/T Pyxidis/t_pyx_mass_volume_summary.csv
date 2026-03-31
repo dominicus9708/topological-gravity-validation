@@ -1,0 +1,16 @@
+﻿component,quantity,value,unit_display,unit_normalized,data_status,source_id,source_url,notes
+2011_light_echo_ring,light_echo_geometry,ring angular radius,5,arcsec,direct_literature_value,light_echo_paper,https://arxiv.org/abs/1305.5245,Approximate radius of clumpy ring from light echo paper.
+2011_light_echo_ring,distance,distance to T Pyx,4.8 ± 0.5,kpc,direct_literature_value,light_echo_paper,https://arxiv.org/abs/1305.5245,Distance from light echo delays.
+2011_light_echo_ring,physical_radius_from_5arcsec_at_4.8kpc,0.116355,pc,pc,indirect_computed_from_direct_values,light_echo_paper,https://arxiv.org/abs/1305.5245,Computed from 5 arcsec and 4.8 kpc; small-angle approximation.
+2011_light_echo_ring,sphere_volume_proxy_from_5arcsec_at_4.8kpc,1.938641e+53,cm^3,cm^3,indirect_computed_proxy,light_echo_paper,https://arxiv.org/abs/1305.5245,"Spherical volume proxy only; actual structure is ring + shell, so use as proxy, not literal volume."
+2011_light_echo_disk_public_page,disk_diameter_about,1,light-year,light-year,direct_public_description,image_nasa,https://science.nasa.gov/asset/hubble/flash-of-light-from-erupting-star-illuminates-debris-disk/,NASA public page says disk is about a light-year across.
+2011_light_echo_disk_public_page,sphere_volume_proxy_from_1ly_diameter,4.433748e+53,cm^3,cm^3,indirect_computed_proxy,image_nasa,https://science.nasa.gov/asset/hubble/flash-of-light-from-erupting-star-illuminates-debris-disk/,Alternative coarse proxy using public-page diameter; not a physical claim of spherical remnant.
+2011_outburst,radio_ejecta_mass_range_min,1e-5,Msun,Msun,direct_literature_range,radio_mass,https://arxiv.org/abs/1211.3112,Lower end of radio ejecta mass range.
+2011_outburst,radio_ejecta_mass_range_max,3e-4,Msun,Msun,direct_literature_range,radio_mass,https://arxiv.org/abs/1211.3112,Upper end of radio ejecta mass range = 30 × 10^-5 Msun.
+2011_outburst,early_expansion_velocity_before_day20_max,300,km/s,km/s,direct_literature_constraint,interferometry_2011,https://www.aanda.org/articles/aa/full_html/2011/10/aa17792-11/aa17792-11.html,Interferometry abstract reports ≤300 km/s before day 20.
+1866_shell,knot_velocity_min,500,km/s,km/s,direct_literature_range,shell_evolution,https://arxiv.org/abs/0906.0933,Older shell knot velocities assuming 3.5 kpc.
+1866_shell,knot_velocity_max,715,km/s,km/s,direct_literature_range,shell_evolution,https://arxiv.org/abs/0906.0933,Older shell knot velocities assuming 3.5 kpc.
+1866_shell,ejecta_total_mass,3.162278e-5,Msun,Msun,converted_from_direct_log_value,shell_evolution,https://arxiv.org/abs/0906.0933,From 10^-4.5 Msun reported in abstract.
+pre_existing_nebulosity,dust_origin_note,,,qualitative,direct_literature_statement,infrared_dust,https://academic.oup.com/mnrasl/article/424/1/L69/983004,"Dust most likely interstellar and swept up, not mainly newly formed eruption dust."
+old_ejecta,hydrogen_density_lower_limit,7e5,cm^-3,cm^-3,direct_literature_lower_limit,flash_ionization,https://arxiv.org/abs/1503.08840,Lower limit from recombination timing in flash ionization study.
+old_ejecta,newly_detected_hydrogen_mass_vs_NII_knots,~10x larger than [N II] knots,relative,relative,direct_literature_relation,flash_ionization,https://arxiv.org/abs/1503.08840,"Qualitative relative-mass statement, not absolute mass."

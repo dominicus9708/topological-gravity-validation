@@ -1,0 +1,23 @@
+{
+  "pipeline_name": "T Pyxidis Echo-Medium-Centered Pipeline",
+  "created_at": "2026-03-31T00:40:19.612485",
+  "input_csv": "data\\derived\\Echo of Light\\input\\T Pyxidis\\t_pyx_standard_echo_patches_original_paper.csv",
+  "results_dir": "results\\Echo of Light\\output\\T Pyxidis\\topological\\echo_medium_centered\\20260331_004018",
+  "row_counts": {
+    "patch_input_rows": 6,
+    "trial_rows": 6
+  },
+  "parameters": {
+    "d_bg": 3.0,
+    "lambda_sigma": 0.8,
+    "radius_power": 3.0,
+    "w_medium_structure": 0.65,
+    "w_observer_gap": 0.35
+  },
+  "notes": [
+    "burst-centered terms are removed.",
+    "the model is recentered on echo-medium structure during the observed interval.",
+    "distortion_driver uses only medium_gradient_term + gap_term_norm.",
+    "lines/arrows are used only for genuine change indicators within each family."
+  ]
+}

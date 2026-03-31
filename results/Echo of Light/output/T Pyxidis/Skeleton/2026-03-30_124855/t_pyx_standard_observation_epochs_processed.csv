@@ -1,0 +1,11 @@
+﻿date,day_since_outburst,obs_type,instrument_or_context,echo_visibility_note,source
+2011-04-14,0,eruption_reference,reference_epoch,2011 outburst reference epoch,eruption_reference
+2011-04-18,4,HST_Halpha_epoch,old_ejecta_flash_ionization_sequence,early epoch; no significant impact on old ejecta yet,Shara2015
+2011-06-08,55,HST_Halpha_epoch,old_ejecta_flash_ionization_sequence,still before the main flash-ionization signature emphasized later,Shara2015
+2011-08-24,132,HST_Halpha_epoch,old_ejecta_flash_ionization_sequence,hydrogen north and south of the star photoionized,Shara2015
+2011-09-16,155,HST_public_image,public_light_echo_epoch,public Hubble image epoch showing illuminated debris structure,Hubble_public
+2011-10-14,183,HST_Halpha_epoch,old_ejecta_flash_ionization_sequence,previously photoionized hydrogen had recombined,Shara2015
+2011-11-16,216,HST_public_image,public_light_echo_epoch,public Hubble image epoch,Hubble_public
+2011-12-10,240,HST_public_image,public_light_echo_epoch,public Hubble image epoch,Hubble_public
+2012-01-21,282,HST_Halpha_epoch,old_ejecta_flash_ionization_sequence,northwest and southeast material had recombined by this stage,Shara2015
+2012-05-01,383,HST_Halpha_epoch,old_ejecta_flash_ionization_sequence,late epoch with most transient old-ejecta emission gone,Shara2015

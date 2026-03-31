@@ -1,0 +1,32 @@
+{
+  "pipeline_name": "T Pyxidis Mass-Volume + Observer-Gap Pipeline",
+  "created_at": "2026-03-30T20:48:15.915320",
+  "input_csv": "data\\derived\\Echo of Light\\input\\T Pyxidis\\t_pyx_standard_echo_patches_original_paper.csv",
+  "results_dir": "results\\Echo of Light\\output\\T Pyxidis\\topological\\mass_volume_observer_gap\\20260330_204815",
+  "row_counts": {
+    "patch_input_rows": 6,
+    "trial_rows": 6
+  },
+  "parameters": {
+    "d_bg": 3.0,
+    "lambda_sigma": 0.8,
+    "radius_power": 3.0,
+    "w_mass_volume": 0.35,
+    "w_local_burst": 0.35,
+    "w_observer_gap": 0.3,
+    "local_strength": 1.0
+  },
+  "notes": [
+    "This pipeline keeps the T Pyx patch-based interface while borrowing the V838Mon-style mass-volume proxy logic.",
+    "mass_proxy_raw is a heuristic local mass-context term, not a direct measured ejecta mass.",
+    "echo_volume_proxy_raw is a patch geometric proxy built from theta^3.",
+    "delay_driver remains a comparison-layer proxy, but now includes mass-volume structure."
+  ],
+  "generated_files": [
+    "t_pyx_mass_volume_observer_gap_patch_comparison.csv",
+    "plots/t_pyx_mass_volume_observer_gap_circular_layout.png",
+    "plots/t_pyx_mass_volume_observer_gap_delay_theta_comparison.png",
+    "plots/t_pyx_mass_volume_observer_gap_components.png",
+    "plots/t_pyx_mass_volume_observer_gap_delay_driver.png"
+  ]
+}

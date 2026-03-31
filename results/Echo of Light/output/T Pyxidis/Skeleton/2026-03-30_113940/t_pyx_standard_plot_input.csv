@@ -1,0 +1,4 @@
+﻿date,day_since_outburst,dataset,structure_stage,radius_arcsec,radius_err_arcsec,radius_value_status,event_flag,notes,source_group,ready_for_standard_plot,measured_radius_flag
+2011-09-16,155,HST_public_light_echo,public_image_epoch,5.0,,representative_scale,5.0,"Public Hubble image epoch. Ring radius is an approximate representative structural scale from literature, not a per-image measured radius.",HST_public_light_echo,1,0
+2011-11-16,216,HST_public_light_echo,public_image_epoch,5.0,,representative_scale,5.0,Second public Hubble image epoch.,HST_public_light_echo,1,0
+2011-12-10,240,HST_public_light_echo,public_image_epoch,5.0,,representative_scale,5.0,Third public Hubble image epoch.,HST_public_light_echo,1,0

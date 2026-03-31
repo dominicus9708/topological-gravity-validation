@@ -1,0 +1,15 @@
+﻿date_utc,day_since_outburst,observation_family,structure_obs,structure_value,structure_unit,mass_anchor_type,mass_value,mass_unit,volume_proxy_type,volume_value,volume_unit,directness,notes
+2011-04-14,0,eruption_reference,outburst_reference_epoch,,,,,,,,,reference,Reference epoch for 2011 eruption.
+,4,Halpha_old_ejecta,old_ejecta_response_check,,,,,,,,,qualitative_structure,Early HST Halpha epoch; no significant impact on old ejecta reported at this stage.
+,50,radio_ejecta,early_radio_constraint,,,integrated_ejecta_mass_range,1e-5_to_3e-4,Msun,geometry_dependent_not_direct,,,mass_anchor_interval,Bulk radio-emitting material interpreted as very cold or slowly expanding for roughly the first 50 days.
+,55,Halpha_old_ejecta,old_ejecta_response_check,,,,,,,,,qualitative_structure,Still before the main old-ejecta flash-ionization signature emphasized later.
+,60,xray_dual_phase_ejection,delayed_ejection_anchor,,,second_ejection_delay_anchor,,,,,,qualitative_mass_anchor,Second ejection phase inferred roughly two months after outburst.
+,115,xray_turn_on,xray_rise_anchor,,,minimum_ejecta_mass_constraint,>=1e-5,Msun,,,,mass_anchor_interval,Rapid rise of super-soft and hard X-rays after about day 115 implies ejecta mass of order at least 1e-5 Msun.
+,132,Halpha_old_ejecta,photoionization_detected_north_south,1,event_flag,,,,structure_epoch_proxy_only,,,direct_structure_epoch,Hydrogen north and south of the star photoionized by this epoch.
+2011-09-16,155,HST_public_light_echo,public_image_epoch,5,arcsec_ring_radius_approx,,,,ring_radius_proxy,125,arcsec3_proxy,mixed_direct_structure_indirect_volume,"Public Hubble image epoch. Ring radius is an approximate representative structural scale from literature, not a per-image measured radius."
+,183,Halpha_old_ejecta,recombination_after_photoionization,1,event_flag,,,,structure_epoch_proxy_only,,,direct_structure_epoch,Previously photoionized hydrogen had recombined over the following 51 days.
+2011-11-16,216,HST_public_light_echo,public_image_epoch,5,arcsec_ring_radius_approx,,,,ring_radius_proxy,125,arcsec3_proxy,mixed_direct_structure_indirect_volume,Second public Hubble image epoch.
+2011-12-10,240,HST_public_light_echo,public_image_epoch,5,arcsec_ring_radius_approx,,,,ring_radius_proxy,125,arcsec3_proxy,mixed_direct_structure_indirect_volume,Third public Hubble image epoch.
+,282,Halpha_old_ejecta,northwest_southeast_recombination,1,event_flag,,,,structure_epoch_proxy_only,,,direct_structure_epoch,Material to the northwest and southeast had recombined by this stage.
+,383,Halpha_old_ejecta,late_epoch_nearly_all_emission_gone,1,event_flag,,,,structure_epoch_proxy_only,,,direct_structure_epoch,Late Halpha epoch with most transient old-ejecta emission gone.
+,,historical_shell,old_shell_mass_anchor,,,historical_1866_ejecta_mass,10^-4.5,Msun,,,,historical_anchor,Historical shell-scale mass estimate; not synchronized to 2011 outburst epochs.

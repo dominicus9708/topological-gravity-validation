@@ -1,0 +1,9 @@
+﻿epoch,instrument,date,day_since_outburst,filters_or_gratings,exposure_summary_s,source_table,notes,sequence_role
+4,WFC3,2011-09-19,158.7,FQ422M;F547M;F225W;F600LP,300;500;800;40,Sokoloski2013_Table1,Visual-light echo epoch in Figure 1 sequence.,active_light_echo_epoch_or_followup
+5,WFC3,2011-09-26,165.1,FQ422M;F547M,1125;900,Sokoloski2013_Table1,Visual-light echo epoch in Figure 1 sequence.,active_light_echo_epoch_or_followup
+6,WFC3,2011-11-16,215.8,FQ422M;F547M,1125;900,Sokoloski2013_Table1,Visual-light echo epoch in Figure 1 / Table 1.,active_light_echo_epoch_or_followup
+7,WFC3,2011-11-25,224.8,FQ422M;F547M;F225W;F600LP,300;500;800;40,Sokoloski2013_Table1,Late-2011 visual-light echo epoch.,active_light_echo_epoch_or_followup
+9,WFC3,2011-12-10,240.7,F547M,2490,Sokoloski2013_Table1,Visual-light echo epoch in Figure 1 sequence.,active_light_echo_epoch_or_followup
+10,WFC3,2012-01-22,282.8,F547M,5295,Sokoloski2013_Table1,Visual-light echo epoch in Figure 1 sequence.,active_light_echo_epoch_or_followup
+11,WFC3,2012-02-22,314.2,F547M,5295,Sokoloski2013_Table1,Post-echo follow-up epoch.,late_followup_epoch
+12,WFC3,2012-05-21,403.4,F547M,5295,Sokoloski2013_Table1,Late follow-up epoch.,late_followup_epoch

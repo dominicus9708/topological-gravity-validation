@@ -1,0 +1,17 @@
+T Pyxidis standard baseline pipeline summary
+===========================================
+
+Total input rows: 10
+Plot-ready rows: 3
+
+Notes
+-----
+- This is a first-pass standard baseline based on seed input.
+- Current radius values are representative structural scales for public image epochs.
+- They should not yet be interpreted as strict per-epoch measured radius values.
+
+Plot-ready epochs
+----------------
+- day=155, date=2011-09-16, radius_arcsec=5.0, stage=public_image_epoch
+- day=216, date=2011-11-16, radius_arcsec=5.0, stage=public_image_epoch
+- day=240, date=2011-12-10, radius_arcsec=5.0, stage=public_image_epoch

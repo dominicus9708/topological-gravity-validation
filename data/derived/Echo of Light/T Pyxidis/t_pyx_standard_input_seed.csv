@@ -1,0 +1,11 @@
+﻿date,day_since_outburst,dataset,structure_stage,radius_arcsec,radius_err_arcsec,radius_value_status,event_flag,notes,source_group,ready_for_standard_plot,measured_radius_flag
+2011-04-14,0,eruption_reference,outburst_reference_epoch,,,not_measured_in_this_input,,Reference epoch for 2011 eruption.,eruption_reference,0,0
+2011-04-18,4,Halpha_old_ejecta,old_ejecta_response_check,,,not_measured_in_this_input,,Early HST Halpha epoch; no significant impact on old ejecta reported at this stage.,Halpha_old_ejecta,0,0
+2011-06-08,55,Halpha_old_ejecta,old_ejecta_response_check,,,not_measured_in_this_input,,Still before the main old-ejecta flash-ionization signature emphasized later.,Halpha_old_ejecta,0,0
+2011-08-24,132,Halpha_old_ejecta,photoionization_detected_north_south,,,not_measured_in_this_input,1,Hydrogen north and south of the star photoionized by this epoch.,Halpha_old_ejecta,0,0
+2011-09-16,155,HST_public_light_echo,public_image_epoch,5,,representative_scale,5,"Public Hubble image epoch. Ring radius is an approximate representative structural scale from literature, not a per-image measured radius.",HST_public_light_echo,1,0
+2011-10-14,183,Halpha_old_ejecta,recombination_after_photoionization,,,not_measured_in_this_input,1,Previously photoionized hydrogen had recombined over the following 51 days.,Halpha_old_ejecta,0,0
+2011-11-16,216,HST_public_light_echo,public_image_epoch,5,,representative_scale,5,Second public Hubble image epoch.,HST_public_light_echo,1,0
+2011-12-10,240,HST_public_light_echo,public_image_epoch,5,,representative_scale,5,Third public Hubble image epoch.,HST_public_light_echo,1,0
+2012-01-21,282,Halpha_old_ejecta,northwest_southeast_recombination,,,not_measured_in_this_input,1,Material to the northwest and southeast had recombined by this stage.,Halpha_old_ejecta,0,0
+2012-05-01,383,Halpha_old_ejecta,late_epoch_nearly_all_emission_gone,,,not_measured_in_this_input,1,Late Halpha epoch with most transient old-ejecta emission gone.,Halpha_old_ejecta,0,0

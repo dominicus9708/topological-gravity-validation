@@ -1,0 +1,11 @@
+﻿T Pyx standard baseline pipeline run
+observation_csv=data\derived\Echo of Light\input\T Pyxidis\t_pyx_standard_observation_epochs.csv
+geometry_csv=data\derived\Echo of Light\input\T Pyxidis\t_pyx_standard_geometry_reference.csv
+processed_observation_rows=10
+processed_geometry_rows=4
+plot_rows=3
+
+Caution:
+- This is an original-paper baseline using global geometry references attached to public epochs.
+- The adopted 5 arcsec ring radius is a representative literature scale, not a strict epoch-by-epoch fitted table.
+- Keep this file distinct from the earlier skeleton/seed baseline.

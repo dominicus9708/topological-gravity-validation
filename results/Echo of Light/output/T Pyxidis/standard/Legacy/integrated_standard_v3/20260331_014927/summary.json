@@ -1,0 +1,58 @@
+{
+  "pipeline_name": "T Pyxidis Standard Integrated Pipeline",
+  "created_at": "2026-03-31T01:49:27.626050",
+  "input_files": {
+    "patch_csv": "data\\derived\\Echo of Light\\input\\T Pyxidis\\t_pyx_standard_echo_patches_original_paper.csv",
+    "interpretation_csv": "data\\derived\\Echo of Light\\input\\T Pyxidis\\t_pyx_standard_interpretation_table.csv",
+    "timeline_csv": "data\\derived\\Echo of Light\\input\\T Pyxidis\\t_pyx_standard_observation_timeline_table.csv"
+  },
+  "results_dir": "results\\Echo of Light\\output\\T Pyxidis\\standard\\integrated_standard_v3\\20260331_014927",
+  "row_counts": {
+    "patch_rows": 6,
+    "interpretation_rows": 6,
+    "timeline_rows": 8
+  },
+  "system_context": {
+    "classification": "recurrent nova close binary",
+    "primary": "white dwarf",
+    "secondary": "donor companion star",
+    "primary_mass_msun": 0.7,
+    "secondary_mass_msun": 0.14,
+    "distance_kpc_for_ring_conversion": 4.8
+  },
+  "ring_scale_reference": [
+    {
+      "arcsec": 1,
+      "au_at_4p8kpc": 4800.0,
+      "ly_at_4p8kpc": 0.0759
+    },
+    {
+      "arcsec": 2,
+      "au_at_4p8kpc": 9600.0,
+      "ly_at_4p8kpc": 0.1518
+    },
+    {
+      "arcsec": 3,
+      "au_at_4p8kpc": 14400.0,
+      "ly_at_4p8kpc": 0.2277
+    },
+    {
+      "arcsec": 4,
+      "au_at_4p8kpc": 19200.0,
+      "ly_at_4p8kpc": 0.3036
+    },
+    {
+      "arcsec": 5,
+      "au_at_4p8kpc": 24000.0,
+      "ly_at_4p8kpc": 0.379499
+    }
+  ],
+  "notes": [
+    "Circular plot keeps arcsec labels on the original radial rings.",
+    "Arcsec-to-distance conversion is moved into a separate lower-right legend box using AU and light-year.",
+    "Binary names are moved into a separate upper-right legend box.",
+    "COM marker is plotted directly at the graph center without text label.",
+    "The white dwarf and donor companion are drawn as a deliberately compressed, partly overlapping pair centered on the COM.",
+    "Standard outputs remain observational / geometric references rather than topological reinterpretation terms."
+  ]
+}

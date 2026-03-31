@@ -1,0 +1,17 @@
+﻿T Pyxidis topological local-burst run
+patch_csv=data\derived\Echo of Light\input\T Pyxidis\t_pyx_standard_echo_patches_original_paper.csv
+output_dir=results\Echo of Light\output\T Pyxidis\topological_local_burst\2026-03-30_192250
+
+Interpretive structure:
+- sigma_obs captures the observer-side geometric distortion term from theta and |z|
+- sigma_burst_local captures the local burst-induced low-effective-dimension term
+- sigma_total = w_obs * sigma_obs + w_burst * sigma_burst_local
+
+Parameter values:
+- w_obs = 0.65
+- w_burst = 0.35
+- burst_strength = 1.0
+
+Important note:
+- This model does NOT include the entire source-observer path.
+- It only adds a local burst-induced low-effective-dimension term near T Pyxidis.
