@@ -1,0 +1,6 @@
+﻿review_id,item_label,current_status,reason_not_yet_input_ready,required_action_before_input,priority
+EX001,Rest 2012 observation rows,hold_partial,"Abstract-level values are identified, but exact observation table/page mapping is not yet attached",Add page/table/figure references and convert trend/context rows into input columns,high
+EX002,Smith 2018 velocity rows,hold_partial,Bulk velocity and fast tail are different physical roles and must not be merged into one input field,Split into bulk_velocity_kmps and fast_component_note or separate table,high
+EX003,Gull 2020 mass rows,hold_partial,"dust mass, gas+dust qualitative scale, and geometry extent refer to different layers","Separate dust_torus, homunculus_main_lobes, homunculus_system context rows",high
+EX004,Mehner 2016 quantitative outer ejecta rows,hold_source_only,"Current package has source note only, not extracted original table/text",Open source article/PDF and extract numeric values before input,high
+EX005,image-derived numeric estimates,excluded,Images alone are not sufficient for precision numeric input,Use images as context only unless paired with paper-measured values,medium

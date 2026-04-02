@@ -1,0 +1,6 @@
+[Image source note]
+File: ../images/2012_NASA_Eta_Carinae_Light_Echo.jpg
+Source page: https://science.nasa.gov/asset/hubble/eta-carinae-light-echo/
+Image URL used: https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2012/02/STScI-01EVT4ED9TPGCJYPKP2N364M6R.jpg?crop=faces%2Cfocalpoint&fit=clip&h=3000&w=2400
+Role: raw visual context for light echo field and epoch comparison
+Credit: NASA, NOAO, and A. Rest (STScI); acknowledgment NOAO, AURA, NSF, and N. Smith

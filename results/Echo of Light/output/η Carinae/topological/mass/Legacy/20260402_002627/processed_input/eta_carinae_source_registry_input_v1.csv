@@ -1,0 +1,5 @@
+﻿source_id,citation_short,year,source_type,primary_use,file_or_note,verification_status,notes
+SRC001,Rest et al.,2012,paper,light_echo_discovery_spectrum,2012_Rest_et_al_Light_echoes_reveal_an_unexpectedly_cool_Eta_Carinae_during_its_19th_century_Great_Eruption.pdf,manually_curated,"Great Eruption echo, spectral class, temperature, blueshift, event-scale mass context"
+SRC002,Smith et al.,2018,paper,plateau_echo_velocity,2018_Smith_et_al_Light_echoes_from_the_plateau_in_Eta_Carinaes_Great_Eruption_reveal_a_two_stage_shock_powered_event.pdf,manually_curated,"150->600 km/s bulk evolution, >10000 km/s fast component"
+SRC003,Gull et al.,2020,paper,homunculus_structure_dust,2020_Gull_et_al_Eta_Carinae_and_the_Homunculus_Far_Infrared_Sub_millimeter_Spectral_Lines.pdf,manually_curated,"10x20 arcsec geometry context, ±600 km/s lobes, dust torus 0.22 Msun"
+SRC004,Mehner et al.,2016,source_note,outer_ejecta_placeholder,2016_Mehner_et_al_outer_ejecta_source_note.txt,source_note_only,Numeric extraction deferred until original paper review

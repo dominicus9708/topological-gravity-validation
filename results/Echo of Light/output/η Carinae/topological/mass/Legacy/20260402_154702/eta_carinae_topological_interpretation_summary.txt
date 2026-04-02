@@ -1,0 +1,20 @@
+Eta Carinae topological interpretation summary
+================================================
+
+d_bg_derived = 3.000000
+lambda_derived = 0.601485
+weight_sigma_mass_volume = 0.339978
+weight_sigma_velocity = 0.325042
+weight_sigma_anisotropy = 0.334980
+
+Component interpretation
+------------------------
+- homunculus_main_lobes: sigma=0.788, Dw=2.526, role=strong_core_or_major_structural_distortion
+- outer_ejecta_component: sigma=0.665, Dw=2.600, role=mid_strength_structural_distortion
+- dust_torus: sigma=0.029, Dw=2.982, role=weak_background_like_component
+
+Reading guide
+-------------
+High sigma means stronger structural deviation from the background trial dimension.
+Lower Dw means stronger effective reduction from the background structural trial.
+This file is intended for interpretation-layer review, not just plotting.

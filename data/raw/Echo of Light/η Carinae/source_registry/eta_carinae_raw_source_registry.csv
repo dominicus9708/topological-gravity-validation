@@ -1,0 +1,9 @@
+﻿source_id,type,filename,folder,short_label,intended_use,status
+SRC001,paper_pdf,2012_Rest_et_al_Light_echoes_reveal_an_unexpectedly_cool_Eta_Carinae_during_its_19th_century_Great_Eruption.pdf,papers,Rest et al. 2012,"light echo discovery, spectra, velocity",downloaded PDF
+SRC002,paper_pdf,2018_Smith_et_al_Light_echoes_from_the_plateau_in_Eta_Carinaes_Great_Eruption_reveal_a_two_stage_shock_powered_event.pdf,papers,Smith et al. 2018,"plateau echo, velocity evolution, >10000 km/s",downloaded PDF
+SRC003,paper_pdf,2020_Gull_et_al_Eta_Carinae_and_the_Homunculus_Far_Infrared_Sub_millimeter_Spectral_Lines.pdf,papers,Gull et al. 2020,"Homunculus, dust/gas, far-IR/sub-mm",downloaded PDF
+SRC004,source_note,2016_Mehner_et_al_outer_ejecta_source_note.txt,source_registry,Mehner et al. 2016,"outer ejecta structure, MUSE",source note only
+IMG001,image,2012_NASA_Eta_Carinae_Light_Echo.jpg,images,NASA Hubble light echo image,light echo region / dates / context,downloaded image
+IMG002,image,2014_NASA_GSFC_Eta_Carinae_Homunculus_3D_Model.png,images,NASA GSFC SVS Homunculus 3D model,shape context,downloaded image
+IMG003,image,1998_ESO_High_Velocity_Ejecta_in_Eta_Carinae.jpg,images,ESO high-velocity ejecta image,outer ejecta / jet-like feature context,downloaded image
+NOTE001,note,eta_carinae_raw_extraction_memo_v1.txt,extracted_notes,initial extraction memo,raw-level extraction targets,memo

@@ -1,0 +1,11 @@
+[Rest et al. 2012 source note]
+Title: Light echoes reveal an unexpectedly cool η Carinae during its 19th-century Great Eruption
+Type: arXiv/Nature-linked preprint PDF
+Stored file: ../papers/2012_Rest_et_al_Light_echoes_reveal_an_unexpectedly_cool_Eta_Carinae_during_its_19th_century_Great_Eruption.pdf
+Primary role: light echo discovery, spectra, early velocity information
+Raw-level points to revisit:
+- Great Eruption echo from 1838-1858
+- ejected mass > 10 Msun
+- light echo absorption lines blueshifted around -210 km/s
+- best spectral match G2-G5 supergiant
+Recommended use: standard layer source, early auxiliary context

@@ -1,0 +1,8 @@
+[Mehner et al. 2016 source note]
+Title: MUSEing about the SHAPE of η Carinae's outer ejecta
+Type: open-access A&A article (URL recorded below)
+URL: https://www.aanda.org/articles/aa/full_html/2016/11/aa28770-16/aa28770-16.html
+PDF URL: https://www.aanda.org/articles/aa/pdf/2016/11/aa28770-16.pdf
+Primary role: outer ejecta morphology, MUSE field, coherent 3D structure
+Reason PDF not stored here: direct automated download failed in current environment; source note preserved instead
+Recommended use: outer ejecta component source

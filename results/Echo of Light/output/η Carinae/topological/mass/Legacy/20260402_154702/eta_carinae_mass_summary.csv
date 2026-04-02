@@ -1,0 +1,2 @@
+﻿row_count_all,row_count_real_components,mass_proxy_rows,volume_proxy_rows,sigma_mass_volume_rows,sigma_velocity_rows,sigma_anisotropy_rows,sigma_rows,dw_rows,d_bg_derived,lambda_derived,weight_sigma_mass_volume,weight_sigma_velocity,weight_sigma_anisotropy
+6,3,3,3,3,3,3,3,3,3.0,0.6014853209563177,0.3399784106036982,0.3250419748714273,0.3349796145248745

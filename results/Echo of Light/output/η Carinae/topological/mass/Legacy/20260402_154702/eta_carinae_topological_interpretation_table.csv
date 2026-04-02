@@ -1,0 +1,7 @@
+﻿component_label,proxy_rule_applied,mass_proxy_raw,volume_proxy_raw,sigma_mass_volume,sigma_velocity,sigma_anisotropy,sigma_eta,Dw_trial_mass_volume,interpretation_role
+homunculus_main_lobes,homunculus_mass_linked_to_great_eruption_lower_bound,10.0,2094.3951023931954,0.9985800020315537,0.34782608695652173,1.0,0.7875333346923485,2.5263102594187736,strong_core_or_major_structural_distortion
+dust_torus,dust_torus_major_axis_proxy|minor_axis_proxy|depth_proxy|bulk_velocity_proxy,0.22,54.93421809646337,0.0,0.0,0.08777136130220255,0.029401616775335298,2.9823153590972526,weak_background_like_component
+homunculus_system_context,,,,,,,,,excluded_context
+outer_ejecta_context,,,,,,,,,excluded_context
+great_eruption_bulk_ejecta_context,,10.0,,,,,,,excluded_context
+outer_ejecta_component,outer_ejecta_context_promoted_to_calculable_component,1.0,209.3871503617597,1.0,1.0,0.0,0.6650203854751255,2.6,mid_strength_structural_distortion

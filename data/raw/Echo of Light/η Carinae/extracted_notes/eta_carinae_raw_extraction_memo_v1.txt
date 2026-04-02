@@ -1,0 +1,24 @@
+η Carinae raw extraction memo v1
+===============================
+
+1. light echo standard layer에서 우선 확인할 값
+- echo observation date
+- echo field / echo position
+- photometric phase trend
+- spectral phase classification
+- bulk velocity
+
+2. mass auxiliary layer에서 우선 확인할 값
+- Homunculus total mass 또는 reliable representative mass
+- main lobes angular size / physical extent
+- dust-only mass와 gas+dust mass의 분리 여부
+- outer ejecta characteristic velocity range
+- equatorial structure / torus 관련 수치
+
+3. 혼동 금지
+- light echo를 만드는 산란 먼지와 Homunculus ejecta를 같은 층으로 합치지 말 것
+- dust mass와 total ejecta mass를 같은 열에서 직접 비교하지 말 것
+
+4. 다음 단계
+- derived/input으로 넘길 때는 raw source note에 적힌 값의 표/본문 위치까지 다시 확인
+- component_label 기준으로 homunculus_main_lobes, outer_ejecta, dust_torus 등을 분리

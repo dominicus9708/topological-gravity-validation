@@ -1,0 +1,5 @@
+﻿observation_label,phase_reference,event_time_span_text,source_id,spectral_class,effective_temperature_k,spectral_velocity_kmps,bulk_velocity_kmps,fast_component_velocity_kmps,mass_context_msun_lower_bound,photometric_trend_text,verification_status,notes,phase_rank,phase_year_reconstructed,velocity_magnitude_proxy_kmps
+discovery_echo,1838_1858_great_eruption,1838-1858,SRC001,G2-G5 supergiant,5000.0,-210.0,,,10.0,,input_ready_with_context,"Discovery echo spectral context; blueshift is absorption-line velocity, not bulk outflow",0.0,1848.0,210.0
+plateau_echo_early,1850s_plateau,1850s plateau,SRC002,,,,150.0,,,steady decline over a decade,input_ready_with_context,Early bulk outflow phase,1.0,1851.0,150.0
+plateau_echo_bulk,1850s_plateau,1850s plateau,SRC002,,,,600.0,,,steady decline over a decade,input_ready_with_context,Plateau bulk outflow phase,2.0,1854.0,600.0
+plateau_echo_fast_tail,1850s_plateau,1850s plateau,SRC002,,,,,10000.0,,steady decline over a decade,input_ready_with_context,Fast component / broad wings; keep separate from bulk velocity,2.0,1858.0,10000.0

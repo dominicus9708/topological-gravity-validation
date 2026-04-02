@@ -1,0 +1,4 @@
+﻿image_id,image_file,short_label,primary_context,suggested_use_before_input,do_not_use_for,paired_source_id,verification_status,notes
+IMG001,2012_NASA_Eta_Carinae_Light_Echo.jpg,NASA light echo image,light echo field visual context,source note cross-check / presentation context,precision numeric extraction,SRC001,usable_as_context,Use as raw visual evidence of light echo context
+IMG002,2014_NASA_GSFC_Eta_Carinae_Homunculus_3D_Model.png,NASA GSFC Homunculus 3D model,bipolar geometry visual context,component geometry briefing,exact size or mass input without paper check,SRC003,usable_as_context,Geometry intuition only
+IMG003,1998_ESO_High_Velocity_Ejecta_in_Eta_Carinae.jpg,ESO high-velocity ejecta image,outer ejecta fast-structure context,outer ejecta interpretation support,bulk parameter input by image alone,SRC004,usable_as_context,Visual support for fast external structures

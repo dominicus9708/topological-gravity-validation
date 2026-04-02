@@ -1,0 +1,6 @@
+[Image source note]
+File: ../images/2014_NASA_GSFC_Eta_Carinae_Homunculus_3D_Model.png
+Source page: https://svs.gsfc.nasa.gov/11568/
+Image URL used: https://svs.gsfc.nasa.gov/vis/a010000/a011500/a011568/EtaCarinae_Comp_v04.2664.png
+Role: Homunculus 3D shape reference
+Credit: NASA's Goddard Space Flight Center/CI Lab

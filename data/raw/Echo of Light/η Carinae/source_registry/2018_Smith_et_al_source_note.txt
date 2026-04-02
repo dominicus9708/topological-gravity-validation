@@ -1,0 +1,11 @@
+[Smith et al. 2018 source note]
+Title: Light-echoes from the plateau in Eta Carinae's Great Eruption reveal a two-stage shock-powered event
+Type: arXiv preprint PDF
+Stored file: ../papers/2018_Smith_et_al_Light_echoes_from_the_plateau_in_Eta_Carinaes_Great_Eruption_reveal_a_two_stage_shock_powered_event.pdf
+Primary role: plateau light echo, multi-epoch photometry/spectroscopy, velocity evolution
+Raw-level points to revisit:
+- plateau-phase light echo
+- bulk outflow rises from about 150 km/s to about 600 km/s
+- later very broad wings imply >10000 km/s
+- Homunculus mass context around 15 Msun discussed in introduction
+Recommended use: standard layer source, velocity auxiliary, shock-powered interpretation context

@@ -1,0 +1,37 @@
+Eta Carinae topological pipeline proxy rationale
+================================================
+
+Purpose
+-------
+This file records why component-row restructuring was introduced.
+The goal is not to fit a preferred answer, but to make the same
+component row carry mass + volume + velocity so that a structural
+topological quantity can be computed at all.
+
+Rules applied
+-------------
+1. homunculus_main_lobes
+   - if direct mass is missing, link to Great Eruption lower-bound mass proxy.
+   - reason: the Homunculus is a principal eruption structure, so using the
+     event-scale lower bound is a structural lower-bound proxy, not a tuned fit.
+
+2. dust_torus
+   - if geometry/depth/velocity are missing, inject conservative torus proxies.
+   - reason: torus had mass information but could not form a calculable M/V row.
+
+3. outer_ejecta_context -> outer_ejecta_component
+   - promote context-only row into a calculable outer-ejecta component row.
+   - reason: outer ejecta is physically relevant for distortion comparison,
+     so excluding it would understate the outer structural contribution.
+
+Interpretation note
+-------------------
+These proxies should be treated as conservative structural bridges.
+They enable a first consistency-oriented test. They are not claims that
+the inserted values are final measured truths.
+
+Applied per-row flags
+---------------------
+- homunculus_main_lobes: homunculus_mass_linked_to_great_eruption_lower_bound
+- dust_torus: dust_torus_major_axis_proxy|minor_axis_proxy|depth_proxy|bulk_velocity_proxy
+- outer_ejecta_component: outer_ejecta_context_promoted_to_calculable_component

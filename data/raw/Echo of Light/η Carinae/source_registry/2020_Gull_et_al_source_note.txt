@@ -1,0 +1,10 @@
+[Gull et al. 2020 source note]
+Title: Eta Carinae & the Homunculus: Far Infrared, Sub-millimeter Spectral Lines
+Type: NASA NTRS PDF
+Stored file: ../papers/2020_Gull_et_al_Eta_Carinae_and_the_Homunculus_Far_Infrared_Sub_millimeter_Spectral_Lines.pdf
+Primary role: Homunculus dust/gas context, far-IR/sub-mm structural information
+Raw-level points to revisit:
+- complex bipolar Homunculus nebula
+- tens of solar masses of nitrogen-rich gas and dust
+- dust torus / equatorial structure context
+Recommended use: mass-volume auxiliary source, component separation guide
