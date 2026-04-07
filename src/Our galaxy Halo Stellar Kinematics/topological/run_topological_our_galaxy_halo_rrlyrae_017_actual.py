@@ -1,0 +1,741 @@
+from __future__ import annotations
+
+from pathlib import Path
+from datetime import datetime
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+SHELL_BINS_KPC = [5.0, 10.0, 20.0, 40.0, 80.0, np.inf]
+SHELL_LABELS = ["5-10", "10-20", "20-40", "40-80", "80+"]
+SHELL_CENTERS = {"5-10": 7.5, "10-20": 15.0, "20-40": 30.0, "40-80": 60.0, "80+": 100.0}
+K1 = 8
+K2 = 32
+EPS = 1e-12
+
+MIN_PARALLAX_MAS = 0.0
+MIN_SHELL_N_FOR_GRADIENT = 20
+MIN_SHELL_N_FOR_COUPLING_DIAG = 20
+
+D_BG_REFERENCE = 3.0
+WINSOR_LOWER_Q = 0.10
+WINSOR_UPPER_Q = 0.90
+LAMBDA_STRUCTURAL_SPREAD = 1.0
+
+
+def find_project_root(start_file: Path) -> Path:
+    current = start_file.resolve()
+    for parent in current.parents:
+        if (parent / "data").exists() and (parent / "results").exists():
+            return parent
+    for parent in current.parents:
+        if (parent / "data").exists():
+            return parent
+    return start_file.resolve().parents[4]
+
+
+def ensure_dir(path: Path) -> None:
+    path.mkdir(parents=True, exist_ok=True)
+
+
+def read_csv(path: Path) -> pd.DataFrame:
+    return pd.read_csv(path, low_memory=False)
+
+
+def safe_numeric(series):
+    if series is None:
+        return pd.Series(dtype=float)
+    return pd.to_numeric(series, errors="coerce")
+
+
+def timestamp_folder_name() -> str:
+    return datetime.now().strftime("%Y%m%d_%H%M%S")
+
+
+def shell_x_and_labels(df: pd.DataFrame) -> tuple[np.ndarray, list[str]]:
+    shells = df["shell"].astype(str).tolist()
+    x = np.array([SHELL_CENTERS.get(s, np.nan) for s in shells], dtype=float)
+    return x, shells
+
+
+def robust_normalize(y: pd.Series | np.ndarray) -> np.ndarray:
+    arr = np.asarray(y, dtype=float)
+    mask = np.isfinite(arr)
+    out = np.full_like(arr, np.nan, dtype=float)
+    if mask.sum() == 0:
+        return out
+    vals = arr[mask]
+    lo = np.nanmin(vals)
+    hi = np.nanmax(vals)
+    if hi - lo < EPS:
+        out[mask] = 0.5
+    else:
+        out[mask] = (vals - lo) / (hi - lo)
+    return out
+
+
+def add_proxy_columns(df: pd.DataFrame, is_6d: bool) -> pd.DataFrame:
+    out = df.copy()
+    par = safe_numeric(out.get("parallax_mas"))
+    pmra = safe_numeric(out.get("pmra_masyr"))
+    pmdec = safe_numeric(out.get("pmdec_masyr"))
+
+    out["parallax_mas_for_proxy"] = np.where(par > MIN_PARALLAX_MAS, par, np.nan)
+    out["distance_proxy_kpc_soft"] = np.where(
+        np.isfinite(out["parallax_mas_for_proxy"]),
+        1.0 / out["parallax_mas_for_proxy"],
+        np.nan,
+    )
+
+    if "distance_proxy_kpc" not in out.columns:
+        out["distance_proxy_kpc"] = out["distance_proxy_kpc_soft"]
+
+    if "gal_l_deg" not in out.columns or "gal_b_deg" not in out.columns:
+        ra_deg = safe_numeric(out.get("ra_deg"))
+        dec_deg = safe_numeric(out.get("dec_deg"))
+        ra = np.deg2rad(ra_deg)
+        dec = np.deg2rad(dec_deg)
+
+        alpha_ngp = np.deg2rad(192.85948)
+        delta_ngp = np.deg2rad(27.12825)
+        l_omega = np.deg2rad(32.93192)
+
+        sin_b = (
+            np.sin(dec) * np.sin(delta_ngp)
+            + np.cos(dec) * np.cos(delta_ngp) * np.cos(ra - alpha_ngp)
+        )
+        b = np.arcsin(np.clip(sin_b, -1.0, 1.0))
+        y = np.cos(dec) * np.sin(ra - alpha_ngp)
+        x = (
+            np.sin(dec) * np.cos(delta_ngp)
+            - np.cos(dec) * np.sin(delta_ngp) * np.cos(ra - alpha_ngp)
+        )
+        l = np.arctan2(y, x) + l_omega
+        l = np.mod(l, 2.0 * np.pi)
+
+        out["gal_l_deg"] = np.rad2deg(l)
+        out["gal_b_deg"] = np.rad2deg(b)
+
+    dist = safe_numeric(out.get("distance_proxy_kpc_soft"))
+    out["vt_ra_proxy_kms_soft"] = 4.74047 * pmra * dist
+    out["vt_dec_proxy_kms_soft"] = 4.74047 * pmdec * dist
+    out["vt_total_proxy_kms_soft"] = np.sqrt(
+        np.square(safe_numeric(out.get("vt_ra_proxy_kms_soft")))
+        + np.square(safe_numeric(out.get("vt_dec_proxy_kms_soft")))
+    )
+
+    if is_6d:
+        rv = safe_numeric(out.get("radial_velocity_kms"))
+        out["speed_total_proxy_kms_soft"] = np.sqrt(
+            np.square(safe_numeric(out.get("vt_total_proxy_kms_soft")))
+            + np.square(rv)
+        )
+    else:
+        out["speed_total_proxy_kms_soft"] = np.nan
+
+    return out
+
+
+def add_shells(df: pd.DataFrame) -> pd.DataFrame:
+    out = df.copy()
+    dist = safe_numeric(out.get("distance_proxy_kpc_soft"))
+    out["topological_shell"] = pd.cut(dist, bins=SHELL_BINS_KPC, labels=SHELL_LABELS, right=False)
+    return out
+
+
+def cartesian_from_galactic(df: pd.DataFrame) -> np.ndarray:
+    l = np.deg2rad(safe_numeric(df.get("gal_l_deg")).to_numpy())
+    b = np.deg2rad(safe_numeric(df.get("gal_b_deg")).to_numpy())
+    r = safe_numeric(df.get("distance_proxy_kpc_soft")).to_numpy()
+    x = r * np.cos(b) * np.cos(l)
+    y = r * np.cos(b) * np.sin(l)
+    z = r * np.sin(b)
+    return np.column_stack([x, y, z])
+
+
+def robust_scale_matrix(arr: np.ndarray) -> np.ndarray:
+    out = arr.astype(float).copy()
+    out = np.arcsinh(out)
+    med = np.nanmedian(out, axis=0)
+    q25 = np.nanpercentile(out, 25, axis=0)
+    q75 = np.nanpercentile(out, 75, axis=0)
+    scale = q75 - q25
+    scale = np.where(np.isfinite(scale) & (scale > EPS), scale, 1.0)
+    out = (out - med) / scale
+    out[~np.isfinite(out)] = np.nan
+    return out
+
+
+def pairwise_knn_dimension(features: np.ndarray) -> np.ndarray:
+    n = features.shape[0]
+    result = np.full(n, np.nan, dtype=float)
+    valid_rows = np.all(np.isfinite(features), axis=1)
+    idx_valid = np.where(valid_rows)[0]
+    if len(idx_valid) <= K2:
+        return result
+    f = features[idx_valid]
+    diff = f[:, None, :] - f[None, :, :]
+    dist = np.sqrt(np.sum(diff * diff, axis=2))
+    np.fill_diagonal(dist, np.inf)
+    dist_sorted = np.sort(dist, axis=1)
+    r1 = dist_sorted[:, K1 - 1]
+    r2 = dist_sorted[:, K2 - 1]
+    good = (r1 > EPS) & (r2 > r1)
+    dim = np.full(len(idx_valid), np.nan, dtype=float)
+    dim[good] = (np.log(K2) - np.log(K1)) / (np.log(r2[good]) - np.log(r1[good]))
+    result[idx_valid] = dim
+    return result
+
+
+def build_position_features(df: pd.DataFrame) -> np.ndarray:
+    return robust_scale_matrix(cartesian_from_galactic(df))
+
+
+def build_kinematic_features(df: pd.DataFrame, is_6d: bool) -> np.ndarray:
+    if is_6d:
+        arr = np.column_stack([
+            safe_numeric(df.get("vt_ra_proxy_kms_soft")).to_numpy(),
+            safe_numeric(df.get("vt_dec_proxy_kms_soft")).to_numpy(),
+            safe_numeric(df.get("radial_velocity_kms")).to_numpy(),
+        ])
+    else:
+        arr = np.column_stack([
+            safe_numeric(df.get("vt_ra_proxy_kms_soft")).to_numpy(),
+            safe_numeric(df.get("vt_dec_proxy_kms_soft")).to_numpy(),
+        ])
+    return robust_scale_matrix(arr)
+
+
+def add_quality_weights(df: pd.DataFrame, is_6d: bool) -> pd.DataFrame:
+    out = df.copy()
+    par = safe_numeric(out.get("parallax_mas"))
+    par_err = safe_numeric(out.get("parallax_error_mas"))
+    pmra = safe_numeric(out.get("pmra_masyr"))
+    pmra_err = safe_numeric(out.get("pmra_error_masyr"))
+    pmdec = safe_numeric(out.get("pmdec_masyr"))
+    pmdec_err = safe_numeric(out.get("pmdec_error_masyr"))
+
+    eta_pos = np.sqrt(np.square(par_err / (np.abs(par) + EPS)))
+    eta_pm = np.sqrt(
+        np.square(pmra_err / (np.abs(pmra) + EPS))
+        + np.square(pmdec_err / (np.abs(pmdec) + EPS))
+    )
+
+    q_pos = 1.0 / (1.0 + np.square(eta_pos))
+    q_kin = 1.0 / (1.0 + np.square(eta_pm))
+
+    if is_6d:
+        rv = safe_numeric(out.get("radial_velocity_kms"))
+        rv_err = safe_numeric(out.get("radial_velocity_error_kms"))
+        eta_rv = rv_err / (np.abs(rv) + EPS)
+        q_rv = 1.0 / (1.0 + np.square(eta_rv))
+        q_kin = q_kin * q_rv
+
+    lambda_pos = q_pos / (q_pos + q_kin + EPS)
+    out["q_pos"] = q_pos
+    out["q_kin"] = q_kin
+    out["lambda_pos"] = lambda_pos
+    out["quality_weight"] = np.sqrt(q_pos * q_kin)
+    return out
+
+
+def add_local_dimensions(df: pd.DataFrame, is_6d: bool) -> pd.DataFrame:
+    out = df.copy()
+    d_pos = pairwise_knn_dimension(build_position_features(out))
+    d_kin = pairwise_knn_dimension(build_kinematic_features(out, is_6d))
+    out["D_loc_pos"] = d_pos
+    out["D_loc_kin"] = d_kin
+    lam = safe_numeric(out.get("lambda_pos")).to_numpy()
+    out["D_loc"] = lam * d_pos + (1.0 - lam) * d_kin
+    return out
+
+
+def weighted_winsorized_mean(values: np.ndarray, weights: np.ndarray, lower_q: float, upper_q: float) -> float:
+    mask = np.isfinite(values) & np.isfinite(weights) & (weights > 0)
+    if not mask.any():
+        return np.nan
+    x = values[mask].astype(float)
+    w = weights[mask].astype(float)
+    lo = np.nanquantile(x, lower_q)
+    hi = np.nanquantile(x, upper_q)
+    xw = np.clip(x, lo, hi)
+    return float(np.average(xw, weights=w))
+
+
+def weighted_mad(values: np.ndarray, weights: np.ndarray, center: float) -> float:
+    mask = np.isfinite(values) & np.isfinite(weights) & (weights > 0)
+    if not mask.any() or not np.isfinite(center):
+        return np.nan
+    x = values[mask].astype(float)
+    w = weights[mask].astype(float)
+    abs_dev = np.abs(x - center)
+    return float(np.average(abs_dev, weights=w))
+
+
+def attach_standard_shell_data(dataset_name: str, standard_dir: Path, is_6d: bool):
+    candidates = sorted([p for p in standard_dir.iterdir() if p.is_dir()], key=lambda p: p.name) if standard_dir.exists() else []
+    candidates = [p for p in candidates if p.name.lower() != "legacy"]
+    shell_filename = f"gaia_rrlyrae_{dataset_name}_standard_shells.csv"
+    for c in reversed(candidates):
+        path = c / shell_filename
+        if path.exists():
+            return read_csv(path), str(path)
+    return None, ""
+
+
+def choose_observed_series(sub: pd.DataFrame, is_6d: bool):
+    candidates = ["speed_total_proxy_kms_soft", "speed_total_proxy_kms"] if is_6d else ["vt_total_proxy_kms_soft", "vt_total_proxy_kms"]
+    for col in candidates:
+        if col in sub.columns:
+            s = safe_numeric(sub.get(col))
+            if s.notna().sum() > 1:
+                return s, col
+    return pd.Series(dtype=float), ""
+
+
+def get_standard_maps(standard_shell_df: pd.DataFrame | None, is_6d: bool):
+    if standard_shell_df is None:
+        return {}, "", None
+    model_col = "standard_speed_variance_shell_model" if is_6d else "standard_vt_variance_shell_model"
+    if model_col not in standard_shell_df.columns:
+        return {}, "", standard_shell_df
+    variance_map = dict(zip(standard_shell_df["shell"].astype(str), safe_numeric(standard_shell_df[model_col])))
+    return variance_map, model_col, standard_shell_df
+
+
+def build_shell_distribution_summary(df: pd.DataFrame, dataset_name: str, is_6d: bool) -> pd.DataFrame:
+    rows = []
+    metric_col = "speed_total_proxy_kms_soft" if is_6d else "vt_total_proxy_kms_soft"
+    for shell in SHELL_LABELS:
+        sub = df[df["topological_shell"].astype(str) == shell].copy()
+        vals = safe_numeric(sub.get(metric_col)).dropna().to_numpy()
+        if len(vals) == 0:
+            rows.append({
+                "dataset": dataset_name, "shell": shell, "n_shell": int(len(sub)), "metric_col": metric_col,
+                "obs_n_valid": 0, "obs_median": np.nan, "obs_q10": np.nan, "obs_q25": np.nan,
+                "obs_q75": np.nan, "obs_q90": np.nan, "obs_var": np.nan
+            })
+            continue
+        rows.append({
+            "dataset": dataset_name, "shell": shell, "n_shell": int(len(sub)), "metric_col": metric_col,
+            "obs_n_valid": int(len(vals)),
+            "obs_median": float(np.nanmedian(vals)),
+            "obs_q10": float(np.nanquantile(vals, 0.10)),
+            "obs_q25": float(np.nanquantile(vals, 0.25)),
+            "obs_q75": float(np.nanquantile(vals, 0.75)),
+            "obs_q90": float(np.nanquantile(vals, 0.90)),
+            "obs_var": float(np.nanvar(vals, ddof=1)) if len(vals) > 1 else np.nan
+        })
+    return pd.DataFrame(rows)
+
+
+def classify_stream_richness(counts: pd.Series) -> pd.Series:
+    x = pd.to_numeric(counts, errors="coerce").fillna(0)
+    if len(x) == 0:
+        return pd.Series(dtype="object")
+    q1 = x.quantile(0.33)
+    q2 = x.quantile(0.66)
+    labels = []
+    for v in x:
+        labels.append("low" if v <= q1 else "medium" if v <= q2 else "high")
+    return pd.Series(labels, index=x.index, dtype="object")
+
+
+def build_stream_shell_diag_from_input(project_root: Path) -> pd.DataFrame:
+    overlay_path = project_root / "data" / "derived" / "Our galaxy Halo Stellar Kinematics" / "input" / "halo" / "galstreams_halo_overlay_candidates_input.csv"
+    rows = []
+    if not overlay_path.exists():
+        for shell in SHELL_LABELS:
+            rows.append({"shell": shell, "n_stream_points_overlap": np.nan, "n_unique_tracks_overlap": np.nan,
+                         "n_unique_streams_overlap": np.nan, "stream_richness_flag": pd.NA})
+        return pd.DataFrame(rows)
+    x = read_csv(overlay_path).copy()
+    if "distance_band" not in x.columns:
+        for shell in SHELL_LABELS:
+            rows.append({"shell": shell, "n_stream_points_overlap": np.nan, "n_unique_tracks_overlap": np.nan,
+                         "n_unique_streams_overlap": np.nan, "stream_richness_flag": pd.NA})
+        return pd.DataFrame(rows)
+    x["distance_band"] = x["distance_band"].astype(str).str.strip()
+    for shell in SHELL_LABELS:
+        sub = x[x["distance_band"] == shell].copy()
+        rows.append({
+            "shell": shell,
+            "n_stream_points_overlap": int(len(sub)),
+            "n_unique_tracks_overlap": int(sub["TrackName"].nunique()) if "TrackName" in sub.columns else 0,
+            "n_unique_streams_overlap": int(sub["StreamName"].nunique()) if "StreamName" in sub.columns else 0
+        })
+    out = pd.DataFrame(rows)
+    out["stream_richness_flag"] = classify_stream_richness(out["n_stream_points_overlap"])
+    return out
+
+
+def classify_shell_caution(n_shell: int, stream_richness_flag: object) -> str:
+    if n_shell < MIN_SHELL_N_FOR_COUPLING_DIAG:
+        return "sparse_shell"
+    if isinstance(stream_richness_flag, str) and stream_richness_flag == "high":
+        return "stream_rich_shell"
+    if isinstance(stream_richness_flag, str) and stream_richness_flag == "medium":
+        return "stream_moderate_shell"
+    return "nominal_shell"
+
+
+def build_shell_summary(project_root: Path, df: pd.DataFrame, dataset_name: str, is_6d: bool, standard_shell_df: pd.DataFrame | None, standard_source_path: str) -> pd.DataFrame:
+    rows = []
+    standard_map, standard_model_source, _ = get_standard_maps(standard_shell_df, is_6d=is_6d)
+    stream_diag = build_stream_shell_diag_from_input(project_root)
+
+    for shell in SHELL_LABELS:
+        sub = df[df["topological_shell"].astype(str) == shell].copy()
+        n = len(sub)
+        q = safe_numeric(sub.get("quality_weight")).to_numpy()
+        q = np.where(np.isfinite(q) & (q > 0), q, 1.0) if len(sub) else np.array([])
+        dloc = safe_numeric(sub.get("D_loc")).to_numpy()
+        d_halo = weighted_winsorized_mean(dloc, q, WINSOR_LOWER_Q, WINSOR_UPPER_Q) if len(sub) else np.nan
+        sigma_bg = d_halo - D_BG_REFERENCE if np.isfinite(d_halo) else np.nan
+        sigma_local = dloc - d_halo if len(sub) else np.array([])
+        sigma_local_mean = weighted_winsorized_mean(sigma_local, q, WINSOR_LOWER_Q, WINSOR_UPPER_Q) if len(sub) else np.nan
+        sigma_local_spread = weighted_mad(sigma_local, q, center=0.0) if len(sub) else np.nan
+        sigma_shell_effective = sigma_bg + LAMBDA_STRUCTURAL_SPREAD * sigma_local_spread if np.isfinite(sigma_bg) and np.isfinite(sigma_local_spread) else np.nan
+        observed_series, observed_source = choose_observed_series(sub, is_6d=is_6d)
+        observed_var = float(np.nanvar(observed_series, ddof=1)) if observed_series.notna().sum() > 1 else np.nan
+        standard_var = standard_map.get(shell, np.nan)
+        standard_var = float(standard_var) if pd.notna(standard_var) else np.nan
+        residual = observed_var - standard_var if np.isfinite(observed_var) and np.isfinite(standard_var) else np.nan
+        rows.append({
+            "dataset": dataset_name, "shell": shell, "shell_center_kpc": SHELL_CENTERS[shell], "n_shell": int(n),
+            "D_bg_reference": D_BG_REFERENCE, "D_halo_shell": d_halo, "Sigma_bg_shell": sigma_bg,
+            "sigma_local_mean_shell": sigma_local_mean, "sigma_local_spread_shell": sigma_local_spread,
+            "Sigma_shell_effective": sigma_shell_effective, "lambda_structural_spread": LAMBDA_STRUCTURAL_SPREAD,
+            "observed_series_source": observed_source, "standard_series_source": standard_model_source,
+            "standard_source_path": standard_source_path, "observed_variance_shell": observed_var,
+            "standard_variance_shell": standard_var, "residual_observed_minus_standard": residual
+        })
+
+    shell_df = pd.DataFrame(rows).merge(stream_diag, on="shell", how="left")
+    grad_bg = np.full(len(shell_df), np.nan, dtype=float)
+    grad_eff = np.full(len(shell_df), np.nan, dtype=float)
+    valid = np.full(len(shell_df), False, dtype=bool)
+
+    r = pd.to_numeric(shell_df["shell_center_kpc"], errors="coerce").to_numpy()
+    sigma_bg = pd.to_numeric(shell_df["Sigma_bg_shell"], errors="coerce").to_numpy()
+    sigma_eff = pd.to_numeric(shell_df["Sigma_shell_effective"], errors="coerce").to_numpy()
+    residual = pd.to_numeric(shell_df["residual_observed_minus_standard"], errors="coerce").to_numpy()
+    n_shell = pd.to_numeric(shell_df["n_shell"], errors="coerce").to_numpy()
+
+    for i in range(len(shell_df) - 1):
+        enough_n = (n_shell[i] >= MIN_SHELL_N_FOR_GRADIENT) and (n_shell[i + 1] >= MIN_SHELL_N_FOR_GRADIENT)
+        if enough_n and np.isfinite(r[i]) and np.isfinite(r[i + 1]) and (r[i + 1] > r[i]):
+            if np.isfinite(sigma_bg[i + 1]) and np.isfinite(sigma_bg[i]):
+                grad_bg[i] = abs((sigma_bg[i + 1] - sigma_bg[i]) / (r[i + 1] - r[i]))
+            if np.isfinite(sigma_eff[i + 1]) and np.isfinite(sigma_eff[i]):
+                grad_eff[i] = abs((sigma_eff[i + 1] - sigma_eff[i]) / (r[i + 1] - r[i]))
+
+    finite_grad_bg = np.where(np.isfinite(grad_bg))[0]
+    if len(finite_grad_bg) > 0 and not np.isfinite(grad_bg[-1]):
+        grad_bg[-1] = grad_bg[finite_grad_bg[-1]]
+    finite_grad_eff = np.where(np.isfinite(grad_eff))[0]
+    if len(finite_grad_eff) > 0 and not np.isfinite(grad_eff[-1]):
+        grad_eff[-1] = grad_eff[finite_grad_eff[-1]]
+
+    shell_df["topological_gradient_term_bg"] = grad_bg
+    shell_df["topological_gradient_term_effective"] = grad_eff
+    shell_df["coupling_shell_diagnostic_valid"] = valid
+    shell_df["shell_caution_label"] = [
+        classify_shell_caution(int(n) if pd.notna(n) else 0, s)
+        for n, s in zip(shell_df["n_shell"], shell_df["stream_richness_flag"])
+    ]
+    return shell_df
+
+
+def summarize_dataset(df: pd.DataFrame, shell_df: pd.DataFrame, dataset_name: str) -> dict:
+    dloc = safe_numeric(df.get("D_loc"))
+    lam = safe_numeric(df.get("lambda_pos"))
+    sigma_bg = safe_numeric(shell_df.get("Sigma_bg_shell"))
+    sigma_spread = safe_numeric(shell_df.get("sigma_local_spread_shell"))
+    sigma_eff = safe_numeric(shell_df.get("Sigma_shell_effective"))
+    grad_eff = safe_numeric(shell_df.get("topological_gradient_term_effective"))
+    return {
+        "dataset": dataset_name, "rows_read": int(len(df)), "rows_written": int(len(df)),
+        "shells_nonempty": int((pd.to_numeric(shell_df["n_shell"], errors="coerce") > 0).sum()),
+        "median_D_loc": float(np.nanmedian(dloc)) if dloc.notna().any() else np.nan,
+        "median_lambda_pos": float(np.nanmedian(lam)) if lam.notna().any() else np.nan,
+        "median_Sigma_bg_shell": float(np.nanmedian(sigma_bg)) if sigma_bg.notna().any() else np.nan,
+        "median_sigma_local_spread_shell": float(np.nanmedian(sigma_spread)) if sigma_spread.notna().any() else np.nan,
+        "median_Sigma_shell_effective": float(np.nanmedian(sigma_eff)) if sigma_eff.notna().any() else np.nan,
+        "median_topological_gradient_term_effective": float(np.nanmedian(grad_eff)) if grad_eff.notna().any() else np.nan
+    }
+
+
+def plot_shell_interval_comparison(dist_df: pd.DataFrame, shell_df: pd.DataFrame, dataset_name: str, outpath: Path) -> None:
+    merged = dist_df.merge(
+        shell_df[["shell", "Sigma_shell_effective", "topological_gradient_term_effective"]],
+        on="shell", how="left"
+    )
+    x, shells = shell_x_and_labels(merged)
+    obs_median = safe_numeric(merged["obs_median"]).to_numpy()
+    obs_q10 = safe_numeric(merged["obs_q10"]).to_numpy()
+    obs_q25 = safe_numeric(merged["obs_q25"]).to_numpy()
+    obs_q75 = safe_numeric(merged["obs_q75"]).to_numpy()
+    obs_q90 = safe_numeric(merged["obs_q90"]).to_numpy()
+
+    sig_n = robust_normalize(safe_numeric(merged["Sigma_shell_effective"]).to_numpy())
+    grad_n = robust_normalize(safe_numeric(merged["topological_gradient_term_effective"]).to_numpy())
+
+    fig, axes = plt.subplots(2, 1, figsize=(10, 9), sharex=True)
+
+    obs_outer_color = "tab:blue"
+    obs_inner_color = "tab:orange"
+    obs_median_color = "tab:red"
+    topo_contrast_color = "tab:purple"
+    topo_gradient_color = "tab:green"
+
+    m = np.isfinite(x) & np.isfinite(obs_median)
+    if m.any():
+        for xi, q10, q25, med, q75, q90 in zip(x[m], obs_q10[m], obs_q25[m], obs_median[m], obs_q75[m], obs_q90[m]):
+            if np.isfinite(q10) and np.isfinite(q90):
+                axes[0].vlines(xi, q10, q90, linewidth=10, alpha=0.22, color=obs_outer_color)
+            if np.isfinite(q25) and np.isfinite(q75):
+                axes[0].vlines(xi, q25, q75, linewidth=18, alpha=0.32, color=obs_inner_color)
+            axes[0].scatter([xi], [med], s=90, marker="o", color=obs_median_color, zorder=3, label="_nolegend_")
+    axes[0].plot([], [], linewidth=10, alpha=0.22, color=obs_outer_color, label="Observed 10-90% interval")
+    axes[0].plot([], [], linewidth=18, alpha=0.32, color=obs_inner_color, label="Observed 25-75% interval")
+    axes[0].scatter([], [], s=90, marker="o", color=obs_median_color, label="Observed median")
+    axes[0].set_ylabel("Observed speed proxy scale")
+    axes[0].set_title(f"{dataset_name.upper()} observation interval comparison")
+    axes[0].grid(True, alpha=0.3)
+    axes[0].legend()
+
+    m_sig = np.isfinite(x) & np.isfinite(sig_n)
+    m_grad = np.isfinite(x) & np.isfinite(grad_n)
+    if m_sig.any():
+        for xi, yi in zip(x[m_sig], sig_n[m_sig]):
+            axes[1].vlines(xi - 0.9, 0.0, yi, linewidth=14, alpha=0.30, color=topo_contrast_color)
+            axes[1].scatter([xi - 0.9], [yi], s=95, marker="o", color=topo_contrast_color, zorder=3, label="_nolegend_")
+    if m_grad.any():
+        for xi, yi in zip(x[m_grad], grad_n[m_grad]):
+            axes[1].vlines(xi + 0.9, 0.0, yi, linewidth=8, alpha=0.45, color=topo_gradient_color)
+            axes[1].scatter([xi + 0.9], [yi], s=95, marker="s", color=topo_gradient_color, zorder=3, label="_nolegend_")
+    axes[1].plot([], [], linewidth=14, alpha=0.30, color=topo_contrast_color, label="Topological effective contrast")
+    axes[1].plot([], [], linewidth=8, alpha=0.45, color=topo_gradient_color, label="Topological effective gradient")
+    axes[1].scatter([], [], s=95, marker="o", color=topo_contrast_color, label="Effective contrast value")
+    axes[1].scatter([], [], s=95, marker="s", color=topo_gradient_color, label="Gradient value")
+    axes[1].set_ylabel("Normalized topological level")
+    axes[1].set_xlabel("Shell center [kpc]")
+    axes[1].set_title(f"{dataset_name.upper()} topological interval-style output")
+    axes[1].grid(True, alpha=0.3)
+    axes[1].legend()
+    axes[1].set_xticks(x)
+    axes[1].set_xticklabels(shells)
+
+    fig.tight_layout()
+    fig.savefig(outpath, dpi=180, bbox_inches="tight")
+    plt.close(fig)
+
+
+def plot_topological_only(shell_df: pd.DataFrame, dataset_name: str, outpath: Path) -> None:
+    x, shells = shell_x_and_labels(shell_df)
+    sig_n = robust_normalize(safe_numeric(shell_df["Sigma_shell_effective"]).to_numpy())
+    grad_n = robust_normalize(safe_numeric(shell_df["topological_gradient_term_effective"]).to_numpy())
+
+    fig, ax = plt.subplots(figsize=(10, 4.8))
+    topo_contrast_color = "tab:purple"
+    topo_gradient_color = "tab:green"
+    m_sig = np.isfinite(x) & np.isfinite(sig_n)
+    m_grad = np.isfinite(x) & np.isfinite(grad_n)
+    if m_sig.any():
+        for xi, yi in zip(x[m_sig], sig_n[m_sig]):
+            ax.vlines(xi - 1.0, 0.0, yi, linewidth=14, alpha=0.30, color=topo_contrast_color)
+            ax.scatter([xi - 1.0], [yi], s=95, marker="o", color=topo_contrast_color, zorder=3, label="_nolegend_")
+    if m_grad.any():
+        for xi, yi in zip(x[m_grad], grad_n[m_grad]):
+            ax.vlines(xi + 1.0, 0.0, yi, linewidth=8, alpha=0.45, color=topo_gradient_color)
+            ax.scatter([xi + 1.0], [yi], s=95, marker="s", color=topo_gradient_color, zorder=3, label="_nolegend_")
+    ax.plot([], [], linewidth=14, alpha=0.30, color=topo_contrast_color, label="Topological effective contrast")
+    ax.plot([], [], linewidth=8, alpha=0.45, color=topo_gradient_color, label="Topological effective gradient")
+    ax.scatter([], [], s=95, marker="o", color=topo_contrast_color, label="Effective contrast value")
+    ax.scatter([], [], s=95, marker="s", color=topo_gradient_color, label="Gradient value")
+    ax.set_ylabel("Normalized topological level")
+    ax.set_xlabel("Shell center [kpc]")
+    ax.set_title(f"{dataset_name.upper()} topological-only output")
+    ax.grid(True, alpha=0.3)
+    ax.legend()
+    ax.set_xticks(x)
+    ax.set_xticklabels(shells)
+    fig.tight_layout()
+    fig.savefig(outpath, dpi=180, bbox_inches="tight")
+    plt.close(fig)
+
+
+def plot_structure_support(shell_df: pd.DataFrame, dataset_name: str, outpath: Path) -> None:
+    x, shells = shell_x_and_labels(shell_df)
+    d_halo = safe_numeric(shell_df.get("D_halo_shell"))
+    sigma_bg = safe_numeric(shell_df.get("Sigma_bg_shell"))
+    sigma_spread = safe_numeric(shell_df.get("sigma_local_spread_shell"))
+    sigma_eff = safe_numeric(shell_df.get("Sigma_shell_effective"))
+    grad_eff = safe_numeric(shell_df.get("topological_gradient_term_effective"))
+
+    fig, axes = plt.subplots(3, 1, figsize=(9, 11), sharex=True)
+    for y, label, marker in [(d_halo, "D_halo_shell", "o"), (sigma_bg, "Sigma_bg_shell", "s")]:
+        arr = safe_numeric(y).to_numpy()
+        m = np.isfinite(x) & np.isfinite(arr)
+        if m.any():
+            axes[0].vlines(x[m], 0, arr[m], linewidth=1.0, alpha=0.7)
+            axes[0].scatter(x[m], arr[m], s=55, marker=marker, label=label)
+    axes[0].set_ylabel("Structure level")
+    axes[0].set_title(f"{dataset_name.upper()} structural background support")
+    axes[0].grid(True, alpha=0.3)
+    axes[0].legend()
+
+    for y, label, marker in [(sigma_spread, "sigma_local_spread_shell", "o"), (sigma_eff, "Sigma_shell_effective", "s")]:
+        arr = safe_numeric(y).to_numpy()
+        m = np.isfinite(x) & np.isfinite(arr)
+        if m.any():
+            axes[1].vlines(x[m], 0, arr[m], linewidth=1.0, alpha=0.7)
+            axes[1].scatter(x[m], arr[m], s=55, marker=marker, label=label)
+    axes[1].set_ylabel("Spread / effective contrast")
+    axes[1].set_title(f"{dataset_name.upper()} shell-local structural spread")
+    axes[1].grid(True, alpha=0.3)
+    axes[1].legend()
+
+    arr = grad_eff.to_numpy()
+    m = np.isfinite(x) & np.isfinite(arr)
+    if m.any():
+        axes[2].vlines(x[m], 0, arr[m], linewidth=1.0, alpha=0.7)
+        axes[2].scatter(x[m], arr[m], s=55, marker="o", label="topological_gradient_term_effective")
+    axes[2].set_ylabel("Effective gradient")
+    axes[2].set_xlabel("Shell center [kpc]")
+    axes[2].set_title(f"{dataset_name.upper()} structural gradient support")
+    axes[2].grid(True, alpha=0.3)
+    axes[2].legend()
+    axes[2].set_xticks(x)
+    axes[2].set_xticklabels(shells)
+    fig.tight_layout()
+    fig.savefig(outpath, dpi=180, bbox_inches="tight")
+    plt.close(fig)
+
+
+def plot_complexity_support(shell_df: pd.DataFrame, dataset_name: str, outpath: Path) -> None:
+    x, shells = shell_x_and_labels(shell_df)
+    n_points = safe_numeric(shell_df.get("n_stream_points_overlap"))
+    n_streams = safe_numeric(shell_df.get("n_unique_streams_overlap"))
+    richness = shell_df.get("stream_richness_flag", pd.Series(["none"] * len(shell_df)))
+    caution = shell_df.get("shell_caution_label", pd.Series(["nominal_shell"] * len(shell_df)))
+
+    fig, axes = plt.subplots(2, 1, figsize=(9, 8), sharex=True)
+    m = np.isfinite(x)
+    axes[0].bar(x[m] - 1.2, n_points.fillna(0).to_numpy()[m], width=2.2, label="n_stream_points_overlap")
+    axes[0].bar(x[m] + 1.2, n_streams.fillna(0).to_numpy()[m], width=2.2, label="n_unique_streams_overlap")
+    axes[0].set_ylabel("Count")
+    axes[0].set_title(f"{dataset_name.upper()} shell-wise halo complexity")
+    axes[0].grid(True, axis="y", alpha=0.3)
+    axes[0].legend()
+
+    richness_map = {"none": 0, "low": 1, "medium": 2, "high": 3}
+    caution_map = {"sparse_shell": 0, "nominal_shell": 1, "stream_moderate_shell": 2, "stream_rich_shell": 3}
+    y_r = np.array([richness_map.get(str(v), np.nan) for v in richness.tolist()], dtype=float)
+    y_c = np.array([caution_map.get(str(v), np.nan) for v in caution.tolist()], dtype=float)
+    mr = np.isfinite(x) & np.isfinite(y_r)
+    mc = np.isfinite(x) & np.isfinite(y_c)
+    if mr.any():
+        axes[1].scatter(x[mr], y_r[mr], s=70, marker="o", label="stream_richness_flag")
+    if mc.any():
+        axes[1].scatter(x[mc], y_c[mc], s=70, marker="s", label="shell_caution_label")
+    axes[1].set_yticks([0, 1, 2, 3])
+    axes[1].set_yticklabels(["0", "1", "2", "3"])
+    axes[1].set_ylabel("Diagnostic level")
+    axes[1].set_xlabel("Shell center [kpc]")
+    axes[1].set_title(f"{dataset_name.upper()} shell diagnostic categories")
+    axes[1].grid(True, alpha=0.3)
+    axes[1].legend()
+    axes[1].set_xticks(x)
+    axes[1].set_xticklabels(shells)
+    fig.tight_layout()
+    fig.savefig(outpath, dpi=180, bbox_inches="tight")
+    plt.close(fig)
+
+
+def run_one_dataset(project_root: Path, dataset_name: str, is_6d: bool, output_dir: Path, plot_dir: Path) -> dict:
+    input_dir = project_root / "data" / "derived" / "Our galaxy Halo Stellar Kinematics" / "input"
+    standard_dir = project_root / "results" / "Our galaxy Halo Stellar Kinematics" / "output" / "standard"
+    input_path = input_dir / f"gaia_rrlyrae_{dataset_name}_input.csv"
+    if not input_path.exists():
+        raise FileNotFoundError(f"Input CSV not found: {input_path}")
+
+    df = read_csv(input_path)
+    df = add_proxy_columns(df, is_6d=is_6d)
+    df = add_shells(df)
+    df = add_quality_weights(df, is_6d=is_6d)
+    df = add_local_dimensions(df, is_6d=is_6d)
+
+    dist_df = build_shell_distribution_summary(df, dataset_name=dataset_name, is_6d=is_6d)
+    standard_shell_df, standard_source_path = attach_standard_shell_data(dataset_name, standard_dir, is_6d=is_6d)
+    shell_df = build_shell_summary(
+        project_root=project_root, df=df, dataset_name=dataset_name, is_6d=is_6d,
+        standard_shell_df=standard_shell_df, standard_source_path=standard_source_path
+    )
+
+    shell_to_d_halo = dict(zip(shell_df["shell"], shell_df["D_halo_shell"]))
+    df["D_bg_reference"] = D_BG_REFERENCE
+    df["D_halo_shell"] = df["topological_shell"].astype(str).map(shell_to_d_halo)
+    df["sigma_local"] = safe_numeric(df.get("D_loc")) - safe_numeric(df.get("D_halo_shell"))
+    df["topological_preserved_input"] = True
+
+    df.to_csv(output_dir / f"gaia_rrlyrae_{dataset_name}_topological.csv", index=False)
+    shell_df.to_csv(output_dir / f"gaia_rrlyrae_{dataset_name}_topological_shells.csv", index=False)
+    dist_df.to_csv(output_dir / f"gaia_rrlyrae_{dataset_name}_observed_shell_distribution.csv", index=False)
+
+    plot_shell_interval_comparison(dist_df, shell_df, dataset_name, plot_dir / f"{dataset_name}_shell_interval_comparison.png")
+    plot_topological_only(shell_df, dataset_name, plot_dir / f"{dataset_name}_topological_only.png")
+    plot_structure_support(shell_df, dataset_name, plot_dir / f"{dataset_name}_structure_support.png")
+    plot_complexity_support(shell_df, dataset_name, plot_dir / f"{dataset_name}_complexity_support.png")
+
+    return summarize_dataset(df, shell_df, dataset_name)
+
+
+def main() -> None:
+    project_root = find_project_root(Path(__file__))
+    output_dir = project_root / "results" / "Our galaxy Halo Stellar Kinematics" / "output" / "topological" / timestamp_folder_name()
+    plot_dir = output_dir / "plot"
+    ensure_dir(output_dir)
+    ensure_dir(plot_dir)
+
+    print(f"[INFO] Project root: {project_root}")
+    print(f"[INFO] Output dir: {output_dir}")
+
+    summaries = [
+        run_one_dataset(project_root, "5d", False, output_dir, plot_dir),
+        run_one_dataset(project_root, "6d", True, output_dir, plot_dir),
+    ]
+    pd.DataFrame(summaries).to_csv(output_dir / "topological_summary.csv", index=False)
+
+    readme = '''Our galaxy Halo Stellar Kinematics - topological stage 017
+
+Changes from stage 016
+- Standard-only distance panels are removed.
+- Observation and topological interval plots now use clearly separated color families.
+- 6D observation panel uses shell-wise vertical intervals rather than continuous fill.
+- Only the presentation-relevant plots are saved.
+'''
+    (output_dir / "README_topological.txt").write_text(readme, encoding="utf-8")
+
+    print("[DONE] Saved:")
+    print(f" - {output_dir / 'gaia_rrlyrae_5d_topological.csv'}")
+    print(f" - {output_dir / 'gaia_rrlyrae_5d_topological_shells.csv'}")
+    print(f" - {output_dir / 'gaia_rrlyrae_5d_observed_shell_distribution.csv'}")
+    print(f" - {output_dir / 'gaia_rrlyrae_6d_topological.csv'}")
+    print(f" - {output_dir / 'gaia_rrlyrae_6d_topological_shells.csv'}")
+    print(f" - {output_dir / 'gaia_rrlyrae_6d_observed_shell_distribution.csv'}")
+    print(f" - {output_dir / 'topological_summary.csv'}")
+    print(f" - {plot_dir / '5d_shell_interval_comparison.png'}")
+    print(f" - {plot_dir / '5d_topological_only.png'}")
+    print(f" - {plot_dir / '5d_structure_support.png'}")
+    print(f" - {plot_dir / '5d_complexity_support.png'}")
+    print(f" - {plot_dir / '6d_shell_interval_comparison.png'}")
+    print(f" - {plot_dir / '6d_topological_only.png'}")
+    print(f" - {plot_dir / '6d_structure_support.png'}")
+    print(f" - {plot_dir / '6d_complexity_support.png'}")
+    print(f" - {output_dir / 'README_topological.txt'}")
+
+
+if __name__ == "__main__":
+    main()
