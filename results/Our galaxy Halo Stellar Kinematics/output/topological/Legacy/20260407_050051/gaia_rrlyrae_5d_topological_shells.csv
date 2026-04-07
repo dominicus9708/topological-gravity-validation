@@ -1,0 +1,6 @@
+dataset,shell,shell_center_kpc,n_shell,D_bg_reference,D_halo_shell,Sigma_bg_shell,sigma_local_mean_shell,observed_series_source,standard_series_source,standard_source_path,observed_variance_shell,standard_variance_shell,residual_observed_minus_standard,topological_gradient_term_bg,coupling_shell_diagnostic,coupling_shell_diagnostic_valid
+5d,5-10,7.5,8610,3.0,2.4143003188793175,-0.5856996811206825,4.785706326807216e-16,vt_total_proxy_kms_soft,,,19969.820666005413,,,0.00317097854881645,,False
+5d,10-20,15.0,7593,3.0,2.390517979763194,-0.6094820202368059,-3.2416063986692504e-16,vt_total_proxy_kms_soft,,,30165.229927636065,,,0.005952396063690646,,False
+5d,20-40,30.0,3458,3.0,2.3012320388078344,-0.6987679611921656,-1.1228065812533958e-16,vt_total_proxy_kms_soft,,,91847.04710541131,,,0.003547613850748643,,False
+5d,40-80,60.0,1512,3.0,2.194803623285375,-0.8051963767146249,-8.587211878868279e-18,vt_total_proxy_kms_soft,,,241909.23611924233,,,0.0025382769343205934,,False
+5d,80+,100.0,1344,3.0,2.0932725459125514,-0.9067274540874486,7.636655715640824e-17,vt_total_proxy_kms_soft,,,603980010.5888257,,,0.0025382769343205934,,False

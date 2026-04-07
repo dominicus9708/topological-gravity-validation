@@ -1,0 +1,3 @@
+dataset,rows_read,rows_written,shells_nonempty,median_D_loc,median_lambda_pos,median_Sigma_bg_shell,median_topological_gradient_term_bg,median_coupling_shell_diagnostic,coupling_shell_diagnostic_valid_n
+5d,22517,22517,5,2.3171424331600337,0.4030146395426611,-0.6987679611921656,0.00317097854881645,,0
+6d,858,858,3,2.308640635826249,0.49811235065474235,-0.04483418618734847,0.08550265382387814,,0

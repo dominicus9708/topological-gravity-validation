@@ -1,0 +1,6 @@
+Selection notes
+- This project is fixed to Our Galaxy halo stellar kinematics.
+- External-galaxy main-body contamination should be excluded from the start.
+- 5D set is the extended raw subset.
+- 6D set is the radial-velocity-available baseline subset.
+- Final selection details should be recorded again after actual query execution.

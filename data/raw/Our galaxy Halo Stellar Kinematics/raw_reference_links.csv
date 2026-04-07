@@ -1,0 +1,5 @@
+item_name,action,reference_url,notes
+Gaia DR3 RR Lyrae metadata,link_only,https://gaia.aip.de/metadata/gaiadr3/vari_rrlyrae/,RR Lyrae source table reference
+Gaia DR3 gaia_source metadata,link_only,https://gaia.aip.de/metadata/gaiadr3/gaia_source/,Main Gaia source table reference
+Gaia DR3 astrophysical_parameters metadata,link_only,https://gaia.aip.de/metadata/gaiadr3/astrophysical_parameters/,Large table; link only
+Gaia DR3 overview,link_only,https://www.cosmos.esa.int/web/gaia/dr3,General DR3 reference

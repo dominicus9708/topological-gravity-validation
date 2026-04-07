@@ -1,0 +1,5 @@
+item_name,action,reference_url,notes
+galstreams paper (MNRAS 2023),link_only,https://doi.org/10.1093/mnras/stad321,Primary scientific reference for the galstreams library; describes 95 Milky Way streams and homogenized 3D/5D/6D tracks.
+galstreams GitHub repository,download_or_clone,https://github.com/cmateu/galstreams,Primary software distribution; README states TOPCAT-friendly CSV files are stored by default in galstreams/tracks and release v1.0.1 is shown on GitHub.
+galstreams ASCL record,link_only,https://www.ascl.net/1711.010,Software registry entry summarizing library contents and public code site.
+galstreams repository archive (main branch zip),download_if_needed,https://github.com/cmateu/galstreams/archive/refs/heads/main.zip,Convenient archive source for raw collection script; script searches extracted tree for galstreams/tracks CSV tables.

@@ -1,0 +1,15 @@
+source_id
+ra
+dec
+parallax
+parallax_error
+pmra
+pmra_error
+pmdec
+pmdec_error
+phot_g_mean_mag
+bp_rp
+variable_type
+radial_velocity
+radial_velocity_error
+distance_proxy_note

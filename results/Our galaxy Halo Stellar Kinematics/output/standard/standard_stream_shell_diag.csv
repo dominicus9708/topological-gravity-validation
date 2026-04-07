@@ -1,0 +1,6 @@
+shell,n_stream_points_overlap,n_unique_tracks_overlap,n_unique_streams_overlap,dominant_halo_usefulness_label,dominant_InfoFlags_str,stream_richness_flag
+5-10,71506,28,28,A_full_6D_like,1111,medium
+10-20,109642,48,48,B_partial_dynamic,1111,high
+20-40,87098,28,28,B_partial_dynamic,1110,high
+40-80,8861,4,4,B_partial_dynamic,1110,low
+80+,60,1,1,D_minimal,1000,low

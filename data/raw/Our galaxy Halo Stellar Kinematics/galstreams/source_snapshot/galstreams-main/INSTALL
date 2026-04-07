@@ -1,0 +1,9 @@
+To install the latest development version of galstreams, use `pip` by running the
+following command in a terminal:
+
+    pip install git+https://github.com/cmateu/galstreams
+
+Or, download or clone the source code, change directory into the galstreams repository
+folder and run:
+
+    pip install .

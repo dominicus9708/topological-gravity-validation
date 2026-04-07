@@ -1,0 +1,12 @@
+The ATLAS-AliqaUma (AAU) stream is argued by \citet{Li2021} to be a single feature that includes the previously
+identified ATLAS \citep{Koposov2014} and AliqaUma streams \citep{Shipp2018}. The S5 spectroscopic survey of the region
+shows it is discontinuous in the sky, but continuous in distance, proper motion and radial velocity.
+
+Because of the sharp discontinuity in the sky, we have implemented it as two separate tracks: AAU-ATLAS and AAU-AliqaUMA.
+The sky tracks are given by Eq. 3 by \citet{Li2021}, the distance modulus track is given by their Eq.~2 and the radial velocity and proper motion tracks are given in their Eq. 1. The radial velocity was converted back from GSR to LSR assuming the solar and LSR 
+used by the authors and provided in their Sec.1. The proper motions given by their Eq.~1 do not include the solar reflex motion correction.
+
+\neww{
+The coordinate frame for the stream (for the two branches) is implemented using the rotation matrix provided by \citet{Li2021},
+but note the resulting $\phi_1$ is flipped with respect to \citet{Li2021} (i.e. $\phi_1=-\phi_1^{L21}$).
+}

@@ -1,0 +1,6 @@
+dataset,shell,shell_center_kpc,n_shell,D_bg_reference,D_halo_shell,Sigma_bg_shell,sigma_local_mean_shell,sigma_local_median_shell,observed_series_source,standard_series_source,observed_variance_shell,standard_variance_shell,topological_gradient_term_bg,coupling_shell_diagnostic,coupling_shell_diagnostic_valid,residual_observed_minus_standard
+6d,5-10,7.5,824,3.0,2.7594991029680087,-0.2405008970319913,-8.315586635469477e-16,-0.05801275036753318,speed_total_proxy_kms_stable,std_standard_speed_proxy_centered_kms,19799.74727412438,19799.74727412438,0.13267018680524328,0.0,True,0.0
+6d,10-20,15.0,31,3.0,3.7545255040073333,0.7545255040073333,3.7437867953841636e-16,-0.07554116095275806,speed_total_proxy_kms_stable,std_standard_speed_proxy_centered_kms,82908.12333677658,82908.12333677658,,,False,0.0
+6d,20-40,30.0,0,3.0,,,,,missing,missing,,,,,False,
+6d,40-80,60.0,3,3.0,13.804332861730183,10.804332861730183,9.379422956377422e-16,-2.953681242550997,speed_total_proxy_kms_stable,std_standard_speed_proxy_centered_kms,1811095.2847156005,1811095.2847156003,,,False,2.3283064365386963e-10
+6d,80+,100.0,0,3.0,,,,,missing,missing,,,0.13267018680524328,,False,

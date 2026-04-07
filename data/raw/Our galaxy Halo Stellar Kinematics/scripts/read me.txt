@@ -1,0 +1,1 @@
+python "data\raw\Our Galaxy Halo Stellar Kinematics\scripts\download_gaia_rrlyrae_5d_6d_async_pyvo.py"

@@ -1,0 +1,17 @@
+SELECT
+    v.source_id,
+    s.ra,
+    s.dec,
+    s.parallax,
+    s.parallax_error,
+    s.pmra,
+    s.pmra_error,
+    s.pmdec,
+    s.pmdec_error,
+    s.phot_g_mean_mag,
+    s.bp_rp,
+    v.int_average_g,
+    v.metallicity
+FROM gaiadr3.vari_rrlyrae v
+JOIN gaiadr3.gaia_source s
+  ON v.source_id = s.source_id

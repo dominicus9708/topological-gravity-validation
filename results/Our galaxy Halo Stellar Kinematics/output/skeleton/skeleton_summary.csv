@@ -1,0 +1,3 @@
+dataset,rows_read,rows_written,source_id_unique,distance_proxy_nonnull,vt_total_proxy_nonnull,speed_total_proxy_nonnull
+5d,22517,22517,22517,22517,22517,0
+6d,858,858,858,858,858,858
