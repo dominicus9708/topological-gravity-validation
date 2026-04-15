@@ -1,0 +1,42 @@
+Validation of Structural Contrast Baseline
+WISE H II first-pass derived manifest
+============================================================
+
+Purpose
+-------
+This is the first derived-stage summary built from the raw WISE H II catalog and candidate lists.
+It is intended for manual target review before fixing final input targets.
+
+Key rule
+--------
+This stage prepares review tables.
+It does not yet define the final input target set automatically.
+
+Source files used
+-----------------
+C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\catalog\wise_hii_V2.3.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\catalog\wise_hii_V1.3.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\candidate_lists\wise_hii_normalized_full.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\candidate_lists\wise_hii_shortlist_known_group_simple_shell.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\candidate_lists\wise_hii_shortlist_candidate_simple_shell.csv
+
+Output files
+------------
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables\wise_hii_master_catalog_for_baseline_review.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\review\wise_hii_review_known_group_priority.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\review\wise_hii_review_candidate_priority.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\review\wise_hii_review_top_priority_first_pass.csv
+
+Summary
+-------
+master rows: 8422
+known/group review rows: 1687
+candidate review rows: 819
+top-priority first-pass rows: 770
+
+Recommended next step
+---------------------
+1. Open wise_hii_review_top_priority_first_pass.csv
+2. Manually inspect 5 to 10 targets by image cutout
+3. Keep 1 clean shell + 1 mildly asymmetric shell + 1 backup target
+4. Only after that, build data/derived/.../input/

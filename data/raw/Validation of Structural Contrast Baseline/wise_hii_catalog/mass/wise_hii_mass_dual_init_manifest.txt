@@ -1,0 +1,18 @@
+WISE H II dual-track mass search initialization
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Input registry: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass\wise_hii_mass_search_registry.csv
+Output directory: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass
+
+Rows initialized: 2506
+
+Generated files:
+- wise_hii_mass_dual_search_input.csv
+- wise_hii_mass_dual_candidates_initial.csv
+- wise_hii_mass_dual_source_registry.csv
+- wise_hii_mass_dual_init_manifest.txt
+
+Operational rule:
+Run direct-mass search and proxy search in parallel from the raw layer.
+Do not wait for direct-mass failure before starting proxy search.
+Use source_track to distinguish direct and proxy literature rows.

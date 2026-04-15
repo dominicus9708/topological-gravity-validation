@@ -1,0 +1,23 @@
+wise_name: G233.830-00.180
+priority_rank: 2
+catalog_class: G
+input_group: known_group_shortlist
+hii_region_name: S305; RCW8
+membership: G233.761-00.191; G233.760-00.203; S305; RCW8
+ra: 112.57035
+dec: -18.595707
+radius_arcsec: 114.9
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G233.830-00.180_radial_profile.csv
+
+standard baseline zones
+inner_inner_arcsec: 0.0
+inner_outer_arcsec: 57.45
+shell_inner_arcsec: 68.94
+shell_outer_arcsec: 114.9
+bg_inner_arcsec: 137.88
+bg_outer_arcsec: 206.82
+
+observational structural dimensions
+Dw_obs_inner: 1.3008598278973935
+Dw_obs_shell: 1.412987642111222
+Dw_obs_background: 1.678538158171048

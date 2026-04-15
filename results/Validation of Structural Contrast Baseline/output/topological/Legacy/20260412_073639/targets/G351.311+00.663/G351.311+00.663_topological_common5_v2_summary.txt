@@ -1,0 +1,26 @@
+wise_name: G351.311+00.663
+profile_file: not_found
+
+observational structural dimensions
+Dw_obs_inner: 
+Dw_obs_shell: 
+Dw_obs_background: 
+
+mass/proxy bridge from final input
+mass_source_key: PROXY_NGC6334E_RUSSEIL2012_O75_001
+mass_value_type: proxy_or_bridge_only
+proxy_kind: spectral_type
+log_nly: nan
+spectral_type: O7.5 ZAMS star (region-level requirement for NGC 6334E)
+radio_proxy_available: nan
+
+mass_proxy: 
+mass_proxy_kind: not_evaluated
+radius_scale_pc: 
+radius_scale_kind: not_evaluated
+shell_mass_volume_density: 
+background_mass_volume_density: 
+sigma_mass_volume: 
+
+bridge_status: missing_observational_profile
+interpretation_flag: missing_observational_profile

@@ -1,0 +1,24 @@
+wise_name: G000.649-00.080
+priority_rank: 1
+catalog_class: K
+input_group: known_group_shortlist
+hii_region_name: Sgr B2
+membership: G000.665-00.035; Sgr B2
+ra: 266.86685
+dec: -28.422841
+radius_arcsec: 95.3
+fits_source_service: IRSA FinderChart API
+fits_band: WISE_allbands
+fits_url: https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?locstr=266.86685 -28.422841&subsetsize=4.765&survey=WISE&reproject=true
+
+standard baseline zones
+inner_inner_arcsec: 0.0
+inner_outer_arcsec: 47.65
+shell_inner_arcsec: 57.18
+shell_outer_arcsec: 95.3
+bg_inner_arcsec: 114.36
+bg_outer_arcsec: 171.54
+
+central schematic circle
+meaning: target center / center-object schematic marker
+note: not to physical scale

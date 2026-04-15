@@ -1,0 +1,26 @@
+wise_name: G351.311+00.663
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G351.311+00.663_radial_profile.csv
+
+observational structural dimensions
+Dw_obs_inner: 4.013189226480785
+Dw_obs_shell: 4.030071677584655
+Dw_obs_background: 1.9999216568217795
+
+mass/proxy bridge from final input
+mass_source_key: PROXY_NGC6334E_RUSSEIL2012_O75_001
+mass_value_type: proxy_or_bridge_only
+proxy_kind: spectral_type
+log_nly: nan
+spectral_type: O7.5 ZAMS star (region-level requirement for NGC 6334E)
+radio_proxy_available: nan
+
+mass_proxy: 1.0
+mass_proxy_kind: spectral_type_presence_proxy
+radius_scale_pc: 
+radius_scale_kind: no_physical_radius_scale
+shell_mass_volume_density: 
+background_mass_volume_density: 
+sigma_mass_volume: 
+
+bridge_status: observational_only__no_physical_radius_scale
+interpretation_flag: observational_only__no_physical_radius_scale

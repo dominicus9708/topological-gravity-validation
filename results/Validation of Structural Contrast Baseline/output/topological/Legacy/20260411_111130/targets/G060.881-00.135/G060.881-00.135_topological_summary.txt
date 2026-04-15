@@ -1,0 +1,17 @@
+wise_name: G060.881-00.135
+radius_arcsec: 129.000
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G060.881-00.135_radial_profile.csv
+
+zones
+inner: 0.000 to 64.500
+shell: 77.400 to 129.000
+background: 154.800 to 232.200
+
+means
+I_inner: 310.95614529585833
+I_shell: 137.09038632084517
+I_bg: 63.18089517771133
+I_ref: 187.06852023678482
+sigma_topo: -0.2671648540995134
+
+interpretation_flag: background_dominated

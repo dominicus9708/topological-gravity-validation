@@ -1,0 +1,27 @@
+WISE H II tables_2 staging build
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Raw mass dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass
+Raw fits dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits
+Output dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables_2
+
+Critical rule:
+tables_2 is staging only and must not be used as final input directly.
+Final input must be generated later under data/derived/.../input/
+
+Mass side rows: 2506
+FITS side rows: 2506
+Intersection present: 2506
+Provisional preselection: 2506
+Strict ready: 0
+Standard stage ready: 0
+Topological stage ready: 0
+
+Interpretation:
+- staging_provisional: shared target pool with basic geometry, still not final input.
+- staging_standard_ready: looks usable for future standard input builder, but still not final input.
+- staging_topological_ready: looks usable for future topological input builder, but still not final input.
+
+Operational note:
+Even when strict_ready is nonzero, this script must not create input/ files.
+Use a separate final-input builder after raw confirmation is sufficiently complete.

@@ -1,0 +1,24 @@
+WISE H II tables_n derived rebuild from working tables
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Mass candidates source used: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass\wise_hii_mass_candidates_working.csv
+FITS candidates source used: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits\wise_hii_fits_candidates_working.csv
+Output dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables_n
+
+Critical rule:
+tables_n is staging/evaluation only and must not be used as final input directly.
+Final input must be created later under data/derived/.../input/
+
+Mass side rows: 2506
+FITS side rows: 2506
+Intersection present: 2506
+Provisional preselection: 2506
+Strict ready: 1
+Standard stage seed only: 0
+Standard stage ready: 2506
+Topological stage ready: 1
+
+Interpretation:
+- standard_stage_seed_only: FITS query/url seed exists but local verified FITS is not yet complete.
+- standard_stage_ready: FITS is evaluated as usable for later final standard input builder.
+- topological_stage_ready: both FITS usability and mass/proxy readiness are present.

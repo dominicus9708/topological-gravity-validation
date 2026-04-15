@@ -1,0 +1,16 @@
+Validation of Structural Contrast Baseline
+Standard pipeline manifest (common5 v3)
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+input_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\standard\wise_hii_common5\wise_hii_common5_standard_final_input.csv
+profile_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles
+output_dir: C:\Users\mincu\Desktop\topological_gravity_project\results\Validation of Structural Contrast Baseline\output\standard\20260412_123131
+
+target_count: 5
+
+meaning
+--------------------
+This is the standard baseline structure stage for common5 final input.
+v3 adds profile-based graphs to align graph style with the topological pipeline.
+The circular schematic was intentionally omitted in v3.

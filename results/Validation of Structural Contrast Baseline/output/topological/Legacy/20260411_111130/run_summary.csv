@@ -1,0 +1,8 @@
+﻿metric,value
+target_count,5
+targets_with_profile,5
+targets_with_sigma,5
+shell_enhanced_count,0
+weak_shell_contrast_count,0
+background_dominated_count,4
+missing_profile_count,0

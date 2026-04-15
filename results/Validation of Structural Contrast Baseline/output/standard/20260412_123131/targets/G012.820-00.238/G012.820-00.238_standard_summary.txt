@@ -1,0 +1,23 @@
+wise_name: G012.820-00.238
+priority_rank: 2
+catalog_class: G
+input_group: known_group_shortlist
+hii_region_name: W33
+membership: G012.807-00.204; G012.807-00.202; W33
+ra: 273.59936
+dec: -17.933347
+radius_arcsec: 126.8
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G012.820-00.238_radial_profile.csv
+
+standard baseline zones
+inner_inner_arcsec: 0.0
+inner_outer_arcsec: 63.4
+shell_inner_arcsec: 76.08
+shell_outer_arcsec: 126.8
+bg_inner_arcsec: 152.16
+bg_outer_arcsec: 228.24
+
+observational structural dimensions
+Dw_obs_inner: 1.9528752046817603
+Dw_obs_shell: 1.7673075646428498
+Dw_obs_background: 1.4827326411850896

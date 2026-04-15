@@ -1,0 +1,21 @@
+WISE H II FITS raw initialization
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Input directory: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\candidate_lists
+Output directory: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits
+
+Known shortlist rows: 1687
+Candidate shortlist rows: 819
+Merged rows before dedup: 2506
+Unique wise_name rows: 2506
+
+Generated files:
+- wise_hii_fits_check_registry.csv
+- wise_hii_fits_candidates_initial.csv
+- wise_hii_fits_source_registry.csv
+- wise_hii_fits_init_manifest.txt
+
+Operational note:
+This step initializes raw FITS-availability work.
+No FITS files are downloaded here.
+FITS availability, URL rows, and local verification should be filled after source confirmation.

@@ -1,0 +1,9 @@
+﻿metric,value
+master_rows,8422
+known_group_rows,1687
+candidate_rows,819
+top_priority_rows,770
+input_pool_rows,2506
+top_shortlist_rows,150
+image_review_queue_rows,30
+manual_template_rows,30

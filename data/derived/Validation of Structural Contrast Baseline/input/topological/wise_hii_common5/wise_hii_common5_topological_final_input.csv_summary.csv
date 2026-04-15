@@ -1,0 +1,9 @@
+metric,value
+rows_total,5
+mass_source_key_nonnull,5
+mass_value_type_nonnull,5
+proxy_kind_nonnull,5
+spectral_type_nonnull,4
+log_nly_nonnull,1
+radio_proxy_available_nonnull,3
+topological_ready_true,5

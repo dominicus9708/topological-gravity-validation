@@ -1,0 +1,17 @@
+wise_name: G034.256+00.136
+radius_arcsec: 101.500
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G034.256+00.136_radial_profile.csv
+
+zones
+inner: 0.000 to 50.750
+shell: 60.900 to 101.500
+background: 121.800 to 182.700
+
+means
+I_inner: 639.9369789856254
+I_shell: 163.1987514829526
+I_bg: 97.55744937579487
+I_ref: 368.7472141807101
+sigma_topo: -0.5574237710619503
+
+interpretation_flag: background_dominated

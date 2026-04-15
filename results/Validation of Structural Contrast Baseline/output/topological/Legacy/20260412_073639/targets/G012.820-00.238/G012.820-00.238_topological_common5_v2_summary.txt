@@ -1,0 +1,26 @@
+wise_name: G012.820-00.238
+profile_file: not_found
+
+observational structural dimensions
+Dw_obs_inner: 
+Dw_obs_shell: 
+Dw_obs_background: 
+
+mass/proxy bridge from final input
+mass_source_key: PROXY_W33_KHAN2022_NLY_O8_001
+mass_value_type: proxy_or_bridge_only
+proxy_kind: log_nly
+log_nly: 1.7e+48
+spectral_type: Spectral type O8; NLy = 1.7 x 10^48 s^-1
+radio_proxy_available: nan
+
+mass_proxy: 
+mass_proxy_kind: not_evaluated
+radius_scale_pc: 
+radius_scale_kind: not_evaluated
+shell_mass_volume_density: 
+background_mass_volume_density: 
+sigma_mass_volume: 
+
+bridge_status: missing_observational_profile
+interpretation_flag: missing_observational_profile

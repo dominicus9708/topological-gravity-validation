@@ -1,0 +1,20 @@
+WISE H II tables_4 common-comparison candidate selection
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Mass candidate source used: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass\wise_hii_mass_dual_candidates_working.csv
+FITS candidate source used: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits\wise_hii_fits_candidates_working.csv
+Output dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables_4
+
+Purpose:
+Select a fast common-comparison shortlist for fair standard/topological comparison.
+This output is still NOT final input.
+
+Total ranked rows: 2506
+Top shortlist size: 5
+
+Interpretation:
+- ranked_pool: all shared candidates ranked by fast readiness potential
+- common5_shortlist: accelerated common comparison target set
+
+Operational note:
+Use this shortlist to focus direct/proxy source gathering on the same 5 targets for both standard and topological tracks.

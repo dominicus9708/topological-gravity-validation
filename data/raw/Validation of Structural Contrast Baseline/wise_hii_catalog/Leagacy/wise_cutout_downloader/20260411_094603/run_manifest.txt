@@ -1,0 +1,15 @@
+Validation of Structural Contrast Baseline
+WISE raw cutout downloader manifest
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+input_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_final_input.csv
+image_output_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\images
+results_output_dir: C:\Users\mincu\Desktop\topological_gravity_project\results\Validation of Structural Contrast Baseline\output\wise_cutout_downloader\20260411_094603
+finderchart_api: https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api
+
+Notes
+--------------------
+This script belongs to the raw-data stage.
+It downloads WISE PNG cutouts from the IRSA Finder Chart API into the raw image layer.
+subsetsize is computed to cover approximately out to 1.8R with added margin.

@@ -1,0 +1,18 @@
+Validation of Structural Contrast Baseline
+Topological pipeline v3 manifest
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+input_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_final_input.csv
+profile_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles
+mass_bridge_file: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\wise_hii_mass_bridge.csv
+output_dir: C:\Users\mincu\Desktop\topological_gravity_project\results\Validation of Structural Contrast Baseline\output\topological\20260411_130819
+
+target_count: 5
+
+meaning
+--------------------
+This v3 pipeline reads the final input, radial profiles, and mass-bridge layer.
+It preserves the V2 observational structure chain.
+Mass-volume bridge is applied only when a usable mass proxy and physical radius scale exist.
+radio proxy from log_Nly is treated as a conservative relative mass bridge, not a literal stellar mass.

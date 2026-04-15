@@ -1,0 +1,23 @@
+wise_name: G351.311+00.663
+priority_rank: 1
+catalog_class: K
+input_group: known_group_shortlist
+hii_region_name: S8; NGC6334
+membership: G351.358+00.666; G351.358+00.667; S8; NGC6334
+ra: 260.12987
+dec: -35.860466
+radius_arcsec: 119.0
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G351.311+00.663_radial_profile.csv
+
+standard baseline zones
+inner_inner_arcsec: 0.0
+inner_outer_arcsec: 59.5
+shell_inner_arcsec: 71.4
+shell_outer_arcsec: 119.0
+bg_inner_arcsec: 142.8
+bg_outer_arcsec: 214.2
+
+observational structural dimensions
+Dw_obs_inner: 4.013189226480785
+Dw_obs_shell: 4.030071677584655
+Dw_obs_background: 1.9999216568217795

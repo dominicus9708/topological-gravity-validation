@@ -1,0 +1,23 @@
+wise_name: G345.346-00.900
+priority_rank: 2
+catalog_class: G
+input_group: known_group_shortlist
+hii_region_name: RCW117
+membership: G345.425-00.940; G345.426-00.934; RCW117
+ra: 257.29294
+dec: -41.616872
+radius_arcsec: 127.9
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G345.346-00.900_radial_profile.csv
+
+standard baseline zones
+inner_inner_arcsec: 0.0
+inner_outer_arcsec: 63.95
+shell_inner_arcsec: 76.74
+shell_outer_arcsec: 127.9
+bg_inner_arcsec: 153.48
+bg_outer_arcsec: 230.22
+
+observational structural dimensions
+Dw_obs_inner: 1.7062488400112328
+Dw_obs_shell: 1.7003547509209462
+Dw_obs_background: 1.7696547039675525

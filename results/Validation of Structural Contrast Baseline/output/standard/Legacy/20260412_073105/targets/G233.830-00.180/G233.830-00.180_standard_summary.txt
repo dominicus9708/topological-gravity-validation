@@ -1,0 +1,24 @@
+wise_name: G233.830-00.180
+priority_rank: 2
+catalog_class: G
+input_group: known_group_shortlist
+hii_region_name: S305; RCW8
+membership: G233.761-00.191; G233.760-00.203; S305; RCW8
+ra: 112.57035
+dec: -18.595707
+radius_arcsec: 114.9
+fits_source_service: IRSA FinderChart API
+fits_band: WISE_allbands
+fits_url: https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?locstr=112.57035 -18.595707&subsetsize=5.745&survey=WISE&reproject=true
+
+standard baseline zones
+inner_inner_arcsec: 0.0
+inner_outer_arcsec: 57.45
+shell_inner_arcsec: 68.94
+shell_outer_arcsec: 114.9
+bg_inner_arcsec: 137.88
+bg_outer_arcsec: 206.82
+
+central schematic circle
+meaning: target center / center-object schematic marker
+note: not to physical scale

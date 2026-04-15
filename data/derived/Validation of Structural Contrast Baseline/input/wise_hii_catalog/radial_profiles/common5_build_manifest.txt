@@ -1,0 +1,16 @@
+Validation of Structural Contrast Baseline
+common5 radial-profile build manifest
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+standard_input: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\standard\wise_hii_common5\wise_hii_common5_standard_final_input.csv
+radial_profile_output_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles
+optional_fits_root: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits\fits
+
+target_count: 5
+ok_profiles: 5
+missing_local_fits: 0
+
+Note:
+This pipeline only extracts real annular profiles from local FITS image data.
+If local FITS is missing, the status is recorded and no fake profile is created.

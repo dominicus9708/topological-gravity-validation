@@ -1,0 +1,23 @@
+wise_name: G000.649-00.080
+priority_rank: 1
+catalog_class: K
+input_group: known_group_shortlist
+hii_region_name: Sgr B2
+membership: G000.665-00.035; Sgr B2
+ra: 266.86685
+dec: -28.422841
+radius_arcsec: 95.3
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G000.649-00.080_radial_profile.csv
+
+standard baseline zones
+inner_inner_arcsec: 0.0
+inner_outer_arcsec: 47.65
+shell_inner_arcsec: 57.18
+shell_outer_arcsec: 95.3
+bg_inner_arcsec: 114.36
+bg_outer_arcsec: 171.54
+
+observational structural dimensions
+Dw_obs_inner: 2.1373427759356445
+Dw_obs_shell: 1.5432886201410418
+Dw_obs_background: 1.8929288056072973

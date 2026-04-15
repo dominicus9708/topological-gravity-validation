@@ -1,0 +1,18 @@
+wise_name: G045.475+00.130
+manual_final_rank: 4
+manual_reason: backup baseline candidate
+manual_shell_type: single_shell_candidate
+manual_background_ring_defined: yes
+catalog_class: K
+shortlist_source: known_group
+glon: 45.475
+glat: 0.13
+ra: 288.53491
+dec: 11.204769
+radius_arcsec: 144.1
+
+skeleton radial guide
+shell_inner_arcsec: 86.46
+shell_outer_arcsec: 144.1
+bg_inner_arcsec: 172.92
+bg_outer_arcsec: 259.38

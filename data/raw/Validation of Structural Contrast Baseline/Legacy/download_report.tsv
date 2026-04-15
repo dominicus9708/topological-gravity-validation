@@ -1,0 +1,7 @@
+filename	url	success	message
+wise_hii_V2.3.csv	https://astro.phys.wvu.edu/wise/wise_hii_V2.3.csv	True	ok
+wise_hii_V1.3.csv	https://astro.phys.wvu.edu/wise/wise_hii_V1.3.csv	True	ok
+wise_catalog_hii_regions.pdf	https://astro.phys.wvu.edu/wise/wise_catalog_hii_regions.pdf	True	ok
+Table2.txt	https://astro.phys.wvu.edu/wise/Table2.txt	True	ok
+flux_densities.pdf	https://astro.phys.wvu.edu/wise/flux_densities.pdf	True	ok
+wise_site_index.html	https://astro.phys.wvu.edu/wise/	True	ok

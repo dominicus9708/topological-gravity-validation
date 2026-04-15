@@ -1,0 +1,18 @@
+WISE H II common5 final input build
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Shortlist used: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables_5\wise_hii_tables_5_common5_shortlist.csv
+Mass candidate source used: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass\wise_hii_mass_dual_candidates_working.csv
+FITS candidate source used: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits\wise_hii_fits_candidates_working.csv
+
+Standard output: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\standard\wise_hii_common5\wise_hii_common5_standard_final_input.csv
+Topological output: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\topological\wise_hii_common5\wise_hii_common5_topological_final_input.csv
+
+Number of common5 targets: 5
+Standard baseline-ready rows: 5
+Topological ready rows: 1
+
+Policy:
+- Standard final input is mass-free baseline input.
+- Topological final input uses the same 5 targets and carries mass/proxy fields plus readiness metadata.
+- Fair comparison is preserved by using the same shortlist for both tracks.

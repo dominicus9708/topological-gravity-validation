@@ -1,0 +1,26 @@
+wise_name: G345.346-00.900
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G345.346-00.900_radial_profile.csv
+
+observational structural dimensions
+Dw_obs_inner: 1.7062488400112328
+Dw_obs_shell: 1.7003547509209462
+Dw_obs_background: 1.7696547039675525
+
+mass/proxy bridge from final input
+mass_source_key: PROXY_RCW117_SESHADRI2024_RADIO_001
+mass_value_type: proxy_or_bridge_only
+proxy_kind: radio_continuum
+log_nly: nan
+spectral_type: nan
+radio_proxy_available: yes
+
+mass_proxy: 750.0
+mass_proxy_kind: proxy_value_from_radio_continuum
+radius_scale_pc: 1.5501917453477412
+radius_scale_kind: derived_from_dist_kpc_and_radius_arcsec
+shell_mass_volume_density: 104.24131243995512
+background_mass_volume_density: 20.725144961966695
+sigma_mass_volume: 4.029702452128641
+
+bridge_status: mass_volume_ready
+interpretation_flag: shell_mass_volume_enhanced

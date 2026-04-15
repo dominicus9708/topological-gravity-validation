@@ -1,0 +1,17 @@
+WISE H II tables_5 fair common-comparison shortlist
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Input source used: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables_4\wise_hii_tables_4_ranked_pool.csv
+Output dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables_5
+
+Purpose:
+Convert row-level top ranking into region-level fair comparison ranking.
+Only one representative row is kept for each practical region/membership bucket.
+
+Input rows: 2506
+Distinct region buckets: 123
+Shortlist size: 5
+
+Operational note:
+Use wise_hii_tables_5_common5_shortlist.csv as the accelerated fair-comparison target set.
+This output is still NOT final input.

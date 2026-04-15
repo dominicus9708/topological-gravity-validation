@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WISE Catalog of Galactic HII Regions V2.3</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<!-- include Aladin Lite CSS file in the head section of your page -->
+  <link rel="stylesheet" href="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
+  <link rel="stylesheet" type="text/css" href="wise.css">
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--  <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places,drawing,geometry"></script>-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=weekly&key=AIzaSyArpKDf-8_9QV5_g1jHn-6LUA-wDLDoVis&libraries=places,drawing,geometry" loading="async"></script>
+<!--  <script async defer src="https://maps.googleapis.com/maps/api/js?v=3.36&key=AIzaSyArpKDf-8_9QV5_g1jHn-6LUA-wDLDoVis"></script>-->
+  <script src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="verge.min.js"></script>
+  <script src="topx.js"></script>
+<!--  <script src="fusiontips_compiled.js"></script>-->
+  <script src="wise_V2.4.js"></script>
+  <script type="text/javascript" src="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+</head>
+
+<!-- Header -->
+  <div id="header">
+    <div id="title">The WISE Catalog of Galactic HII Regions <a href="javascript:show_changelog()">V2.3</a></div>
+    <div id="nav">
+      <ul class="nav">
+        <li><a href="javascript:show_help_dialog()">Help</a></li>
+        <li><a href="javascript:show_downloads_dialog()">Downloads</a></li> 
+        <li><a href="javascript:show_papers_dialog()">Papers</a></li> 
+        <li><a href="javascript:show_about_dialog()">About</a></li> 
+     </ul> 
+    </div>
+  </div>
+
+<!--  <div id="chart" style="width:300"></div>-->
+
+<!-- Contains map and table -->
+  <div id="container">
+<!-- Map -->
+    <div id="map-canvas"></div>
+
+<!-- Options buttons -->
+    <div id="options_buttons">
+<!--      <input id="heatmap" type="checkbox" onclick="updateHeatmap()" /> -->
+      Search for text:
+      <input type="text" id="searchInput" size=10 onkeydown="return search_enter( event );"/>
+<!--      <button id="goToSelection" onclick="gotoSelection()" disabled>Go to selection!</button>-->
+<!--      <button onclick="show_options_dialog()" style="float:right;">Filter Options</button>-->
+      <button onclick="toggleTable()" style="float:right;" id="hideTable">Hide Table</button>
+      <button onclick="toggleMap()" style="float:right;" id="hideMap">Hide Map</button>
+<!--      <button onclick="exportCsv()" style="float:right;" id="exportCsv">Export CSV</button>
+      <button onclick="show_uploadFile_dialog()" style="float:right;" id="show_uploadFile_dialog">Load More Data</button>-->
+<!--      <button onclick="show_chart()" style="float:right;" id="show_chart">Show Chart</button> -->
+<!--      <button onclick="show_columns_dialog()" style="float:right;" id="show_columns_dialog">Toggle Columns</button>-->
+   </div>
+
+
+<!-- Table -->
+    <div id="visualization"></div>
+
+    </div>
+<!-- Options Dialog -->
+    <div id="options_dialog" title="Search Options">
+      <div id="tabs">
+        <ul>
+          <li><a href="#basic">Basic</a></li>
+          <li><a href="#area">Area</a></li>
+          <li><a href="#conditions">Conditions</a></li>
+        </ul>
+
+        <div id="basic">
+          <div id="catalogs">
+            <center><b>Catalog</b></center>
+            <form id="Catalogs">
+              <input type="checkbox" name="Catalog" id="Known" value="K" checked="checked">Known<br/>
+              <input type="checkbox" name="Catalog" id="Groups" value="G" checked="checked">Groups<br/>
+              <input type="checkbox" name="Catalog" id="Candidate" value="C" checked="checked">Candidate<br/>
+              <input type="checkbox" name="Catalog" id="RadioQuiet" value="Q" checked="checked">Radio Quiet<br/>
+<!--              <input type="checkbox" name="Catalog" id="NoRadioData" value="?" checked="checked">No Radio Data<br/>-->
+            </form>
+          </div>
+
+          <div id="options">
+            <br/><center><b>Author</b></center>
+            <form id="Authors">
+              <input type="checkbox" name="Author" id="Anderson et al. (2017)" value=1 checked="checked">Anderson et al. (2017)<br>
+              <input type="checkbox" name="Author" id="Anderson et al. (2015b)" value=1 checked="checked">Anderson et al. (2015b)<br>
+              <input type="checkbox" name="Author" id="Anderson et al. (2015a)" value=1 checked="checked">Anderson et al. (2015a)<br>
+              <input type="checkbox" name="Author" id="Bania, Anderson, Balser (2012)" value=1 checked="checked">Bania et al. (2012)<br>
+              <input type="checkbox" name="Author" id="Anderson et al. (2011)" value=1 checked="checked">Anderson et al. (2011)<br>
+	      <input type="checkbox" name="Author" id="Balser et al. (2011)" value=1 checked="checked">Balser et al. (2011)<br>
+	      <input type="checkbox" name="Author" id="Quireza et al. (2006)" value=1 checked="checked">Quireza et al. (2006)<br>
+              <input type="checkbox" name="Author" id="Sewilo et al. (2004)" value=1 checked="checked">Sewilo et al. (2004)<br>
+              <input type="checkbox" name="Author" id="Watson et al. (2003)" value=1 checked="checked">Watson et al. (2003)<br>
+              <input type="checkbox" name="Author" id="Araya et al. (2002)" value=1 checked="checked">Araya et al. (2002)<br>
+              <input type="checkbox" name="Author" id="Lockman, Pisano, Howard (1996)" value=1 checked="checked">Lockman et al. (1996)<br>
+              <input type="checkbox" name="Author" id="Fich, Dahl, Treffers (1990)" value=1 checked="checked">Fich et al. (1990)<br>
+              <input type="checkbox" name="Author" id="Lockman (1989)" value=1 checked="checked">Lockman (1989)<br>
+              <input type="checkbox" name="Author" id="Caswell Haynes (1987)" value=1 checked="checked">Caswell & Haynes (1987)<br>
+              <input type="checkbox" name="Author" id="Law et al. (2009)', 'Arvidsson, Kerton, Foster (2009)', 'Downes et al. (1980)', 'Wilson et al. (1970)', 'Wink, Altenhoff, Metzger (1982)" value=1 checked="checked">Other<br>
+            </form>
+          </div>
+
+<!--          <div id="correlations">
+            <center><b>Correlations</b></center>
+            <form id="Correlations">
+              <input type="checkbox"
+ name="Correlations" id="distance" checked="checked">Distance<br>
+              <input type="checkbox"
+ name="Correlations" id="no distance" checked="checked">No distance<br>
+              <input type="checkbox"
+ name="Correlations" id="molecular" checked="checked">Molecular velocity<br>
+              <input type="checkbox"
+ name="Correlations" id="no molecular" checked="checked">No molecular velocity<br>
+              <input type="checkbox"
+ name="Correlations" id="dust" checked="checked">IR correlation<br>
+              <input type="checkbox"
+ name="Correlations" id="dust" checked="checked">No IR correlation<br>
+              <input type="checkbox"
+ name="Correlations" id="ATLASGAL" checked="checked">ATLASGAL<br>
+              <input type="checkbox"
+ name="Correlations" id="BGPS" checked="checked">BGPS<br>
+              <input type="checkbox"
+ name="Correlations" id="RMS" checked="checked">RMS<br>
+              <input type="checkbox"
+ name="Correlations" id="Milky Way Project" checked="checked">Milky Way Project<br>
+              <input type="checkbox"
+ name="Correlations" id="MALT90" checked="checked">MALT90<br>
+            </form>
+          </div> -->
+        </div>
+
+        <div id="area">
+          <center><button onclick="circleVisible()" id="circleVisible">Cone</button>
+                  <button onclick="rectangleVisible()">Area</button>
+                  <button onclick="noneVisible()">Neither</button><br/></center>
+           
+          <div id="coneSearch" style="display:none;">
+            <center><b>Cone Search</b></center>
+<!--            <label for="circle_latlong">(l, b) = </label>
+            <input type="text" id="circle_latlong" size=15 onkeydown="return coneSearch( event );" value="0.000, 0.000"/>-->
+            <label for="circle_lng">Longitude:</label>
+            <input type="text" id="circle_lng" size=6 onkeydown="return coneSearch( event );"><br/>
+            <label for="circle_lat">Latitude:</label>
+            <input type="text" id="circle_lat" size=6 onkeydown="return coneSearch( event );"><br/>
+            <label for="circle_radius">Radius (arcmin):</label>
+
+            <input type="text" id="circle_radius" size=6 onkeydown="return coneSearch( event );"><br/>
+            <center><button id="removecirclebutton" onclick="removeCircle()" disabled>Remove</button>
+                    <button onclick="drawNewCircle()">Draw New</button></center>
+          </div>
+
+          <div id="areaSearch" style="display:none;">
+            <center><b>Area Search</b></center>
+            <label for="ne_glong">GLong min.</label> 
+            <input type="text" id="ne_glong" size=6><br/>
+            <label for="s_glong">GLong max.</label>
+            <input type="text" id="sw_glong" size=6><br/>
+            <label for="sw_glat">GLat min.</label>
+            <input type="text" id="sw_glat" size=6><br/>
+            <label for="ne_glat">GLat max.</label>
+            <input type="text" id="ne_glat" size=6><br/>
+            <center><button id="removerectanglebutton" onclick="removeRectangle()" disabled>Remove</button>
+                    <button onclick="drawNewRectangle()">Draw New</button></center>
+          </div>
+        </div>
+
+        <div id="conditions">
+      <select id="field1">
+        <option value="Catalog">Catalog</option>
+        <option value="GLong">GLong</option>
+        <option value="GLat">GLat</option>
+        <option value="Group">Group</option>
+        <option value="KDAR">KDAR</option>
+        <option value="Radius">Radius</option>
+      </select>
+      <select id="condition1">
+        <option value="<"><</option>
+        <option value="<=">&#8804;</option>
+        <option value="=">=</option>
+        <option value=">=">&#8805;</option>
+        <option value=">">></option>
+      </select>
+      <input type="text" id="value1" size=10 onkeydown="return conditions_enter( event );"/><br/>
+      <select id="field2">
+        <option value="Catalog">Catalog</option>
+        <option value="GLong">GLong</option>
+        <option value="GLat">GLat</option>
+        <option value="Group">Group</option>
+        <option value="KDAR">KDAR</option>
+        <option value="Radius">Radius</option>
+      </select>
+      <select id="condition2">
+
+        <option value="<"><</option>
+        <option value="<=">&#8804;</option>
+        <option value="=">=</option>
+        <option value=">=">&#8805;</option>
+        <option value=">">></option>
+      </select>
+      <input type="text" id="value2" size=10 onkeydown="return conditions_enter( event );"/><br/>
+      <select id="field3">
+        <option value="Catalog">Catalog</option>
+        <option value="GLong">GLong</option>
+        <option value="GLat">GLat</option>
+        <option value="Group">Group</option>
+        <option value="KDAR">KDAR</option>
+        <option value="Radius">Radius</option>
+      </select>
+      <select id="condition3">
+
+        <option value="<"><</option>
+        <option value="<=">&#8804;</option>
+        <option value="=">=</option>
+        <option value=">=">&#8805;</option>
+        <option value=">">></option>
+      </select>
+      <input type="text" id="value3" size=10 onkeydown="return conditions_enter( event );"/><br/>
+      <select id="field4">
+        <option value="Catalog">Catalog</option>
+        <option value="GLong">GLong</option>
+        <option value="GLat">GLat</option>
+        <option value="Group">Group</option>
+        <option value="KDAR">KDAR</option>
+        <option value="Radius">Radius</option>
+      </select>
+      <select id="condition4">
+
+        <option value="<"><</option>
+        <option value="<=">&#8804;</option>
+        <option value="=">=</option>
+        <option value=">=">&#8805;</option>
+        <option value=">">></option>
+      </select>
+      <input type="text" id="value4" size=10 onkeydown="return conditions_enter( event );"/><br/>
+      <select id="field5">
+        <option value="Catalog">Catalog</option>
+        <option value="GLong">GLong</option>
+        <option value="GLat">GLat</option>
+        <option value="Group">Group</option>
+        <option value="KDAR">KDAR</option>
+        <option value="Radius">Radius</option>
+      </select>
+      <select id="condition5">
+
+        <option value="<"><</option>
+        <option value="<=">&#8804;</option>
+        <option value="=">=</option>
+        <option value=">=">&#8805;</option>
+        <option value=">">></option>
+      </select>
+      <input type="text" id="value5" size=10 onkeydown="return conditions_enter( event );"/><br/>
+      <select id="field6">
+        <option value="Catalog">Catalog</option>
+        <option value="GLong">GLong</option>
+        <option value="GLat">GLat</option>
+        <option value="Group">Group</option>
+        <option value="KDAR">KDAR</option>
+        <option value="Radius">Radius</option>
+      </select>
+      <select id="condition6">
+
+        <option value="<"><</option>
+        <option value="<=">&#8804;</option>
+        <option value="=">=</option>
+        <option value=">=">&#8805;</option>
+        <option value=">">></option>
+      </select>
+      <input type="text" id="value6" size=10 onkeydown="return conditions_enter( event );"/>
+      <label for="sql" id="sql_label" style="font-size:10pt;">SQL Query: WHERE</label><br/>
+      <input type="text" id="sql" size=25 onkeydown="return sql_enter( event );"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Clear floats -->
+  <div class="cls"></div>
+
+  <div id="footer">
+    <center>Created and maintained by Loren Anderson
+               (<font color="#3399FF">Loren.Anderson@mail.wvu.edu</font>).
+                 Last updated December 2019.
+    </center>
+  </div>
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+<!--  Popup dialogs ----------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div id="changelog_dialog" align=justify title="Changelog" style="display:none;">
+WISE Catalog of Galactic HII Regions Changelog</br>
+--------------------------------------------------------------------------------</br>
+
+Version 2.3 - December 2020</br>
+1) Changed 31 radio quiet candidates near l=359&deg; to candidates based on radio continuum emission in MeerKAT 1.28 GHz data: G357.989-00.121, G358.138-00.180, G358.355-00.448, G358.358-00.042, G358.366+00.034, G358.371-00.468, G358.378-00.499, G358.387-00.484, G358.413+00.049, G358.472-00.401, G358.488+00.077, G358.505+00.069, G358.507-00.368, G358.516-00.065, G358.561-00.096, G358.700-00.055, G358.711+00.036, G358.714+00.054, G358.718-00.041, G358.735-00.002, G358.736+00.005,  G358.745-00.007, G358.793+00.012, G358.798+00.069, G358.804+00.036, G358.830-00.022, G358.835+00.017,  G358.894+00.094, G358.931-00.030, G358.931-00.038, G358.934-00.151</br>
+2) Added candidates G358.631-0.479, G358.730+0.052, G358.667-0.044, G358.305+0.074, G358.983+0.037 based on radio continuum emission in MeerKAT 1.28 GHz data.</br>
+3) Removed candidates G358.822-0.002, G358.508+0.057 based on disagreementsin positions between IR and based on radio continuum emission in MeerKAT 1.28 GHz data.</br>
+4) Changed three radio-quiet regions to candidates based on radio continuum data in Ingallinera et al., (2019): G343.251+0.734, G344.392-0.127, G345.656-0.016</br>
+5) Removed known region G026.319-00.014 is it is a probable PN.</br>
+6) Added RRL observations from Wenger et al. (2021)</br>
+7) Added large radio-loud candidate G028.647+0.198 </br>
+8) Changed 26 radio quiet candidates to candidates based on radio continuum                                               detections in Wenger et al. (2021):                                                                                       G258.608-01.925, G259.013-01.546, G259.268-02.611, G259.502-02.573,                                                    G259.608-02.991, G259.612-02.698, G261.319-03.063, G261.449-01.345,                                                    G261.634-02.134, G261.638-02.095, G261.648-01.642, G262.176-01.960,                                                    G263.227+01.572, G264.597-00.246, G264.647-01.110, G269.522-01.250,                                                    G270.171-01.820, G270.255-01.633, G297.463-00.733, G302.453-00.740,                                                    G328.982+00.572, G337.474-01.054, G339.639-01.061, G339.699+00.302,                                                    G341.071-01.128, G342.213-01.153</br></br>
+
+Version 2.2 - February 2019</br>
+1) Removed regions G049.048-00.886 and G049.775-00.951 near W51 as they are probably caused by escaping radiation from the larger region, and are thus not distinct.</br>
+2) Added SHRDS sources from Wenger et al. (2019).</br>
+3) Changed radio-quiet candidates to candidates based on radio continuum observations from VLA project AW0261: G358.894+00.094, G358.858-00.022, G358.793+00.012, G358.735-00.002, G358.736+00.005, G358.711+00.036, G358.714+00.054, G358.798+00.069, G358.505+00.069, G358.561-00.096, G359.278-00.062, G359.246-00.046, G359.237-00.034</br>
+4) Added radio-quiet sources G358.452-0.023, G358.460+0.020, G358.478+0.013, G358.472+0.046, G358.503+0.120 G358.616+0.081 and candidate G358.593+0.099.</br>
+5) Removed radio quiet sources G359.759-0.285, G359.811-0.383, G359.698-0.374, and candidate G359.685-0.263, replaced with G359.756-0.351, which is S16.</br>
+6) Removed duplicate G358.634+0.063.</br> 
+7) Added G000.021+0.263 as part of S17.</br>    
+8) Added G000.321-0.215 as the larger part of S20.</br></br>
+
+Version 2.1 - October 2017</br> 
+1) Added candidate G355.681+0.144</br>
+2) Updated distance errors using the Monte Carlo code from Wenger et al. (2018).</br></br>
+
+Version 2.0 - July 2017</br>
+1) Added radio and infrared flux densities from Makai et al. (2017)</br></br>
+
+Version 1.5 - June 2016</br>
+1) Changed some Galactic center radio quiet sources into candidates based on VLA 6cm and Hubble Paschen alpha identifications
+provided by Cornelia Lang and Dominic Ludovici.</br>
+2) Changed some first-quadrant radio quiet sources into candidates based on VLA THOR 21cm continuum data.</br>
+3) Downloaded new MGPS/SUMSS data (Updated January 2015)  where previous holes in coverage were filled in.
+   Classified remaining 108 sources previously lacking radio continuum data.</br>
+4) Separated RCW60B into its component HII regions.</br>
+5) Added radio quiet sources G336.481-1.081, G336.524-1.465, G336.284-1.222, and G336.289-1.248</br>
+6) Removed duplicate sources G019.146+00.355, G031.307-00.106, G032.749-00.065, G015.176+00.044, G021.596-00.161</br>
+7) Removed candidates G312.037+00.084 and G311.972+00.071</br>
+8) Removed group sources G319.481-00.103, G317.237-00.186, G316.689-00.064, G317.300-00.211</br>
+9) Added diffuse HRDS sources from Anderson et al. (2017)</br>
+10) Removed G029.895-0.042, G030.690-0.258, G034.045+0.053, G034.916-0.016, G037.9036-0.275271, G049.491,-0.369, G49.495-0.347,
+G049.583-0.383, G057.546-0.274 because they were not distinct</br>
+11) Added G063.142+0.423, G063.159+0.426, G063.123+0.434, G030.255+0.05270, G032.792+0.187, G032.799+0.194, G033.884+0.058,
+G044.423+0.534, G053.058+0.190</br>
+12) Added known region G020.479+00.165, which was confused with a SNR.</br>
+13) Added known region G045.689-0.235, which was somehow missed.</br>
+14) Added candidate G028.435-0.008</br>
+15) Changed 358.753+00.0532, G358.463+00.0636, and G358.482+00.0608 to candidates based on VLA data from project AY137</br></br>
+
+Version 1.4 - August 2015</br>
+1) Removed G341.503-01.109 (PN)</br>
+2) Removed G345.052-01.856 (OH/IR star)</br>
+3) Grouped G350.594+01.149 with NGC6334</br>
+4) Removed duplicate regions G304.206+01.351 and G304.207+01.352</br>
+5) Removed G261.513-01.225 (star)</br>
+6) Removed G261.618-01.974 (star)</br>
+7) Removed G330.176+01.006 (not distinct)</br>
+8) Added small radio quiet sources G296.272-00.388, G297.324-00.008, 297.455-00.010, 297.519-00.031, G299.610+00.169, G299.770-00.008,
+G298.903+00.218, G300.051-00.399, G301.841-00.880, G302.020+00.254, G308.202-01.020, G335.763+02.594, G336.577+2.829</br>
+9) G030.425+00.463 was incorrectly associated with S66.  Changed to a "candidate".</br>
+10) G303.137-0.887, G303.073-0.929, and G303.232-0.890 were incorrectly associated with G303.115-00.947.  Changed to "candidates"</br>
+11) Added observations by Law et al. (2009) of GC lobe G359.555-0.0405.</br>
+12) Associated G291.070-00.794 with G291.059-00.770.</br>
+13) Removed duplicate candidates G019.146+00.355 and G021.596-00.160</br>
+14) Changed radio-quiet source 179.682-0.563 to candidate due to GB6 emission.</br></br>
+
+Version 1.3 - March 2015</br>
+1) Updated catalog based on multiple velocity source measurements to remove
+   line measurements  from diffuse ionized gas (Anderson et al., 2015a)</br>
+2) Added WISE HRDS observations of over 300 sources from Anderson et al. (2015b),
+   together with kinematic distances</br>
+3) Added radio quiet source at 53.14+0.07 based on infrared appearance.</br>
+4) Updated G30.795-0.275 with observations from Anderson et al. (2011).</br>
+5) Removed duplicate G039.389-0.142.</br>
+6) Fixed S148 so it is correctly associated with line observations</br>
+7) Changed Zeta Oph to "candidate" since no line observations in catalog.</br>
+8) Fixed NGC6334, which was not being correctly associated with
+   Quireza et al. (2006) line observations.</br>
+9) Changed G018.426+01.922 from "group" to "known" based on new line observations.</br>
+10) Removed line observations for G028.438+00.014.  New observations of nearby
+   G028.451+00.001 cast doubt on what was actually measured.</br>
+11) Updated maser parallax distances with results from Burns et al. (2014),
+   Chibueze et al. (2014), and Kamezaki et al (2014).</br></br>
+
+Version 1.2 - June 2014</br>
+1) Added Zeta Oph</br>
+2) Changed status of G22.791-0.347 from group to known based on observations
+   in Anderson et al. (2011)</br></br>
+
+Version 1.1 - March 2014</br>
+1) Updated with RRL results from Quireza et al. (2006b) and Balser et al. (2011).</br>
+2) Combined G080.925-00.214 and G080.931-00.205 into a single region because of
+   previous catalog duplication.</br>
+3) Updated maser parallax distances using Reid et al. (2014) compilation</br>
+4) S235 and S236 aliases were reversed and have now been corrected.</br>
+5) For sources with maser parallax distances, the KDAR is now listed in
+   parentheses.  This KDAR is not used in the computation of distances or
+   Galactocentric radii, but can be used for kinematic and maser parallax
+   distance comparison studies.</br><br/>
+
+Version 1.0 - January 2014</br>
+Published in ApJS</br>
+
+    </div>
+
+<!----------------------------------------------------------------------------------------------------------------------- -->
+    <div id="chart" align=justify title="Chart" style="display:none;"></div>
+
+<!----------------------------------------------------------------------------------------------------------------------- -->
+    <div id="coordinates" align=justify title="Coordinates" style="display:none;"></div>-->
+<!--    <div id="coordinates" align=justify title="Coordinates"><div id="aladin"</siv></div>-->
+
+<!----------------------------------------------------------------------------------------------------------------------- -->
+    <div id="help_dialog" align=justify title="Site Help" style="display:none;">
+      The top panel is a graphical representation of the WISE Catalog of Galactic HII
+      Regions.  The interface is that of Google Maps.
+      Red circles show known HII regions
+      with measured recombination line emission, green circles grouped HII regions positionally 
+      associated with a known region, cyan circles HII region candidates
+      that have mid-infrared and radio continuum emission, and yellow circles HII region
+      candidates that do not have radio continuum emission.</br></br>
+
+      The table shows information from the catalog.  The rows can be sorted by clicking
+      on the table header.  The rows can be selected by clicking within the table body.
+      Selections can be extended using Shift+click and Control+click, in the usual fashion.</br></br>
+
+      In the middle of the screen are controls to modify the map and table displays.  Clicking
+      "Go to Selection!" will re-center the map based on the table rows selected, and zoom
+      to that location.  Clicking "Filter Options" will bring up a further panel of options.
+      In this additional panel, you can create selection criteria.  These criteria are additive.
+      The "Area" search tab allows you to specify cone or box area searches.  The regions are shown
+      with a gray shape, which you can move and re-size.
+    </div>
+
+<!----------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="about_dialog" align=justify title="About" style="display:none;">
+      The WISE Catalog of Galactic HII Regions is a catalog of HII regions and candidates,
+      compiled from Widefield Infrared Survey Explorer (WISE) 12&micro;m and 22&micro;m data.
+      It was created by Loren Anderson, Thomas Bania, Dana Balser, Virginia Cunningham, 
+      Trey Wenger, Brittany Johnstone, and William Armentrout, with help from numerous students at West Virginia University.  This
+      website will be updated as we continue research on the catalog contents.</br></br>
+
+      This website uses Google Sheets to store the data, the Google Maps API to
+      display the contents graphically, and the Google Tables visualization to display the
+      contents in the table.  It also uses JQuery for some of the interfaces (jquery.com)
+      and Verge (verge.airve.com) to determine the viewport size.</br></br>
+
+      We combined individual FITS files into mosaics using swarp, and made large image files
+      from these mosaics using ImageMagick.  We cut these large files into tiles for the
+      Google Maps interface with GDAL2Tiles.</br></br>
+
+      Work on the Catalog, including this web site, was supported by NASA ADAP grant NNX12AI59GADAP
+to Loren Anderson.
+    </div>
+
+<!----------------------------------------------------------------------------------------------------------------------- -->
+    <div id="downloads_dialog" align=justify title="Downloads" style="display:none;">
+      <b>Catalog files</b></br>
+      <a href = "wise_hii_V1.0.csv" target="_blank">WISE Catalog V1.0 - From Online Table</a></br>
+      <a href = "Table2.txt" target="_blank">WISE Catalog V1.0 - Table 2 (ionized gas velocities)</a></br>
+      <a href = "Table5.txt" target="_blank">WISE Catalog V1.0 - Table 5 (molecular gas velocities)</a></br>
+      <a href = "Table6.txt" target="_blank">WISE Catalog V1.0 - Table 6 (distances)</a></br></br>
+      <a href = "wise_hii_V1.1.csv" target="_blank">WISE Catalog V1.1 - From Online Table</a></br>
+      <a href = "wise_hii_V1.3.csv" target="_blank">WISE Catalog V1.3 - From Online Table</a></br>
+      <a href = "wise_hii_V1.4.csv" target="_blank">WISE Catalog V1.4 - From Online Table</a></br>
+      <a href = "wise_hii_V1.5.csv" target="_blank">WISE Catalog V1.5 - From Online Table</a></br>
+      <a href = "wise_hii_V2.0.csv" target="_blank">WISE Catalog V2.0 - From Online Table</a></br>      
+      <a href = "wise_hii_V2.1.csv" target="_blank">WISE Catalog V2.1 - From Online Table</a></br>
+      <a href = "wise_hii_V2.2.csv" target="_blank">WISE Catalog V2.2 - From Online Table</a></br>
+      <a href = "wise_hii_V2.3.csv" target="_blank">WISE Catalog V2.3 - From Online Table</a></br>
+      </br>
+
+      <b>Files for this web site</b></br>
+      <a href="index.html" target="_blank">This site's HTML file (right click, "Save as")</a></br>
+      <a href="wise.js" target="_blank">This site's javascript file</a></br>
+      <a href="wise.css" target="_blank">This site's css file</a></br>
+    </div>
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div id="papers_dialog" align=justify title="Papers" style="display:none;">
+
+      <i style="font-size:10pt">The WISE Catalog of Galactic HII Regions</i>&nbsp;
+			<a href="http://adsabs.harvard.edu/abs/2014ApJS..212....1A" target="_BLANK">ADS</a>&nbsp;
+			<a href="wise_catalog_hii_regions.pdf" target="_BLANK">pdf</a>&nbsp;
+			<a href="javascript:toggle('abstract1')">Abstract</a><br/>
+		<p class="abstract" id="abstract1">
+Using data from the all-sky Wide-Field Infrared Survey Explorer (WISE) satellite, we made a catalog of over 8000 Galactic HII regions and HII region candidates by searching for their characteristic mid-infrared (MIR) morphology. WISE has sufficient sensitivity to detect the MIR emission from HII regions located anywhere in the Galactic disk. We believe this is the most complete catalog yet of regions forming massive stars in the Milky Way. Of the ~8000 cataloged sources, ~1500 have measured radio recombination line (RRL) or H-alpha emission, and are thus known to be HII regions. This sample improves on previous efforts by resolving HII region complexes into multiple sources and by removing duplicate entries. There are ~2500 candidate HII regions in the catalog that are spatially coincident with radio continuum emission. Our group's previous RRL studies show that ~95% of such targets are HII regions. We find that ~500 of these candidates are also positionally associated with known HII region complexes, so the probability of their being bona fide HII regions is even higher. At the sensitivity limits of existing surveys, ~4000 catalog sources show no radio continuum emission. Using data from the literature, we find distances for ~1500 catalog sources, and molecular velocities for ~1500 HII region candidates.
+		</p>
+		<br/>
+      <i style="font-size:10pt">Finding Distant Galactic HII Regions</i>&nbsp;
+			<a href="http://adsabs.harvard.edu/abs/2015ApJS..221...26A" target="_BLANK">ADS</a>&nbsp;
+			<a href="finding_distant_hii_regions.pdf" target="_BLANK">pdf</a>&nbsp;
+			<a href="javascript:toggle('abstract2')">Abstract</a><br/>
+		<p class="abstract" id="abstract2">
+The WISE Catalog of Galactic HII Regions contains ~2000 HII region candidates lacking ionized gas spectroscopic observations. All candidates have the characteristic HII region mid-infrared morphology of WISE 12&micro;m emission surrounding 22&micro;m emission, and additionally have detected radio continuum emission. We here report Green Bank Telescope hydrogen radio recombination line and radio continuum detections in the X-band (9 GHz; 3 cm) of 302 WISE HII region candidates (out of 324 targets observed) in the zone 225&deg; ≥ l ≥ -20&deg;, |b| ≤ 6&deg; Here we extend the sky coverage of our HII region Discovery Survey, which now contains nearly 800 HII regions distributed across the entire northern sky. We provide LSR velocities for the 302 detections and kinematic distances for 131 of these. Of the 302 new detections, 5 have (l,b,v) coordinates consistent with the Outer Scutum-Centaurus Arm (OSC), the most distant molecular spiral arm of the Milky Way. Due to the Galactic warp, these nebulae are found at Galactic latitudes >1° in the first Galactic quadrant, and therefore were missed in previous surveys of the Galactic plane. One additional region has a longitude and velocity consistent with the OSC but lies at a negative Galactic latitude (G039.183-01.422; -54.9 km/s). With Heliocentric distances >22 kpc and Galactocentric distances >16 kpc, the OSC HII regions are the most distant known in the Galaxy. We detect an additional three HII regions near l=150&deg; whose LSR velocities place them at Galactocentric radii >19 kpc. If their distances are correct, these nebulae may represent the limit to Galactic massive star formation.
+		</p>
+		<br/>
+      <i style="font-size:10pt">The Infrared and Radio Flux Densities of Galactic HII regions</i>&nbsp;
+			<a href="http://adsabs.harvard.edu/abs/2017ApJ...846...64M" target="_BLANK">ADS</a>&nbsp;
+			<a href="flux_densities.pdf" target="_BLANK">pdf</a>&nbsp;
+			<a href="javascript:toggle('abstract3')">Abstract</a><br/>
+		<p class="abstract" id="abstract3">
+We derive infrared and radio flux densities of all ~1000 known Galactic HII regions in the Galactic longitude range 17.5&deg;< l <65&deg; Our sample comes from the Wide-Field Infrared Survey Explorer (WISE) catalog of Galactic HII regions. We compute flux densities at six wavelengths in the infrared (Spitzer GLIMPSE 8&micro;m, WISE 12&micro;m and 22&micro;m, Spitzer MIPSGAL 24&micro;m, and Herschel Hi-GAL 70&micro;m and 160&micro;m) and two in the radio (MAGPIS 20cm and VGPS 21cm). All HII region infrared flux densities are strongly correlated with their ~20cm flux densities. All HII regions used here, regardless of physical size or Galactocentric radius, have similar infrared to radio flux density ratios and similar infrared colors, although the smallest regions (r < 1pc), have slightly elevated IR to radio ratios. The colors log<sub>10</sub>(F<sub>24&micro;m</sub>/F<sub>12&micro;m</sub>)&ge; 0 and log<sub>10</sub>(F<sub>70&micro;m</sub>/F<sub>12&micro;m</sub>)&ge; 1.2, and log<sub>10</sub>(F<sub>24&micro;m</sub>/F<sub>12&micro;m</sub>)&ge; 0 and log<sub>10</sub>(F<sub>160&micro;m</sub>/F<sub>70&micro;m</sub>)&le; 0.67 reliably select HII regions, independent of size. The infrared colors of ~22% of HII regions, spanning a large range of physical sizes, satisfy the IRAS color criteria of Wood & Churchwell for HII regions, after adjusting the criteria to the wavelengths used here. Because these color criteria are commonly thought to select only ultra-compact HII regions, this result indicates that the true ultra-compact HII region population is uncertain. Compared to a sample of IR color indices from star-forming galaxies, HII regions show higher log<sub>10</sub>(F<sub>70&micro;m</sub>/F<sub>12&micro;m</sub>) ratios. We find a weak trend of decreasing infrared to ~20cm flux density ratios with increasing R<sub>gal</sub>, in agreement with previous extragalactic results, possibly indicating a decreased dust abundance in the outer Galaxy.
+		</p>
+		<br/>
+      <i style="font-size:10pt">A Green Bank Telescope Survey of Large Galactic HII Regions</i>&nbsp;
+			<a href="http://adsabs.harvard.edu/abs/2017arXiv171007397A" target="_BLANK">ADS</a>&nbsp;
+			<a href="large_hii_regions.pdf" target="_BLANK">pdf</a>&nbsp;
+			<a href="javascript:toggle('abstract4')">Abstract</a><br/>
+		<p class="abstract" id="abstract4">
+As part of our ongoing HII Region Discovery Survey (HRDS), we report the Green Bank Telescope detection of 148 new angularly-large Galactic HII regions in radio recombination line (RRL) emission. Our targets are located at a declination greater than -45&deg;, which corresponds to 266&deg; > l > -20&deg; at b = 0&deg; All sources were selected from the WISE Catalog of Galactic HII Regions, and have infrared angular diameters >260''. The Galactic distribution of these "large" HII regions is similar to that of the previously-known sample of Galactic HII regions. The large HII region RRL line width and peak line intensity distributions are skewed toward lower values compared with that of previous HRDS surveys. We discover 7 sources with extremely narrow RRLs <10 km/s. If half the line width is due to turbulence, these 7 sources have thermal plasma temperatures <1100 K. These temperatures are lower than any measured for Galactic HII regions, and the narrow line components may arise instead from partially ionized zones in the HII region photo-dissociation regions. We discover G039.515+00.511, one of the most luminous HII regions in the Galaxy. We also detect the RRL emission from three HII regions with diameters >100 pc, making them some of the physically largest known HII regions in the Galaxy. This survey completes the HRDS HII region census in the Northern sky, where we have discovered 887 HII regions and more than doubled the previously-known census of Galactic HII regions.
+		</p>
+		<br/>
+      <i style="font-size:10pt">The Southern HII Region Discovery Survey (SHRDS): Pilot Survey</i>&nbsp;
+			<a href="https://ui.adsabs.harvard.edu/abs/2017AJ....154...23B/abstract" target="_BLANK">ADS</a>&nbsp;
+			<a href="large_hii_regions.pdf" target="_BLANK">pdf</a>&nbsp;
+			<a href="javascript:toggle('abstract5')">Abstract</a><br/>
+		<p class="abstract" id="abstract5">
+The Southern HII Region Discovery Survey is a survey of the third and fourth quadrants of the Galactic plane that will detect radio recombination line (RRL) and continuum emission at cm-wavelengths from several hundred HII region candidates using the Australia Telescope Compact Array. The targets for this survey come from the WISE Catalog of Galactic HII Regions and were identified based on mid-infrared and radio continuum emission. In this pilot project, two different configurations of the Compact Array Broad Band receiver and spectrometer system were used for short test observations. The pilot surveys detected RRL emission from 36 of 53 HII region candidates, as well as seven known HII regions that were included for calibration. These 36 recombination line detections confirm that the candidates are true HII regions and allow us to estimate their distances.
+		</p>
+                </br>
+      <i style="font-size:10pt">A Galactic Plane Defined by the Milky Way HII Region Distribution</i>&nbsp;
+			<a href="http://adsabs.harvard.edu/abs/2019ApJ...871..145A" target="_BLANK">ADS</a>&nbsp;
+			<a href="large_hii_regions.pdf" target="_BLANK">pdf</a>&nbsp;
+			<a href="javascript:toggle('abstract6')">Abstract</a><br/>
+		<p class="abstract" id="abstract6">
+		  We develop a framework for a new definition of the Galactic midplane, allowing for tilt (&theta;<sub>tilt</sub>) rotation about Galactic azimuth 90&deg;) and roll (&theta;<sub>roll</sub>) rotation about Galactic azimuth 0&deg;) of the midplane with respect to the current definition. Derivation of the tilt and roll angles also determines the solar height above the midplane. Here we use nebulae from the Wide-field Infrared Survey Explorer (WISE) Catalog of Galactic HII Regions to define the Galactic high-mass star formation (HMSF) midplane. We analyze various subsamples of the WISE catalog and find that all have Galactic latitude scale heights near 0.30&deg; and z-distribution scale heights near 30 pc. The vertical distribution for small (presumably young) HII regions is narrower than that of larger (presumably old) HII regions (~25 pc versus ~40 pc), implying that the larger regions have migrated further from their birth sites. For all HII region subsamples and for a variety of fitting methodologies, we find that the HMSF midplane is not significantly tilted or rolled with respect to the currently defined midplane, and, therefore, the Sun is near to the HMSF midplane. These results are consistent with other studies of HMSF, but are inconsistent with many stellar studies, perhaps because of asymmetries in the stellar distribution near the Sun. Our results are sensitive to latitude restrictions and also to the completeness of the sample, indicating that similar analyses cannot be done accurately with less complete samples. The midplane framework we develop can be used for any future sample of Galactic objects to redefine the midplane.
+		</p>
+		<br/>
+      <i style="font-size:10pt">The Southern HII Region Discovery Survey. I. The Bright Catalog</i>&nbsp;
+			<a href="http://adsabs.harvard.edu/abs/2019ApJS..240...24W" target="_BLANK">ADS</a>&nbsp;
+			<a href="large_hii_regions.pdf" target="_BLANK">pdf</a>&nbsp;
+			<a href="javascript:toggle('abstract7')">Abstract</a><br/>
+		<p class="abstract" id="abstract7">
+The census of Galactic HII regions is vastly incomplete in the southern sky. We use the Australia Telescope Compact Array to observe 4-10 GHz radio continuum and hydrogen radio recombination line (RRL) emission from candidate HII regions in the Galactic zone 259&deg< l < 344&deg,|b| < 4&deg. In this first data release, we target the brightest HII region candidates and observe 282 fields in the direction of at least one previously known or candidate HII region. We detect radio continuum emission and RRL emission in 275 (97.5%) and 258 (91.5%) of these fields, respectively. We catalog the ~7 GHz radio continuum peak flux densities and positions of 80 previously known and 298 candidate HII regions. After averaging ~18 RRL transitions, we detect 77 RRL velocity components toward 76 previously known HII regions and 267 RRL velocity components toward 256 HII region candidates. The discovery of RRL emission from these nebulae increases the number of known Galactic HII regions in the surveyed zone by 82% to 568 nebulae. In the fourth quadrant, we discover 50 RRLs with positive velocities, placing those sources outside the solar circle. Including the pilot survey, the Southern H ɪɪ Region Discovery Survey has now discovered 295 Galactic HII regions. In the next data release, we expect to add ~200 fainter and more distant nebulae.
+		</p>
+  </div>
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div id="uploadFile_dialog" align=justify title="Load More Data" style="display:none;">
+      <form autocomplete="off"> <!-- autocomplete off prevents firefox from caching the checkmarks -->
+<!--        <input onclick="javascript:showMarkers('bronfman', 0, 1, 4)" type="checkbox" name="bronfman" id="bronfman">Bronfman CS 1->0
+        <img src="test.png" height=25px align="right"></br>
+        <input onclick="javascript:showMarkers('rms', 13, 13, 5)" type="checkbox" name="rms" id="rms">RMS
+        <img src="test.png" height=25px align="right"></br>
+        <input onclick="javascript:showMarkers('mwp_small', 13, 13, 5)" type="checkbox" name="mwp_small" id="mwp_small">MWP (Small)
+        <img src="test.png" height=25px align="right"></br>
+        <input onclick="javascript:showMarkers('mwp_large', 13, 13, 5)" type="checkbox" name="mwp_large" id="mwp_large">MWP (Large)
+        <img src="test.png" height=25px align="right"></br> -->
+        <input onclick="javascript:toggleLayer(0, green_snr_key)" type="checkbox" name="green_snrs" id="green_snrs">Green SNRs</br>
+        <input onclick="javascript:toggleLayer(1, thor_snr_key)" type="checkbox" name="THOR_snrs" id="THOR_snrs">THOR SNR Candidates</br>
+        <input onclick="javascript:toggleLayer(2, pulsar_key)" type="checkbox" name="ATNF_Pulsars" id="pulsars">ATNF Pulsars V1.56</br>
+        <input onclick="javascript:toggleLayer(3, gotcplus_key)" type="checkbox" name="GotC+" id="gotcplus">Got C+ Positions</br>
+        <input onclick="javascript:toggleLayer(4, radioQuiet_key)" type="checkbox" name="Radio Quiet" id="radioQuiet">VLA Radio Quiet Obs.</br>
+<!--        <input onclick="javascript:toggleLayer(2, shrds_key)" type="checkbox" name="shrds" id="shrds">SHRDS 1st Epoch</br>
+        <input onclick="javascript:toggleLayer(3, shrds2_key)" type="checkbox" name="shrds2" id="shrds">SHRDS 2nd Epoch</br> -->
+      </form>
+<!--
+      <input type="file" name="filename" id="filename">
+      <div id="csvimporthint"></div>
+      <form action="javascript:uploadFile()" method="post" enctype="multipart/form-data">
+      <input type="file" name="csv" value="" />
+      <input type="submit" name="submit" value="Upload" /></form>
+-->
+    </div>
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div id="columns_dialog" align=justify title="Toggle Column" style="display:none;">
+      <div id="options"">
+        <form id="Columns">
+	  <div style="width:33%; float:left;">
+	    <b>Basic Parameters</b></br>
+            <input type="checkbox" name="Column" id="2" value=1 checked>GLong<br>
+            <input type="checkbox" name="Column" id="3" value=1 checked>GLat<br>
+            <input type="checkbox" name="Column" id="4" value=1>RA<br>
+            <input type="checkbox" name="Column" id="5" value=1>Dec<br>
+            <input type="checkbox" name="Column" id="6" value=1 checked>Radius<br>
+            <input type="checkbox" name="Column" id="7" value=1 checked>HII Region<br>
+            <input type="checkbox" name="Column" id="8" value=1 checked>Membership<br>
+            <input type="checkbox" name="Column" id="9" value=1 checked>VLSR<br>
+            <input type="checkbox" name="Column" id="10" value=1 checked>Author<br>
+            <input type="checkbox" name="Column" id="11" value=1 checked>VLSR (Mol.)<br>
+            <input type="checkbox" name="Column" id="12" value=1 checked>Molecule<br>
+	  </div>
+	  <div style="width:33%; float:left;">
+	    <b>Distance Parameters</b></br>
+            <input type="checkbox" name="Column" id="13" value=1 checked>KDAR<br>
+            <input type="checkbox" name="Column" id="14" value=1 checked>Dist.<br>
+            <input type="checkbox" name="Column" id="15" value=1 checked>Err Dist.<br>
+            <input type="checkbox" name="Column" id="16" value=1 checked>Dist. Method<br>
+            <input type="checkbox" name="Column" id="17" value=1 checked>RGal<br>
+            <input type="checkbox" name="Column" id="18" value=1 checked>z<br>
+	  </div>
+	  <div style="width:33%; float:left;">
+	    <b>Flux Densities</b></br>
+            <input type="checkbox" name="Column" id="19" value=1>GLIMPSE 8um<br>
+            <input type="checkbox" name="Column" id="20" value=1>WISE 12um<br>
+            <input type="checkbox" name="Column" id="21" value=1>WISE 22um<br>
+            <input type="checkbox" name="Column" id="22" value=1>MIPSGAL 24um<br>
+            <input type="checkbox" name="Column" id="23" value=1>Hi-Gal 70um<br>
+            <input type="checkbox" name="Column" id="24" value=1>Hi-Gal 160um<br>
+            <input type="checkbox" name="Column" id="25" value=1>HRDS 3cm<br>
+            <input type="checkbox" name="Column" id="26" value=1>MAGPIS 20cm<br>
+            <input type="checkbox" name="Column" id="27" value=1>VGPS 21cm<br>
+	  </div>
+        </form>
+      </div>
+    </div>
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div id="legend">
+      <div><center><b><a href="javascript:toggleLegend()">Legend</a></b></center></div>
+      <div id="legend_symbols">
+        <div class="circle" style="border: 2px solid #FF0000"></div>&nbsp;Known</br>
+        <div class="circle" style="border: 2px solid #12E603"></div>&nbsp;Group</br>
+        <div class="circle" style="border: 2px solid #00CCFF"></div>&nbsp;Candidate</br>
+        <div class="circle" style="border: 2px solid #CCFF00"></div>&nbsp;Radio Quiet</br>
+<!--        <div class="circle" style="border: 2px solid #333333"></div>&nbsp;Unknown</br>-->
+    </div>
+
+<!-- lb -->
+    <div id="lb">
+      <label for="latlong" id="lb_label" style="font-size:10pt;">(l, b) =</label>
+      <input type="text" id="latlong" size=15 onkeydown="return lb_enter( event );" value="0.000, 0.000"/><br/>
+    </div>
+
+<script>
+// Bring up dialogs
+    function showCoordinates( event ) {
+        lat = event.latLng.lat().toFixed(5);
+        lng = transformLng(event.latLng.lng().toFixed(5));
+        simbadQuery = 'http://simbad.u-strasbg.fr/simbad/sim-coo?CooDefinedFrames=none&CooEpoch=2000&Coord=' + lng + '%20' + lat + '&submit=submit%20query&Radius.unit=arcmin&CooEqui=2000&CooFrame=Gal&Radius=5'
+        $( "#coordinates" ).dialog();
+        $( "#coordinates" ).dialog( "option", "width", 300 );
+        $( "#coordinates" ).dialog( "option", "height", 150 );
+        $( "#coordinates" ).html("Click at: " + lng + ", " + lat + "</br></br><a href = " + simbadQuery + " target=#BLANK>Simbad Search</a></br></br>");
+//        aladin.gotoRaDec(266.41683, -29.00781);
+}
+
+function show_chart() {
+    $( "#chart" ).dialog();
+    $( "#chart" ).dialog( "option", "width", 700 );
+    $( "#chart" ).dialog( "option", "height", 400 );
+    $( "#chart" ).dialog( "option", "resizable", true );
+    $( "#chart" ).dialog( "option", "position", "center" );
+}
+function show_changelog() {
+    $( "#changelog_dialog" ).dialog();
+    $( "#changelog_dialog" ).dialog( "option", "width", 700 );
+    $( "#changelog_dialog" ).dialog( "option", "height", 500 );
+    $( "#changelog_dialog" ).dialog( "option", "resizable", true );
+    $( "#changelog_dialog" ).dialog( "option", "position", "center" );
+}
+function show_columns_dialog() {
+    $( "#columns_dialog" ).dialog();
+    $( "#columns_dialog" ).dialog( "option", "width", 500 );
+    $( "#columns_dialog" ).dialog( "option", "resizable", false );
+    $( "#columns_dialog" ).dialog( "option", "position", "center" );
+}
+function show_uploadFile_dialog() {
+    $( "#uploadFile_dialog" ).dialog();
+    $( "#uploadFile_dialog" ).dialog( "option", "width", 200 );
+    $( "#uploadFile_dialog" ).dialog( "option", "resizable", false );
+    $( "#uploadFile_dialog" ).dialog( "option", "position", "center" );
+}
+function show_about_dialog() {
+    $( "#about_dialog" ).dialog();
+    $( "#about_dialog" ).dialog( "option", "width", 700 );
+    $( "#about_dialog" ).dialog( "option", "resizable", false );
+    $( "#about_dialog" ).dialog( "option", "position", "center" );
+}
+function show_papers_dialog() {
+    $( "#papers_dialog" ).dialog();
+    $( "#papers_dialog" ).dialog( "option", "width", 700 );
+    $( "#papers_dialog" ).dialog( "option", "resizable", false );
+    $( "#papers_dialog" ).dialog( "option", "position", "center" );
+}
+function show_downloads_dialog() {
+    $( "#downloads_dialog" ).dialog();
+    $( "#downloads_dialog" ).dialog( "option", "width", 700 );
+    $( "#downloads_dialog" ).dialog( "option", "resizable", false );
+    $( "#downloads_dialog" ).dialog( "option", "position", "center" );
+}
+function show_help_dialog() {
+    $( "#help_dialog" ).dialog();
+    $( "#help_dialog" ).dialog( "option", "width", 700 );
+    $( "#help_dialog" ).dialog( "option", "resizable", false );
+    $( "#help_dialog" ).dialog( "option", "position", "center" );
+}
+function show_options_dialog() {
+  viewportW = $.viewportW();
+// hidden->show
+  if ($( "#options_dialog" ).is(":hidden")) {
+    optionsWidth = parseFloat($(22).toPx().replace("px", ""));
+  // Set larger container width
+    var width = String(viewportW - optionsWidth) + 'px';
+    document.getElementById("map-canvas").style.width = width;
+    document.getElementById("visualization").style.width = width;
+    table.draw(data, tableOptions);
+    document.getElementById("container").style.width = width;
+// change css of cross at map center
+    var crossMargin = -10 +optionsWidth/2.
+    var marker = document.getElementsByClassName("centerMarker");
+    marker[0].style.marginLeft = crossMargin.toString() + "px"; //crossMargin;
+    $( "#options_dialog" ).show();
+// show->hidden
+  } else {
+    document.getElementById("map-canvas").style.width = "100%";
+    document.getElementById("visualization").style.width = "100%";
+    document.getElementById("container").style.width = "100%";
+    table.draw(data, tableOptions);
+// change css of cross at map center
+    var marker = document.getElementsByClassName("centerMarker");
+    marker[0].style.marginLeft = "-10px";
+    $( "#options_dialog" ).hide();
+  }
+}
+
+function toggleMap() {
+  currCenter = map.getCenter();
+  $( "#map-canvas" ).slideToggle(400, function() { 
+  setSizes();
+  table.draw(data, tableOptions);
+  google.maps.event.trigger(map, 'resize');
+  map.setCenter(currCenter); 
+});
+}
+
+function toggleTable() {
+  currCenter = map.getCenter();
+  $( "#visualization" ).slideToggle(400, function() {
+  setSizes();
+  table.draw(data, tableOptions);
+  google.maps.event.trigger(map, 'resize');
+  map.setCenter(currCenter); 
+});
+}
+
+// The show/hide function for the abstracts
+function toggle(id) {
+    $("#" + id).slideToggle('slow');
+}
+
+// Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47051357-1', 'wvu.edu');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

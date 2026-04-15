@@ -1,0 +1,16 @@
+Validation of Structural Contrast Baseline
+WISE HII mass-bridge finalizer manifest
+============================================================
+
+raw_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog
+template_seed: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\wise_hii_mass_bridge_template_seed.csv
+sources_seed: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\wise_hii_mass_bridge_sources_seed.csv
+radio_proxy_seed: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\wise_hii_mass_bridge_radio_proxy_seed.csv
+final_bridge: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\wise_hii_mass_bridge.csv
+
+Meaning
+--------------------
+This file is the consolidated mass-bridge input for later V3 use.
+It does not invent stellar masses.
+Where radio proxy data exist, they are included but kept distinct from direct mass values.
+Rows with no direct mass or radio proxy remain as follow-up targets.

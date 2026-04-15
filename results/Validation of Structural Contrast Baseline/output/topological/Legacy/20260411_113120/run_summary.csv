@@ -1,0 +1,9 @@
+﻿metric,value
+target_count,5
+targets_with_profile,5
+targets_with_sigma_obs,5
+shell_structurally_enhanced_count,1
+weak_shell_structural_excess_count,1
+shell_structurally_suppressed_count,3
+near_balanced_count,0
+missing_profile_count,0

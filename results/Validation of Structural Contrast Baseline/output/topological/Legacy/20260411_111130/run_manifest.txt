@@ -1,0 +1,15 @@
+Validation of Structural Contrast Baseline
+Topological pipeline manifest
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+input_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_final_input.csv
+profile_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles
+output_dir: C:\Users\mincu\Desktop\topological_gravity_project\results\Validation of Structural Contrast Baseline\output\topological\20260411_111130
+
+target_count: 5
+
+meaning
+--------------------
+This pipeline reads the final input directly from the input layer.
+It re-creates the standard inner/shell/background zones and computes sigma_topo from observational zone means when a radial profile CSV is available.

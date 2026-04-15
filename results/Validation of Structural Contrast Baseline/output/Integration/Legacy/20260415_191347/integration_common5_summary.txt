@@ -1,0 +1,22 @@
+Integration summary for common5 standard-topological comparison
+========================================================================
+standard summary input: results\Validation of Structural Contrast Baseline\output\standard\20260412_123131\standard_summary_common5_v3.csv
+topological summary input: results\Validation of Structural Contrast Baseline\output\topological\20260412_123920\topological_summary_common5_v11.csv
+target count: 5
+
+Relationship class counts
+------------------------------------------------------------------------
+branching_or_inversion: 3
+aligned_shell_supported: 2
+
+Most aligned case under the conceptual comparison index
+------------------------------------------------------------------------
+G012.820-00.238: ΔDw=0.284575, ΔMVdens=0.023921, class=aligned_shell_supported
+
+Most divergent case under the conceptual comparison index
+------------------------------------------------------------------------
+G345.346-00.900: ΔDw=-0.069300, ΔMVdens=83.516167, class=branching_or_inversion
+
+Important note
+------------------------------------------------------------------------
+The conceptual_alignment_score and conceptual_divergence_index written by this pipeline are internal descriptive quantities only. They are not statistical chi-square values and should not be presented as formal fit statistics in the paper.

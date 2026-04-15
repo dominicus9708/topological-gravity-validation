@@ -1,0 +1,17 @@
+Validation of Structural Contrast Baseline
+Topological pipeline manifest (common5 v9)
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+input_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\topological\wise_hii_common5\wise_hii_common5_topological_final_input_distance_enriched_v1.csv
+profile_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles
+output_dir: C:\Users\mincu\Desktop\topological_gravity_project\results\Validation of Structural Contrast Baseline\output\topological\20260412_113613
+
+target_count: 5
+
+meaning
+--------------------
+This common5 v9 pipeline reads the distance-enriched final input and radial profiles.
+Mass/proxy bridge is read directly from the topological final input file.
+It preserves the observational structure chain and adds conservative mass-volume interpretation.
+Added graphs: standard-style circular zone schematic and Dw_obs zone bar.

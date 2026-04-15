@@ -1,0 +1,30 @@
+Validation of Structural Contrast Baseline
+=========================================
+
+This raw-data bootstrap is designed for the 4th paper's foundational validation stage.
+
+Primary source family
+---------------------
+- WISE Catalog of Galactic H II Regions
+- Core use: identify clean shell-like or ring-like structures for sigma baseline tests
+
+Why this source is enough for first-pass validation
+---------------------------------------------------
+- very large target pool
+- shell/ring morphology is common
+- suited to background-vs-structure separation
+- can support a simple radial-profile test before more complex observational cases
+
+Folder intent
+-------------
+- docs/      : papers and source descriptions
+- catalog/   : original downloaded catalog files
+- candidate_lists/ : normalized and filtered tables for manual target selection
+- script/    : downloader/bootstrap scripts
+
+Recommended next step after running this script
+-----------------------------------------------
+1. Open candidate_lists/wise_hii_shortlist_known_group_simple_shell.csv
+2. Manually choose 3 shell-like targets
+3. Download image cutouts for those 3 targets
+4. Build the first standard radial profile

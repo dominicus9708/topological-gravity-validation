@@ -1,0 +1,14 @@
+WISE H II dual mass working update
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Mass dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass
+Dual source rows read: 1
+Candidate rows updated: 1
+Output working file: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass\wise_hii_mass_dual_candidates_working.csv
+
+Chosen source categories:
+- proxy_spectral_type: 1
+
+Note:
+This script does not overwrite the initial candidates file.
+Best-row selection prefers direct mass, then numeric proxy, then log_nly/spectral/radio/ionizing references.

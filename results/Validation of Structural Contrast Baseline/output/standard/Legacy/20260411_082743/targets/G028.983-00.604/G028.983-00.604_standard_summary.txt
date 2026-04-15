@@ -1,0 +1,22 @@
+wise_name: G028.983-00.604
+manual_final_rank: 5
+manual_reason: larger-radius backup candidate
+manual_shell_type: single_shell_candidate
+manual_background_ring_defined: yes
+catalog_class: K
+shortlist_source: known_group
+ra: 281.59439
+dec: -3.7893536
+radius_arcsec: 179.4
+
+standard baseline zones
+inner_inner_arcsec: 0.0
+inner_outer_arcsec: 89.7
+shell_inner_arcsec: 107.64
+shell_outer_arcsec: 179.4
+bg_inner_arcsec: 215.28
+bg_outer_arcsec: 322.92
+
+central schematic circle
+meaning: target center / center-object schematic marker
+note: not to physical scale

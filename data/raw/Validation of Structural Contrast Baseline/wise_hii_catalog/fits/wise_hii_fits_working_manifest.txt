@@ -1,0 +1,14 @@
+WISE H II FITS working update
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+FITS dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits
+Evidence dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits\raw
+Evidence files read: 2
+Evidence rows read: 2506
+Working source rows: 2506
+Candidate rows updated: 2506
+
+Note:
+This script does not overwrite initial files.
+String-like and bool-like update columns are explicitly cast before assignment.
+Use the *_working.csv outputs for parallel progress tracking.

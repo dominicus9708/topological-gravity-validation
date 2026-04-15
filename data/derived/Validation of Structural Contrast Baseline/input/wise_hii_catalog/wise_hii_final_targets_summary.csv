@@ -1,0 +1,6 @@
+﻿wise_name,manual_final_rank,manual_reason,manual_shell_type,manual_background_ring_defined,radius_arcsec,catalog_class,shortlist_source,baseline_first_pass_score
+G034.256+00.136,1,stable first-pass baseline candidate,single_shell_candidate,yes,101.5,K,known_group,83.0
+G029.956-00.020,2,compact but strong baseline candidate,single_shell_candidate,yes,94.4,K,known_group,83.0
+G060.881-00.135,3,mid-size baseline candidate,single_shell_candidate,yes,129.0,K,known_group,83.0
+G045.475+00.130,4,backup baseline candidate,single_shell_candidate,yes,144.1,K,known_group,83.0
+G028.983-00.604,5,larger-radius backup candidate,single_shell_candidate,yes,179.4,K,known_group,83.0

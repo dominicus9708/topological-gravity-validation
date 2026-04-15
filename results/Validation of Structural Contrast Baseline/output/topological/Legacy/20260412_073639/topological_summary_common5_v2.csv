@@ -1,0 +1,6 @@
+﻿wise_name,radius_arcsec,Dw_obs_inner,Dw_obs_shell,Dw_obs_background,mass_proxy,mass_proxy_kind,radius_scale_pc,radius_scale_kind,shell_mass_volume_density,background_mass_volume_density,sigma_mass_volume,bridge_status,interpretation_flag,profile_file
+G000.649-00.080,95.3,,,,,not_evaluated,,not_evaluated,,,,missing_observational_profile,missing_observational_profile,
+G351.311+00.663,119.0,,,,,not_evaluated,,not_evaluated,,,,missing_observational_profile,missing_observational_profile,
+G233.830-00.180,114.9,,,,,not_evaluated,,not_evaluated,,,,missing_observational_profile,missing_observational_profile,
+G012.820-00.238,126.8,,,,,not_evaluated,,not_evaluated,,,,missing_observational_profile,missing_observational_profile,
+G345.346-00.900,127.9,,,,,not_evaluated,,not_evaluated,,,,missing_observational_profile,missing_observational_profile,

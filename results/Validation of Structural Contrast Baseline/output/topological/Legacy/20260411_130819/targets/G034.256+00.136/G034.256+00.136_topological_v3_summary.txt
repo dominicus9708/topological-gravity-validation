@@ -1,0 +1,26 @@
+wise_name: G034.256+00.136
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G034.256+00.136_radial_profile.csv
+
+observational structural dimensions
+Dw_obs_inner: 2.1485318821087827
+Dw_obs_shell: 0.7982798775074365
+Dw_obs_background: 1.0016772177042
+
+mass bridge
+mass_proxy: 1.0964781961431829
+mass_proxy_kind: radio_proxy_from_log_Nly
+radius_scale_pc: 2.08
+radius_scale_kind: effective_radius_pc
+shell_mass_volume_density: 0.029618325739058832
+background_mass_volume_density: 0.007099729950179178
+sigma_mass_volume: 3.1717534012061885
+
+bridge_status: mass_volume_ready
+interpretation_flag: shell_mass_volume_enhanced
+
+mass bridge source context
+mass_bridge_status: radio_proxy_available
+preferred_mass_type: equivalent_ionizing_star_mass
+bridge_ready_for_v3: radio_proxy_only
+mass_input_mode_for_v3: requires_conversion_or_manual_fill
+source_bundle: [primary_catalog] WISE Catalog of Galactic H II Regions (Anderson et al. 2014) | https://astro.phys.wvu.edu/wise/wise_catalog_hii_regions.pdf | Catalog identity and H II region baseline data | Use as catalog anchor. || [radio_proxy_and_cluster_candidate] Campbell-White et al. 2018, Table A1 / MWSC note | https://arxiv.org/pdf/1804.04937 | 1.4 GHz flux, log N_Ly, distance, positional coincidence with BDSB_127 | Best current bridge source among the five for mass-proxy work.

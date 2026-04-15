@@ -1,0 +1,16 @@
+Validation of Structural Contrast Baseline
+common5 FITS download manifest v4
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+standard_input: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\standard\wise_hii_common5\wise_hii_common5_standard_final_input.csv
+fits_output_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits\fits
+debug_xml_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits\fits\debug_xml
+debug_resolved_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits\fits\debug_resolved
+
+target_count: 5
+download_ok: 5
+download_failed: 0
+
+Note:
+This v4 resolves the <fitsurl> response one more step before deciding whether the payload is real FITS.

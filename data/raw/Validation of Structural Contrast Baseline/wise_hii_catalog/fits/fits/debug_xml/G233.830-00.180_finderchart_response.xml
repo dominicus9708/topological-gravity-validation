@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<finderchart status="ok">
+  <input>
+    <locstr>112.57035 -18.595707</locstr>
+    <surveys>WISE</surveys>
+    <subsetsize>5.745</subsetsize>
+    <reproject>true</reproject>
+  </input>
+  <result>
+    <datatag></datatag>
+    <equCoord>112.57035;-18.595707;EQ_J2000</equCoord>
+    <galCoord>233.83004579884607;-0.17900372038142814;GALACTIC</galCoord>
+    <eclCoord>118.28152246150722;-39.844694861162374;EC_J2000</eclCoord>
+    <totalimages>4</totalimages>
+    <htmlfile><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?reproject=true&mode=getResult&UserTargetWorldPt=112.57035;-18.595707;EQ_J2000&subsize=0.09575&survey=WISE]]></htmlfile>
+    <pdffile><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&file_type=pdf&subsetsize=5.745&reproject=true&locstr=112.57035%20-18.595707&survey=WISE]]></pdffile>
+    <image>
+      <surveyname>WISE (AllWISE)</surveyname>
+      <band>w1</band>
+      <obsdate>2010-04-14</obsdate>
+      <fitsurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=medium&survey=wise&reproject=true&wise_bands=1&type=fitsurl]]></fitsurl>
+      <jpgurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=large&survey=wise&reproject=true&wise_bands=1&type=jpgurl]]></jpgurl>
+      <shrunkjpgurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=small&survey=wise&reproject=true&wise_bands=1&type=shrunkjpgurl]]></shrunkjpgurl>
+    </image>
+    <image>
+      <surveyname>WISE (AllWISE)</surveyname>
+      <band>w2</band>
+      <obsdate>2010-04-14</obsdate>
+      <fitsurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=medium&survey=wise&reproject=true&wise_bands=2&type=fitsurl]]></fitsurl>
+      <jpgurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=large&survey=wise&reproject=true&wise_bands=2&type=jpgurl]]></jpgurl>
+      <shrunkjpgurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=small&survey=wise&reproject=true&wise_bands=2&type=shrunkjpgurl]]></shrunkjpgurl>
+    </image>
+    <image>
+      <surveyname>WISE (AllWISE)</surveyname>
+      <band>w3</band>
+      <obsdate>2010-04-12</obsdate>
+      <fitsurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=medium&survey=wise&reproject=true&wise_bands=3&type=fitsurl]]></fitsurl>
+      <jpgurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=large&survey=wise&reproject=true&wise_bands=3&type=jpgurl]]></jpgurl>
+      <shrunkjpgurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=small&survey=wise&reproject=true&wise_bands=3&type=shrunkjpgurl]]></shrunkjpgurl>
+    </image>
+    <image>
+      <surveyname>WISE (AllWISE)</surveyname>
+      <band>w4</band>
+      <obsdate>2010-04-12</obsdate>
+      <fitsurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=medium&survey=wise&reproject=true&wise_bands=4&type=fitsurl]]></fitsurl>
+      <jpgurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=large&survey=wise&reproject=true&wise_bands=4&type=jpgurl]]></jpgurl>
+      <shrunkjpgurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&RA=112.57035&DEC=-18.595707&subsetsize=5.745&thumbnail_size=small&survey=wise&reproject=true&wise_bands=4&type=shrunkjpgurl]]></shrunkjpgurl>
+    </image>
+    <colorimage>
+      <surveyname>wise</surveyname>
+      <imageurl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getImage&file_type=colorimage&survey=wise&subsetsize=5.745&locstr=112.57035%20-18.595707]]></imageurl>
+    </colorimage>
+    <artifact>
+      <surveyname>wise</surveyname>
+      <arturl><![CDATA[https://irsa.ipac.caltech.edu/applications/finderchart/servlet/api?mode=getArt&survey=wise&subsetsize=5.745&locstr=112.57035%20-18.595707]]></arturl>
+    </artifact>
+  </result>
+</finderchart>

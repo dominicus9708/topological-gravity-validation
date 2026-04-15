@@ -1,0 +1,6 @@
+﻿wise_name,manual_final_rank,manual_reason,manual_shell_type,manual_background_ring_defined,catalog_class,shortlist_source,ra,dec,radius_arcsec,zone_radius_arcsec,inner_inner_arcsec,inner_outer_arcsec,shell_inner_arcsec,shell_outer_arcsec,bg_inner_arcsec,bg_outer_arcsec,baseline_geometry_status,baseline_ready_for_profile_extraction,baseline_first_pass_score
+G034.256+00.136,1,stable first-pass baseline candidate,single_shell_candidate,yes,K,known_group,283.34203,1.2408767,101.5,101.5,0.0,50.75,60.9,101.5,121.8,182.7,defined,yes,83.0
+G029.956-00.020,2,compact but strong baseline candidate,single_shell_candidate,yes,K,known_group,281.51856,-2.6570061,94.4,94.4,0.0,47.2,56.64,94.4,113.28,169.92,defined,yes,83.0
+G060.881-00.135,3,mid-size baseline candidate,single_shell_candidate,yes,K,known_group,296.58828,24.585776,129.0,129.0,0.0,64.5,77.4,129.0,154.8,232.2,defined,yes,83.0
+G045.475+00.130,4,backup baseline candidate,single_shell_candidate,yes,K,known_group,288.53491,11.204769,144.1,144.1,0.0,72.05,86.46,144.1,172.92,259.38,defined,yes,83.0
+G028.983-00.604,5,larger-radius backup candidate,single_shell_candidate,yes,K,known_group,281.59439,-3.7893536,179.4,179.4,0.0,89.7,107.64,179.4,215.28,322.92,defined,yes,83.0

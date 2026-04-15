@@ -1,0 +1,26 @@
+wise_name: G029.956-00.020
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G029.956-00.020_radial_profile.csv
+
+observational structural dimensions
+Dw_obs_inner: 1.1948596976245842
+Dw_obs_shell: 1.3711376572591618
+Dw_obs_background: 1.7453983384313505
+
+mass bridge
+mass_proxy: 
+mass_proxy_kind: no_usable_mass_proxy
+radius_scale_pc: 
+radius_scale_kind: no_physical_radius_scale
+shell_mass_volume_density: 
+background_mass_volume_density: 
+sigma_mass_volume: 
+
+bridge_status: observational_only__no_usable_mass_proxy__no_physical_radius_scale
+interpretation_flag: observational_only__no_usable_mass_proxy__no_physical_radius_scale
+
+mass bridge source context
+mass_bridge_status: needs_followup
+preferred_mass_type: equivalent_ionizing_star_mass
+bridge_ready_for_v3: no_mass_bridge_yet
+mass_input_mode_for_v3: requires_conversion_or_manual_fill
+source_bundle: [primary_catalog] WISE Catalog of Galactic H II Regions (Table2 / V1.5) | https://astro.phys.wvu.edu/wise/Table2.txt | WISE identifier, class K, angular radius, HII identifier, VLSR reference code | Base catalog source only; no direct stellar mass field.

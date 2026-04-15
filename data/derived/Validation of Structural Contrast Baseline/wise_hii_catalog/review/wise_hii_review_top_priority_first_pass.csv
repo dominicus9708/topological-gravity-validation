@@ -1,0 +1,771 @@
+﻿wise_name,catalog_class,priority_rank,shortlist_source,glon,glat,ra,dec,radius_arcsec,radius_band,hii_region_name,membership,other_names_raw,flag_has_hii_name,flag_has_membership,flag_has_other_names,flag_has_distance,flag_any_nonzero_mid_ir,w3_jy,w4_jy,mips24_jy,size_bucket,complexity_warning,baseline_first_pass_score
+G029.956-00.020,K,1,known_group,29.956,-0.019,281.51856,-2.6570061,94.4,preferred_core_band,G29,G029.945-00.039; G29,G029.960-00.020; G029.944-00.042; G029.945-00.039,yes,yes,yes,yes,yes,119.567,416.954,359.674,preferred_simple_shell_range,,83.0
+G034.256+00.136,K,1,known_group,34.256,0.136,283.34203,1.2408767,101.5,preferred_core_band,NRAO584,G034.254+00.144; NRAO584,G034.260+00.150; G034.254+00.144,yes,yes,yes,yes,yes,252.493,766.772,608.896,preferred_simple_shell_range,,83.0
+G060.881-00.135,K,1,known_group,60.881,-0.135,296.58828,24.585776,129.0,preferred_core_band,S87,G060.883-00.133; S87,G060.880-00.130; G060.888-00.127; G060.883-00.133,yes,yes,yes,yes,yes,99.9212,256.983,206.394,preferred_simple_shell_range,,83.0
+G045.475+00.130,K,1,known_group,45.475,0.13,288.53491,11.204769,144.1,preferred_core_band,K47,G045.480+00.130; K47,G045.475+00.130; G045.470+00.050; G045.480+00.130,yes,yes,yes,yes,yes,74.6996,219.374,141.517,preferred_simple_shell_range,,83.0
+G040.503+02.537,K,1,known_group,40.503,2.537,284.05268,7.8935698,169.3,preferred_core_band,S76,G040.502+02.540; S76,DB024; G040.504+02.537; G040.505+02.539; G040.502+02.540,yes,yes,yes,yes,yes,195.897,526.245,0.0,preferred_simple_shell_range,,83.0
+G028.983-00.604,K,1,known_group,28.983,-0.603,281.59439,-3.7893536,179.4,preferred_core_band,S65,G028.983-00.603; S65,G028.983-00.603,yes,yes,yes,yes,yes,159.076,265.767,264.429,preferred_simple_shell_range,,83.0
+G336.491-01.474,K,1,known_group,336.491,-1.473,249.99859,-48.860965,93.2,preferred_core_band,RCW108,G336.514-01.477; RCW108,G336.514-01.477; G336.491-01.474,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G328.572-00.527,K,1,known_group,328.572,-0.526,239.90225,-53.755758,99.2,preferred_core_band,RCW99,G328.593-00.518; RCW99,G328.593-00.518,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G353.195+00.910,K,1,known_group,353.195,0.91,261.18396,-34.167881,99.3,preferred_core_band,S11,G353.187+00.888; S11,G353.186+00.887; G353.187+00.888,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G305.363+00.150,K,1,known_group,305.363,0.151,198.15181,-62.620992,101.5,preferred_core_band,G305,G305.363+00.179,G305.363+00.179,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G090.226+01.718,K,1,known_group,90.227,1.718,316.31324,49.660873,101.7,preferred_core_band,S121,G090.231+01.719,S121,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G070.329+01.589,K,1,known_group,70.329,1.59,300.47384,33.570764,102.0,preferred_core_band,S99; K3-50,G070.330+01.590; S99; K3-50,G070.330+01.590,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G305.362+00.197,K,1,known_group,305.362,0.198,198.14127,-62.574332,102.3,preferred_core_band,G305,G305.363+00.179,G305.363+00.179,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G305.558+00.011,K,1,known_group,305.558,0.012,198.60108,-62.742764,121.7,preferred_core_band,G305,G305.551-00.005,G305.551-00.005,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G136.119+02.118,K,1,known_group,136.119,2.119,41.890439,61.980037,127.2,preferred_core_band,S193,G136.133+02.050,S193,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G340.780-01.022,K,1,known_group,340.78,-1.022,253.56888,-45.29936,128.2,preferred_core_band,RCW110,G340.777-01.008; RCW110,G340.777-01.008,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G305.535+00.357,K,1,known_group,305.536,0.358,198.48677,-62.400136,128.5,preferred_core_band,G305,G305.537+00.338,G305.537+00.338,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G197.786-02.320,K,1,known_group,197.786,-2.319,93.726332,12.350529,132.7,preferred_core_band,S271,G197.777-02.320,S271,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G217.629-00.178,K,1,known_group,217.629,-0.178,104.8465,-4.2606472,132.9,preferred_core_band,BFS59,BFS59,BFS59,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G110.211+02.616,K,1,known_group,110.211,2.617,344.27361,62.629861,140.0,preferred_core_band,S155,G110.214+02.622,S155,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G299.349-00.267,K,1,known_group,299.349,-0.267,184.96968,-62.918497,140.0,preferred_core_band,RCW64,G299.363-00.257; RCW64,G299.363-00.257; caswell6,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G012.476-01.102,K,1,known_group,12.476,-1.102,274.22705,-18.647838,152.1,preferred_core_band,S39,G012.445-01.113; S39,G012.445-01.113,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G180.872+04.112,K,1,known_group,180.872,4.113,90.995149,30.258206,166.3,preferred_core_band,S241,G180.875+04.111,S241,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G322.162+00.625,K,1,known_group,322.162,0.626,229.66001,-56.647248,174.2,preferred_core_band,RCW92,G322.153+00.613; RCW92,G322.153+00.613; caswell15,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G192.638-00.008,K,1,known_group,192.638,-0.008,93.281204,17.97597,174.3,preferred_core_band,S255,G192.626-00.017; S255,G192.632-00.018; G192.626-00.017,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G015.212+00.167,K,1,known_group,15.212,0.168,274.41678,-15.637171,176.7,preferred_core_band,S47,G015.199+00.188,S47,yes,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,78.0
+G055.855-03.803,K,1,known_group,55.856,-3.802,297.27601,18.40051,145.1,preferred_core_band,S84,,S84,yes,no,yes,yes,yes,0.252253,0.519249,,preferred_simple_shell_range,,77.0
+G055.114+02.422,K,1,known_group,55.114,2.422,291.12471,20.792551,146.2,preferred_core_band,S83,,G055.114+02.422; G055.114+02.422; S83,yes,no,yes,yes,yes,12.7742,37.0303,0.0,preferred_simple_shell_range,,77.0
+G025.700+00.028,K,1,known_group,25.7,0.029,279.5222,-6.4195542,92.6,preferred_core_band,,G025.700+00.031,G025.700+00.031,no,yes,yes,yes,yes,58.7545,209.035,201.163,preferred_simple_shell_range,,75.0
+G023.423-00.216,K,1,known_group,23.424,-0.215,278.68551,-8.5530753,96.8,preferred_core_band,,G023.421-00.214,G023.430-00.210; G023.421-00.214,no,yes,yes,yes,yes,102.729,391.486,404.385,preferred_simple_shell_range,,75.0
+G023.957+00.149,K,1,known_group,23.958,0.149,278.60698,-7.9115015,97.4,preferred_core_band,,G023.956+00.152,G023.956+00.152,no,yes,yes,yes,yes,59.8813,200.974,184.035,preferred_simple_shell_range,,75.0
+G063.052-00.332,K,1,known_group,63.052,-0.332,297.99552,26.357218,98.0,preferred_core_band,,G063.050-00.340,G063.050-00.340,no,yes,yes,yes,yes,15.7814,28.3722,28.8552,preferred_simple_shell_range,,75.0
+G030.321-00.210,K,1,known_group,30.321,-0.209,281.85477,-2.4186157,99.0,preferred_core_band,,G030.323-00.210,LA021,no,yes,yes,yes,yes,22.8962,57.6301,61.3874,preferred_simple_shell_range,,75.0
+G056.083-00.176,K,1,known_group,56.083,-0.175,294.05595,20.396401,99.9,preferred_core_band,,G056.082-00.178,LA726; G056.082-00.178,no,yes,yes,yes,yes,18.6221,20.6887,19.9434,preferred_simple_shell_range,,75.0
+G051.760+00.790,K,1,known_group,51.76,0.791,290.96978,17.067312,103.3,preferred_core_band,,G051.762+00.794,LA709,no,yes,yes,yes,yes,7.34059,26.2366,26.7901,preferred_simple_shell_range,,75.0
+G028.679+00.044,K,1,known_group,28.679,0.044,280.87819,-3.7637747,104.1,preferred_core_band,,G028.696+00.048a,LA484,no,yes,yes,yes,yes,31.6612,132.488,146.493,preferred_simple_shell_range,,75.0
+G026.090-00.079,K,1,known_group,26.09,-0.079,279.79836,-6.1219245,105.2,preferred_core_band,,G026.103-00.069,G026.103-00.069,no,yes,yes,no,yes,8.23112,39.8256,39.9218,preferred_simple_shell_range,,75.0
+G050.079+00.571,K,1,known_group,50.079,0.571,290.34564,15.481214,107.2,preferred_core_band,,G050.079+00.571,LA801,no,yes,yes,yes,yes,19.891,21.9869,21.1059,preferred_simple_shell_range,,75.0
+G043.818+00.395,K,1,known_group,43.818,0.395,287.51563,9.8587884,108.3,preferred_core_band,,G043.818+00.393,LA128,no,yes,yes,yes,yes,7.92077,16.7846,16.798,preferred_simple_shell_range,,75.0
+G030.958+00.594,K,1,known_group,30.959,0.594,281.43051,-1.4847055,110.6,preferred_core_band,,G030.956+00.599a,LA003,no,yes,yes,no,yes,24.1462,57.997,59.6869,preferred_simple_shell_range,,75.0
+G032.800+00.190,K,1,known_group,32.8,0.19,282.63023,-0.030770402,111.5,preferred_core_band,,G032.960+00.276,G032.800+00.190; G032.797+00.192; G032.798+00.192; G032.960+00.276,no,yes,yes,yes,yes,22.475,90.5672,60.0233,preferred_simple_shell_range,,75.0
+G026.384+01.401,K,1,known_group,26.385,1.401,278.61327,-5.1808351,113.4,preferred_core_band,,G026.383+01.399,FQ293; DB004,no,yes,yes,yes,yes,63.6531,124.694,0.0,preferred_simple_shell_range,,75.0
+G023.240-00.240,K,1,known_group,23.24,-0.24,278.62192,-8.7276903,113.6,preferred_core_band,,G023.250-00.240,G023.250-00.240,no,yes,yes,yes,yes,12.407,96.3138,98.2735,preferred_simple_shell_range,,75.0
+G035.467+00.004,K,1,known_group,35.467,0.004,284.01248,2.2579703,116.0,preferred_core_band,,G035.473-00.000,LA078,no,yes,yes,yes,yes,6.92933,21.8704,21.9141,preferred_simple_shell_range,,75.0
+G031.577+00.103,K,1,known_group,31.578,0.104,282.14954,-1.157784,117.3,preferred_core_band,,G031.580+00.101,G031.580+00.101,no,yes,yes,yes,yes,17.8496,32.1428,32.1419,preferred_simple_shell_range,,75.0
+G053.175+00.150,K,1,known_group,53.175,0.15,292.26653,18.006923,120.0,preferred_core_band,,G053.184+00.155,G053.184+00.155,no,yes,yes,yes,yes,30.7006,125.847,130.016,preferred_simple_shell_range,,75.0
+G052.256+00.702,K,1,known_group,52.256,0.703,291.29677,17.462191,120.7,preferred_core_band,,G052.259+00.700,TB106,no,yes,yes,yes,yes,18.5879,32.6252,27.0949,preferred_simple_shell_range,,75.0
+G019.045-00.588,K,1,known_group,19.045,-0.588,276.96009,-12.607279,121.0,preferred_core_band,,G019.050-00.593,G019.050-00.593,no,yes,yes,yes,yes,88.2382,125.954,122.684,preferred_simple_shell_range,,75.0
+G049.589-00.370,K,1,known_group,49.589,-0.369,290.96482,14.605665,123.9,preferred_core_band,,G049.583-00.381,G049.582-00.381; G049.583-00.381,no,yes,yes,yes,yes,147.012,665.554,559.597,preferred_simple_shell_range,,75.0
+G041.246-00.168,K,1,known_group,41.247,-0.168,286.82233,7.317207,125.7,preferred_core_band,,G041.239-00.176,LA123,no,yes,yes,no,yes,11.8982,13.4551,13.5256,preferred_simple_shell_range,,75.0
+G028.823-00.226,K,1,known_group,28.823,-0.226,281.18479,-3.7594769,134.4,preferred_core_band,,G028.823-00.226,G028.823-00.226,no,yes,yes,yes,yes,46.915,157.061,162.166,preferred_simple_shell_range,,75.0
+G061.431+02.081,K,1,known_group,61.432,2.082,294.76134,26.164448,143.6,preferred_core_band,,G061.424+02.076,DB080,no,yes,yes,yes,yes,5.07306,4.97288,0.0,preferred_simple_shell_range,,75.0
+G034.333+00.212,K,1,known_group,34.333,0.213,283.30901,1.3440865,147.5,preferred_core_band,,G034.325+00.211,LA229,no,yes,yes,yes,yes,16.7451,14.7895,18.7256,preferred_simple_shell_range,,75.0
+G022.988-00.360,K,1,known_group,22.989,-0.359,278.61173,-9.0057122,151.7,preferred_core_band,,G022.982-00.356,G022.982-00.356,no,yes,yes,yes,yes,70.1671,87.655,90.2935,preferred_simple_shell_range,,75.0
+G023.041-00.399,K,1,known_group,23.042,-0.399,278.67216,-8.9769733,151.8,preferred_core_band,,G023.029-00.405,LA429,no,yes,yes,yes,yes,16.0911,99.5526,99.0555,preferred_simple_shell_range,,75.0
+G052.537-00.946,K,1,known_group,52.538,-0.946,292.95352,16.921771,151.9,preferred_core_band,,G052.537-00.943,LA812,no,yes,yes,yes,yes,21.7475,26.6962,22.606,preferred_simple_shell_range,,75.0
+G052.980+00.133,K,1,known_group,52.981,0.134,292.18387,17.828395,152.7,preferred_core_band,,G052.993+00.132,LA715,no,yes,yes,yes,yes,11.319,13.0217,12.011,preferred_simple_shell_range,,75.0
+G036.344+00.040,K,1,known_group,36.344,0.04,284.38093,3.0548299,152.9,preferred_core_band,,G036.347+00.048,TB014,no,yes,yes,no,yes,7.13263,10.636,10.3759,preferred_simple_shell_range,,75.0
+G023.389-00.148,K,1,known_group,23.389,-0.148,278.60876,-8.5530606,157.3,preferred_core_band,,G023.389-00.148a,LA2001,no,yes,yes,no,yes,18.8929,85.3907,91.6771,preferred_simple_shell_range,,75.0
+G028.823+00.236,K,1,known_group,28.824,0.236,280.7731,-3.5475305,157.6,preferred_core_band,,G028.787+00.252,G028.787+00.252,no,yes,yes,yes,yes,35.161,183.913,189.661,preferred_simple_shell_range,,75.0
+G034.997+00.330,K,1,known_group,34.997,0.331,283.50682,1.9887471,158.6,preferred_core_band,,G035.040+00.340,G035.040+00.340,no,yes,yes,yes,yes,33.8663,39.7031,35.5353,preferred_simple_shell_range,,75.0
+G035.063+00.330,K,1,known_group,35.064,0.33,283.53797,2.0477423,158.6,preferred_core_band,,G035.040+00.340,G035.040+00.340,no,yes,yes,yes,yes,37.9554,56.0985,49.6389,preferred_simple_shell_range,,75.0
+G024.139+00.432,K,1,known_group,24.139,0.432,278.43794,-7.6196592,161.4,preferred_core_band,,G024.139+00.427,G024.139+00.427,no,yes,yes,yes,yes,14.6522,34.4922,34.0435,preferred_simple_shell_range,,75.0
+G031.054+00.491,K,1,known_group,31.054,0.491,281.56598,-1.4468045,168.0,preferred_core_band,,G031.050+00.480,G031.050+00.480,no,yes,yes,yes,yes,22.3516,53.6104,53.5349,preferred_simple_shell_range,,75.0
+G029.816+02.225,K,1,known_group,29.816,2.226,279.4567,-1.7549739,168.8,preferred_core_band,,G029.825+02.232,DB010,no,yes,yes,yes,yes,8.48273,10.2682,0.0,preferred_simple_shell_range,,75.0
+G035.126-00.755,K,1,known_group,35.126,-0.754,284.53178,1.6083467,169.4,preferred_core_band,,G035.137-00.762,FQ001,no,yes,yes,yes,yes,120.11,230.735,198.101,preferred_simple_shell_range,,75.0
+G040.544+02.596,G,2,known_group,40.545,2.596,284.01874,7.9574947,115.3,preferred_core_band,S76,G040.502+02.540; S76,DB023,yes,yes,yes,yes,yes,73.9526,185.028,0.0,preferred_simple_shell_range,,73.0
+G136.084+02.087,K,1,known_group,136.084,2.088,41.794822,61.967177,90.7,preferred_core_band,S192,,S192,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G305.272+00.164,K,1,known_group,305.272,0.165,197.95218,-62.614615,90.9,preferred_core_band,G305,,G305.254+00.204,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G210.788-02.545,K,1,known_group,210.788,-2.545,99.616939,0.74573844,99.2,preferred_core_band,S283,,S283,yes,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G136.117+02.058,K,1,known_group,136.117,2.058,41.831206,61.926483,108.5,preferred_core_band,S194,,S194,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G114.987+03.226,K,1,known_group,114.987,3.227,353.85996,64.919539,118.2,preferred_core_band,S167,,S167,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G305.224+00.212,K,1,known_group,305.224,0.213,197.84005,-62.570432,122.0,preferred_core_band,G305,,G305.254+00.204,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G097.515+03.173,K,1,known_group,97.516,3.173,323.04506,55.879048,122.9,preferred_core_band,S128,,G097.516+03.172; S128,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G305.261+00.243,K,1,known_group,305.261,0.244,197.91477,-62.536339,125.4,preferred_core_band,G305,,G305.254+00.204,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G301.817+00.784,K,1,known_group,301.817,0.784,190.47934,-62.06674,127.3,preferred_core_band,RCW68,,SHRDS1051G,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G234.644+00.834,K,1,known_group,234.644,0.835,113.92299,-18.818091,130.7,preferred_core_band,S307,,S307,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G114.979+03.182,K,1,known_group,114.979,3.182,353.87213,64.87496,134.2,preferred_core_band,S167,,S167,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G192.720+00.038,K,1,known_group,192.72,0.039,93.365609,17.926384,139.3,preferred_core_band,S258,,S258,yes,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G192.578-00.083,K,1,known_group,192.578,-0.083,93.181657,17.992588,145.9,preferred_core_band,S257,,S257,yes,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G217.379-00.083,K,1,known_group,217.379,-0.083,104.81694,-3.9947305,150.4,preferred_core_band,BFS57,,BFS57,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G068.144+00.915,K,1,known_group,68.145,0.915,299.79053,31.358974,160.1,preferred_core_band,S98,,G068.134+00.917; G068.144+00.918,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G124.637+02.535,K,1,known_group,124.637,2.536,16.947076,65.353465,165.2,preferred_core_band,WB380,,SQ132; G124.644+02.539,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G128.772+02.009,K,1,known_group,128.772,2.009,26.403527,64.26473,165.5,preferred_core_band,WB399B,,G135test1; G128.777+02.012,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G081.681+00.540,K,1,known_group,81.681,0.54,309.75412,42.329002,180.0,preferred_core_band,DR21,,G081.681+00.540,yes,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,72.0
+G351.776-00.540,K,1,known_group,351.776,-0.54,261.68151,-36.155489,91.9,preferred_core_band,,G351.777-00.539,GS062,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G320.311-00.176,K,1,known_group,320.311,-0.176,227.49313,-58.293928,92.0,preferred_core_band,,G320.317-00.208,G320.317-00.208; G320.311-00.176,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G319.164-00.421,K,1,known_group,319.164,-0.42,225.80829,-59.074023,92.3,preferred_core_band,,G319.157-00.423,G319.157-00.423,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G097.953+01.490,K,1,known_group,97.953,1.491,325.59674,54.918163,94.0,preferred_core_band,,G097.955+01.490,SQ042,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G349.090+00.071,K,1,known_group,349.09,0.072,259.13615,-38.017271,94.4,preferred_core_band,,G349.111+00.105,G349.111+00.105,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G347.236+00.013,K,1,known_group,347.236,0.013,257.80378,-39.554248,94.6,preferred_core_band,,G347.236+00.013,GS022,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G350.482+00.951,K,1,known_group,350.482,0.952,259.24757,-36.372802,96.6,preferred_core_band,,G350.524+00.960,G350.524+00.960,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G350.505+00.956,K,1,known_group,350.505,0.957,259.25903,-36.351143,96.6,preferred_core_band,,G350.524+00.960,G350.524+00.960,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G012.907-00.277,K,1,known_group,12.908,-0.276,273.67871,-17.875149,96.8,preferred_core_band,,G012.910-00.260,G012.910-00.260; G012.909-00.277,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G350.201+00.013,K,1,known_group,350.201,0.014,260.00309,-37.142275,98.1,preferred_core_band,,G350.177+00.017,FA002,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G006.550-00.099,K,1,known_group,6.551,-0.098,270.20836,-23.343133,98.6,preferred_core_band,,G006.553-00.095,G006.553-00.095,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G330.873-00.369,K,1,known_group,330.873,-0.368,242.57813,-52.106825,98.9,preferred_core_band,,G330.856-00.371,G330.856-00.371,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G349.126+00.010,K,1,known_group,349.126,0.011,259.22575,-38.02326,98.9,preferred_core_band,,G349.140+00.020,G349.140+00.020,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G352.393-00.066,K,1,known_group,352.393,-0.065,261.62092,-35.3788,102.6,preferred_core_band,,G352.398-00.057,G352.398-00.057,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G013.789+00.189,K,1,known_group,13.789,0.189,273.69173,-16.878157,102.8,preferred_core_band,,G013.804+00.181,G013.804+00.181,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G008.358-00.295,K,1,known_group,8.358,-0.295,271.35791,-21.867151,103.1,preferred_core_band,,G008.362-00.303,G008.362-00.303,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G017.367-00.058,K,1,known_group,17.368,-0.058,275.67388,-13.842755,103.1,preferred_core_band,,G017.364-00.038,LA921,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G008.006-00.169,K,1,known_group,8.007,-0.168,271.05369,-22.111377,104.1,preferred_core_band,,G008.006-00.156,G008.006-00.156,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G306.321-00.358,K,1,known_group,306.321,-0.358,200.34961,-63.032008,104.1,preferred_core_band,,ATCA230; G306.315-00.361,ATCA230; G306.315-00.361,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G148.474+01.982,K,1,known_group,148.474,1.983,61.423623,54.915319,104.2,preferred_core_band,,G148.479+01.979,SQ177,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G347.590+00.217,K,1,known_group,347.59,0.218,257.8611,-39.147774,105.5,preferred_core_band,,G347.600+00.211,G347.600+00.211,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G005.475-00.243,K,1,known_group,5.475,-0.243,269.76082,-24.348189,105.7,preferred_core_band,,G005.479-00.241,G005.479-00.241,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G349.109+00.118,K,1,known_group,349.109,0.119,259.1014,-37.974438,108.8,preferred_core_band,,G349.111+00.105,G349.111+00.105,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G011.776-00.149,K,1,known_group,11.777,-0.149,272.98993,-18.806792,109.4,preferred_core_band,,G011.776-00.149,LA1021,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G118.735+02.919,K,1,known_group,118.735,2.92,2.7236248,65.460382,110.6,preferred_core_band,,G118.735+02.920,SQ1008,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G333.129-00.439,K,1,known_group,333.129,-0.439,245.2631,-50.595671,112.5,preferred_core_band,,G333.114-00.441,G333.114-00.441; G333.129-00.439,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G016.285-00.171,K,1,known_group,16.286,-0.171,275.2517,-14.850703,113.3,preferred_core_band,,G016.313-00.162,G016.313-00.162,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G315.312-00.272,K,1,known_group,315.312,-0.271,218.77797,-60.626561,115.4,preferred_core_band,,G315.312-00.273,G315.312-00.273; ch87.1,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G289.880-00.801,K,1,known_group,289.88,-0.8,165.24797,-60.842261,115.7,preferred_core_band,,G289.878-00.792,G289.878-00.792; G289.880-00.801,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G097.311+03.269,K,1,known_group,97.312,3.27,322.66289,55.810628,116.1,preferred_core_band,,G097.311+03.269,SQ036,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G347.620+00.146,K,1,known_group,347.62,0.147,257.95785,-39.165512,116.1,preferred_core_band,,G347.600+00.211,G347.600+00.211,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G328.193-00.569,K,1,known_group,328.193,-0.568,239.45951,-54.033867,116.4,preferred_core_band,,ATCA521; SHRDS652,ATCA521; SHRDS652,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G013.523-00.195,K,1,known_group,13.523,-0.194,273.91114,-17.294986,125.1,preferred_core_band,,G013.535-00.186,G013.535-00.186,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G270.264+00.838,K,1,known_group,270.264,0.838,139.1851,-47.940916,126.1,preferred_core_band,,G270.294+00.848,G270.294+00.848,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G351.472-00.458,K,1,known_group,351.472,-0.457,261.3863,-36.361627,128.5,preferred_core_band,,G351.467-00.462; G351.468-00.458,G351.467-00.462; G351.468-00.458,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G319.397-00.006,K,1,known_group,319.397,-0.006,225.81474,-58.598759,128.6,preferred_core_band,,G319.380-00.025,G319.380-00.025; G319.397-00.006,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G010.331-00.278,K,1,known_group,10.332,-0.277,272.37039,-20.13439,129.2,preferred_core_band,,G010.314-00.262,G010.314-00.262,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G008.107+00.338,K,1,known_group,8.108,0.339,270.63122,-21.774126,129.7,preferred_core_band,,G008.103+00.340,FA106,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G354.611+00.483,K,1,known_group,354.611,0.483,262.55734,-33.228899,130.0,preferred_core_band,,G354.610+00.484,FA028,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G314.239+00.428,K,1,known_group,314.239,0.429,216.22674,-60.37455,130.6,preferred_core_band,,G314.228+00.437,G314.228+00.437; G314.239+00.428,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G319.348+00.018,K,1,known_group,319.348,0.018,225.71013,-58.601445,131.0,preferred_core_band,,G319.380-00.025,G319.380-00.025,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G080.938-00.129,K,1,known_group,80.939,-0.128,309.85931,41.333114,131.4,preferred_core_band,,G080.938-00.130,G080.936-00.126; G080.938-00.130; G080.942-00.255,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G328.807-00.078,K,1,known_group,328.807,-0.078,239.71227,-53.262432,131.6,preferred_core_band,,G328.806-00.083,G328.806-00.083; G328.807-00.078,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G308.079-00.406,K,1,known_group,308.079,-0.405,204.18691,-62.823136,131.9,preferred_core_band,,G308.092-00.432,G308.092-00.432; caswell11,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G300.502-00.180,K,1,known_group,300.502,-0.18,187.51009,-62.950394,132.6,preferred_core_band,,G300.479-00.192,G300.479-00.192; G300.502-00.180,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G320.407+00.134,K,1,known_group,320.407,0.134,227.35326,-57.97755,135.2,preferred_core_band,,G320.379+00.139,G320.379+00.139,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G333.011-00.441,K,1,known_group,333.011,-0.441,245.1335,-50.680379,137.5,preferred_core_band,,G333.028-00.447,G333.028-00.447; G333.011-00.441,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G195.650-00.106,K,1,known_group,195.65,-0.106,94.688364,15.280753,139.8,preferred_core_band,,G195.648-00.106,TQ014,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G354.685+00.469,K,1,known_group,354.685,0.47,262.61941,-33.174502,142.3,preferred_core_band,,G354.664+00.470,G354.664+00.470,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G331.123-00.530,K,1,known_group,331.123,-0.529,243.0543,-52.054282,143.5,preferred_core_band,,G331.110-00.506,G331.110-00.506; G331.123-00.530,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G173.763+02.665,K,1,known_group,173.763,2.666,85.217342,35.642415,143.8,preferred_core_band,,G173.763+02.664,SQ209,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G345.391+01.398,K,1,known_group,345.391,1.399,254.91231,-40.18593,144.0,preferred_core_band,,G345.404+01.406; G345.032+01.543; G345.310+01.473,G345.404+01.406; G345.032+01.543; G345.310+01.473,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G013.880+00.285,K,1,known_group,13.88,0.285,273.6488,-16.752697,144.3,preferred_core_band,,G013.880+00.290; G013.875+00.282; G013.876+00.283,G013.880+00.290; G013.875+00.282; G013.876+00.283,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G176.473-01.636,K,1,known_group,176.473,-1.635,82.630946,31.040565,145.1,preferred_core_band,,G176.473-01.641,SQ211,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G283.121-00.988,K,1,known_group,283.121,-0.987,153.53123,-57.677059,145.7,preferred_core_band,,G283.131-00.984,G283.131-00.984,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G356.230+00.670,K,1,known_group,356.23,0.67,263.4222,-31.771544,149.3,preferred_core_band,,G356.235+00.642; G356.232+00.671,G356.235+00.642; G356.232+00.671,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G000.573-00.855,K,1,known_group,0.573,-0.855,267.57947,-28.887523,149.5,preferred_core_band,,G000.583-00.870,G000.561-00.850; G00.58; S21,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G192.918-00.611,K,1,known_group,192.918,-0.611,92.867248,17.440735,149.5,preferred_core_band,,G192.917-00.613,TQ009,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G349.831-00.541,K,1,known_group,349.831,-0.541,260.31082,-37.762763,149.9,preferred_core_band,,G349.830-00.530,G349.830-00.530; G349.840-00.537,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G331.361-00.019,K,1,known_group,331.361,-0.018,242.77166,-51.518136,151.4,preferred_core_band,,G331.353-00.013,G331.353-00.013; G331.361-00.019,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G003.607-00.209,K,1,known_group,3.608,-0.209,268.69257,-25.946528,152.1,preferred_core_band,,FQ600,FQ600,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G110.252+00.009,K,1,known_group,110.252,0.01,346.58892,60.268838,153.2,preferred_core_band,,G110.255+00.011,SQ092,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G004.557-00.124,K,1,known_group,4.558,-0.123,269.14129,-25.082602,157.1,preferred_core_band,,G004.527-00.136,FA091; G004.568-00.118; G004.559-00.121,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G353.350-00.143,K,1,known_group,353.35,-0.143,262.34872,-34.626146,159.4,preferred_core_band,,G353.381-00.114,G353.381-00.114,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G283.322-00.557,K,1,known_group,283.322,-0.556,154.29137,-57.432142,161.7,preferred_core_band,,G283.312-00.566,G283.312-00.566,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G011.995-00.246,K,1,known_group,11.995,-0.246,273.19064,-18.661425,162.1,preferred_core_band,,G011.987-00.245,G011.987-00.245,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G309.896+00.393,K,1,known_group,309.896,0.393,207.66485,-61.675208,162.2,preferred_core_band,,G309.905+00.373,G309.905+00.373,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G317.988-00.754,K,1,known_group,317.988,-0.753,224.07661,-59.923299,164.9,preferred_core_band,,G317.988-00.759,G317.988-00.759,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G100.205+01.885,K,1,known_group,100.205,1.885,328.22397,56.661935,166.4,preferred_core_band,,G100.199+02.065,SQ048-2,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G096.403+01.331,K,1,known_group,96.403,1.332,323.78754,53.771148,166.5,preferred_core_band,,SQ030-1,SQ030-1,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G093.857+01.546,K,1,known_group,93.857,1.547,320.47919,52.172666,167.2,preferred_core_band,,G093.858+01.551,SQ012,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G013.992-00.131,K,1,known_group,13.993,-0.131,274.08672,-16.851961,168.6,preferred_core_band,,G013.998-00.128,G013.998-00.128,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G351.170+00.704,K,1,known_group,351.17,0.704,259.98873,-35.952641,171.5,preferred_core_band,,G351.192+00.708; G351.193+00.709,G351.192+00.708; G351.193+00.709,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G326.786-00.552,K,1,known_group,326.786,-0.551,237.57344,-54.916429,172.6,preferred_core_band,,G326.718-00.564,G326.718-00.564,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G096.500+01.342,K,1,known_group,96.501,1.342,323.89822,53.844328,174.9,preferred_core_band,,G096.517+01.343,SQ031,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G351.693+00.671,K,1,known_group,351.693,0.672,260.38899,-35.541566,175.1,preferred_core_band,,G351.691+00.669,FA012,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G354.465+00.079,K,1,known_group,354.465,0.079,262.8656,-33.572853,175.9,preferred_core_band,,G354.486+00.085,G354.486+00.085,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G066.746+00.850,K,1,known_group,66.747,0.85,299.00649,30.132441,177.0,preferred_core_band,,G066.760+00.869,LA738,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G345.202+01.027,K,1,known_group,345.202,1.028,255.14261,-40.563403,178.6,preferred_core_band,,G345.231+01.035; G345.233+01.042,G345.231+01.035; G345.233+01.042,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G080.367+00.440,K,1,known_group,80.368,0.441,308.79671,41.22232,180.0,preferred_core_band,,G080.363+00.449,G080.363+00.449,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,70.0
+G050.317-00.421,K,1,known_group,50.317,-0.42,291.3682,15.22284,91.1,preferred_core_band,,,G050.280-00.390,no,no,yes,yes,yes,12.9501,21.1956,11.1522,preferred_simple_shell_range,,69.0
+G042.008+00.352,K,1,known_group,42.008,0.353,286.70928,8.232851,91.2,preferred_core_band,,,LA121,no,no,yes,yes,yes,3.50253,4.43627,4.5126,preferred_simple_shell_range,,69.0
+G028.312-00.031,K,1,known_group,28.312,-0.03,280.77616,-4.1245394,91.8,preferred_core_band,,,G028.312-00.023,no,no,yes,no,yes,5.38811,11.9302,12.8037,preferred_simple_shell_range,,69.0
+G031.355-00.101,K,1,known_group,31.356,-0.101,282.23008,-1.448624,92.0,preferred_core_band,,,FQ379,no,no,yes,no,yes,8.1732,16.118,17.2736,preferred_simple_shell_range,,69.0
+G018.068-00.013,K,1,known_group,18.068,-0.012,275.9701,-13.202899,92.4,preferred_core_band,,,LA504,no,no,yes,no,yes,8.76097,7.93611,7.48952,preferred_simple_shell_range,,69.0
+G063.136+00.246,K,1,known_group,63.136,0.246,297.48778,26.724354,93.1,preferred_core_band,,,TB122,no,no,yes,yes,yes,6.66214,6.72375,6.45644,preferred_simple_shell_range,,69.0
+G018.152+00.090,K,1,known_group,18.152,0.091,275.9172,-13.080177,93.4,preferred_core_band,,,LA403,no,no,yes,yes,yes,8.45111,9.53509,9.81633,preferred_simple_shell_range,,69.0
+G031.365-00.033,K,1,known_group,31.365,-0.032,282.17343,-1.4089253,94.1,preferred_core_band,,,FQ380,no,no,yes,no,yes,4.81872,3.64397,4.0225,preferred_simple_shell_range,,69.0
+G034.246+00.102,G,2,known_group,34.247,0.102,283.36789,1.2167292,94.5,preferred_core_band,NRAO584,G034.254+00.144; NRAO584,,yes,yes,no,no,yes,40.8156,99.7138,71.5462,preferred_simple_shell_range,,69.0
+G048.547-00.005,K,1,known_group,48.548,-0.005,290.12687,13.859032,94.9,preferred_core_band,,,LA156,no,no,yes,yes,yes,18.791,54.5761,56.7499,preferred_simple_shell_range,,69.0
+G025.651-00.031,K,1,known_group,25.651,-0.031,279.55305,-6.4900865,95.2,preferred_core_band,,,FQ287,no,no,yes,yes,yes,7.14713,15.4744,13.4066,preferred_simple_shell_range,,69.0
+G061.292-00.331,K,1,known_group,61.292,-0.331,297.00231,24.842202,95.6,preferred_core_band,,,LA731,no,no,yes,yes,yes,17.7864,24.128,24.6868,preferred_simple_shell_range,,69.0
+G020.576+00.103,K,1,known_group,20.576,0.104,277.06204,-10.930373,96.1,preferred_core_band,,,FQ222,no,no,yes,no,yes,2.50275,3.50752,2.65723,preferred_simple_shell_range,,69.0
+G026.306+00.073,K,1,known_group,26.307,0.073,279.76222,-5.8602071,96.2,preferred_core_band,,,LA574,no,no,yes,no,yes,17.0859,12.6493,12.9847,preferred_simple_shell_range,,69.0
+G030.470-00.039,K,1,known_group,30.47,-0.039,281.77107,-2.2087358,96.4,preferred_core_band,,,G030.470-00.039,no,no,yes,no,yes,4.86348,11.976,13.308,preferred_simple_shell_range,,69.0
+G018.329+00.024,K,1,known_group,18.329,0.024,276.06256,-12.954908,96.9,preferred_core_band,,,LA405,no,no,yes,yes,yes,1.83487,4.73223,4.9686,preferred_simple_shell_range,,69.0
+G027.320+00.263,K,1,known_group,27.32,0.263,280.05936,-4.872455,97.5,preferred_core_band,,,LA469,no,no,yes,no,yes,3.33942,6.27067,6.50526,preferred_simple_shell_range,,69.0
+G051.401-00.890,K,1,known_group,51.401,-0.89,292.33299,15.951754,97.6,preferred_core_band,,,LA804,no,no,yes,yes,yes,11.3771,15.6804,14.0266,preferred_simple_shell_range,,69.0
+G053.644+00.014,K,1,known_group,53.645,0.015,292.62847,18.354048,98.8,preferred_core_band,,,G053.630+00.020,no,no,yes,yes,yes,65.5553,69.9489,70.3542,preferred_simple_shell_range,,69.0
+G022.780-00.401,K,1,known_group,22.78,-0.401,278.55159,-9.2099099,99.6,preferred_core_band,,,LA428,no,no,yes,yes,yes,19.3838,44.8325,48.8247,preferred_simple_shell_range,,69.0
+G061.428+00.117,G,2,known_group,61.428,0.117,296.65129,25.185307,100.1,preferred_core_band,S88,G061.477+00.094; S88,,yes,yes,no,no,yes,71.6768,108.477,108.498,preferred_simple_shell_range,,69.0
+G021.872-00.044,K,1,known_group,21.873,-0.043,277.80559,-9.8495783,100.5,preferred_core_band,,,LA537,no,no,yes,yes,yes,4.24958,4.83582,5.04169,preferred_simple_shell_range,,69.0
+G045.121+00.133,K,1,known_group,45.122,0.133,288.36521,10.893437,100.5,preferred_core_band,,,G045.120+00.130; G045.125+00.136,no,no,yes,yes,yes,53.7364,203.08,165.307,preferred_simple_shell_range,,69.0
+G023.376+00.452,K,1,known_group,23.376,0.452,278.06456,-8.2877875,102.2,preferred_core_band,,,LA432,no,no,yes,no,yes,19.1253,42.9232,45.5387,preferred_simple_shell_range,,69.0
+G030.869-00.108,K,1,known_group,30.87,-0.108,282.01471,-1.8842858,102.2,preferred_core_band,,,FQ369,no,no,yes,yes,yes,13.288,30.2083,35.0491,preferred_simple_shell_range,,69.0
+G063.116+00.380,G,2,known_group,63.116,0.381,297.34674,26.775396,102.4,preferred_core_band,S90,G063.171+00.448; S90,,yes,yes,no,no,yes,29.4637,31.8618,30.2031,preferred_simple_shell_range,,69.0
+G049.997-00.130,K,1,known_group,49.997,-0.129,290.94565,15.078872,102.5,preferred_core_band,,,LA276,no,no,yes,yes,yes,18.2251,25.8211,26.7804,preferred_simple_shell_range,,69.0
+G026.542+00.419,K,1,known_group,26.543,0.419,279.56205,-5.491815,102.8,preferred_core_band,,,G026.536+00.416,no,no,yes,yes,yes,45.5589,149.543,119.701,preferred_simple_shell_range,,69.0
+G032.835+00.017,K,1,known_group,32.835,0.017,282.80004,-0.078445659,102.8,preferred_core_band,,,LA223,no,no,yes,yes,yes,8.95124,9.37915,8.97017,preferred_simple_shell_range,,69.0
+G029.928-00.057,G,2,known_group,29.928,-0.056,281.53893,-2.6988037,103.1,preferred_core_band,G29,G029.945-00.039; G29,,yes,yes,no,yes,yes,139.388,407.453,350.249,preferred_simple_shell_range,,69.0
+G030.585-00.097,K,1,known_group,30.586,-0.097,281.87521,-2.1320733,103.2,preferred_core_band,,,G030.602-00.106,no,no,yes,yes,yes,19.6927,48.9508,56.8675,preferred_simple_shell_range,,69.0
+G029.348-00.426,K,1,known_group,29.349,-0.426,281.6032,-3.3826707,103.3,preferred_core_band,,,LA489,no,no,yes,no,yes,12.3291,20.7019,14.0228,preferred_simple_shell_range,,69.0
+G052.398-00.591,K,1,known_group,52.398,-0.59,292.55728,16.970191,103.6,preferred_core_band,,,LA811,no,no,yes,yes,yes,11.8659,10.2781,9.60468,preferred_simple_shell_range,,69.0
+G032.587-00.330,K,1,known_group,32.587,-0.33,282.99589,-0.45699143,104.7,preferred_core_band,,,LA056,no,no,yes,yes,yes,9.49938,27.869,31.307,preferred_simple_shell_range,,69.0
+G020.457+00.021,K,1,known_group,20.458,0.022,277.07979,-11.073573,104.9,preferred_core_band,,,LA421,no,no,yes,yes,yes,6.37096,11.8633,10.8441,preferred_simple_shell_range,,69.0
+G034.542+00.062,K,1,known_group,34.542,0.062,283.53845,1.4614953,105.2,preferred_core_band,,,FQ410,no,no,yes,no,yes,2.57533,2.84732,2.66296,preferred_simple_shell_range,,69.0
+G038.738-00.140,K,1,known_group,38.738,-0.14,285.63912,5.1013863,105.5,preferred_core_band,,,LA102,no,no,yes,yes,yes,9.30954,13.1572,13.3628,preferred_simple_shell_range,,69.0
+G041.129+00.112,K,1,known_group,41.129,0.113,286.51651,7.3422837,106.0,preferred_core_band,,,TB049,no,no,yes,no,yes,8.02303,10.2378,9.99145,preferred_simple_shell_range,,69.0
+G045.634-00.016,K,1,known_group,45.634,-0.016,288.74181,11.278287,106.2,preferred_core_band,,,LA260,no,no,yes,yes,yes,3.75671,4.94961,5.06696,preferred_simple_shell_range,,69.0
+G029.019+00.165,K,1,known_group,29.02,0.166,280.92556,-3.4053667,106.8,preferred_core_band,,,LA607,no,no,yes,yes,yes,1.82764,9.00057,9.76938,preferred_simple_shell_range,,69.0
+G032.775-00.048,K,1,known_group,32.775,-0.048,282.83057,-0.16128289,109.3,preferred_core_band,,,FQ393,no,no,yes,yes,yes,3.72354,7.19884,7.59243,preferred_simple_shell_range,,69.0
+G041.516-00.142,K,1,known_group,41.517,-0.141,286.92417,7.569432,109.6,preferred_core_band,,,LA124,no,no,yes,yes,yes,21.9856,77.7932,69.0568,preferred_simple_shell_range,,69.0
+G044.094-00.015,K,1,known_group,44.095,-0.014,288.01415,9.9150155,109.8,preferred_core_band,,,FQ012,no,no,yes,yes,yes,3.40697,3.30203,3.1571,preferred_simple_shell_range,,69.0
+G033.080+00.073,K,1,known_group,33.08,0.073,282.8618,0.16530797,110.3,preferred_core_band,,,LA051,no,no,yes,yes,yes,13.3771,15.0408,14.7232,preferred_simple_shell_range,,69.0
+G030.867+00.008,K,1,known_group,30.867,0.009,281.91017,-1.8334238,110.7,preferred_core_band,,,FQ368,no,no,yes,no,yes,29.1749,73.715,78.9705,preferred_simple_shell_range,,69.0
+G019.780+00.286,K,1,known_group,19.781,0.287,276.51919,-11.54913,111.1,preferred_core_band,,,LA419,no,no,yes,yes,yes,2.95435,8.21955,8.07267,preferred_simple_shell_range,,69.0
+G024.743-00.210,K,1,known_group,24.743,-0.209,279.29275,-7.3789715,111.3,preferred_core_band,,,G024.750-00.200; G024.742-00.207,no,no,yes,yes,yes,23.4329,105.23,102.14,preferred_simple_shell_range,,69.0
+G045.503+00.495,K,1,known_group,45.503,0.496,288.21758,11.399333,111.4,preferred_core_band,,,LA259; FQ013,no,no,yes,yes,yes,1.10003,1.25881,1.52043,preferred_simple_shell_range,,69.0
+G019.818+00.010,K,1,known_group,19.818,0.01,276.78657,-11.644588,112.9,preferred_core_band,,,LA420,no,no,yes,no,yes,8.21983,9.83628,9.60717,preferred_simple_shell_range,,69.0
+G021.634-00.003,K,1,known_group,21.634,-0.002,277.65649,-10.042178,114.0,preferred_core_band,,,FQ235,no,no,yes,no,yes,2.77544,4.04142,4.85417,preferred_simple_shell_range,,69.0
+G024.456+00.489,K,1,known_group,24.457,0.489,278.53454,-7.3119832,114.1,preferred_core_band,,,G024.467+00.489; G024.467+00.491,no,no,yes,yes,yes,184.719,464.007,464.991,preferred_simple_shell_range,,69.0
+G039.176-00.399,K,1,known_group,39.177,-0.398,286.07142,5.3727495,114.2,preferred_core_band,,,LA112,no,no,yes,yes,yes,9.83419,11.6665,11.5633,preferred_simple_shell_range,,69.0
+G058.769+00.648,K,1,known_group,58.77,0.649,294.69738,23.142455,114.6,preferred_core_band,,,G058.770+00.650,no,no,yes,yes,yes,20.9051,51.6559,44.63,preferred_simple_shell_range,,69.0
+G027.682+00.076,K,1,known_group,27.682,0.076,280.39248,-4.6362306,116.4,preferred_core_band,,,LA475,no,no,yes,yes,yes,16.1302,25.7402,26.8923,preferred_simple_shell_range,,69.0
+G022.987-00.155,K,1,known_group,22.988,-0.155,278.42759,-8.9123678,116.5,preferred_core_band,,,LA551,no,no,yes,no,yes,19.304,44.0808,47.9541,preferred_simple_shell_range,,69.0
+G029.000+00.084,K,1,known_group,29.001,0.085,280.98886,-3.4595261,116.7,preferred_core_band,,,LA486,no,no,yes,yes,yes,13.7689,46.4422,49.7614,preferred_simple_shell_range,,69.0
+G019.494-00.150,K,1,known_group,19.494,-0.149,276.77659,-12.005899,116.9,preferred_core_band,,,LA415,no,no,yes,no,yes,8.94704,17.9135,18.9079,preferred_simple_shell_range,,69.0
+G023.568+01.582,K,1,known_group,23.569,1.582,277.14295,-7.5937127,117.3,preferred_core_band,,,DB002,no,no,yes,no,yes,87.3536,141.061,0.0,preferred_simple_shell_range,,69.0
+G027.033-00.151,K,1,known_group,27.034,-0.15,280.29675,-5.3163932,117.6,preferred_core_band,,,LA468,no,no,yes,no,yes,8.35435,11.8174,11.7653,preferred_simple_shell_range,,69.0
+G028.907+00.224,K,1,known_group,28.907,0.224,280.82224,-3.4788573,117.9,preferred_core_band,,,FQ329,no,no,yes,no,yes,9.09019,4.98141,5.11749,preferred_simple_shell_range,,69.0
+G021.870-00.162,K,1,known_group,21.87,-0.161,277.91038,-9.9067042,118.2,preferred_core_band,,,FQ239,no,no,yes,no,yes,3.2139,4.56103,5.45692,preferred_simple_shell_range,,69.0
+G033.941-00.039,K,1,known_group,33.942,-0.039,283.35454,0.8810766,118.8,preferred_core_band,,,G033.943-00.036,no,no,yes,yes,yes,7.57552,23.8871,23.746,preferred_simple_shell_range,,69.0
+G024.126-00.066,K,1,known_group,24.126,-0.066,278.87801,-7.8607064,119.4,preferred_core_band,,,G024.132-00.067,no,no,yes,yes,yes,8.86878,12.878,13.5498,preferred_simple_shell_range,,69.0
+G051.681-00.256,K,1,known_group,51.681,-0.256,291.89259,16.500491,120.0,preferred_core_band,,,LA708,no,no,yes,yes,yes,9.93027,17.7209,17.8032,preferred_simple_shell_range,,69.0
+G043.792-00.122,K,1,known_group,43.793,-0.121,287.96843,9.5977419,120.2,preferred_core_band,,,G043.790-00.120; G043.790-00.130,no,no,yes,yes,yes,10.0371,30.5569,26.6803,preferred_simple_shell_range,,69.0
+G041.750+00.034,K,1,known_group,41.75,0.035,286.8746,7.8575788,121.0,preferred_core_band,,,FQ008,no,no,yes,yes,yes,0.359402,3.34042,3.21473,preferred_simple_shell_range,,69.0
+G021.450-00.590,K,1,known_group,21.451,-0.59,278.09945,-10.476593,122.2,preferred_core_band,,,LA424,no,no,yes,no,yes,12.2265,49.4315,51.2427,preferred_simple_shell_range,,69.0
+G028.774+00.285,K,1,known_group,28.775,0.286,280.70643,-3.5684232,122.3,preferred_core_band,,,LA485,no,no,yes,yes,yes,24.2869,36.4876,38.0495,preferred_simple_shell_range,,69.0
+G047.028+00.216,K,1,known_group,47.028,0.216,289.19575,12.619834,122.5,preferred_core_band,,,LA153,no,no,yes,yes,yes,27.8796,34.1733,32.8129,preferred_simple_shell_range,,69.0
+G052.098+01.042,K,1,known_group,52.098,1.042,290.90458,17.483845,122.5,preferred_core_band,,,LA712,no,no,yes,yes,yes,21.6077,63.9239,43.3223,preferred_simple_shell_range,,69.0
+G031.610+00.335,K,1,known_group,31.611,0.335,281.95875,-1.0228311,122.6,preferred_core_band,,,G031.607+00.334,no,no,yes,no,yes,10.7137,19.7239,19.1505,preferred_simple_shell_range,,69.0
+G051.831+00.462,K,1,known_group,51.831,0.463,291.30709,16.974501,122.7,preferred_core_band,,,LA711,no,no,yes,yes,yes,16.6435,27.1975,26.3299,preferred_simple_shell_range,,69.0
+G026.433+00.614,K,1,known_group,26.433,0.614,279.33774,-5.4997078,123.1,preferred_core_band,,,G026.433+00.614,no,no,yes,no,yes,12.4316,31.6644,35.4299,preferred_simple_shell_range,,69.0
+G029.955-00.093,G,2,known_group,29.956,-0.092,281.58375,-2.6904456,124.4,preferred_core_band,G29,G029.945-00.039; G29,,yes,yes,no,no,yes,47.7183,98.4422,80.3904,preferred_simple_shell_range,,69.0
+G027.476+00.179,K,1,known_group,27.477,0.179,280.20617,-4.7718147,125.4,preferred_core_band,,,G027.491+00.189,no,no,yes,yes,yes,52.479,157.315,159.603,preferred_simple_shell_range,,69.0
+G027.518+00.200,K,1,known_group,27.519,0.201,280.20623,-4.7245547,125.4,preferred_core_band,,,G027.491+00.189,no,no,yes,no,yes,37.0886,84.0893,78.5071,preferred_simple_shell_range,,69.0
+G056.153+00.076,K,1,known_group,56.154,0.076,293.85797,20.580214,126.3,preferred_core_band,,,LA727,no,no,yes,yes,yes,17.2796,18.6426,18.2437,preferred_simple_shell_range,,69.0
+G060.592+01.572,K,1,known_group,60.592,1.572,294.79675,25.183171,126.3,preferred_core_band,,,DB077,no,no,yes,yes,yes,5.4593,8.06513,0.0,preferred_simple_shell_range,,69.0
+G032.870-00.427,K,1,known_group,32.87,-0.427,283.21122,-0.24933286,126.6,preferred_core_band,,,LA059,no,no,yes,yes,yes,17.5306,19.9346,19.1361,preferred_simple_shell_range,,69.0
+G048.456+00.123,K,1,known_group,48.456,0.124,289.9659,13.838718,126.9,preferred_core_band,,,FQ015,no,no,yes,yes,yes,5.87071,12.0626,12.1239,preferred_simple_shell_range,,69.0
+G044.689-00.579,K,1,known_group,44.689,-0.579,288.80183,10.179403,127.0,preferred_core_band,,,LA255,no,no,yes,no,yes,10.9312,12.6167,11.9302,preferred_simple_shell_range,,69.0
+G038.045-00.034,K,1,known_group,38.045,-0.034,285.22629,4.5340605,127.1,preferred_core_band,,,G038.051-00.042,no,no,yes,yes,yes,12.6726,16.3613,16.6055,preferred_simple_shell_range,,69.0
+G023.156-00.264,K,1,known_group,23.157,-0.263,278.60394,-8.8123187,127.2,preferred_core_band,,,LA430,no,no,yes,no,yes,21.0284,40.1778,41.0092,preferred_simple_shell_range,,69.0
+G043.730+00.114,K,1,known_group,43.73,0.115,287.72698,9.6515381,128.4,preferred_core_band,,,TB063,no,no,yes,yes,yes,8.78187,12.7312,12.4124,preferred_simple_shell_range,,69.0
+G020.988+00.092,K,1,known_group,20.988,0.092,277.2671,-10.571031,130.9,preferred_core_band,,,G020.988+00.092,no,no,yes,yes,yes,41.2781,108.44,108.115,preferred_simple_shell_range,,69.0
+G044.904-00.733,K,1,known_group,44.904,-0.732,289.04144,10.298531,131.2,preferred_core_band,,,LA151,no,no,yes,yes,yes,10.495,9.8327,9.58447,preferred_simple_shell_range,,69.0
+G032.982-00.338,K,1,known_group,32.983,-0.338,283.18326,-0.1087181,131.8,preferred_core_band,,,LA058,no,no,yes,yes,yes,26.068,41.6735,41.8754,preferred_simple_shell_range,,69.0
+G037.763-00.212,K,1,known_group,37.763,-0.211,285.25489,4.2020341,132.9,preferred_core_band,,,G037.760-00.200; G037.763-00.216,no,no,yes,yes,yes,42.3166,105.616,113.335,preferred_simple_shell_range,,69.0
+G035.040-00.500,K,1,known_group,35.04,-0.5,284.26619,1.6479104,133.1,preferred_core_band,,,G035.040-00.500; G035.040-00.510; G035.041-00.498,no,no,yes,yes,yes,33.367,79.6426,80.7496,preferred_simple_shell_range,,69.0
+G034.026-00.058,K,1,known_group,34.026,-0.058,283.40995,0.9476315,133.5,preferred_core_band,,,LA070,no,no,yes,no,yes,2.83165,15.7545,15.663,preferred_simple_shell_range,,69.0
+G027.336+00.184,K,1,known_group,27.337,0.184,280.13745,-4.8937569,136.4,preferred_core_band,,,LA470,no,no,yes,no,yes,23.6034,35.2304,37.4301,preferred_simple_shell_range,,69.0
+G043.999+00.978,K,1,known_group,44.0,0.979,287.07462,10.288889,139.1,preferred_core_band,,,DB036,no,no,yes,yes,yes,1.86406,7.01547,5.20942,preferred_simple_shell_range,,69.0
+G056.412+00.423,K,1,known_group,56.412,0.423,293.66767,20.974957,139.3,preferred_core_band,,,LA728,no,no,yes,yes,yes,11.6952,14.2926,13.7429,preferred_simple_shell_range,,69.0
+G050.032+00.605,K,1,known_group,50.033,0.606,290.29096,15.456727,139.6,preferred_core_band,,,FQ016,no,no,yes,yes,yes,6.88521,8.8053,7.919,preferred_simple_shell_range,,69.0
+G062.577+02.389,K,1,known_group,62.578,2.389,295.09128,27.312762,141.5,preferred_core_band,,,DB085,no,no,yes,yes,yes,23.2827,50.6472,0.0,preferred_simple_shell_range,,69.0
+G034.295+00.089,G,2,known_group,34.295,0.09,283.40136,1.2540767,145.5,preferred_core_band,NRAO584,G034.254+00.144; NRAO584,,yes,yes,no,no,yes,46.4887,95.9553,74.3971,preferred_simple_shell_range,,69.0
+G028.146+00.146,K,1,known_group,28.147,0.147,280.54257,-4.1904001,146.4,preferred_core_band,,,G028.146+00.146,no,no,yes,yes,yes,6.63515,17.6363,18.5397,preferred_simple_shell_range,,69.0
+G038.861-00.135,K,1,known_group,38.861,-0.134,285.69077,5.2133573,147.2,preferred_core_band,,,LA105,no,no,yes,yes,yes,3.36931,7.64736,7.83058,preferred_simple_shell_range,,69.0
+G023.276+00.314,K,1,known_group,23.277,0.314,278.14174,-8.43928,147.6,preferred_core_band,,,G023.281+00.298,no,no,yes,yes,yes,10.463,23.7464,24.1622,preferred_simple_shell_range,,69.0
+G059.600+00.316,K,1,known_group,59.6,0.316,295.45908,23.700571,148.1,preferred_core_band,,,LA833; FQ021,no,no,yes,yes,yes,4.49905,4.71845,4.78216,preferred_simple_shell_range,,69.0
+G049.733-00.633,K,1,known_group,49.733,-0.633,291.27532,14.60762,148.7,preferred_core_band,,,TB099,no,no,yes,yes,yes,5.55883,5.26811,5.13322,preferred_simple_shell_range,,69.0
+G028.638+00.194,K,1,known_group,28.638,0.194,280.72547,-3.7315577,149.5,preferred_core_band,,,G028.638+00.194,no,no,yes,yes,yes,9.7686,44.323,46.8796,preferred_simple_shell_range,,69.0
+G060.659-00.031,K,1,known_group,60.659,-0.031,296.3666,24.445788,150.0,preferred_core_band,,,LA837,no,no,yes,yes,yes,7.72815,6.8341,6.38801,preferred_simple_shell_range,,69.0
+G030.051+00.180,K,1,known_group,30.051,0.18,281.38456,-2.4814355,150.2,preferred_core_band,,,FQ349,no,no,yes,no,yes,11.8521,10.2312,10.9138,preferred_simple_shell_range,,69.0
+G041.929+00.030,K,1,known_group,41.929,0.03,286.96193,8.0143611,150.3,preferred_core_band,,,LA125,no,no,yes,yes,yes,9.64541,16.6999,16.0236,preferred_simple_shell_range,,69.0
+G043.774+00.057,K,1,known_group,43.774,0.058,287.79876,9.6639339,151.0,preferred_core_band,,,LA133,no,no,yes,yes,yes,13.0725,25.69,24.0606,preferred_simple_shell_range,,69.0
+G054.779+00.862,K,1,known_group,54.779,0.862,292.41751,19.75641,151.0,preferred_core_band,,,LA724,no,no,yes,yes,yes,3.95315,5.35294,4.80488,preferred_simple_shell_range,,69.0
+G029.828-00.168,K,1,known_group,29.828,-0.167,281.5919,-2.8384455,151.5,preferred_core_band,,,FQ345,no,no,yes,yes,yes,28.4919,74.2429,72.5136,preferred_simple_shell_range,,69.0
+G061.144-00.891,K,1,known_group,61.144,-0.891,297.45117,24.430502,153.0,preferred_core_band,,,FQ487; TW004,no,no,yes,no,yes,8.05437,9.91039,9.20801,preferred_simple_shell_range,,69.0
+G026.727+00.501,K,1,known_group,26.727,0.501,279.57378,-5.2900953,153.4,preferred_core_band,,,LA465,no,no,yes,no,yes,12.1105,11.8846,11.2637,preferred_simple_shell_range,,69.0
+G031.534-00.134,K,1,known_group,31.534,-0.134,282.34099,-1.304647,154.2,preferred_core_band,,,LA040,no,no,yes,no,yes,8.03832,9.62093,11.4179,preferred_simple_shell_range,,69.0
+G020.481+00.168,K,1,known_group,20.482,0.169,276.95839,-10.983714,155.0,preferred_core_band,,,G020.479+00.165,no,no,yes,yes,yes,20.1641,56.4171,56.5298,preferred_simple_shell_range,,69.0
+G039.856-00.184,K,1,known_group,39.856,-0.184,286.19333,6.07529,155.8,preferred_core_band,,,LA113,no,no,yes,yes,yes,12.243,16.4259,15.9146,preferred_simple_shell_range,,69.0
+G026.984-00.062,K,1,known_group,26.985,-0.062,280.19478,-5.319229,155.9,preferred_core_band,,,G026.981-00.066,no,no,yes,yes,yes,60.6342,138.256,136.635,preferred_simple_shell_range,,69.0
+G031.612-00.226,K,1,known_group,31.612,-0.226,282.45849,-1.2776472,157.1,preferred_core_band,,,G031.602-00.227,no,no,yes,no,yes,14.9927,23.4479,23.8854,preferred_simple_shell_range,,69.0
+G039.170-00.037,K,1,known_group,39.171,-0.037,285.74631,5.5333858,157.4,preferred_core_band,,,LA106,no,no,yes,no,yes,7.58664,8.03363,7.53663,preferred_simple_shell_range,,69.0
+G022.761-00.492,K,1,known_group,22.762,-0.492,278.62519,-9.2683514,157.9,preferred_core_band,,,G022.760-00.485,no,no,yes,yes,yes,86.9198,361.953,311.606,preferred_simple_shell_range,,69.0
+G059.796+00.241,K,1,known_group,59.797,0.241,295.6369,23.834015,159.5,preferred_core_band,,,G059.796+00.237,no,no,yes,yes,yes,50.5652,90.3247,90.1022,preferred_simple_shell_range,,69.0
+G031.806-00.115,K,1,known_group,31.806,-0.115,282.44824,-1.054411,160.4,preferred_core_band,,,G031.816-00.121,no,no,yes,no,yes,24.2799,34.0144,28.6391,preferred_simple_shell_range,,69.0
+G023.249-00.312,K,1,known_group,23.25,-0.312,278.69064,-8.7522362,160.9,preferred_core_band,,,LA431,no,no,yes,no,yes,40.9666,247.86,257.103,preferred_simple_shell_range,,69.0
+G050.489+00.992,K,1,known_group,50.489,0.993,290.15926,16.041406,161.5,preferred_core_band,,,TB101,no,no,yes,yes,yes,27.1114,21.0797,19.704,preferred_simple_shell_range,,69.0
+G037.175-00.440,K,1,known_group,37.176,-0.439,285.18877,3.5755346,163.1,preferred_core_band,,,G037.182-00.436,no,no,yes,yes,yes,22.5857,33.0414,31.7526,preferred_simple_shell_range,,69.0
+G031.677+00.179,K,1,known_group,31.677,0.179,282.12786,-1.0352044,164.5,preferred_core_band,,,LA035,no,no,yes,yes,yes,19.799,61.95,61.4332,preferred_simple_shell_range,,69.0
+G017.928-00.677,K,1,known_group,17.928,-0.677,276.50711,-13.637389,164.8,preferred_core_band,,,LA1078,no,no,yes,yes,yes,18.194,26.4378,25.3095,preferred_simple_shell_range,,69.0
+G063.119+00.331,K,1,known_group,63.119,0.331,297.39587,26.752569,165.2,preferred_core_band,,,TB120-1; 63.12,no,no,yes,yes,yes,29.6153,37.4785,33.8571,preferred_simple_shell_range,,69.0
+G027.997+00.317,K,1,known_group,27.997,0.317,280.32214,-4.2458636,165.3,preferred_core_band,,,G027.997+00.317,no,no,yes,yes,yes,23.2855,53.4565,50.9547,preferred_simple_shell_range,,69.0
+G035.349+00.004,K,1,known_group,35.35,0.005,283.95806,2.1538101,166.4,preferred_core_band,,,FQ416,no,no,yes,no,yes,9.21296,12.6769,12.4204,preferred_simple_shell_range,,69.0
+G042.058+01.002,K,1,known_group,42.058,1.002,286.14916,8.5756881,166.5,preferred_core_band,,,DB030,no,no,yes,yes,yes,2.32074,2.62134,38.572,preferred_simple_shell_range,,69.0
+G031.138+00.285,K,1,known_group,31.138,0.286,281.7871,-1.4660256,167.7,preferred_core_band,,,G031.130+00.284,no,no,yes,yes,yes,42.4419,101.293,103.976,preferred_simple_shell_range,,69.0
+G032.823+00.072,K,1,known_group,32.824,0.072,282.74557,-0.063457239,167.7,preferred_core_band,,,LA224,no,no,yes,yes,yes,5.83477,23.5641,23.426,preferred_simple_shell_range,,69.0
+G045.838-00.296,K,1,known_group,45.839,-0.295,289.09154,11.328842,168.3,preferred_core_band,,,G045.820-00.290; G045.824-00.290,no,no,yes,yes,yes,13.7441,16.8556,13.4332,preferred_simple_shell_range,,69.0
+G023.456+01.583,K,1,known_group,23.457,1.583,277.08992,-7.6923439,169.2,preferred_core_band,,,DB001,no,no,yes,no,yes,82.8725,60.6091,0.0,preferred_simple_shell_range,,69.0
+G044.331-00.837,K,1,known_group,44.332,-0.837,288.86506,9.7429713,170.7,preferred_core_band,,,LA147,no,no,yes,yes,yes,42.3492,39.538,37.5044,preferred_simple_shell_range,,69.0
+G023.708+00.174,K,1,known_group,23.708,0.174,278.4683,-8.1214357,171.9,preferred_core_band,,,G023.706+00.171; G023.706+00.173,no,no,yes,yes,yes,25.0107,80.2355,80.9393,preferred_simple_shell_range,,69.0
+G018.218+00.397,K,1,known_group,18.219,0.398,275.67098,-12.877391,174.5,preferred_core_band,,,LA404,no,no,yes,yes,yes,9.65607,14.3559,13.8083,preferred_simple_shell_range,,69.0
+G021.560-00.108,K,1,known_group,21.56,-0.108,277.71674,-10.156649,175.2,preferred_core_band,,,G021.558-00.112,no,no,yes,no,yes,19.4454,45.8425,46.9756,preferred_simple_shell_range,,69.0
+G042.434-00.275,K,1,known_group,42.434,-0.275,287.47047,8.3221738,175.4,preferred_core_band,,,G042.430-00.260; G042.431-00.264,no,no,yes,yes,yes,69.5875,162.238,130.857,preferred_simple_shell_range,,69.0
+G028.656+00.491,K,1,known_group,28.656,0.491,280.46921,-3.5799199,175.8,preferred_core_band,,,LA482,no,no,yes,no,yes,10.7948,35.8779,35.0775,preferred_simple_shell_range,,69.0
+G029.110-00.023,K,1,known_group,29.111,-0.023,281.13537,-3.4107482,176.4,preferred_core_band,,,G029.136-00.042,no,no,yes,yes,yes,31.5138,115.371,115.035,preferred_simple_shell_range,,69.0
+G024.185+00.211,K,1,known_group,24.185,0.212,278.6568,-7.6809171,178.1,preferred_core_band,,,G024.194+00.203,no,no,yes,yes,yes,22.4991,68.5306,67.2906,preferred_simple_shell_range,,69.0
+G305.685+00.096,G,2,known_group,305.685,0.097,198.85993,-62.64683,97.6,preferred_core_band,G305,G305.551-00.005,SHRDS1085G,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,68.0
+G299.399-00.235,G,2,known_group,299.399,-0.234,185.08719,-62.89263,102.4,preferred_core_band,RCW64,G299.363-00.257; RCW64,SHRDS1046G,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,68.0
+G305.305+00.073,G,2,known_group,305.305,0.073,198.03958,-62.702772,116.3,preferred_core_band,G305,G305.202+00.022,SHRDS1068G,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,68.0
+G196.823-03.025,G,2,known_group,196.823,-3.024,92.620515,12.858228,126.4,preferred_core_band,S270,G196.831-03.105,TQ015,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,68.0
+G341.071-01.128,G,2,known_group,341.071,-1.127,253.94467,-45.139182,127.5,preferred_core_band,RCW110,G340.777-01.008; RCW110,NR098; SHRDS936,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,68.0
+G120.260+02.136,G,2,known_group,120.26,2.136,6.5600492,64.877267,143.6,preferred_core_band,S175,G120.355+01.955,SQ121,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,68.0
+G230.979+01.489,G,2,known_group,230.979,1.489,112.66917,-15.294165,164.8,preferred_core_band,S300,S300,TQ048,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,68.0
+G341.005-01.024,G,2,known_group,341.005,-1.024,253.77197,-45.125738,170.3,preferred_core_band,RCW110,G340.777-01.008; RCW110,NR097; SHRDS935,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,68.0
+G123.671+02.819,G,2,known_group,123.671,2.82,14.652246,65.681279,173.3,preferred_core_band,S183,S183,SQ129,yes,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,68.0
+G026.417+01.683,G,2,known_group,26.418,1.683,278.37711,-5.0214187,126.9,preferred_core_band,,G026.447+01.742,DB005,no,yes,yes,yes,yes,22.9927,81.6508,0.0,preferred_simple_shell_range,,65.0
+G038.901-00.443,G,2,known_group,38.901,-0.443,285.98434,5.1078244,136.3,preferred_core_band,,G038.930-00.386,TB029; LA313,no,yes,yes,no,yes,41.4735,32.3737,31.2516,preferred_simple_shell_range,,65.0
+G308.734-00.510,K,1,known_group,308.734,-0.509,205.63785,-62.80363,90.4,preferred_core_band,,,ATCA260; SHRDS382,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G348.060+00.247,K,1,known_group,348.06,0.247,258.18668,-38.750705,90.7,preferred_core_band,,,FA635,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G291.154-00.321,K,1,known_group,291.154,-0.32,168.04262,-60.901329,90.9,preferred_core_band,,,SHRDS1031G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G291.186-00.274,K,1,known_group,291.186,-0.273,168.1394,-60.870008,90.9,preferred_core_band,,,SHRDS1032G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G291.202-00.295,K,1,known_group,291.202,-0.295,168.15354,-60.895813,90.9,preferred_core_band,,,SHRDS1033G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G344.224-00.594,K,1,known_group,344.224,-0.594,256.05622,-42.328881,90.9,preferred_core_band,,,G344.226-00.588,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G352.527-00.147,K,1,known_group,352.527,-0.147,261.79561,-35.313103,91.3,preferred_core_band,,,FA017,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G074.753+00.912,K,1,known_group,74.754,0.913,304.11471,36.916046,91.4,preferred_core_band,,,TW039,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G343.912+00.116,K,1,known_group,343.912,0.116,255.04015,-42.141132,91.4,preferred_core_band,,,FA603,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G343.803+00.214,K,1,known_group,343.803,0.214,254.84557,-42.166406,91.5,preferred_core_band,,,GS008,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G096.434+01.324,K,1,known_group,96.434,1.325,323.83458,53.787245,91.6,preferred_core_band,,,SQ030-2,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G327.139-00.261,K,1,known_group,327.139,-0.261,237.73369,-54.468566,91.8,preferred_core_band,,,ATCA491; SHRDS618,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G302.481-00.035,K,1,known_group,302.481,-0.034,191.86947,-62.902707,91.9,preferred_core_band,,,ATCA180; SHRDS295,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G341.358-00.287,K,1,known_group,341.358,-0.286,253.27958,-44.386574,91.9,preferred_core_band,,,ATCA796,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G349.217+00.138,K,1,known_group,349.217,0.139,259.15997,-37.874759,91.9,preferred_core_band,,,FA643,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G332.987+00.902,K,1,known_group,332.987,0.902,243.64422,-49.733646,92.9,preferred_core_band,,,ATCA652; SHRDS784,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G332.382+00.080,K,1,known_group,332.382,0.08,243.84742,-50.745827,93.1,preferred_core_band,,,ATCA628; SHRDS763,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.315-00.594,K,1,known_group,328.315,-0.593,239.64507,-53.973794,93.4,preferred_core_band,,,G328.283-00.586; G328.315-00.594,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G335.006-00.143,K,1,known_group,335.006,-0.142,246.9746,-49.048971,93.5,preferred_core_band,,,ATCA701; SHRDS834,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G011.769+00.567,K,1,known_group,11.77,0.568,272.32433,-18.467398,93.7,preferred_core_band,,,LA1022,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G350.781-00.027,K,1,known_group,350.781,-0.027,260.45876,-36.689102,93.8,preferred_core_band,,,G350.813-00.019,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.467-00.159,K,1,known_group,333.467,-0.159,245.32884,-50.158675,93.9,preferred_core_band,,,ATCA666; SHRDS799,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G338.360-00.095,K,1,known_group,338.36,-0.094,250.30346,-46.547854,94.2,preferred_core_band,,,ATCA741; SHRDS896,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G344.583-00.035,K,1,known_group,344.583,-0.035,255.75359,-41.703801,94.2,preferred_core_band,,,FA609,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G340.296-00.276,K,1,known_group,340.296,-0.275,252.31311,-45.19749,94.9,preferred_core_band,,,ATCA787; SHRDS1237,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G345.095+00.136,K,1,known_group,345.095,0.136,255.98868,-41.193556,95.0,preferred_core_band,,,FA611,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.453-00.363,K,1,known_group,337.453,-0.363,249.71493,-47.404272,95.2,preferred_core_band,,,ATCA727; SHRDS876,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G109.104-00.347,K,1,known_group,109.104,-0.346,344.78736,59.476876,95.3,preferred_core_band,,,SQ088,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G339.977-00.550,K,1,known_group,339.977,-0.549,252.32081,-45.618169,95.3,preferred_core_band,,,G339.955-00.566,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G074.155+01.646,K,1,known_group,74.156,1.646,302.93737,36.824048,95.4,preferred_core_band,,,TW036,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G310.519-00.220,K,1,known_group,310.519,-0.219,209.26043,-62.120963,95.5,preferred_core_band,,,ATCA283; SHRDS407,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G336.652-00.117,K,1,known_group,336.652,-0.116,248.64568,-47.831902,95.5,preferred_core_band,,,SHRDS1204,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G344.424+00.044,K,1,known_group,344.424,0.045,255.53928,-41.781205,95.5,preferred_core_band,,,G344.439+00.048; caswell25,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.583-00.044,K,1,known_group,337.583,-0.043,249.49253,-47.094112,95.8,preferred_core_band,,,ATCA729; SHRDS880,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G097.444+03.083,K,1,known_group,97.444,3.083,323.06124,55.764573,95.9,preferred_core_band,,,SQ037,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G288.851-00.108,K,1,known_group,288.851,-0.108,163.95314,-59.780525,95.9,preferred_core_band,,,ATCA069; SHRDS167,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G312.706+00.012,K,1,known_group,312.706,0.013,213.54695,-61.278751,95.9,preferred_core_band,,,ATCA337; SHRDS462,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G326.890-00.277,K,1,known_group,326.89,-0.277,237.41637,-54.637054,96.0,preferred_core_band,,,ATCA486; SHRDS614,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.286+00.464,K,1,known_group,328.286,0.464,238.46375,-53.181982,96.1,preferred_core_band,,,G328.310+00.448,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G318.915-00.165,K,1,known_group,318.915,-0.165,225.14595,-58.969526,96.3,preferred_core_band,,,G318.911-00.181,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.356-00.559,K,1,known_group,328.356,-0.558,239.65975,-53.920757,96.6,preferred_core_band,,,ATCA527; SHRDS659,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G111.802+00.526,K,1,known_group,111.802,0.526,349.13485,61.330454,96.9,preferred_core_band,,,SQ096,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G343.224-00.065,K,1,known_group,343.224,-0.064,254.65524,-42.793214,97.5,preferred_core_band,,,SHRDS1240,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G312.091+00.069,K,1,known_group,312.091,0.07,212.28927,-61.412067,97.7,preferred_core_band,,,ATCA319; SHRDS441,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G339.845+00.299,K,1,known_group,339.845,0.3,251.27728,-45.169287,97.8,preferred_core_band,,,G339.838+00.274; G339.845+00.299,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.279-00.559,K,1,known_group,328.279,-0.559,239.5606,-53.970985,98.1,preferred_core_band,,,G328.283-00.586; G328.279-00.559,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G345.651+00.015,K,1,known_group,345.651,0.015,256.56242,-40.824315,98.2,preferred_core_band,,,G345.645+00.010,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G359.436-00.091,K,1,known_group,359.436,-0.09,266.15618,-29.464476,98.6,preferred_core_band,,,G359.432-00.086; G359.436-00.091,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G339.584+00.084,K,1,known_group,339.584,0.085,251.2668,-45.507198,98.7,preferred_core_band,,,ATCA765; SHRDS921,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G011.944-00.039,K,1,known_group,11.944,-0.038,272.9728,-18.606513,98.9,preferred_core_band,,,G011.944-00.037,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.667-00.093,K,1,known_group,331.667,-0.093,243.21227,-51.363803,99.0,preferred_core_band,,,ATCA609; SHRDS742,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G288.074-01.642,K,1,known_group,288.074,-1.641,161.16282,-60.801813,99.1,preferred_core_band,,,ATCA064; SHRDS162,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G341.968+00.224,K,1,known_group,341.968,0.225,253.26663,-43.590807,99.5,preferred_core_band,,,G341.963+00.205,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G342.432-00.233,K,1,known_group,342.432,-0.232,254.15962,-43.517653,99.5,preferred_core_band,,,ATCA811,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G008.281-00.133,K,1,known_group,8.282,-0.133,271.16525,-21.854464,99.8,preferred_core_band,,,G008.310-00.090,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G334.659-00.286,K,1,known_group,334.659,-0.285,246.76364,-49.398099,99.8,preferred_core_band,,,ATCA693; SHRDS826,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G305.384-00.248,K,1,known_group,305.384,-0.248,198.27002,-63.016368,99.9,preferred_core_band,,,ATCA221; SHRDS346,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G094.263-00.414,K,1,known_group,94.264,-0.414,323.13621,51.038693,100.1,preferred_core_band,,,SQ016,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G269.731-00.344,K,1,known_group,269.731,-0.343,137.35042,-48.367589,100.1,preferred_core_band,,,TQ090; SHRDS091,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G318.059-00.450,K,1,known_group,318.059,-0.45,223.92436,-59.621245,100.2,preferred_core_band,,,G318.058-00.459; caswell13,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G308.747+00.547,K,1,known_group,308.747,0.547,205.22531,-61.764911,100.4,preferred_core_band,,,SHRDS1091G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.211-00.394,K,1,known_group,333.211,-0.393,245.3041,-50.505603,100.5,preferred_core_band,,,SHRDS1191G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G335.326+00.409,K,1,known_group,335.326,0.41,246.70904,-48.435612,100.5,preferred_core_band,,,ATCA704; SHRDS837,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.725+00.364,K,1,known_group,333.725,0.364,245.04175,-49.606034,100.8,preferred_core_band,,,ATCA670; SHRDS803,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G338.009+00.016,K,1,known_group,338.009,0.017,249.84353,-46.736956,101.0,preferred_core_band,,,ATCA738; SHRDS892,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G310.901-00.373,K,1,known_group,310.901,-0.373,210.13489,-62.17051,101.3,preferred_core_band,,,ATCA291; SHRDS1096G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G101.016+02.590,K,1,known_group,101.016,2.59,328.58128,57.718452,101.6,preferred_core_band,,,SQ051,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.809+00.634,K,1,known_group,328.809,0.634,238.95157,-52.717253,101.6,preferred_core_band,,,G328.812+00.637,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G349.776+00.116,K,1,known_group,349.776,0.116,259.59091,-37.431403,101.9,preferred_core_band,,,GS043,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G080.522+00.715,K,1,known_group,80.523,0.715,308.62767,41.510539,102.0,preferred_core_band,,,TW061,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G080.634+00.683,K,1,known_group,80.634,0.683,308.75112,41.580936,102.0,preferred_core_band,,,TW062,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G289.944-00.889,K,1,known_group,289.944,-0.889,165.29306,-60.949019,102.2,preferred_core_band,,,ATCA092; SHRDS191,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G290.012-00.867,K,1,known_group,290.012,-0.867,165.43926,-60.956978,102.2,preferred_core_band,,,ATCA095; SHRDS193,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G301.710-00.056,K,1,known_group,301.71,-0.056,190.17617,-62.90207,102.2,preferred_core_band,,,ATCA170; SHRDS286,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.664+00.049,K,1,known_group,337.664,0.049,249.47128,-46.972093,102.5,preferred_core_band,,,ATCA731; SHRDS881,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G356.560-00.086,K,1,known_group,356.56,-0.086,264.38107,-31.902033,102.7,preferred_core_band,,,FA043,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G017.336-00.146,K,1,known_group,17.337,-0.145,275.7384,-13.911372,102.8,preferred_core_band,,,LA1072,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G104.700+02.784,K,1,known_group,104.7,2.785,334.10798,60.050527,102.8,preferred_core_band,,,SQ071,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G013.890-00.475,K,1,known_group,13.89,-0.475,274.3525,-17.105831,103.2,preferred_core_band,,,LA910,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G289.582-00.636,K,1,known_group,289.582,-0.636,164.83382,-60.568661,103.5,preferred_core_band,,,ATCA086; SHRDS184,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G332.551+00.257,K,1,known_group,332.551,0.257,243.84705,-50.501192,103.9,preferred_core_band,,,ATCA637; SHRDS770,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G346.269+00.126,K,1,known_group,346.269,0.126,256.93472,-40.263787,103.9,preferred_core_band,,,FA617,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G259.057-01.544,K,1,known_group,259.057,-1.544,126.59219,-40.813742,104.0,preferred_core_band,,,NR006; SHRDS030,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G006.128-00.252,K,1,known_group,6.129,-0.251,270.12481,-23.785617,104.1,preferred_core_band,,,FA327,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G010.689+00.031,K,1,known_group,10.689,0.031,272.26737,-19.672552,104.1,preferred_core_band,,,G010.689+00.031,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G103.061-00.691,G,2,known_group,103.061,-0.691,335.14557,56.247217,104.1,preferred_core_band,S132,G102.875-00.721; S132,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G013.222+00.082,K,1,known_group,13.223,0.082,273.50664,-17.427312,104.2,preferred_core_band,,,LA909,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.172-00.460,K,1,known_group,331.172,-0.46,243.03543,-51.970194,104.4,preferred_core_band,,,ATCA590; SHRDS721,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G335.469+00.027,K,1,known_group,335.469,0.028,247.27454,-48.597103,104.5,preferred_core_band,,,ATCA706; SHRDS840,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.113-01.049,K,1,known_group,337.114,-1.049,250.14183,-48.11375,104.7,preferred_core_band,,,NR087; SHRDS868,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G011.423-01.721,G,2,known_group,11.423,-1.72,274.27457,-19.867704,105.1,preferred_core_band,S37,G011.707-01.722; S37,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G011.472-01.625,G,2,known_group,11.472,-1.625,274.20963,-19.779145,105.1,preferred_core_band,S37,G011.707-01.722; S37,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G312.110+00.311,K,1,known_group,312.11,0.311,212.1788,-61.176064,105.1,preferred_core_band,,,G312.112+00.314,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.320+00.435,K,1,known_group,328.32,0.435,238.53825,-53.182683,105.1,preferred_core_band,,,G328.310+00.448,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.653+00.128,K,1,known_group,331.653,0.128,242.95431,-51.21218,105.1,preferred_core_band,,,ATCA608; SHRDS741,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G340.059-00.138,K,1,known_group,340.059,-0.138,251.94734,-45.290484,105.2,preferred_core_band,,,ATCA776; SHRDS1235,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G334.721-00.653,K,1,known_group,334.721,-0.652,247.23786,-49.607829,105.6,preferred_core_band,,,G334.714-00.665; G334.721-00.653,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G335.168-00.240,K,1,known_group,335.168,-0.24,247.2529,-48.99943,105.6,preferred_core_band,,,ATCA702; SHRDS835,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G336.358-00.137,K,1,known_group,336.358,-0.137,248.37065,-48.061964,105.6,preferred_core_band,,,G336.375-00.131,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G336.418-00.249,K,1,known_group,336.418,-0.249,248.55464,-48.093886,105.6,preferred_core_band,,,G336.404-00.234; G336.418-00.249,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G336.539-00.198,K,1,known_group,336.539,-0.197,248.62079,-47.970112,105.6,preferred_core_band,,,G336.489-00.154,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G336.888+00.057,K,1,known_group,336.888,0.058,248.69277,-47.540479,105.6,preferred_core_band,,,SHRDS1210G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.286+00.113,K,1,known_group,337.286,0.113,249.02915,-47.209438,105.6,preferred_core_band,,,ATCA724; SHRDS871,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G009.834-00.713,K,1,known_group,9.834,-0.713,272.52033,-20.780455,105.9,preferred_core_band,,,FA399,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G321.114-00.273,K,1,known_group,321.114,-0.273,228.89131,-57.963512,106.7,preferred_core_band,,,ATCA435; SHRDS563,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.117+00.108,K,1,known_group,328.117,0.108,238.62546,-53.564186,106.9,preferred_core_band,,,ATCA517; SHRDS647,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G310.672-00.450,K,1,known_group,310.672,-0.45,209.70365,-62.304908,107.1,preferred_core_band,,,ATCA286; SHRDS410,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G002.813-00.141,K,1,known_group,2.813,-0.14,268.17782,-26.596692,107.4,preferred_core_band,,,G002.819-00.132,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G093.518+02.611,K,1,known_group,93.518,2.612,318.8437,52.677675,107.5,preferred_core_band,,,SQ008,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G303.557-00.539,K,1,known_group,303.557,-0.539,194.25574,-63.403551,107.6,preferred_core_band,,,ATCA192; SHRDS308,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G005.900-00.431,K,1,known_group,5.9,-0.43,270.17115,-24.072761,107.7,preferred_core_band,,,G005.899-00.427; G005.900-00.427,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G343.708-00.124,K,1,known_group,343.708,-0.124,255.12592,-42.449835,108.3,preferred_core_band,,,GS007,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.113-00.141,K,1,known_group,333.113,-0.14,244.91508,-50.394758,108.4,preferred_core_band,,,ATCA660; SHRDS792,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G173.706+02.702,K,1,known_group,173.706,2.703,85.21869,35.710164,108.5,preferred_core_band,,,SQ208,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G011.790-00.040,K,1,known_group,11.79,-0.04,272.89622,-18.742364,108.7,preferred_core_band,,,G011.792-00.048,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G307.615-00.259,K,1,known_group,307.615,-0.259,203.13295,-62.756184,108.7,preferred_core_band,,,G307.620-00.320,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G290.323-02.984,K,1,known_group,290.323,-2.983,164.15232,-63.009008,109.0,preferred_core_band,,,ATCA097; SHRDS194,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.922-00.463,K,1,known_group,337.922,-0.462,250.28371,-47.119868,109.0,preferred_core_band,,,G337.949-00.476,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G304.034+00.290,K,1,known_group,304.034,0.29,195.25164,-62.56101,109.1,preferred_core_band,,,ATCA210; SHRDS329,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.760+00.064,K,1,known_group,331.76,0.064,243.14877,-51.185751,109.7,preferred_core_band,,,ATCA611; SHRDS744,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G312.675+00.048,K,1,known_group,312.675,0.048,213.46243,-61.254622,109.8,preferred_core_band,,,ATCA335; SHRDS461,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G339.103+00.008,K,1,known_group,339.103,0.009,250.89898,-45.921003,110.4,preferred_core_band,,,ATCA752; SHRDS908,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G342.050-00.503,K,1,known_group,342.05,-0.503,254.12112,-43.984805,110.4,preferred_core_band,,,ATCA805,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.497-00.275,K,1,known_group,333.497,-0.274,245.48986,-50.219474,110.6,preferred_core_band,,,ATCA667; SHRDS800,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G080.350+00.718,K,1,known_group,80.351,0.719,308.4868,41.374869,111.1,preferred_core_band,,,G080.346+00.721; G080.352+00.724,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G300.965+01.162,K,1,known_group,300.965,1.163,188.71599,-61.645527,111.3,preferred_core_band,,,G300.956+01.161; G300.965+01.162,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G310.630-00.421,K,1,known_group,310.63,-0.421,209.60011,-62.2873,111.4,preferred_core_band,,,ATCA285; SHRDS409,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G014.221-00.545,K,1,known_group,14.221,-0.544,274.58034,-16.846791,111.5,preferred_core_band,,,G014.220-00.530,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.149-00.338,K,1,known_group,333.149,-0.338,245.17342,-50.509953,111.6,preferred_core_band,,,ATCA661; SHRDS793,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G223.697-02.209,K,1,known_group,223.697,-2.209,105.82194,-10.584566,111.8,preferred_core_band,,,TQ042; G223.699-01.923,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G334.646+00.442,K,1,known_group,334.646,0.443,245.95377,-48.898913,111.9,preferred_core_band,,,ATCA692; SHRDS825,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G309.283-00.035,K,1,known_group,309.283,-0.034,206.59234,-62.226676,112.0,preferred_core_band,,,ATCA266; SHRDS389,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G316.141-00.506,K,1,known_group,316.141,-0.506,220.5147,-60.508825,112.1,preferred_core_band,,,G316.156-00.492,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G113.614-00.615,G,2,known_group,113.614,-0.614,353.44909,60.845074,112.3,preferred_core_band,S163,G113.589-00.721; S163,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G353.676+00.030,K,1,known_group,353.676,0.031,262.3912,-34.25833,112.3,preferred_core_band,,,GS086,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G010.877+00.084,K,1,known_group,10.878,0.084,272.31491,-19.481665,112.4,preferred_core_band,,,G010.876+00.085,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G289.476-00.899,K,1,known_group,289.476,-0.899,164.41136,-60.762773,112.4,preferred_core_band,,,ATCA083; SHRDS180,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G332.311-00.567,K,1,known_group,332.311,-0.567,244.481,-51.260915,112.5,preferred_core_band,,,ATCA625; SHRDS759,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G356.637+00.134,K,1,known_group,356.637,0.135,264.21059,-31.718588,112.6,preferred_core_band,,,G356.650+00.129,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G281.840-01.609,K,1,known_group,281.84,-1.609,150.91413,-57.440944,113.0,preferred_core_band,,,ATCA020; SHRDS117,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G340.097-00.174,K,1,known_group,340.097,-0.173,252.02041,-45.284184,113.1,preferred_core_band,,,ATCA779; SHRDS1236,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G077.431-00.015,K,1,known_group,77.431,-0.014,307.01073,38.58551,113.4,preferred_core_band,,,TW050; TW051,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G323.464-00.079,K,1,known_group,323.464,-0.079,232.33813,-56.52,113.4,preferred_core_band,,,ATCA450; SHRDS580,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G180.827+03.994,G,2,known_group,180.827,3.994,90.849761,30.239436,113.5,preferred_core_band,S241,G180.875+04.111,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G004.343+00.115,K,1,known_group,4.343,0.116,268.79388,-25.147647,113.6,preferred_core_band,,,FA090,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G008.306-00.084,K,1,known_group,8.307,-0.083,271.13233,-21.808553,113.6,preferred_core_band,,,G008.310-00.090,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G010.227-00.303,K,1,known_group,10.228,-0.303,272.34053,-20.237735,113.6,preferred_core_band,,,LA900,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G330.673-00.388,K,1,known_group,330.673,-0.388,242.3597,-52.256579,113.9,preferred_core_band,,,G330.677-00.396; G330.673-00.388,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G078.114-00.550,K,1,known_group,78.115,-0.55,308.08093,38.823046,114.0,preferred_core_band,,,TW053,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G230.354-00.597,K,1,known_group,230.354,-0.596,110.45675,-15.735799,114.3,preferred_core_band,,,TQ046; SHRDS002,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G323.449+00.095,K,1,known_group,323.449,0.095,232.138,-56.384877,114.3,preferred_core_band,,,ATCA449; SHRDS578,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G294.988-00.538,K,1,known_group,294.988,-0.537,175.5427,-62.335808,114.4,preferred_core_band,,,ATCA121; SHRDS232,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G006.200-00.342,K,1,known_group,6.2,-0.341,270.24905,-23.768012,114.6,preferred_core_band,,,FA328,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G349.728+00.168,K,1,known_group,349.728,0.168,259.50294,-37.440896,114.7,preferred_core_band,,,GS042,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G351.261+01.016,K,1,known_group,351.261,1.016,259.73761,-35.699164,114.8,preferred_core_band,,,FA009,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G233.830-00.180,G,2,known_group,233.83,-0.179,112.57035,-18.595707,114.9,preferred_core_band,S305; RCW8,G233.761-00.191; G233.760-00.203; S305; RCW8,,yes,yes,no,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G009.688+00.208,K,1,known_group,9.688,0.209,271.58406,-20.460396,115.3,preferred_core_band,,,FA397,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G011.080-00.378,K,1,known_group,11.08,-0.378,272.84819,-19.527357,115.6,preferred_core_band,,,LA1016,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G358.982-00.030,K,1,known_group,358.982,-0.03,265.82293,-29.819329,115.8,preferred_core_band,,,G358.974-00.021,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G084.539+02.090,K,1,known_group,84.54,2.09,310.47623,45.538286,116.0,preferred_core_band,,,TW074,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G313.790+00.705,K,1,known_group,313.79,0.706,215.18262,-60.269985,116.8,preferred_core_band,,,ATCA352; SHRDS476; G313.8+0.7,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G281.047-01.541,K,1,known_group,281.047,-1.541,149.82117,-56.909895,116.9,preferred_core_band,,,SHRDS1005G,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G110.286+02.488,K,1,known_group,110.286,2.488,344.53937,62.545387,117.4,preferred_core_band,,,SQ093,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G339.275-00.607,K,1,known_group,339.275,-0.606,251.73274,-46.191357,117.6,preferred_core_band,,,ATCA759; SHRDS915,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.052+00.033,K,1,known_group,333.052,0.034,244.65608,-50.313534,118.0,preferred_core_band,,,ATCA655; SHRDS788,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G359.386-00.082,K,1,known_group,359.386,-0.082,266.11749,-29.502495,118.0,preferred_core_band,,,GS116,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G338.837-00.318,K,1,known_group,338.837,-0.318,251.00358,-46.335928,118.2,preferred_core_band,,,ATCA749; SHRDS904,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G326.657+00.588,K,1,known_group,326.657,0.589,236.18409,-54.10007,118.3,preferred_core_band,,,SHRDS1163G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G326.728+00.616,K,1,known_group,326.728,0.616,236.25138,-54.035063,118.3,preferred_core_band,,,SHRDS1164,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.945+00.570,K,1,known_group,328.945,0.57,239.19133,-52.678853,118.3,preferred_core_band,,,ATCA538; SHRDS669,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G352.597-00.188,K,1,known_group,352.597,-0.188,261.88473,-35.277606,118.4,preferred_core_band,,,G352.611-00.172; G352.611-00.170,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G099.091+02.969,G,2,known_group,99.092,2.97,325.40045,56.78096,118.7,preferred_core_band,S131; IC1396,S131; S131; IC1396,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G302.032-00.063,K,1,known_group,302.032,-0.062,190.88236,-62.920201,118.9,preferred_core_band,,,ATCA172; G302.025-00.044,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G303.116-00.971,K,1,known_group,303.116,-0.971,193.27697,-63.841846,119.0,preferred_core_band,,,G303.115-00.947,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G302.436-00.106,K,1,known_group,302.436,-0.106,191.76808,-62.973284,119.2,preferred_core_band,,,ATCA179; SHRDS294,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G011.935-00.613,K,1,known_group,11.936,-0.613,273.50089,-18.889755,119.3,preferred_core_band,,,G011.940-00.610; G011.936-00.616,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G303.973-00.035,K,1,known_group,303.973,-0.035,195.14436,-62.88801,119.4,preferred_core_band,,,ATCA208; SHRDS326,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G334.022+00.106,K,1,known_group,334.022,0.107,245.64625,-49.578472,119.4,preferred_core_band,,,ATCA674; SHRDS807,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G345.711+00.159,K,1,known_group,345.711,0.16,256.45806,-40.689286,119.4,preferred_core_band,,,FA614,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G336.295-01.341,K,1,known_group,336.296,-1.34,249.64959,-48.918679,119.5,preferred_core_band,,,NR080; SHRDS849,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G323.806+00.020,K,1,known_group,323.806,0.021,232.74409,-56.243604,119.6,preferred_core_band,,,ATCA459; SHRDS588,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G307.559-00.585,K,1,known_group,307.559,-0.585,203.12523,-63.087226,119.7,preferred_core_band,,,G307.569-00.616; caswell10,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G078.689+00.354,K,1,known_group,78.689,0.355,307.57615,39.820802,119.8,preferred_core_band,,,TW204,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G339.781+00.243,K,1,known_group,339.781,0.243,251.27898,-45.254722,119.9,preferred_core_band,,,ATCA771; SHRDS928,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G010.237-00.080,K,1,known_group,10.237,-0.08,272.13759,-20.121699,120.0,preferred_core_band,,,LA1003,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.255+00.065,K,1,known_group,333.255,0.065,244.84811,-50.148865,120.1,preferred_core_band,,,ATCA662; SHRDS794,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G015.883+00.550,K,1,known_group,15.884,0.55,274.39793,-14.864615,120.4,preferred_core_band,,,LA916,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G293.967-00.984,K,1,known_group,293.967,-0.983,173.1564,-62.475099,120.4,preferred_core_band,,,ATCA116; SHRDS219,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G315.341-00.320,K,1,known_group,315.341,-0.32,218.87125,-60.660242,120.5,preferred_core_band,,,SHRDS1115G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G003.442-00.650,K,1,known_group,3.443,-0.649,269.02378,-26.311241,120.6,preferred_core_band,,,FA086,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G070.673+01.190,K,1,known_group,70.673,1.19,301.09992,33.649794,120.6,preferred_core_band,,,TW027,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G329.266+00.111,K,1,known_group,329.266,0.111,240.08666,-52.819974,120.7,preferred_core_band,,,ATCA547; SHRDS677,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G311.003-00.355,K,1,known_group,311.003,-0.354,210.33492,-62.125743,122.0,preferred_core_band,,,ATCA292; SHRDS413,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G347.770+00.144,K,1,known_group,347.77,0.145,258.07385,-39.045513,122.1,preferred_core_band,,,FA634,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G327.770-00.346,K,1,known_group,327.77,-0.345,238.66277,-54.134769,122.3,preferred_core_band,,,G327.759-00.351; G327.770-00.346,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G334.774-00.023,K,1,known_group,334.774,-0.023,246.59721,-49.132861,122.7,preferred_core_band,,,ATCA695; SHRDS828,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G281.584-00.971,K,1,known_group,281.584,-0.971,151.23146,-56.775664,122.9,preferred_core_band,,,G281.595-00.969,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G009.178+00.043,K,1,known_group,9.178,0.043,271.47218,-20.986819,123.1,preferred_core_band,,,FA109; G009.176+00.032,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G298.846-00.334,K,1,known_group,298.846,-0.334,183.85505,-62.91923,123.1,preferred_core_band,,,G298.868-00.432,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G150.859-01.115,K,1,known_group,150.859,-1.115,60.960947,51.016094,123.3,preferred_core_band,,,SQ184,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G353.547-00.013,K,1,known_group,353.547,-0.012,262.34872,-34.389825,123.4,preferred_core_band,,,G353.557-00.014,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G342.354-00.047,K,1,known_group,342.354,-0.046,253.89256,-43.46208,123.5,preferred_core_band,,,G342.382-00.044; G342.354-00.047,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G224.606-02.560,G,2,known_group,224.606,-2.56,105.92695,-11.552639,123.9,preferred_core_band,S296,S296,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G265.191-00.641,K,1,known_group,265.191,-0.641,132.6654,-45.141107,124.2,preferred_core_band,,,TQ088; SHRDS075,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.359+01.158,K,1,known_group,331.359,1.159,241.50556,-50.650665,124.2,preferred_core_band,,,SHRDS1175G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G008.537-00.313,K,1,known_group,8.537,-0.313,271.46899,-21.719665,124.4,preferred_core_band,,,G008.533-00.288,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G317.861+00.160,K,1,known_group,317.861,0.16,223.03461,-59.167289,125.2,preferred_core_band,,,ATCA402; SHRDS526,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G001.055-00.154,K,1,known_group,1.056,-0.153,267.17724,-28.112587,126.3,preferred_core_band,,,FA239,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G314.219+00.343,K,1,known_group,314.219,0.344,216.24979,-60.461387,126.4,preferred_core_band,,,ATCA361; SHRDS484,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G309.921+00.481,K,1,known_group,309.922,0.481,207.67511,-61.583525,127.0,preferred_core_band,,,ATCA275; SHRDS398,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G325.354-00.036,K,1,known_group,325.354,-0.035,235.03858,-55.384678,127.1,preferred_core_band,,,ATCA475; SHRDS604,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G098.037+01.448,K,1,known_group,98.037,1.448,325.75526,54.941119,127.7,preferred_core_band,,,SQ043,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G345.346-00.900,G,2,known_group,345.346,-0.9,257.29294,-41.616872,127.9,preferred_core_band,RCW117,G345.425-00.940; G345.426-00.934; RCW117,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G305.789+00.280,K,1,known_group,305.789,0.28,199.04765,-62.454253,128.3,preferred_core_band,,,ATCA226; SHRDS350,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G341.305-00.306,K,1,known_group,341.305,-0.306,253.25382,-44.440008,128.4,preferred_core_band,,,G341.264-00.317,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G081.878+00.778,K,1,known_group,81.879,0.779,309.65974,42.630962,128.6,preferred_core_band,,,TW064,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G307.974-01.594,K,1,known_group,307.974,-1.594,204.4252,-64.011595,128.8,preferred_core_band,,,ATCA251; SHRDS373,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G323.743-00.249,K,1,known_group,323.743,-0.249,232.92921,-56.500851,129.2,preferred_core_band,,,ATCA456; SHRDS585,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G312.591+00.210,K,1,known_group,312.591,0.211,213.1921,-61.126672,129.3,preferred_core_band,,,ATCA332; SHRDS456,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G351.360+01.015,K,1,known_group,351.36,1.015,259.80867,-35.618755,129.7,preferred_core_band,,,FA010,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G354.589+00.005,K,1,known_group,354.589,0.005,263.0214,-33.509649,130.0,preferred_core_band,,,FA027,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G173.582-01.581,K,1,known_group,173.582,-1.58,80.780461,33.470852,130.1,preferred_core_band,,,SQ207,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G011.573+00.345,K,1,known_group,11.574,0.345,272.42937,-18.746388,130.2,preferred_core_band,,,LA1018,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G334.106+00.109,K,1,known_group,334.106,0.109,245.7351,-49.517359,130.2,preferred_core_band,,,ATCA677; SHRDS810,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G327.651-00.334,K,1,known_group,327.651,-0.334,238.49343,-54.201602,130.6,preferred_core_band,,,G327.612-00.354,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G013.186+00.042,K,1,known_group,13.186,0.043,273.52464,-17.477772,130.7,preferred_core_band,,,G013.186+00.045,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G318.233-00.605,K,1,known_group,318.233,-0.605,224.37179,-59.678515,131.2,preferred_core_band,,,SHRDS1126G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G341.962+00.437,K,1,known_group,341.962,0.438,253.03465,-43.460509,131.3,preferred_core_band,,,ATCA802,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G340.910+00.167,K,1,known_group,340.91,0.167,252.39076,-44.442835,131.4,preferred_core_band,,,ATCA790,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G298.196-00.247,K,1,known_group,298.196,-0.247,182.47635,-62.735728,131.8,preferred_core_band,,,SHRDS1041,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G286.362-00.297,K,1,known_group,286.362,-0.296,159.45599,-58.801077,131.9,preferred_core_band,,,SHRDS1017G,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G079.869+01.180,K,1,known_group,79.87,1.18,307.61233,41.261273,132.2,preferred_core_band,,,TW058,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G345.284+01.463,K,1,known_group,345.284,1.463,254.75957,-40.230253,132.2,preferred_core_band,,,G345.308+01.471; G345.310+01.473,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G345.324+01.022,K,1,known_group,345.324,1.023,255.24683,-40.470491,132.2,preferred_core_band,,,G345.308+01.471; G345.310+01.473,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G351.646-01.252,K,1,known_group,351.646,-1.251,262.32724,-36.658588,132.2,preferred_core_band,,,G351.613-01.270; G351.641-01.256; G351.643-01.254,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G005.189-00.285,K,1,known_group,5.189,-0.285,269.64398,-24.616958,132.3,preferred_core_band,,,G005.193-00.284,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G012.302+00.416,K,1,known_group,12.302,0.416,272.73491,-18.074124,132.3,preferred_core_band,,,LA906,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G336.585+00.019,K,1,known_group,336.585,0.019,248.42984,-47.78936,132.5,preferred_core_band,,,ATCA717; SHRDS857,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G332.554-00.153,K,1,known_group,332.554,-0.152,244.29843,-50.794029,132.9,preferred_core_band,,,ATCA638; G332.541-00.111,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G311.667-00.409,K,1,known_group,311.667,-0.408,211.72822,-61.99311,133.1,preferred_core_band,,,SHRDS1102,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G085.697+02.030,K,1,known_group,85.697,2.031,311.57469,46.409695,133.5,preferred_core_band,,,TW081,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G010.585-00.051,K,1,known_group,10.586,-0.051,272.2901,-19.802245,133.7,preferred_core_band,,,G010.586-00.035,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G327.401+00.483,K,1,known_group,327.401,0.484,237.28849,-53.724029,133.7,preferred_core_band,,,ATCA492; SHRDS620,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G356.351+00.223,K,1,known_group,356.351,0.224,263.94125,-31.911706,133.7,preferred_core_band,,,GS101,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G003.959-00.094,K,1,known_group,3.96,-0.094,268.77994,-25.584622,134.3,preferred_core_band,,,G003.949-00.100,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G285.353+00.004,K,1,known_group,285.353,0.004,158.07217,-58.037473,134.9,preferred_core_band,,,ATCA046; SHRDS143,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G338.816+00.403,K,1,known_group,338.816,0.403,250.20081,-45.876898,135.0,preferred_core_band,,,ATCA748; SHRDS905,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G338.576+00.020,K,1,known_group,338.576,0.02,250.38608,-46.310184,135.1,preferred_core_band,,,ATCA745; SHRDS900,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G287.025-00.321,K,1,known_group,287.025,-0.321,160.55946,-59.142595,135.4,preferred_core_band,,,ATCA061; SHRDS159,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G093.533+01.473,K,1,known_group,93.534,1.473,320.1907,51.892164,135.5,preferred_core_band,,,SQ009,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.827+00.056,K,1,known_group,337.827,0.056,249.62319,-46.84621,135.5,preferred_core_band,,,ATCA736; SHRDS888,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G106.798+05.313,G,2,known_group,106.798,5.313,334.82685,63.314623,135.7,preferred_core_band,S140,G106.766+05.299,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G101.439+02.653,K,1,known_group,101.439,2.653,329.13195,58.029562,136.8,preferred_core_band,,,SQ053,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G007.380-00.264,K,1,known_group,7.38,-0.264,270.8103,-22.703931,136.9,preferred_core_band,,,FA355,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G125.092+00.778,K,1,known_group,125.092,0.778,17.716432,63.568537,137.0,preferred_core_band,,,SQ138,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G326.916-01.100,K,1,known_group,326.916,-1.1,238.35381,-55.260092,137.0,preferred_core_band,,,ATCA487; SHRDS615,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G359.293-00.255,K,1,known_group,359.293,-0.255,266.23109,-29.672132,137.0,preferred_core_band,,,G359.277-00.264,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G062.728+00.617,K,1,known_group,62.729,0.618,296.8985,26.560646,137.2,preferred_core_band,,,LA841,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G192.608-00.133,G,2,known_group,192.608,-0.133,93.15097,17.942422,137.2,preferred_core_band,S255,G192.626-00.017; S255,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.876-00.133,K,1,known_group,337.876,-0.132,249.87672,-46.93538,137.6,preferred_core_band,,,SHRDS1233,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G320.663+00.336,K,1,known_group,320.663,0.337,227.57598,-57.67356,138.3,preferred_core_band,,,SHRDS1144G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G320.884-00.641,K,1,known_group,320.884,-0.64,228.88473,-58.39722,138.3,preferred_core_band,,,ATCA433; SHRDS561,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G338.462-00.262,K,1,known_group,338.462,-0.262,250.58455,-46.58182,138.7,preferred_core_band,,,ATCA743; SHRDS898,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G183.024+00.017,K,1,known_group,183.024,0.018,88.179572,26.352664,139.4,preferred_core_band,,,TQ003,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G359.740-00.412,K,1,known_group,359.74,-0.411,266.65256,-29.372262,139.5,preferred_core_band,,,S16;G359.730-00.407,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G132.156-00.729,K,1,known_group,132.156,-0.729,32.017081,60.763313,140.0,preferred_core_band,,,G132.157-00.725,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G007.761+00.006,K,1,known_group,7.762,0.007,270.75872,-22.238938,140.1,preferred_core_band,,,G007.768+00.014,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G311.822+00.044,K,1,known_group,311.822,0.044,211.76648,-61.515302,140.1,preferred_core_band,,,ATCA313; SHRDS435,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G344.103-00.671,K,1,known_group,344.103,-0.67,256.0394,-42.471699,140.2,preferred_core_band,,,FA612,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G264.670-00.285,K,1,known_group,264.67,-0.284,132.58721,-44.512351,140.6,preferred_core_band,,,TQ086; SHRDS071,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G339.717-01.211,K,1,known_group,339.717,-1.211,252.81245,-46.241052,141.6,preferred_core_band,,,ATCA768; SHRDS925,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.156-00.391,K,1,known_group,331.156,-0.391,242.93992,-51.930667,141.7,preferred_core_band,,,ATCA589; SHRDS720,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G355.529-00.102,K,1,known_group,355.529,-0.101,263.73874,-32.778784,141.9,preferred_core_band,,,FA033,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.193-00.479,K,1,known_group,328.193,-0.479,239.36111,-53.965549,142.0,preferred_core_band,,,ATCA522; SHRDS651,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G135.188+02.701,K,1,known_group,135.188,2.701,40.602637,62.902027,142.1,preferred_core_band,,,G135test5,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G330.039-00.058,K,1,known_group,330.039,-0.057,241.22749,-52.437188,142.1,preferred_core_band,,,G330.041-00.045,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G345.586-00.040,K,1,known_group,345.586,-0.039,256.56837,-40.909181,142.4,preferred_core_band,,,G345.555-00.042,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G303.593-00.631,K,1,known_group,303.593,-0.631,194.34081,-63.49484,142.6,preferred_core_band,,,ATCA193; SHRDS309,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G313.671-00.105,K,1,known_group,313.671,-0.104,215.51716,-61.072119,142.6,preferred_core_band,,,ATCA348; SHRDS473,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G300.972+00.994,K,1,known_group,300.972,0.994,188.7078,-61.814209,142.9,preferred_core_band,,,ATCA164; SHRDS280,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G343.712-00.210,K,1,known_group,343.712,-0.21,255.22107,-42.499582,143.3,preferred_core_band,,,FA606,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G336.874+00.139,K,1,known_group,336.874,0.14,248.58923,-47.495179,143.6,preferred_core_band,,,SHRDS1209G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G304.465-00.023,K,1,known_group,304.465,-0.022,196.2211,-62.853943,143.7,preferred_core_band,,,ATCA215; SHRDS336,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G008.462+00.122,K,1,known_group,8.463,0.122,271.02179,-21.571376,143.8,preferred_core_band,,,FA378,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G071.150+00.397,K,1,known_group,71.151,0.398,302.21054,33.625219,144.1,preferred_core_band,,,TW031,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G085.055-00.158,K,1,known_group,85.055,-0.157,313.40885,44.526982,144.7,preferred_core_band,,,G085.051-00.182,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G339.938-00.581,K,1,known_group,339.938,-0.581,252.3191,-45.668042,145.1,preferred_core_band,,,G339.955-00.566,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G332.957+01.793,K,1,known_group,332.957,1.793,242.67271,-49.105155,145.5,preferred_core_band,,,ATCA650; SHRDS782,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.315+02.273,K,1,known_group,333.315,2.273,242.57544,-48.509794,145.5,preferred_core_band,,,ATCA664; SHRDS796,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G323.680+00.631,K,1,known_group,323.68,0.632,231.93979,-55.81147,145.6,preferred_core_band,,,ATCA455; SHRDS584,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G336.854-00.018,K,1,known_group,336.854,-0.018,248.74116,-47.616608,146.0,preferred_core_band,,,SHRDS1207G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G341.283-00.353,K,1,known_group,341.283,-0.352,253.28433,-44.486257,146.1,preferred_core_band,,,G341.264-00.317,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G014.000-00.206,K,1,known_group,14.001,-0.205,274.15917,-16.88024,146.3,preferred_core_band,,,FQ168,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G326.685-00.452,K,1,known_group,326.685,-0.451,237.32757,-54.901464,146.6,preferred_core_band,,,G326.660-00.471,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.797-00.148,K,1,known_group,331.797,-0.148,243.42404,-51.314579,147.0,preferred_core_band,,,ATCA612; SHRDS745,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.120-00.180,K,1,known_group,337.121,-0.179,249.1842,-47.528343,147.3,preferred_core_band,,,G337.147-00.181,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G320.782+00.258,K,1,known_group,320.782,0.258,227.84226,-57.68059,147.8,preferred_core_band,,,SHRDS1146G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G330.290-00.395,K,1,known_group,330.29,-0.394,241.90379,-52.519838,147.9,preferred_core_band,,,G330.305-00.385,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G308.031-01.052,K,1,known_group,308.031,-1.052,204.33423,-63.468275,148.2,preferred_core_band,,,ATCA254; SHRDS376,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G330.738-00.449,K,1,known_group,330.738,-0.448,242.50475,-52.257031,148.2,preferred_core_band,,,SHRDS1171G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G284.902+00.060,K,1,known_group,284.902,0.06,157.39714,-57.758484,148.6,preferred_core_band,,,ATCA044; SHRDS141,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G346.107-00.010,K,1,known_group,346.107,-0.01,256.95036,-40.475115,148.8,preferred_core_band,,,G346.109-00.028,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G083.093+03.272,K,1,known_group,83.094,3.273,307.89707,45.097019,149.5,preferred_core_band,,,TW067,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G340.730-00.617,K,1,known_group,340.73,-0.617,253.07847,-45.081538,150.4,preferred_core_band,,,ATCA789,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G310.260-00.199,K,1,known_group,310.26,-0.199,208.71233,-62.164821,150.8,preferred_core_band,,,ATCA279; SHRDS403,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G008.901-00.469,K,1,known_group,8.902,-0.468,271.80635,-21.477106,151.0,preferred_core_band,,,FA388; FQ603,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G346.261+00.313,K,1,known_group,346.261,0.313,256.73279,-40.158069,151.0,preferred_core_band,,,GS014,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G341.968-00.580,K,1,known_group,341.968,-0.579,254.13331,-44.096891,151.2,preferred_core_band,,,ATCA803,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G289.874-00.752,K,1,known_group,289.874,-0.751,165.27848,-60.794817,151.3,preferred_core_band,,,SHRDS1028G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G320.278-00.157,K,1,known_group,320.278,-0.157,227.42068,-58.294191,151.5,preferred_core_band,,,SHRDS1142G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G047.294+00.270,K,1,known_group,47.294,0.271,289.2733,12.880331,152.4,preferred_core_band,,,FQ465,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.520-00.076,K,1,known_group,331.52,-0.075,243.02112,-51.45157,153.2,preferred_core_band,,,G331.517-00.069; G331.520-00.076,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G047.181+00.320,K,1,known_group,47.181,0.32,289.17479,12.803571,154.0,preferred_core_band,,,TB094,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.259-00.188,K,1,known_group,331.259,-0.187,242.83725,-51.711619,154.2,preferred_core_band,,,G331.259-00.186; G331.259-00.188,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G317.405+00.091,K,1,known_group,317.405,0.092,222.29293,-59.430399,154.3,preferred_core_band,,,SHRDS1122G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G008.865-00.323,K,1,known_group,8.865,-0.323,271.65092,-21.43866,154.6,preferred_core_band,,,G008.865-00.323,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G338.565-00.151,K,1,known_group,338.565,-0.15,250.56108,-46.430788,155.0,preferred_core_band,,,ATCA744; SHRDS899,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G291.863-00.682,K,1,known_group,291.863,-0.682,169.13772,-61.497222,155.4,preferred_core_band,,,G291.858-00.675; caswell4,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G011.816+00.242,K,1,known_group,11.816,0.242,272.64824,-18.58383,155.9,preferred_core_band,,,LA1026,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G311.919+00.204,K,1,known_group,311.919,0.205,211.86351,-61.333406,156.2,preferred_core_band,,,G311.922+00.229,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G354.670+00.252,K,1,known_group,354.67,0.252,262.82721,-33.306687,156.2,preferred_core_band,,,G354.665+00.247,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G340.638-00.319,K,1,known_group,340.638,-0.318,252.67036,-44.96254,156.3,preferred_core_band,,,ATCA788,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G324.201+00.117,K,1,known_group,324.201,0.118,233.22492,-55.93789,156.6,preferred_core_band,,,G324.192+00.109; caswell16,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G354.979-00.527,K,1,known_group,354.979,-0.527,263.81085,-33.471514,156.6,preferred_core_band,,,FA031,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G334.698-00.090,K,1,known_group,334.698,-0.09,246.5903,-49.234375,157.9,preferred_core_band,,,G334.684-00.107,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G327.582-00.379,K,1,known_group,327.582,-0.378,238.45093,-54.279954,159.0,preferred_core_band,,,G327.612-00.354,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.091-00.965,K,1,known_group,337.091,-0.964,250.02503,-48.074993,159.3,preferred_core_band,,,ATCA720; SHRDS867,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G342.503+00.042,K,1,known_group,342.503,0.042,253.92642,-43.290595,159.5,preferred_core_band,,,ATCA813,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G302.636-00.672,K,1,known_group,302.636,-0.671,192.19532,-63.541467,159.8,preferred_core_band,,,ATCA182; SHRDS297,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G213.833+00.618,K,1,known_group,213.833,0.619,103.82103,-0.51975582,160.0,preferred_core_band,,,TQ028; S285,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G333.074-00.482,K,1,known_group,333.074,-0.481,245.24891,-50.664607,160.2,preferred_core_band,,,ATCA657; SHRDS789,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G212.235-03.498,K,1,known_group,212.235,-3.498,99.428594,-0.97496293,160.5,preferred_core_band,,,TQ023,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G078.174-00.550,K,1,known_group,78.174,-0.55,308.12595,38.870869,160.6,preferred_core_band,,,TW054,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G316.516-00.600,K,1,known_group,316.516,-0.6,221.28586,-60.437606,160.9,preferred_core_band,,,ATCA382; SHRDS506,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G014.060-00.521,K,1,known_group,14.061,-0.521,274.4792,-16.977092,161.0,preferred_core_band,,,G014.064-00.526,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G331.834-00.002,K,1,known_group,331.834,-0.001,243.30611,-51.18255,161.0,preferred_core_band,,,ATCA613; SHRDS746,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G118.592+02.828,K,1,known_group,118.592,2.828,2.4198676,65.34728,161.6,preferred_core_band,,,SQ112,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G006.005-00.368,K,1,known_group,6.006,-0.367,270.16834,-23.950206,162.0,preferred_core_band,,,FA095,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G353.574-00.052,K,1,known_group,353.574,-0.052,262.4065,-34.389007,162.0,preferred_core_band,,,G353.557-00.014,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G337.684-00.343,K,1,known_group,337.684,-0.342,249.91962,-47.218539,162.5,preferred_core_band,,,ATCA732; SHRDS884,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G213.879-11.835,G,2,known_group,213.879,-11.835,92.711945,-6.1952716,162.6,preferred_core_band,Mon R2,G213.699-12.607; Mon R2,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G293.024-01.029,K,1,known_group,293.024,-1.029,171.19664,-62.222132,162.8,preferred_core_band,,,G293.027-01.031,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G300.369-00.288,K,1,known_group,300.369,-0.287,187.19796,-63.04605,163.1,preferred_core_band,,,ATCA155; SHRDS271,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G355.680+00.006,K,1,known_group,355.68,0.007,263.72818,-32.593484,163.4,preferred_core_band,,,G355.700-00.010,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G340.002+00.159,K,1,known_group,340.002,0.159,251.57367,-45.141602,164.9,preferred_core_band,,,ATCA774,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G283.832-00.730,K,1,known_group,283.832,-0.73,154.90795,-57.857894,165.8,preferred_core_band,,,SHRDS1013G,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G359.956-00.506,K,1,known_group,359.956,-0.505,266.87289,-29.236155,165.9,preferred_core_band,,,S18;FA522,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G298.473+00.104,K,1,known_group,298.473,0.105,183.18875,-62.431875,166.1,preferred_core_band,,,ATCA137; SHRDS251,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G324.642-00.321,K,1,known_group,324.642,-0.321,234.32225,-56.037131,166.1,preferred_core_band,,,ATCA466; SHRDS596,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G007.268-00.060,K,1,known_group,7.269,-0.06,270.55808,-22.700502,166.5,preferred_core_band,,,FA100,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G300.424-00.153,K,1,known_group,300.424,-0.153,187.34429,-62.916799,166.7,preferred_core_band,,,ATCA158; SHRDS273,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G308.916+00.124,K,1,known_group,308.916,0.125,205.75256,-62.146098,167.2,preferred_core_band,,,ATCA261; SHRDS384,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G292.889-00.831,K,1,known_group,292.889,-0.83,171.06406,-61.990276,167.7,preferred_core_band,,,ATCA106; SHRDS205,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G332.990-00.619,K,1,known_group,332.99,-0.618,245.30781,-50.821173,167.8,preferred_core_band,,,ATCA653; SHRDS785,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G003.716-00.225,K,1,known_group,3.717,-0.225,268.76937,-25.86041,168.4,preferred_core_band,,,FA284; FQ602,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G043.894+00.197,K,1,known_group,43.895,0.198,287.72931,9.8356169,168.8,preferred_core_band,,,LA354,no,no,yes,yes,no,-1.10948,-0.591899,-0.0594706,preferred_simple_shell_range,,64.0
+G320.236-00.099,K,1,known_group,320.236,-0.098,227.29563,-58.2649,168.9,preferred_core_band,,,SHRDS1140G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G079.434+01.262,K,1,known_group,79.435,1.263,307.18464,40.957325,169.1,preferred_core_band,,,TW206,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G085.029+02.377,K,1,known_group,85.029,2.377,310.58304,46.100884,170.6,preferred_core_band,,,TW079,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G341.983-00.446,K,1,known_group,341.983,-0.445,254.00055,-44.001084,170.7,preferred_core_band,,,ATCA804,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G002.521-00.024,K,1,known_group,2.522,-0.023,267.89857,-26.787757,171.1,preferred_core_band,,,G002.510-00.028,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G297.651-00.973,K,1,known_group,297.651,-0.973,181.01697,-63.357651,171.4,preferred_core_band,,,G297.655-00.977; G297.651-00.973,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G320.190-00.172,K,1,known_group,320.19,-0.172,227.29022,-58.351415,171.4,preferred_core_band,,,SHRDS1136G,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G352.838+00.934,G,2,known_group,352.838,0.934,260.91662,-34.44935,171.5,preferred_core_band,S11,G353.187+00.888; S11,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G012.825+00.542,K,1,known_group,12.825,0.542,272.88351,-17.555344,172.6,preferred_core_band,,,LA908,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G289.966-00.962,K,1,known_group,289.966,-0.961,165.27257,-61.024391,173.5,preferred_core_band,,,ATCA093; SHRDS190,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G343.344-00.330,K,1,known_group,343.344,-0.33,255.04125,-42.863363,173.8,preferred_core_band,,,GS002,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G350.582-00.074,K,1,known_group,350.582,-0.074,260.36559,-36.879452,173.9,preferred_core_band,,,GS120,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G351.557+00.211,K,1,known_group,351.557,0.211,260.76112,-35.914765,174.2,preferred_core_band,,,G351.590+00.183,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G304.925+00.555,K,1,known_group,304.925,0.556,197.14385,-62.249678,174.4,preferred_core_band,,,ATCA220; SHRDS344,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G189.766+00.333,K,1,known_group,189.766,0.333,92.129972,20.656353,174.6,preferred_core_band,,,G189-1,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G189.859+00.502,G,2,known_group,189.859,0.502,92.336421,20.657067,174.6,preferred_core_band,S252,G189.969+00.395; S252,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G190.049+00.538,K,1,known_group,190.049,0.539,92.468674,20.508412,174.6,preferred_core_band,,,G189-3,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G298.183-00.784,K,1,known_group,298.183,-0.783,182.25652,-63.263125,174.6,preferred_core_band,,,G298.187-00.782; caswell5,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G078.886+00.709,K,1,known_group,78.886,0.709,307.35287,40.188533,174.8,preferred_core_band,,,TW055,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G342.062+00.417,K,1,known_group,342.062,0.417,253.14351,-43.396038,175.0,preferred_core_band,,,G342.085+00.423; caswell23,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G321.725+01.169,K,1,known_group,321.725,1.169,228.46786,-56.414567,175.1,preferred_core_band,,,G321.710+01.157; caswell14,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G302.076+00.029,K,1,known_group,302.076,0.029,190.98478,-62.829937,175.6,preferred_core_band,,,ATCA173; SHRDS288,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G328.162-00.614,K,1,known_group,328.162,-0.613,239.46891,-54.088316,175.8,preferred_core_band,,,ATCA520; SHRDS650,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G058.602+00.639,K,1,known_group,58.603,0.639,294.61718,22.992131,176.1,preferred_core_band,,,LA830,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G206.841-02.380,G,2,known_group,206.841,-2.379,97.952881,4.3254897,177.9,preferred_core_band,S275; Rosette,G206.122-02.329; S275; Rosette,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G211.871-01.341,G,2,known_group,211.871,-1.341,101.18261,0.33266218,178.4,preferred_core_band,S284,G211.950-01.155; S284,,yes,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G353.221-00.243,K,1,known_group,353.221,-0.243,262.36304,-34.788692,178.5,preferred_core_band,,,FA025,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G016.411-00.056,K,1,known_group,16.411,-0.055,275.20733,-14.685521,178.7,preferred_core_band,,,FQ607,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G326.446+00.901,K,1,known_group,326.446,0.902,235.57495,-53.979499,179.0,preferred_core_band,,,G326.441+00.914; caswell17,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G109.927+01.981,K,1,known_group,109.927,1.981,344.30374,61.933944,179.8,preferred_core_band,,,SQ090,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G350.958+00.358,K,1,known_group,350.958,0.359,260.18969,-36.323969,179.9,preferred_core_band,,,GS054,no,no,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G079.296+00.270,K,1,known_group,79.297,0.27,308.13411,40.261045,180.0,preferred_core_band,,,G079.306+00.282,no,no,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,64.0
+G041.126-00.232,G,2,known_group,41.126,-0.232,286.82367,7.1811822,96.8,preferred_core_band,,G041.096-00.213,,no,yes,no,no,yes,46.8433,122.403,123.109,preferred_simple_shell_range,,61.0
+G023.966+00.123,G,2,known_group,23.966,0.123,278.63413,-7.9159022,97.4,preferred_core_band,,G023.956+00.152,,no,yes,no,no,yes,20.2574,40.5909,33.5812,preferred_simple_shell_range,,61.0
+G031.309+00.044,G,2,known_group,31.31,0.044,282.08018,-1.4237339,105.5,preferred_core_band,,G031.275+00.056,,no,yes,no,no,yes,16.1766,43.6538,45.8234,preferred_simple_shell_range,,61.0
+G036.966-00.265,G,2,known_group,36.967,-0.265,284.93752,3.4691237,105.6,preferred_core_band,,G036.996-00.231,,no,yes,no,no,yes,3.10052,2.22771,2.36521,preferred_simple_shell_range,,61.0
+G043.846+00.384,G,2,known_group,43.847,0.384,287.53862,9.8793487,108.3,preferred_core_band,,G043.818+00.393,,no,yes,no,no,yes,4.89698,6.08109,5.07021,preferred_simple_shell_range,,61.0
+G053.601+00.050,G,2,known_group,53.602,0.051,292.57364,18.333973,111.7,preferred_core_band,,G053.541-00.011,,no,yes,no,no,yes,73.2752,67.9671,63.5878,preferred_simple_shell_range,,61.0
+G040.399+00.683,G,2,known_group,40.399,0.683,285.66837,6.9548598,118.2,preferred_core_band,,G040.420+00.700,,no,yes,no,no,yes,9.50371,10.3018,9.01358,preferred_simple_shell_range,,61.0
+G041.351+00.052,G,2,known_group,41.352,0.052,286.67381,7.512086,121.6,preferred_core_band,,G041.379+00.037,,no,yes,no,no,yes,3.37563,4.73618,3.20422,preferred_simple_shell_range,,61.0
+G025.179+00.038,G,2,known_group,25.179,0.038,279.27307,-6.8780209,137.2,preferred_core_band,,G025.160+00.060,,no,yes,no,no,yes,-0.207712,7.74577,5.34882,preferred_simple_shell_range,,61.0
+G053.940+01.314,G,2,known_group,53.94,1.315,291.57135,19.234937,138.4,preferred_core_band,,G053.934+01.324,,no,yes,no,no,yes,7.36678,5.10784,0.0,preferred_simple_shell_range,,61.0
+G019.095-00.719,G,2,known_group,19.096,-0.718,277.10285,-12.623258,157.5,preferred_core_band,,G019.050-00.593,,no,yes,no,no,yes,4.72449,1.12707,0.870414,preferred_simple_shell_range,,61.0
+G031.422-00.256,G,2,known_group,31.422,-0.255,282.39791,-1.4599882,160.1,preferred_core_band,,G031.401-00.259,,no,yes,no,no,yes,16.225,82.4372,75.8644,preferred_simple_shell_range,,61.0
+G035.687-00.847,G,2,known_group,35.687,-0.847,284.87067,2.0654551,166.3,preferred_core_band,,G035.673-00.847,,no,yes,no,no,yes,60.4155,62.2031,59.2846,preferred_simple_shell_range,,61.0
+G049.792+00.360,G,2,known_group,49.793,0.36,290.399,15.129542,170.3,preferred_core_band,,G049.828+00.366,,no,yes,no,no,yes,20.9785,24.6101,20.7393,preferred_simple_shell_range,,61.0
+G036.909+00.433,G,2,known_group,36.909,0.433,284.28887,3.7369103,173.9,preferred_core_band,,G036.914+00.485,,no,yes,no,no,yes,0.0834302,5.39353,4.05106,preferred_simple_shell_range,,61.0
+G024.525-00.041,G,2,known_group,24.525,-0.041,279.041,-7.4950261,175.4,preferred_core_band,,G024.510-00.060,,no,yes,no,no,yes,23.7121,83.5098,81.8595,preferred_simple_shell_range,,61.0
+G028.185+00.314,G,2,known_group,28.186,0.315,280.41074,-4.0793474,175.5,preferred_core_band,,G028.128+00.338,,no,yes,no,no,yes,11.1843,9.6814,8.665,preferred_simple_shell_range,,61.0
+G284.682+00.271,G,2,known_group,284.682,0.271,157.24981,-57.46374,92.5,preferred_core_band,,G284.723+00.313,SHRDS1016G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G328.224-00.582,G,2,known_group,328.224,-0.582,239.51434,-54.023905,92.8,preferred_core_band,,ATCA521; SHRDS652,ATCA523; SHRDS653,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G309.808+00.365,G,2,known_group,309.808,0.366,207.49727,-61.722012,105.8,preferred_core_band,,G309.905+00.373,SHRDS1093G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G320.278-00.217,G,2,known_group,320.278,-0.217,227.47842,-58.345984,106.0,preferred_core_band,,G320.317-00.208,SHRDS1141G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G234.673-00.243,G,2,known_group,234.673,-0.242,112.94039,-19.36526,108.2,preferred_core_band,,TQ053,TQ051; SHRDS006,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G010.574-00.412,K,1,known_group,10.575,-0.411,272.62029,-19.986637,110.2,preferred_core_band,,,,no,no,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G305.538+01.599,G,2,known_group,305.538,1.599,198.26675,-61.162998,111.0,preferred_core_band,,G305.678+01.607,SHRDS1077G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G093.902+01.835,G,2,known_group,93.902,1.835,320.19773,52.408733,113.9,preferred_core_band,,G093.858+01.551,SQ013,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G096.356+01.291,G,2,known_group,96.357,1.291,323.77545,53.710198,115.6,preferred_core_band,,SQ030-1,SQ028,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G281.095-01.594,G,2,known_group,281.095,-1.594,149.8322,-56.981011,116.9,preferred_core_band,,G281.162-01.640,SHRDS1006G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G009.381-00.067,G,2,known_group,9.382,-0.066,271.68075,-20.862056,117.2,preferred_core_band,,G009.405-00.091,FQ143,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G311.484-00.396,G,2,known_group,311.484,-0.396,211.34709,-62.03361,118.9,preferred_core_band,,ATCA304; G311.497-00.483,ATCA303; SHRDS1099G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G282.726-00.878,G,2,known_group,282.726,-0.877,153.04157,-57.362532,119.6,preferred_core_band,,G282.632-00.853,SHRDS1008G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G103.659+02.151,G,2,known_group,103.659,2.151,333.11888,58.940887,120.8,preferred_core_band,,G103.716+02.171,SQ063,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G305.631+01.645,G,2,known_group,305.631,1.646,198.45041,-61.108595,123.7,preferred_core_band,,G305.678+01.607,SHRDS1083G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G322.528+00.259,G,2,known_group,322.528,0.26,230.58091,-56.758336,124.1,preferred_core_band,,G322.407+00.221,SHRDS1153G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G118.725+02.870,G,2,known_group,118.725,2.871,2.7182465,65.410777,128.3,preferred_core_band,,G118.735+02.920,SQ114,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G169.594-00.005,G,2,known_group,169.594,-0.004,79.574591,37.644913,128.6,preferred_core_band,,G169.650-00.074,SQ198,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G345.338+01.442,K,1,known_group,345.338,1.443,254.82411,-40.200332,132.2,preferred_core_band,,,,no,no,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G320.116-00.429,G,2,known_group,320.116,-0.428,227.41506,-58.610081,136.3,preferred_core_band,,G320.109-00.510,SHRDS1134G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G221.955-01.993,G,2,known_group,221.955,-1.992,105.21095,-8.9368524,136.8,preferred_core_band,,TQ037,TQ038,no,yes,yes,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G105.571+00.296,G,2,known_group,105.571,0.297,338.13913,58.407275,139.9,preferred_core_band,,G105.627+00.338,SQ077,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G298.205-00.142,G,2,known_group,298.205,-0.141,182.53232,-62.633337,153.6,preferred_core_band,,G298.559-00.114,SHRDS1042G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G288.979-00.417,G,2,known_group,288.979,-0.417,163.91826,-60.114502,153.8,preferred_core_band,,G289.063-00.355,SHRDS1021G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G017.073-00.096,G,2,known_group,17.073,-0.096,275.56557,-14.120759,165.0,preferred_core_band,,G017.031-00.060,LA1071,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G315.378-00.186,G,2,known_group,315.378,-0.186,218.83416,-60.522423,167.1,preferred_core_band,,G315.312-00.273,SHRDS1117G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G317.925-00.814,G,2,known_group,317.925,-0.814,224.02081,-60.006232,167.3,preferred_core_band,,G317.988-00.759,SHRDS1123G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G345.486+00.399,K,1,known_group,345.486,0.4,256.02627,-40.722886,168.3,preferred_core_band,,,,no,no,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G289.720-01.597,G,2,known_group,289.72,-1.597,164.25435,-61.497939,173.5,preferred_core_band,,G289.755-01.152,SHRDS1025G,no,yes,yes,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,60.0
+G345.372+01.060,G,2,known_group,345.372,1.061,255.24617,-40.40925,90.0,preferred_core_band,,G345.231+01.035; G345.233+01.042,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G352.423-00.023,G,2,known_group,352.423,-0.023,261.59813,-35.330123,91.4,preferred_core_band,,G352.398-00.057,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G075.890+00.358,G,2,known_group,75.89,0.359,305.49462,37.541939,93.1,preferred_core_band,,G075.834+00.402,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G016.352-00.179,G,2,known_group,16.352,-0.178,275.29089,-14.795548,94.6,preferred_core_band,,G016.361-00.209,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G078.438+02.657,G,2,known_group,78.439,2.658,304.91617,40.943994,97.6,preferred_core_band,,G078.323+02.822,,no,yes,no,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G066.842+00.866,G,2,known_group,66.842,0.866,299.048,30.222132,98.9,preferred_core_band,,G066.760+00.869,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G357.465-01.450,G,2,known_group,357.465,-1.449,266.30728,-31.854812,104.6,preferred_core_band,,G357.511-01.435,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G354.671+00.538,G,2,known_group,354.671,0.538,262.54215,-33.148636,107.6,preferred_core_band,,G354.664+00.470,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G350.675+00.832,G,2,known_group,350.675,0.832,259.50707,-36.284321,108.3,preferred_core_band,,G350.524+00.960,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G351.633-01.365,G,2,known_group,351.633,-1.365,262.43671,-36.732257,119.9,preferred_core_band,,G351.694-01.165; G351.696-01.164,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G012.884-00.237,G,2,known_group,12.885,-0.236,273.63043,-17.875894,122.2,preferred_core_band,,G012.910-00.260,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G351.555-01.259,G,2,known_group,351.555,-1.259,262.27222,-36.738505,128.0,preferred_core_band,,G351.694-01.165; G351.696-01.164,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G138.299+01.560,G,2,known_group,138.299,1.561,45.393074,60.490046,130.4,preferred_core_band,,G136.913+01.033,,no,yes,no,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G351.676+00.610,G,2,known_group,351.676,0.611,260.43889,-35.590287,130.6,preferred_core_band,,G351.691+00.669,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G345.372+01.024,G,2,known_group,345.372,1.024,255.28392,-40.431638,132.2,preferred_core_band,,G345.231+01.035; G345.233+01.042,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G353.160+01.042,G,2,known_group,353.16,1.043,261.0281,-34.122431,132.2,preferred_core_band,,G353.036+00.749,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G351.698+00.152,G,2,known_group,351.698,0.152,260.91976,-35.831915,143.3,preferred_core_band,,G351.590+00.183; G351.617+00.171,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G081.434+00.484,G,2,known_group,81.435,0.485,309.61146,42.09986,147.0,preferred_core_band,,G081.480+00.561,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G005.915-00.354,G,2,known_group,5.916,-0.353,270.10586,-24.021272,149.0,preferred_core_band,,G005.900-00.427,,no,yes,no,no,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0
+G136.826+01.113,G,2,known_group,136.826,1.113,42.306267,60.767505,178.1,preferred_core_band,,G136.913+01.033,,no,yes,no,yes,no,0.0,0.0,0.0,preferred_simple_shell_range,,56.0

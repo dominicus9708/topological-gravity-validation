@@ -1,0 +1,26 @@
+wise_name: G233.830-00.180
+profile_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles\G233.830-00.180_radial_profile.csv
+
+observational structural dimensions
+Dw_obs_inner: 1.3008598278973935
+Dw_obs_shell: 1.412987642111222
+Dw_obs_background: 1.678538158171048
+
+mass/proxy bridge from final input
+mass_source_key: PROXY_S305_DEWANGAN2020_O85_O95_001
+mass_value_type: proxy_or_bridge_only
+proxy_kind: spectral_type
+log_nly: nan
+spectral_type: O8.5V and O9.5V stars excite S305
+radio_proxy_available: yes
+
+mass_proxy: 1.0
+mass_proxy_kind: spectral_type_presence_proxy
+radius_scale_pc: 
+radius_scale_kind: no_physical_radius_scale
+shell_mass_volume_density: 
+background_mass_volume_density: 
+sigma_mass_volume: 
+
+bridge_status: observational_only__no_physical_radius_scale
+interpretation_flag: observational_only__no_physical_radius_scale

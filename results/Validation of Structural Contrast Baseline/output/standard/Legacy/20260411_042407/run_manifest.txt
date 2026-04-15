@@ -1,0 +1,22 @@
+Validation of Structural Contrast Baseline
+Standard pipeline manifest
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+input_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_final_input.csv
+output_dir: C:\Users\mincu\Desktop\topological_gravity_project\results\Validation of Structural Contrast Baseline\output\standard\20260411_042407
+
+target_count: 5
+
+selected targets
+--------------------
+- G034.256+00.136 | rank=1 | radius_arcsec=101.5
+- G029.956-00.020 | rank=2 | radius_arcsec=94.4
+- G060.881-00.135 | rank=3 | radius_arcsec=129.0
+- G045.475+00.130 | rank=4 | radius_arcsec=144.1
+- G028.983-00.604 | rank=5 | radius_arcsec=179.4
+
+meaning
+--------------------
+This is the standard baseline structure stage.
+The output defines inner/shell/background comparison zones for later profile extraction and topological comparison.

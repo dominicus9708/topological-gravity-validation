@@ -1,0 +1,8 @@
+﻿metric,value
+master_rows,8422
+known_group_rows,1687
+candidate_rows,819
+top_priority_rows,770
+radius_90_180_in_known_group,805
+known_group_with_complexity_warning,77
+known_group_with_other_names,1503

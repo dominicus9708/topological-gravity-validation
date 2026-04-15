@@ -1,0 +1,16 @@
+Validation of Structural Contrast Baseline
+FITS-based radial profile builder manifest
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+input_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_final_input.csv
+raw_image_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\images
+profile_output_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles
+log_output_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\logs
+
+Notes
+--------------------
+This script builds radial profiles from FITS files in the raw image layer.
+Direct files and retry files are both searched.
+Pixel scale priority: metadata override > FITS header > fallback 1.0 arcsec/pixel.
+Current v1 still assumes the target center is the image center.

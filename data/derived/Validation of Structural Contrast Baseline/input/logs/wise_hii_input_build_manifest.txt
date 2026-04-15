@@ -1,0 +1,42 @@
+Validation of Structural Contrast Baseline
+WISE H II final input builder manifest
+============================================================
+
+Auto-discovered source files
+----------------------------
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables\wise_hii_master_catalog_for_baseline_review.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\review\wise_hii_review_known_group_priority.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\review\wise_hii_review_candidate_priority.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\review\wise_hii_review_top_priority_first_pass.csv
+
+Output files
+------------
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_input_candidate_pool.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_input_top_shortlist.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_image_review_queue.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_manual_selection_template.csv
+
+Row summary
+-----------
+master_rows: 8422
+known_group_rows: 1687
+candidate_rows: 819
+top_priority_rows: 770
+input_pool_rows: 2506
+top_shortlist_rows: 150
+image_review_queue_rows: 30
+manual_template_rows: 30
+
+Interpretation
+--------------
+input_candidate_pool.csv  : all workable input-stage candidates
+input_top_shortlist.csv   : narrowed shortlist for next review step
+image_review_queue.csv    : first manual cutout inspection queue
+manual_selection_template.csv : file to fill after visual review
+
+Recommended next step
+---------------------
+1. Open wise_hii_image_review_queue.csv
+2. Download or inspect cutouts for the first 10 to 30 rows
+3. Fill manual_selection_template.csv
+4. Then build the final fixed input file from the manual keep list

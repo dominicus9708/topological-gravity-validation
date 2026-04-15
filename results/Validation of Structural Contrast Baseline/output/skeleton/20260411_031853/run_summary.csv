@@ -1,0 +1,8 @@
+﻿metric,value
+target_count,5.0
+radius_min_arcsec,94.4
+radius_median_arcsec,129.0
+radius_max_arcsec,179.4
+shell_inner_min_arcsec,56.64
+shell_outer_max_arcsec,179.4
+bg_outer_max_arcsec,322.92

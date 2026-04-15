@@ -1,0 +1,26 @@
+Validation of Structural Contrast Baseline
+WISE H II true final input manifest
+============================================================
+
+Files used
+----------
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables\wise_hii_master_catalog_for_baseline_review.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\review\wise_hii_review_top_priority_first_pass.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\review\wise_hii_manual_selection_filled.csv
+
+Files created
+-------------
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_final_input.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_final_targets_summary.csv
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\logs\wise_hii_final_input_manifest.txt
+C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\logs\wise_hii_final_input_summary.csv
+
+Final target count
+------------------
+5
+
+- G034.256+00.136 | rank=1 | reason=stable first-pass baseline candidate
+- G029.956-00.020 | rank=2 | reason=compact but strong baseline candidate
+- G060.881-00.135 | rank=3 | reason=mid-size baseline candidate
+- G045.475+00.130 | rank=4 | reason=backup baseline candidate
+- G028.983-00.604 | rank=5 | reason=larger-radius backup candidate

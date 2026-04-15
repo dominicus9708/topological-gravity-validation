@@ -1,0 +1,25 @@
+WISE H II tables_2 derived intersection build
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Raw mass dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass
+Raw fits dir: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\fits
+Output dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\wise_hii_catalog\tables_2
+
+Mass side rows: 2506
+FITS side rows: 2506
+Intersection present: 2506
+Provisional preselection: 2506
+Strict ready: 0
+Standard candidates: 0
+Topological candidates: 0
+
+Interpretation rule:
+- strict_ready: both mass and FITS are meaningfully ready.
+- provisional_preselection: shared target pool with basic geometry, useful as first-pass workbench.
+- standard_candidate: FITS appears usable for baseline input construction.
+- topological_candidate: FITS and mass/bridge both appear usable.
+
+Operational note:
+If strict_ready is empty, that is not an error.
+It means raw mass/FITS confirmation has not yet matured enough.
+In that case, provisional_preselection is the main table to continue filling.

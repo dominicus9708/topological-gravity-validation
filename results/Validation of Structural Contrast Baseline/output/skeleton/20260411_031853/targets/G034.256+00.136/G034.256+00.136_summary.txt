@@ -1,0 +1,18 @@
+wise_name: G034.256+00.136
+manual_final_rank: 1
+manual_reason: stable first-pass baseline candidate
+manual_shell_type: single_shell_candidate
+manual_background_ring_defined: yes
+catalog_class: K
+shortlist_source: known_group
+glon: 34.256
+glat: 0.136
+ra: 283.34203
+dec: 1.2408767
+radius_arcsec: 101.5
+
+skeleton radial guide
+shell_inner_arcsec: 60.9
+shell_outer_arcsec: 101.5
+bg_inner_arcsec: 121.8
+bg_outer_arcsec: 182.7

@@ -1,0 +1,26 @@
+wise_name: G000.649-00.080
+profile_file: not_found
+
+observational structural dimensions
+Dw_obs_inner: 
+Dw_obs_shell: 
+Dw_obs_background: 
+
+mass/proxy bridge from final input
+mass_source_key: MASS_SGRB2_MENG2022_PROXY_001
+mass_value_type: proxy_or_bridge_only
+proxy_kind: spectral_type
+log_nly: nan
+spectral_type: B0.5-O6
+radio_proxy_available: yes
+
+mass_proxy: 
+mass_proxy_kind: not_evaluated
+radius_scale_pc: 
+radius_scale_kind: not_evaluated
+shell_mass_volume_density: 
+background_mass_volume_density: 
+sigma_mass_volume: 
+
+bridge_status: missing_observational_profile
+interpretation_flag: missing_observational_profile

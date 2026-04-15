@@ -1,0 +1,17 @@
+Validation of Structural Contrast Baseline
+Topological pipeline v2 manifest
+============================================================
+
+project_root: C:\Users\mincu\Desktop\topological_gravity_project
+input_file: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\wise_hii_final_input.csv
+profile_dir: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Validation of Structural Contrast Baseline\input\wise_hii_catalog\radial_profiles
+output_dir: C:\Users\mincu\Desktop\topological_gravity_project\results\Validation of Structural Contrast Baseline\output\topological_v2\20260411_113120
+
+target_count: 5
+
+meaning
+--------------------
+This v2 pipeline reads the final input directly from the input layer.
+It re-creates the standard inner/shell/background zones.
+It transforms I(r) into L(<r), alpha_obs(r), and D_w_obs(zone).
+Final shell contrast is sigma_obs_shell = D_w_obs(shell) - D_w_obs(background).

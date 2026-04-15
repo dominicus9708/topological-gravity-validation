@@ -1,0 +1,31 @@
+﻿wise_name,manual_final_rank,manual_keep,manual_reason,manual_shell_type,manual_background_ring_defined,manual_notes
+G029.956-00.020,2,yes,compact but strong baseline candidate,single_shell_candidate,yes,secondary target
+G034.256+00.136,1,yes,stable first-pass baseline candidate,single_shell_candidate,yes,best primary target from automatic proxy ranking
+G060.881-00.135,3,yes,mid-size baseline candidate,single_shell_candidate,yes,third target
+G045.475+00.130,4,yes,backup baseline candidate,single_shell_candidate,yes,backup 1
+G040.503+02.537,,no,not selected in automatic narrowing,,,
+G028.983-00.604,5,yes,larger-radius backup candidate,single_shell_candidate,yes,backup 2
+G336.491-01.474,,no,not selected in automatic narrowing,,,
+G328.572-00.527,,no,not selected in automatic narrowing,,,
+G353.195+00.910,,no,not selected in automatic narrowing,,,
+G305.363+00.150,,no,not selected in automatic narrowing,,,
+G090.226+01.718,,no,not selected in automatic narrowing,,,
+G070.329+01.589,,no,not selected in automatic narrowing,,,
+G305.362+00.197,,no,not selected in automatic narrowing,,,
+G305.558+00.011,,no,not selected in automatic narrowing,,,
+G136.119+02.118,,no,not selected in automatic narrowing,,,
+G340.780-01.022,,no,not selected in automatic narrowing,,,
+G305.535+00.357,,no,not selected in automatic narrowing,,,
+G197.786-02.320,,no,not selected in automatic narrowing,,,
+G217.629-00.178,,no,not selected in automatic narrowing,,,
+G110.211+02.616,,no,not selected in automatic narrowing,,,
+G299.349-00.267,,no,not selected in automatic narrowing,,,
+G012.476-01.102,,no,not selected in automatic narrowing,,,
+G180.872+04.112,,no,not selected in automatic narrowing,,,
+G322.162+00.625,,no,not selected in automatic narrowing,,,
+G192.638-00.008,,no,not selected in automatic narrowing,,,
+G015.212+00.167,,no,not selected in automatic narrowing,,,
+G055.855-03.803,,no,not selected in automatic narrowing,,,
+G055.114+02.422,,no,not selected in automatic narrowing,,,
+G025.700+00.028,,no,not selected in automatic narrowing,,,
+G023.423-00.216,,no,not selected in automatic narrowing,,,

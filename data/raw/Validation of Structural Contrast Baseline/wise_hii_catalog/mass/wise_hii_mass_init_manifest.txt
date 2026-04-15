@@ -1,0 +1,21 @@
+WISE H II mass raw initialization
+
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Input directory: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\candidate_lists
+Output directory: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Validation of Structural Contrast Baseline\wise_hii_catalog\mass
+
+Known shortlist rows: 1687
+Candidate shortlist rows: 819
+Merged rows before dedup: 2506
+Unique wise_name rows: 2506
+
+Generated files:
+- wise_hii_mass_search_registry.csv
+- wise_hii_mass_candidates_initial.csv
+- wise_hii_mass_source_registry.csv
+- wise_hii_mass_init_manifest.txt
+
+Operational note:
+This step initializes raw mass-identification work.
+No stellar masses are inferred here.
+Mass values and source rows should be filled only after literature confirmation.

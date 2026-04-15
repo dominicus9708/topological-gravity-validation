@@ -1,0 +1,14 @@
+metric,value
+mass_rows,2506
+fits_rows,2506
+intersection_present,2506
+provisional_preselection,2506
+strict_ready,1
+standard_stage_seed_only,0
+standard_stage_ready,2506
+topological_stage_ready,1
+mass_ready_direct,0
+mass_ready_proxy,1
+fits_ready_verified,0
+fits_ready_downloadable,2506
+fits_partial,0
