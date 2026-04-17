@@ -1,0 +1,58 @@
+DESIVAST analysis and selection pipeline summary
+================================================
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Raw root: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST
+Base output root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\derived
+Run output root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\derived\derived\20260416_181814
+
+Detected input catalogs
+-----------------------
+- DESIVAST_BGS_VOLLIM_VoidFinder_NGC.fits :: exists=True :: algorithm=VoidFinder :: sky_region=NGC
+- DESIVAST_BGS_VOLLIM_VoidFinder_SGC.fits :: exists=True :: algorithm=VoidFinder :: sky_region=SGC
+- DESIVAST_BGS_VOLLIM_V2_ZOBOV_NGC.fits :: exists=True :: algorithm=ZOBOV :: sky_region=NGC
+- DESIVAST_BGS_VOLLIM_V2_ZOBOV_SGC.fits :: exists=True :: algorithm=ZOBOV :: sky_region=SGC
+- DESIVAST_BGS_VOLLIM_V2_VIDE_NGC.fits :: exists=True :: algorithm=VIDE :: sky_region=NGC
+- DESIVAST_BGS_VOLLIM_V2_VIDE_SGC.fits :: exists=True :: algorithm=VIDE :: sky_region=SGC
+- DESIVAST_BGS_VOLLIM_V2_REVOLVER_NGC.fits :: exists=True :: algorithm=REVOLVER :: sky_region=NGC
+- DESIVAST_BGS_VOLLIM_V2_REVOLVER_SGC.fits :: exists=True :: algorithm=REVOLVER :: sky_region=SGC
+
+Catalog summary
+---------------
+- VoidFinder_NGC: rows=3241, basic_geometry_rows=3241, distance_proxy_rows=3241, radius_eff_med=15.1171, distance_proxy_range=(67.3109, 671.164)
+- VoidFinder_SGC: rows=524, basic_geometry_rows=524, distance_proxy_rows=524, radius_eff_med=14.9537, distance_proxy_range=(128.128, 670.479)
+- ZOBOV_NGC: rows=2950, basic_geometry_rows=2949, distance_proxy_rows=2949, radius_eff_med=11.6016, distance_proxy_range=(54.9159, 676.094)
+- ZOBOV_SGC: rows=569, basic_geometry_rows=568, distance_proxy_rows=568, radius_eff_med=10.684, distance_proxy_range=(44.299, 675.995)
+- VIDE_NGC: rows=1258, basic_geometry_rows=1258, distance_proxy_rows=1258, radius_eff_med=15.603, distance_proxy_range=(0.0342871, 0.236439)
+- VIDE_SGC: rows=220, basic_geometry_rows=220, distance_proxy_rows=220, radius_eff_med=14.2409, distance_proxy_range=(0.052951, 0.235608)
+- REVOLVER_NGC: rows=1692, basic_geometry_rows=1692, distance_proxy_rows=1692, radius_eff_med=16.1144, distance_proxy_range=(0.0342871, 0.236439)
+- REVOLVER_SGC: rows=300, basic_geometry_rows=300, distance_proxy_rows=300, radius_eff_med=14.579, distance_proxy_range=(0.0456266, 0.235608)
+
+Recommended representative cases
+-------------------------------
+- rank=1 :: REVOLVER_NGC :: void_id=1618 :: algorithm=REVOLVER :: sky_region=NGC :: radius_band=small :: radius_eff=12.8394 :: distance_proxy=0.224651 :: distance_kind=trusted_redshift :: distance_status=usable :: selection_score=0.7279
+- rank=2 :: REVOLVER_SGC :: void_id=262 :: algorithm=REVOLVER :: sky_region=SGC :: radius_band=small :: radius_eff=12.9404 :: distance_proxy=0.200699 :: distance_kind=trusted_redshift :: distance_status=usable :: selection_score=0.7258
+- rank=3 :: VIDE_NGC :: void_id=66 :: algorithm=VIDE :: sky_region=NGC :: radius_band=medium :: radius_eff=16.4109 :: distance_proxy=0.217296 :: distance_kind=trusted_redshift :: distance_status=usable :: selection_score=0.9074
+- rank=4 :: VIDE_SGC :: void_id=172 :: algorithm=VIDE :: sky_region=SGC :: radius_band=medium :: radius_eff=16.6439 :: distance_proxy=0.221216 :: distance_kind=trusted_redshift :: distance_status=usable :: selection_score=0.9002
+- rank=5 :: ZOBOV_NGC :: void_id=311 :: algorithm=ZOBOV :: sky_region=NGC :: radius_band=large :: radius_eff=17.8115 :: distance_proxy=502.681 :: distance_kind=coord_r3d_proxy :: distance_status=proxy_only :: selection_score=0.9486
+- rank=6 :: ZOBOV_SGC :: void_id=108 :: algorithm=ZOBOV :: sky_region=SGC :: radius_band=large :: radius_eff=18.2646 :: distance_proxy=602.118 :: distance_kind=coord_r3d_proxy :: distance_status=proxy_only :: selection_score=0.9168
+
+Stacked pool
+------------
+- selected rows: 36
+- radius median: 17.8318
+- distance_proxy median: 0.219872
+
+Generated files
+---------------
+- desivast_file_inventory.csv
+- desivast_sha256_verification.csv
+- desivast_catalog_summary.csv
+- desivast_column_mapping.csv
+- desivast_all_candidates_scored.csv
+- desivast_representative_voids_selected.csv
+- desivast_stacked_pool_candidates.csv
+- standardized_catalogs/*.csv
+
+Interpretation note
+-------------------
+005 writes each run into data/derived/Cosmic Void Structural Validation/derived/derived/YYYYMMDD_HHMMSS/. It also uses stricter algorithm-specific distance handling and keeps distance as a lower-weight diagnostic field.

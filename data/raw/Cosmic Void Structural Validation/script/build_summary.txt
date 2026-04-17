@@ -1,0 +1,19 @@
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Target raw root: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation
+Datasets copied: 5
+Sources copied: 6
+Created dataset subfolders:
+- data\raw\Cosmic Void Structural Validation\DESIVAST
+- data\raw\Cosmic Void Structural Validation\DESI_Stellar_Mass_Emission
+- data\raw\Cosmic Void Structural Validation\DESI_Gfinder
+- data\raw\Cosmic Void Structural Validation\SDSS_DR7_VoidFinder
+- data\raw\Cosmic Void Structural Validation\SDSS_DR7_Watershed
+
+Generated files:
+- data\raw\Cosmic Void Structural Validation\recommended_datasets_local_copy.csv
+- data\raw\Cosmic Void Structural Validation\sources_local_copy.csv
+- data\raw\Cosmic Void Structural Validation\download_plan_expanded.csv
+- data\raw\Cosmic Void Structural Validation\source_registry_expanded.csv
+
+Important note:
+This script builds the raw-data registry and helper files only. It does not guarantee automatic download because many official pages here are documentation pages, not direct file URLs.

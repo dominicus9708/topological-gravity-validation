@@ -1,0 +1,48 @@
+Cosmic Void Structural Validation topological summary (002 edge-corrected radius)
+========================================================================
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Input root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\input
+Run output: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\topological\20260417_003508
+
+Purpose
+-------
+This topological-stage pipeline reads the finalized official input directly and computes void structural contrast and effective structural dimension using an edge-corrected derived radius. No standard-stage output file is used as input.
+
+Definitions
+-----------
+r_topo = r_eff * (1 - lambda_edge * edge_fraction)
+V_topo = (4/3) * pi * r_topo^3
+rho_proxy_topo = M_proxy / V_topo
+sigma_void = (rho_proxy_topo - rho_bg) / rho_bg
+D_void = 3 + gamma * sigma_void, gamma = 1.0
+lambda_edge = 0.5
+rho_bg subset = core_stacked
+rho_bg value = 106845784.02535869
+
+Subsets
+-------
+- master rows: 28
+- core representatives: 4
+- support representatives: 0
+- core stacked: 24
+- support stacked: 0
+
+Generated files
+---------------
+- topological_master_working.csv
+- topological_core_representatives_working.csv
+- topological_support_representatives_working.csv
+- topological_core_stacked_working.csv
+- topological_support_stacked_working.csv
+- topological_summary.csv
+- topological_radius_vs_sigma_void.png
+- topological_radius_vs_D_void.png
+- topological_radius_eff_vs_r_topo.png
+- topological_algorithm_counts.png
+- topological_core_representatives_D_void.png
+- topological_core_stacked_sigma_void.png
+- topological_summary.txt
+
+Interpretation note
+-------------------
+This stage uses the same official input source as the standard stage, but recomputes all derived quantities internally and replaces the catalog radius with an edge-corrected topological radius before evaluating sigma_void and D_void.

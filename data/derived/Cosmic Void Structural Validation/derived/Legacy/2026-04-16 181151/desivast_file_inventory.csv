@@ -1,0 +1,10 @@
+﻿catalog_key,filename,exists,algorithm,sky_region,path,size_bytes
+VoidFinder_NGC,DESIVAST_BGS_VOLLIM_VoidFinder_NGC.fits,True,VoidFinder,NGC,C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST\DESIVAST_BGS_VOLLIM_VoidFinder_NGC.fits,3864960
+VoidFinder_SGC,DESIVAST_BGS_VOLLIM_VoidFinder_SGC.fits,True,VoidFinder,SGC,C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST\DESIVAST_BGS_VOLLIM_VoidFinder_SGC.fits,578880
+ZOBOV_NGC,DESIVAST_BGS_VOLLIM_V2_ZOBOV_NGC.fits,True,ZOBOV,NGC,C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST\DESIVAST_BGS_VOLLIM_V2_ZOBOV_NGC.fits,44026560
+ZOBOV_SGC,DESIVAST_BGS_VOLLIM_V2_ZOBOV_SGC.fits,True,ZOBOV,SGC,C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST\DESIVAST_BGS_VOLLIM_V2_ZOBOV_SGC.fits,6644160
+VIDE_NGC,DESIVAST_BGS_VOLLIM_V2_VIDE_NGC.fits,True,VIDE,NGC,C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST\DESIVAST_BGS_VOLLIM_V2_VIDE_NGC.fits,459138240
+VIDE_SGC,DESIVAST_BGS_VOLLIM_V2_VIDE_SGC.fits,True,VIDE,SGC,C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST\DESIVAST_BGS_VOLLIM_V2_VIDE_SGC.fits,61980480
+REVOLVER_NGC,DESIVAST_BGS_VOLLIM_V2_REVOLVER_NGC.fits,True,REVOLVER,NGC,C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST\DESIVAST_BGS_VOLLIM_V2_REVOLVER_NGC.fits,611812800
+REVOLVER_SGC,DESIVAST_BGS_VOLLIM_V2_REVOLVER_SGC.fits,True,REVOLVER,SGC,C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST\DESIVAST_BGS_VOLLIM_V2_REVOLVER_SGC.fits,87442560
+sha256sum,dr1_vac_dr1_desivast_v1.0.sha256sum,True,,,C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST\dr1_vac_dr1_desivast_v1.0.sha256sum,840

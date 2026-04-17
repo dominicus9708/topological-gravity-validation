@@ -1,0 +1,16 @@
+﻿metric,value
+standard_run,C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\standard
+topological_run,C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\topological
+merged_rows,36
+standard_log_density_ratio_min,-0.38809455945413696
+standard_log_density_ratio_median,-0.006264689330289784
+standard_log_density_ratio_max,0.3836769708876063
+topological_dimension_shift_min,-0.8686074357112292
+topological_dimension_shift_median,-0.004095007863829991
+topological_dimension_shift_max,2.8257822023019914
+radius_eff_min,15.167447005149697
+radius_eff_median,17.716142807823587
+radius_eff_max,21.821675299984303
+r_topo_min,15.167447005149697
+r_topo_median,17.36097187896386
+r_topo_max,21.759094629550475

@@ -1,0 +1,135 @@
+﻿subset,metric,value
+master,rows,28
+master,radius_eff_min,15.167447005149697
+master,radius_eff_median,17.716142807823587
+master,radius_eff_max,21.821675299984303
+master,effective_volume_proxy_min,14615.916993136812
+master,effective_volume_proxy_median,23291.42856772485
+master,effective_volume_proxy_max,43526.412870153545
+master,mass_preferred_sum_min,1226911837418.7517
+master,mass_preferred_sum_median,2467591194502.481
+master,mass_preferred_sum_max,6372227732060.353
+master,rho_proxy_min,43979188.861880645
+master,rho_proxy_median,105944175.44322914
+master,rho_proxy_max,260027179.6267928
+master,rho_bg_min,106845784.02535869
+master,rho_bg_median,106845784.02535869
+master,rho_bg_max,106845784.02535869
+master,sigma_void_min,-0.5883862965389195
+master,sigma_void_median,-0.00843841046564426
+master,sigma_void_max,1.4336681320535603
+master,D_void_min,2.4116137034610805
+master,D_void_median,2.991561589534356
+master,D_void_max,4.43366813205356
+master,sigma_void_edge_adjusted_min,-0.43916988188687817
+master,sigma_void_edge_adjusted_median,-0.007888928974335727
+master,sigma_void_edge_adjusted_max,1.1380225996332236
+master,D_void_edge_adjusted_min,2.5608301181131217
+master,D_void_edge_adjusted_median,2.9921110710256644
+master,D_void_edge_adjusted_max,4.138022599633223
+master,mass_match_count_min,18.0
+master,mass_match_count_median,30.0
+master,mass_match_count_max,59.0
+master,mass_nearest_sep_deg_min,0.0002266813246517
+master,mass_nearest_sep_deg_median,0.00422511735927035
+master,mass_nearest_sep_deg_max,0.0069379199408225
+master,selection_score_min,0.8494473548809091
+master,selection_score_median,0.872928527213221
+master,selection_score_max,0.9332164708691014
+master,mass_quality_score_min,0.9206186309782344
+master,mass_quality_score_median,1.0460727302579453
+master,mass_quality_score_max,1.2897840378018022
+master,algorithm_counts,"{'REVOLVER': 16, 'VIDE': 12}"
+master,sky_region_counts,"{'NGC': 23, 'SGC': 5}"
+master,radius_band_counts,"{'large': 21, 'medium': 5, 'small': 2}"
+master,topological_quality_counts,{'usable': 28}
+core_representatives,rows,4
+core_representatives,radius_eff_min,17.038909009139836
+core_representatives,radius_eff_median,17.37752590848171
+core_representatives,radius_eff_max,18.71760966971281
+core_representatives,effective_volume_proxy_min,20721.155050494206
+core_representatives,effective_volume_proxy_median,22006.291809109527
+core_representatives,effective_volume_proxy_max,27468.805140058692
+core_representatives,mass_preferred_sum_min,1434104821852.947
+core_representatives,mass_preferred_sum_median,1950848008177.7139
+core_representatives,mass_preferred_sum_max,3669387534729.058
+core_representatives,rho_proxy_min,69209695.03670323
+core_representatives,rho_proxy_median,87576935.23996618
+core_representatives,rho_proxy_max,133583805.92164402
+core_representatives,rho_bg_min,106845784.02535869
+core_representatives,rho_bg_median,106845784.02535869
+core_representatives,rho_bg_max,106845784.02535869
+core_representatives,sigma_void_min,-0.3522468324976018
+core_representatives,sigma_void_median,-0.18034262148162303
+core_representatives,sigma_void_max,0.2502487312923769
+core_representatives,D_void_min,2.6477531675023984
+core_representatives,D_void_median,2.819657378518377
+core_representatives,D_void_max,3.250248731292377
+core_representatives,sigma_void_edge_adjusted_min,-0.26941869085412495
+core_representatives,sigma_void_edge_adjusted_median,-0.13865380991423035
+core_representatives,sigma_void_edge_adjusted_max,0.25022469580721596
+core_representatives,D_void_edge_adjusted_min,2.730581309145875
+core_representatives,D_void_edge_adjusted_median,2.8613461900857695
+core_representatives,D_void_edge_adjusted_max,3.250224695807216
+core_representatives,mass_match_count_min,19.0
+core_representatives,mass_match_count_median,24.5
+core_representatives,mass_match_count_max,38.0
+core_representatives,mass_nearest_sep_deg_min,0.0003923440595661
+core_representatives,mass_nearest_sep_deg_median,0.0042080063238024
+core_representatives,mass_nearest_sep_deg_max,0.0057794717976562
+core_representatives,selection_score_min,0.8629395536608017
+core_representatives,selection_score_median,0.8940438946060554
+core_representatives,selection_score_max,0.9332164708691014
+core_representatives,mass_quality_score_min,0.9917365868265202
+core_representatives,mass_quality_score_median,1.197231206805225
+core_representatives,mass_quality_score_max,1.2897840378018022
+core_representatives,algorithm_counts,"{'VIDE': 3, 'REVOLVER': 1}"
+core_representatives,sky_region_counts,{'NGC': 4}
+core_representatives,radius_band_counts,"{'small': 2, 'medium': 1, 'large': 1}"
+core_representatives,topological_quality_counts,{'usable': 4}
+support_representatives,rows,0
+core_stacked,rows,24
+core_stacked,radius_eff_min,15.167447005149697
+core_stacked,radius_eff_median,17.739509598327018
+core_stacked,radius_eff_max,21.821675299984303
+core_stacked,effective_volume_proxy_min,14615.916993136812
+core_stacked,effective_volume_proxy_median,23383.832914147013
+core_stacked,effective_volume_proxy_max,43526.412870153545
+core_stacked,mass_preferred_sum_min,1226911837418.7517
+core_stacked,mass_preferred_sum_median,2467591194502.481
+core_stacked,mass_preferred_sum_max,6372227732060.353
+core_stacked,rho_proxy_min,43979188.861880645
+core_stacked,rho_proxy_median,106845784.02535869
+core_stacked,rho_proxy_max,260027179.6267928
+core_stacked,rho_bg_min,106845784.02535869
+core_stacked,rho_bg_median,106845784.02535869
+core_stacked,rho_bg_max,106845784.02535869
+core_stacked,sigma_void_min,-0.5883862965389195
+core_stacked,sigma_void_median,0.0
+core_stacked,sigma_void_max,1.4336681320535603
+core_stacked,D_void_min,2.4116137034610805
+core_stacked,D_void_median,3.0
+core_stacked,D_void_max,4.43366813205356
+core_stacked,sigma_void_edge_adjusted_min,-0.43916988188687817
+core_stacked,sigma_void_edge_adjusted_median,0.0002747407456542665
+core_stacked,sigma_void_edge_adjusted_max,1.1380225996332236
+core_stacked,D_void_edge_adjusted_min,2.5608301181131217
+core_stacked,D_void_edge_adjusted_median,3.0002747407456543
+core_stacked,D_void_edge_adjusted_max,4.138022599633223
+core_stacked,mass_match_count_min,18.0
+core_stacked,mass_match_count_median,32.5
+core_stacked,mass_match_count_max,59.0
+core_stacked,mass_nearest_sep_deg_min,0.0002266813246517
+core_stacked,mass_nearest_sep_deg_median,0.0042549453787613
+core_stacked,mass_nearest_sep_deg_max,0.0069379199408225
+core_stacked,selection_score_min,0.8494473548809091
+core_stacked,selection_score_median,0.872928527213221
+core_stacked,selection_score_max,0.9332164708691014
+core_stacked,mass_quality_score_min,0.9206186309782344
+core_stacked,mass_quality_score_median,1.007785660953713
+core_stacked,mass_quality_score_max,1.2897840378018022
+core_stacked,algorithm_counts,"{'REVOLVER': 15, 'VIDE': 9}"
+core_stacked,sky_region_counts,"{'NGC': 19, 'SGC': 5}"
+core_stacked,radius_band_counts,"{'large': 20, 'medium': 4}"
+core_stacked,topological_quality_counts,{'usable': 24}
+support_stacked,rows,0

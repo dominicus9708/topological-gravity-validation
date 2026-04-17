@@ -1,0 +1,29 @@
+Cosmic Void Structural Validation skeleton summary
+==================================================
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Input root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\input
+Primary input: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\input\cosmic_void_master_input.csv
+Run output: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\skeleton\20260416_205119
+
+Purpose
+-------
+This is a skeleton-stage pipeline. It checks path connectivity, input loading,
+basic column presence, working-copy creation, and minimal plot generation.
+
+Row / column status
+-------------------
+- rows: 37
+- columns: 37
+- missing required columns: 0
+- missing list: none
+
+Generated files
+---------------
+- skeleton_summary.csv
+- skeleton_working_copy.csv
+- skeleton_radius_eff_check.png
+- skeleton_summary.txt
+
+Interpretation note
+-------------------
+This stage does not test the physical validity of the cosmic void model. It only confirms that the official input can be read and that the pipeline can create basic derived outputs in the expected results structure.

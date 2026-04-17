@@ -1,0 +1,57 @@
+DESIVAST analysis and selection pipeline summary
+================================================
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Raw root: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESIVAST
+Output root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\derived
+
+Detected input catalogs
+-----------------------
+- DESIVAST_BGS_VOLLIM_VoidFinder_NGC.fits :: exists=True :: algorithm=VoidFinder :: sky_region=NGC
+- DESIVAST_BGS_VOLLIM_VoidFinder_SGC.fits :: exists=True :: algorithm=VoidFinder :: sky_region=SGC
+- DESIVAST_BGS_VOLLIM_V2_ZOBOV_NGC.fits :: exists=True :: algorithm=ZOBOV :: sky_region=NGC
+- DESIVAST_BGS_VOLLIM_V2_ZOBOV_SGC.fits :: exists=True :: algorithm=ZOBOV :: sky_region=SGC
+- DESIVAST_BGS_VOLLIM_V2_VIDE_NGC.fits :: exists=True :: algorithm=VIDE :: sky_region=NGC
+- DESIVAST_BGS_VOLLIM_V2_VIDE_SGC.fits :: exists=True :: algorithm=VIDE :: sky_region=SGC
+- DESIVAST_BGS_VOLLIM_V2_REVOLVER_NGC.fits :: exists=True :: algorithm=REVOLVER :: sky_region=NGC
+- DESIVAST_BGS_VOLLIM_V2_REVOLVER_SGC.fits :: exists=True :: algorithm=REVOLVER :: sky_region=SGC
+
+Catalog summary
+---------------
+- VoidFinder_NGC: rows=3241, basic_geometry_rows=3241, distance_proxy_rows=3241, radius_eff_med=15.1171, distance_proxy_range=(67.3109, 671.164)
+- VoidFinder_SGC: rows=524, basic_geometry_rows=524, distance_proxy_rows=524, radius_eff_med=14.9537, distance_proxy_range=(128.128, 670.479)
+- ZOBOV_NGC: rows=2950, basic_geometry_rows=2949, distance_proxy_rows=2949, radius_eff_med=11.6016, distance_proxy_range=(8.17363e+27, 1.01017e+28)
+- ZOBOV_SGC: rows=569, basic_geometry_rows=568, distance_proxy_rows=568, radius_eff_med=10.684, distance_proxy_range=(8.17392e+27, 1.01371e+28)
+- VIDE_NGC: rows=1258, basic_geometry_rows=1258, distance_proxy_rows=1258, radius_eff_med=15.603, distance_proxy_range=(0.0342871, 0.236439)
+- VIDE_SGC: rows=220, basic_geometry_rows=220, distance_proxy_rows=220, radius_eff_med=14.2409, distance_proxy_range=(0.052951, 0.235608)
+- REVOLVER_NGC: rows=1692, basic_geometry_rows=1692, distance_proxy_rows=1692, radius_eff_med=16.1144, distance_proxy_range=(0.0342871, 0.236439)
+- REVOLVER_SGC: rows=300, basic_geometry_rows=300, distance_proxy_rows=300, radius_eff_med=14.579, distance_proxy_range=(0.0456266, 0.235608)
+
+Recommended representative cases
+-------------------------------
+- rank=1 :: ZOBOV_NGC :: void_id=1929 :: algorithm=ZOBOV :: sky_region=NGC :: radius_band=small :: radius_eff=12.8394 :: distance_proxy=8.28808e+27 :: distance_kind=explicit_redshift :: selection_score=0.7077
+- rank=2 :: REVOLVER_NGC :: void_id=1481 :: algorithm=REVOLVER :: sky_region=NGC :: radius_band=small :: radius_eff=12.7678 :: distance_proxy=0.221377 :: distance_kind=explicit_redshift :: selection_score=0.7018
+- rank=3 :: VIDE_NGC :: void_id=974 :: algorithm=VIDE :: sky_region=NGC :: radius_band=medium :: radius_eff=16.4894 :: distance_proxy=0.229035 :: distance_kind=explicit_redshift :: selection_score=0.8633
+- rank=4 :: VIDE_SGC :: void_id=172 :: algorithm=VIDE :: sky_region=SGC :: radius_band=medium :: radius_eff=16.6439 :: distance_proxy=0.221216 :: distance_kind=explicit_redshift :: selection_score=0.8549
+- rank=5 :: ZOBOV_SGC :: void_id=108 :: algorithm=ZOBOV :: sky_region=SGC :: radius_band=large :: radius_eff=18.2646 :: distance_proxy=8.38911e+27 :: distance_kind=explicit_redshift :: selection_score=0.8835
+- rank=6 :: REVOLVER_SGC :: void_id=111 :: algorithm=REVOLVER :: sky_region=SGC :: radius_band=large :: radius_eff=16.9408 :: distance_proxy=0.200461 :: distance_kind=explicit_redshift :: selection_score=0.8628
+
+Stacked pool
+------------
+- selected rows: 36
+- radius median: 17.8486
+- distance_proxy median: 0.22331
+
+Generated files
+---------------
+- desivast_file_inventory.csv
+- desivast_sha256_verification.csv
+- desivast_catalog_summary.csv
+- desivast_column_mapping.csv
+- desivast_all_candidates_scored.csv
+- desivast_representative_voids_selected.csv
+- desivast_stacked_pool_candidates.csv
+- standardized_catalogs/*.csv
+
+Interpretation note
+-------------------
+004 treats explicit redshift and coordinate-like Z separately. Bare Z is no longer interpreted as physical redshift. Representative selection also applies cross-algorithm duplicate filtering.

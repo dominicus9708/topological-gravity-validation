@@ -1,0 +1,50 @@
+Cosmic Void Structural Validation topological summary (003 fully derived)
+====================================================================
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Input root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\input
+Run output: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\topological\20260417_004416
+
+Purpose
+-------
+This topological-stage pipeline reads the finalized official input directly and derives lambda_edge, r_topo, rho_bg, gamma, sigma_void, and D_void from the official input itself. No standard-stage output file is used as input.
+
+Definitions
+-----------
+lambda mode = self_normalized
+gamma mode = std
+r_topo = r_eff * (1 - lambda_edge * edge_fraction)
+V_topo = (4/3) * pi * r_topo^3
+rho_proxy_topo = M_proxy / V_topo
+sigma_void = (rho_proxy_topo - rho_bg) / rho_bg
+D_void = 3 + gamma * sigma_void
+background subset = core_stacked
+derived gamma = 1.6678574819544225
+derived rho_bg = 107483493.70921108
+
+Subsets
+-------
+- master rows: 28
+- core representatives: 4
+- support representatives: 0
+- core stacked: 24
+- support stacked: 0
+
+Generated files
+---------------
+- topological_master_working.csv
+- topological_core_representatives_working.csv
+- topological_support_representatives_working.csv
+- topological_core_stacked_working.csv
+- topological_support_stacked_working.csv
+- topological_summary.csv
+- topological_radius_vs_sigma_void.png
+- topological_radius_vs_D_void.png
+- topological_radius_eff_vs_r_topo.png
+- topological_algorithm_counts.png
+- topological_core_representatives_D_void.png
+- topological_core_stacked_sigma_void.png
+- topological_summary.txt
+
+Interpretation note
+-------------------
+This stage keeps the official input fixed, but replaces fixed lambda and gamma with internally derived quantities. The resulting D_void is therefore a data-closed topological quantity rather than a fixed-coefficient trial quantity.

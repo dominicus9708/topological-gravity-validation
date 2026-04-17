@@ -1,0 +1,13 @@
+stellar_mass_main
+  folder   : DESI_Stellar_Mass_Emission
+  filename : dr1_galaxy_stellarmass_lineinfo_v1.0.fits
+  size     : 48.74 GB
+  url      : https://data.desi.lbl.gov/public/dr1/vac/dr1/stellar-mass-emline/v1.0/dr1_galaxy_stellarmass_lineinfo_v1.0.fits
+
+stellar_mass_sha256
+  folder   : DESI_Stellar_Mass_Emission
+  filename : dr1_vac_dr1_stellar-mass-emline_v1.0.sha256sum
+  size     : 108.00 B
+  url      : https://data.desi.lbl.gov/public/dr1/vac/dr1/stellar-mass-emline/v1.0/dr1_vac_dr1_stellar-mass-emline_v1.0.sha256sum
+
+Total planned size: 48.74 GB

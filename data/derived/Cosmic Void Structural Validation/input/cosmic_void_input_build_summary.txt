@@ -1,0 +1,47 @@
+Cosmic Void final input builder summary (006 final stricter plus density cap)
+=========================================================================
+Source run root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\derived
+Input root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\input
+Stellar FITS: C:\Users\mincu\Desktop\topological_gravity_project\data\raw\Cosmic Void Structural Validation\DESI_Stellar_Mass_Emission\dr1_galaxy_stellarmass_lineinfo_v1.0.fits
+Preferred core algorithms: VIDE, REVOLVER
+Run tag: 
+Candidate pool size requested: 500
+Audited candidates: 500
+Broad matched candidates: 500
+Strict eligible candidates: 131
+Match radius (deg): 0.08
+Max nearest separation (deg): 0.008
+Minimum match count: 3
+Maximum match count: 80
+Chunk size: 100000
+
+Stellar mass field mapping
+--------------------------
+- ra_col: TARGET_RA
+- dec_col: TARGET_DEC
+- redshift_col: Z
+- direct_mass_col: 
+- proxy_mass_col: MASS_CG
+
+Generated input files
+---------------------
+- cosmic_void_core_representatives_input.csv
+- cosmic_void_support_representatives_input.csv
+- cosmic_void_core_stacked_input.csv
+- cosmic_void_support_stacked_input.csv
+- cosmic_void_master_input.csv
+- cosmic_void_input_source_manifest.csv
+- cosmic_void_input_build_summary.txt
+- cosmic_void_mass_audited_candidates.csv
+
+Row counts
+----------
+- core representatives: 4
+- support representatives: 0
+- core stacked: 24
+- support stacked: 0
+- master input total: 28
+
+Interpretation note
+-------------------
+This 006 stage adds a density cap on match counts, so voids from extremely crowded local environments are excluded. It is intended as the final mass-proxy selection pass before standard analysis.

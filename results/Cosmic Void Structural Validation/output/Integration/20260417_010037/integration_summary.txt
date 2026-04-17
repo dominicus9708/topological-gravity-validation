@@ -1,0 +1,22 @@
+Cosmic Void Structural Validation integration summary
+====================================================
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Standard root: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\standard
+Topological root: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\topological
+Selected standard run: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\standard
+Selected topological run: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\topological
+Integration output: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\Integration\20260417_010037
+
+Purpose
+-------
+This integration stage reads the latest standard and topological run folders, merges the master comparison table on shared void keys, and exports paper-style comparison figures.
+
+Generated files
+---------------
+- integration_master_comparison.csv
+- integration_summary.csv
+- integration_standard_vs_topological_map.png
+- integration_radius_transformation_map.png
+- integration_representative_vs_stacked.png
+- integration_three_panel_figure.png
+- integration_summary.txt

@@ -1,0 +1,45 @@
+Cosmic Void Structural Validation topological summary
+====================================================
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Input root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\input
+Run output: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\topological\20260417_002224
+
+Purpose
+-------
+This topological-stage pipeline reads the finalized official input directly and computes void structural contrast and effective structural dimension without reusing any standard-stage outputs.
+
+Definitions
+-----------
+V_eff = (4/3) * pi * r_eff^3
+rho_proxy = M_proxy / V_eff
+sigma_void = (rho_proxy - rho_bg) / rho_bg
+D_void = 3 + gamma * sigma_void, gamma = 1.0
+rho_bg subset = core_stacked
+rho_bg value = 106845784.02535869
+
+Subsets
+-------
+- master rows: 28
+- core representatives: 4
+- support representatives: 0
+- core stacked: 24
+- support stacked: 0
+
+Generated files
+---------------
+- topological_master_working.csv
+- topological_core_representatives_working.csv
+- topological_support_representatives_working.csv
+- topological_core_stacked_working.csv
+- topological_support_stacked_working.csv
+- topological_summary.csv
+- topological_radius_vs_sigma_void.png
+- topological_radius_vs_D_void.png
+- topological_algorithm_counts.png
+- topological_core_representatives_D_void.png
+- topological_core_stacked_sigma_void.png
+- topological_summary.txt
+
+Interpretation note
+-------------------
+This stage uses the same official input source as the standard stage, but recomputes its own effective-volume and proxy-density quantities internally. No standard pipeline result file is used as input.

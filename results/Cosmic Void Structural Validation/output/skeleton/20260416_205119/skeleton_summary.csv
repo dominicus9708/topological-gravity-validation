@@ -1,0 +1,17 @@
+﻿metric,value
+input_path,C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\input\cosmic_void_master_input.csv
+rows,37
+columns,37
+missing_required_count,0
+missing_required_columns,
+void_id_missing_frac,0.0
+algorithm_missing_frac,0.0
+sky_region_missing_frac,0.0
+ra_missing_frac,0.0
+dec_missing_frac,0.0
+radius_eff_missing_frac,0.0
+algorithm_counts,"{'REVOLVER': 15, 'VIDE': 13, 'ZOBOV': 9}"
+input_role_counts,"{'core_stacked': 24, 'support_stacked': 7, 'core_representative': 4, 'support_representative': 2}"
+radius_eff_min,12.839404535623686
+radius_eff_median,17.811541474308225
+radius_eff_max,18.53154343628905

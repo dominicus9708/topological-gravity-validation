@@ -1,0 +1,36 @@
+Cosmic Void Structural Validation standard summary
+=================================================
+Project root: C:\Users\mincu\Desktop\topological_gravity_project
+Input root: C:\Users\mincu\Desktop\topological_gravity_project\data\derived\Cosmic Void Structural Validation\input
+Run output: C:\Users\mincu\Desktop\topological_gravity_project\results\Cosmic Void Structural Validation\output\standard\20260416_234543
+
+Purpose
+-------
+This standard-stage pipeline constructs a geometry-first and proxy-mass baseline from the finalized 006 input. It does not claim direct void mass measurement. Instead it summarizes radius, effective-volume proxy, projected area proxy, stellar mass-proxy totals, and simple density-like ratios.
+
+Subsets
+-------
+- master rows: 28
+- core representatives: 4
+- support representatives: 0
+- core stacked: 24
+- support stacked: 0
+
+Generated files
+---------------
+- standard_master_working.csv
+- standard_core_representatives_working.csv
+- standard_support_representatives_working.csv
+- standard_core_stacked_working.csv
+- standard_support_stacked_working.csv
+- standard_summary.csv
+- standard_radius_vs_mass_proxy_sum.png
+- standard_radius_vs_mass_density_proxy.png
+- standard_algorithm_counts.png
+- standard_core_representatives_radius.png
+- standard_core_stacked_mass_quality.png
+- standard_summary.txt
+
+Interpretation note
+-------------------
+This is a standard observational baseline for Section 9.3. The quantities labeled as mass or density here are proxy-level summaries based on MASS_CG-derived matches, not direct total void masses.
