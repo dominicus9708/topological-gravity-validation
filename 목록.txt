@@ -3,11 +3,77 @@
 C:.
 |   Manualㅣ설명서.txt
 |   README.md
-|   requirements.txt
 |   목록.txt
 |   
 +---data
 |   +---derived
+|   |   +---Cosmic Void Structural Validation
+|   |   |   +---derived
+|   |   |   |   |   desivast_all_candidates_scored.csv
+|   |   |   |   |   desivast_catalog_summary.csv
+|   |   |   |   |   desivast_column_mapping.csv
+|   |   |   |   |   desivast_file_inventory.csv
+|   |   |   |   |   desivast_pipeline_summary.txt
+|   |   |   |   |   desivast_representative_voids_selected.csv
+|   |   |   |   |   desivast_sha256_verification.csv
+|   |   |   |   |   desivast_stacked_pool_candidates.csv
+|   |   |   |   |   
+|   |   |   |   +---Legacy
+|   |   |   |   |   \---2026-04-16 181151
+|   |   |   |   |       |   desivast_all_candidates_scored.csv
+|   |   |   |   |       |   desivast_catalog_summary.csv
+|   |   |   |   |       |   desivast_column_mapping.csv
+|   |   |   |   |       |   desivast_file_inventory.csv
+|   |   |   |   |       |   desivast_pipeline_summary.txt
+|   |   |   |   |       |   desivast_representative_voids_selected.csv
+|   |   |   |   |       |   desivast_sha256_verification.csv
+|   |   |   |   |       |   desivast_stacked_pool_candidates.csv
+|   |   |   |   |       |   
+|   |   |   |   |       \---standardized_catalogs
+|   |   |   |   |               REVOLVER_NGC_standardized.csv
+|   |   |   |   |               REVOLVER_SGC_standardized.csv
+|   |   |   |   |               VIDE_NGC_standardized.csv
+|   |   |   |   |               VIDE_SGC_standardized.csv
+|   |   |   |   |               VoidFinder_NGC_standardized.csv
+|   |   |   |   |               VoidFinder_SGC_standardized.csv
+|   |   |   |   |               ZOBOV_NGC_standardized.csv
+|   |   |   |   |               ZOBOV_SGC_standardized.csv
+|   |   |   |   |               
+|   |   |   |   \---standardized_catalogs
+|   |   |   |           REVOLVER_NGC_standardized.csv
+|   |   |   |           REVOLVER_SGC_standardized.csv
+|   |   |   |           VIDE_NGC_standardized.csv
+|   |   |   |           VIDE_SGC_standardized.csv
+|   |   |   |           VoidFinder_NGC_standardized.csv
+|   |   |   |           VoidFinder_SGC_standardized.csv
+|   |   |   |           ZOBOV_NGC_standardized.csv
+|   |   |   |           ZOBOV_SGC_standardized.csv
+|   |   |   |           
+|   |   |   +---input
+|   |   |   |       cosmic_void_core_representatives_input.csv
+|   |   |   |       cosmic_void_core_stacked_input.csv
+|   |   |   |       cosmic_void_input_build_summary.txt
+|   |   |   |       cosmic_void_input_source_manifest.csv
+|   |   |   |       cosmic_void_mass_audited_candidates.csv
+|   |   |   |       cosmic_void_master_input.csv
+|   |   |   |       cosmic_void_support_representatives_input.csv
+|   |   |   |       cosmic_void_support_stacked_input.csv
+|   |   |   |       
+|   |   |   \---script
+|   |   |       |   analyze_select_desivast_pipeline_005.py
+|   |   |       |   build_cosmic_void_final_input_pipeline_006.py
+|   |   |       |   
+|   |   |       \---Legacy
+|   |   |               analyze_select_desivast_pipeline_001.py
+|   |   |               analyze_select_desivast_pipeline_002.py
+|   |   |               analyze_select_desivast_pipeline_003.py
+|   |   |               analyze_select_desivast_pipeline_004.py
+|   |   |               build_cosmic_void_final_input_pipeline_001.py
+|   |   |               build_cosmic_void_final_input_pipeline_002.py
+|   |   |               build_cosmic_void_final_input_pipeline_003.py
+|   |   |               build_cosmic_void_final_input_pipeline_004.py
+|   |   |               build_cosmic_void_final_input_pipeline_005.py
+|   |   |               
 |   |   +---Echo of Light
 |   |   |   +---comparison
 |   |   |   |       README_v838mon_paper_comparison.txt
@@ -3850,6 +3916,40 @@ C:.
 |   |                   UGCA444_normalized.csv
 |   |                   
 |   \---raw
+|       +---Cosmic Void Structural Validation
+|       |   |   cosmic_void_structural_validation_csv_readme.txt
+|       |   |   cosmic_void_structural_validation_recommended_datasets.csv
+|       |   |   cosmic_void_structural_validation_sources.csv
+|       |   |   download_plan_expanded.csv
+|       |   |   recommended_datasets_local_copy.csv
+|       |   |   sources_local_copy.csv
+|       |   |   source_registry_expanded.csv
+|       |   |   
+|       |   +---DESIVAST
+|       |   |       README.txt
+|       |   |       
+|       |   +---DESI_Gfinder
+|       |   |       README.txt
+|       |   |       
+|       |   +---DESI_Stellar_Mass_Emission
+|       |   |       README.txt
+|       |   |       
+|       |   +---script
+|       |   |   |   build_cosmic_void_raw_registry_v3.py
+|       |   |   |   build_summary.txt
+|       |   |   |   download_cosmic_void_validation_data.py
+|       |   |   |   download_manifest.txt
+|       |   |   |   
+|       |   |   \---Legacy
+|       |   |           build_cosmic_void_raw_registry.py
+|       |   |           build_cosmic_void_raw_registry_v2.py
+|       |   |           
+|       |   +---SDSS_DR7_VoidFinder
+|       |   |       README.txt
+|       |   |       
+|       |   \---SDSS_DR7_Watershed
+|       |           README.txt
+|       |           
 |       +---Echo of Light
 |       |   +---Legacy
 |       |   |   \---SN 2014J
@@ -4935,11 +5035,88 @@ C:.
 |                       |   wise_hii_mass_raw_seed_batch_001.csv
 |                       |   
 |                       \---Legacy
-+---docs
-|       galaxy_pipeline.md
-|       methodology.md
-|       
 +---results
+|   +---Cosmic Void Structural Validation
+|   |   +---output
+|   |   |   +---Integration
+|   |   |   |   \---20260417_010037
+|   |   |   |           integration_master_comparison.csv
+|   |   |   |           integration_radius_transformation_map.png
+|   |   |   |           integration_representative_vs_stacked.png
+|   |   |   |           integration_standard_vs_topological_map.png
+|   |   |   |           integration_summary.csv
+|   |   |   |           integration_summary.txt
+|   |   |   |           integration_three_panel_figure.png
+|   |   |   |           
+|   |   |   +---skeleton
+|   |   |   |   \---20260416_205119
+|   |   |   |           skeleton_radius_eff_check.png
+|   |   |   |           skeleton_summary.csv
+|   |   |   |           skeleton_summary.txt
+|   |   |   |           skeleton_working_copy.csv
+|   |   |   |           
+|   |   |   +---standard
+|   |   |   |       standard_algorithm_counts.png
+|   |   |   |       standard_core_representatives_radius.png
+|   |   |   |       standard_core_representatives_working.csv
+|   |   |   |       standard_core_stacked_mass_quality.png
+|   |   |   |       standard_core_stacked_working.csv
+|   |   |   |       standard_master_working.csv
+|   |   |   |       standard_radius_vs_mass_density_proxy.png
+|   |   |   |       standard_radius_vs_mass_proxy_sum.png
+|   |   |   |       standard_summary.csv
+|   |   |   |       standard_summary.txt
+|   |   |   |       standard_support_representatives_working.csv
+|   |   |   |       standard_support_stacked_working.csv
+|   |   |   |       
+|   |   |   \---topological
+|   |   |       |   topological_algorithm_counts.png
+|   |   |       |   topological_core_representatives_D_void.png
+|   |   |       |   topological_core_representatives_working.csv
+|   |   |       |   topological_core_stacked_sigma_void.png
+|   |   |       |   topological_core_stacked_working.csv
+|   |   |       |   topological_master_working.csv
+|   |   |       |   topological_radius_eff_vs_r_topo.png
+|   |   |       |   topological_radius_vs_D_void.png
+|   |   |       |   topological_radius_vs_sigma_void.png
+|   |   |       |   topological_summary.csv
+|   |   |       |   topological_summary.txt
+|   |   |       |   topological_support_representatives_working.csv
+|   |   |       |   topological_support_stacked_working.csv
+|   |   |       |   
+|   |   |       \---Legacy
+|   |   |           +---20260417_002224
+|   |   |           |       topological_algorithm_counts.png
+|   |   |           |       topological_core_representatives_D_void.png
+|   |   |           |       topological_core_representatives_working.csv
+|   |   |           |       topological_core_stacked_sigma_void.png
+|   |   |           |       topological_core_stacked_working.csv
+|   |   |           |       topological_master_working.csv
+|   |   |           |       topological_radius_vs_D_void.png
+|   |   |           |       topological_radius_vs_sigma_void.png
+|   |   |           |       topological_summary.csv
+|   |   |           |       topological_summary.txt
+|   |   |           |       topological_support_representatives_working.csv
+|   |   |           |       topological_support_stacked_working.csv
+|   |   |           |       
+|   |   |           \---20260417_003508
+|   |   |                   topological_algorithm_counts.png
+|   |   |                   topological_core_representatives_D_void.png
+|   |   |                   topological_core_representatives_working.csv
+|   |   |                   topological_core_stacked_sigma_void.png
+|   |   |                   topological_core_stacked_working.csv
+|   |   |                   topological_master_working.csv
+|   |   |                   topological_radius_eff_vs_r_topo.png
+|   |   |                   topological_radius_vs_D_void.png
+|   |   |                   topological_radius_vs_sigma_void.png
+|   |   |                   topological_summary.csv
+|   |   |                   topological_summary.txt
+|   |   |                   topological_support_representatives_working.csv
+|   |   |                   topological_support_stacked_working.csv
+|   |   |                   
+|   |   \---script
+|   |           run_cosmic_void_integration_001.py
+|   |           
 |   +---Echo of Light
 |   |   \---output
 |   |       +---Legacy
@@ -21447,6 +21624,20 @@ C:.
 |                   build_common5_integration_pipeline_v5.py
 |                   
 \---src
+    +---Cosmic Void Structural Validation
+    |   +---skeleton
+    |   |       run_cosmic_void_skeleton_001.py
+    |   |       
+    |   +---standard
+    |   |       run_cosmic_void_standard_001.py
+    |   |       
+    |   \---topological
+    |       |   run_cosmic_void_topological_003.py
+    |       |   
+    |       \---Legacy
+    |               run_cosmic_void_topological_001.py
+    |               run_cosmic_void_topological_002.py
+    |               
     +---echo of light
     |   +---eta_carinae
     |   |   |   eta_carinae_standard_pipeline.py
