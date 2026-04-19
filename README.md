@@ -1,149 +1,197 @@
-# Topological Gravity Validation Framework
+# Topological Gravity Validation
+
+This repository contains the reproducible validation archive for the fourth paper in the topological gravity research program:
+
+**Topological Gravity: Structural Derivation of an Effective Gravitational Field**
+
+Author: **Kwon Dominicus**
 
 ## Overview
 
-This repository provides a numerical validation framework for the fourth paper
-in the topological gravity research program.
+The purpose of this repository is not to present a finalized software product or a closed empirical proof.
+Its purpose is to preserve the validation workflow, executable scripts, processed inputs, dated outputs,
+and manuscript-support materials used for the fourth paper.
 
-The purpose of this repository is not to present a finalized theory,
-but to ensure reproducibility and transparency of observational validation.
+The validation philosophy of this repository is **consistency-oriented validation**.
+That means the repository is designed to test whether observational data,
+standard baseline reconstruction, and topological interpretation can be organized
+in a structurally coherent and reproducible way across multiple astrophysical domains.
 
-All computations, data processing steps, and resulting figures are intended
-to be reproducible from the code provided here.
+Accordingly, this repository should be read as a **reproducible validation archive**
+for the paper, not as a claim that topological gravity has already been finally established.
 
 ---
 
 ## Research Program Context
 
-This work is part of a structured research program consisting of the following stages:
+This work belongs to a structured research program developed in the following order:
 
-### 1. Axiomatic Foundation
-The concept of topological degrees of freedom is introduced as a structural
-condition governing observer-dependent describability. :contentReference[oaicite:1]{index=1}
+1. **Axiomatic Foundation**  
+   The concept of topological degrees of freedom was introduced as a structural condition
+   governing observer-dependent describability.
 
-### 2. Mathematical Formalization
-The axiom is rigorously formulated and proven within a functional-analytic framework,
-introducing the weighted effective dimension as a well-defined structural quantity. :contentReference[oaicite:2]{index=2}
+2. **Mathematical Formalization**  
+   The framework was formalized through weighted effective dimensions and related structural quantities.
 
-### 3. Dynamical Extension
-Topological reorganization dynamics are introduced, where structural evolution is
-interpreted as redistribution of local scaling contributions, leading to emergent
-constraints on information propagation. :contentReference[oaicite:3]{index=3}
+3. **Dynamical Extension**  
+   Topological reorganization dynamics were introduced, together with a structural
+   information-propagation constraint.
 
-### 4. Observational Validation (This Repository)
-The present repository implements numerical validation of the framework using
-astronomical observational datasets.
-
----
-
-## Objectives
-
-The main objectives of this repository are:
-
-- To test whether the structural framework can reproduce observational phenomena
-- To provide a transparent computational pipeline for validation
-- To separate structural modeling from empirical interpretation
-- To prevent arbitrary parameter fitting by maintaining traceable computation
+4. **Observational Validation**  
+   The present repository implements reproducible validation workflows for the fourth paper,
+   which studies whether structural contrast can be related to an effective gravitational field
+   in a consistency-oriented manner.
 
 ---
 
-## Datasets
+## Scope of This Repository
 
-The validation uses multiple independent observational datasets:
+This repository is centered on the validation domains used in the fourth paper.
 
-### Galaxy Rotation Data (SPARC-based)
-Galaxy rotation curves constructed from observational data across multiple telescopes,
-processed for compatibility with the structural framework. :contentReference[oaicite:4]{index=4}
+The paper-facing validation targets are:
 
-### Gravitational Wave Data
-Derived datasets based on LIGO observations, used to test structural consistency
-in dynamical regimes. :contentReference[oaicite:5]{index=5}
+- **WISE H II Regions**  
+  Structural contrast baseline validation through radial observational structure and
+  conservative mass-volume bridge interpretation.
 
-### Cosmic Microwave Background
-Processed observational data related to large-scale structure and early-universe signals. :contentReference[oaicite:6]{index=6}
+- **Light Echo Morphology**  
+  Validation through temporal relaxation, patch-family anisotropy, and component-wise
+  structural decomposition.
 
-### Light Echo Data
-Observational data based on light echo phenomena, used to probe structural propagation
-effects. :contentReference[oaicite:7]{index=7}
+- **Cosmic Void Structural Validation**  
+  Comparison between standard proxy-density structure and topological effective-dimension response.
+
+- **Our Galaxy Halo Stellar Kinematics**  
+  Shell-wise comparison between observational kinematic organization and topological structural response.
+
+These targets do **not** share one universal observable or one universal fitted response variable.
+Instead, each target provides a different observational access channel to structural response.
+
+---
+
+## Core Validation Layers
+
+### 1. Standard
+
+The `standard` layer reconstructs or summarizes the observational baseline as closely as possible
+from the cited observational materials.
+
+This is the baseline reproduction layer.
+If this layer is not stable or not traceable, the corresponding topological layer
+should not be treated as meaningful.
+
+### 2. Topological
+
+The `topological` layer applies the fourth-paper interpretation on top of the observational baseline.
+
+This layer does not replace the observational baseline.
+It reuses the same observational structure and adds structural interpretation,
+such as effective structural dimension, structural contrast, and, where justified,
+bridge-style extensions.
+
+### 3. Conditional Bridge Extensions
+
+Some targets include an additional bridge layer, such as conservative mass-volume trial quantities.
+These are conditional extensions, not universal default assumptions.
+
+They must be interpreted conservatively, especially when they rely on proxy-supported
+rather than uniformly direct-measured quantities.
 
 ---
 
 ## Repository Structure
 
-src/ # Core computational models
-data_raw/ # Original observational datasets (immutable)
-data_processed/ # Processed data derived from raw datasets
-notebooks/ # Analysis and visualization workflows
-results/ # Generated outputs (plots, tables)
-docs/ # Methodology and interpretation notes
-paper/ # Notes related to the fourth paper
+The exact internal paths may vary by target, but the intended repository logic is:
 
+- `legacy/`  
+  Trial-and-error archive. Preserved for transparency and development history.
+  This is **not** the primary paper-facing execution path unless explicitly noted.
 
----
+- `data/raw/` or equivalent raw-source folders  
+  Original observational sources, downloaded materials, source registries, and provenance anchors.
 
-## Core Model Components
+- `data/derived/` or equivalent processed-input folders  
+  Processed tables, normalized inputs, bridge tables, and executable paper-facing inputs.
 
-The computational framework includes:
+- `src/` or `script/`  
+  Executable pipelines used to generate processed data, baseline reconstructions, and topological outputs.
 
-- Structural scaling representation via local exponents α(x)
-- Weighted aggregation (effective structural dimension)
-- Sigma-based structural deviation modeling
-- Beta parameterization (constant and structurally derived)
-- Rotation curve reconstruction
-- Numerical integration-based evaluation
+- `results/`  
+  Dated outputs, plots, csv summaries, comparison files, and manuscript-facing run records.
+
+- `docs/`  
+  Validation policy notes, handoff summaries, provenance explanations, execution notes,
+  and manuscript-support materials.
 
 ---
 
 ## Reproducibility Policy
 
-This repository follows strict reproducibility principles:
+This repository follows the following reproducibility principles:
 
-1. Raw data are never modified
-2. All transformations must be reproducible via code
-3. Results must be regenerable from source files
-4. No manual tuning of outputs for visual agreement
-5. All major changes are tracked through commit history
+1. Raw data should remain preserved.
+2. Derived inputs should be separated from raw data.
+3. Executable scripts should be separated from outputs.
+4. Outputs should be saved under dated folders where possible.
+5. Summary files should be stored together with outputs so later review is possible.
+6. Major transformations should remain traceable through code and file history.
+7. Legacy folders preserve development history, not the primary endorsed execution path.
+
+---
+
+## Recommended Reading Order
+
+For a new reader, the recommended order is:
+
+1. `README.md` at the repository root
+2. target-level `README.md`
+3. raw or input `README.md`
+4. script `README.md`
+5. output `README.md`
+6. dated summary txt or csv outputs
+
+This order is intended to make the repository understandable without assuming
+prior familiarity with the full paper-writing history.
 
 ---
 
 ## Interpretation Guidelines
 
-This repository is intended for structural validation, not direct physical claims.
+This repository is intended for **structural validation**, not for immediate direct physical closure.
 
 In particular:
 
-- Agreement with observational data does not immediately imply
-  replacement of existing physical theories
-- Disagreement does not invalidate the framework without structural analysis
-- Parameter choices must be justified structurally, not empirically fitted
+- Agreement with observational structure should be read as
+  **structural reproducibility** and **consistency-oriented response**.
+- It should not be read automatically as a replacement of standard gravitational theory.
+- Disagreement should not be interpreted simplistically without structural analysis.
+- Proxy-supported quantities must be interpreted conservatively.
+- Parameter choices should be justified structurally rather than visually tuned.
+
+---
+
+## Current Status
+
+This repository should be understood as a reproducible archive for the fourth paper.
+
+It preserves the workflows and outputs used to support manuscript construction,
+figure generation, and validation interpretation.
+
+The final paper-facing emphasis is on:
+
+- WISE H II structural contrast validation
+- light-echo morphology validation
+- cosmic void structural validation
+- halo stellar kinematics validation
+
+The `legacy/` folder remains preserved because it records practical development history,
+including replaced trials and earlier implementations.
 
 ---
 
 ## Requirements
 
-To run the code:
+If a `requirements.txt` file is present, install dependencies with:
+
+```bash
 pip install -r requirements.txt
-
----
-
-## Status
-
-This repository is under active development.
-
-The current implementation focuses on:
-
-- Galaxy rotation validation
-- Structural beta prescription testing
-- Sigma integration approaches
-
----
-
-## License
-
-(To be decided)
-
----
-
-## Author
-Kwon Dominicus  
-Independent Researcher

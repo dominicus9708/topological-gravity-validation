@@ -1,5 +1,0 @@
-﻿dataset,model,n_points,chi2,dof,reduced_chi2,rmse
-Tylenda,standard_baseline,5,0.0,5,0.0,0.0
-Tylenda,topological_mass_volume_trial,5,4.016651782236771,4,1.0041629455591927,0.5227555288914442
-Crause,standard_baseline,12,0.0,12,0.0,0.0
-Crause,topological_mass_volume_trial,12,4.640534942850717,11,0.42186681298642886,0.3984781745945473
